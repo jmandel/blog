@@ -15,9 +15,41 @@ function formatDate(date: Date | string): string {
 }
 
 function getExcerpt(content: string): string {
-  // Extract first paragraph from content, remove HTML tags
-  const firstParagraph = content.split('\n').find(line => line.trim().length > 0) || '';
-  return firstParagraph.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
+  // Skip frontmatter and find first meaningful content
+  const lines = content.split('\n');
+  let startIndex = 0;
+  
+  // Skip frontmatter if present
+  if (lines[0]?.trim() === '---') {
+    const endIndex = lines.findIndex((line, index) => index > 0 && line.trim() === '---');
+    if (endIndex > 0) {
+      startIndex = endIndex + 1;
+    }
+  }
+  
+  // Find first non-empty line that's not just markdown image syntax
+  const contentLines = lines.slice(startIndex);
+  const meaningfulLine = contentLines.find(line => {
+    const trimmed = line.trim();
+    return trimmed.length > 0 && 
+           !trimmed.startsWith('![') && // Skip image markdown
+           !trimmed.startsWith('#') &&  // Skip headers
+           !trimmed.startsWith('=') &&  // Skip header underlines
+           !trimmed.startsWith('Created on') &&  // Skip metadata
+           !trimmed.startsWith('Published on');   // Skip metadata
+  }) || '';
+  
+  // Clean up markdown syntax and HTML tags
+  let excerpt = meaningfulLine
+    .replace(/!\[.*?\]\(.*?\)/g, '') // Remove image markdown
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Convert links to just text
+    .replace(/<[^>]*>/g, '') // Remove HTML tags
+    .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold markdown
+    .replace(/\*(.*?)\*/g, '$1') // Remove italic markdown
+    .replace(/`([^`]+)`/g, '$1') // Remove code markdown
+    .trim();
+  
+  return excerpt.length > 0 ? excerpt.substring(0, 150) + '...' : 'Read more...';
 }
 ---
 
