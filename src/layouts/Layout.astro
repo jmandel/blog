@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 export interface Props {
   title: string;
   description?: string;
@@ -8,197 +10,41 @@ const { title, description = "Healthcare Technology Blog" } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
-    <style>
-      :root {
-        --accent: #2563eb;
-        --accent-dark: #1d4ed8;
-        --black: 15, 18, 25;
-        --gray: 96, 115, 159;
-        --gray-light: 229, 233, 240;
-        --gray-dark: 34, 41, 57;
-        --gray-gradient: rgba(var(--gray-light), 50%), #fff;
-        --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-          0 16px 32px rgba(var(--gray), 33%);
-      }
-      html {
-        font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        font-size: 18px;
-        color: rgb(var(--gray-dark));
-        background: #fff;
-      }
-      body {
-        margin: 0;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-      }
-      header {
-        margin-bottom: 3rem;
-        text-align: center;
-        border-bottom: 1px solid rgb(var(--gray-light));
-        padding-bottom: 2rem;
-      }
-      header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: rgb(var(--black));
-      }
-      header p {
-        margin: 0.5rem 0 0;
-        color: rgb(var(--gray));
-        font-size: 1.1rem;
-      }
-      nav {
-        margin-top: 1rem;
-      }
-      nav a {
-        color: var(--accent);
-        text-decoration: none;
-        margin: 0 1rem;
-        font-weight: 500;
-      }
-      nav a:hover {
-        color: var(--accent-dark);
-        text-decoration: underline;
-      }
-      main {
-        margin-bottom: 3rem;
-      }
-      footer {
-        text-align: center;
-        padding: 2rem;
-        border-top: 1px solid rgb(var(--gray-light));
-        color: rgb(var(--gray));
-      }
-      .post-list {
-        list-style: none;
-        padding: 0;
-      }
-      .post-item {
-        margin-bottom: 2rem;
-        padding: 1.5rem;
-        border: 1px solid rgb(var(--gray-light));
-        border-radius: 8px;
-        transition: box-shadow 0.2s ease;
-      }
-      .post-item:hover {
-        box-shadow: var(--box-shadow);
-      }
-      .post-title {
-        margin: 0 0 0.5rem;
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
-      .post-title a {
-        color: rgb(var(--black));
-        text-decoration: none;
-      }
-      .post-title a:hover {
-        color: var(--accent);
-      }
-      .post-date {
-        color: rgb(var(--gray));
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
-      }
-      .post-excerpt {
-        color: rgb(var(--gray-dark));
-      }
-      .prose {
-        line-height: 1.7;
-      }
-      .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-        color: rgb(var(--black));
-        font-weight: 600;
-        margin-top: 2rem;
-        margin-bottom: 0.5rem;
-      }
-      .prose h1 {
-        font-size: 2.25rem;
-        margin-bottom: 1rem;
-      }
-      .prose h2 {
-        font-size: 1.75rem;
-      }
-      .prose h3 {
-        font-size: 1.5rem;
-      }
-      .prose p {
-        margin-bottom: 1rem;
-      }
-      .prose a {
-        color: var(--accent);
-        text-decoration: underline;
-      }
-      .prose a:hover {
-        color: var(--accent-dark);
-      }
-      .prose code {
-        background: rgb(var(--gray-light));
-        padding: 0.2rem 0.4rem;
-        border-radius: 4px;
-        font-family: 'Courier New', monospace;
-        font-size: 0.9rem;
-      }
-      .prose pre {
-        background: rgb(var(--gray-light));
-        padding: 1rem;
-        border-radius: 8px;
-        overflow-x: auto;
-        font-size: 0.9rem;
-      }
-      .prose img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin: 1rem 0;
-      }
-      .prose ul, .prose ol {
-        margin-bottom: 1rem;
-        padding-left: 2rem;
-      }
-      .prose li {
-        margin-bottom: 0.5rem;
-      }
-      .back-link {
-        display: inline-block;
-        margin-bottom: 2rem;
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 500;
-      }
-      .back-link:hover {
-        color: var(--accent-dark);
-        text-decoration: underline;
-      }
-    </style>
   </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Healthcare Technology Blog</h1>
-        <p>Insights on healthcare IT, FHIR, EHR systems, and digital health innovation</p>
-        <nav>
-          <a href="/blog">Home</a>
-          <a href="/blog/about">About</a>
+  <body class="bg-white text-slate-800 font-sans leading-relaxed">
+    <div class="max-w-4xl mx-auto px-4 py-8 md:px-6">
+      <header class="mb-12 text-center border-b border-slate-200 pb-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-3 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          Healthcare Technology Blog
+        </h1>
+        <p class="text-lg text-slate-600 mb-6 max-w-2xl mx-auto">
+          Insights on healthcare IT, FHIR, EHR systems, and digital health innovation
+        </p>
+        <nav class="space-x-6">
+          <a href="/blog" class="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200 hover:underline">
+            Home
+          </a>
+          <a href="/blog/about" class="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200 hover:underline">
+            About
+          </a>
         </nav>
       </header>
-      <main>
+      
+      <main class="mb-12">
         <slot />
       </main>
-      <footer>
-        <p>&copy; 2025 Healthcare Technology Blog. All rights reserved.</p>
+      
+      <footer class="text-center pt-8 border-t border-slate-200">
+        <p class="text-slate-500">
+          &copy; 2025 Healthcare Technology Blog. All rights reserved.
+        </p>
       </footer>
     </div>
   </body>

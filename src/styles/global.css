@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* Custom styles for blog content */
+.post-list {
+  @apply space-y-6;
+}
+
+.post-item {
+  @apply bg-white border border-slate-200 rounded-lg p-6 transition-all duration-200 hover:shadow-lg hover:shadow-slate-200/50 hover:border-slate-300;
+}
+
+.post-title {
+  @apply text-xl font-semibold text-slate-900 mb-2;
+}
+
+.post-title a {
+  @apply text-slate-900 no-underline transition-colors duration-200 hover:text-blue-600;
+}
+
+.post-date {
+  @apply text-sm text-slate-500 mb-3;
+}
+
+.post-excerpt {
+  @apply text-slate-600 leading-relaxed;
+}
+
+.prose {
+  @apply max-w-none leading-7;
+}
+
+.prose h1 {
+  @apply text-3xl font-bold text-slate-900 mt-8 mb-4 first:mt-0;
+}
+
+.prose h2 {
+  @apply text-2xl font-semibold text-slate-900 mt-8 mb-4;
+}
+
+.prose h3 {
+  @apply text-xl font-medium text-slate-900 mt-6 mb-3;
+}
+
+.prose h4 {
+  @apply text-lg font-medium text-slate-900 mt-6 mb-3;
+}
+
+.prose h5, .prose h6 {
+  @apply text-base font-medium text-slate-900 mt-4 mb-2;
+}
+
+.prose p {
+  @apply mb-4 text-slate-700;
+}
+
+.prose a {
+  @apply text-blue-600 underline decoration-blue-600/30 underline-offset-2 transition-colors duration-200 hover:text-blue-700 hover:decoration-blue-700/50;
+}
+
+.prose code {
+  @apply bg-slate-100 text-slate-800 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-slate-100 p-4 rounded-lg overflow-x-auto text-sm my-6;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0;
+}
+
+.prose img {
+  @apply max-w-full h-auto rounded-lg my-6;
+}
+
+.prose ul, .prose ol {
+  @apply mb-4 pl-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose ul > li {
+  @apply list-disc;
+}
+
+.prose ol > li {
+  @apply list-decimal;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-200 pl-4 py-2 my-6 italic text-slate-600 bg-blue-50/50;
+}
+
+.prose table {
+  @apply w-full border-collapse border border-slate-300 my-6;
+}
+
+.prose th, .prose td {
+  @apply border border-slate-300 px-4 py-2 text-left;
+}
+
+.prose th {
+  @apply bg-slate-50 font-semibold;
+}
+
+.back-link {
+  @apply inline-flex items-center text-blue-600 font-medium mb-8 transition-colors duration-200 hover:text-blue-700 hover:underline;
+}

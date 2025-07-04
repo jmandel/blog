@@ -29,7 +29,7 @@ function formatDate(date: Date | string): string {
     <h1>{post.data.title}</h1>
     <div class="post-date">Published on {formatDate(post.data.date)}</div>
     {post.data.banner && (
-      <img src={post.data.banner} alt="" style="width: 100%; max-width: 600px; margin: 2rem 0;" />
+      <img src={post.data.banner} alt="" class="w-full max-w-2xl mx-auto my-8 rounded-lg shadow-sm" />
     )}
     <Content />
   </article>

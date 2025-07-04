@@ -9,13 +9,20 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "keywords": ["astro", "blog", "healthcare", "technology"],
+  "keywords": [
+    "astro",
+    "blog",
+    "healthcare",
+    "technology"
+  ],
   "author": "jmandel",
   "license": "ISC",
   "description": "Healthcare Technology Blog",
   "dependencies": {
     "@astrojs/markdown-remark": "^6.3.2",
     "@astrojs/rss": "^4.0.12",
-    "astro": "^5.11.0"
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.11.0",
+    "tailwindcss": "^4.1.11"
   }
 }
