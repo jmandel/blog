@@ -30,8 +30,27 @@ jobs:
           node-version: '20'
           cache: 'npm'
       
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
       - name: Install dependencies
         run: npm ci
+      
+      - name: Import LinkedIn content
+        run: |
+          # Find the newest zip file in LinkedIn exports folder
+          EXPORT_FILE=$(find "LinkedIn exports" -name "*.zip" -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -d' ' -f2-)
+          if [ -z "$EXPORT_FILE" ]; then
+            echo "No LinkedIn export files found in 'LinkedIn exports' folder"
+            exit 1
+          fi
+          echo "Using LinkedIn export: $EXPORT_FILE"
+          
+          # Install Python dependencies and run import
+          pip3 install -r scripts/requirements.txt
+          python3 scripts/linkedin_import.py "$EXPORT_FILE" --workdir linkedin_work --blog-dir .
       
       - name: Build Astro site
         run: npm run build
