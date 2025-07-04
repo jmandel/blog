@@ -16,8 +16,10 @@ dist/
 # macOS-specific files
 .DS_Store
 
-# LinkedIn import working directory
+# LinkedIn import working directories
 linkedin_work/
+linkedin_work_*/
+test_*_import/
 *.zip
 
 # Windows-specific files
