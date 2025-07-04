@@ -5,8 +5,6 @@ slug: conversational-interop-for-prior-auth-demo
 original_url: "https://www.linkedin.com/pulse/conversational-interop-prior-auth-demo-josh-mandel-md-wjwxe"
 linkedin_id: wjwxe
 ---
-
-import YouTube from '../../../components/YouTube.astro';
 ![](https://media.licdn.com/mediaD4E12AQH_x5CG7GJiyA)
 
 [Conversational Interop for Prior Auth (demo!)](/posts/conversational-interop-for-prior-auth-demo)
@@ -22,7 +20,7 @@ Today's **live demo** explores early steps toward this vision – using LLM agen
 
 [Related Article: conversational-interop-for-prior-auth-demo](/posts/conversational-interop-for-prior-auth-demo)
 
-Demo at <YouTube id="BRX7HUBlEqw" />
+Demo at <div class="youtube-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/BRX7HUBlEqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ### Key Perspectives Explored in the Demo:
 

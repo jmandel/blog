@@ -5,8 +5,6 @@ slug: mcp-practical-considerations-for-llm-and-ehr-integration-conversation-with
 original_url: "https://www.linkedin.com/pulse/mcp-practical-considerations-llm-ehr-integration-team-josh-mandel-md-qjhqc"
 linkedin_id: qjhqc
 ---
-
-import YouTube from '../../../components/YouTube.astro';
 ![](https://media.licdn.com/mediaD5612AQEHwYKg2NnmtQ)
 
 [MCP: Practical Considerations for LLM and EHR Integration. (Conversation with Farzad & Aledade Team)](/posts/mcp-practical-considerations-for-llm-and-ehr-integration-conversation-with-farzad-aledade-team)
@@ -20,7 +18,7 @@ Yesterday I had the pleasure of joining [**Farzad Mostashari**](https://www.link
 
 Our conversation began by examining the fundamental challenge of how Large Language Models (LLMs) access and interact with Electronic Health Record (EHR) data, for both read and write operations. We considered the spectrum of data-feeding strategies: from tightly scripting the entire information context provided to an LLM, to empowering the model with more autonomy to use 'tools' for dynamic data retrieval and action execution (e.g., a tool to 'fetch the latest lab results for patient X'), and exploring hybrid approaches that balance control with flexibility. This foundational discussion framed the central problem MCPs seek to address: enabling LLMs to obtain timely, accurate, and contextually relevant data from EHRs—and, crucially, to contribute information back—without resorting to manual processes or brittle, custom integrations. MCPs, as we discussed, aim to provide a standardized mechanism for LLMs to discover and utilize these 'tools'—functions they can invoke—to query systems like EHRs or execute actions, always following proper authorization. Thanks to Aledade for hosting and for allowing me to share these points.
 
-For everyone interested, the full discussion can be viewed <YouTube id="AMPuz56qhx4" /> -- but alas I recorded the session ineptly and our audio levels are not well balanced. I've posted a [full transcript here](https://gist.github.com/jmandel/1d80316cddaaa3b45c14cb9a825f2c8a#file-transcript-md).
+For everyone interested, the full discussion can be viewed <div class="youtube-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/AMPuz56qhx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -- but alas I recorded the session ineptly and our audio levels are not well balanced. I've posted a [full transcript here](https://gist.github.com/jmandel/1d80316cddaaa3b45c14cb9a825f2c8a#file-transcript-md).
 
 ### Key Technical Points from Our Discussion:
 

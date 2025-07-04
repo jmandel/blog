@@ -5,8 +5,6 @@ slug: theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo
 original_url: "https://www.linkedin.com/pulse/theory-practice-llm-agents-using-mcp-tools-real-ehr-data-mandel-md-acknc"
 linkedin_id: acknc
 ---
-
-import YouTube from '../../../components/YouTube.astro';
 ![](https://media.licdn.com/mediaD5612AQElZrWw7Gcq6w)
 
 [Theory to Practice: LLM Agents Using MCP Tools on Real EHR Data (with demo)](/posts/theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo)
@@ -63,7 +61,7 @@ This is still evolving rapidly. The video touches on the crucial security aspect
 
 Watch the demo to see these concepts in action. The code is open source if you want to dig deeper into the implementation. Let's continue the discussion on how we can best leverage LLM agents and standards like FHIR and MCP to build better health IT.
 
-* Video: <YouTube id="K0t6MRyIqZU" />
+* Video: <div class="youtube-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/K0t6MRyIqZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 * GitHub repo: [**https://github.com/jmandel/health-record-mcp**](https://github.com/jmandel/health-record-mcp)
 
 #FHIR #LLM #AIinHealthcare #MCP #HealthIT #Interoperability #SMARTonFHIR #EHR #AgenticAI

@@ -425,10 +425,10 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             else:
                 body_md = md(str(soup), strip=["script", "style"])
             
-            # Post-process to convert video placeholders to Astro components
+            # Post-process to convert video placeholders to standard iframe embeds
             body_md = re.sub(
                 r'<!-- YOUTUBE:([a-zA-Z0-9_-]+) -->',
-                r'<YouTube id="\1" />',
+                r'<div class="youtube-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/\1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
                 body_md
             )
             body_md = re.sub(
@@ -476,10 +476,9 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 fm_lines.append(f"banner: {banner_fm}")
             fm_lines.append("---")
             
-            # Add component imports if needed
+            # Add component imports if needed (removed for content collections)
             imports = []
-            if "<YouTube" in body_md:
-                imports.append("import YouTube from '../../../components/YouTube.astro';")
+            # NOTE: For Astro content collections, we use ::youtube{id=...} syntax instead of imports
             
             if imports:
                 fm_lines.append("")
