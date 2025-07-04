@@ -154,7 +154,8 @@ def convert_video_embeds(soup: BeautifulSoup) -> None:
     # Also check for YouTube URLs in different patterns (fallback)
     for a_tag in soup.find_all("a"):
         href = a_tag.get("href", "")
-        youtube_match = re.search(r'youtube\.com/watch\?v=([a-zA-Z0-9_-]+)', href)
+        # Handle both youtube.com/watch?v= and youtu.be/ patterns
+        youtube_match = re.search(r'(?:youtube\.com/watch\?v=|youtu\.be/)([a-zA-Z0-9_-]+)', href)
         if youtube_match:
             video_id = youtube_match.group(1)
             # Replace link with embedded video placeholder
