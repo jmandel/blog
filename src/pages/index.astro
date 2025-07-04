@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('blog');
@@ -17,21 +17,33 @@ function formatDate(date: Date | string): string {
 function getExcerpt(content: string): string {
   // Extract first paragraph from content, remove HTML tags
   const firstParagraph = content.split('\n').find(line => line.trim().length > 0) || '';
-  return firstParagraph.replace(/<[^>]*>/g, '').substring(0, 200) + '...';
+  return firstParagraph.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
 }
 ---
 
-<Layout title="Healthcare Technology Blog">
-  <h1 class="text-2xl font-bold text-slate-900 mb-8">Recent Posts</h1>
-  <ul class="post-list">
-    {sortedPosts.map((post) => (
-      <li class="post-item">
-        <h2 class="post-title">
-          <a href={`/blog/posts/${post.slug}`}>{post.data.title}</a>
-        </h2>
-        <div class="post-date">{formatDate(post.data.date)}</div>
-        <div class="post-excerpt">{getExcerpt(post.body)}</div>
-      </li>
-    ))}
-  </ul>
-</Layout>
+<BaseLayout 
+  title="Healthcare Technology Blog" 
+  description="Insights on healthcare IT, FHIR, EHR systems, and digital health innovation"
+>
+  <section>
+    <h1>Healthcare Technology Blog</h1>
+    <p>Insights on healthcare IT, FHIR, EHR systems, and digital health innovation</p>
+  </section>
+
+  <section>
+    <h2>Recent Posts</h2>
+    <ul class="posts-list">
+      {sortedPosts.map((post) => (
+        <li class="post-item">
+          <h3 class="post-title">
+            <a href={`/blog/posts/${post.slug}`}>{post.data.title}</a>
+          </h3>
+          <time class="post-date" datetime={new Date(post.data.date).toISOString()}>
+            {formatDate(post.data.date)}
+          </time>
+          <p class="post-excerpt">{getExcerpt(post.body)}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

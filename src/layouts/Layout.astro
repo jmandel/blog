@@ -1,16 +1,16 @@
 ---
-import '../styles/global.css';
+import '../styles/base.css';
 
 export interface Props {
   title: string;
   description?: string;
 }
 
-const { title, description = "Healthcare Technology Blog" } = Astro.props;
+const { title, description = "Healthcare Technology Blog - Insights on healthcare IT, FHIR, EHR systems, and digital health innovation" } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -18,34 +18,7 @@ const { title, description = "Healthcare Technology Blog" } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body class="bg-white text-slate-800 font-sans leading-relaxed">
-    <div class="max-w-4xl mx-auto px-4 py-8 md:px-6">
-      <header class="mb-12 text-center border-b border-slate-200 pb-8">
-        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-3 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-          Healthcare Technology Blog
-        </h1>
-        <p class="text-lg text-slate-600 mb-6 max-w-2xl mx-auto">
-          Insights on healthcare IT, FHIR, EHR systems, and digital health innovation
-        </p>
-        <nav class="space-x-6">
-          <a href="/blog" class="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200 hover:underline">
-            Home
-          </a>
-          <a href="/blog/about" class="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200 hover:underline">
-            About
-          </a>
-        </nav>
-      </header>
-      
-      <main class="mb-12">
-        <slot />
-      </main>
-      
-      <footer class="text-center pt-8 border-t border-slate-200">
-        <p class="text-slate-500">
-          &copy; 2025 Healthcare Technology Blog. All rights reserved.
-        </p>
-      </footer>
-    </div>
+  <body>
+    <slot />
   </body>
 </html>

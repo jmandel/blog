@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "healthcare-tech-blog",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -13,16 +13,15 @@
     "astro",
     "blog",
     "healthcare",
-    "technology"
+    "technology",
+    "astro-paper"
   ],
   "author": "jmandel",
   "license": "ISC",
-  "description": "Healthcare Technology Blog",
+  "description": "Healthcare Technology Blog - Built with Astro Paper theme",
   "dependencies": {
     "@astrojs/markdown-remark": "^6.3.2",
     "@astrojs/rss": "^4.0.12",
-    "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.11.0",
-    "tailwindcss": "^4.1.11"
+    "astro": "^5.11.0"
   }
 }

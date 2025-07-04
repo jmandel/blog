@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
+import PostLayout from '../../layouts/PostLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -12,25 +12,15 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-
-function formatDate(date: Date | string): string {
-  const d = new Date(date);
-  return d.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-}
 ---
 
-<Layout title={post.data.title}>
-  <a href="/blog" class="back-link">← Back to posts</a>
-  <article class="prose">
-    <h1>{post.data.title}</h1>
-    <div class="post-date">Published on {formatDate(post.data.date)}</div>
-    {post.data.banner && (
-      <img src={post.data.banner} alt="" class="w-full max-w-2xl mx-auto my-8 rounded-lg shadow-sm" />
-    )}
-    <Content />
-  </article>
-</Layout>
+<PostLayout 
+  title={post.data.title} 
+  date={new Date(post.data.date)}
+  description={post.data.description}
+>
+  {post.data.banner && (
+    <img src={post.data.banner} alt="" />
+  )}
+  <Content />
+</PostLayout>
