@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+function formatDate(date: Date | string): string {
+  const d = new Date(date);
+  return d.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
+
+function getExcerpt(content: string): string {
+  // Extract first paragraph from content, remove HTML tags
+  const firstParagraph = content.split('\n').find(line => line.trim().length > 0) || '';
+  return firstParagraph.replace(/<[^>]*>/g, '').substring(0, 150) + '...';
+}
+---
+
+<BaseLayout 
+  title="Healthcare Technology Blog" 
+  description="Insights on healthcare IT, FHIR, EHR systems, and digital health innovation"
+>
+  <section>
+    <h1>Healthcare Technology Blog</h1>
+    <p>Insights on healthcare IT, FHIR, EHR systems, and digital health innovation</p>
+  </section>
+
+  <section>
+    <h2>Recent Posts</h2>
+    <ul class="posts-list">
+      {sortedPosts.map((post) => (
+        <li class="post-item">
+          <h3 class="post-title">
+            <a href={`/blog/posts/${post.slug}`}>{post.data.title}</a>
+          </h3>
+          <time class="post-date" datetime={new Date(post.data.date).toISOString()}>
+            {formatDate(post.data.date)}
+          </time>
+          <p class="post-excerpt">{getExcerpt(post.body)}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

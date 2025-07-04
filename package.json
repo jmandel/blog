@@ -1,0 +1,27 @@
+{
+  "name": "healthcare-tech-blog",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": [
+    "astro",
+    "blog",
+    "healthcare",
+    "technology",
+    "astro-paper"
+  ],
+  "author": "jmandel",
+  "license": "ISC",
+  "description": "Healthcare Technology Blog - Built with Astro Paper theme",
+  "dependencies": {
+    "@astrojs/markdown-remark": "^6.3.2",
+    "@astrojs/rss": "^4.0.12",
+    "astro": "^5.11.0"
+  }
+}
