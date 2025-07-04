@@ -1,5 +1,5 @@
 ---
-title: "Creating a &quot;Living Manual&quot; for EHI Export"
+title: "Creating a \"Living Manual\" for EHI Export"
 date: 2025-06-26T17:27:00
 slug: creating-a-living-manual-for-ehi-export
 original_url: "https://www.linkedin.com/pulse/creating-living-manual-ehi-export-josh-mandel-md-8bzrc"
@@ -7,8 +7,6 @@ linkedin_id: 8bzrc
 ---
 ![](https://media.licdn.com/mediaD5612AQGvrlglg7MayA)
 
-[Creating a "Living Manual" for EHI Export](/posts/creating-a-living-manual-for-ehi-export)
-===========================================================================================
 
 Created on 2025-06-26 17:27
 

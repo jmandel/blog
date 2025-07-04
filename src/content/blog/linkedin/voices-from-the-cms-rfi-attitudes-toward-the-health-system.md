@@ -7,8 +7,6 @@ linkedin_id: ydkjc
 ---
 ![](https://media.licdn.com/mediaD5612AQGj9egdZ9_3Tg)
 
-[Voices from the CMS RFI: Attitudes Toward the Health System](/posts/voices-from-the-cms-rfi-attitudes-toward-the-health-system)
-================================================================================================================================
 
 Created on 2025-07-02 20:11
 

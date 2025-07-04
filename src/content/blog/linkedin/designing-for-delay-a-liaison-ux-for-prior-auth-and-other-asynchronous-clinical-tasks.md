@@ -7,8 +7,6 @@ linkedin_id: fbvec
 ---
 ![](https://media.licdn.com/mediaD5612AQGyR0dBUBhoVA)
 
-[Designing for Delay: A Liaison UX for Prior Auth and Other Asynchronous Clinical Tasks](/posts/designing-for-delay-a-liaison-ux-for-prior-auth-and-other-asynchronous-clinical-tasks)
-======================================================================================================================================================================================
 
 Created on 2025-04-14 13:09
 

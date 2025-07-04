@@ -7,8 +7,6 @@ linkedin_id: 1zruc
 ---
 ![](https://media.licdn.com/mediaD5612AQHJStH1tjD4Cw)
 
-[How to Read 10,000 Pages of Public Comments](/posts/how-to-read-10000-pages-of-public-comments)
-================================================================================================
 
 Created on 2025-06-16 18:52
 

@@ -7,6 +7,8 @@ const blogCollection = defineCollection({
     date: z.union([z.date(), z.string()]),
     slug: z.string().optional(),
     banner: z.string().optional(),
+    original_url: z.string().optional(),
+    linkedin_id: z.string().optional(),
   }),
 });
 

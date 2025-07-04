@@ -1,5 +1,5 @@
 ---
-title: "Evaluating FHIR&#x27;s Evolution: AI-Assisted Analysis of R4→R6 Changes"
+title: "Evaluating FHIR's Evolution: AI-Assisted Analysis of R4→R6 Changes"
 date: 2025-05-09T18:38:00
 slug: evaluating-fhir-s-evolution-ai-assisted-analysis-of-r4-r6-changes
 original_url: "https://www.linkedin.com/pulse/evaluating-fhirs-evolution-ai-assisted-analysis-r4r6-josh-mandel-md-2srmc"
@@ -7,8 +7,6 @@ linkedin_id: 2srmc
 ---
 ![](https://media.licdn.com/mediaD5612AQH8UJ1qvdU-pw)
 
-[Evaluating FHIR's Evolution: AI-Assisted Analysis of R4→R6 Changes](/posts/evaluating-fhir-s-evolution-ai-assisted-analysis-of-r4-r6-changes)
-==============================================================================================================================================
 
 Created on 2025-05-09 18:38
 

@@ -7,8 +7,6 @@ linkedin_id: l0xec
 ---
 ![](https://media.licdn.com/mediaD5612AQGMXhAJMMIavQ)
 
-[o3 Meets The Enigma: A Tale of AI, Puzzles, and Prompt Engineering](/posts/o3-meets-the-enigma-a-tale-of-ai-puzzles-and-prompt-engineering)
-============================================================================================================================================
 
 Created on 2025-05-01 21:24
 

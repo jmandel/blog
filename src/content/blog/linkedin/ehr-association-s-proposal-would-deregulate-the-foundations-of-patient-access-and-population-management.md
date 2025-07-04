@@ -1,5 +1,5 @@
 ---
-title: "EHR Association&#x27;s Proposal Would Deregulate the Foundations of Patient Access and Population Management"
+title: "EHR Association's Proposal Would Deregulate the Foundations of Patient Access and Population Management"
 date: 2025-04-30T15:04:00
 slug: ehr-association-s-proposal-would-deregulate-the-foundations-of-patient-access-and-population-management
 original_url: "https://www.linkedin.com/pulse/ehr-associations-proposal-would-deregulate-patient-josh-mandel-md-xbzke"
@@ -7,8 +7,6 @@ linkedin_id: xbzke
 ---
 ![](https://media.licdn.com/mediaD4E12AQHW6h7cKSfWsA)
 
-[EHR Association's Proposal Would Deregulate the Foundations of Patient Access and Population Management](/posts/ehr-association-s-proposal-would-deregulate-the-foundations-of-patient-access-and-population-management)
-=========================================================================================================================================================================================================================
 
 Created on 2025-04-30 15:04
 
