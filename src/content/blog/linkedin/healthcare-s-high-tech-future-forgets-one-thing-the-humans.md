@@ -1,12 +1,10 @@
 ---
-title: "Healthcare&#x27;s High-Tech Future Forgets One Thing: The Humans?"
+title: "Healthcare's High-Tech Future Forgets One Thing: The Humans?"
 date: 2025-06-14T20:27:00
 slug: healthcare-s-high-tech-future-forgets-one-thing-the-humans
 original_url: "https://www.linkedin.com/pulse/healthcares-high-tech-future-forgets-one-thing-humans-josh-mandel-md-ignhc"
 linkedin_id: ignhc
 ---
-[Healthcare's High-Tech Future Forgets One Thing: The Humans?](/posts/healthcare-s-high-tech-future-forgets-one-thing-the-humans)
-=================================================================================================================================
 
 Created on 2025-06-14 20:27
 

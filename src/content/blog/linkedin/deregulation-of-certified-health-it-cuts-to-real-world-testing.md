@@ -7,8 +7,6 @@ linkedin_id: odpdc
 ---
 ![](https://media.licdn.com/mediaD5612AQGnt3KahPpUkg)
 
-[Deregulation of Certified Health IT: Cuts to Real World Testing](/posts/deregulation-of-certified-health-it-cuts-to-real-world-testing)
-========================================================================================================================================
 
 Created on 2025-07-02 21:07
 

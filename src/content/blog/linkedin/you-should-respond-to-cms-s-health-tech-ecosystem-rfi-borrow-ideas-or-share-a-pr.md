@@ -1,5 +1,5 @@
 ---
-title: "You should respond to CMS&#x27;s Health Tech Ecosystem RFI. Borrow ideas or share a PR!"
+title: "You should respond to CMS's Health Tech Ecosystem RFI. Borrow ideas or share a PR!"
 date: 2025-05-16T18:29:00
 slug: you-should-respond-to-cms-s-health-tech-ecosystem-rfi-borrow-ideas-or-share-a-pr
 original_url: "https://www.linkedin.com/pulse/you-should-respond-cmss-health-tech-ecosystem-rfi-ideas-mandel-md-fsloc"
@@ -7,8 +7,6 @@ linkedin_id: fsloc
 ---
 ![](https://media.licdn.com/mediaD5612AQHyWQv52i4nqw)
 
-[You should respond to CMS's Health Tech Ecosystem RFI. Borrow ideas or share a PR!](/posts/you-should-respond-to-cms-s-health-tech-ecosystem-rfi-borrow-ideas-or-share-a-pr)
-=============================================================================================================================================================================
 
 Created on 2025-05-16 18:29
 

@@ -452,6 +452,15 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 body_md
             )
             
+            # Remove self-referential links at the beginning of content
+            # Pattern: [Title text](/posts/slug) followed by equals signs (markdown header)
+            body_md = re.sub(
+                r'^\[.*?\]\(/posts/[^)]+\)\n=+\n',
+                '',
+                body_md,
+                flags=re.MULTILINE
+            )
+            
             # Find banner image
             banner_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.jpg"
             banner_png_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.png"
@@ -463,9 +472,11 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.png"
             
             # ------ write .md file ---------------------------------------
+            # Escape quotes in title for YAML, but avoid HTML entities
+            safe_title = title.replace('"', '\\"')
             fm_lines = [
                 "---",
-                f'title: "{html.escape(title)}"',
+                f'title: "{safe_title}"',
                 f"date: {date.isoformat()}",
                 f"slug: {slug}",
                 f'original_url: "{original_url}"',

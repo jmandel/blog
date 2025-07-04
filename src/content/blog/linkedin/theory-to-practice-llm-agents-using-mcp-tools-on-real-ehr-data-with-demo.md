@@ -7,8 +7,6 @@ linkedin_id: acknc
 ---
 ![](https://media.licdn.com/mediaD5612AQElZrWw7Gcq6w)
 
-[Theory to Practice: LLM Agents Using MCP Tools on Real EHR Data (with demo)](/posts/theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo)
-==============================================================================================================================================================
 
 Created on 2025-04-08 19:10
 

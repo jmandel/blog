@@ -1,5 +1,5 @@
 ---
-title: "CMS RFI MCP: Now It&#x27;s Your Turn to Analyze 10k Pages ;)"
+title: "CMS RFI MCP: Now It's Your Turn to Analyze 10k Pages ;)"
 date: 2025-07-02T04:22:00
 slug: cms-rfi-mcp-now-it-s-your-turn-to-analyze-10k-pages
 original_url: "https://www.linkedin.com/pulse/2025-07-02 04:22:13.0-CMS RFI MCP: Now It's Your Turn to Analyze 10k Pages ;)"

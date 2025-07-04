@@ -7,8 +7,6 @@ linkedin_id: tguxc
 ---
 ![](https://media.licdn.com/mediaD5612AQGG733Ddt1I9w)
 
-[Better Browser APIs for Sharing SMART Health Cards, FHIR Bundles, and other Digital Credentials](/posts/better-browser-apis-for-sharing-smart-health-cards-fhir-bundles-and-other-digital-credentials)
-=======================================================================================================================================================================================================
 
 Created on 2025-05-15 21:52
 

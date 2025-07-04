@@ -7,8 +7,6 @@ linkedin_id: v7zic
 ---
 ![](https://media.licdn.com/mediaD5612AQFhzDMQ-vcDYg)
 
-[MCP in Your Browser: Secure, Local LLM Tools with postMessage Transport](/posts/mcp-in-your-browser-secure-local-llm-tools-with-postmessage-transport)
-=======================================================================================================================================================
 
 Created on 2025-05-05 16:18
 

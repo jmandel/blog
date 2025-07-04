@@ -1,5 +1,5 @@
 ---
-title: "Real Trust in TEFCA: Why Individual Transparency and Control Can&#x27;t Be an Afterthought"
+title: "Real Trust in TEFCA: Why Individual Transparency and Control Can't Be an Afterthought"
 date: 2025-05-21T13:26:00
 slug: real-trust-in-tefca-why-individual-transparency-and-control-can-t-be-an-afterthought
 original_url: "https://www.linkedin.com/pulse/real-trust-tefca-why-individual-transparency-control-cant-mandel-md-pflgc"
@@ -7,8 +7,6 @@ linkedin_id: pflgc
 ---
 ![](https://media.licdn.com/mediaD5612AQGeq72z5v39jQ)
 
-[Real Trust in TEFCA: Why Individual Transparency and Control Can't Be an Afterthought](/posts/real-trust-in-tefca-why-individual-transparency-and-control-can-t-be-an-afterthought)
-====================================================================================================================================================================================
 
 Created on 2025-05-21 13:26
 

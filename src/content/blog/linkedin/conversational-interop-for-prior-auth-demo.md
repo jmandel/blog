@@ -7,8 +7,6 @@ linkedin_id: wjwxe
 ---
 ![](https://media.licdn.com/mediaD4E12AQH_x5CG7GJiyA)
 
-[Conversational Interop for Prior Auth (demo!)](/posts/conversational-interop-for-prior-auth-demo)
-==================================================================================================
 
 Created on 2025-04-25 15:38
 
