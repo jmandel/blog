@@ -287,6 +287,37 @@ def build_slug_mapping(article_zip: str) -> Dict[str, str]:
     
     return slug_mapping
 
+def build_linkedin_id_mapping(article_zip: str) -> Dict[str, str]:
+    """
+    Build a mapping of LinkedIn article IDs to local article slugs
+    """
+    id_to_slug_mapping = {}
+    
+    with zipfile.ZipFile(article_zip) as zin:
+        for info in zin.infolist():
+            if not info.filename.endswith(".html"):
+                continue
+                
+            raw = zin.read(info.filename).decode("utf-8", "ignore")
+            soup = BeautifulSoup(raw, "html.parser")
+            
+            # Extract title and create slug
+            title_tag = soup.find("h1")
+            if title_tag:
+                title = title_tag.get_text(strip=True)
+                slug = slugify(title, lowercase=True)
+                
+                # Look for LinkedIn article ID in embeds within this article
+                for iframe in soup.find_all("iframe"):
+                    src = iframe.get("src", "")
+                    if "linkedin.com/embeds/publishingEmbed.html" in src:
+                        article_match = re.search(r'articleId=(\d+)', src)
+                        if article_match:
+                            article_id = article_match.group(1)
+                            id_to_slug_mapping[article_id] = slug
+    
+    return id_to_slug_mapping
+
 def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: str) -> None:
     """
     Read a trimmed ZIP and emit cleaned Markdown files, replacing existing content.
@@ -297,6 +328,9 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
     
     # Build slug mapping for internal link rewriting
     slug_mapping = build_slug_mapping(article_zip)
+    
+    # Build LinkedIn ID to slug mapping for embed conversion
+    linkedin_id_mapping = build_linkedin_id_mapping(article_zip)
     
     # Clear existing blog content
     existing_content_dir = pathlib.Path(blog_base_dir) / CONTENT_DIR
@@ -314,6 +348,9 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
     
     # Load Rich_Media.csv
     rich_media = {}
+    processed_slugs = set()  # Track processed slugs to avoid duplicates
+    article_count = 0
+    
     with zipfile.ZipFile(article_zip) as zin:
         if "Rich_Media.csv" in zin.namelist():
             with zin.open("Rich_Media.csv") as f:
@@ -349,6 +386,13 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 print(f"[WARN] Could not generate slug for '{title}' in {info.filename}, skipping")
                 continue
             
+            # Check for duplicate slugs
+            if slug in processed_slugs:
+                print(f"[WARN] Duplicate slug '{slug}' for '{title}' in {info.filename}, skipping")
+                continue
+            
+            processed_slugs.add(slug)
+            
             # Build URL + ID (best-effort)
             basename = os.path.basename(info.filename)[:-5]  # strip .html
             m = ID_RE.search(basename)
@@ -381,9 +425,19 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 r'<iframe src="https://player.vimeo.com/video/\1" width="640" height="360" frameborder="0" allowfullscreen></iframe>',
                 body_md
             )
+            
+            # Convert LinkedIn embeds to local article links
+            def replace_linkedin_embed(match):
+                linkedin_id = match.group(1)
+                if linkedin_id in linkedin_id_mapping:
+                    local_slug = linkedin_id_mapping[linkedin_id]
+                    return f'[Related Article: {local_slug}](/posts/{local_slug})'
+                else:
+                    return f'[LinkedIn Article: {linkedin_id}]'
+            
             body_md = re.sub(
                 r'<!-- LINKEDIN:(\d+) -->',
-                r'[LinkedIn Article: \1]',
+                replace_linkedin_embed,
                 body_md
             )
             
@@ -438,8 +492,10 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 fp.write(body_md)
             
             print(f"[+] {md_filename} → {blog_md_path.relative_to(pathlib.Path(blog_base_dir))}")
+            article_count += 1
     
-    print(f"\n[✓] Markdown ready in {articles_dir}")
+    print(f"\n[✓] Processed {article_count} unique articles")
+    print(f"[✓] Markdown ready in {articles_dir}")
     print(f"[✓] Blog content updated in {existing_content_dir}")
 
 # --------------------------------------------------------------------------- #
