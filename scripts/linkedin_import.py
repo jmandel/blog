@@ -168,7 +168,6 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
     Returns a dict with image info including banner_url if found
     """
     images_dir = pathlib.Path(images_base_dir) / article_slug
-    images_dir.mkdir(parents=True, exist_ok=True)
     
     result = {"banner_url": None, "banner_filename": None}
     img_counter = 0
@@ -195,6 +194,9 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
             # Download the image
             response = requests.get(src, timeout=30)
             response.raise_for_status()
+            
+            # Create images directory only when we actually download something
+            images_dir.mkdir(parents=True, exist_ok=True)
             
             # Determine file extension
             content_type = response.headers.get('content-type', '')
@@ -233,60 +235,13 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
         except Exception as e:
             print(f"[WARN] Failed to download image {src}: {e}")
             
-            # Even if download failed, track banner info and create placeholder
+            # Track banner info but don't create placeholder files
             if is_banner:
                 result["banner_url"] = src
-                # Create placeholder banner
-                placeholder_filename = "banner.jpg"
-                result["banner_filename"] = placeholder_filename
-                placeholder_path = images_dir / placeholder_filename
-                
-                # Create a simple placeholder image
-                try:
-                    from PIL import Image, ImageDraw, ImageFont
-                    # Create a light gray banner with subtle text
-                    placeholder_img = Image.new('RGB', (800, 400), color='#f5f5f5')
-                    draw = ImageDraw.Draw(placeholder_img)
-                    
-                    # Add a subtle border
-                    draw.rectangle([10, 10, 790, 390], outline='#e0e0e0', width=2)
-                    
-                    # Add simple text
-                    try:
-                        # Try to use a better font if available
-                        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
-                    except:
-                        font = ImageFont.load_default()
-                    
-                    text = "Banner Image"
-                    # Get text bounding box for centering
-                    bbox = draw.textbbox((0, 0), text, font=font)
-                    text_width = bbox[2] - bbox[0]
-                    text_height = bbox[3] - bbox[1]
-                    x = (800 - text_width) // 2
-                    y = (400 - text_height) // 2
-                    
-                    draw.text((x, y), text, fill='#999999', font=font)
-                    placeholder_img.save(placeholder_path, 'JPEG', quality=80)
-                    print(f"[IMAGE] Created placeholder banner: {placeholder_filename}")
-                except ImportError:
-                    # Fallback: create a minimal SVG file if PIL not available
-                    svg_content = '''<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="400" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="2"/>
-  <text x="400" y="200" text-anchor="middle" dominant-baseline="middle" 
-        font-family="Arial, sans-serif" font-size="24" fill="#999999">Banner Image</text>
-</svg>'''
-                    with open(placeholder_path.with_suffix('.svg'), 'w') as f:
-                        f.write(svg_content)
-                    result["banner_filename"] = "banner.svg"
-                    print(f"[IMAGE] Created SVG placeholder banner: banner.svg")
-                
-                # Update img src to local placeholder
-                local_src = f"/images/{LINKEDIN_SUBDIR}/{article_slug}/{placeholder_filename}"
-                img["src"] = local_src
-            else:
-                # For non-banner images, just remove them if download failed
-                img.decompose()
+                print(f"[IMAGE] Banner image identified but not downloaded: {src}")
+            
+            # Remove failed images from HTML (both banner and non-banner)
+            img.decompose()
                 
     return result
 
