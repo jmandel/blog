@@ -23,6 +23,7 @@ from typing import Dict, Optional, List
 BLOG_BASE_URL = "https://joshuamandel.com"
 IMAGES_DIR = "public/images"
 CONTENT_DIR = "src/content/blog"
+LINKEDIN_SUBDIR = "linkedin"  # LinkedIn content goes in a subfolder
 
 # --------------------------------------------------------------------------- #
 # 1. Filtering step (unchanged from original)
@@ -117,31 +118,30 @@ def convert_video_embeds(soup: BeautifulSoup) -> None:
     """
     Transformation 4: Convert YouTube (and Vimeo) embeds to Astro components
     """
-    # Find LinkedIn video embeds
-    for embed_div in soup.find_all("div", class_="video-embed"):
-        iframe = embed_div.find("iframe")
-        if iframe and iframe.get("src"):
-            src = iframe["src"]
-            
-            # Extract YouTube video ID
-            youtube_match = re.search(r'youtube\.com/embed/([a-zA-Z0-9_-]+)', src)
-            if youtube_match:
-                video_id = youtube_match.group(1)
-                # Replace with a comment that can be post-processed
-                embed_div.replace_with(soup.new_string(f"<!-- YOUTUBE:{video_id} -->"))
-                print(f"[VIDEO] Converted YouTube embed: {video_id}")
-                continue
-            
-            # Extract Vimeo video ID  
-            vimeo_match = re.search(r'vimeo\.com/video/(\d+)', src)
-            if vimeo_match:
-                video_id = vimeo_match.group(1)
-                embed_div.replace_with(soup.new_string(f"<!-- VIMEO:{video_id} -->"))
-                print(f"[VIDEO] Converted Vimeo embed: {video_id}")
-    
-    # Also handle direct LinkedIn embeds
+    # Find all iframes that might contain video embeds
     for iframe in soup.find_all("iframe"):
         src = iframe.get("src", "")
+        if not src:
+            continue
+            
+        # Extract YouTube video ID
+        youtube_match = re.search(r'youtube\.com/embed/([a-zA-Z0-9_-]+)', src)
+        if youtube_match:
+            video_id = youtube_match.group(1)
+            # Replace with a comment that can be post-processed
+            iframe.replace_with(soup.new_string(f"<!-- YOUTUBE:{video_id} -->"))
+            print(f"[VIDEO] Converted YouTube embed: {video_id}")
+            continue
+        
+        # Extract Vimeo video ID  
+        vimeo_match = re.search(r'vimeo\.com/video/(\d+)', src)
+        if vimeo_match:
+            video_id = vimeo_match.group(1)
+            iframe.replace_with(soup.new_string(f"<!-- VIMEO:{video_id} -->"))
+            print(f"[VIDEO] Converted Vimeo embed: {video_id}")
+            continue
+            
+        # Handle LinkedIn embeds (keeping the original logic for backward compatibility)
         if "linkedin.com/embeds/publishingEmbed.html" in src:
             # Extract article ID from LinkedIn embed
             article_match = re.search(r'articleId=(\d+)', src)
@@ -150,6 +150,16 @@ def convert_video_embeds(soup: BeautifulSoup) -> None:
                 # Convert to a comment placeholder
                 iframe.replace_with(soup.new_string(f"<!-- LINKEDIN:{article_id} -->"))
                 print(f"[EMBED] Converted LinkedIn embed: {article_id}")
+    
+    # Also check for YouTube URLs in different patterns (fallback)
+    for a_tag in soup.find_all("a"):
+        href = a_tag.get("href", "")
+        youtube_match = re.search(r'youtube\.com/watch\?v=([a-zA-Z0-9_-]+)', href)
+        if youtube_match:
+            video_id = youtube_match.group(1)
+            # Replace link with embedded video placeholder
+            a_tag.replace_with(soup.new_string(f"<!-- YOUTUBE:{video_id} -->"))
+            print(f"[VIDEO] Converted YouTube link to embed: {video_id}")
 
 def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_base_dir: str) -> None:
     """
@@ -200,7 +210,7 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
                 f.write(response.content)
             
             # Update img src to local path
-            local_src = f"/images/{article_slug}/{filename}"
+            local_src = f"/images/{LINKEDIN_SUBDIR}/{article_slug}/{filename}"
             img["src"] = local_src
             
             # Remove LinkedIn-specific attributes
@@ -332,19 +342,19 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
     # Build LinkedIn ID to slug mapping for embed conversion
     linkedin_id_mapping = build_linkedin_id_mapping(article_zip)
     
-    # Clear existing blog content
-    existing_content_dir = pathlib.Path(blog_base_dir) / CONTENT_DIR
-    if existing_content_dir.exists():
-        print(f"[CLEAN] Removing existing content from {existing_content_dir}")
-        shutil.rmtree(existing_content_dir)
-    existing_content_dir.mkdir(parents=True, exist_ok=True)
+    # Clear existing LinkedIn blog content (idempotent approach)
+    linkedin_content_dir = pathlib.Path(blog_base_dir) / CONTENT_DIR / LINKEDIN_SUBDIR
+    if linkedin_content_dir.exists():
+        print(f"[CLEAN] Removing existing LinkedIn content from {linkedin_content_dir}")
+        shutil.rmtree(linkedin_content_dir)
+    linkedin_content_dir.mkdir(parents=True, exist_ok=True)
     
-    # Clear existing images
-    existing_images_dir = pathlib.Path(blog_base_dir) / IMAGES_DIR
-    if existing_images_dir.exists():
-        print(f"[CLEAN] Removing existing images from {existing_images_dir}")
-        shutil.rmtree(existing_images_dir)
-    existing_images_dir.mkdir(parents=True, exist_ok=True)
+    # Clear existing LinkedIn images
+    linkedin_images_dir = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR
+    if linkedin_images_dir.exists():
+        print(f"[CLEAN] Removing existing LinkedIn images from {linkedin_images_dir}")
+        shutil.rmtree(linkedin_images_dir)
+    linkedin_images_dir.mkdir(parents=True, exist_ok=True)
     
     # Load Rich_Media.csv
     rich_media = {}
@@ -404,7 +414,7 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             cleanup_redirect_wrappers(soup)
             cleanup_tracking_params(soup)
             convert_video_embeds(soup)
-            download_and_localize_images(soup, slug, str(pathlib.Path(blog_base_dir) / IMAGES_DIR))
+            download_and_localize_images(soup, slug, str(pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR))
             cleanup_css_and_classes(soup)
             
             # ------ Generate markdown -----------------------------------
@@ -442,14 +452,14 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             )
             
             # Find banner image
-            banner_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / slug / "banner.jpg"
-            banner_png_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / slug / "banner.png"
+            banner_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.jpg"
+            banner_png_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.png"
             
             banner_fm = None
             if banner_path.exists():
-                banner_fm = f"/images/{slug}/banner.jpg"
+                banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.jpg"
             elif banner_png_path.exists():
-                banner_fm = f"/images/{slug}/banner.png"
+                banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.png"
             
             # ------ write .md file ---------------------------------------
             fm_lines = [
@@ -486,7 +496,7 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 fp.write(body_md)
             
             # Blog content dir (for Astro)
-            blog_md_path = existing_content_dir / f"{slug}.md"
+            blog_md_path = linkedin_content_dir / f"{slug}.md"
             with blog_md_path.open("w", encoding="utf-8") as fp:
                 fp.write("\n".join(fm_lines))
                 fp.write(body_md)
@@ -496,7 +506,7 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
     
     print(f"\n[✓] Processed {article_count} unique articles")
     print(f"[✓] Markdown ready in {articles_dir}")
-    print(f"[✓] Blog content updated in {existing_content_dir}")
+    print(f"[✓] Blog content updated in {linkedin_content_dir}")
 
 # --------------------------------------------------------------------------- #
 # 4. Main execution
