@@ -478,7 +478,7 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             # Add component imports if needed
             imports = []
             if "<YouTube" in body_md:
-                imports.append("import YouTube from '../../components/YouTube.astro';")
+                imports.append("import YouTube from '../../../components/YouTube.astro';")
             
             if imports:
                 fm_lines.append("")
