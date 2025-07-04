@@ -127,9 +127,8 @@ def convert_video_embeds(soup: BeautifulSoup) -> None:
             youtube_match = re.search(r'youtube\.com/embed/([a-zA-Z0-9_-]+)', src)
             if youtube_match:
                 video_id = youtube_match.group(1)
-                # Replace with Astro component placeholder
-                new_tag = soup.new_tag("youtube", id=video_id)
-                embed_div.replace_with(new_tag)
+                # Replace with a comment that can be post-processed
+                embed_div.replace_with(soup.new_string(f"<!-- YOUTUBE:{video_id} -->"))
                 print(f"[VIDEO] Converted YouTube embed: {video_id}")
                 continue
             
@@ -137,8 +136,7 @@ def convert_video_embeds(soup: BeautifulSoup) -> None:
             vimeo_match = re.search(r'vimeo\.com/video/(\d+)', src)
             if vimeo_match:
                 video_id = vimeo_match.group(1)
-                new_tag = soup.new_tag("vimeo", id=video_id)
-                embed_div.replace_with(new_tag)
+                embed_div.replace_with(soup.new_string(f"<!-- VIMEO:{video_id} -->"))
                 print(f"[VIDEO] Converted Vimeo embed: {video_id}")
     
     # Also handle direct LinkedIn embeds
@@ -149,10 +147,8 @@ def convert_video_embeds(soup: BeautifulSoup) -> None:
             article_match = re.search(r'articleId=(\d+)', src)
             if article_match:
                 article_id = article_match.group(1)
-                # Convert to a simpler placeholder for now
-                new_tag = soup.new_tag("div", class_="linkedin-embed")
-                new_tag.string = f"[LinkedIn Article: {article_id}]"
-                iframe.replace_with(new_tag)
+                # Convert to a comment placeholder
+                iframe.replace_with(soup.new_string(f"<!-- LINKEDIN:{article_id} -->"))
                 print(f"[EMBED] Converted LinkedIn embed: {article_id}")
 
 def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_base_dir: str) -> None:
@@ -374,6 +370,23 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             else:
                 body_md = md(str(soup), strip=["script", "style"])
             
+            # Post-process to convert video placeholders to Astro components
+            body_md = re.sub(
+                r'<!-- YOUTUBE:([a-zA-Z0-9_-]+) -->',
+                r'<YouTube id="\1" />',
+                body_md
+            )
+            body_md = re.sub(
+                r'<!-- VIMEO:(\d+) -->',
+                r'<iframe src="https://player.vimeo.com/video/\1" width="640" height="360" frameborder="0" allowfullscreen></iframe>',
+                body_md
+            )
+            body_md = re.sub(
+                r'<!-- LINKEDIN:(\d+) -->',
+                r'[LinkedIn Article: \1]',
+                body_md
+            )
+            
             # Find banner image
             banner_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / slug / "banner.jpg"
             banner_png_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / slug / "banner.png"
@@ -396,7 +409,18 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 fm_lines.append(f"linkedin_id: {art_id}")
             if banner_fm:
                 fm_lines.append(f"banner: {banner_fm}")
-            fm_lines.append("---\n")
+            fm_lines.append("---")
+            
+            # Add component imports if needed
+            imports = []
+            if "<YouTube" in body_md:
+                imports.append("import YouTube from '../../components/YouTube.astro';")
+            
+            if imports:
+                fm_lines.append("")
+                fm_lines.extend(imports)
+            
+            fm_lines.append("")  # Empty line before content
             
             # Write to both output dir and blog content dir
             md_filename = f"{date.date()}-{slug}.md"
