@@ -16,6 +16,10 @@ dist/
 # macOS-specific files
 .DS_Store
 
+# LinkedIn import working directory
+linkedin_work/
+*.zip
+
 # Windows-specific files
 Thumbs.db
 
