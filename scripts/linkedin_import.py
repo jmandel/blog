@@ -224,22 +224,29 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
             banner_found_in_csv = True
             banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
         
-        # If no exact match, try within a 10-minute window
+        # If no exact match, find the closest match within a time window
         if not banner_found_in_csv:
+            best_match = None
+            best_time_diff = float('inf')
+            
             for time_key, banner_url in cover_photos.items():
                 try:
                     csv_dt = dt.datetime.strptime(time_key, "%Y-%m-%d %H:%M")
                     time_diff = abs((article_datetime - csv_dt).total_seconds())
                     
                     # Within 2 hours (articles often have banners uploaded much later)
-                    if time_diff <= 7200:
-                        print(f"[CSV] Matched banner within {int(time_diff/60)} minutes: {time_key}")
-                        banner_found_in_csv = True
-                        banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
-                        if banner_downloaded:
-                            break
+                    if time_diff <= 7200 and time_diff < best_time_diff:
+                        best_match = (time_key, banner_url)
+                        best_time_diff = time_diff
                 except Exception as e:
                     continue
+            
+            # Use the best match found
+            if best_match:
+                time_key, banner_url = best_match
+                print(f"[CSV] Matched banner within {int(best_time_diff/60)} minutes: {time_key}")
+                banner_found_in_csv = True
+                banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
     
     # Process other images from HTML content
     for img in soup.find_all("img"):
