@@ -55,6 +55,16 @@ python3 "$SCRIPT_DIR/linkedin_import.py" "$EXPORT_FILE" --workdir "$WORKDIR" --b
 echo "[TEST] Testing Astro build..."
 npm run build
 
+# Check banner image status
+echo "[BANNER] Checking banner image status..."
+BANNER_COUNT=$(find public/images/linkedin -name "banner.*" 2>/dev/null | wc -l)
+echo "[BANNER] Found $BANNER_COUNT banner images"
+
+# Check posts with banners in frontmatter
+BANNER_POSTS=$(grep -l "^banner:" src/content/blog/linkedin/*.md 2>/dev/null | wc -l)
+echo "[BANNER] $BANNER_POSTS posts have banner frontmatter"
+
 echo "[SUCCESS] LinkedIn import completed successfully!"
 echo "[INFO] Working files are in: $WORKDIR"
 echo "[INFO] Blog content has been replaced with processed LinkedIn articles"
+echo "[INFO] Banner images are ready for blog posts"

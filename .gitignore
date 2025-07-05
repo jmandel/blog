@@ -19,12 +19,17 @@ dist/
 # LinkedIn import working directories
 linkedin_work/
 linkedin_work_*/
+test_linkedin_work*/
+test_debug/
+test_final/
 test_*_import/
 # Generated LinkedIn content (auto-imported during build)
 src/content/blog/linkedin/
 # Exclude zip files except those in LinkedIn exports folder
 *.zip
 !LinkedIn\ exports/*.zip
+# Rich_Media.csv is only needed during testing
+Rich_Media.csv
 
 # Windows-specific files
 Thumbs.db

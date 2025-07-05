@@ -16,6 +16,7 @@ from slugify import slugify
 from markdownify import markdownify as md
 import requests
 from typing import Dict, Optional, List
+from datetime import datetime
 
 # --------------------------------------------------------------------------- #
 # Configuration
@@ -162,13 +163,85 @@ def convert_video_embeds(soup: BeautifulSoup) -> None:
             a_tag.replace_with(soup.new_string(f"<!-- YOUTUBE:{video_id} -->"))
             print(f"[VIDEO] Converted YouTube link to embed: {video_id}")
 
-def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_base_dir: str) -> None:
+def parse_rich_media_csv(rich_media_data: List[Dict[str, str]]) -> Dict[str, str]:
     """
-    Transformation 5: Download images from LinkedIn CDN and rewrite src to local paths
+    Parse Rich_Media.csv data to extract article cover photos by date/time.
+    Returns a mapping of datetime strings to media URLs.
+    """
+    cover_photos = {}
+    
+    for row in rich_media_data:
+        description = row.get("Date/Time", "")
+        media_link = row.get("Media Link", "")
+        
+        # Look for article cover photo entries
+        if "article cover photo" in description and media_link:
+            # Extract timestamp from description like "You uploaded a article cover photo on July 2, 2025 at 4:22 AM (GMT)"
+            import re
+            time_match = re.search(r'on ([A-Za-z]+ \d+, \d+) at (\d+:\d+) (AM|PM)', description)
+            if time_match:
+                date_str = time_match.group(1)
+                time_str = time_match.group(2)
+                ampm = time_match.group(3)
+                
+                try:
+                    # Parse the date and time
+                    from datetime import datetime
+                    full_time_str = f"{date_str} {time_str} {ampm}"
+                    dt_obj = datetime.strptime(full_time_str, "%B %d, %Y %I:%M %p")
+                    
+                    # Create a key that can match article timestamps
+                    time_key = dt_obj.strftime("%Y-%m-%d %H:%M")
+                    cover_photos[time_key] = media_link
+                    print(f"[CSV] Found cover photo for {time_key}: {media_link[:60]}...")
+                    
+                except Exception as e:
+                    print(f"[WARN] Failed to parse timestamp from: {description}")
+    
+    return cover_photos
+
+def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_base_dir: str, 
+                                 article_datetime: dt.datetime = None, cover_photos: Dict[str, str] = None) -> Dict[str, str]:
+    """
+    Transformation 5: Download images from LinkedIn CDN and rewrite src to local paths.
+    Now enhanced to use Rich_Media.csv data for banner images.
+    Returns a dict with image info including banner_url if found
     """
     images_dir = pathlib.Path(images_base_dir) / article_slug
-    images_dir.mkdir(parents=True, exist_ok=True)
+    result = {"banner_url": None, "banner_filename": None}
+    img_counter = 0
     
+    # First try to find banner from Rich_Media.csv using article timestamp
+    banner_downloaded = False
+    banner_found_in_csv = False
+    if article_datetime and cover_photos:
+        # Try to match by exact time (HH:MM) and within a 10 minute window
+        article_time_key = article_datetime.strftime("%Y-%m-%d %H:%M")
+        
+        # Look for exact match first
+        if article_time_key in cover_photos:
+            banner_url = cover_photos[article_time_key]
+            banner_found_in_csv = True
+            banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
+        
+        # If no exact match, try within a 10-minute window
+        if not banner_found_in_csv:
+            for time_key, banner_url in cover_photos.items():
+                try:
+                    csv_dt = dt.datetime.strptime(time_key, "%Y-%m-%d %H:%M")
+                    time_diff = abs((article_datetime - csv_dt).total_seconds())
+                    
+                    # Within 10 minutes
+                    if time_diff <= 600:
+                        print(f"[CSV] Matched banner within {int(time_diff/60)} minutes: {time_key}")
+                        banner_found_in_csv = True
+                        banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
+                        if banner_downloaded:
+                            break
+                except Exception as e:
+                    continue
+    
+    # Process other images from HTML content
     for img in soup.find_all("img"):
         src = img.get("src") or img.get("data-delayed-url")
         if not src:
@@ -181,11 +254,31 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
         # Skip if not from LinkedIn CDN
         if "media.licdn.com" not in src:
             continue
+        
+        # Skip malformed LinkedIn URLs from HTML (incomplete URLs like /mediaXXXX)
+        # These are incomplete and should be ignored in favor of CSV data
+        if "/media" in src and "/dms/image/" not in src:
+            print(f"[SKIP] Ignoring malformed HTML image URL: {src}")
+            # If this was the first image and we have CSV banner, don't process HTML banner
+            if img_counter == 0 and banner_found_in_csv:
+                img.decompose()  # Remove from HTML
+                continue
+            img.decompose()  # Always remove malformed URLs
+            continue
             
+        img_counter += 1
+        
+        # If we already have a banner from CSV, treat this as a regular image
+        # If CSV banner was found but not downloaded, still prioritize CSV over HTML
+        is_banner = (img_counter == 1 and not banner_found_in_csv)
+        
         try:
             # Download the image
             response = requests.get(src, timeout=30)
             response.raise_for_status()
+            
+            # Create images directory only when we actually download something
+            images_dir.mkdir(parents=True, exist_ok=True)
             
             # Determine file extension
             content_type = response.headers.get('content-type', '')
@@ -199,9 +292,9 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
                 ext = '.jpg'  # Default
             
             # Generate filename
-            img_counter = len(list(images_dir.glob("*"))) + 1
-            if img_counter == 1:
+            if is_banner:
                 filename = f"banner{ext}"
+                result["banner_filename"] = filename
             else:
                 filename = f"image-{img_counter}{ext}"
             
@@ -223,6 +316,59 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
             
         except Exception as e:
             print(f"[WARN] Failed to download image {src}: {e}")
+            
+            # Only use HTML image as banner fallback if no CSV banner was found
+            if is_banner and not result.get("banner_url"):
+                result["banner_url"] = src
+                print(f"[IMAGE] Banner image identified but not downloaded: {src}")
+            
+            # Remove failed images from HTML (both banner and non-banner)
+            img.decompose()
+                
+    return result
+
+def try_download_banner(banner_url: str, images_dir: pathlib.Path, result: Dict[str, str], article_slug: str) -> bool:
+    """
+    Helper function to try downloading a banner image from Rich_Media.csv data.
+    Returns True if successful, False otherwise.
+    Always preserves the full banner URL regardless of download success.
+    """
+    # Always store the full banner URL from CSV, even if download fails
+    result["banner_url"] = banner_url
+    
+    try:
+        print(f"[CSV] Attempting to download banner from CSV: {banner_url[:60]}...")
+        response = requests.get(banner_url, timeout=30)
+        response.raise_for_status()
+        
+        # Create images directory only when we actually download something
+        images_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Determine file extension
+        content_type = response.headers.get('content-type', '')
+        if 'jpeg' in content_type or 'jpg' in content_type:
+            ext = '.jpg'
+        elif 'png' in content_type:
+            ext = '.png'
+        elif 'gif' in content_type:
+            ext = '.gif'
+        else:
+            ext = '.jpg'  # Default
+        
+        filename = f"banner{ext}"
+        img_path = images_dir / filename
+        
+        with open(img_path, 'wb') as f:
+            f.write(response.content)
+        
+        result["banner_filename"] = filename
+        print(f"[CSV] Successfully downloaded banner: {filename}")
+        return True
+        
+    except Exception as e:
+        print(f"[WARN] Failed to download banner from CSV {banner_url}: {e}")
+        # URL is already stored above, so the banner will still work in production
+        return False
 
 def cleanup_css_and_classes(soup: BeautifulSoup) -> None:
     """
@@ -358,7 +504,7 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
     linkedin_images_dir.mkdir(parents=True, exist_ok=True)
     
     # Load Rich_Media.csv
-    rich_media = {}
+    rich_media_data = []
     processed_slugs = set()  # Track processed slugs to avoid duplicates
     article_count = 0
     
@@ -367,8 +513,12 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             with zin.open("Rich_Media.csv") as f:
                 reader = csv.DictReader((l.decode("utf-8", "ignore") for l in f))
                 for row in reader:
-                    rich_media[row.get("Description", "")] = row
-        
+                    rich_media_data.append(row)
+    
+    # Parse cover photos from Rich_Media.csv
+    cover_photos = parse_rich_media_csv(rich_media_data)
+    
+    with zipfile.ZipFile(article_zip) as zin:
         # Process each HTML article
         for info in zin.infolist():
             if not info.filename.endswith(".html"):
@@ -415,7 +565,7 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             cleanup_redirect_wrappers(soup)
             cleanup_tracking_params(soup)
             convert_video_embeds(soup)
-            download_and_localize_images(soup, slug, str(pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR))
+            image_info = download_and_localize_images(soup, slug, str(pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR), date, cover_photos)
             cleanup_css_and_classes(soup)
             
             # ------ Generate markdown -----------------------------------
@@ -461,15 +611,27 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 flags=re.MULTILINE
             )
             
-            # Find banner image
-            banner_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.jpg"
-            banner_png_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.png"
-            
+            # Find banner image - use info from image processing
             banner_fm = None
-            if banner_path.exists():
-                banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.jpg"
-            elif banner_png_path.exists():
-                banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.png"
+            if image_info.get("banner_filename"):
+                # Use the banner filename from image processing (successful download)
+                banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/{image_info['banner_filename']}"
+            elif image_info.get("banner_url"):
+                # Use the banner URL from CSV data (even if download failed)
+                # This allows the banner to work in production environments with internet access
+                banner_fm = image_info["banner_url"]
+            else:
+                # Fallback to checking for existing files (for backwards compatibility)
+                banner_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.jpg"
+                banner_png_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.png"
+                banner_gif_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.gif"
+                
+                if banner_path.exists():
+                    banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.jpg"
+                elif banner_png_path.exists():
+                    banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.png"
+                elif banner_gif_path.exists():
+                    banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.gif"
             
             # ------ write .md file ---------------------------------------
             # Escape quotes in title for YAML, but avoid HTML entities
