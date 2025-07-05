@@ -213,6 +213,7 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
     
     # First try to find banner from Rich_Media.csv using article timestamp
     banner_downloaded = False
+    banner_found_in_csv = False
     if article_datetime and cover_photos:
         # Try to match by exact time (HH:MM) and within a 10 minute window
         article_time_key = article_datetime.strftime("%Y-%m-%d %H:%M")
@@ -220,10 +221,11 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
         # Look for exact match first
         if article_time_key in cover_photos:
             banner_url = cover_photos[article_time_key]
+            banner_found_in_csv = True
             banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
         
         # If no exact match, try within a 10-minute window
-        if not banner_downloaded:
+        if not banner_found_in_csv:
             for time_key, banner_url in cover_photos.items():
                 try:
                     csv_dt = dt.datetime.strptime(time_key, "%Y-%m-%d %H:%M")
@@ -232,6 +234,7 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
                     # Within 10 minutes
                     if time_diff <= 600:
                         print(f"[CSV] Matched banner within {int(time_diff/60)} minutes: {time_key}")
+                        banner_found_in_csv = True
                         banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
                         if banner_downloaded:
                             break
@@ -251,11 +254,23 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
         # Skip if not from LinkedIn CDN
         if "media.licdn.com" not in src:
             continue
+        
+        # Skip malformed LinkedIn URLs from HTML (incomplete URLs like /mediaXXXX)
+        # These are incomplete and should be ignored in favor of CSV data
+        if "/media" in src and "/dms/image/" not in src:
+            print(f"[SKIP] Ignoring malformed HTML image URL: {src}")
+            # If this was the first image and we have CSV banner, don't process HTML banner
+            if img_counter == 0 and banner_found_in_csv:
+                img.decompose()  # Remove from HTML
+                continue
+            img.decompose()  # Always remove malformed URLs
+            continue
             
         img_counter += 1
         
         # If we already have a banner from CSV, treat this as a regular image
-        is_banner = (img_counter == 1 and not banner_downloaded)
+        # If CSV banner was found but not downloaded, still prioritize CSV over HTML
+        is_banner = (img_counter == 1 and not banner_found_in_csv)
         
         try:
             # Download the image
@@ -302,8 +317,8 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
         except Exception as e:
             print(f"[WARN] Failed to download image {src}: {e}")
             
-            # Track banner info but don't create placeholder files
-            if is_banner and not result.get("banner_url"):  # Only set if not already set by CSV
+            # Only use HTML image as banner fallback if no CSV banner was found
+            if is_banner and not result.get("banner_url"):
                 result["banner_url"] = src
                 print(f"[IMAGE] Banner image identified but not downloaded: {src}")
             
