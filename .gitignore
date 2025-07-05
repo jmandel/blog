@@ -23,6 +23,8 @@ test_linkedin_work*/
 test_debug/
 test_final/
 test_*_import/
+# All temporary test directories
+test_*/
 # Generated LinkedIn content (auto-imported during build)
 src/content/blog/linkedin/
 # Exclude zip files except those in LinkedIn exports folder
