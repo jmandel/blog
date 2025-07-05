@@ -4,7 +4,7 @@ date: 2025-07-02T21:07:00
 slug: deregulation-of-certified-health-it-cuts-to-real-world-testing
 original_url: "https://www.linkedin.com/pulse/deregulation-certified-health-cuts-real-world-testing-josh-mandel-md-odpdc"
 linkedin_id: odpdc
-banner: https://media.licdn.com/mediaD5612AQGnt3KahPpUkg
+banner: https://media.licdn.com/dms/image/v2/D5612AQGj9egdZ9_3Tg/article-cover_image-shrink_720_1280/B56ZfM0jmRGQAM-/0/1751488022721?e=2147483647&v=beta&t=SuRW8Mn_HcRJE96iePAemnU9AX3xHxcAnQ1ozvzeTMk
 ---
 
 Created on 2025-07-02 21:07

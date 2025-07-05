@@ -4,7 +4,7 @@ date: 2025-06-21T15:58:00
 slug: the-real-story-behind-epic-s-0-0000055-ehi-export-rate
 original_url: "https://www.linkedin.com/pulse/real-story-behind-epics-00000055-ehi-export-rate-josh-mandel-md-vuo7c"
 linkedin_id: vuo7c
-banner: https://media.licdn.com/mediaD5612AQFefIMziFNreA
+banner: https://media.licdn.com/dms/image/v2/D5612AQFefIMziFNreA/article-cover_image-shrink_720_1280/B56ZeTRE7WHQAM-/0/1750522424904?e=2147483647&v=beta&t=XI_InjyfF9EeQK7UcMXqJwTINWtwj0ZyDx8pJwkzTMI
 ---
 
 Created on 2025-06-21 15:58
