@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "python3 scripts/download_banner_images.py && npx astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

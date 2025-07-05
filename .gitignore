@@ -7,6 +7,9 @@ node_modules/
 dist/
 .astro/
 
+# Downloaded banner images (downloaded during build)
+public/images/
+
 # Environment variables
 .env
 .env.local
@@ -81,4 +84,4 @@ jspm_packages/
 .yarn-integrity
 
 # dotenv environment variables file
-.env.testtest_debug/
+.env.test

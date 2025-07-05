@@ -16,6 +16,7 @@ The LinkedIn import pipeline is designed to be **idempotent** - it can be run mu
 ## Files
 
 - `linkedin_import.py` - Main import script with all transformations
+- `download_banner_images.py` - Build-time script for downloading banner images
 - `import_linkedin.sh` - Simple wrapper script for easy execution
 - `download_and_import.sh` - Script that downloads the sample export and runs import
 - `requirements.txt` - Python dependencies
@@ -59,6 +60,14 @@ npm run build
    - Converts to clean Markdown with proper front matter
 3. **Replaces** existing blog content in `src/content/blog/`
 4. **Tests** that the Astro build still works
+
+## Build-Time Banner Image Download
+
+The `download_banner_images.py` script runs automatically during `npm run build` to:
+- Download LinkedIn banner images that haven't been fetched yet
+- Update markdown files to reference local images instead of remote URLs
+- Prevent banner image expiration by storing them locally
+- Only download images that don't already exist (idempotent operation)
 
 ## Output
 
