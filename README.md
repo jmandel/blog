@@ -1,20 +1,14 @@
-# Healthcare Technology Blog
+# Interop Blog
 
-A static blog built with [Astro](https://astro.build) featuring insights and analysis on healthcare IT, FHIR standards, EHR systems, and digital health innovation.
+A static blog built with [Astro](https://astro.build) featuring insights and analysis on healthcare interoperability, FHIR standards, EHR systems, and digital health innovation.
 
 ## Features
 
-- **Static Site Generation**: Built with Astro for fast loading and excellent SEO
-- **Responsive Design**: Clean, professional layout that works on all devices
-- **Content Collections**: Organized blog posts with frontmatter support
-- **GitHub Pages Integration**: Automatic deployment on every commit
-- **Healthcare Focus**: Specialized content covering:
-  - Healthcare interoperability and FHIR standards
-  - Electronic Health Record (EHR) systems and regulations
-  - Prior authorization and clinical workflow optimization
-  - AI and machine learning applications in healthcare
-  - Digital health policy and CMS regulations
-  - Model Context Protocol (MCP) and healthcare AI integration
+- **Static Site Generation** – Built with Astro for fast loading and great SEO.
+- **Responsive Design** – Clean, professional layout that works on all devices.
+- **Content Collections** – Markdown frontmatter drives post metadata and routing.
+- **GitHub Pages Integration** – Automatic deployment on every push to `main`.
+- **Healthcare Focus** – Specialized content covering policy, interoperability, and MCP/AI topics.
 
 ## Getting Started
 
@@ -22,26 +16,23 @@ A static blog built with [Astro](https://astro.build) featuring insights and ana
 
 - Node.js 18 or higher
 - npm
+- Python 3.9+ (required for the LinkedIn import tooling)
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jmandel/blog.git
-   cd blog
-   ```
+```bash
+git clone https://github.com/jmandel/blog.git
+cd blog
+npm install
+```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+### Local Development
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+Run the Astro dev server and open <http://localhost:4321/blog>:
 
-4. Open [http://localhost:4321/blog](http://localhost:4321/blog) in your browser
+```bash
+npm run dev
+```
 
 ### Building for Production
 
@@ -49,49 +40,76 @@ A static blog built with [Astro](https://astro.build) featuring insights and ana
 npm run build
 ```
 
-The built site will be available in the `dist/` directory.
+For a full verification that includes banner normalization and the Astro build, run:
+
+```bash
+npm run test-build
+```
+
+The production-ready site is emitted into the `dist/` directory.
 
 ## Project Structure
 
 ```
-├── public/              # Static assets
+├── public/              # Static assets copied as-is (includes banner images)
 ├── src/
 │   ├── content/
-│   │   └── blog/       # Blog posts (Markdown)
-│   ├── layouts/        # Page layouts
-│   ├── pages/          # Page components
-│   └── components/     # Reusable components
-├── .github/
-│   └── workflows/      # GitHub Actions
-└── astro.config.mjs    # Astro configuration
+│   │   └── blog/        # Markdown posts with frontmatter
+│   ├── layouts/
+│   ├── pages/
+│   └── components/
+├── scripts/             # LinkedIn import + banner tooling
+├── LinkedIn exports/    # Optional storage for raw LinkedIn ZIP files (ignored)
+└── .github/workflows/   # GitHub Pages deployment workflow
 ```
 
 ## Adding Content
 
-Blog posts are stored in `src/content/blog/` as Markdown files with frontmatter:
+Blog posts live in `src/content/blog/` as Markdown files with frontmatter:
 
 ```markdown
 ---
 title: "Your Post Title"
 date: 2025-01-01T00:00:00
 slug: your-post-slug
-banner: "https://example.com/image.jpg"
+banner: /images/linkedin/your-post-slug/banner.jpg
 ---
 
-Your post content here...
+Post content here…
 ```
+
+Banner images should point at local paths under `/images/linkedin/{slug}/` so the static site is self-contained.
+
+## LinkedIn Import Workflow
+
+Most content is generated from LinkedIn exports. The helper script will set everything up (including the `uv` environment) and validate the Astro build for you:
+
+```bash
+./scripts/local-import.sh "LinkedIn exports/2025-07-02-export.zip"
+```
+
+The script handles:
+
+1. Creating/updating a `.venv-import` `uv` environment and syncing `scripts/requirements.txt`.
+2. Running `scripts/linkedin_import.py` to rewrite `src/content/blog/linkedin/{slug}/index.md` and download banners into the same folder (`banner.png`).
+3. Re-running `scripts/download_banner_images.py` to catch any lingering remote banners.
+4. Installing Node dependencies (if needed) and executing `npm run test-build` to ensure Astro still builds.
+
+Afterward, review the git diff, commit `src/content/`, and push. GitHub Actions will build and deploy the already-generated static site.
+
+If you need to run each step manually (for debugging, custom dirs, etc.), see `scripts/README.md` for the explicit commands.
 
 ## Deployment
 
-The site automatically deploys to GitHub Pages when changes are pushed to the main branch. The deployment is handled by the GitHub Actions workflow in `.github/workflows/deploy.yml`.
+Deployments are handled by GitHub Actions (`.github/workflows/deploy.yml`). The workflow checks out the repository, installs Node dependencies, runs `npm run build`, and publishes the resulting `dist/` folder to GitHub Pages.
 
 ## Technologies Used
 
-- [Astro](https://astro.build) - Static site generator
-- [Markdown](https://www.markdownguide.org/) - Content format
-- [GitHub Pages](https://pages.github.com/) - Hosting
-- [GitHub Actions](https://github.com/features/actions) - CI/CD
+- [Astro](https://astro.build)
+- [Markdown](https://www.markdownguide.org/)
+- [GitHub Pages](https://pages.github.com/)
+- [GitHub Actions](https://github.com/features/actions)
 
 ## License
 
-ISC License - see the package.json file for details.
+ISC License – see `package.json` for details.

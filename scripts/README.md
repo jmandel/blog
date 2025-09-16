@@ -4,81 +4,80 @@ This directory contains scripts to import and process LinkedIn article exports f
 
 ## Overview
 
-The LinkedIn import pipeline is designed to be **idempotent** - it can be run multiple times to replace all blog content with an updated LinkedIn export. It performs the following transformations:
+The LinkedIn import pipeline is designed to be **idempotent** – it can be run repeatedly to replace all LinkedIn-derived blog content with a fresh export. The tooling handles:
 
-1. **LinkedIn Link Rewriting**: Converts links to other LinkedIn articles to point to local blog posts
-2. **Redirect Unwrapping**: Strips LinkedIn redirect wrappers to reveal real external URLs
-3. **Tracking Parameter Removal**: Removes tracking parameters (`?trk=...`, `?utm_source=...`, etc.)
-4. **Video Embed Conversion**: Converts YouTube/Vimeo embeds to simple placeholders
-5. **Image Localization**: Downloads images from LinkedIn CDN and rewrites paths to local copies
-6. **CSS/Class Cleanup**: Removes LinkedIn-specific CSS classes and inline styles
+1. **LinkedIn Link Rewriting**: Converts links to other LinkedIn articles so they point to local `/posts/{slug}` pages.
+2. **Redirect Unwrapping**: Strips LinkedIn redirect wrappers to reveal the true external destination.
+3. **Tracking Parameter Removal**: Removes `?trk=…`, `?utm_*`, and similar query params.
+4. **Video Embed Conversion**: Converts YouTube and Vimeo embeds into simple placeholders that render with Astro shortcodes.
+5. **Image Localization**: Downloads inline images and post banners, rewriting markdown to use local copies.
+6. **CSS/Class Cleanup**: Removes LinkedIn-specific CSS classes and inline styles.
 
 ## Files
 
-- `linkedin_import.py` - Main import script with all transformations
-- `download_banner_images.py` - Build-time script for downloading banner images
-- `import_linkedin.sh` - Simple wrapper script for easy execution
-- `download_and_import.sh` - Script that downloads the sample export and runs import
-- `requirements.txt` - Python dependencies
+- `local-import.sh` – One-command workflow for importing a ZIP, normalizing banners, and test-building the site.
+- `linkedin_import.py` – Main import script with all transformations.
+- `download_banner_images.py` – Normalizes banner images across existing markdown.
+- `import_linkedin.sh` – Legacy wrapper retained for backwards compatibility.
+- `requirements.txt` – Python dependencies for the Python-based tooling.
 
-## Usage
+## Recommended Local Workflow
 
-### Basic Import
+Run the helper script and let it orchestrate everything:
 
 ```bash
-# Install dependencies and run import
-./scripts/import_linkedin.sh path/to/linkedin-export.zip
+./scripts/local-import.sh path/to/linkedin-export.zip
 ```
 
-### Manual Process
+### What the script does
+
+1. Ensures a `.venv-import` `uv` environment exists and syncs `scripts/requirements.txt`.
+2. Runs `linkedin_import.py` to regenerate `src/content/blog/linkedin/{slug}/index.md` and download banners into the same folder.
+3. Re-runs `download_banner_images.py` (via the same `uv` env) to catch any remaining remote references.
+4. Installs Node dependencies on first run and executes `npm run test-build` to verify Astro builds.
+
+After the script finishes, review the git diff, commit, and push to trigger GitHub Pages.
+
+### Manual Workflow (optional)
+
+If you need fine-grained control or want to output to a scratch directory, you can execute the individual steps yourself:
 
 ```bash
-# 1. Install dependencies
+uv venv .venv-import
+uv pip sync --python .venv-import scripts/requirements.txt
+uv run --python .venv-import python scripts/linkedin_import.py linkedin-export.zip --workdir linkedin_work --blog-dir .
+uv run --python .venv-import python scripts/download_banner_images.py
+npm run test-build
+```
+
+## Manual Process
+
+If you need to run each step by hand:
+
+```bash
 pip3 install -r scripts/requirements.txt
-
-# 2. Run the import
-python3 scripts/linkedin_import.py linkedin-export.zip --blog-dir .
-
-# 3. Test the build
-npm run build
+python3 scripts/linkedin_import.py linkedin-export.zip --workdir linkedin_work --blog-dir .
+python3 scripts/download_banner_images.py
+npm run test-build
 ```
 
-### Download Sample and Import
+## Continuous Deployment Notes
 
-```bash
-# Downloads the sample export from the GitHub issue and runs import
-./scripts/download_and_import.sh
-```
-
-## What the Pipeline Does
-
-1. **Extracts** article HTML files and Rich_Media.csv from the LinkedIn export ZIP
-2. **Processes** each article:
-   - Parses HTML and extracts metadata (title, date, etc.)
-   - Applies all 6 cleanup transformations
-   - Downloads and localizes images
-   - Converts to clean Markdown with proper front matter
-3. **Replaces** existing blog content in `src/content/blog/`
-4. **Tests** that the Astro build still works
-
-## Build-Time Banner Image Download
-
-The `download_banner_images.py` script runs automatically during `npm run build` to:
-- Download LinkedIn banner images that haven't been fetched yet
-- Update markdown files to reference local images instead of remote URLs
-- Prevent banner image expiration by storing them locally
-- Only download images that don't already exist (idempotent operation)
+GitHub Actions now **only builds** the already-generated static assets. Heavy processing (imports, downloads) should happen locally before committing. The default workflow (`.github/workflows/deploy.yml`) installs Node dependencies, runs `npm run build`, and deploys the generated `dist/` folder to GitHub Pages.
 
 ## Output
 
-The pipeline generates:
-- Clean Markdown files in `src/content/blog/` with proper YAML front matter
-- Downloaded images in `public/images/[article-slug]/`
-- Working files in `linkedin_work/` for inspection
+Running the importer produces:
 
-## Front Matter Format
+- Markdown articles in `src/content/blog/linkedin/{slug}/index.md`
+- Banners stored alongside each article as `src/content/blog/linkedin/{slug}/banner.<ext>`
+- Working files in `linkedin_work/`
 
-Each generated Markdown file includes:
+All generated files are deterministic, so repeated imports with the same ZIP yield identical output.
+
+## Frontmatter Reference
+
+Each generated markdown file follows this structure:
 
 ```yaml
 ---
@@ -87,28 +86,22 @@ date: 2025-07-02T04:22:13
 slug: article-slug
 original_url: "https://www.linkedin.com/pulse/original-linkedin-url"
 linkedin_id: abcd1
-banner: /images/article-slug/banner.jpg  # if image found
+banner: /images/linkedin/article-slug/banner.jpg
 ---
 ```
 
-## Idempotent Design
-
-The pipeline is designed to be run repeatedly:
-- Completely replaces existing content
-- Clears old images before downloading new ones
-- Can be used for incremental updates when new LinkedIn exports are available
-
 ## Dependencies
 
-- Python 3.6+
-- beautifulsoup4
-- python-slugify  
-- markdownify
-- requests
+- Python 3.9+
+- `beautifulsoup4`
+- `python-slugify`
+- `markdownify`
+- `requests`
 
-## Notes
+Install them with `pip3 install -r scripts/requirements.txt`.
 
-- Image downloads may fail in restricted environments (sandbox, no internet access)
-- LinkedIn embeds are converted to simple placeholders
-- The pipeline preserves the original LinkedIn article URLs for reference
-- All transformations are logged to console for review
+## Troubleshooting Tips
+
+- Ensure `LinkedIn exports/*.zip` is git-ignored so large archives do not end up in commits.
+- Delete `linkedin_work/` when you want a clean slate; it is ignored by git.
+- If banner downloads fail locally (e.g., network issues), the build falls back to remote URLs – rerun `download_banner_images.py` once connectivity is restored.

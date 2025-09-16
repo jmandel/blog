@@ -5,13 +5,14 @@ import PostLayout from '../../layouts/PostLayout.astro';
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.data.slug ?? post.slug },
     props: { post },
   }));
 }
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+const bannerImage = post.data.banner;
 ---
 
 <PostLayout 
@@ -19,8 +20,8 @@ const { Content } = await post.render();
   date={new Date(post.data.date)}
   description={post.data.description}
 >
-  {post.data.banner && (
-    <img src={post.data.banner} alt="" />
+  {bannerImage && (
+    <img src={bannerImage.src} alt="" />
   )}
   <Content />
 </PostLayout>

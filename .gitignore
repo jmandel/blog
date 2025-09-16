@@ -7,9 +7,6 @@ node_modules/
 dist/
 .astro/
 
-# Downloaded banner images (downloaded during build)
-public/images/
-
 # Environment variables
 .env
 .env.local
@@ -26,11 +23,9 @@ test_linkedin_work*/
 test_debug/
 test_final/
 test_*_import/
-# Generated LinkedIn content (auto-imported during build)
-src/content/blog/linkedin/
-# Exclude zip files except those in LinkedIn exports folder
+# Exclude LinkedIn export archives
+LinkedIn exports/*.zip
 *.zip
-!LinkedIn\ exports/*.zip
 # Rich_Media.csv is only needed during testing
 Rich_Media.csv
 
@@ -85,3 +80,10 @@ jspm_packages/
 
 # dotenv environment variables file
 .env.test
+.venv/
+.venv-import/
+uv_work/
+uv-test-output/
+
+# Python cache
+__pycache__/

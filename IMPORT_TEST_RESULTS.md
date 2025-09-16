@@ -89,3 +89,15 @@ The pipeline is production-ready for future LinkedIn exports:
 ```
 
 **Status: ✅ COMPLETE AND VALIDATED**
+
+## 2025-09-15 Export Validation
+
+- **Export file:** `LinkedIn exports/Basic_LinkedInDataExport_09-15-2025.zip`
+- **Articles imported:** 28 (1 skipped for empty title metadata)
+- **Banner images downloaded:** 26
+- **Banners stored:** alongside each article (`src/content/blog/linkedin/{slug}/banner.png`)
+- **Banner size range:** 0.86 MB – 1.81 MB
+- **Average banner size:** ~1.26 MB
+- **Distribution:** 0 under 500 KB, 2 between 500–999 KB, 18 between 1.0–1.4 MB, 6 between 1.5–1.9 MB
+- **Example frontmatter:** `./banner.png`
+- **Banner normalization script:** `scripts/download_banner_images.py` reported no remaining remote URLs

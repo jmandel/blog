@@ -1,4 +1,12 @@
 beautifulsoup4
-python-slugify
+certifi
+charset-normalizer
+idna
 markdownify
+python-slugify
 requests
+six
+soupsieve
+text-unidecode
+typing_extensions
+urllib3

@@ -54,28 +54,115 @@ function getExcerpt(content: string): string {
 ---
 
 <BaseLayout 
-  title="Healthcare Technology Blog" 
+  title="Interop Blog" 
   description="Insights on healthcare IT, FHIR, EHR systems, and digital health innovation"
 >
   <section>
-    <h1>Healthcare Technology Blog</h1>
+    <h1>Interop Blog</h1>
     <p>Insights on healthcare IT, FHIR, EHR systems, and digital health innovation</p>
   </section>
 
   <section>
     <h2>Recent Posts</h2>
-    <ul class="posts-list">
-      {sortedPosts.map((post) => (
-        <li class="post-item">
-          <h3 class="post-title">
-            <a href={`/blog/posts/${post.slug}`}>{post.data.title}</a>
-          </h3>
-          <time class="post-date" datetime={new Date(post.data.date).toISOString()}>
-            {formatDate(post.data.date)}
-          </time>
-          <p class="post-excerpt">{getExcerpt(post.body)}</p>
-        </li>
-      ))}
-    </ul>
+    <div class="post-grid">
+      {sortedPosts.map((post) => {
+        const hasBanner = Boolean(post.data.banner);
+        return (
+          <article class="post-card">
+            <a class:list={{
+              'post-card__link': true,
+              'post-card__link--no-image': !hasBanner,
+            }} href={`/blog/posts/${post.slug}`}>
+              {hasBanner && (
+                <img
+                  class="post-card__image"
+                  src={post.data.banner.src}
+                  alt={post.data.banner.alt ?? ''}
+                />
+              )}
+              <div class="post-card__content">
+                <h3>{post.data.title}</h3>
+                <time datetime={new Date(post.data.date).toISOString()}>
+                  {formatDate(post.data.date)}
+                </time>
+                <p>{getExcerpt(post.body)}</p>
+              </div>
+            </a>
+          </article>
+        );
+      })}
+    </div>
   </section>
 </BaseLayout>
+
+<style>
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .post-card {
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--color-surface, #fff);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+  }
+
+  .post-card__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .post-card__link--no-image {
+    padding-top: 1.5rem;
+  }
+
+  .post-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .post-card__content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .post-card__content h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+
+  .post-card__content time {
+    font-size: 0.95rem;
+    color: var(--color-text-muted, #6b7280);
+    letter-spacing: 0.01em;
+  }
+
+  .post-card__content p {
+    margin: 0;
+    color: var(--color-text, #1f2937);
+  }
+
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  }
+
+  @media (max-width: 600px) {
+    .post-card__image {
+      height: 180px;
+    }
+  }
+</style>

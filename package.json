@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "python3 scripts/download_banner_images.py && npx astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test-build": "python3 scripts/download_banner_images.py && npx astro build && echo 'Build succeeded!'"
   },
   "keywords": [
     "astro",
@@ -18,7 +19,7 @@
   ],
   "author": "jmandel",
   "license": "ISC",
-  "description": "Healthcare Technology Blog - Built with Astro Paper theme",
+  "description": "Interop Blog - Built with Astro Paper theme",
   "dependencies": {
     "@astrojs/markdown-remark": "^6.3.2",
     "@astrojs/rss": "^4.0.12",

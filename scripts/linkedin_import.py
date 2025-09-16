@@ -10,7 +10,7 @@ Idempotent LinkedIn import pipeline that:
 5. Replaces existing blog content
 """
 
-import zipfile, os, re, csv, pathlib, datetime as dt, html, shutil, urllib.parse
+import zipfile, os, re, csv, pathlib, datetime as dt, html, shutil, urllib.parse, subprocess
 from bs4 import BeautifulSoup
 from slugify import slugify
 from markdownify import markdownify as md
@@ -21,8 +21,6 @@ from datetime import datetime
 # --------------------------------------------------------------------------- #
 # Configuration
 # --------------------------------------------------------------------------- #
-BLOG_BASE_URL = "https://joshuamandel.com"
-IMAGES_DIR = "public/images"
 CONTENT_DIR = "src/content/blog"
 LINKEDIN_SUBDIR = "linkedin"  # LinkedIn content goes in a subfolder
 
@@ -36,13 +34,19 @@ def extract_articles_only(src_zip: str, dst_zip: str) -> None:
     with zipfile.ZipFile(src_zip, "r") as zin, \
          zipfile.ZipFile(dst_zip, "w", compression=zipfile.ZIP_DEFLATED) as zout:
         for info in zin.infolist():
-            n = info.filename
-            keep = (
-                (n.startswith("Articles/Articles/") and n.endswith(".html"))
-                or n == "Rich_Media.csv"
+            name = info.filename
+            path_obj = pathlib.PurePosixPath(name)
+
+            # LinkedIn exports vary, so grab any HTML living in a folder named
+            # "Articles" and always keep the Rich_Media.csv manifest.
+            is_article_html = (
+                path_obj.suffix.lower() == ".html"
+                and any(part.lower() == "articles" for part in path_obj.parts)
             )
-            if keep:
-                zout.writestr(info, zin.read(n))
+            is_rich_media = path_obj.name == "Rich_Media.csv"
+
+            if is_article_html or is_rich_media:
+                zout.writestr(info, zin.read(name))
     print(f"[✓] Wrote filtered archive ⇒ {dst_zip}")
 
 # --------------------------------------------------------------------------- #
@@ -200,14 +204,15 @@ def parse_rich_media_csv(rich_media_data: List[Dict[str, str]]) -> Dict[str, str
     
     return cover_photos
 
-def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_base_dir: str, 
-                                 article_datetime: dt.datetime = None, cover_photos: Dict[str, str] = None) -> Dict[str, str]:
-    """
-    Transformation 5: Download images from LinkedIn CDN and rewrite src to local paths.
-    Now enhanced to use Rich_Media.csv data for banner images.
-    Returns a dict with image info including banner_url if found
-    """
-    images_dir = pathlib.Path(images_base_dir) / article_slug
+def download_and_localize_images(
+    soup: BeautifulSoup,
+    article_slug: str,
+    asset_dir: pathlib.Path,
+    article_datetime: dt.datetime | None = None,
+    cover_photos: Dict[str, str] | None = None,
+) -> Dict[str, str]:
+    """Store LinkedIn images alongside the markdown article."""
+    asset_dir.mkdir(parents=True, exist_ok=True)
     result = {"banner_url": None, "banner_filename": None}
     img_counter = 0
     
@@ -222,7 +227,7 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
         if article_time_key in cover_photos:
             banner_url = cover_photos[article_time_key]
             banner_found_in_csv = True
-            banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
+            banner_downloaded = try_download_banner(banner_url, asset_dir, result)
         
         # If no exact match, find the closest match within a time window
         if not banner_found_in_csv:
@@ -246,7 +251,7 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
                 time_key, banner_url = best_match
                 print(f"[CSV] Matched banner within {int(best_time_diff/60)} minutes: {time_key}")
                 banner_found_in_csv = True
-                banner_downloaded = try_download_banner(banner_url, images_dir, result, article_slug)
+                banner_downloaded = try_download_banner(banner_url, asset_dir, result)
     
     # Process other images from HTML content
     for img in soup.find_all("img"):
@@ -280,12 +285,9 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
         is_banner = (img_counter == 1 and not banner_found_in_csv)
         
         try:
-            # Download the image
             response = requests.get(src, timeout=30)
             response.raise_for_status()
-            
-            # Create images directory only when we actually download something
-            images_dir.mkdir(parents=True, exist_ok=True)
+            asset_dir.mkdir(parents=True, exist_ok=True)
             
             # Determine file extension
             content_type = response.headers.get('content-type', '')
@@ -305,14 +307,11 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
             else:
                 filename = f"image-{img_counter}{ext}"
             
-            # Save image
-            img_path = images_dir / filename
+            img_path = asset_dir / filename
             with open(img_path, 'wb') as f:
                 f.write(response.content)
-            
-            # Update img src to local path
-            local_src = f"/images/{LINKEDIN_SUBDIR}/{article_slug}/{filename}"
-            img["src"] = local_src
+
+            img["src"] = f"./{filename}"
             
             # Remove LinkedIn-specific attributes
             for attr in ["data-delayed-url", "data-ghost-img"]:
@@ -334,7 +333,7 @@ def download_and_localize_images(soup: BeautifulSoup, article_slug: str, images_
                 
     return result
 
-def try_download_banner(banner_url: str, images_dir: pathlib.Path, result: Dict[str, str], article_slug: str) -> bool:
+def try_download_banner(banner_url: str, asset_dir: pathlib.Path, result: Dict[str, str]) -> bool:
     """
     Helper function to try downloading a banner image from Rich_Media.csv data.
     Returns True if successful, False otherwise.
@@ -347,9 +346,8 @@ def try_download_banner(banner_url: str, images_dir: pathlib.Path, result: Dict[
         print(f"[CSV] Attempting to download banner from CSV: {banner_url[:60]}...")
         response = requests.get(banner_url, timeout=30)
         response.raise_for_status()
-        
-        # Create images directory only when we actually download something
-        images_dir.mkdir(parents=True, exist_ok=True)
+
+        asset_dir.mkdir(parents=True, exist_ok=True)
         
         # Determine file extension
         content_type = response.headers.get('content-type', '')
@@ -363,7 +361,7 @@ def try_download_banner(banner_url: str, images_dir: pathlib.Path, result: Dict[
             ext = '.jpg'  # Default
         
         filename = f"banner{ext}"
-        img_path = images_dir / filename
+        img_path = asset_dir / filename
         
         with open(img_path, 'wb') as f:
             f.write(response.content)
@@ -503,13 +501,6 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
         shutil.rmtree(linkedin_content_dir)
     linkedin_content_dir.mkdir(parents=True, exist_ok=True)
     
-    # Clear existing LinkedIn images
-    linkedin_images_dir = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR
-    if linkedin_images_dir.exists():
-        print(f"[CLEAN] Removing existing LinkedIn images from {linkedin_images_dir}")
-        shutil.rmtree(linkedin_images_dir)
-    linkedin_images_dir.mkdir(parents=True, exist_ok=True)
-    
     # Load Rich_Media.csv
     rich_media_data = []
     processed_slugs = set()  # Track processed slugs to avoid duplicates
@@ -549,18 +540,21 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 
             date = _parse_date(soup, info.filename)
             slug = slugify(title, lowercase=True)
-            
+
             if not slug:
                 print(f"[WARN] Could not generate slug for '{title}' in {info.filename}, skipping")
                 continue
-            
+
             # Check for duplicate slugs
             if slug in processed_slugs:
                 print(f"[WARN] Duplicate slug '{slug}' for '{title}' in {info.filename}, skipping")
                 continue
-            
+
             processed_slugs.add(slug)
-            
+
+            article_dir = linkedin_content_dir / slug
+            article_dir.mkdir(parents=True, exist_ok=True)
+
             # Build URL + ID (best-effort)
             basename = os.path.basename(info.filename)[:-5]  # strip .html
             m = ID_RE.search(basename)
@@ -572,7 +566,7 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             cleanup_redirect_wrappers(soup)
             cleanup_tracking_params(soup)
             convert_video_embeds(soup)
-            image_info = download_and_localize_images(soup, slug, str(pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR), date, cover_photos)
+            image_info = download_and_localize_images(soup, slug, article_dir, date, cover_photos)
             cleanup_css_and_classes(soup)
             
             # ------ Generate markdown -----------------------------------
@@ -621,24 +615,23 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
             # Find banner image - use info from image processing
             banner_fm = None
             if image_info.get("banner_filename"):
-                # Use the banner filename from image processing (successful download)
-                banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/{image_info['banner_filename']}"
+                banner_fm = f"./{image_info['banner_filename']}"
             elif image_info.get("banner_url"):
                 # Use the banner URL from CSV data (even if download failed)
                 # This allows the banner to work in production environments with internet access
                 banner_fm = image_info["banner_url"]
             else:
                 # Fallback to checking for existing files (for backwards compatibility)
-                banner_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.jpg"
-                banner_png_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.png"
-                banner_gif_path = pathlib.Path(blog_base_dir) / IMAGES_DIR / LINKEDIN_SUBDIR / slug / "banner.gif"
-                
+                banner_path = article_dir / "banner.jpg"
+                banner_png_path = article_dir / "banner.png"
+                banner_gif_path = article_dir / "banner.gif"
+
                 if banner_path.exists():
-                    banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.jpg"
+                    banner_fm = "./banner.jpg"
                 elif banner_png_path.exists():
-                    banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.png"
+                    banner_fm = "./banner.png"
                 elif banner_gif_path.exists():
-                    banner_fm = f"/images/{LINKEDIN_SUBDIR}/{slug}/banner.gif"
+                    banner_fm = "./banner.gif"
             
             # ------ write .md file ---------------------------------------
             # Escape quotes in title for YAML, but avoid HTML entities
@@ -676,7 +669,7 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
                 fp.write(body_md)
             
             # Blog content dir (for Astro)
-            blog_md_path = linkedin_content_dir / f"{slug}.md"
+            blog_md_path = article_dir / "index.md"
             with blog_md_path.open("w", encoding="utf-8") as fp:
                 fp.write("\n".join(fm_lines))
                 fp.write(body_md)
@@ -687,6 +680,17 @@ def linkedin_zip_to_markdown(article_zip: str, output_dir: str, blog_base_dir: s
     print(f"\n[✓] Processed {article_count} unique articles")
     print(f"[✓] Markdown ready in {articles_dir}")
     print(f"[✓] Blog content updated in {linkedin_content_dir}")
+
+    banner_script = pathlib.Path(__file__).resolve().parent / "download_banner_images.py"
+    if banner_script.exists():
+        print(f"[BANNER] Running {banner_script.name} to normalize banners...")
+        subprocess.run(
+            ['python3', str(banner_script)],
+            check=True,
+            cwd=pathlib.Path(blog_base_dir),
+        )
+    else:
+        print('[BANNER] Skipping banner normalization (script not found)')
 
 # --------------------------------------------------------------------------- #
 # 4. Main execution
