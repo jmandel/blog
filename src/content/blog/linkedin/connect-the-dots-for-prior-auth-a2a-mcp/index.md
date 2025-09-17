@@ -5,15 +5,19 @@ slug: connect-the-dots-for-prior-auth-a2a-mcp
 original_url: "https://www.linkedin.com/pulse/connect-dots-prior-auth-a2a-mcp-josh-mandel-md-mt3te"
 linkedin_id: mt3te
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7315783940554850304"
+  share_id: "7315783940554850304"
+  share_type: "ugcPost"
+  posted_at: "2025-04-09T17:13:32"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Another day, another open protocol! Could "A2A" handle dialogue for Prior Auth agents, while MCP with SMART on FHIR manages EHR access? Speculative look below:
 ---
-
-Created on 2025-04-09 16:56
-
-Published on 2025-04-09 17:13
 
 *Another day, another open protocol!*
 
-In previous posts, we explored how agents can use **MCP tools** (`grep`, query, eval) to analyze EHR data fetched via **SMART on FHIR** ([Theory to Practice](/posts/theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo)), and envisioned a more conversational prior authorization (PA) workflow ([Prior Auth is Friction](/posts/prior-auth-is-friction-can-t-we-just-talk)).
+In previous posts, we explored how agents can use **MCP tools** (`grep`, query, eval) to analyze EHR data fetched via **SMART on FHIR** ([Theory to Practice](/blog/posts/theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo)), and envisioned a more conversational prior authorization (PA) workflow ([Prior Auth is Friction](/blog/posts/prior-auth-is-friction-can-t-we-just-talk)).
 
 Today, perhaps a new puzzle has emerged with the **Agent-to-Agent (A2A) protocol**. While it's very early days for A2A, this article offers a *speculative take*, based on an initial read of the protocol's design and samples, on how it *could potentially* serve as a communication link between clinical and payer agents in PA workflows.
 

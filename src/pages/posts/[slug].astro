@@ -13,15 +13,101 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 const bannerImage = post.data.banner;
+const originalUrl = post.data.original_url;
+const introShare = post.data.intro_share;
+const introShareCommentary = introShare?.commentary?.trim();
 ---
 
 <PostLayout 
   title={post.data.title} 
   date={new Date(post.data.date)}
   description={post.data.description}
+  linkUrl={originalUrl}
+  linkLabel="View on LinkedIn"
 >
   {bannerImage && (
     <img src={bannerImage.src} alt="" />
   )}
+  {introShare && (
+    <aside class="intro-share">
+      <div class="intro-share__meta">
+        <span>Post</span>
+        <a class="intro-share__button" href={introShare.share_url} target="_blank" rel="noreferrer">
+          View conversation
+        </a>
+      </div>
+      {introShareCommentary && (
+        <div class="intro-share__body">
+          {introShareCommentary
+            .split(/\n{2,}/)
+            .map((paragraph) => paragraph.trim())
+            .filter(Boolean)
+            .map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
+      )}
+    </aside>
+  )}
   <Content />
 </PostLayout>
+
+<style>
+  .intro-share {
+    margin: 1.5rem 0;
+    padding: 1rem 1.15rem;
+    border-radius: 0.9rem;
+    border: 1px solid rgba(30, 58, 138, 0.12);
+    background: rgba(30, 58, 138, 0.04);
+  }
+
+  .intro-share__meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: #1f3b7a;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .intro-share__meta span:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.78rem;
+    color: #64748b;
+  }
+
+  .intro-share__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.28rem 0.85rem;
+    border-radius: 9999px;
+    background: rgba(37, 99, 235, 0.12);
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .intro-share__button:hover {
+    background: rgba(37, 99, 235, 0.2);
+    color: #1e3a8a;
+  }
+
+  .intro-share__body {
+    margin-top: 0.85rem;
+    font-size: 0.95rem;
+    color: #334155;
+  }
+
+  .intro-share__body p {
+    margin: 0 0 0.75rem;
+  }
+
+  .intro-share__body p:last-child {
+    margin-bottom: 0;
+  }
+</style>

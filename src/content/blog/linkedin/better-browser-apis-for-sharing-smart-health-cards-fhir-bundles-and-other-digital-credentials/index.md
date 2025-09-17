@@ -5,17 +5,21 @@ slug: better-browser-apis-for-sharing-smart-health-cards-fhir-bundles-and-other-
 original_url: "https://www.linkedin.com/pulse/better-browser-apis-sharing-smart-health-cards-fhir-other-mandel-md-tguxc"
 linkedin_id: tguxc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7328904785942794241"
+  share_id: "7328904785942794241"
+  share_type: "ugcPost"
+  posted_at: "2025-05-15T22:11:05"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    New live demo + deep dive! "What's next for sharing SMART Health Cards & FHIR bundles?" We'll explore W3C Digital Credentials API,  browser-mediated presentation and the path beyond "show me your QR".
 ---
-
-Created on 2025-05-15 21:52
-
-Published on 2025-05-15 22:11
 
 *Josh Mandel Explores New Presentation APIs for Digital Health Data.*
 
 **To hear my real voice, watch the YouTube demo below :-) This third-person article is an experiment working with LLM-prompted "objective analysis" of the full audio + video content. I think it's pretty cool, but I'd love your feedback on the format as well as the content. And I'm happy to share prompts if anyone's curious.**
 
-[Related Article: better-browser-apis-for-sharing-smart-health-cards-fhir-bundles-and-other-digital-credentials](/posts/better-browser-apis-for-sharing-smart-health-cards-fhir-bundles-and-other-digital-credentials)
+[LinkedIn Article: 8506304790825840306]
 
 For years, the promise of truly portable, user-controlled digital credentials has shimmered on the horizon of health IT. We’ve made strides, notably with SMART Health Cards and Links, which Dr. Josh Mandel himself was instrumental in developing. These FHIR-based credentials provided a crucial, verifiable way to share health information like vaccination status and test results during a global crisis. Yet, as many of us know, the everyday act of *presenting* these credentials can still feel a bit… 2010. The dance of QR codes between screens, or the fumbling to get a phone to scan its own display, isn't quite the seamless future we envision.
 

@@ -5,9 +5,11 @@ export interface Props {
   title: string;
   date: Date;
   description?: string;
+  linkUrl?: string;
+  linkLabel?: string;
 }
 
-const { title, date, description } = Astro.props;
+const { title, date, description, linkUrl, linkLabel = 'View on LinkedIn' } = Astro.props;
 
 function formatDate(date: Date): string {
   return date.toLocaleDateString('en-US', {
@@ -26,9 +28,39 @@ function formatDate(date: Date): string {
       <time class="post-date" datetime={date.toISOString()}>
         Published on {formatDate(date)}
       </time>
+      {linkUrl && (
+        <a class="post-link-chip" href={linkUrl} target="_blank" rel="noreferrer">
+          {linkLabel}
+        </a>
+      )}
     </header>
     <div class="prose">
       <slot />
     </div>
   </article>
 </BaseLayout>
+
+<style>
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .post-link-chip {
+    align-self: flex-start;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1e3a8a;
+    text-decoration: none;
+    padding: 0.25rem 0.6rem;
+    border-radius: 9999px;
+    background: rgba(30, 58, 138, 0.08);
+    transition: background-color 0.2s ease;
+  }
+
+  .post-link-chip:hover {
+    background: rgba(30, 58, 138, 0.14);
+  }
+</style>

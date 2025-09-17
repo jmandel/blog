@@ -5,17 +5,23 @@ slug: designing-for-delay-a-liaison-ux-for-prior-auth-and-other-asynchronous-cli
 original_url: "https://www.linkedin.com/pulse/designing-delay-liaison-ux-prior-auth-other-clinical-tasks-josh-fbvec"
 linkedin_id: fbvec
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7317538583731412993"
+  share_id: "7317538583731412993"
+  share_type: "ugcPost"
+  posted_at: "2025-04-14T13:25:51"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Designing for delay in the EHR: I describe a "Liaison" UX pattern where an internal agent coordinates each async task (like Prior Auth), keeping clinicians informed without the noise, and escalating just-in-time.
+    
+    "See article for details including MCP, A2A, FHIR, and friends.
 ---
-
-Created on 2025-04-14 13:09
-
-Published on 2025-04-14 13:25
 
 Clinical workflows are full of necessary steps that don't happen instantly. Think about **prior authorization (PA)** – a classic example – but also tasks like **matching a patient to eligible clinical trials**, or coordinating a complex specialty consult requiring information exchange. These processes are often asynchronous, involve multiple steps, require gathering information from various sources, and can take minutes, hours, or even days.
 
-Recently I posted about the pain points in PA workflows, asking "[Prior auth is friction. Can't we just talk?](/posts/prior-auth-is-friction-can-t-we-just-talk)". The core idea was exploring how LLM agents, embedded in EHRs and communicating via standardized protocols, could handle the necessary dialogue, moving beyond today's rigid, often frustrating, structured data exchanges. This echoes challenges we faced years ago; when I first drafted the [**CDS Hooks specification**](https://cds-hooks.org/) back in 2015, we aimed to embed external logic seamlessly, but primarily focused on synchronous suggestions via static Cards. While useful, that pattern isn't inherently designed for the *persistent, multi-step, asynchronous dialogues* that characterize these more complex tasks.
+Recently I posted about the pain points in PA workflows, asking "[Prior auth is friction. Can't we just talk?](/blog/posts/prior-auth-is-friction-can-t-we-just-talk)". The core idea was exploring how LLM agents, embedded in EHRs and communicating via standardized protocols, could handle the necessary dialogue, moving beyond today's rigid, often frustrating, structured data exchanges. This echoes challenges we faced years ago; when I first drafted the [**CDS Hooks specification**](https://cds-hooks.org/) back in 2015, we aimed to embed external logic seamlessly, but primarily focused on synchronous suggestions via static Cards. While useful, that pattern isn't inherently designed for the *persistent, multi-step, asynchronous dialogues* that characterize these more complex tasks.
 
-Last week, I shared a demo showing the "[agent + tools" pattern in action](/posts/theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo), leveraging the **Model Context Protocol (MCP)** to let an LLM securely use tools against real EHR data fetched via SMART on FHIR. This reinforced the idea that our focus should be on robust data access (FHIR) and interoperable tool protocols (MCP), letting capable agents handle the dynamic parts.
+Last week, I shared a demo showing the "[agent + tools" pattern in action](/blog/posts/theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo), leveraging the **Model Context Protocol (MCP)** to let an LLM securely use tools against real EHR data fetched via SMART on FHIR. This reinforced the idea that our focus should be on robust data access (FHIR) and interoperable tool protocols (MCP), letting capable agents handle the dynamic parts.
 
 But how do we *manage* these agent interactions within the EHR user experience, especially when delays are inherent? We need a more dynamic approach.
 

@@ -5,11 +5,15 @@ slug: ehr-association-s-proposal-would-deregulate-the-foundations-of-patient-acc
 original_url: "https://www.linkedin.com/pulse/ehr-associations-proposal-would-deregulate-patient-josh-mandel-md-xbzke"
 linkedin_id: xbzke
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7323368768288530432"
+  share_id: "7323368768288530432"
+  share_type: "ugcPost"
+  posted_at: "2025-04-30T15:32:56"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    New Perspective: The EHR Association's push to remove foundational data access is misguided & harmful for health innovation.
 ---
-
-Created on 2025-04-30 15:04
-
-Published on 2025-04-30 15:32
 
 A recent letter from the HIMSS Electronic Health Record (EHR) Association to ONC outlines recommendations ostensibly aimed at "[Smart Deregulation in Health IT](https://www.ehra.org/sites/ehra.org/files/EHR%20Association%20Letter%20to%20ASTP-ONC%20-%20Certification%20Program%20Deregulatory%20Suggestions.pdf)." While streamlining regulation is beneficial when done thoughtfully, the letter includes proposals that would dismantle critical data access capabilities mandated by the 21st Century Cures Act. Specifically, the recommendations to **remove the EHI Export criterion** and to **eliminate FHIR Bulk Data export support** from the Health IT Certification Program are deeply concerning.
 
@@ -49,7 +53,7 @@ Foundations for Today's Needs and Tomorrow's Innovations
 
 These export capabilities are fundamental not just for meeting current needs – empowering patients with their data, enabling research, supporting public health, facilitating quality measurement – but also for enabling the next generation of health IT innovation.
 
-As I've explored in previous posts (e.g., "[Prior auth is friction. Can't we just talk](/posts/prior-auth-is-friction-can-t-we-just-talk)?") and demos (e.g., "[Theory to practice with LLM Agents, MCP, and EHR search](/posts/theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo)"), advanced AI agents can transform workflows like prior authorization or clinical data analysis. However, these agents rely heavily on the foundational data access guaranteed by these regulations:
+As I've explored in previous posts (e.g., "[Prior auth is friction. Can't we just talk](/blog/posts/prior-auth-is-friction-can-t-we-just-talk)?") and demos (e.g., "[Theory to practice with LLM Agents, MCP, and EHR search](/blog/posts/theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo)"), advanced AI agents can transform workflows like prior authorization or clinical data analysis. However, these agents rely heavily on the foundational data access guaranteed by these regulations:
 
 * **Fueling AI Agents:** An LLM agent needs reliable API access (at the population level, this means Bulk Data ) *and* often requires the deep, nuanced information found only in the complete record accessible via EHI Export (like unstructured notes or non-standard flowsheet data).
 * **Enabling Tools on Data:** Giving agents tools (like grep, SQL, etc) to operate on data is powerful, but they need the *data* itself. EHI Export provides the comprehensive dataset (often in structured, tabular formats amenable to these tools), while Bulk Data delivers standardized slices efficiently.

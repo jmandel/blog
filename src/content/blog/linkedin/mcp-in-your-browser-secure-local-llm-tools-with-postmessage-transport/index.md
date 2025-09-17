@@ -5,17 +5,21 @@ slug: mcp-in-your-browser-secure-local-llm-tools-with-postmessage-transport
 original_url: "https://www.linkedin.com/pulse/mcp-your-browser-secure-local-llm-tools-postmessage-josh-mandel-md-v7zic"
 linkedin_id: v7zic
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7325210173591932929"
+  share_id: "7325210173591932929"
+  share_type: "ugcPost"
+  posted_at: "2025-05-05T17:30:01"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    New Proposal: "MCP postMessage transport" using browser sandbox for security, privacy + zero-install MCPs. See my EHR data demo & read the proposal.
 ---
-
-Created on 2025-05-05 16:18
-
-Published on 2025-05-05 17:30
 
 *We want agentic AI systems to handle real work (e.g., kick off a prior authorization or summarize glucose management history).*
 
 Model Context Protocol (MCP) provides a standardized specification for these agent-to-tool interactions. But MCP's standardized *transports* (stdio and Streamable HTTP) present limitations when tools need access to sensitive data or local resources.
 
-[Related Article: mcp-in-your-browser-secure-local-llm-tools-with-postmessage-transport](/posts/mcp-in-your-browser-secure-local-llm-tools-with-postmessage-transport)
+[LinkedIn Article: 7649045515662125032]
 
 Let's be precise about the problems.
 

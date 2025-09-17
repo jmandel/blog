@@ -5,11 +5,13 @@ slug: which-healthcare-regulations-should-we-kill
 original_url: "https://www.linkedin.com/pulse/which-healthcare-regulations-should-we-kill-josh-mandel-md-t8a3c"
 linkedin_id: t8a3c
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7350963305806512128"
+  share_id: "7350963305806512128"
+  share_type: "ugcPost"
+  posted_at: "2025-07-15T19:03:46"
+  visibility: "MEMBER_NETWORK"
 ---
-
-Created on 2025-07-15 17:40
-
-Published on 2025-07-15 19:03
 
 Yesterday, the comment period closed on the Agency for Healthcare Research and Quality RFI titled "Ensuring Lawful Regulation and Unleashing Innovation to Make America Healthy Again." The RFI asked stakeholders to pinpoint specific regulations that:
 
@@ -20,7 +22,7 @@ Yesterday, the comment period closed on the Agency for Healthcare Research and Q
 
 The response included 646 comments from every corner of American healthcare. I fired up my [open-source comment analysis pipeline](https://github.com/jmandel/regulations.gov-comment-browser) to get an early look at what people said, creating this [theme hierarchy](https://joshuamandel.com/regulations.gov-comment-browser/AHRQ-2025-0001-0001/#/themes).
 
-Then using this open data set through my [Regulations.gov MCP](/posts/cms-rfi-mcp-now-it-s-your-turn-to-analyze-10k-pages), I asked Claude Opus 4 to synthesize the formal, data-heavy responses from major organizations together with the raw, often heartbreaking, stories from individual patients, clinicians, and families. The result is a sampling from **many stories, with substantial areas of alignment**.
+Then using this open data set through my [Regulations.gov MCP](/blog/posts/cms-rfi-mcp-now-it-s-your-turn-to-analyze-10k-pages), I asked Claude Opus 4 to synthesize the formal, data-heavy responses from major organizations together with the raw, often heartbreaking, stories from individual patients, clinicians, and families. The result is a sampling from **many stories, with substantial areas of alignment**.
 
 A Universal Villain: Prior Authorization
 ----------------------------------------
@@ -93,4 +95,4 @@ You can explore this data and the tools used to analyze it yourself.
 * **Review the analyzed comments:** To browse the comments by theme and read the full text of every submission cited here, use the [user-friendly comment browser](https://joshuamandel.com/regulations.gov-comment-browser/).
 * **See the raw data:** For the official, unfiltered source material, visit the [AHRQ docket on regulations.gov](https://www.regulations.gov/document/AHRQ-2025-0001-0001).
 * **Check out the code:** The [open-source code](https://github.com/jmandel/regulations.gov-comment-browser) for the entire analysis pipeline is available on GitHub.
-* **Learn about the technique:** For a detailed write-up on the methodology, including the use of the Model Context Protocol (MCP) server and Claude Code, see my [post on LinkedIn](/posts/cms-rfi-mcp-now-it-s-your-turn-to-analyze-10k-pages).
+* **Learn about the technique:** For a detailed write-up on the methodology, including the use of the Model Context Protocol (MCP) server and Claude Code, see my [post on LinkedIn](/blog/posts/cms-rfi-mcp-now-it-s-your-turn-to-analyze-10k-pages).

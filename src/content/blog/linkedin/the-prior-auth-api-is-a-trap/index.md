@@ -4,12 +4,15 @@ date: 2025-07-17T03:58:00
 slug: the-prior-auth-api-is-a-trap
 original_url: "https://www.linkedin.com/pulse/prior-auth-api-trap-josh-mandel-md-hkixc"
 linkedin_id: hkixc
-banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7351653510179905536"
+  share_id: "7351653510179905536"
+  share_type: "ugcPost"
+  posted_at: "2025-07-17T16:46:24"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    My take on a pragmatic path for prior authorization: mandate that payers publish their detailed, human-readable clinical rules and let modern AI make them actionable in the workflow.
 ---
-
-Created on 2025-07-17 03:58
-
-Published on 2025-07-17 16:46
 
 The Da Vinci DTR Implementation Guide aims to reduce prior authorization friction by standardizing the *format* for asking and answering clinical questions. It is a well-engineered specification for a "computable clipboard," a significant improvement over the fax machines and proprietary portals in use today.
 

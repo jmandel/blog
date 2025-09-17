@@ -5,11 +5,15 @@ slug: conversational-interoperability-takes-shape-a-read-out-from-the-hl7-connec
 original_url: "https://www.linkedin.com/pulse/conversational-interoperability-takes-shape-read-out-from-mandel-md-379fc"
 linkedin_id: 379fc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7373379443723210752"
+  share_id: "7373379443723210752"
+  share_type: "ugcPost"
+  posted_at: "2025-09-15T15:37:30"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Succeeded beyond our hopes with "Conversational Interop" connectathon track this weekend! A glimpse of what's next with AI agents conversing in plain language to share patient data -- tackling rare disease registries, trial matching, referrals, and burnout-inducing admin. Full rundown/writeup in article:
 ---
-
-Created on 2025-09-15 14:58
-
-Published on 2025-09-15 15:37
 
 Imagine two AI agents, one representing a clinician buried in paperwork, the other a remote registry for a rare disease, exchanging messages in plain English to figure out exactly what patient data needs to be shared—and in what format—before a report can be filed. No endless meetings, no custom APIs hammered out over months. Just a conversation that bridges the gap, pulling from structured records like FHIR when possible, improvising from notes or human input when not. This is conversational interoperability: a technique where autonomous agents negotiate the messy details of data exchange in natural language, making healthcare's fragmented systems feel a little less isolated.
 

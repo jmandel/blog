@@ -1,9 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
-const posts = await getCollection('blog');
-const sortedPosts = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+type ArticleEntry = CollectionEntry<'blog'>;
+type ShareEntry = CollectionEntry<'shares'>;
+
+const articles = await getCollection('blog');
+const shares = await getCollection('shares');
+
+const timeline = [
+  ...articles.map((entry) => ({ kind: 'article' as const, entry })),
+  ...shares.map((entry) => ({ kind: 'share' as const, entry })),
+].sort((a, b) => new Date(b.entry.data.date).getTime() - new Date(a.entry.data.date).getTime());
 
 function formatDate(date: Date | string): string {
   const d = new Date(date);
@@ -14,7 +22,10 @@ function formatDate(date: Date | string): string {
   });
 }
 
-function getExcerpt(content: string): string {
+function getExcerpt(content: string | undefined): string {
+  if (!content) {
+    return 'Read more...';
+  }
   // Skip frontmatter and find first meaningful content
   const lines = content.split('\n');
   let startIndex = 0;
@@ -36,7 +47,9 @@ function getExcerpt(content: string): string {
            !trimmed.startsWith('#') &&  // Skip headers
            !trimmed.startsWith('=') &&  // Skip header underlines
            !trimmed.startsWith('Created on') &&  // Skip metadata
-           !trimmed.startsWith('Published on');   // Skip metadata
+           !trimmed.startsWith('Published on') &&   // Skip metadata
+           !/^\*?Based on\b/i.test(trimmed) &&      // Skip boilerplate link refs
+           !trimmed.startsWith('[Shared link]');    // Skip importer link footer
   }) || '';
   
   // Clean up markdown syntax and HTML tags
@@ -58,34 +71,52 @@ function getExcerpt(content: string): string {
   description="Insights on healthcare IT, FHIR, EHR systems, and digital health innovation"
 >
   <section>
-    <h1>Interop Blog</h1>
-    <p>Insights on healthcare IT, FHIR, EHR systems, and digital health innovation</p>
-  </section>
-
-  <section>
     <h2>Recent Posts</h2>
     <div class="post-grid">
-      {sortedPosts.map((post) => {
-        const hasBanner = Boolean(post.data.banner);
+      {timeline.map((item) => {
+        if (item.kind === 'article') {
+          const post = item.entry as ArticleEntry;
+          const slug = post.data.slug ?? post.slug;
+          const hasBanner = Boolean(post.data.banner);
+          return (
+            <article class="post-card">
+              <a
+                class:list={{
+                  'post-card__link': true,
+                  'post-card__link--no-image': !hasBanner,
+                }}
+                href={`/blog/posts/${slug}`}
+              >
+                {hasBanner && (
+                  <img
+                    class="post-card__image"
+                    src={post.data.banner.src}
+                    alt={post.data.banner.alt ?? ''}
+                  />
+                )}
+                <div class="post-card__content">
+                  <h3>{post.data.title}</h3>
+                  <time datetime={new Date(post.data.date).toISOString()}>
+                    {formatDate(post.data.date)}
+                  </time>
+                  <p>{getExcerpt(post.body)}</p>
+                </div>
+              </a>
+            </article>
+          );
+        }
+
+        const share = item.entry as ShareEntry;
+        const slug = share.data.slug ?? share.slug;
         return (
-          <article class="post-card">
-            <a class:list={{
-              'post-card__link': true,
-              'post-card__link--no-image': !hasBanner,
-            }} href={`/blog/posts/${post.slug}`}>
-              {hasBanner && (
-                <img
-                  class="post-card__image"
-                  src={post.data.banner.src}
-                  alt={post.data.banner.alt ?? ''}
-                />
-              )}
+          <article class="post-card post-card--share">
+            <a class="post-card__link post-card__link--no-image" href={`/blog/shares/${slug}`}>
               <div class="post-card__content">
-                <h3>{post.data.title}</h3>
-                <time datetime={new Date(post.data.date).toISOString()}>
-                  {formatDate(post.data.date)}
+                <h3>{share.data.title}</h3>
+                <time datetime={new Date(share.data.date).toISOString()}>
+                  {formatDate(share.data.date)}
                 </time>
-                <p>{getExcerpt(post.body)}</p>
+                <p>{getExcerpt(share.body)}</p>
               </div>
             </a>
           </article>
@@ -96,6 +127,12 @@ function getExcerpt(content: string): string {
 </BaseLayout>
 
 <style>
+  .intro {
+    margin: 0 0 1.5rem;
+    font-size: 1.08rem;
+    color: var(--color-text-muted, #64748b);
+  }
+
   .post-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -138,10 +175,18 @@ function getExcerpt(content: string): string {
     gap: 0.75rem;
   }
 
+  .post-card--share .post-card__content {
+    gap: 0.5rem;
+  }
+
   .post-card__content h3 {
     margin: 0;
     font-size: 1.4rem;
     line-height: 1.25;
+  }
+
+  .post-card--share .post-card__content h3 {
+    font-size: 1.2rem;
   }
 
   .post-card__content time {

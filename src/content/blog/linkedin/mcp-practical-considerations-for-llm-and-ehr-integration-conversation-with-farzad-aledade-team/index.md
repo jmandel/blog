@@ -5,11 +5,15 @@ slug: mcp-practical-considerations-for-llm-and-ehr-integration-conversation-with
 original_url: "https://www.linkedin.com/pulse/mcp-practical-considerations-llm-ehr-integration-team-josh-mandel-md-qjhqc"
 linkedin_id: qjhqc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7325908624155779074"
+  share_id: "7325908624155779074"
+  share_type: "ugcPost"
+  posted_at: "2025-05-07T15:45:24"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Great discussion with Farzad Mostashari and the Aledade, Inc. team on applying Model Context Protocol (MCP) for LLM-EHR interaction! We touch on data access, authorization & the future of AI in healthcare. Full writeup + YouTube link here...
 ---
-
-Created on 2025-05-07 14:59
-
-Published on 2025-05-07 15:45
 
 Yesterday I had the pleasure of joining [**Farzad Mostashari**](https://www.linkedin.com/in/ACoAAAAH7jcB1ePZlK0k2Bwyg5jPtD8zKviPjU8?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAAH7jcB1ePZlK0k2Bwyg5jPtD8zKviPjU8) and the [**Aledade, Inc.**](https://www.linkedin.com/company/aledade/) team (Nicholas Gerner, Ashok Srinivasan, and Jonas Goldstein) to explore the application of Model Context Protocols (MCPs) in healthcare IT.
 

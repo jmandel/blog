@@ -5,11 +5,15 @@ slug: o3-meets-the-enigma-a-tale-of-ai-puzzles-and-prompt-engineering
 original_url: "https://www.linkedin.com/pulse/o3-meets-enigma-tale-ai-puzzles-prompt-engineering-josh-mandel-md-l0xec"
 linkedin_id: l0xec
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7323826999813120000"
+  share_id: "7323826999813120000"
+  share_type: "ugcPost"
+  posted_at: "2025-05-01T21:53:46"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    I used 50 leftover o3 credits to test ChatGPT’s vision capabilities on cryptic crossword grids. Pure vision failed; combining vision with code got there. Details & demo tool here!
 ---
-
-Created on 2025-05-01 21:24
-
-Published on 2025-05-01 21:53
 
 I accidentally hoarded OpenAI o3 query credits this month (the psychology of scarcity in the ChatGPT "Plus" tier!). Fortuitously, this left me with 50 queries to burn on testing o3's new vision and reasoning capabilities. The goal? A task I've tried on many vision language models over the years without success: *"Turn this image into clean JSON defining the grid structure."*
 

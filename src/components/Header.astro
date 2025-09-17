@@ -1,6 +1,54 @@
 ---
+import logoUrl from '../assets/logo-header.png?url';
 ---
 
 <header class="header">
-  <a href="/blog" class="logo">Interop Blog</a>
+  <a href="/blog" class="logo" aria-label="Interop Blog by Josh Mandel, MD">
+    <img
+      src={logoUrl}
+      alt="Interop Blog by Josh Mandel, MD"
+      class="logo__image"
+    />
+  </a>
+  <p class="logo__tagline">Musings on healthcare IT, FHIR, EHR systems, and digital health innovation</p>
 </header>
+
+<style>
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.5rem 0 1.75rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .logo__image {
+    width: auto;
+    height: auto;
+    max-width: min(100%, 700px);
+  }
+
+  .logo__tagline {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #64748b;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .logo__image {
+      max-width: min(100%, 520px);
+    }
+
+    .logo__tagline {
+      font-size: 0.95rem;
+    }
+  }
+</style>

@@ -4,11 +4,15 @@ date: 2025-06-14T20:27:00
 slug: healthcare-s-high-tech-future-forgets-one-thing-the-humans
 original_url: "https://www.linkedin.com/pulse/healthcares-high-tech-future-forgets-one-thing-humans-josh-mandel-md-ignhc"
 linkedin_id: ignhc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7339752333762809856"
+  share_id: "7339752333762809856"
+  share_type: "ugcPost"
+  posted_at: "2025-06-14T20:35:22"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    The CMS RFI closes in two days, but >250 early submissions are already surfacing some fascinating tensions!
 ---
-
-Created on 2025-06-14 20:27
-
-Published on 2025-06-14 20:35
 
 *This is the first in a short series of articles drawing on themes, attestations, and conflicts surfaced in the CMS Health Tech Ecosystem RFI, which closes in two days. The article comes from the LLM-based analysis pipeline I'm putting together at* [*https://github.com/jmandel/regulations.gov-comment-browser*](https://github.com/jmandel/regulations.gov-comment-browser) *-- I'll have more self-serve analysis tooling to share in the coming week!*
 

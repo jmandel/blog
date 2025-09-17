@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import PostLayout from '../../layouts/PostLayout.astro';
+
+export async function getStaticPaths() {
+  const shares = await getCollection('shares');
+  return shares.map((share) => ({
+    params: { slug: share.data.slug ?? share.slug },
+    props: { share },
+  }));
+}
+
+const { share } = Astro.props;
+const { Content } = await share.render();
+const shareUrl = share.data.share_url;
+const sharedTarget = share.data.shared_url;
+---
+
+<PostLayout
+  title={share.data.title}
+  date={new Date(share.data.date)}
+  description={share.data.description}
+  linkUrl={shareUrl}
+  linkLabel="View on LinkedIn"
+>
+  {sharedTarget && (
+    <p class="shared-link-note">
+      Linked resource: <a href={sharedTarget} target="_blank" rel="noreferrer">{sharedTarget}</a>
+    </p>
+  )}
+  <Content />
+</PostLayout>
+
+<style>
+  .shared-link-note {
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+    color: #4b5563;
+  }
+
+  .shared-link-note a {
+    color: #1e3a8a;
+    text-decoration: none;
+  }
+
+  .shared-link-note a:hover {
+    text-decoration: underline;
+  }
+</style>

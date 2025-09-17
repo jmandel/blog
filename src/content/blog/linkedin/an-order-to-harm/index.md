@@ -4,11 +4,13 @@ date: 2025-08-15T03:54:00
 slug: an-order-to-harm
 original_url: "https://www.linkedin.com/pulse/order-harm-josh-mandel-md-jvosc"
 linkedin_id: jvosc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7361968866576486400"
+  share_id: "7361968866576486400"
+  share_type: "ugcPost"
+  posted_at: "2025-08-15T03:55:56"
+  visibility: "MEMBER_NETWORK"
 ---
-
-Created on 2025-08-15 03:54
-
-Published on 2025-08-15 03:55
 
 *Based on https://joshuamandel.com/regulations.gov-comment-browser/AHRQ-2025-0002-0001/#/themes/4.4*
 

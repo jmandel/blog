@@ -5,11 +5,15 @@ slug: how-to-read-10000-pages-of-public-comments
 original_url: "https://www.linkedin.com/pulse/how-read-10000-pages-public-comments-josh-mandel-md-1zruc"
 linkedin_id: 1zruc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7340476559847301120"
+  share_id: "7340476559847301120"
+  share_type: "ugcPost"
+  posted_at: "2025-06-16T20:33:11"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Here's a deep-dive into the open-source pipeline I built for analyzing public comments at scale. (It's the final stretch to submit your CMS RFI responses ;-))
 ---
-
-Created on 2025-06-16 18:52
-
-Published on 2025-06-16 20:33
 
 ### Build a Tool
 

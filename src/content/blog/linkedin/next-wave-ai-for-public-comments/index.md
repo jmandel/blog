@@ -4,16 +4,19 @@ date: 2025-08-16T17:18:00
 slug: next-wave-ai-for-public-comments
 original_url: "https://www.linkedin.com/pulse/next-wave-ai-public-comments-josh-mandel-md-l2a0c"
 linkedin_id: l2a0c
-banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7362539596817051648"
+  share_id: "7362539596817051648"
+  share_type: "ugcPost"
+  posted_at: "2025-08-16T17:43:49"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    I built FloodGate as an open-source prototype to explore the double-edged sword of AI in advocacy: its power to supercharge a real supporter's ability to be heard, versus its potential to be weaponized for anonymous spam that overwhelms the entire process.
 ---
-
-Created on 2025-08-16 17:18
-
-Published on 2025-08-19 13:13
 
 ### The Problem with Form Letters
 
-In [prior work](/posts/how-to-read-10000-pages-of-public-comments), I built a tool to analyze thousands of public comments. A core feature is a simple clustering algorithm that groups nearly identical submissions. This is crucial for dealing with "form letter" campaigns, where thousands of people submit the same templated text. By clustering them, analysts can understand the scale of a coordinated campaign without letting its sheer volume drown out all other unique, individual comments.
+In [prior work](/blog/posts/how-to-read-10000-pages-of-public-comments), I built a tool to analyze thousands of public comments. A core feature is a simple clustering algorithm that groups nearly identical submissions. This is crucial for dealing with "form letter" campaigns, where thousands of people submit the same templated text. By clustering them, analysts can understand the scale of a coordinated campaign without letting its sheer volume drown out all other unique, individual comments.
 
 This works perfectly for yesterday's campaigns. But it's about to become obsolete.
 

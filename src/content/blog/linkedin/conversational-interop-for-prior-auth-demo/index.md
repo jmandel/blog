@@ -5,17 +5,21 @@ slug: conversational-interop-for-prior-auth-demo
 original_url: "https://www.linkedin.com/pulse/conversational-interop-prior-auth-demo-josh-mandel-md-wjwxe"
 linkedin_id: wjwxe
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7321563493185331203"
+  share_id: "7321563493185331203"
+  share_type: "ugcPost"
+  posted_at: "2025-04-25T15:59:24"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    New live demo! Here's how I'm thinking about cross-system interop (for prior auth, but more broadly) where needs & formats are negotiated on-the-fly.
 ---
-
-Created on 2025-04-25 15:38
-
-Published on 2025-04-25 15:59
 
 What if, instead of pre-specifying *every* data field and *every* possible workflow step, we could enable conversations between capable systems?
 
 Today's **live demo** explores early steps toward this vision – using LLM agents with protocols like Agent-to-Agent (**A2A**) and Model Context Protocol (**MCP**) to connect directly to real EHR data (via **SMART on FHIR**) and tackle Prior Authorization more dynamically.
 
-[Related Article: conversational-interop-for-prior-auth-demo](/posts/conversational-interop-for-prior-auth-demo)
+[LinkedIn Article: 7664374542596473597]
 
 Demo at <div class="youtube-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/BRX7HUBlEqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
@@ -32,6 +36,6 @@ Demo at <div class="youtube-embed"><iframe width="560" height="315" src="https:/
 
 By combining robust data access (SMART on FHIR), dynamic tool protocols (MCP), and flexible conversational interop frameworks (A2A), we can build more intelligent and adaptable healthcare systems. This approach leverages LLMs for what they do best – understanding nuance and managing dialogue – while grounding them in reliable standards.
 
-Related post: [https://www.linkedin.com/pulse/prior-auth-friction-cant-we-just-talk-josh-mandel-md-taq6c](/posts/prior-auth-is-friction-can-t-we-just-talk)
+Related post: [https://www.linkedin.com/pulse/prior-auth-friction-cant-we-just-talk-josh-mandel-md-taq6c](/blog/posts/prior-auth-is-friction-can-t-we-just-talk)
 
 Explore the open-source implementation: <https://github.com/jmandel/health-record-mcp>
