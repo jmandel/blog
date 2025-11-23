@@ -5,14 +5,6 @@ slug: real-trust-in-tefca-why-individual-transparency-and-control-can-t-be-an-af
 original_url: "https://www.linkedin.com/pulse/real-trust-tefca-why-individual-transparency-control-cant-mandel-md-pflgc"
 linkedin_id: pflgc
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7330951560329342976"
-  share_id: "7330951560329342976"
-  share_type: "ugcPost"
-  posted_at: "2025-05-21T13:44:14"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    Going one level deeper on how my TEFCA recommendations interact with current tech & policy design.
 ---
 
 The ongoing rollout and evolution of the Trusted Exchange Framework and Common Agreement (TEFCA) – a framework designed to enable different health information networks to connect and share data across the country – brings patient data rights to the forefront.

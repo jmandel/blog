@@ -5,14 +5,6 @@ slug: conversational-interop-for-prior-auth-demo
 original_url: "https://www.linkedin.com/pulse/conversational-interop-prior-auth-demo-josh-mandel-md-wjwxe"
 linkedin_id: wjwxe
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7321563493185331203"
-  share_id: "7321563493185331203"
-  share_type: "ugcPost"
-  posted_at: "2025-04-25T15:59:24"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    New live demo! Here's how I'm thinking about cross-system interop (for prior auth, but more broadly) where needs & formats are negotiated on-the-fly.
 ---
 
 What if, instead of pre-specifying *every* data field and *every* possible workflow step, we could enable conversations between capable systems?

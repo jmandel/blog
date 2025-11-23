@@ -5,12 +5,6 @@ slug: deregulation-of-certified-health-it-cuts-to-real-world-testing
 original_url: "https://www.linkedin.com/pulse/deregulation-certified-health-cuts-real-world-testing-josh-mandel-md-odpdc"
 linkedin_id: odpdc
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7346310835071328257"
-  share_id: "7346310835071328257"
-  share_type: "ugcPost"
-  posted_at: "2025-07-02T22:56:31"
-  visibility: "MEMBER_NETWORK"
 ---
 
 *Personal note: The value proposition of regulation and deregulation is full of trade-offs. My personal take is that the Real World Testing cuts are a* ***reasonable, pragmatic place to ease off on requirements****, opening up time and attention for Certified Health IT products to focus on more pressing concerns. Still, I would have maintained a requirement for testing EHI Export, which otherwise risks falling into disrepair. The article below explores changes under the new enforcement regime.*

@@ -5,14 +5,6 @@ slug: ehr-association-s-proposal-would-deregulate-the-foundations-of-patient-acc
 original_url: "https://www.linkedin.com/pulse/ehr-associations-proposal-would-deregulate-patient-josh-mandel-md-xbzke"
 linkedin_id: xbzke
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7323368768288530432"
-  share_id: "7323368768288530432"
-  share_type: "ugcPost"
-  posted_at: "2025-04-30T15:32:56"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    New Perspective: The EHR Association's push to remove foundational data access is misguided & harmful for health innovation.
 ---
 
 A recent letter from the HIMSS Electronic Health Record (EHR) Association to ONC outlines recommendations ostensibly aimed at "[Smart Deregulation in Health IT](https://www.ehra.org/sites/ehra.org/files/EHR%20Association%20Letter%20to%20ASTP-ONC%20-%20Certification%20Program%20Deregulatory%20Suggestions.pdf)." While streamlining regulation is beneficial when done thoughtfully, the letter includes proposals that would dismantle critical data access capabilities mandated by the 21st Century Cures Act. Specifically, the recommendations to **remove the EHI Export criterion** and to **eliminate FHIR Bulk Data export support** from the Health IT Certification Program are deeply concerning.

@@ -5,14 +5,6 @@ slug: better-browser-apis-for-sharing-smart-health-cards-fhir-bundles-and-other-
 original_url: "https://www.linkedin.com/pulse/better-browser-apis-sharing-smart-health-cards-fhir-other-mandel-md-tguxc"
 linkedin_id: tguxc
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7328904785942794241"
-  share_id: "7328904785942794241"
-  share_type: "ugcPost"
-  posted_at: "2025-05-15T22:11:05"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    New live demo + deep dive! "What's next for sharing SMART Health Cards & FHIR bundles?" We'll explore W3C Digital Credentials API,  browser-mediated presentation and the path beyond "show me your QR".
 ---
 
 *Josh Mandel Explores New Presentation APIs for Digital Health Data.*

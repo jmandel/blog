@@ -5,16 +5,6 @@ slug: evaluating-fhir-s-evolution-ai-assisted-analysis-of-r4-r6-changes
 original_url: "https://www.linkedin.com/pulse/evaluating-fhirs-evolution-ai-assisted-analysis-r4r6-josh-mandel-md-2srmc"
 linkedin_id: 2srmc
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7326696471267856384"
-  share_id: "7326696471267856384"
-  share_type: "ugcPost"
-  posted_at: "2025-05-09T19:56:02"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    FHIR is evolving! I prototyped an LLM-driven analysis to diff R4 vs. R6 resources and study downstream effects on IGs like US Core. The goal: explore automated methods for spec insight. Full pipeline and reports here.
-    
-    "Health Level Seven International #FHIR
 ---
 
 As the FHIR community steers towards our R6 release, a key objective is to provide stable, mature resources. With the first normative ballot in the R6 publication sequence anticipated this fall, let's assess how FHIR is evolving.

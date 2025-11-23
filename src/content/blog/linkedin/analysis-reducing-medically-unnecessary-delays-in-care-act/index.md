@@ -5,14 +5,6 @@ slug: analysis-reducing-medically-unnecessary-delays-in-care-act
 original_url: "https://www.linkedin.com/pulse/analysis-reducing-medically-unnecessary-delays-care-act-mandel-md-nryhc"
 linkedin_id: nryhc
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7311813814893613056"
-  share_id: "7311813814893613056"
-  share_type: "ugcPost"
-  posted_at: "2025-03-29T18:17:40"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    Good intent in the new Medicare PA bill (transparency! consistency!), but forcing physician involvement in all decisions (even automated approvals??) undermines the potential of AI/FHIR solutions to streamline prior authorization.
 ---
 
 Prior authorization imposes a barrier to timely care. While tech solutions (including conversational AI agents using FHIR, [as I discussed last week](/blog/posts/prior-auth-is-friction-can-t-we-just-talk)) offer potential paths to streamline this, policy sets the operational parameters. The newly (re-)introduced [**"Reducing Medically Unnecessary Delays in Care Act of 2025" bill**](https://markgreen.house.gov/_cache/files/0/7/07ab76c1-9639-4748-8832-4c92672c008b/20388E143170D9C5173A02CFB842FA1A.reducing-medically-unnecessary-delays-in-care-act-of-2025-1.pdf) proposes specific changes for Medicare prior authorization rules, with significant impacts for Medicare Advantage plans.

@@ -5,14 +5,6 @@ slug: the-real-story-behind-epic-s-0-0000055-ehi-export-rate
 original_url: "https://www.linkedin.com/pulse/real-story-behind-epics-00000055-ehi-export-rate-josh-mandel-md-vuo7c"
 linkedin_id: vuo7c
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7342233954462158848"
-  share_id: "7342233954462158848"
-  share_type: "ugcPost"
-  posted_at: "2025-06-21T16:56:26"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    The Real Story Behind Epic's 0.0000055% EHI Export Rate. (New article below!)
 ---
 
 ### Epic's Argument: Nobody Uses It, and Nobody Wants It

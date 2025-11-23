@@ -5,14 +5,6 @@ slug: connect-the-dots-for-prior-auth-a2a-mcp
 original_url: "https://www.linkedin.com/pulse/connect-dots-prior-auth-a2a-mcp-josh-mandel-md-mt3te"
 linkedin_id: mt3te
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7315783940554850304"
-  share_id: "7315783940554850304"
-  share_type: "ugcPost"
-  posted_at: "2025-04-09T17:13:32"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    Another day, another open protocol! Could "A2A" handle dialogue for Prior Auth agents, while MCP with SMART on FHIR manages EHR access? Speculative look below:
 ---
 
 *Another day, another open protocol!*

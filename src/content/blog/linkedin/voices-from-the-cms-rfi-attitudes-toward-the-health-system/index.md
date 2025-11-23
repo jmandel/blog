@@ -5,14 +5,6 @@ slug: voices-from-the-cms-rfi-attitudes-toward-the-health-system
 original_url: "https://www.linkedin.com/pulse/voices-from-cms-rfi-attitudes-toward-health-system-josh-mandel-md-ydkjc"
 linkedin_id: ydkjc
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7346273386425176066"
-  share_id: "7346273386425176066"
-  share_type: "ugcPost"
-  posted_at: "2025-07-02T20:27:42"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    Article written with help from my CMS MCP and Claude Code custom slash commands (https://lnkd.in/g3Fp3WBy)
 ---
 
 In the summer of 2025, CMS sought public input on building a patient-centered digital health ecosystem. Patient voices reveal fundamental worldviews about trust, power, and survival in America's healthcare system.

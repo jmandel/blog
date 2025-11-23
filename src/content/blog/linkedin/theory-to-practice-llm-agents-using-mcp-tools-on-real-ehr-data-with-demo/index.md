@@ -5,14 +5,6 @@ slug: theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo
 original_url: "https://www.linkedin.com/pulse/theory-practice-llm-agents-using-mcp-tools-real-ehr-data-mandel-md-acknc"
 linkedin_id: acknc
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7315454627057999877"
-  share_id: "7315454627057999877"
-  share_type: "ugcPost"
-  posted_at: "2025-04-08T19:24:57"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    Follow-up to my post on LLM agents + tools for prior auth workflows: Here's a practical demo connecting LLM to real EHR data. An MCP server offers tools (e.g., grep, eval_js) for the LLM to analyze the EHR, moving beyond just context stuffing. See it query conditions, notes & vitals. Full post + video walkthrough here:
 ---
 
 Last week, I [discussed](/blog/posts/prior-auth-is-friction-can-t-we-just-talk) how LLM agents embedded in EHRs could transform complex workflows like prior authorization by using tools to interact conversationally, rather than relying solely on rigid structured data exchange. The idea was to let agents handle the dialogue, using reliable data access standards like FHIR as the foundation.

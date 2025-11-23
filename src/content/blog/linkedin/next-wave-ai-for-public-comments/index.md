@@ -4,14 +4,6 @@ date: 2025-08-16T17:18:00
 slug: next-wave-ai-for-public-comments
 original_url: "https://www.linkedin.com/pulse/next-wave-ai-public-comments-josh-mandel-md-l2a0c"
 linkedin_id: l2a0c
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7362539596817051648"
-  share_id: "7362539596817051648"
-  share_type: "ugcPost"
-  posted_at: "2025-08-16T17:43:49"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    I built FloodGate as an open-source prototype to explore the double-edged sword of AI in advocacy: its power to supercharge a real supporter's ability to be heard, versus its potential to be weaponized for anonymous spam that overwhelms the entire process.
 ---
 
 ### The Problem with Form Letters

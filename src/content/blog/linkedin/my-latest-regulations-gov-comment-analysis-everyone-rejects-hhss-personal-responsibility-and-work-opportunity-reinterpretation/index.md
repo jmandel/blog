@@ -5,12 +5,6 @@ slug: my-latest-regulations-gov-comment-analysis-everyone-rejects-hhss-personal-
 original_url: "https://www.linkedin.com/pulse/everyone-including-rural-redstate-america-rejects-hhss-mandel-md-oulac"
 linkedin_id: oulac
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7361802109245120515"
-  share_id: "7361802109245120515"
-  share_type: "ugcPost"
-  posted_at: "2025-08-14T16:53:18"
-  visibility: "MEMBER_NETWORK"
 ---
 
 A July 2025 HHS reinterpretation of PRWORA (8 U.S.C. §1611) reverses nearly three decades of practice by newly classifying programs like Federally Qualified Health Centers and Head Start as “federal public benefits.” In practice, this would bar non‑qualified immigrants from those services except for narrow statutory exceptions (e.g., immunizations; certain communicable disease activities) and could trigger verification duties.

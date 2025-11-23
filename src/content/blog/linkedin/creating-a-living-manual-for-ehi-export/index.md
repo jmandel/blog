@@ -4,14 +4,6 @@ date: 2025-06-26T17:27:00
 slug: creating-a-living-manual-for-ehi-export
 original_url: "https://www.linkedin.com/pulse/creating-living-manual-ehi-export-josh-mandel-md-8bzrc"
 linkedin_id: 8bzrc
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7345862527995559937"
-  share_id: "7345862527995559937"
-  share_type: "ugcPost"
-  posted_at: "2025-07-01T17:15:06"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    How can we make EHI Exports easier to work with? Check out (and help me curate!) the new "Living Manual".
 ---
 
 It is a significant undertaking to maintain and document a modern EHR database spanning diverse clinical domains and workflows. It's no surprise that a database optimized for clinical care and hospital operations contains thousands of tables. In its native context, that complexity is a feature. But for patients, developers, and data engineers trying to use an Electronic Health Information (EHI) export, navigating this terrain of accreted complexity can be daunting, especially without a map.

@@ -4,14 +4,6 @@ date: 2025-03-28T03:23:00
 slug: prior-auth-is-friction-can-t-we-just-talk
 original_url: "https://www.linkedin.com/pulse/prior-auth-friction-cant-we-just-talk-josh-mandel-md-taq6c"
 linkedin_id: taq6c
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7311246102668668928"
-  share_id: "7311246102668668928"
-  share_type: "ugcPost"
-  posted_at: "2025-03-28T04:41:47"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    Prior auth is friction, but better interaction patterns are coming and will help "get to yes" more seamlessly. Understanding Anthropic's Model Context Protocol is one way to see where flexible architectures for LLM-mediated tool use are headed.
 ---
 
 Prior authorization is friction. We try to automate it with structured data, through consensus-based standards like HL7 Da Vinci's Burden Reduction FHIR IGs. Consensus is slow and bound by compromise, leading to rigid technical integrations. Better interoperability patterns are coming.

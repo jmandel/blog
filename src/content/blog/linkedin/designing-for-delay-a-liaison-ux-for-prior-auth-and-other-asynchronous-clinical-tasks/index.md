@@ -5,16 +5,6 @@ slug: designing-for-delay-a-liaison-ux-for-prior-auth-and-other-asynchronous-cli
 original_url: "https://www.linkedin.com/pulse/designing-delay-liaison-ux-prior-auth-other-clinical-tasks-josh-fbvec"
 linkedin_id: fbvec
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7317538583731412993"
-  share_id: "7317538583731412993"
-  share_type: "ugcPost"
-  posted_at: "2025-04-14T13:25:51"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    Designing for delay in the EHR: I describe a "Liaison" UX pattern where an internal agent coordinates each async task (like Prior Auth), keeping clinicians informed without the noise, and escalating just-in-time.
-    
-    "See article for details including MCP, A2A, FHIR, and friends.
 ---
 
 Clinical workflows are full of necessary steps that don't happen instantly. Think about **prior authorization (PA)** – a classic example – but also tasks like **matching a patient to eligible clinical trials**, or coordinating a complex specialty consult requiring information exchange. These processes are often asynchronous, involve multiple steps, require gathering information from various sources, and can take minutes, hours, or even days.

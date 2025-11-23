@@ -4,12 +4,6 @@ date: 2025-07-02T04:22:00
 slug: cms-rfi-mcp-now-it-s-your-turn-to-analyze-10k-pages
 original_url: "https://www.linkedin.com/pulse/cms-rfi-mcp-now-its-your-turn-analyze-10k-pages-josh-mandel-md-qm4mc"
 linkedin_id: qm4mc
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7346032137336168448"
-  share_id: "7346032137336168448"
-  share_type: "ugcPost"
-  posted_at: "2025-07-02T04:29:04"
-  visibility: "MEMBER_NETWORK"
 ---
 
 A few weeks ago, I shared an [interactive dashboard](https://joshuamandel.com/regulations.gov-comment-browser/CMS-2025-0050-0031/) summarizing public comments on the CMS Health Tech Ecosystem RFI. Now for the next step: **make the underlying data more amenable to new, dynamic analyses**.

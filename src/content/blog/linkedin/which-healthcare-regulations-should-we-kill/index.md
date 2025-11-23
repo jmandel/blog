@@ -5,12 +5,6 @@ slug: which-healthcare-regulations-should-we-kill
 original_url: "https://www.linkedin.com/pulse/which-healthcare-regulations-should-we-kill-josh-mandel-md-t8a3c"
 linkedin_id: t8a3c
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7350963305806512128"
-  share_id: "7350963305806512128"
-  share_type: "ugcPost"
-  posted_at: "2025-07-15T19:03:46"
-  visibility: "MEMBER_NETWORK"
 ---
 
 Yesterday, the comment period closed on the Agency for Healthcare Research and Quality RFI titled "Ensuring Lawful Regulation and Unleashing Innovation to Make America Healthy Again." The RFI asked stakeholders to pinpoint specific regulations that:

@@ -4,14 +4,6 @@ date: 2025-07-15T22:21:00
 slug: the-prior-authorization-de-regulation-paradox
 original_url: "https://www.linkedin.com/pulse/prior-authorization-deregulation-paradox-josh-mandel-md-mh7ec"
 linkedin_id: mh7ec
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7351014875017437185"
-  share_id: "7351014875017437185"
-  share_type: "ugcPost"
-  posted_at: "2025-07-15T22:28:41"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    HHS wants to deregulate. Fixing prior authorization through deregulation presents a paradox. Here's the lay of the land, based on this week's AHRQ RFI responses.
 ---
 
 HHS wants to deregulate.

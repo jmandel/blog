@@ -5,16 +5,6 @@ slug: you-should-respond-to-cms-s-health-tech-ecosystem-rfi-borrow-ideas-or-shar
 original_url: "https://www.linkedin.com/pulse/you-should-respond-cmss-health-tech-ecosystem-rfi-ideas-mandel-md-fsloc"
 linkedin_id: fsloc
 banner: ./banner.png
-intro_share:
-  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7329231643506892800"
-  share_id: "7329231643506892800"
-  share_type: "ugcPost"
-  posted_at: "2025-05-16T19:49:54"
-  visibility: "MEMBER_NETWORK"
-  commentary: |
-    What are the biggest health tech hurdles? CMS & ASTP/ONC want to hear from all of us! Let's craft strong, shared answers. I started a GitHub repo to collab on RFI responses ;-)
-    
-    "#TechPolicy #FHIR Kenneth Mandl Dan Gottlieb Aneesh Chopra Dave deBronkart
 ---
 
 *Disclaimer: The views and opinions expressed here and on the linked collaborative sites are my own and do not necessarily represent the views or positions of Microsoft.*
