@@ -15,7 +15,7 @@ With the publication of the new RFC, I want to outline why SD-JWT offers an impo
 
 *If you'd rather see a guided tour + live demo, check out the video version of this post...*
 
-[LinkedIn Article: 8361705356895333333]
+<div class="youtube-embed"><iframe width="560" height="315" src="https://www.youtube.com/embed/NQcTPe1XBbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ### The Spectrum of Sharing
 
