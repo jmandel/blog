@@ -263,9 +263,6 @@ class LinkedInShareProcessor:
         work_shares_dir.mkdir(parents=True, exist_ok=True)
 
         share_root = self.blog_dir / SHARE_CONTENT_DIR / SHARE_SUBDIR
-        if share_root.exists():
-            print(f"[SHARE] Clearing existing share content in {share_root}")
-            shutil.rmtree(share_root)
         share_root.mkdir(parents=True, exist_ok=True)
 
         for share in standalone_shares:
@@ -279,6 +276,8 @@ class LinkedInShareProcessor:
             work_path.write_text(md_content, encoding="utf-8")
 
             share_dir = share_root / share.slug
+            if share_dir.exists():
+                shutil.rmtree(share_dir)
             share_dir.mkdir(parents=True, exist_ok=True)
             (share_dir / "index.md").write_text(md_content, encoding="utf-8")
 

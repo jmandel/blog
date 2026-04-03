@@ -24,7 +24,7 @@ cd "$REPO_ROOT"
 UV_ENV=".venv-import"
 
 echo "=== Step 0: Prepare uv environment ($UV_ENV) ==="
-uv venv "$UV_ENV"
+uv venv "$UV_ENV" --allow-existing
 uv pip sync --python "$UV_ENV" scripts/requirements.txt
 
 if [[ ! -d node_modules ]]; then

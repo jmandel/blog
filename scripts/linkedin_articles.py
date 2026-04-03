@@ -132,9 +132,6 @@ class LinkedInArticleProcessor:
         work_articles_dir.mkdir(parents=True, exist_ok=True)
 
         blog_linkedin_dir = self.blog_dir / CONTENT_DIR / LINKEDIN_SUBDIR
-        if blog_linkedin_dir.exists():
-            print(f"[CLEAN] Removing existing LinkedIn content from {blog_linkedin_dir}")
-            shutil.rmtree(blog_linkedin_dir)
         blog_linkedin_dir.mkdir(parents=True, exist_ok=True)
 
         rich_media_rows = self._load_rich_media()
@@ -142,6 +139,12 @@ class LinkedInArticleProcessor:
 
         article_count = 0
         for article in articles:
+            # Clean this specific article dir to avoid stale images,
+            # but leave other articles' directories untouched.
+            article_dir = blog_linkedin_dir / article.slug
+            if article_dir.exists():
+                shutil.rmtree(article_dir)
+
             soup = BeautifulSoup(article.html, "html.parser")
             self._cleanup_linkedin_links(soup, slug_mapping)
             self._cleanup_redirect_wrappers(soup)
