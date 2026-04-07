@@ -4,6 +4,7 @@ date: 2026-03-24T16:10:00
 slug: smart-permission-tickets-argonaut-launch
 original_url: "https://www.linkedin.com/pulse/smart-permission-tickets-argonaut-launch-josh-mandel-md-uvruc"
 linkedin_id: uvruc
+banner: ./banner.jpg
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7442245738031374336"
   share_id: "7442245738031374336"

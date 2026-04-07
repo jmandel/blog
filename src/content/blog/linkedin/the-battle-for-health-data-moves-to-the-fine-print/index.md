@@ -4,6 +4,7 @@ date: 2026-03-09T00:49:00
 slug: the-battle-for-health-data-moves-to-the-fine-print
 original_url: "https://www.linkedin.com/pulse/battle-health-data-moves-fine-print-josh-mandel-md-nlmuc"
 linkedin_id: nlmuc
+banner: ./banner.jpg
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7436574615537143808"
   share_id: "7436574615537143808"

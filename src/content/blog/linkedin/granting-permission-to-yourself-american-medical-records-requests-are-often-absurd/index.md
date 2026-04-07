@@ -4,6 +4,7 @@ date: 2026-02-20T14:45:00
 slug: granting-permission-to-yourself-american-medical-records-requests-are-often-absurd
 original_url: "https://www.linkedin.com/pulse/granting-permission-yourself-american-medical-records-josh-mandel-md-0klyc"
 linkedin_id: 0klyc
+banner: ./banner.jpg
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7430647825572528128"
   share_id: "7430647825572528128"

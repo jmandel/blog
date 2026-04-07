@@ -4,6 +4,7 @@ date: 2025-09-19T19:27:00
 slug: beyond-the-care-gap-list-outreach-lottery
 original_url: "https://www.linkedin.com/pulse/beyond-care-gap-list-outreach-lottery-josh-mandel-md-mxjpc"
 linkedin_id: mxjpc
+banner: ./banner.png
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7374890555518078976"
   share_id: "7374890555518078976"

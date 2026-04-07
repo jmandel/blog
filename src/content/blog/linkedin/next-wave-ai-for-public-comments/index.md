@@ -4,6 +4,7 @@ date: 2025-08-16T17:18:00
 slug: next-wave-ai-for-public-comments
 original_url: "https://www.linkedin.com/pulse/next-wave-ai-public-comments-josh-mandel-md-l2a0c"
 linkedin_id: l2a0c
+banner: ./banner.png
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7362539596817051648"
   share_id: "7362539596817051648"

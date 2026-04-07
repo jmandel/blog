@@ -4,6 +4,7 @@ date: 2026-03-02T14:34:00
 slug: i-built-an-ai-skill-to-help-patients-request-their-ehi-export
 original_url: "https://www.linkedin.com/pulse/i-built-ai-skill-help-patients-request-ehi-export-josh-mandel-md-77bjc"
 linkedin_id: 77bjc
+banner: ./banner.jpg
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7434248705467199488"
   share_id: "7434248705467199488"

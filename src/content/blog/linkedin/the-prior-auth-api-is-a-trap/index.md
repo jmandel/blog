@@ -4,6 +4,7 @@ date: 2025-07-17T03:58:00
 slug: the-prior-auth-api-is-a-trap
 original_url: "https://www.linkedin.com/pulse/prior-auth-api-trap-josh-mandel-md-hkixc"
 linkedin_id: hkixc
+banner: ./banner.png
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7351653510179905536"
   share_id: "7351653510179905536"

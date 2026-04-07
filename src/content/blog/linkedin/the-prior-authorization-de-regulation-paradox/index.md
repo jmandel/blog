@@ -4,6 +4,7 @@ date: 2025-07-15T22:21:00
 slug: the-prior-authorization-de-regulation-paradox
 original_url: "https://www.linkedin.com/pulse/prior-authorization-deregulation-paradox-josh-mandel-md-mh7ec"
 linkedin_id: mh7ec
+banner: ./banner.png
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7351014875017437185"
   share_id: "7351014875017437185"

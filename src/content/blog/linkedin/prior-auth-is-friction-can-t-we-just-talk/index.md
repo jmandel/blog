@@ -4,6 +4,7 @@ date: 2025-03-28T03:23:00
 slug: prior-auth-is-friction-can-t-we-just-talk
 original_url: "https://www.linkedin.com/pulse/prior-auth-friction-cant-we-just-talk-josh-mandel-md-taq6c"
 linkedin_id: taq6c
+banner: ./banner.png
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7311246102668668928"
   share_id: "7311246102668668928"

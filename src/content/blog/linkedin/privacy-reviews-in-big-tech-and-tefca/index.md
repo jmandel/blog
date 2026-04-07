@@ -4,6 +4,7 @@ date: 2025-10-07T20:58:00
 slug: privacy-reviews-in-big-tech-and-tefca
 original_url: "https://www.linkedin.com/pulse/privacy-reviews-big-tech-tefca-josh-mandel-md-xyhsc"
 linkedin_id: xyhsc
+banner: ./banner.png
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7381435403762880512"
   share_id: "7381435403762880512"

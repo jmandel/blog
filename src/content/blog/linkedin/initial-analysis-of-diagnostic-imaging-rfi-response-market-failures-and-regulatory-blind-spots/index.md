@@ -4,6 +4,7 @@ date: 2026-03-19T15:45:00
 slug: initial-analysis-of-diagnostic-imaging-rfi-response-market-failures-and-regulatory-blind-spots
 original_url: "https://www.linkedin.com/pulse/initial-analysis-diagnostic-imaging-rfi-response-blind-mandel-md-gcs2c"
 linkedin_id: gcs2c
+banner: ./banner.jpg
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7440445305659207680"
   share_id: "7440445305659207680"

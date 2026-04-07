@@ -140,9 +140,17 @@ class LinkedInArticleProcessor:
         article_count = 0
         for article in articles:
             # Clean this specific article dir to avoid stale images,
-            # but leave other articles' directories untouched.
+            # but leave other articles' directories untouched. Preserve
+            # any existing banner.* file across the rebuild so manually
+            # placed banners survive future imports.
             article_dir = blog_linkedin_dir / article.slug
+            preserved_banner: Optional[tuple[str, bytes]] = None
             if article_dir.exists():
+                for candidate in ("banner.jpg", "banner.jpeg", "banner.png", "banner.gif", "banner.webp"):
+                    candidate_path = article_dir / candidate
+                    if candidate_path.exists():
+                        preserved_banner = (candidate, candidate_path.read_bytes())
+                        break
                 shutil.rmtree(article_dir)
 
             soup = BeautifulSoup(article.html, "html.parser")
@@ -158,6 +166,11 @@ class LinkedInArticleProcessor:
                 article.published_at or article.created_at,
                 cover_photos,
             )
+            if preserved_banner and not image_info.get("banner_filename"):
+                article_dir.mkdir(parents=True, exist_ok=True)
+                (article_dir / preserved_banner[0]).write_bytes(preserved_banner[1])
+                image_info["banner_filename"] = preserved_banner[0]
+                print(f"[BANNER] Preserved manually-placed {preserved_banner[0]} for {article.slug}")
             self._cleanup_css_and_classes(soup)
 
             article_content = soup.find("article") or soup.body
