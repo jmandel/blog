@@ -5,6 +5,14 @@ slug: i-registered-health-skillz-at-500-epic-sites-then-couldn-t-connect
 original_url: "https://www.linkedin.com/pulse/i-registered-health-skillz-500-epic-sites-couldnt-josh-mandel-md-ivtoc"
 linkedin_id: ivtoc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7427850874347200512"
+  share_id: "7427850874347200512"
+  share_type: "ugcPost"
+  posted_at: "2026-02-12T23:07:31"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    "invalid_client" and "error_description: null" ... or how I discovered that Epic's recommended client authentication setup is blocked by hospital firewalls. So 1) user goes through the whole OAuth approval flow, 2) app hits an error at token request time, 3) it's unrecoverable! Read on for explanations, analysis, workarounds, and recommendations.
 ---
 
 *This is a follow-up to* [*7,000+ Clicks to Register a FHIR App*](/blog/posts/7000-clicks-to-register-a-fhir-app)*. That post covered the work of getting a confidential SMART on FHIR client registered at ~500 Epic organizations. This post covers what happened next.*

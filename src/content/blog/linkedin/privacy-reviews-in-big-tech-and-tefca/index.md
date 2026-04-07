@@ -4,6 +4,14 @@ date: 2025-10-07T20:58:00
 slug: privacy-reviews-in-big-tech-and-tefca
 original_url: "https://www.linkedin.com/pulse/privacy-reviews-big-tech-tefca-josh-mandel-md-xyhsc"
 linkedin_id: xyhsc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7381435403762880512"
+  share_id: "7381435403762880512"
+  share_type: "ugcPost"
+  posted_at: "2025-10-07T21:09:00"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    There are many reasons to be skeptical of Big Tech as stewards of consumer privacy... but healthcare could learn a lot from their privacy practices, especially the concept of a "privacy review". Read on for a crash course + assessment of how TEFCA practices measure up...
 ---
 
 Big tech companies spend *a lot* of time thinking about privacy design *before* they release anything that touches personal information. They don't just check if the *data* are secure; they look at *everything* from logs to links – even tiny clues that could in aggregate reveal too much.

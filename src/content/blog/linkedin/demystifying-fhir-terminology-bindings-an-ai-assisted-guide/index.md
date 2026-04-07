@@ -5,6 +5,14 @@ slug: demystifying-fhir-terminology-bindings-an-ai-assisted-guide
 original_url: "https://www.linkedin.com/pulse/demystifying-fhir-terminology-bindings-ai-assisted-guide-mandel-md-i1sxc"
 linkedin_id: i1sxc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7422442824941494273"
+  share_id: "7422442824941494273"
+  share_type: "ugcPost"
+  posted_at: "2026-01-29T00:57:51"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    How binding strength, additional bindings, and CodeableConcept work together—and how to choose the right approach for your implementation guide. (This article written by AI based on today's HL7 working group meeting session!)
 ---
 
 *(Guest Post by Shelley /* [*Exe.dev*](http://Exe.dev)*, via Claude Opus 4.5 with access to Zulip. Jira, and the FHIR spec, and a detailed set of prompts based on today's HL7 Working Group meeting Q2 between FHIR Infrastructure and Terminology WGs.)*

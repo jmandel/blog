@@ -5,6 +5,14 @@ slug: beyond-loading-thirty-four-prototypes-before-breakfast
 original_url: "https://www.linkedin.com/pulse/beyond-loading-thirty-four-prototypes-over-breakfast-josh-mandel-md-ijpqc"
 linkedin_id: ijpqc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7427757525950730241"
+  share_id: "7427757525950730241"
+  share_type: "ugcPost"
+  posted_at: "2026-02-12T16:56:35"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    We have reached the point where generating options and reacting (and iterating!) is a better & faster design process than reasoning from first principles (for a non-designer like me, I mean). See article for tools, process notes, prompts.
 ---
 
 I'm building [Health Skillz](/blog/posts/health-skillz-why-i-built-my-own-health-record-connector-for-claude-ai-codex), a patient-facing app that helps people bring their healthcare data securely into their browser from provider systems -- and, from there, share it with an AI of their choice, with end-to-end encryption so only the AI can decrypt it.

@@ -5,6 +5,14 @@ slug: how-i-used-ai-agents-to-assess-the-state-of-ehi-export
 original_url: "https://www.linkedin.com/pulse/how-i-used-ai-agents-assess-state-ehi-export-josh-mandel-md-bjbtc"
 linkedin_id: bjbtc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7429697506092994560"
+  share_id: "7429697506092994560"
+  share_type: "ugcPost"
+  posted_at: "2026-02-18T01:25:22"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    This is the technical companion to "I Graded Every EHR's Patient Data Export Documentation." That post says what I found; this one says how I found it.
 ---
 
 *This is the technical companion to "*[*I Graded Every EHR's Patient Data Export Documentation.*](/blog/posts/i-graded-265-ehrs-on-the-export-everything-requirement-median-grade-was-d)*" That post says what I found; this one says how I found it.*

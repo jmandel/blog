@@ -4,6 +4,14 @@ date: 2026-03-24T16:10:00
 slug: smart-permission-tickets-argonaut-launch
 original_url: "https://www.linkedin.com/pulse/smart-permission-tickets-argonaut-launch-josh-mandel-md-uvruc"
 linkedin_id: uvruc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7442245738031374336"
+  share_id: "7442245738031374336"
+  share_type: "ugcPost"
+  posted_at: "2026-03-24T16:27:34"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Argonaut is launching our "SMART Permission Tickets" project tomorrow! See article for project goals, how to participate, and an AI-mediated interview you can use to share your perspectives.
 ---
 
 Tomorrow, we are launching a new Argonaut project: **SMART Permission Tickets**. The goal is to define a standard way for authorization decisions to travel to data holders in a portable, machine-readable, and verifiable form.

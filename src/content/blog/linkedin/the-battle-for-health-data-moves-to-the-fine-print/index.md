@@ -4,6 +4,14 @@ date: 2026-03-09T00:49:00
 slug: the-battle-for-health-data-moves-to-the-fine-print
 original_url: "https://www.linkedin.com/pulse/battle-health-data-moves-fine-print-josh-mandel-md-nlmuc"
 linkedin_id: nlmuc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7436574615537143808"
+  share_id: "7436574615537143808"
+  share_type: "ugcPost"
+  posted_at: "2026-03-09T00:52:33"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    To unleash healthcare innovation, the federal government is targeting “unconscionable” contracts.
 ---
 
 *To unleash healthcare innovation, the federal government is targeting “unconscionable” contracts. But in trying to slay tech Goliaths, regulators may accidentally upend the entire system. Generated from* [*all comments mentioning "unconscionable terms."*](https://joshuamandel.com/regulations.gov-comment-browser/HHS-ONC-2025-0005-0001/#/entities/Information%20Blocking%20Policy/Unconscionable%20Terms)

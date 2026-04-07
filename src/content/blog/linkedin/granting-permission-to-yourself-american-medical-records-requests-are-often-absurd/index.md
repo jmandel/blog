@@ -4,6 +4,14 @@ date: 2026-02-20T14:45:00
 slug: granting-permission-to-yourself-american-medical-records-requests-are-often-absurd
 original_url: "https://www.linkedin.com/pulse/granting-permission-yourself-american-medical-records-josh-mandel-md-0klyc"
 linkedin_id: 0klyc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7430647825572528128"
+  share_id: "7430647825572528128"
+  share_type: "ugcPost"
+  posted_at: "2026-02-20T16:21:36"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    HIPAA guarantees patients a right to their own medical records. In practice, most health systems require patients to fill out a release-of-information form designed for a different legal purpose; justify why they want their own data; and wait. I sampled 181 organizations across 43 states to measure how wide the gap is -- and to highlight what the best organizations do differently. See article for details.
 ---
 
 Imagine walking into your local public library to check out a book, only to be handed a third-party disclosure form designed for an insurance company. You write your own name in the "Authorized Recipient" box. You declare your "Purpose" for wanting to read the book. You ask two strangers in the lobby to co-sign your request. Before the librarian hands you the text, you are warned that the library cannot control what happens to the information once it leaves their possession.

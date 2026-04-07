@@ -5,6 +5,14 @@ slug: health-skillz-why-i-built-my-own-health-record-connector-for-claude-ai-cod
 original_url: "https://www.linkedin.com/pulse/health-skillz-why-i-built-my-own-record-connector-codex-mandel-md-mlz3c"
 linkedin_id: mlz3c
 banner: ./banner.jpg
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7416687199552720896"
+  share_id: "7416687199552720896"
+  share_type: "ugcPost"
+  posted_at: "2026-01-13T03:47:03"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Today I built "Health Skillz": a health connector for Claude.ai and other Skills-aware agents. Read on for my early experience with TEFCA onramps... and why I took a different approach to just get a thick stack of FHIR JSON + plaintext SOAP notes into the agent's computational sandbox and get out of the way
 ---
 
 ***TL;DR:*** *I built* [***Health Skillz***](https://github.com/jmandel/health-skillz)*, a Claude Skill that fetches your health records directly from your patient portal using SMART on FHIR. It pulls all your structured data (labs, meds, conditions) plus the full text of clinical notes, encrypts everything end-to-end, and lets Claude analyze it. To try it:* [***download the skill***](https://health-skillz.joshuamandel.com/skill.zip)*, upload to Claude (Settings → Capabilities, Skills), and ask Claude to look at your health records. Test with Epic sandbox or with your real data (currently Epic-only).*

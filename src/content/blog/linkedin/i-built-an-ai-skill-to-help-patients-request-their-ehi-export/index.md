@@ -4,6 +4,14 @@ date: 2026-03-02T14:34:00
 slug: i-built-an-ai-skill-to-help-patients-request-their-ehi-export
 original_url: "https://www.linkedin.com/pulse/i-built-ai-skill-help-patients-request-ehi-export-josh-mandel-md-77bjc"
 linkedin_id: 77bjc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7434248705467199488"
+  share_id: "7434248705467199488"
+  share_type: "ugcPost"
+  posted_at: "2026-03-02T14:50:13"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Every patient has a right to their complete Electronic Health Information -- but there's rarely a button to request it. I built an AI skill that handles the request workflow via fax, finding the right form, filling, signing, and submitting with a cover letter explaining the request in vendor-specific terms. Here's how it works, how to try it, and why I built it as a "Skill" rather than an app.
 ---
 
 Every patient in the US has the right to a complete electronic copy of their medical record. Since December 2023, every certified EHR system has been required to support a feature called “EHI Export” that produces exactly this: a bulk export of all structured data in a patient’s chart. This is different from (deeper than) the "Core Data" that comes standardized in FHIR, and often includes operational detail not otherwise exposed to patients (e.g. billing reconciliation, room wait times, internal staff messaging about prescription requests).

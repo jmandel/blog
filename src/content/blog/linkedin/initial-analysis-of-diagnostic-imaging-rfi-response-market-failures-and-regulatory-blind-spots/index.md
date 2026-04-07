@@ -4,6 +4,14 @@ date: 2026-03-19T15:45:00
 slug: initial-analysis-of-diagnostic-imaging-rfi-response-market-failures-and-regulatory-blind-spots
 original_url: "https://www.linkedin.com/pulse/initial-analysis-diagnostic-imaging-rfi-response-blind-mandel-md-gcs2c"
 linkedin_id: gcs2c
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7440445305659207680"
+  share_id: "7440445305659207680"
+  share_type: "ugcPost"
+  posted_at: "2026-03-19T17:13:17"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    My Regulations dot gov comment analysis of 97 submissions on the Imaging Interop RFI is up and ready (link in comments). Quick summary article here...
 ---
 
 *For the full analysis of 97 submissions to regulations dot gov, see my* [*Regulatory Comment Browser*](https://joshuamandel.com/regulations.gov-comment-browser/HHS-ONC-2026-0067/#/themes)*.*

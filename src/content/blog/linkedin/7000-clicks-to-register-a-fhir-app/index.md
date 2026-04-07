@@ -4,6 +4,14 @@ date: 2026-02-11T19:59:00
 slug: 7000-clicks-to-register-a-fhir-app
 original_url: "https://www.linkedin.com/pulse/7000-clicks-register-fhir-app-josh-mandel-md-ta7ic"
 linkedin_id: ta7ic
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7427443439530811392"
+  share_id: "7427443439530811392"
+  share_type: "ugcPost"
+  posted_at: "2026-02-11T20:08:31"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    I built a script to save myself 7,000 clicks on Epic's developer portal. Read on for a deep dive into patient access, app registration, data sets (including USCDI flavors), SMART User Access Brand Bundles, and more.
 ---
 
 **TL;DR:** I built [Health Skillz](https://github.com/jmandel/health-skillz) to help patients connect their health records to an AI assistant. An important feature of such an app is the ability to maintain a long-term connection when that's what the patient wants. Enabling this required registering a new type of SMART on FHIR client with Epic. Epic deserves credit for having a system that distributes patient-facing apps to hundreds of health systems automatically. (Not every EHR vendor offers anything like this.) But the developer experience around that system is rough. Activating my app required confirming the exact same credential, one organization at a time, through a 7-click modal workflow — over 3,500 clicks for a single registration, and over 7,000 to reach all available organizations. I had Claude Code inspect the network traffic to understand the underlying API calls. Along the way I uncovered deeper issues with the registration model.

@@ -5,6 +5,14 @@ slug: fhir-meets-ralph-wiggum-or-agents-can-find-spec-bugs
 original_url: "https://www.linkedin.com/pulse/fhir-meets-ralph-wigugm-agents-can-find-spec-bugs-josh-mandel-md-gnd5c"
 linkedin_id: gnd5c
 banner: ./banner.jpg
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7422373860525813760"
+  share_id: "7422373860525813760"
+  share_type: "ugcPost"
+  posted_at: "2026-01-28T20:23:49"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Here’s how "Ralph Wiggum loops" (stateless AI agents running in a do...while loop) built a spec-compliant compiler from scratch, and identified underlying spec bugs. Is it the future? No, but it's surprisingly great for January 2026. See article.
 ---
 
 ### The Hype

@@ -4,6 +4,14 @@ date: 2026-03-08T02:20:00
 slug: hti-5-analysis-a-battle-is-brewing-over-ai-agents-as-ehr-users
 original_url: "https://www.linkedin.com/pulse/hti-5-analysis-battle-brewing-over-ai-agents-ehr-users-mandel-md-sm33c"
 linkedin_id: sm33c
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7436238409762893824"
+  share_id: "7436238409762893824"
+  share_type: "ugcPost"
+  posted_at: "2026-03-08T02:36:35"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    The HTI-5 comments are in. See analysis on the vigorous debate about AI Agents as Health IT Users!
 ---
 
 *Guest post from Gemini Pro analyzing HTI-5 comments on the theme of artificial intelligence / robotic process automation, sourced from my* [*regulations.gov comment browser on HTI-5*](https://joshuamandel.com/regulations.gov-comment-browser/HHS-ONC-2025-0005-0001/#/themes/2.2)[*.*](https://joshuamandel.com/regulations.gov-comment-browser/HHS-ONC-2025-0005-0001/#/themes/4.1)

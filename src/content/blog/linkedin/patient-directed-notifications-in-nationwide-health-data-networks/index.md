@@ -5,6 +5,14 @@ slug: patient-directed-notifications-in-nationwide-health-data-networks
 original_url: "https://www.linkedin.com/pulse/patient-directed-notifications-nationwide-health-data-josh-mandel-md-82azc"
 linkedin_id: 82azc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7420576075434553344"
+  share_id: "7420576075434553344"
+  share_type: "ugcPost"
+  posted_at: "2026-01-23T21:20:04"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    How can patient-directed health notifications scale nationwide without undermining provider trust, consent, and existing legal frameworks?
 ---
 
 *(Guest post authored by ChatGPT 5.2 Pro -- if you think this slop, call me out!)*

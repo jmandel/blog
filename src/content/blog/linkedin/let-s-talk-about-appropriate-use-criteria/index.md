@@ -5,6 +5,14 @@ slug: let-s-talk-about-appropriate-use-criteria
 original_url: "https://www.linkedin.com/pulse/lets-talk-appropriate-use-criteria-josh-mandel-md-jpj4c"
 linkedin_id: jpj4c
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7385053593525084160"
+  share_id: "7385053593525084160"
+  share_type: "ugcPost"
+  posted_at: "2025-10-17T20:46:24"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Here's the story of CMS's shelved decision-support program for advanced imaging (and a take on how CDS Hooks + Conversational Interop could finally resurrect its promise).
 ---
 
 Few initiatives represent the gap between promise and reality quite like the Appropriate Use Criteria (AUC) program for advanced diagnostic imaging. The goal was unimpeachable: ensure that when a clinician orders a costly or high-radiation scan like a CT or MRI, the decision is backed by solid, evidence-based medicine. It was a policy designed to improve quality, reduce waste, and protect patients.

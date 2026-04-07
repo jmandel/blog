@@ -5,6 +5,14 @@ slug: fixing-the-all-or-nothing-problem-in-health-data-sharing-experiments-with-
 original_url: "https://www.linkedin.com/pulse/fixing-all-nothing-problem-health-data-sharing-fhir-josh-mandel-md-9k6gc"
 linkedin_id: 9k6gc
 banner: ./banner.jpg
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7397687144892268544"
+  share_id: "7397687144892268544"
+  share_type: "ugcPost"
+  posted_at: "2025-11-21T17:27:37"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    I’ve written a "verifiable clinical data" primer + prototype + demo showing how IETF's new SD-JWT standard allows for redaction within verifiable FHIR records. This finally gets us beyond all-or-nothing privacy trade-offs in health data sharing. #rfc9901
 ---
 
 The IETF recently published **RFC 9901**, standardizing *Selective Disclosure for JSON Web Tokens* (SD-JWT). This is a significant technical milestone for how we handle verifiable clinical information.

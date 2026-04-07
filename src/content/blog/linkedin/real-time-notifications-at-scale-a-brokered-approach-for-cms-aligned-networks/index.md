@@ -5,6 +5,14 @@ slug: real-time-notifications-at-scale-a-brokered-approach-for-cms-aligned-netwo
 original_url: "https://www.linkedin.com/pulse/real-time-notifications-scale-brokered-approach-josh-mandel-md-sevpc"
 linkedin_id: sevpc
 banner: ./banner.jpg
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7423449889583439872"
+  share_id: "7423449889583439872"
+  share_type: "ugcPost"
+  posted_at: "2026-01-31T19:39:34"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    The CMS Interoperability Framework calls for appointment and encounter notifications to support better care coordination. To make this technically viable, here's a proposed "Brokered Approach" for CMS-Aligned Networks. This architecture aggregates disparate (and diversely formatted) event feeds into a standard FHIR Subscription that patient-, provider-, and payor-facing clients can consume. (See article.)
 ---
 
 The CMS Interoperability Framework asks CMS-Aligned Networks to deliver appointment and encounter notifications using FHIR Subscriptions. While provider-level FHIR Subscriptions would be great (and I hope to see them land in HTI-6!), they aren't a solution to this CMS requirement because...

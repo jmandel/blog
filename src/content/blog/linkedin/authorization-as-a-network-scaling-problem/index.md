@@ -5,6 +5,14 @@ slug: authorization-as-a-network-scaling-problem
 original_url: "https://www.linkedin.com/pulse/authorization-network-scaling-problem-josh-mandel-md-aczuc"
 linkedin_id: aczuc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7396967147534680064"
+  share_id: "7396967147534680064"
+  share_type: "ugcPost"
+  posted_at: "2025-11-19T17:46:37"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Relying on pre-configured Backend Services clients for authorization is systematically sweeping the hardest problems of network-based trust under the rug . Analysis and a few new ideas for TEFCA and beyond...
 ---
 
 When we designed the SMART Backend Services specification, we deliberately left flexibility for implementers to handle authorization logic below the OAuth layer. There were good reasons for this - we needed to get the standard through, we needed to accommodate different deployment models, and frankly we didn't have consensus on how to standardize the authorization semantics themselves. As lead editor for the SMART App Launch and Backend Services specs, I helped [provide](https://build.fhir.org/ig/HL7/smart-app-launch/scopes-and-launch-context.html#:~:text=Neither%20SMART%20on%20FHIR%20nor%20the%20FHIR%20Core%20specification%20provide%20a%20way%20to%20model%20the%20%E2%80%9Cunderlying%E2%80%9D%20permissions%20at%20play%20here) that [flexibility](https://build.fhir.org/ig/HL7/smart-app-launch/backend-services.html#:~:text=The%20client%20then%20includes%20a%20set%20of%20scopes%20in%20the%20access%20token%20request%2C%20which%20causes%20the%20server%20to%20apply%20additional%20access%20restrictions%20following%20the%20SMART%20Scopes%20syntax) intentionally.

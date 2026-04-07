@@ -5,6 +5,15 @@ slug: proposal-smart-health-check-in-protocol
 original_url: "https://www.linkedin.com/pulse/proposal-smart-health-check-in-protocol-josh-mandel-md-pdzmc"
 linkedin_id: pdzmc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7396614973646553089"
+  share_id: "7396614973646553089"
+  share_type: "ugcPost"
+  posted_at: "2025-11-18T18:27:12"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    We still need a good UX to share clinical info remotely during online interactions! Proposal: I’ve drafted and prototyped a "SMART Health "
+    "Check-in" protocol inspired by W3C Digital Credentials. This builds on SMART Health Cards and Links as the basis for standardize data + encrypted sharing.
 ---
 
 The CMS Interoperability Framework aims to "Kill the Clipboard," enabling patients to digitally share health records, insurance data, and other paperwork with providers.

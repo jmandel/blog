@@ -4,6 +4,14 @@ date: 2026-02-16T15:33:00
 slug: your-c-cda-is-exquisitely-unlikely-to-be-a-satisfactory-ehi-export
 original_url: "https://www.linkedin.com/pulse/your-c-cda-exquisitely-unlikely-satisfactory-ehi-josh-mandel-md-gr90c"
 linkedin_id: gr90c
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7429191089699581952"
+  share_id: "7429191089699581952"
+  share_type: "ugcPost"
+  posted_at: "2026-02-16T15:53:03"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    About 25% of the EHRs I've reviewed so far appear to be surfacing C-CDA clinical summaries as full (b)(10) EHI exports. Read on to understand why lossy mapping falls short of the requirement to export everything (early data from my cross-vendor EHI Export analysis).
 ---
 
 Under [§170.315(b)(10)](https://www.healthit.gov/test-method/electronic-health-information-export), certified health IT must be able to export **all** electronic health information stored by the product. Not a summary/highlights, but everything: billing, insurance, specialty clinical data, administrative records used for decision-making, anything in the [Designated Record Set](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.501) that's stored electronically.

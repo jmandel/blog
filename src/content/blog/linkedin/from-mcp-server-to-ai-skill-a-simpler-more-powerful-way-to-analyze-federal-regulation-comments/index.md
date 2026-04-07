@@ -4,6 +4,14 @@ date: 2026-03-09T18:26:00
 slug: from-mcp-server-to-ai-skill-a-simpler-more-powerful-way-to-analyze-federal-regulation-comments
 original_url: "https://www.linkedin.com/pulse/from-mcp-server-ai-skill-simpler-more-powerful-way-josh-mandel-md-hyh1c"
 linkedin_id: hyh1c
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7436843829607133185"
+  share_id: "7436843829607133185"
+  share_type: "ugcPost"
+  posted_at: "2026-03-09T18:42:18"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    My regulations dot gov analysis tool... now with SKILL.md support! How I replaced my 8k line MCP server with 400 lines of markdown and improved the user experience in the process.
 ---
 
 Last summer I shared an MCP server that let AI tools query public comments on federal regulations. It worked — but hosting and maintaining it was a pain. Today I'm replacing it with something better.

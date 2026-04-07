@@ -5,6 +5,14 @@ slug: hti-5-deregulation-rhetoric-and-architectural-gaps
 original_url: "https://www.linkedin.com/pulse/hti-5-deregulation-rhetoric-architectural-gaps-josh-mandel-md-7gw1c"
 linkedin_id: 7gw1c
 banner: ./banner.jpg
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7417252773387493376"
+  share_id: "7417252773387493376"
+  share_type: "ugcPost"
+  posted_at: "2026-01-14T17:14:27"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    On ASTP’s HTI-5 proposal: removing legacy mandates clears the floor for FHIR, but dismantling reporting requirements leaves us without the data to measure the transition. Click for the full article...
 ---
 
 The latest proposed rule from ASTP/ONC frames a significant deregulation of the Health IT Certification Program as a necessary pivot toward a "FHIR-forward future." The document uses the rhetoric of modernization to justify the removal of long-standing requirements for legacy standards like C-CDA and Direct, and I'm generally a fan (but the devil is in the details).

@@ -5,6 +5,14 @@ slug: the-value-was-never-the-framework
 original_url: "https://www.linkedin.com/pulse/value-never-framework-josh-mandel-md-rc6gc"
 linkedin_id: rc6gc
 banner: ./banner.jpg
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7420221753320361985"
+  share_id: "7420221753320361985"
+  share_type: "ugcPost"
+  posted_at: "2026-01-22T21:52:07"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    How do you let a massive data standard innovate without breaking its stable core? FHIR R6 answers this with a new "additional resources" model that includes a formalized "Incubator" track so new resources can be developed on a faster, independent cycle. Analysis in article...
 ---
 
 Back in 2016, I pushed back against the idea of "Custom Resources" in FHIR.

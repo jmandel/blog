@@ -5,6 +5,14 @@ slug: sub-agents-are-getting-easier
 original_url: "https://www.linkedin.com/pulse/sub-agents-getting-easier-josh-mandel-md-t3kgc"
 linkedin_id: t3kgc
 banner: ./banner.jpg
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7420502977339355136"
+  share_id: "7420502977339355136"
+  share_type: "ugcPost"
+  posted_at: "2026-01-23T16:29:36"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    In Jan 2026, the solution to massive context isn't a bigger window, it's parallel processing with a conversational, agent-driven pipeline. Here's how I orchestrated 11 agents to prep for next week's HL7 workgroup meeting.
 ---
 
 When a task is too big for one context window, the answer (in mid-January 2026) is more agents, not a bigger window.

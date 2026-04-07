@@ -5,6 +5,14 @@ slug: open-data-agents-and-the-next-era-of-prior-authorization-in-cms-0057-f
 original_url: "https://www.linkedin.com/pulse/open-data-agents-next-era-prior-authorization-josh-mandel-md-kfstc"
 linkedin_id: kfstc
 banner: ./banner.jpg
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7417985148492656640"
+  share_id: "7417985148492656640"
+  share_type: "ugcPost"
+  posted_at: "2026-01-16T17:44:39"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Prior auth architecture needs an overhaul. By January 2027, CMS-0057-F will require payors to offer comprehensive APIs. Here's how CMS could inspire & support successful, *streamlined* implementations. Core focus: 1) ensure AI agents can navigate open APIs and data sets, and 2) avoid needlessly rigid workflows. See article.
 ---
 
 The CMS Interoperability and Prior Authorization Final Rule ([CMS-0057-F](https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f)) sets the right goals: reduce administrative burden, speed access to care, and save an estimated $15 billion over ten years. The required functionality (looking up a member's plan; identifying documentation requirements; submitting prior authorization requests; tracking decisions) provides a solid foundation.

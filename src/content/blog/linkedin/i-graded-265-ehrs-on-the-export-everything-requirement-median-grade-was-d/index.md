@@ -5,6 +5,14 @@ slug: i-graded-265-ehrs-on-the-export-everything-requirement-median-grade-was-d
 original_url: "https://www.linkedin.com/pulse/i-graded-265-ehrs-export-everything-requirement-d-josh-mandel-md-n0qyc"
 linkedin_id: n0qyc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7429624990238507008"
+  share_id: "7429624990238507008"
+  share_type: "ugcPost"
+  posted_at: "2026-02-17T20:37:13"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    I analyzed the mandatory "EHI Export" documentation for essentially every certified EHR on the market. Read on for the full picture; examples of the good, the bad, and the ugly; and recommendations for ONC, vendors, and patients to improve access to comprehensive health data.
 ---
 
 *A caveat up front: Evaluating EHI export documentation is hard. Vendors' published specs are often limited, cryptic, or use product-specific terminology that's unfamiliar even to domain experts. AI-assisted analysis facilitates best-effort understanding, but it can be wrong in the details. I can't manually review all 600K words of product research, 800K words of notes from navigating vendor sites to find EHI docs, 600K words of per-vendor analysis, or 80K lines of code to parse and process documentation in service of that analysis -- but I've spot-checked the claims highlighted in this article. If any assessment is in error, I'd welcome your corrections: please* [*file an issue*](https://github.com/jmandel/ehi-export-analysis/issues/new) *or* [*message me on LinkedIn*](https://www.linkedin.com/in/josh-mandel/)*.*

@@ -5,6 +5,14 @@ slug: fulfilling-the-cures-act-conversational-interop-as-a-successor-technology
 original_url: "https://www.linkedin.com/pulse/fulfilling-cures-act-conversational-interoperability-josh-mandel-md-jevoe"
 linkedin_id: jevoe
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7384982397341306880"
+  share_id: "7384982397341306880"
+  share_type: "ugcPost"
+  posted_at: "2025-10-17T16:03:30"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    The 21st Century Cures Act envisioned "successor technologies" beyond APIs to fix healthcare data access. Here's what a successor paradigm (Conversational Interop together with a Minimal Interop Network for Trust) could look like...
 ---
 
 The 21st Century Cures Act set a clear north star: a patient’s electronic health information must be reachable “without special effort” through “APIs or their successor technologies.” Congress did not freeze the future on any single standard; it obligated the industry to keep removing friction from health data exchange.

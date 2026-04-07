@@ -5,6 +5,14 @@ slug: can-50b-for-rural-health-drive-a-new-wave-of-interoperability
 original_url: "https://www.linkedin.com/pulse/can-50b-rural-health-drive-new-wave-interoperability-josh-mandel-md-tpkmc"
 linkedin_id: tpkmc
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7374524768538017792"
+  share_id: "7374524768538017792"
+  share_type: "ugcPost"
+  posted_at: "2025-09-18T19:28:36"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Congress has launched a $50B Rural Health Transformation Program. $50B is a lot! Quick overview + opportunities for interop & AI:
 ---
 
 The Rural Health Transformation Program (part of the “One Big Beautiful Bill,” Public Law 119–21) dedicates $50 billion over five years. States must apply by the end of 2025 with a detailed plan. CMS will distribute half the money equally across approved states and half using a formula based on rural population, facility counts, and hospital solvency.

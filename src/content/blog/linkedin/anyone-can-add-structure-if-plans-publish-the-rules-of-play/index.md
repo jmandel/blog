@@ -4,6 +4,14 @@ date: 2026-04-02T21:10:00
 slug: anyone-can-add-structure-if-plans-publish-the-rules-of-play
 original_url: "https://www.linkedin.com/pulse/anyone-can-add-structure-plans-publish-rules-play-josh-mandel-md-x9kwc"
 linkedin_id: x9kwc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7445579422860226560"
+  share_id: "7445579422860226560"
+  share_type: "ugcPost"
+  posted_at: "2026-04-02T21:14:26"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    While the healthcare industry rushes to fix prior authorization by standardizing data formats and building APIs, a deeper bottleneck is transparency: anyone (with help from AI Agents) cna make coverage rules computable, but only if health plans actually publish their rules of play.
 ---
 
 There is a lot of pressure right now to improve prior authorization. Some of that work is overdue and useful: fewer portals, less faxing, cleaner transactions, better ways to move documentation from the chart into the request. CMS’s interoperability and prior authorization rule, finalized in January 2024, pushes the system in that direction by requiring impacted payers to stand up a Prior Authorization API by 2027. ASTP/ONC’s HTI-4 rule, finalized in July 2025, adds health IT certification criteria tied to the Da Vinci prior authorization workflow stack. All of that may make prior authorization more electronic. **None of it, by itself, solves a more basic problem: a coverage rule cannot be encoded if it is not published in enough detail.**
