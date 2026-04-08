@@ -4,7 +4,7 @@
 <header class="header">
   <a href="/blog" class="logo" aria-label="Interop Blog by Josh Mandel, MD">
     <div class="logo-wrap" id="logoWrap">
-      <canvas id="graph"></canvas>
+      <canvas id="graph" width="156" height="156"></canvas>
       <div class="text-block">
         <h1>Interop <span>Blog</span></h1>
         <div class="byline">by Josh Mandel, MD</div>
@@ -48,6 +48,9 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    /* Fixed width so a DM-Sans font swap can't reflow the flex row and
+       shift the canvas sideways. Sized to fit "Interop Blog" at 52px. */
+    width: 280px;
   }
 
   .text-block h1 {
@@ -123,6 +126,10 @@
       height: 80px !important;
     }
 
+    .text-block {
+      width: 195px;
+    }
+
     .text-block h1 {
       font-size: 36px;
     }
@@ -190,44 +197,56 @@
   interface PacketObj {
     from: typeof nodes[number];
     to: typeof nodes[number];
-    delay: number;
-    t: number;
-    dur: number;
+    start: number;   // absolute seconds into the animation
+    dur: number;     // travel duration, seconds
     size: number;
     color: string;
-    done: boolean;
+    // Used only by easter-egg packets which share the draw loop
+    done?: boolean;
     elapsed?: number;
+    t?: number;
+    delay?: number;
   }
 
-  function createPacket(delay: number): PacketObj {
+  // Each packet is born at a source node and lands at a destination node,
+  // fully contained within [0, ANIM_DUR]. These invariants hold regardless
+  // of ANIM_DUR, so the total sequence length can be tuned freely.
+  function createPacket(animDur: number): PacketObj {
     const ei = Math.floor(Math.random() * edges.length);
     const [a, b] = edges[ei];
     const fwd = Math.random() > 0.5;
+    // Travel takes 30–55% of the total sequence — faster packets move
+    // more pixels per frame, which makes the motion look smoother.
+    const dur = animDur * (0.30 + Math.random() * 0.25);
+    // Start somewhere in the window that still allows a full traversal.
+    const start = Math.random() * Math.max(0, animDur - dur);
     return {
       from: nodes[fwd ? a : b],
       to: nodes[fwd ? b : a],
-      delay,
-      t: 0,
-      dur: 0.12 + Math.random() * 0.22,
-      size: 1.8 + Math.random() * 1.2,
+      start,
+      dur,
+      size: 2.4 + Math.random() * 1.4,
       color: Math.random() > 0.5 ? C1 : C2,
-      done: false,
     };
   }
 
   let packets: PacketObj[] = [];
   function initPackets() {
     packets = [];
-    for (let w = 0; w < 4; w++) {
-      const n = 6 + Math.floor(Math.random() * 4);
-      for (let i = 0; i < n; i++) {
-        packets.push(createPacket(w * 0.18 + Math.random() * 0.12));
-      }
+    const count = 18 + Math.floor(Math.random() * 5);
+    for (let i = 0; i < count; i++) {
+      packets.push(createPacket(ANIM_DUR));
     }
   }
 
-  function easeOutCubic(t: number) { return 1 - Math.pow(1 - t, 3); }
-  function easeOutQuad(t: number) { return 1 - Math.pow(1 - t, 2); }
+  // Smooth sine ease-in-out: zero velocity at endpoints (packet lands
+  // softly in its source/destination node) with continuous acceleration
+  // everywhere in between — much smoother than a trapezoidal profile.
+  function smoothEase(t: number): number {
+    if (t <= 0) return 0;
+    if (t >= 1) return 1;
+    return 0.5 - 0.5 * Math.cos(Math.PI * t);
+  }
 
   function drawEdges(progress: number) {
     for (const [a, b] of edges) {
@@ -269,32 +288,25 @@
 
     ctx.clearRect(0, 0, SIZE, SIZE);
 
-    const edgeProg = easeOutCubic(Math.min(elapsed / 0.4, 1));
-    drawEdges(edgeProg);
+    // The graph itself is drawn in full from t=0; only the packets move.
+    drawEdges(1);
 
     for (const p of packets) {
-      if (!p.done && elapsed >= p.delay) {
-        p.t += dt / p.dur;
-        if (p.t >= 1) { p.t = 1; p.done = true; }
-      }
-      if (!p.done && elapsed >= p.delay) {
-        const t = p.t;
-        const x = p.from.x + (p.to.x - p.from.x) * t;
-        const y = p.from.y + (p.to.y - p.from.y) * t;
-        let alpha = 1;
-        if (t < 0.15) alpha = t / 0.15;
-        else if (t > 0.8) alpha = (1 - t) / 0.2;
-        ctx.beginPath();
-        ctx.arc(x, y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = p.color;
-        ctx.globalAlpha = alpha * 0.75;
-        ctx.fill();
-        ctx.globalAlpha = 1;
-      }
+      if (elapsed < p.start) continue;
+      if (elapsed > p.start + p.dur) continue;
+      const localT = (elapsed - p.start) / p.dur;
+      const eased = smoothEase(localT);
+      const x = p.from.x + (p.to.x - p.from.x) * eased;
+      const y = p.from.y + (p.to.y - p.from.y) * eased;
+      ctx.beginPath();
+      ctx.arc(x, y, p.size, 0, Math.PI * 2);
+      ctx.fillStyle = p.color;
+      ctx.globalAlpha = 0.8;
+      ctx.fill();
+      ctx.globalAlpha = 1;
     }
 
-    const nodeProg = easeOutQuad(Math.min(Math.max(elapsed - 0.05, 0) / 0.35, 1));
-    drawNodes(nodeProg);
+    drawNodes(1);
 
     if (elapsed > ANIM_DUR && !settled) {
       settled = true;
@@ -338,7 +350,8 @@
       if (!target) continue;
       for (let i = 0; i < 3; i++) {
         eggBurstPackets.push({
-          from: hub, to: target, t: 0,
+          from: hub, to: target,
+          start: 0, t: 0,
           dur: 0.2 + Math.random() * 0.15,
           delay: i * 0.05,
           size: 2 + Math.random() * 1.5,
