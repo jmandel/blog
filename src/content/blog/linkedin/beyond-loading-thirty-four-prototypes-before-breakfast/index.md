@@ -1,6 +1,7 @@
 ---
 title: "Beyond \"Loading...\": Thirty-four prototypes before breakfast"
 date: 2026-02-12T16:12:00
+added_at: 2026-04-03
 slug: beyond-loading-thirty-four-prototypes-before-breakfast
 original_url: "https://www.linkedin.com/pulse/beyond-loading-thirty-four-prototypes-over-breakfast-josh-mandel-md-ijpqc"
 linkedin_id: ijpqc

@@ -1,6 +1,7 @@
 ---
 title: "From MCP Server to AI Skill: A Simpler, More Powerful Way to Analyze Federal Regulation Comments"
 date: 2026-03-09T18:26:00
+added_at: 2026-04-03
 slug: from-mcp-server-to-ai-skill-a-simpler-more-powerful-way-to-analyze-federal-regulation-comments
 original_url: "https://www.linkedin.com/pulse/from-mcp-server-ai-skill-simpler-more-powerful-way-josh-mandel-md-hyh1c"
 linkedin_id: hyh1c

@@ -1,6 +1,7 @@
 ---
 title: "The Battle for Health Data Moves to the Fine Print"
 date: 2026-03-09T00:49:00
+added_at: 2026-04-03
 slug: the-battle-for-health-data-moves-to-the-fine-print
 original_url: "https://www.linkedin.com/pulse/battle-health-data-moves-fine-print-josh-mandel-md-nlmuc"
 linkedin_id: nlmuc

@@ -1,6 +1,7 @@
 ---
 title: "Which healthcare regulations should we kill?"
 date: 2025-07-15T17:40:00
+added_at: 2025-09-15
 slug: which-healthcare-regulations-should-we-kill
 original_url: "https://www.linkedin.com/pulse/which-healthcare-regulations-should-we-kill-josh-mandel-md-t8a3c"
 linkedin_id: t8a3c

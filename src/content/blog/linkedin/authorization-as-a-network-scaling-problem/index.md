@@ -1,6 +1,7 @@
 ---
 title: "Authorization as a Network Scaling Problem"
 date: 2025-11-19T17:35:00
+added_at: 2025-11-23
 slug: authorization-as-a-network-scaling-problem
 original_url: "https://www.linkedin.com/pulse/authorization-network-scaling-problem-josh-mandel-md-aczuc"
 linkedin_id: aczuc

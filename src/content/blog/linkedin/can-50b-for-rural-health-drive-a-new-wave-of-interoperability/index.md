@@ -1,6 +1,7 @@
 ---
 title: "Can $50B for Rural Health Drive a New Wave of Interoperability?"
 date: 2025-09-18T18:58:00
+added_at: 2025-11-23
 slug: can-50b-for-rural-health-drive-a-new-wave-of-interoperability
 original_url: "https://www.linkedin.com/pulse/can-50b-rural-health-drive-new-wave-interoperability-josh-mandel-md-tpkmc"
 linkedin_id: tpkmc

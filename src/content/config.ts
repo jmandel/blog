@@ -6,6 +6,11 @@ const blogCollection = defineCollection({
     z.object({
       title: z.string(),
       date: z.union([z.date(), z.string()]),
+      // When the post first landed in this blog (as opposed to `date`,
+      // which is when it was originally authored on LinkedIn). Used as
+      // the RSS pubDate so subscribers see a post when it's imported,
+      // even if its authoring date is months old.
+      added_at: z.union([z.date(), z.string()]).optional(),
       slug: z.string().optional(),
       banner: image().optional(),
       original_url: z.string().optional(),

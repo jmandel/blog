@@ -1,6 +1,7 @@
 ---
 title: "Proposal: SMART Health Check-in Protocol"
 date: 2025-11-18T16:48:00
+added_at: 2025-11-23
 slug: proposal-smart-health-check-in-protocol
 original_url: "https://www.linkedin.com/pulse/proposal-smart-health-check-in-protocol-josh-mandel-md-pdzmc"
 linkedin_id: pdzmc

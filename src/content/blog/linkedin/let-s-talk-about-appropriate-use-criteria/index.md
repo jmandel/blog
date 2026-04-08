@@ -1,6 +1,7 @@
 ---
 title: "Let's Talk about Appropriate Use Criteria"
 date: 2025-10-17T20:44:00
+added_at: 2025-11-23
 slug: let-s-talk-about-appropriate-use-criteria
 original_url: "https://www.linkedin.com/pulse/lets-talk-appropriate-use-criteria-josh-mandel-md-jpj4c"
 linkedin_id: jpj4c

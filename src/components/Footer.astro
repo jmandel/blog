@@ -2,5 +2,26 @@
 ---
 
 <footer class="footer">
-  <p>&copy; 2025 Interop Blog. All rights reserved.</p>
+  <p>
+    &copy; 2025 Interop Blog &middot;
+    <a class="footer__rss" href="/blog/rss.xml">
+      <span aria-hidden="true">›</span> Subscribe via RSS
+    </a>
+  </p>
 </footer>
+
+<style>
+  .footer__rss {
+    color: #2a6f9e;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .footer__rss:hover {
+    text-decoration: underline;
+  }
+  .footer__rss span {
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-right: 0.1rem;
+  }
+</style>

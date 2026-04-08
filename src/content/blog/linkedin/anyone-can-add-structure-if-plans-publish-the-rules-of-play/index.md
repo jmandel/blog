@@ -1,6 +1,7 @@
 ---
 title: "Anyone Can Add Structure... If Plans Publish the Rules of Play"
 date: 2026-04-02T21:10:00
+added_at: 2026-04-03
 slug: anyone-can-add-structure-if-plans-publish-the-rules-of-play
 original_url: "https://www.linkedin.com/pulse/anyone-can-add-structure-plans-publish-rules-play-josh-mandel-md-x9kwc"
 linkedin_id: x9kwc

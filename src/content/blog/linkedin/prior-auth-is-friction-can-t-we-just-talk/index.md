@@ -1,6 +1,7 @@
 ---
 title: "Prior auth is friction. Can't we just talk?"
 date: 2025-03-28T03:23:00
+added_at: 2025-07-04
 slug: prior-auth-is-friction-can-t-we-just-talk
 original_url: "https://www.linkedin.com/pulse/prior-auth-friction-cant-we-just-talk-josh-mandel-md-taq6c"
 linkedin_id: taq6c

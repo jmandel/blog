@@ -1,6 +1,7 @@
 ---
 title: "How to Read 10,000 Pages of Public Comments"
 date: 2025-06-16T18:52:00
+added_at: 2025-07-04
 slug: how-to-read-10000-pages-of-public-comments
 original_url: "https://www.linkedin.com/pulse/how-read-10000-pages-public-comments-josh-mandel-md-1zruc"
 linkedin_id: 1zruc

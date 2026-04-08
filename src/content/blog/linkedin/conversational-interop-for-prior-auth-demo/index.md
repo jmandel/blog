@@ -1,6 +1,7 @@
 ---
 title: "Conversational Interop for Prior Auth (demo!)"
 date: 2025-04-25T15:38:00
+added_at: 2025-07-04
 slug: conversational-interop-for-prior-auth-demo
 original_url: "https://www.linkedin.com/pulse/conversational-interop-prior-auth-demo-josh-mandel-md-wjwxe"
 linkedin_id: wjwxe

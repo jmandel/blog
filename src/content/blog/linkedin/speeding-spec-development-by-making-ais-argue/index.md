@@ -1,6 +1,7 @@
 ---
 title: "Speeding Spec Development by Making AIs Argue"
 date: 2025-10-14T18:42:00
+added_at: 2025-11-23
 slug: speeding-spec-development-by-making-ais-argue
 original_url: "https://www.linkedin.com/pulse/2025-10-14 18:42:15.0-Speeding Spec Development by Making AIs Argue"
 ---

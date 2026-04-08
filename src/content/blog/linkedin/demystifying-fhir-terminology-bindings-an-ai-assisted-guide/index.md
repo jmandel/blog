@@ -1,6 +1,7 @@
 ---
 title: "Demystifying FHIR Terminology Bindings: An AI-Assisted Guide"
 date: 2026-01-29T00:55:00
+added_at: 2026-04-03
 slug: demystifying-fhir-terminology-bindings-an-ai-assisted-guide
 original_url: "https://www.linkedin.com/pulse/demystifying-fhir-terminology-bindings-ai-assisted-guide-mandel-md-i1sxc"
 linkedin_id: i1sxc

@@ -1,6 +1,7 @@
 ---
 title: "Connect the Dots for Prior Auth:  A2A && MCP?"
 date: 2025-04-09T16:56:00
+added_at: 2025-07-04
 slug: connect-the-dots-for-prior-auth-a2a-mcp
 original_url: "https://www.linkedin.com/pulse/connect-dots-prior-auth-a2a-mcp-josh-mandel-md-mt3te"
 linkedin_id: mt3te

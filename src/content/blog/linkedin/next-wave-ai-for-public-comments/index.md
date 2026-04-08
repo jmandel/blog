@@ -1,6 +1,7 @@
 ---
 title: "Next Wave: AI for Public Comments"
 date: 2025-08-16T17:18:00
+added_at: 2025-09-15
 slug: next-wave-ai-for-public-comments
 original_url: "https://www.linkedin.com/pulse/next-wave-ai-public-comments-josh-mandel-md-l2a0c"
 linkedin_id: l2a0c

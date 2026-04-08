@@ -1,6 +1,7 @@
 ---
 title: "Designing for Delay: A Liaison UX for Prior Auth and Other Asynchronous Clinical Tasks"
 date: 2025-04-14T13:09:00
+added_at: 2025-07-04
 slug: designing-for-delay-a-liaison-ux-for-prior-auth-and-other-asynchronous-clinical-tasks
 original_url: "https://www.linkedin.com/pulse/designing-delay-liaison-ux-prior-auth-other-clinical-tasks-josh-fbvec"
 linkedin_id: fbvec

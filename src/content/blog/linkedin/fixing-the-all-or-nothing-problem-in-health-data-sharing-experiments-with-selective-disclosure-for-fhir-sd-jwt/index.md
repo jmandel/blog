@@ -1,6 +1,7 @@
 ---
 title: "Fixing the \"All or Nothing\" Problem in Health Data Sharing: Experiments with Selective Disclosure for FHIR (SD-JWT)"
 date: 2025-11-21T16:06:00
+added_at: 2025-11-23
 slug: fixing-the-all-or-nothing-problem-in-health-data-sharing-experiments-with-selective-disclosure-for-fhir-sd-jwt
 original_url: "https://www.linkedin.com/pulse/fixing-all-nothing-problem-health-data-sharing-fhir-josh-mandel-md-9k6gc"
 linkedin_id: 9k6gc

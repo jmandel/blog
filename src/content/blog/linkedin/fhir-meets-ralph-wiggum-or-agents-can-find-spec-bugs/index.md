@@ -1,6 +1,7 @@
 ---
 title: "FHIR meets Ralph Wiggum (or: Agents Can Find Spec Bugs!)"
 date: 2026-01-28T20:12:00
+added_at: 2026-04-03
 slug: fhir-meets-ralph-wiggum-or-agents-can-find-spec-bugs
 original_url: "https://www.linkedin.com/pulse/fhir-meets-ralph-wigugm-agents-can-find-spec-bugs-josh-mandel-md-gnd5c"
 linkedin_id: gnd5c

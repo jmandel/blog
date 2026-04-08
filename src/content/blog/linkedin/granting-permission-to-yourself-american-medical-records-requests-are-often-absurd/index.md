@@ -1,6 +1,7 @@
 ---
 title: "Granting Permission to Yourself: American Medical Records Requests are Often Absurd"
 date: 2026-02-20T14:45:00
+added_at: 2026-04-03
 slug: granting-permission-to-yourself-american-medical-records-requests-are-often-absurd
 original_url: "https://www.linkedin.com/pulse/granting-permission-yourself-american-medical-records-josh-mandel-md-0klyc"
 linkedin_id: 0klyc

@@ -1,6 +1,7 @@
 ---
 title: "I Built an AI Skill to Help Patients Request Their EHI Export"
 date: 2026-03-02T14:34:00
+added_at: 2026-04-03
 slug: i-built-an-ai-skill-to-help-patients-request-their-ehi-export
 original_url: "https://www.linkedin.com/pulse/i-built-ai-skill-help-patients-request-ehi-export-josh-mandel-md-77bjc"
 linkedin_id: 77bjc

@@ -1,6 +1,7 @@
 ---
 title: "o3 Meets The Enigma: A Tale of AI, Puzzles, and Prompt Engineering"
 date: 2025-05-01T21:24:00
+added_at: 2025-07-04
 slug: o3-meets-the-enigma-a-tale-of-ai-puzzles-and-prompt-engineering
 original_url: "https://www.linkedin.com/pulse/o3-meets-enigma-tale-ai-puzzles-prompt-engineering-josh-mandel-md-l0xec"
 linkedin_id: l0xec

@@ -1,6 +1,7 @@
 ---
 title: "Voices from the CMS RFI: Attitudes Toward the Health System"
 date: 2025-07-02T20:11:00
+added_at: 2025-07-04
 slug: voices-from-the-cms-rfi-attitudes-toward-the-health-system
 original_url: "https://www.linkedin.com/pulse/voices-from-cms-rfi-attitudes-toward-health-system-josh-mandel-md-ydkjc"
 linkedin_id: ydkjc

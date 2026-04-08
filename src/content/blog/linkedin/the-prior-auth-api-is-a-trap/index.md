@@ -1,6 +1,7 @@
 ---
 title: "The Prior Auth API is a Trap"
 date: 2025-07-17T03:58:00
+added_at: 2025-09-15
 slug: the-prior-auth-api-is-a-trap
 original_url: "https://www.linkedin.com/pulse/prior-auth-api-trap-josh-mandel-md-hkixc"
 linkedin_id: hkixc

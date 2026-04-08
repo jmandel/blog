@@ -1,6 +1,7 @@
 ---
 title: "Your C-CDA Is Exquisitely Unlikely to Be a Satisfactory EHI Export"
 date: 2026-02-16T15:33:00
+added_at: 2026-04-03
 slug: your-c-cda-is-exquisitely-unlikely-to-be-a-satisfactory-ehi-export
 original_url: "https://www.linkedin.com/pulse/your-c-cda-exquisitely-unlikely-satisfactory-ehi-josh-mandel-md-gr90c"
 linkedin_id: gr90c

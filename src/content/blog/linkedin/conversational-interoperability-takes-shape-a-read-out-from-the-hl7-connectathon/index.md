@@ -1,6 +1,7 @@
 ---
 title: "Conversational Interoperability Takes Shape: A Read-Out from the HL7 Connectathon"
 date: 2025-09-15T14:58:00
+added_at: 2025-09-15
 slug: conversational-interoperability-takes-shape-a-read-out-from-the-hl7-connectathon
 original_url: "https://www.linkedin.com/pulse/conversational-interoperability-takes-shape-read-out-from-mandel-md-379fc"
 linkedin_id: 379fc

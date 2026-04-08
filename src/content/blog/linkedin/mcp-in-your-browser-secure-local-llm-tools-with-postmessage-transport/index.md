@@ -1,6 +1,7 @@
 ---
 title: "MCP in Your Browser: Secure, Local LLM Tools with postMessage Transport"
 date: 2025-05-05T16:18:00
+added_at: 2025-07-04
 slug: mcp-in-your-browser-secure-local-llm-tools-with-postmessage-transport
 original_url: "https://www.linkedin.com/pulse/mcp-your-browser-secure-local-llm-tools-postmessage-josh-mandel-md-v7zic"
 linkedin_id: v7zic

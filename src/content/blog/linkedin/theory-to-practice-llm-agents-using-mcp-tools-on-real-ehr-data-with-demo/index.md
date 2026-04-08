@@ -1,6 +1,7 @@
 ---
 title: "Theory to Practice: LLM Agents Using MCP Tools on Real EHR Data (with demo)"
 date: 2025-04-08T19:10:00
+added_at: 2025-07-04
 slug: theory-to-practice-llm-agents-using-mcp-tools-on-real-ehr-data-with-demo
 original_url: "https://www.linkedin.com/pulse/theory-practice-llm-agents-using-mcp-tools-real-ehr-data-mandel-md-acknc"
 linkedin_id: acknc

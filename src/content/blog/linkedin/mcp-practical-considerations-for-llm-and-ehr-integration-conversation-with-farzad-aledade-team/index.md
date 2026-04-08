@@ -1,6 +1,7 @@
 ---
 title: "MCP: Practical Considerations for LLM and EHR Integration. (Conversation with Farzad & Aledade Team)"
 date: 2025-05-07T14:59:00
+added_at: 2025-07-04
 slug: mcp-practical-considerations-for-llm-and-ehr-integration-conversation-with-farzad-aledade-team
 original_url: "https://www.linkedin.com/pulse/mcp-practical-considerations-llm-ehr-integration-team-josh-mandel-md-qjhqc"
 linkedin_id: qjhqc

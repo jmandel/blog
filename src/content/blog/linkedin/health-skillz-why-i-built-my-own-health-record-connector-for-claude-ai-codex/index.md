@@ -1,6 +1,7 @@
 ---
 title: "Health Skillz: Why I Built My Own Health Record Connector for Claude.ai & Codex"
 date: 2026-01-13T03:33:00
+added_at: 2026-04-03
 slug: health-skillz-why-i-built-my-own-health-record-connector-for-claude-ai-codex
 original_url: "https://www.linkedin.com/pulse/health-skillz-why-i-built-my-own-record-connector-codex-mandel-md-mlz3c"
 linkedin_id: mlz3c

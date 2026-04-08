@@ -1,6 +1,7 @@
 ---
 title: "Deregulation of Certified Health IT: Cuts to Real World Testing"
 date: 2025-07-02T21:07:00
+added_at: 2025-07-04
 slug: deregulation-of-certified-health-it-cuts-to-real-world-testing
 original_url: "https://www.linkedin.com/pulse/deregulation-certified-health-cuts-real-world-testing-josh-mandel-md-odpdc"
 linkedin_id: odpdc

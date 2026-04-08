@@ -1,6 +1,7 @@
 ---
 title: "Privacy Reviews in Big Tech ... and TEFCA"
 date: 2025-10-07T20:58:00
+added_at: 2025-11-23
 slug: privacy-reviews-in-big-tech-and-tefca
 original_url: "https://www.linkedin.com/pulse/privacy-reviews-big-tech-tefca-josh-mandel-md-xyhsc"
 linkedin_id: xyhsc

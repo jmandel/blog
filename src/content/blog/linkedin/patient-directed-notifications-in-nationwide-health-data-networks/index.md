@@ -1,6 +1,7 @@
 ---
 title: "Patient-Directed Notifications in Nationwide Health Data Networks"
 date: 2026-01-23T21:16:00
+added_at: 2026-04-03
 slug: patient-directed-notifications-in-nationwide-health-data-networks
 original_url: "https://www.linkedin.com/pulse/patient-directed-notifications-nationwide-health-data-josh-mandel-md-82azc"
 linkedin_id: 82azc

@@ -1,6 +1,7 @@
 ---
 title: "Fulfilling the Cures Act: Conversational Interop as a \"Successor Technology\""
 date: 2025-10-17T15:43:00
+added_at: 2025-11-23
 slug: fulfilling-the-cures-act-conversational-interop-as-a-successor-technology
 original_url: "https://www.linkedin.com/pulse/fulfilling-cures-act-conversational-interoperability-josh-mandel-md-jevoe"
 linkedin_id: jevoe

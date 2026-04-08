@@ -1,6 +1,7 @@
 ---
 title: "7,000+ Clicks to Register a FHIR App"
 date: 2026-02-11T19:59:00
+added_at: 2026-04-03
 slug: 7000-clicks-to-register-a-fhir-app
 original_url: "https://www.linkedin.com/pulse/7000-clicks-register-fhir-app-josh-mandel-md-ta7ic"
 linkedin_id: ta7ic

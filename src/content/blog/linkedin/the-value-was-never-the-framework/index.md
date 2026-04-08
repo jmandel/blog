@@ -1,6 +1,7 @@
 ---
 title: "The Value Was Never the Framework"
 date: 2026-01-22T20:56:00
+added_at: 2026-04-03
 slug: the-value-was-never-the-framework
 original_url: "https://www.linkedin.com/pulse/value-never-framework-josh-mandel-md-rc6gc"
 linkedin_id: rc6gc

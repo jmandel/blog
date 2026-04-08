@@ -1,6 +1,7 @@
 ---
 title: "I Graded 265 EHRs on the \"Export Everything\" Requirement. (Median grade was D.)"
 date: 2026-02-17T18:46:00
+added_at: 2026-04-03
 slug: i-graded-265-ehrs-on-the-export-everything-requirement-median-grade-was-d
 original_url: "https://www.linkedin.com/pulse/i-graded-265-ehrs-export-everything-requirement-d-josh-mandel-md-n0qyc"
 linkedin_id: n0qyc

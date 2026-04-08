@@ -1,6 +1,7 @@
 ---
 title: "Beyond the Care Gap List: Outreach Lottery"
 date: 2025-09-19T19:27:00
+added_at: 2025-11-23
 slug: beyond-the-care-gap-list-outreach-lottery
 original_url: "https://www.linkedin.com/pulse/beyond-care-gap-list-outreach-lottery-josh-mandel-md-mxjpc"
 linkedin_id: mxjpc

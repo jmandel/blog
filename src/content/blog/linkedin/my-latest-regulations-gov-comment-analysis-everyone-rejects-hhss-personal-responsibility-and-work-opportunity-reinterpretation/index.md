@@ -1,6 +1,7 @@
 ---
 title: "My Latest Regulations.gov Comment analysis: ~Everyone Rejects HHS’s \"Personal Responsibility and Work Opportunity\" Reinterpretation"
 date: 2025-08-14T16:22:00
+added_at: 2025-09-15
 slug: my-latest-regulations-gov-comment-analysis-everyone-rejects-hhss-personal-responsibility-and-work-opportunity-reinterpretation
 original_url: "https://www.linkedin.com/pulse/everyone-including-rural-redstate-america-rejects-hhss-mandel-md-oulac"
 linkedin_id: oulac

@@ -1,6 +1,7 @@
 ---
 title: "Analysis: \"Reducing Medically Unnecessary Delays in Care Act\""
 date: 2025-03-29T16:51:00
+added_at: 2025-07-04
 slug: analysis-reducing-medically-unnecessary-delays-in-care-act
 original_url: "https://www.linkedin.com/pulse/analysis-reducing-medically-unnecessary-delays-care-act-mandel-md-nryhc"
 linkedin_id: nryhc

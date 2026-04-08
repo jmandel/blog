@@ -1,6 +1,7 @@
 ---
 title: "Real-Time Notifications at Scale: A Brokered Approach for CMS-Aligned Networks"
 date: 2026-01-31T19:20:00
+added_at: 2026-04-03
 slug: real-time-notifications-at-scale-a-brokered-approach-for-cms-aligned-networks
 original_url: "https://www.linkedin.com/pulse/real-time-notifications-scale-brokered-approach-josh-mandel-md-sevpc"
 linkedin_id: sevpc

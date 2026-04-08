@@ -1,6 +1,7 @@
 ---
 title: "The Prior Authorization (De)regulation Paradox"
 date: 2025-07-15T22:21:00
+added_at: 2025-09-15
 slug: the-prior-authorization-de-regulation-paradox
 original_url: "https://www.linkedin.com/pulse/prior-authorization-deregulation-paradox-josh-mandel-md-mh7ec"
 linkedin_id: mh7ec

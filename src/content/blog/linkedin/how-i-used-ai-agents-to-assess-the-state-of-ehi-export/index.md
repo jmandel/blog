@@ -1,6 +1,7 @@
 ---
 title: "How I Used AI Agents to Assess the State of EHI Export"
 date: 2026-02-18T01:18:00
+added_at: 2026-04-03
 slug: how-i-used-ai-agents-to-assess-the-state-of-ehi-export
 original_url: "https://www.linkedin.com/pulse/how-i-used-ai-agents-assess-state-ehi-export-josh-mandel-md-bjbtc"
 linkedin_id: bjbtc

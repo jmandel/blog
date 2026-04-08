@@ -1,6 +1,7 @@
 ---
 title: "The Real Story Behind Epic's 0.0000055% EHI Export Rate"
 date: 2025-06-21T15:58:00
+added_at: 2025-07-04
 slug: the-real-story-behind-epic-s-0-0000055-ehi-export-rate
 original_url: "https://www.linkedin.com/pulse/real-story-behind-epics-00000055-ehi-export-rate-josh-mandel-md-vuo7c"
 linkedin_id: vuo7c

@@ -12,7 +12,7 @@ import subprocess
 import urllib.parse
 import zipfile
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import date, datetime
 from typing import Dict, Iterable, List, Optional, Match
 
 import requests
@@ -25,6 +25,7 @@ LINKEDIN_SUBDIR = "linkedin"
 
 DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})[ T](\d{2}:\d{2})?")
 ID_RE = re.compile(r"-([a-z0-9]{5})$")
+ADDED_AT_RE = re.compile(r"^added_at:\s*(.+?)\s*$", re.MULTILINE)
 
 
 @dataclass
@@ -141,17 +142,32 @@ class LinkedInArticleProcessor:
         for article in articles:
             # Clean this specific article dir to avoid stale images,
             # but leave other articles' directories untouched. Preserve
-            # any existing banner.* file across the rebuild so manually
-            # placed banners survive future imports.
+            # any existing banner.* file and the `added_at` frontmatter
+            # field across the rebuild so manually placed banners and
+            # the RSS publish date survive future imports.
             article_dir = blog_linkedin_dir / article.slug
             preserved_banner: Optional[tuple[str, bytes]] = None
+            preserved_added_at: Optional[str] = None
             if article_dir.exists():
+                existing_md = article_dir / "index.md"
+                if existing_md.exists():
+                    try:
+                        existing_text = existing_md.read_text(encoding="utf-8")
+                        m = ADDED_AT_RE.search(existing_text)
+                        if m:
+                            preserved_added_at = m.group(1).strip().strip('"').strip("'")
+                    except Exception:
+                        pass
                 for candidate in ("banner.jpg", "banner.jpeg", "banner.png", "banner.gif", "banner.webp"):
                     candidate_path = article_dir / candidate
                     if candidate_path.exists():
                         preserved_banner = (candidate, candidate_path.read_bytes())
                         break
                 shutil.rmtree(article_dir)
+
+            # New posts get stamped with today's date; re-imports keep
+            # whatever `added_at` was already there.
+            added_at = preserved_added_at or date.today().isoformat()
 
             soup = BeautifulSoup(article.html, "html.parser")
             self._cleanup_linkedin_links(soup, slug_mapping)
@@ -227,6 +243,7 @@ class LinkedInArticleProcessor:
                 "---",
                 f'title: "{safe_title}"',
                 f"date: {article.created_at.isoformat()}",
+                f"added_at: {added_at}",
                 f"slug: {article.slug}",
                 f'original_url: "{article.original_url}"',
             ]

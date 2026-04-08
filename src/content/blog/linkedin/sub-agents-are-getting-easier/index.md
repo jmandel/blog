@@ -1,6 +1,7 @@
 ---
 title: "Sub-Agents Are Getting Easier"
 date: 2026-01-23T16:03:00
+added_at: 2026-04-03
 slug: sub-agents-are-getting-easier
 original_url: "https://www.linkedin.com/pulse/sub-agents-getting-easier-josh-mandel-md-t3kgc"
 linkedin_id: t3kgc

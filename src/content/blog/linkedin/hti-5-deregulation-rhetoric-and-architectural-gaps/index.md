@@ -1,6 +1,7 @@
 ---
 title: "HTI-5: Deregulation, Rhetoric, and Architectural Gaps"
 date: 2026-01-14T17:04:00
+added_at: 2026-04-03
 slug: hti-5-deregulation-rhetoric-and-architectural-gaps
 original_url: "https://www.linkedin.com/pulse/hti-5-deregulation-rhetoric-architectural-gaps-josh-mandel-md-7gw1c"
 linkedin_id: 7gw1c

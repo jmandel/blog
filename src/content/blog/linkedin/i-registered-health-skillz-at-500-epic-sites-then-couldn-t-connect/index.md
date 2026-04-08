@@ -1,6 +1,7 @@
 ---
 title: "I registered Health Skillz at 500 Epic sites... then couldn't connect"
 date: 2026-02-12T22:58:00
+added_at: 2026-04-03
 slug: i-registered-health-skillz-at-500-epic-sites-then-couldn-t-connect
 original_url: "https://www.linkedin.com/pulse/i-registered-health-skillz-500-epic-sites-couldnt-josh-mandel-md-ivtoc"
 linkedin_id: ivtoc

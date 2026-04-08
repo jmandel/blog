@@ -1,6 +1,7 @@
 ---
 title: "HTI-5 Analysis: A Battle is Brewing Over AI Agents as EHR Users"
 date: 2026-03-08T02:20:00
+added_at: 2026-04-03
 slug: hti-5-analysis-a-battle-is-brewing-over-ai-agents-as-ehr-users
 original_url: "https://www.linkedin.com/pulse/hti-5-analysis-battle-brewing-over-ai-agents-ehr-users-mandel-md-sm33c"
 linkedin_id: sm33c

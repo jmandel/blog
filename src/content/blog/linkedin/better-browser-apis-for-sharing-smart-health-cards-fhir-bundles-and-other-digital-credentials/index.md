@@ -1,6 +1,7 @@
 ---
 title: "Better Browser APIs for Sharing SMART Health Cards, FHIR Bundles, and other Digital Credentials"
 date: 2025-05-15T21:52:00
+added_at: 2025-07-04
 slug: better-browser-apis-for-sharing-smart-health-cards-fhir-bundles-and-other-digital-credentials
 original_url: "https://www.linkedin.com/pulse/better-browser-apis-sharing-smart-health-cards-fhir-other-mandel-md-tguxc"
 linkedin_id: tguxc

@@ -1,6 +1,7 @@
 ---
 title: "An Order to Harm"
 date: 2025-08-15T03:54:00
+added_at: 2025-09-15
 slug: an-order-to-harm
 original_url: "https://www.linkedin.com/pulse/order-harm-josh-mandel-md-jvosc"
 linkedin_id: jvosc
