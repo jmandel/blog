@@ -1,4 +1,6 @@
 ---
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import '../styles/base.css';
 
 export interface Props {
@@ -7,6 +9,15 @@ export interface Props {
 }
 
 const { title, description = "Interop Blog – insights on interoperability, FHIR, and digital health innovation" } = Astro.props;
+
+// Inline the DM Sans font as a base64 data URI so it travels with the
+// render-blocking CSS. This removes the async font-load race entirely:
+// by the time the stylesheet is applied, the font is already available,
+// so h1/byline render in DM Sans on the very first paint — no FOIT,
+// no FOUT, no visible swap.
+const fontBytes = readFileSync(resolve(process.cwd(), 'src/assets/fonts/dm-sans-latin.woff2'));
+const fontDataUri = `data:font/woff2;base64,${fontBytes.toString('base64')}`;
+const fontFaceCss = `@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 900;font-display:block;src:url(${fontDataUri}) format('woff2');}`;
 ---
 
 <!DOCTYPE html>
@@ -16,9 +27,7 @@ const { title, description = "Interop Blog – insights on interoperability, FHI
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style is:global set:html={fontFaceCss}></style>
     <title>{title}</title>
   </head>
   <body>
