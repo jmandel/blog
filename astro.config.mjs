@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://jmandel.github.io',
+  site: 'https://joshuamandel.com',
   base: '/blog',
 
   // The dev toolbar runs idle-callback work on the main thread that can

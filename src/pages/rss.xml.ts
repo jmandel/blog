@@ -25,6 +25,9 @@ function toDate(raw: Date | string): Date {
 // that care can display or sort by it.
 export const GET: APIRoute = async (context) => {
   const posts = await getCollection('blog');
+  // Normalize BASE_URL to a leading-slashed, non-trailing-slashed prefix
+  // so link concatenation is predictable regardless of Astro version.
+  const base = ('/' + import.meta.env.BASE_URL).replace(/\/+/g, '/').replace(/\/$/, '');
 
   const sorted = posts
     .map((post) => ({
@@ -43,7 +46,7 @@ export const GET: APIRoute = async (context) => {
     items: sorted.map(({ post, pubDate, originalDate }) => ({
       title: post.data.title,
       pubDate,
-      link: `/posts/${post.data.slug ?? post.slug}/`,
+      link: `${base}/posts/${post.data.slug ?? post.slug}/`,
       description: excerpt(post.body ?? ''),
       customData: `<dc:date>${originalDate.toISOString()}</dc:date>`,
     })),
