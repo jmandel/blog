@@ -15,19 +15,23 @@ function excerpt(body: string, maxChars = 320): string {
     .trimEnd() + '…';
 }
 
-// Prefer the import date (when the post landed in the blog) so new
-// subscribers see a post when it was actually published here, not on
-// its original LinkedIn authoring date.
-function pubDateFor(post: { data: { added_at?: Date | string; date: Date | string } }): Date {
-  const raw = post.data.added_at ?? post.data.date;
+function toDate(raw: Date | string): Date {
   return raw instanceof Date ? raw : new Date(raw);
 }
 
+// `pubDate` uses the import date so feed readers treat a post as "new"
+// when it lands in the blog. The canonical Dublin Core `dc:date`
+// element carries the original LinkedIn authoring date, so readers
+// that care can display or sort by it.
 export const GET: APIRoute = async (context) => {
   const posts = await getCollection('blog');
 
   const sorted = posts
-    .map((post) => ({ post, pubDate: pubDateFor(post) }))
+    .map((post) => ({
+      post,
+      pubDate: toDate(post.data.added_at ?? post.data.date),
+      originalDate: toDate(post.data.date),
+    }))
     .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
 
   return rss({
@@ -35,11 +39,13 @@ export const GET: APIRoute = async (context) => {
     description:
       'Musings on healthcare IT, FHIR, EHR systems, and digital health innovation — by Josh Mandel, MD.',
     site: context.site!,
-    items: sorted.map(({ post, pubDate }) => ({
+    xmlns: { dc: 'http://purl.org/dc/elements/1.1/' },
+    items: sorted.map(({ post, pubDate, originalDate }) => ({
       title: post.data.title,
       pubDate,
       link: `/posts/${post.data.slug ?? post.slug}/`,
       description: excerpt(post.body ?? ''),
+      customData: `<dc:date>${originalDate.toISOString()}</dc:date>`,
     })),
     customData: `<language>en-us</language>`,
     trailingSlash: false,
