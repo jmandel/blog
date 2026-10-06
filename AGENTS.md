@@ -91,6 +91,45 @@ LinkedIn versions often go up days or weeks after the native post, with a reword
 
 Mention every superseded article and every judgment call in your summary to the user. If unsure whether two posts are the same story, ask rather than guess.
 
+### Keeping a native post and its LinkedIn version in sync (via a browser)
+
+An export can be weeks away, and it never carries LinkedIn edits back into a native post. For small jobs, such as pulling a published article's edits into its native copy, fetching its cover image, or putting a native post onto LinkedIn, drive a real browser instead.
+
+**Browser setup.** Use a separate Chromium profile with remote debugging, so the user's own browser is untouched. The user logs in once; the profile keeps the session:
+
+```bash
+chromium --user-data-dir="$SCRATCH/li-profile" --remote-debugging-port=9333 \
+  --no-first-run https://www.linkedin.com/login &
+```
+
+Connect with `puppeteer-core` (`puppeteer.connect({ browserURL: "http://127.0.0.1:9333", defaultViewport: null })`). Never print cookies or tokens.
+
+**Backporting LinkedIn edits into a native post:**
+1. **Get the live text.** Open the published article (`original_url`) and take `document.querySelector('.reader-article-content').innerHTML`. Figures are `<figure>` elements with an optional `<figcaption>`. LinkedIn wraps each list in an extra `<p>` holding the same text; skip that duplicate.
+2. **Diff block by block** against the native post (paragraphs, headings, list items, captions; normalize whitespace and curly quotes) and look at what actually changed. Usually it's wording, an added or removed paragraph or figure, or a TL;DR box (a `<blockquote>` becomes `> ` in markdown).
+3. **Apply only the changes.** Keep the native post's own figures (SVGs, interactive charts) at the matching positions; LinkedIn's figures are flattened PNGs. Captions longer than 250 characters can't exist on LinkedIn, so keep the native post's longer captions and links unless the user's edit changed their meaning.
+4. **Fix LinkedIn's link damage on the way in:**
+   - It auto-links bare domains (e.g. `regulations.gov` becomes `http://regulations.gov`). Unwrap these, or point them at a specific https page.
+   - Profile links are relative (`/in/name/`). Prefix them with `https://www.linkedin.com`.
+   - Links to this blog (`https://joshuamandel.com/blog/posts/...`) become `/blog/posts/...`.
+5. **Cover image.** Find the `img` whose src contains `article-cover_image`, fetch it from the page (so the session's cookies apply), and match it against the original file (often in `~/Downloads`) by comparing a downscaled grayscale version. Use the original full-resolution file as `banner.png`, not LinkedIn's 1280-px copy. Set `banner: ./banner.png` in the frontmatter.
+6. **Build and check** before pushing: `npm run build`, then load the post. For interactive posts, hover the charts with puppeteer, check that tooltips appear, and check the console for errors.
+
+**Putting a native post onto LinkedIn** (the user publishes, or explicitly asks you to):
+- **Text.** In the article editor (`.ProseMirror`), paste HTML with a synthetic `ClipboardEvent("paste")` carrying `text/html`. Headings become h3, and lists and links survive.
+- **Images.** LinkedIn takes only raster images. Render charts with puppeteer at a high device scale factor. LinkedIn stores at most **1,500 px tall** (up to about 2,232 px wide), and taller images are scaled down and look blurry. Lay tall figures out wider, or split them into parts.
+  - **Inserting.** Paste a `File` through the same paste event into an *empty* paragraph. Leave a placeholder paragraph, select its text and press Backspace, then paste.
+  - **Replacing.** To replace an existing image and keep its caption, use the figure's "Edit image" button, then the dialog's Delete, then upload through the dialog's file input, then Next. Click the button with `element.click()`; a mouse click on the hover overlay doesn't always register.
+- **Captions** are `<textarea>`s inside each figure. Set them with the native value setter plus an `input` event; don't type into them.
+- **Links in the editor.** Select the text, press Ctrl+K, set "Paste link here", then Apply. Pasting HTML over a selection doesn't replace links.
+- **Cover.** "Upload from computer" opens a file chooser (`page.waitForFileChooser()`), then Next.
+- **Hazards, all seen in practice:**
+  - **Ctrl+A inside a caption selects the whole article,** and typing then replaces it. Undo (Ctrl+Z in the editor) recovers it.
+  - **Undo can restore a select-all.** Afterwards, collapse the selection to a caret before any keyboard input.
+  - **Keys reach the article.** The editor receives keystrokes from inside its figures, so check `document.activeElement` and the block count before and after every scripted edit, and stop if they change unexpectedly.
+  - **Saves are immediate.** LinkedIn autosaves within seconds, so an error is saved too. After each step, confirm "Draft - saved" and the block count.
+- **After publishing,** set `supersedes_linkedin` (or rely on an exact title match) so the next import skips the article.
+
 ### Banner image recovery: lessons from April 2026
 
 After the April 2026 import, ~21 articles were left without banners despite the export being current. Here's what was wrong and how to handle it next time, so future agents don't waste time re-discovering all of this.
