@@ -39,6 +39,7 @@ The import is additive/idempotent:
 - Articles and shares that **are** in the new export **overwrite** the existing version (the individual directory is cleaned and regenerated).
 - **Manually-placed `banner.*` files survive re-imports.** The article processor saves the banner before cleaning the directory and restores it if the new import didn't produce one of its own. So you can safely drop a `banner.png` into any article folder.
 - Running the same export twice produces identical results.
+- **Native posts are never overwritten**, and LinkedIn articles they claim are skipped. See "Native posts" below.
 
 ### Limitations and tips
 
@@ -50,6 +51,45 @@ The import is additive/idempotent:
 - **No deletion of removed content**: If you delete an article on LinkedIn, the import won't remove it from the blog. Manual deletion of the slug directory is needed.
 - **Working directory**: Intermediate artifacts go to `linkedin_work/` (gitignored). Safe to delete anytime.
 - **Export ZIPs**: Stored in `LinkedIn exports/` (gitignored). Keep them around in case you need to re-import after script improvements.
+
+## Native posts (written here first)
+
+Most posts come from LinkedIn exports. Some are written here first, with graphics LinkedIn can't show, and posted to LinkedIn later. Such a *native post* replaces the LinkedIn copy, and re-imports leave it alone.
+
+### Writing one
+
+Put it anywhere under `src/content/blog/` **except** `linkedin/`, e.g. `src/content/blog/<slug>/index.md` with its images beside it. The importer never writes there (except to add LinkedIn link fields, below).
+
+```yaml
+---
+title: "Reading 50,000 Pages of Public Comments on the Physician Fee Schedule"
+date: 2026-10-05T12:00:00
+added_at: 2026-10-05
+slug: reading-50000-pages
+draft: true            # optional: shown by `astro dev`, left out of production builds
+supersedes_linkedin: "https://www.linkedin.com/pulse/…-josh-mandel-md-ab12c"   # optional, one value or a list
+---
+```
+
+`supersedes_linkedin` names the LinkedIn article this post replaces: its LinkedIn URL (best), its 5-character `linkedin_id`, its imported slug, or its exact title. Without it, a native post still claims a LinkedIn article whose slug equals the native post's `slug` or the slug of its title — so an exact title match needs no field. Leave the field out until the LinkedIn version exists.
+
+### What the import does with it (`scripts/native_posts.py`)
+
+For each article in the export that a native post claims, the importer:
+- skips writing it and deletes any earlier import of it in `linkedin/` (logged as `[NATIVE] Skipped … superseded by …`);
+- adds `original_url`, `linkedin_id` and `intro_share` to the native post's frontmatter if they're missing, so the post links to the LinkedIn conversation like an imported one. It never changes the body or any field already set;
+- points other articles' links to the LinkedIn version at the native post's slug.
+
+The site applies the same claims (`src/lib/posts.ts`, used by the index, post pages and RSS), so a LinkedIn copy is hidden as soon as a native post claims it, before the next import. A `draft: true` post claims only in `astro dev`; in production builds the LinkedIn copy stays visible until the draft flag is removed.
+
+### Checking a new export for overlaps (agents: do this every import)
+
+LinkedIn versions often go up days or weeks after the native post, with a reworded headline, so title matching misses them. After each import, the importer prints an `[OVERLAP?]` block listing LinkedIn articles that may be the same story as a native post not yet linked to LinkedIn (no `original_url`): dates within a week, titles sharing most words, or dates within 90 days with somewhat similar titles. For each pair listed, and for any new LinkedIn article dated after a native post that the check didn't list:
+
+1. Read both. Same story (even if edited or shortened for LinkedIn)? Add the printed `supersedes_linkedin: "<url>"` line to the native post and re-run the import — the LinkedIn copy is removed and the native post gets its LinkedIn link.
+2. Different story? Leave both. The pair stops being reported once the native post is linked to its own LinkedIn version, or after 90 days unless the titles nearly match.
+
+Mention every superseded article and every judgment call in your summary to the user. If unsure whether two posts are the same story, ask rather than guess.
 
 ### Banner image recovery: lessons from April 2026
 

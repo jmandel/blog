@@ -41,4 +41,4 @@ uv run --python "$UV_ENV" python scripts/download_banner_images.py
 echo "=== Step 3: Verifying Astro build ==="
 npm run test-build
 
-echo "\n✓ Import complete. Review the git diff, commit, and push to publish."
+echo "\n✓ Import complete. Check any [OVERLAP?] block above (see AGENTS.md, Native posts), review the git diff, commit, and push to publish."

@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { getPosts } from '../lib/posts';
 
 type ArticleEntry = CollectionEntry<'blog'>;
 type ShareEntry = CollectionEntry<'shares'>;
 
-const articles = await getCollection('blog');
+const articles = await getPosts();
 const shares = await getCollection('shares');
 
 const timeline = [

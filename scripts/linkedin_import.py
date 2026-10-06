@@ -11,6 +11,7 @@ from typing import Iterable
 
 from linkedin_articles import LinkedInArticleProcessor
 from linkedin_shares import LinkedInShareProcessor
+from native_posts import find_claim, load_native_posts, report_possible_overlaps
 
 FILTERED_ARCHIVE_NAME = "linkedin_articles_extract.zip"
 
@@ -46,6 +47,10 @@ def run_import(export_zip: pathlib.Path, workdir: pathlib.Path, blog_dir: pathli
     intro_map = share_processor.process_shares(shares, articles)
 
     article_processor.process_articles(articles, intro_map)
+
+    # Last, so it isn't buried in the banner pass's output.
+    natives = load_native_posts(blog_dir)
+    report_possible_overlaps([a for a in articles if not find_claim(a, natives)], natives)
 
     print("\n[✓] Import complete. Blog content refreshed with articles and shares.")
 

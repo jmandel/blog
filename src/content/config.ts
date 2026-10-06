@@ -15,6 +15,11 @@ const blogCollection = defineCollection({
       banner: image().optional(),
       original_url: z.string().optional(),
       linkedin_id: z.string().optional(),
+      // Native posts only (see src/lib/posts.ts): the LinkedIn article(s)
+      // this post replaces, as a LinkedIn URL, linkedin_id, imported slug
+      // or title; and whether to hide the post from production builds.
+      supersedes_linkedin: z.union([z.string(), z.array(z.string())]).optional(),
+      draft: z.boolean().optional(),
       intro_share: z
         .object({
           share_url: z.string(),

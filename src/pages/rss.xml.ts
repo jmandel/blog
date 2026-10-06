@@ -1,5 +1,5 @@
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
+import { getPosts } from '../lib/posts';
 import type { APIRoute } from 'astro';
 
 // Strip Markdown/HTML down to a plain-text excerpt for the RSS description.
@@ -24,7 +24,7 @@ function toDate(raw: Date | string): Date {
 // element carries the original LinkedIn authoring date, so readers
 // that care can display or sort by it.
 export const GET: APIRoute = async (context) => {
-  const posts = await getCollection('blog');
+  const posts = await getPosts();
   // Normalize BASE_URL to a leading-slashed, non-trailing-slashed prefix
   // so link concatenation is predictable regardless of Astro version.
   const base = ('/' + import.meta.env.BASE_URL).replace(/\/+/g, '/').replace(/\/$/, '');

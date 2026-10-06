@@ -20,6 +20,8 @@ from bs4 import BeautifulSoup
 from markdownify import markdownify as md
 from slugify import slugify
 
+from native_posts import fill_linkedin_metadata, find_claim, load_native_posts
+
 CONTENT_DIR = "src/content/blog"
 LINKEDIN_SUBDIR = "linkedin"
 
@@ -52,6 +54,27 @@ class IntroShareMeta:
     visibility: Optional[str]
     shared_url: Optional[str]
     commentary: Optional[str]
+
+
+def intro_share_lines(intro: Optional[IntroShareMeta]) -> List[str]:
+    """Frontmatter lines for an article's LinkedIn intro post."""
+    if not intro:
+        return []
+    lines = ["intro_share:", f'  share_url: "{intro.share_url}"']
+    if intro.share_id:
+        lines.append(f'  share_id: "{intro.share_id}"')
+    if intro.share_type:
+        lines.append(f'  share_type: "{intro.share_type}"')
+    lines.append(f'  posted_at: "{intro.posted_at.isoformat()}"')
+    if intro.visibility:
+        lines.append(f'  visibility: "{intro.visibility}"')
+    if intro.shared_url:
+        lines.append(f'  shared_url: "{intro.shared_url}"')
+    if intro.commentary:
+        lines.append("  commentary: |")
+        for line in intro.commentary.splitlines() or [""]:
+            lines.append(f"    {line}")
+    return lines
 
 
 class LinkedInArticleProcessor:
@@ -122,9 +145,21 @@ class LinkedInArticleProcessor:
         intro_share_map: Dict[str, IntroShareMeta],
     ) -> None:
         articles = list(articles)
-        slug_mapping = {article.slug: article.basename for article in articles}
+
+        # Hand-written posts outside linkedin/ can supersede an article
+        # (see native_posts.py). Claimed articles aren't written, and
+        # links to them from other articles point at the native post.
+        natives = load_native_posts(self.blog_dir)
+        claimed = {}
+        for article in articles:
+            native = find_claim(article, natives)
+            if native:
+                claimed[article.slug] = native
+        local_slug = {a.slug: (claimed[a.slug].slug if a.slug in claimed else a.slug) for a in articles}
+
+        slug_mapping = {local_slug[article.slug]: article.basename for article in articles}
         linkedin_id_mapping = {
-            article.linkedin_id: article.slug for article in articles if article.linkedin_id
+            article.linkedin_id: local_slug[article.slug] for article in articles if article.linkedin_id
         }
 
         work_articles_dir = self.workdir / "articles"
@@ -140,6 +175,16 @@ class LinkedInArticleProcessor:
 
         article_count = 0
         for article in articles:
+            native = claimed.get(article.slug)
+            if native:
+                stale_dir = blog_linkedin_dir / article.slug
+                if stale_dir.exists():
+                    shutil.rmtree(stale_dir)
+                    print(f"[NATIVE] Removed earlier import linkedin/{article.slug}")
+                fill_linkedin_metadata(native, article, intro_share_lines(intro_share_map.get(article.slug)))
+                print(f"[NATIVE] Skipped {article.slug}: superseded by {native.path.parent.relative_to(self.blog_dir / CONTENT_DIR)}")
+                continue
+
             # Clean this specific article dir to avoid stale images,
             # but leave other articles' directories untouched. Preserve
             # any existing banner.* file and the `added_at` frontmatter
@@ -252,23 +297,7 @@ class LinkedInArticleProcessor:
             if banner_fm:
                 fm_lines.append(f"banner: {banner_fm}")
 
-            intro = intro_share_map.get(article.slug)
-            if intro:
-                fm_lines.append("intro_share:")
-                fm_lines.append(f'  share_url: "{intro.share_url}"')
-                if intro.share_id:
-                    fm_lines.append(f'  share_id: "{intro.share_id}"')
-                if intro.share_type:
-                    fm_lines.append(f'  share_type: "{intro.share_type}"')
-                fm_lines.append(f'  posted_at: "{intro.posted_at.isoformat()}"')
-                if intro.visibility:
-                    fm_lines.append(f'  visibility: "{intro.visibility}"')
-                if intro.shared_url:
-                    fm_lines.append(f'  shared_url: "{intro.shared_url}"')
-                if intro.commentary:
-                    fm_lines.append("  commentary: |")
-                    for line in intro.commentary.splitlines() or [""]:
-                        fm_lines.append(f"    {line}")
+            fm_lines.extend(intro_share_lines(intro_share_map.get(article.slug)))
 
             fm_lines.append("---")
             fm_lines.append("")
@@ -288,7 +317,7 @@ class LinkedInArticleProcessor:
             article_count += 1
             print(f"[ARTICLE] {article.slug} → {blog_md_path.relative_to(self.blog_dir)}")
 
-        print(f"\n[✓] Processed {article_count} articles")
+        print(f"\n[✓] Processed {article_count} articles ({len(claimed)} superseded by native posts)")
         print(f"[✓] Markdown ready in {work_articles_dir}")
         print(f"[✓] Blog content updated in {blog_linkedin_dir}")
 
