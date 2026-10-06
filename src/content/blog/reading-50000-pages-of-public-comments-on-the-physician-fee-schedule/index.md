@@ -6,6 +6,7 @@ slug: reading-50000-pages-of-public-comments-on-the-physician-fee-schedule
 supersedes_linkedin: "https://www.linkedin.com/pulse/reading-50000-pages-public-comments-physician-fee-josh-mandel-md-5e8ec"
 original_url: "https://www.linkedin.com/pulse/reading-50000-pages-public-comments-physician-fee-josh-mandel-md-5e8ec"
 linkedin_id: 5e8ec
+banner: ./banner.png
 ---
 
 The proposed CY2027 Physician Fee Schedule drew 43,082 public comments (about 50,000 pages). That's ~5x bigger than any docket I've analyzed before, and my old pipeline would have cost around $2k to run on it. So I spent some time improving the pipeline. It now groups form letters and campaign letters, works out who each comment speaks for, reads charts and tables in attachments, and publishes the whole analysis as downloadable databases. The full PFS run cost about $100.
