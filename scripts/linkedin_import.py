@@ -10,7 +10,9 @@ import zipfile
 from typing import Iterable
 
 from linkedin_articles import LinkedInArticleProcessor
+from linkedin_live_sidecar import LiveSidecar
 from linkedin_shares import LinkedInShareProcessor
+from linkedin_threads import merge_threads
 from native_posts import find_claim, load_native_posts, report_possible_overlaps
 
 FILTERED_ARCHIVE_NAME = "linkedin_articles_extract.zip"
@@ -39,14 +41,22 @@ def run_import(export_zip: pathlib.Path, workdir: pathlib.Path, blog_dir: pathli
     filtered_zip = workdir / FILTERED_ARCHIVE_NAME
     extract_articles_only(export_zip, filtered_zip)
 
-    article_processor = LinkedInArticleProcessor(str(filtered_zip), workdir, blog_dir)
+    # Present only in zips from scripts/linkedin_live_fetch.ts.
+    live = LiveSidecar.load(str(export_zip))
+
+    article_processor = LinkedInArticleProcessor(str(filtered_zip), workdir, blog_dir, live=live)
     articles = article_processor.collect_articles()
 
-    share_processor = LinkedInShareProcessor(str(export_zip), workdir, blog_dir)
+    share_processor = LinkedInShareProcessor(str(export_zip), workdir, blog_dir, live=live)
     shares = share_processor.collect_shares()
     intro_map = share_processor.process_shares(shares, articles)
 
     article_processor.process_articles(articles, intro_map)
+    share_processor.write_also_posted()
+    share_processor.backfill_thumbnails()
+
+    if live:
+        merge_threads(live, blog_dir)
 
     # Last, so it isn't buried in the banner pass's output.
     natives = load_native_posts(blog_dir)

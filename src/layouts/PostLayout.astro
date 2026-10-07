@@ -9,7 +9,7 @@ export interface Props {
   linkLabel?: string;
 }
 
-const { title, date, description, linkUrl, linkLabel = 'View on LinkedIn' } = Astro.props;
+const { title, date, description, linkUrl, linkLabel = 'Original on LinkedIn' } = Astro.props;
 
 function formatDate(date: Date): string {
   return date.toLocaleDateString('en-US', {
@@ -22,6 +22,7 @@ function formatDate(date: Date): string {
 
 <BaseLayout title={title} description={description}>
   <a href="/blog" class="back-link">Back to posts</a>
+  <div class="post-grid">
   <article>
     <header>
       <h1>{title}</h1>
@@ -38,7 +39,36 @@ function formatDate(date: Date): string {
       <slot />
     </div>
   </article>
+  <slot name="aside" />
+  </div>
 </BaseLayout>
+
+<style is:global>
+  /* With a LinkedIn conversation and room for it, show it beside the
+     article: the page widens, the article keeps its reading width, and the
+     conversation scrolls on its own while staying in view. */
+  @media (min-width: 1300px) {
+    .main:has(.post-grid > .li-conv) {
+      max-width: 1260px;
+    }
+    .post-grid:has(> .li-conv) {
+      display: grid;
+      grid-template-columns: minmax(0, 720px) minmax(360px, 1fr);
+      gap: 3rem;
+      align-items: start;
+    }
+    .post-grid > .li-conv {
+      position: sticky;
+      top: 1rem;
+      max-height: calc(100vh - 2rem);
+      overflow-y: auto;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      border-top: 0 !important;
+      padding-right: 0.5rem;
+    }
+  }
+</style>
 
 <style>
   header {

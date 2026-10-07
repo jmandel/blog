@@ -109,9 +109,14 @@ function getExcerpt(content: string | undefined): string {
 
         const share = item.entry as ShareEntry;
         const slug = share.data.slug ?? share.slug;
+        const thumb = share.data.thumbnail;
         return (
           <article class="post-card post-card--share">
-            <a class="post-card__link post-card__link--no-image" href={`/blog/shares/${slug}`}>
+            <a
+              class:list={{ 'post-card__link': true, 'post-card__link--no-image': !thumb }}
+              href={`/blog/shares/${slug}`}
+            >
+              {thumb && <img class="post-card__image" src={thumb.src} alt="" />}
               <div class="post-card__content">
                 <h3>{share.data.title}</h3>
                 <time datetime={new Date(share.data.date).toISOString()}>

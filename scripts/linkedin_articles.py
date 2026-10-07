@@ -80,10 +80,13 @@ def intro_share_lines(intro: Optional[IntroShareMeta]) -> List[str]:
 class LinkedInArticleProcessor:
     """Process LinkedIn article exports into local markdown content."""
 
-    def __init__(self, export_zip: str, workdir: pathlib.Path, blog_dir: pathlib.Path) -> None:
+    def __init__(self, export_zip: str, workdir: pathlib.Path, blog_dir: pathlib.Path, live=None) -> None:
         self.export_zip = export_zip
         self.workdir = workdir
         self.blog_dir = blog_dir
+        # Optional LiveSidecar (scripts/linkedin_live_sidecar.py): real cover
+        # and inline images from a live fetch. None for a normal export.
+        self.live = live
 
     # ------------------------------------------------------------------
     # Public API
@@ -193,6 +196,7 @@ class LinkedInArticleProcessor:
             article_dir = blog_linkedin_dir / article.slug
             preserved_banner: Optional[tuple[str, bytes]] = None
             preserved_added_at: Optional[str] = None
+            preserved_intro: List[str] = []
             if article_dir.exists():
                 existing_md = article_dir / "index.md"
                 if existing_md.exists():
@@ -201,6 +205,13 @@ class LinkedInArticleProcessor:
                         m = ADDED_AT_RE.search(existing_text)
                         if m:
                             preserved_added_at = m.group(1).strip().strip('"').strip("'")
+                        # A live fetch may not include the intro post; keep
+                        # the one an earlier import found.
+                        if self.live:
+                            fm_match = re.match(r"---\n(.*?)\n---\n", existing_text, re.DOTALL)
+                            intro = re.search(r"^intro_share:\n(?:[ \t]+.*\n?)*", fm_match.group(1) + "\n", re.MULTILINE) if fm_match else None
+                            if intro:
+                                preserved_intro = intro.group(0).rstrip("\n").split("\n")
                     except Exception:
                         pass
                 for candidate in ("banner.jpg", "banner.jpeg", "banner.png", "banner.gif", "banner.webp"):
@@ -214,6 +225,7 @@ class LinkedInArticleProcessor:
             # whatever `added_at` was already there.
             added_at = preserved_added_at or date.today().isoformat()
 
+            live_article = self.live.article(article.basename) if self.live else None
             soup = BeautifulSoup(article.html, "html.parser")
             self._cleanup_linkedin_links(soup, slug_mapping)
             self._cleanup_redirect_wrappers(soup)
@@ -226,6 +238,7 @@ class LinkedInArticleProcessor:
                 blog_linkedin_dir / article.slug,
                 article.published_at or article.created_at,
                 cover_photos,
+                live_article,
             )
             if preserved_banner and not image_info.get("banner_filename"):
                 article_dir.mkdir(parents=True, exist_ok=True)
@@ -294,10 +307,19 @@ class LinkedInArticleProcessor:
             ]
             if article.linkedin_id:
                 fm_lines.append(f"linkedin_id: {article.linkedin_id}")
+            if live_article and live_article.get("subtitle"):
+                safe_sub = live_article["subtitle"].replace('"', '\\"')
+                fm_lines.append(f'subtitle: "{safe_sub}"')
+            if live_article and live_article.get("edited_at"):
+                fm_lines.append(f"linkedin_edited_at: {live_article['edited_at']}")
             if banner_fm:
                 fm_lines.append(f"banner: {banner_fm}")
 
-            fm_lines.extend(intro_share_lines(intro_share_map.get(article.slug)))
+            intro_lines = intro_share_lines(intro_share_map.get(article.slug))
+            if not intro_lines and preserved_intro:
+                intro_lines = preserved_intro
+                print(f"[LIVE] Kept earlier intro_share for {article.slug}")
+            fm_lines.extend(intro_lines)
 
             fm_lines.append("---")
             fm_lines.append("")
@@ -462,6 +484,7 @@ class LinkedInArticleProcessor:
         content_dir: pathlib.Path,
         article_datetime: datetime,
         cover_photos: Dict[str, str],
+        live_article: Optional[dict] = None,
     ) -> Dict[str, Optional[str]]:
         content_dir.mkdir(parents=True, exist_ok=True)
         result: Dict[str, Optional[str]] = {"banner_url": None, "banner_filename": None}
@@ -469,8 +492,20 @@ class LinkedInArticleProcessor:
 
         banner_downloaded = False
         banner_found = False
+        # A live fetch carries the real cover file; it beats Rich_Media.csv.
+        live_cover = live_article.get("cover") if live_article else None
+        cover_bytes = self.live.media(live_cover.get("file")) if live_cover else None
+        if cover_bytes:
+            ext = pathlib.PurePosixPath(live_cover["file"]).suffix or ".jpg"
+            filename = "banner" + (".jpg" if ext == ".jpeg" else ext)
+            (content_dir / filename).write_bytes(cover_bytes)
+            result["banner_filename"] = filename
+            banner_found = True
+            print(f"[LIVE] Cover image from live fetch: {filename}")
         article_time_key = article_datetime.strftime("%Y-%m-%d %H:%M")
-        if article_time_key in cover_photos:
+        if banner_found:
+            pass
+        elif article_time_key in cover_photos:
             banner_found = True
             banner_downloaded = self._try_download_banner(cover_photos[article_time_key], content_dir, result)
 
@@ -502,6 +537,17 @@ class LinkedInArticleProcessor:
 
             img_counter += 1
             is_banner = img_counter == 1 and not banner_found
+            live_file = img.attrs.pop("data-live-media", None)
+            live_bytes = self.live.media(live_file) if (self.live and live_file) else None
+            if live_bytes:
+                ext = pathlib.PurePosixPath(live_file).suffix or ".jpg"
+                filename = "banner" + ext if is_banner else f"image-{img_counter}{ext}"
+                (content_dir / filename).write_bytes(live_bytes)
+                img["src"] = f"./{filename}"
+                if is_banner:
+                    result["banner_filename"] = filename
+                print(f"[LIVE] Inline image from live fetch: {filename}")
+                continue
             try:
                 response = requests.get(src, timeout=30)
                 response.raise_for_status()

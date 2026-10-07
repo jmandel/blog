@@ -1,0 +1,279 @@
+---
+import { localUrlFor } from '../lib/linkmap.mjs';
+// The LinkedIn conversation about a post: every comment thread captured by
+// scripts/linkedin_live_fetch.ts and merged into src/data/linkedin/threads/
+// by the importer (scripts/linkedin_threads.py). Each thread lists the
+// pages it belongs on (`pages`: article:<linkedin_id>, share:<share id>);
+// this shows the threads matching `keys`, once each.
+
+interface Props {
+  keys: string[];
+}
+
+interface Comment {
+  id: string;
+  parent_id: string | null;
+  created_at: string | null;
+  author: { name: string; headline?: string; profile_url?: string; is_self?: boolean };
+  html?: string;
+  text?: string;
+  media?: { type: string; file?: string; url?: string; alt?: string; title?: string }[];
+  reactions?: number;
+  edited?: boolean;
+  deleted?: boolean;
+}
+
+interface Thread {
+  thread_urn: string;
+  url: string;
+  pages: string[];
+  label?: string;
+  displayed?: { comments?: number | null; reactions?: number | null; reposts?: number | null };
+  subjects?: { kind: string; activity_urn?: string }[];
+  comments: Comment[];
+}
+
+const { keys } = Astro.props;
+const wanted = new Set(keys.filter(Boolean));
+const files = import.meta.glob<{ default: Thread }>('../data/linkedin/threads/*.json', { eager: true });
+const threads = Object.values(files)
+  .map((m) => m.default)
+  .filter((t) => t.pages?.some((p) => wanted.has(p)) && t.comments?.some((c) => !c.deleted))
+  // The article's own thread (on the post that announced it) first, then
+  // later posts about it, oldest first.
+  .sort((a, b) => (a.label === 'article' ? -1 : b.label === 'article' ? 1 : a.thread_urn.localeCompare(b.thread_urn)));
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const fmtDate = (iso: string | null) =>
+  iso ? new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }) : '';
+// Comment HTML is built by the fetcher from text and links only; keep it to
+// http(s) links and line breaks.
+const safe = (html = '') =>
+  html
+    .replace(/<a href="(?!https?:\/\/)[^"]*">([^<]*)<\/a>/g, '$1')
+    .replace(/<(?!\/?a[\s>]|br>)[^>]*>/g, '')
+    // LinkedIn articles the blog has: link to the blog's copy instead.
+    .replace(/<a href="([^"]*)"/g, (m, href) => `<a href="${localUrlFor(href, base) ?? href}"`);
+const postDate = (t: Thread) => {
+  const m = t.thread_urn.match(/(\d{15,})/);
+  return m ? new Date(Number(BigInt(m[1]) >> 22n)).toISOString() : null;
+};
+const visible = (cs: Comment[]) => cs.filter((c) => !c.deleted || cs.some((r) => r.parent_id === c.id && !r.deleted));
+---
+
+{threads.length > 0 && (
+  <section class="li-conv" aria-label="Comments on LinkedIn">
+    <h2 class="li-conv__title">Conversation on LinkedIn</h2>
+    {threads.map((t) => {
+      const all = t.comments;
+      const top = visible(all.filter((c) => !c.parent_id));
+      const replies = (id: string) => visible(all.filter((c) => c.parent_id === id));
+      const count = all.filter((c) => !c.deleted).length;
+      const heading = threads.length > 1
+        ? (t.label === 'article' ? 'On the post announcing this article' : `On a LinkedIn post from ${fmtDate(postDate(t))}`)
+        : null;
+      const renderComment = (c: Comment, reply = false) => (
+        <li class:list={['li-comment', { 'li-comment--self': c.author?.is_self, 'li-comment--reply': reply }]}>
+          {c.deleted ? (
+            <p class="li-comment__deleted">Comment deleted</p>
+          ) : (
+            <>
+              <div class="li-comment__meta">
+                {c.author?.profile_url ? (
+                  <a class="li-comment__author" href={c.author.profile_url} target="_blank" rel="noreferrer">{c.author.name}</a>
+                ) : (
+                  <span class="li-comment__author">{c.author?.name}</span>
+                )}
+                {c.author?.is_self && <span class="li-comment__badge">Author</span>}
+                <span class="li-comment__date">{fmtDate(c.created_at)}{c.edited ? ' · edited' : ''}</span>
+              </div>
+              {c.author?.headline && !c.author?.is_self && <p class="li-comment__headline">{c.author.headline}</p>}
+              <p class="li-comment__text" set:html={safe(c.html)} />
+              {c.media?.map((m) =>
+                m.file ? (
+                  <img class="li-comment__img" src={`${base}/${m.file}`} alt={m.alt ?? ''} loading="lazy" />
+                ) : m.url && m.type === 'link_preview' ? (
+                  <a class="li-comment__card" href={localUrlFor(m.url, base) ?? m.url} target="_blank" rel="noreferrer">{m.title || m.url}</a>
+                ) : null
+              )}
+              {(c.reactions ?? 0) > 0 && <p class="li-comment__reactions">{`${c.reactions} ${c.reactions === 1 ? 'reaction' : 'reactions'}`}</p>}
+            </>
+          )}
+          {!reply && replies(c.id).length > 0 && (
+            <ul class="li-replies">
+              {replies(c.id).map((r) => renderComment(r, true))}
+            </ul>
+          )}
+        </li>
+      );
+      return (
+        <div class="li-thread">
+          <div class="li-thread__head">
+            {heading && <h3 class="li-thread__heading">{heading}</h3>}
+            <span class="li-thread__count">
+              {`${count} ${count === 1 ? 'comment' : 'comments'}${t.displayed?.reactions ? ` · ${t.displayed.reactions} reactions` : ''}`}
+            </span>
+            <a class="li-thread__link" href={t.url} target="_blank" rel="noreferrer">Reply on LinkedIn</a>
+          </div>
+          <ul class="li-comments">
+            {top.map((c) => renderComment(c))}
+          </ul>
+        </div>
+      );
+    })}
+  </section>
+)}
+
+<style>
+  .li-conv {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e5e5;
+  }
+  .li-conv__title {
+    font-size: 1.15rem;
+    margin: 0 0 1rem;
+  }
+  .li-thread + .li-thread {
+    margin-top: 2rem;
+  }
+  .li-thread__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4rem 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+  .li-thread__heading {
+    flex-basis: 100%;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+    color: #334155;
+  }
+  .li-thread__count {
+    font-size: 0.85rem;
+    color: #64748b;
+  }
+  .li-thread__link {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #1e3a8a;
+    text-decoration: none;
+    padding: 0.15rem 0.55rem;
+    border-radius: 9999px;
+    background: rgba(30, 58, 138, 0.08);
+  }
+  .li-thread__link:hover {
+    background: rgba(30, 58, 138, 0.14);
+  }
+  .li-comments,
+  .li-replies {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .li-comment {
+    margin: 0;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.93rem;
+  }
+  .li-replies {
+    margin-top: 0.6rem;
+    padding-left: 1rem;
+    border-left: 2px solid #eef0f4;
+  }
+  .li-comment--reply {
+    padding: 0.55rem 0;
+    border-bottom: none;
+  }
+  .li-comment--self > .li-comment__text,
+  .li-comment--self > .li-comment__meta {
+    background: rgba(30, 58, 138, 0.045);
+  }
+  .li-comment--self > .li-comment__meta {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 0.6rem 0;
+  }
+  .li-comment--self > .li-comment__text {
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 0.2rem 0.6rem 0.45rem;
+  }
+  .li-comment__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.5rem;
+  }
+  .li-comment__author {
+    font-weight: 600;
+    color: #1f2937;
+    text-decoration: none;
+  }
+  a.li-comment__author:hover {
+    text-decoration: underline;
+  }
+  .li-comment__badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #1d4ed8;
+    background: rgba(37, 99, 235, 0.12);
+    border-radius: 9999px;
+    padding: 0.05rem 0.45rem;
+  }
+  .li-comment__date {
+    font-size: 0.8rem;
+    color: #94a3b8;
+  }
+  .li-comment__headline {
+    margin: 0.05rem 0 0;
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.35;
+  }
+  .li-comment__text {
+    margin: 0.35rem 0 0;
+    line-height: 1.55;
+  }
+  .li-comment__text :global(a) {
+    color: #1e3a8a;
+    overflow-wrap: anywhere;
+  }
+  .li-comment__img {
+    display: block;
+    max-width: min(100%, 420px);
+    height: auto;
+    margin: 0.5rem 0 0;
+    border-radius: 6px;
+  }
+  .li-comment__card {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: #1e3a8a;
+  }
+  .li-comment__reactions {
+    margin: 0.3rem 0 0;
+    font-size: 0.78rem;
+    color: #94a3b8;
+  }
+  .li-comment__deleted {
+    margin: 0;
+    font-style: italic;
+    color: #94a3b8;
+  }
+  .li-more {
+    margin-top: 0.6rem;
+  }
+  .li-more > summary {
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1e3a8a;
+    padding: 0.3rem 0;
+  }
+</style>

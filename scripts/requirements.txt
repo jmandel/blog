@@ -10,3 +10,4 @@ soupsieve
 text-unidecode
 typing_extensions
 urllib3
+pillow

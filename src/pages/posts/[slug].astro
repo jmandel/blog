@@ -1,6 +1,8 @@
 ---
 import { getPosts } from '../../lib/posts';
 import PostLayout from '../../layouts/PostLayout.astro';
+import LinkedInThreads from '../../components/LinkedInThreads.astro';
+import { entryForPost, watchUrl } from '../../lib/youtube.mjs';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -15,7 +17,24 @@ const { Content } = await post.render();
 const bannerImage = post.data.banner;
 const originalUrl = post.data.original_url;
 const introShare = post.data.intro_share;
+const alsoPosted = (post.data.also_posted ?? []).map((ap) => ({
+  label: `Also posted on LinkedIn, ${new Date(ap.posted_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`,
+  paragraphs: (ap.commentary ?? '').trim().split(/\n{2,}/).map((x) => x.trim()).filter(Boolean),
+}));
 const introShareCommentary = introShare?.commentary?.trim();
+// A video in the intro post, if src/data/youtube.json knows about it.
+const introVideo = introShare?.share_id ? entryForPost(introShare.share_id) : null;
+// LinkedIn threads for this page: the article's (imported, or superseded by
+// this native post) and those of posts about it.
+const articleId = (v?: string) =>
+  v && (/^[a-z0-9]{5}$/.test(v) ? v : v.match(/linkedin\.com\/pulse\/[^?#]*-([a-z0-9]{5})\/?(?:[?#]|$)/)?.[1]);
+const supersedes = post.data.supersedes_linkedin;
+const threadKeys = [
+  post.data.linkedin_id,
+  articleId(originalUrl),
+  ...(Array.isArray(supersedes) ? supersedes : supersedes ? [supersedes] : []).map(articleId),
+].filter(Boolean).map((id) => `article:${id}`);
+if (introShare?.share_id) threadKeys.push(`share:${introShare.share_id}`);
 ---
 
 <PostLayout 
@@ -23,7 +42,7 @@ const introShareCommentary = introShare?.commentary?.trim();
   date={new Date(post.data.date)}
   description={post.data.description}
   linkUrl={originalUrl}
-  linkLabel="View on LinkedIn"
+  linkLabel="Original on LinkedIn"
 >
   {bannerImage && (
     <img src={bannerImage.src} alt="" />
@@ -31,10 +50,7 @@ const introShareCommentary = introShare?.commentary?.trim();
   {introShare && (
     <aside class="intro-share">
       <div class="intro-share__meta">
-        <span>Post</span>
-        <a class="intro-share__button" href={introShare.share_url} target="_blank" rel="noreferrer">
-          View conversation
-        </a>
+        <span>Introduced on LinkedIn</span>
       </div>
       {introShareCommentary && (
         <div class="intro-share__body">
@@ -47,9 +63,58 @@ const introShareCommentary = introShare?.commentary?.trim();
           ))}
         </div>
       )}
+      {introVideo && (
+        <div class="intro-share__video">
+          {introVideo.youtube_id ? (
+            <figure class="yt-embed">
+              <a class="yt-embed__facade" href={watchUrl(introVideo.youtube_id)} data-yt={introVideo.youtube_id} aria-label="Play video">
+                <img src={`https://i.ytimg.com/vi/${introVideo.youtube_id}/hqdefault.jpg`} alt="" loading="lazy" />
+                <span class="yt-embed__play" aria-hidden="true"></span>
+              </a>
+              <figcaption><a href={watchUrl(introVideo.youtube_id)}>Watch on YouTube</a></figcaption>
+            </figure>
+          ) : (
+            <p><a href={introShare.share_url}>Watch the video on LinkedIn</a></p>
+          )}
+          {(introVideo.related ?? []).map((r) => (
+            <p class="yt-related"><a href={watchUrl(r.youtube_id)}>{r.label ?? 'Related video on YouTube'}</a></p>
+          ))}
+        </div>
+      )}
     </aside>
   )}
+  {introVideo?.youtube_id && (
+    <script is:inline>
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[data-yt]');
+        if (!a) return;
+        e.preventDefault();
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + a.dataset.yt + '?autoplay=1&rel=0';
+        f.title = a.getAttribute('aria-label') || 'YouTube video';
+        f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        f.allowFullscreen = true;
+        f.className = 'yt-embed__frame';
+        a.replaceWith(f);
+      });
+    </script>
+  )}
+  {alsoPosted.map((ap) => (
+    <aside class="intro-share">
+      <div class="intro-share__meta">
+        <span>{ap.label}</span>
+      </div>
+      {ap.paragraphs.length > 0 && (
+        <div class="intro-share__body">
+          {ap.paragraphs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
+      )}
+    </aside>
+  ))}
   <Content />
+  <LinkedInThreads slot="aside" keys={threadKeys} />
 </PostLayout>
 
 <style>
