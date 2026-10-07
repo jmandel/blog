@@ -5,7 +5,6 @@ added_at: 2026-10-06
 slug: understanding-aco-quality-reporting-through-simulation
 original_url: "https://www.linkedin.com/pulse/understanding-aco-quality-reporting-through-josh-mandel-md-d22wc"
 linkedin_id: d22wc
-banner: ./banner.png
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7492397711032422400"
   share_id: "7492397711032422400"
