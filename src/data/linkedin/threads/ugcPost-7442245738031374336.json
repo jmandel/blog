@@ -1,0 +1,303 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7442245738031374336",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7442245738031374336/",
+  "pages": [
+    "article:uvruc",
+    "share:7442245738031374336"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7442245738560040960"
+    }
+  ],
+  "displayed": {
+    "comments": 11,
+    "reactions": 61,
+    "reposts": 7
+  },
+  "captured": {
+    "total": 11,
+    "top_level": 6,
+    "replies": 5
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442249904036679680)",
+      "parent_id": null,
+      "created_at": "2026-03-24T16:44:07Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "As a patient app developer, and especially as my job working for a payor......this could solve a lot of headaches.....A LOT. Please keep posting about this topic  😁",
+      "html": "As a patient app developer, and especially as my job working for a payor......this could solve a lot of headaches.....A LOT. Please keep posting about this topic  😁",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442250866033786880)",
+      "parent_id": null,
+      "created_at": "2026-03-24T16:47:56Z",
+      "author": {
+        "name": "Eve Maler",
+        "headline": "Digital Identity Strategist | Author & Speaker | Board Member | ForgeRock (Former CTO) | Co-Inventor of SAML, XML, UMA",
+        "profile_url": "https://www.linkedin.com/in/evemaler",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "This is intriguing, and very reminiscent of UMA permission tickets. Was the solution to our similar challenge (not runtime but admin time) of onboarding multiple RS’s to the same AS staring us in the face all the while? And should SMART permission tickets graduate to being used beyond the healthcare sector? https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html#rs-tokenless-response",
+      "html": "This is intriguing, and very reminiscent of UMA permission tickets. Was the solution to our similar challenge (not runtime but admin time) of onboarding multiple RS’s to the same AS staring us in the face all the while? And should SMART permission tickets graduate to being used beyond the healthcare sector? <a href=\"https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html#rs-tokenless-response\">https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html#rs-tokenless-response</a>",
+      "links": [
+        {
+          "text": "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html#rs-tokenless-response",
+          "url": "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html#rs-tokenless-response"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442253563231322112)",
+      "parent_id": "urn:li:comment:(ugcPost:7442245738031374336,7442250866033786880)",
+      "created_at": "2026-03-24T16:58:39Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Thanks Eve Maler --- UMA's breakdown of problems + goals still live in the back of my mind! While UMA's \"ticket\" is like an unsigned permission slip that the client can take to go get approval... SMART's (current) concept is that a \"ticket\" is the signed authorization artifact presented to obtain an access token. Would love to think about how this pattern could apply broadly (or borrow from other work; we never want to reinvent).",
+      "html": "Thanks <a href=\"https://www.linkedin.com/in/evemaler/\">Eve Maler</a> --- UMA's breakdown of problems + goals still live in the back of my mind! While UMA's &quot;ticket&quot; is like an unsigned permission slip that the client can take to go get approval... SMART's (current) concept is that a &quot;ticket&quot; is the signed authorization artifact presented to obtain an access token. Would love to think about how this pattern could apply broadly (or borrow from other work; we never want to reinvent).",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Eve Maler",
+          "url": "https://www.linkedin.com/in/evemaler/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442255314411859968)",
+      "parent_id": "urn:li:comment:(ugcPost:7442245738031374336,7442250866033786880)",
+      "created_at": "2026-03-24T17:05:37Z",
+      "author": {
+        "name": "Eve Maler",
+        "headline": "Digital Identity Strategist | Author & Speaker | Board Member | ForgeRock (Former CTO) | Co-Inventor of SAML, XML, UMA",
+        "profile_url": "https://www.linkedin.com/in/evemaler",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "Josh Mandel, MD you’ve definitely improved on the state of the art. :)",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> you’ve definitely improved on the state of the art. :)",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442261211657867264)",
+      "parent_id": null,
+      "created_at": "2026-03-24T17:29:03Z",
+      "author": {
+        "name": "Joshua Kelly",
+        "headline": "Founder @ Flexpa, Health records for agents",
+        "profile_url": "https://www.linkedin.com/in/jdjkelly",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Interview complete ✅",
+      "html": "Interview complete ✅",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442261879424675840)",
+      "parent_id": "urn:li:comment:(ugcPost:7442245738031374336,7442261211657867264)",
+      "created_at": "2026-03-24T17:31:42Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Thanks for taking the time + thoughtful responses!",
+      "html": "Thanks for taking the time + thoughtful responses!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442289582613778432)",
+      "parent_id": "urn:li:comment:(ugcPost:7442245738031374336,7442249904036679680)",
+      "created_at": "2026-03-24T19:21:47Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Will do! And if you're game, have a chat with the interview bot wearing your payor hat!",
+      "html": "Will do! And if you're game, have a chat with the interview bot wearing your payor hat!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442296738662678529)",
+      "parent_id": "urn:li:comment:(ugcPost:7442245738031374336,7442249904036679680)",
+      "created_at": "2026-03-24T19:50:13Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD sure! I got you, will do tonight",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> sure! I got you, will do tonight",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7442743799585521664)",
+      "parent_id": null,
+      "created_at": "2026-03-26T01:26:41Z",
+      "author": {
+        "name": "Kalyani Yerra MBA, MHA, FHIMSS",
+        "headline": "Principal Healthcare Architect | FHIR + Epic Integration | HL7/Kafka Interoperability | Domain-Driven Design (DDD) + Adapter-Pattern Architecture | Patient Identity | | AI-Aligned Clinical Workflows",
+        "profile_url": "https://www.linkedin.com/in/kalyaniyerra",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Interview done. Really looking forward to participate in the discussions",
+      "html": "Interview done. Really looking forward to participate in the discussions",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7443631568176234496)",
+      "parent_id": null,
+      "created_at": "2026-03-28T12:14:21Z",
+      "author": {
+        "name": "Carmen Smiley",
+        "headline": "Independent Consultant",
+        "profile_url": "https://www.linkedin.com/in/carmenjsmiley",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Just completed my interview! Loved the interactive experience and the opportunity to provide a caregiver’s voice. Thank you 🙏 Josh Mandel, MD",
+      "html": "Just completed my interview! Loved the interactive experience and the opportunity to provide a caregiver’s voice. Thank you 🙏 <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442245738031374336,7447913697194254336)",
+      "parent_id": null,
+      "created_at": "2026-04-09T07:50:00Z",
+      "author": {
+        "name": "John Scully",
+        "headline": "Decentralized Medical Records System. Blockchain-based system, US patent 12266430",
+        "profile_url": "https://www.linkedin.com/in/john-scully-61ba80279",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "President Trump's vision is to revolutionize our medical records system by simplifying and decentralizing it.   Imagine a future where every citizen truly owns and controls their own medical records. This shift not only empowers individuals but also enhances privacy and security.   Blockchain technology provides the perfect solution for achieving this goal.",
+      "html": "President Trump's vision is to revolutionize our medical records system by simplifying and decentralizing it.   Imagine a future where every citizen truly owns and controls their own medical records. This shift not only empowers individuals but also enhances privacy and security.   Blockchain technology provides the perfect solution for achieving this goal.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

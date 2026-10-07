@@ -1,0 +1,75 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7442209953907376128",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7442209953907376128/",
+  "pages": [
+    "share:7442209953907376128"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7442209954536718336"
+    }
+  ],
+  "displayed": {
+    "comments": 2,
+    "reactions": 76,
+    "reposts": 2
+  },
+  "captured": {
+    "total": 2,
+    "top_level": 2,
+    "replies": 0
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7442209953907376128,7442212254688624640)",
+      "parent_id": null,
+      "created_at": "2026-03-24T14:14:31Z",
+      "author": {
+        "name": "Alexander Goel",
+        "headline": "COO@PhenoML|Talk to Me About Connecting Healthcare Data",
+        "profile_url": "https://www.linkedin.com/in/alexanderkgoel",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I hope the horde convinces more API access which already seems to be a trend from some players.\n\nAPIs seem like the best way to exercise control",
+      "html": "I hope the horde convinces more API access which already seems to be a trend from some players.<br><br>APIs seem like the best way to exercise control",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7442209953907376128,7451133319540367360)",
+      "parent_id": null,
+      "created_at": "2026-04-18T05:03:38Z",
+      "author": {
+        "name": "Doug Horner",
+        "headline": "Changing the world... would be easier with the source code.",
+        "profile_url": "https://www.linkedin.com/in/doug-horner-88a85bb",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is cool. We need to allow patients to grant and track agency to their physicians as well as agents. I was just talking to a neurologist who spends 10 mins per patient fetching information from Epic and Cerner.",
+      "html": "This is cool. We need to allow patients to grant and track agency to their physicians as well as agents. I was just talking to a neurologist who spends 10 mins per patient fetching information from Epic and Cerner.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

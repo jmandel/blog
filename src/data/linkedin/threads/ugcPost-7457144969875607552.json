@@ -1,0 +1,717 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7457144969875607552",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7457144969875607552/",
+  "pages": [
+    "article:lgasc",
+    "share:7457144969875607552"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "lgasc",
+      "url": "https://www.linkedin.com/pulse/data-mapping-means-missing-josh-mandel-md-lgasc",
+      "activity_urn": "urn:li:activity:7457144970337173504"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7457144970337173504"
+    }
+  ],
+  "displayed": {
+    "comments": 26,
+    "reactions": 83,
+    "reposts": 7
+  },
+  "captured": {
+    "total": 26,
+    "top_level": 12,
+    "replies": 14
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457145928949506048)",
+      "parent_id": null,
+      "created_at": "2026-05-04T19:15:36Z",
+      "author": {
+        "name": "Nikolai Ryzhikov",
+        "headline": "CTO @ Health Samurai; HealthDev | FHIR | PostgreSQL | Clojure | Agent Engineering. We are limited by time and imagination",
+        "profile_url": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "There is another ultimate solution - eventually make most of data FHIR-native with FHIR-first EHRs :)",
+      "html": "There is another ultimate solution - eventually make most of data FHIR-native with FHIR-first EHRs :)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 14,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457146436569157632)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457145928949506048)",
+      "created_at": "2026-05-04T19:17:37Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Nikolai Ryzhikov Well yes but this still enables \"GET DocumentReference?patient=123\" ! The surface should be the same.",
+      "html": "<a href=\"https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/\">Nikolai Ryzhikov</a> Well yes but this still enables &quot;GET DocumentReference?patient=123&quot; ! The surface should be the same.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Nikolai Ryzhikov",
+          "url": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457153683475161089)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457145928949506048)",
+      "created_at": "2026-05-04T19:46:25Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Nikolai Ryzhikov that's the dream 😁",
+      "html": "<a href=\"https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/\">Nikolai Ryzhikov</a> that's the dream 😁",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Nikolai Ryzhikov",
+          "url": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457163668485750785)",
+      "parent_id": null,
+      "created_at": "2026-05-04T20:26:05Z",
+      "author": {
+        "name": "Anjun (AJ) Chen",
+        "headline": "Democratizing GenAI and LHS for global health equity!",
+        "profile_url": "https://www.linkedin.com/in/anjunchen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD yes, mapping data, losing data. Need better ways to do this. Your analysis and tests are so helpful! Thanks",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> yes, mapping data, losing data. Need better ways to do this. Your analysis and tests are so helpful! Thanks",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457167162672201728)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457145928949506048)",
+      "created_at": "2026-05-04T20:39:59Z",
+      "author": {
+        "name": "Nikolai Ryzhikov",
+        "headline": "CTO @ Health Samurai; HealthDev | FHIR | PostgreSQL | Clojure | Agent Engineering. We are limited by time and imagination",
+        "profile_url": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "William Laolagi it's slowly getting real",
+      "html": "<a href=\"https://www.linkedin.com/in/william-laolagi-905b1a4b/\">William Laolagi</a> it's slowly getting real",
+      "links": [],
+      "mentions": [
+        {
+          "name": "William Laolagi",
+          "url": "https://www.linkedin.com/in/william-laolagi-905b1a4b/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457245317277786113)",
+      "parent_id": null,
+      "created_at": "2026-05-05T01:50:32Z",
+      "author": {
+        "name": "Ryan Howells",
+        "headline": "Health Care Policy | Strategy | Technology Leader | Kill the Clipboard!",
+        "profile_url": "https://www.linkedin.com/in/ryanhowells",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "ONC and CMS requiring Charlie’s PIQI framework as part of certification could also help. https://build.fhir.org/ig/HL7/piqi/piqi_framework.html",
+      "html": "ONC and CMS requiring <a href=\"https://www.linkedin.com/in/charles-e-harp/\">Charlie</a>’s PIQI framework as part of certification could also help. <a href=\"https://build.fhir.org/ig/HL7/piqi/piqi_framework.html\">https://build.fhir.org/ig/HL7/piqi/piqi_framework.html</a>",
+      "links": [
+        {
+          "text": "https://build.fhir.org/ig/HL7/piqi/piqi_framework.html",
+          "url": "https://build.fhir.org/ig/HL7/piqi/piqi_framework.html"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Charlie",
+          "url": "https://www.linkedin.com/in/charles-e-harp/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEB9YdPCw2FDw/articleshare-shrink_160/B4EZ310sSAHQAQ-/0/1777945724574?e=1791925200&v=beta&t=TfD_8Q8MfwFD9aZRBVY-f741Y6gyVD2JFcGJrJMwpQA",
+          "file": "linkedin-media/7b8abec3123b9a83.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457386642715193344)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457245317277786113)",
+      "created_at": "2026-05-05T11:12:07Z",
+      "author": {
+        "name": "Ruben J. Nazario, M.D., MBA",
+        "headline": "Physician Executive | Clinical Informatics & Healthcare Technology Leader | Driving Clinical Strategy Across Payer–Provider Platforms | AI, Data, Value-Based Care",
+        "profile_url": "https://www.linkedin.com/in/rjnazario",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Ryan Howells, Nothing like a mandate to get things going!  A mandate would certainly give PIQI legs.\n\nHaving evaluated it against our framework at Availity, the one key gap I saw in the PIQI handbook is severity: PIQI uses pass/fail SAMs with a criticality boolean. That works for a scorecard, which is a good, digestible format that tells you your score, but it's harder to operationalize as a remediation framework that tells you what to fix, in what order, and why it matters clinically. For example, a missing onset date on an inactive problem is not the same failure as a missing SNOMED code on a condition driving HCC capture.\n\nOur framework (375+ rules across C-CDA and HL7v2) grades every rule as Minor, Significant, or Critical, supports partial credit at the element level, and includes Patient Safety Indication flags, because some data quality failures pose clinical risk, not just interoperability friction.\n\nAlso: PIQI is scoped to single-message evaluation. Longitudinal quality is where most HEDIS and risk-adjustment gaps actually reside.\n\nSolid foundation. Certification requirements should be explicit about what floor they're setting, and what they're leaving for the next layer.",
+      "html": "Ryan Howells, Nothing like a mandate to get things going!  A mandate would certainly give PIQI legs.<br><br>Having evaluated it against our framework at Availity, the one key gap I saw in the PIQI handbook is severity: PIQI uses pass/fail SAMs with a criticality boolean. That works for a scorecard, which is a good, digestible format that tells you your score, but it's harder to operationalize as a remediation framework that tells you what to fix, in what order, and why it matters clinically. For example, a missing onset date on an inactive problem is not the same failure as a missing SNOMED code on a condition driving HCC capture. <br><br>Our framework (375+ rules across C-CDA and HL7v2) grades every rule as Minor, Significant, or Critical, supports partial credit at the element level, and includes Patient Safety Indication flags, because some data quality failures pose clinical risk, not just interoperability friction.<br><br>Also: PIQI is scoped to single-message evaluation. Longitudinal quality is where most HEDIS and risk-adjustment gaps actually reside.<br><br>Solid foundation. Certification requirements should be explicit about what floor they're setting, and what they're leaving for the next layer.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457407447930978304)",
+      "parent_id": null,
+      "created_at": "2026-05-05T12:34:47Z",
+      "author": {
+        "name": "dr. William Goossen FHL7",
+        "headline": "Health informatician",
+        "profile_url": "https://www.linkedin.com/in/williamgoossen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "it really depends on the goal of data use on the target side. If for aggregate purposes some data on source side would have been ignored anyway. Not “missed” but declared “irrelevant”. If for historic records, old data might be less relevant today. E.g. a blood pressure value of 1997 might not be of interest in 2026. For actual records, most data will be semantically mappable. And those who still “miss” could simply be re-entered in the current record using the actual semantics and codes.\nThis by the way has nothing to do with FHIR perse, but all with SnomedCT etc, clinical information modelling, and for the mapping, with the representation of these semantics in FHIR profiles.",
+      "html": "it really depends on the goal of data use on the target side. If for aggregate purposes some data on source side would have been ignored anyway. Not “missed” but declared “irrelevant”. If for historic records, old data might be less relevant today. E.g. a blood pressure value of 1997 might not be of interest in 2026. For actual records, most data will be semantically mappable. And those who still “miss” could simply be re-entered in the current record using the actual semantics and codes. <br>This by the way has nothing to do with FHIR perse, but all with SnomedCT etc, clinical information modelling, and for the mapping, with the representation of these semantics in FHIR profiles.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457408588240834560)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457407447930978304)",
+      "created_at": "2026-05-05T12:39:19Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "For sure I'm not trying to say that data mapping is a pointless exercise -- but it is at odds with comprehensive access! If you want both all data and clean data you need to treat these as separate problems, and you need to decide what to prioritize in case of conflict between his goals.",
+      "html": "For sure I'm not trying to say that data mapping is a pointless exercise -- but it is at odds with comprehensive access! If you want both all data and clean data you need to treat these as separate problems, and you need to decide what to prioritize in case of conflict between his goals.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457409342091296768)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457407447930978304)",
+      "created_at": "2026-05-05T12:42:19Z",
+      "author": {
+        "name": "dr. William Goossen FHL7",
+        "headline": "Health informatician",
+        "profile_url": "https://www.linkedin.com/in/williamgoossen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD agee: it really depends on the purpose! (purposes..)",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> agee: it really depends on the purpose! (purposes..)",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457417787439792129)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457245317277786113)",
+      "created_at": "2026-05-05T13:15:52Z",
+      "author": {
+        "name": "Ryan Howells",
+        "headline": "Health Care Policy | Strategy | Technology Leader | Kill the Clipboard!",
+        "profile_url": "https://www.linkedin.com/in/ryanhowells",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The data quality scorecard needs to be open so there is a minimum degree of normalization across systems at the source before the data moves downstream. Of course our hope is PIQI will be used voluntarily and regs won’t be needed but the same scorecard needs to be used by everyone and the only way to do that is via an open standard and federal regs. The implications of not doing so means the cost of training the AI models to do effective and trustworthy CDS will be too expensive for most clinicians to bear.\n\nThe tools built on top of the open scorecard to determine how the data should be remediated, the severity of the data issues, and the specific use cases for how the data will be used will likely be proprietary based on unique needs. We are actively working with NCQA who said publicly they will be integrating PIQI into HEDIS reporting and the new iteration of PSV.\n\nOur hope is your framework (and anyone else’s for that matter) uses PIQI as the common floor, not the ceiling.",
+      "html": "The data quality scorecard needs to be open so there is a minimum degree of normalization across systems at the source before the data moves downstream. Of course our hope is PIQI will be used voluntarily and regs won’t be needed but the same scorecard needs to be used by everyone and the only way to do that is via an open standard and federal regs. The implications of not doing so means the cost of training the AI models to do effective and trustworthy CDS will be too expensive for most clinicians to bear. <br><br>The tools built on top of the open scorecard to determine how the data should be remediated, the severity of the data issues, and the specific use cases for how the data will be used will likely be proprietary based on unique needs. We are actively working with NCQA who said publicly they will be integrating PIQI into HEDIS reporting and the new iteration of PSV. <br><br>Our hope is your framework (and anyone else’s for that matter) uses PIQI as the common floor, not the ceiling.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457420339719872512)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457245317277786113)",
+      "created_at": "2026-05-05T13:26:01Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "PIQI scores data on the wire. The data I'm talking about isn't on the wire. A cert mandate gives providers a reason to improve what they expose, but the unmapped consult is invisible to the scorecard the same way it's invisible to the API.",
+      "html": "PIQI scores data on the wire. The data I'm talking about isn't on the wire. A cert mandate gives providers a reason to improve what they expose, but the unmapped consult is invisible to the scorecard the same way it's invisible to the API.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457452729926393856)",
+      "parent_id": null,
+      "created_at": "2026-05-05T15:34:43Z",
+      "author": {
+        "name": "Robert Stegwee",
+        "headline": "Strategic Consultant for Health IT, focusing on meHealth for citizens and professionals in health and care",
+        "profile_url": "https://www.linkedin.com/in/stegwee",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Great write-up for the US, with very visible parallels to my European reality. Thanks Josh!\n\nI know it is slightly off topic, but I would hope clinicians would take the lead in how data should be recorded at the source. This in itself impacts the clinical usefulness of the data when exchanged outside the original point of care.\n\nLiesbeth Siderius presented on this topic during the recent IPS Summit in Brussels. For a patient summary to be able to contain and convey useful information, the underlying data needs to be recorded in such a way that it can be communicated and consumed intelligently.\n\nFull report on the summit: https://international-patient-summary.net/ips-summit-in-brussels/",
+      "html": "Great write-up for the US, with very visible parallels to my European reality. Thanks Josh!<br><br>I know it is slightly off topic, but I would hope clinicians would take the lead in how data should be recorded at the source. This in itself impacts the clinical usefulness of the data when exchanged outside the original point of care.<br><br><a href=\"https://www.linkedin.com/in/liesbeth-siderius-37217618/\">Liesbeth Siderius</a> presented on this topic during the recent IPS Summit in Brussels. For a patient summary to be able to contain and convey useful information, the underlying data needs to be recorded in such a way that it can be communicated and consumed intelligently.<br><br>Full report on the summit: <a href=\"https://international-patient-summary.net/ips-summit-in-brussels/\">https://international-patient-summary.net/ips-summit-in-brussels/</a>",
+      "links": [
+        {
+          "text": "https://international-patient-summary.net/ips-summit-in-brussels/",
+          "url": "https://international-patient-summary.net/ips-summit-in-brussels/"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Liesbeth Siderius",
+          "url": "https://www.linkedin.com/in/liesbeth-siderius-37217618/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQESYq7YRx0Buw/articleshare-shrink_160/B4EZwn_FOSIkAk-/0/1770197374995?e=1791925200&v=beta&t=5nusD0YHXuU6nAmHTKLO2dxGouofTaKk5wgTLb10YMY",
+          "file": "linkedin-media/d581a26bd5f8c674.jpg"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457486243036319744)",
+      "parent_id": null,
+      "created_at": "2026-05-05T17:47:53Z",
+      "author": {
+        "name": "Ashley Cairns",
+        "headline": "Founder and CEO at keywell.ai | Healthcare AI",
+        "profile_url": "https://www.linkedin.com/in/ashleymodom",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Can't the EHRs do this?  Why is it a bottleneck if it's rolled out by the EHR? \"The bottleneck is adopting an automated classifier into a production EHR pipeline at every provider organization\"",
+      "html": "Can't the EHRs do this?  Why is it a bottleneck if it's rolled out by the EHR? &quot;The bottleneck is adopting an automated classifier into a production EHR pipeline at every provider organization&quot;",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457518831285182464)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457486243036319744)",
+      "created_at": "2026-05-05T19:57:23Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "They *could*. But it's a \"some risk, no reward\" calculus. Will they?",
+      "html": "They *could*. But it's a &quot;some risk, no reward&quot; calculus. Will they?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457542294687309825)",
+      "parent_id": null,
+      "created_at": "2026-05-05T21:30:37Z",
+      "author": {
+        "name": "Teddy Gedamu",
+        "headline": "Tenasol",
+        "profile_url": "https://www.linkedin.com/in/teddygedamu",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Categorization is definitely one source of the problem (USCDI_Clinical Notes being a great example). But there are also other causes, like EHR “template” workflows which results in data getting categorized too broadly (using LOINC as an example) and health data is too sensitive to eliminate this constraint IMO (EHI export was created for this right?).\n\nWhether the issue is data access or data quality; specs, IGs and certification standards are only part of the equation. We need modern technology (agentic scribes, new data platforms, etc) to do the rest. Its still early, but I’m optimistic over the long term.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Categorization is definitely one source of the problem (USCDI_Clinical Notes being a great example). But there are also other causes, like EHR “template” workflows which results in data getting categorized too broadly (using LOINC as an example) and health data is too sensitive to eliminate this constraint IMO (EHI export was created for this right?). <br><br>Whether the issue is data access or data quality; specs, IGs and certification standards are only part of the equation. We need modern technology (agentic scribes, new data platforms, etc) to do the rest. Its still early, but I’m optimistic over the long term.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457614891676409856)",
+      "parent_id": null,
+      "created_at": "2026-05-06T02:19:05Z",
+      "author": {
+        "name": "Alexander Goel",
+        "headline": "COO@PhenoML|Talk to Me About Connecting Healthcare Data",
+        "profile_url": "https://www.linkedin.com/in/alexanderkgoel",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I’ve so many projects where the effort to map data and the quantity of data lost have both been wildly underestimated.\n\nI want to believe that shared valuesets which are kept in sync between systems via a mechanism like subscriptions could solve part of this problem.\n\nThat said, I think your structural fix is more practical. Let the app get data and structure it themselves. However this approach is not without some obvious risks like getting data you’re not supposed to, or structuring it wrong and eliminating some important data that was relevant to patient care",
+      "html": "I’ve so many projects where the effort to map data and the quantity of data lost have both been wildly underestimated. <br><br>I want to believe that shared valuesets which are kept in sync between systems via a mechanism like subscriptions could solve part of this problem. <br><br>That said, I think your structural fix is more practical. Let the app get data and structure it themselves. However this approach is not without some obvious risks like getting data you’re not supposed to, or structuring it wrong and eliminating some important data that was relevant to patient care",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457783818796810240)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457245317277786113)",
+      "created_at": "2026-05-06T13:30:21Z",
+      "author": {
+        "name": "Charlie Harp",
+        "headline": "CEO @ Clinical Architecture | Informonster Podcast Host | Healthcare Data Quality Evangelist",
+        "profile_url": "https://www.linkedin.com/in/charles-e-harp",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is true... unless you have the ability to infer data is missing through assessments that look for missing signal though situational, temporal and clinical implausibility.  It can be tricky but I would like to discuss it more and see what's possible.",
+      "html": "This is true... unless you have the ability to infer data is missing through assessments that look for missing signal though situational, temporal and clinical implausibility.  It can be tricky but I would like to discuss it more and see what's possible.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457841095050215424)",
+      "parent_id": null,
+      "created_at": "2026-05-06T17:17:57Z",
+      "author": {
+        "name": "Janet sopp",
+        "headline": "Systems Analyst Assistant at University of Michigan health system",
+        "profile_url": "https://www.linkedin.com/in/janet-sopp-935b85196",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Sad to say compliance has always been a challenge. We can get close. I think one issue is we assume everyone is aware of changes.",
+      "html": "Sad to say compliance has always been a challenge. We can get close. I think one issue is we assume everyone is aware of changes.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457856200743800832)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457614891676409856)",
+      "created_at": "2026-05-06T18:17:58Z",
+      "author": {
+        "name": "Aaron Seib, PMP, CPMAI, CDMP-Practitioner",
+        "headline": "Healthcare AI & Data Solutions Leader | CDMP, CPMAI, PMP",
+        "profile_url": "https://www.linkedin.com/in/aaron-seib-pmp-cpmai-cdmp-practitioner-65811627",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Alexander Goel Hold on - maybe I need to reread Josh's post but it sounds like your saying is if everybody just gave me access toi all of their data I could solve the problem for anyone.",
+      "html": "<a href=\"https://www.linkedin.com/in/alexanderkgoel/\">Alexander Goel</a> Hold on - maybe I need to reread Josh's post but it sounds like your saying is if everybody just gave me access toi all of their data I could solve the problem for anyone.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Alexander Goel",
+          "url": "https://www.linkedin.com/in/alexanderkgoel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457874469412384770)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457614891676409856)",
+      "created_at": "2026-05-06T19:30:34Z",
+      "author": {
+        "name": "Alexander Goel",
+        "headline": "COO@PhenoML|Talk to Me About Connecting Healthcare Data",
+        "profile_url": "https://www.linkedin.com/in/alexanderkgoel",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Aaron Seib, PMP, FACHDM, CDMP-Practitioner definitely not. We have privacy laws for a reason. I’m suggesting that if everyone used the same codes and mapped all their data so it was exposed via API\n\nSince that’s probably impossible Josh Mandel, MD’s solution is more practical. He correctly pointed out that the API might be there but the data might not be available via API",
+      "html": "<a href=\"https://www.linkedin.com/in/aaron-seib-pmp-cpmai-cdmp-practitioner-65811627/\">Aaron Seib, PMP, FACHDM, CDMP-Practitioner</a> definitely not. We have privacy laws for a reason. I’m suggesting that if everyone used the same codes and mapped all their data so it was exposed via API<br><br>Since that’s probably impossible <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>’s solution is more practical. He correctly pointed out that the API might be there but the data might not be available via API",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Aaron Seib, PMP, FACHDM, CDMP-Practitioner",
+          "url": "https://www.linkedin.com/in/aaron-seib-pmp-cpmai-cdmp-practitioner-65811627/",
+          "kind": "person"
+        },
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7457967812255322112)",
+      "parent_id": null,
+      "created_at": "2026-05-07T01:41:28Z",
+      "author": {
+        "name": "Brian Pech",
+        "headline": "Consultant",
+        "profile_url": "https://www.linkedin.com/in/brian-pech-30a050a3",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Yes, They Did\nIn September 2010, Kaiser Permanente donated its Convergent Medical Terminology (CMT) to the U.S. Department of Health and Human Services (HHS) and the International Health Terminology Standards Development Organisation (IHTSDO).\nAs part of this arrangement, the National Library of Medicine (NLM)—which acts as the U.S. member of the IHTSDO—distributes these terminology files and mappings to U.S. users.\nWhat Was Included in the Donation?\nKaiser Permanente spent years developing CMT to act as a \"translation engine\" for electronic health records (EHRs). The donation provided healthcare organizations free access to:\nClinician-Friendly Terms: The display names used by doctors and nurses in Kaiser's own EHR systems.\nPatient-Friendly Terms: Simplified medical terms that patients see in their personal health record (PHR) portals.\nStandardized Mappings: Direct cross-maps linking these friendly terms to standardized national and international vocabularies, heavily featuring SNOMED CT, as well as mappings to ICD-9-CM and ICD-10-CM.\nTooling: Processes and tools used to create, manage, and control the quality of the medical terminology.\nWhy It Matters\nThe goal of this donation was to help other U.S.",
+      "html": "Yes, They Did<br>In September 2010, Kaiser Permanente donated its Convergent Medical Terminology (CMT) to the U.S. Department of Health and Human Services (HHS) and the International Health Terminology Standards Development Organisation (IHTSDO). <br>As part of this arrangement, the National Library of Medicine (NLM)—which acts as the U.S. member of the IHTSDO—distributes these terminology files and mappings to U.S. users. <br>What Was Included in the Donation?<br>Kaiser Permanente spent years developing CMT to act as a &quot;translation engine&quot; for electronic health records (EHRs). The donation provided healthcare organizations free access to: <br>Clinician-Friendly Terms: The display names used by doctors and nurses in Kaiser's own EHR systems. <br>Patient-Friendly Terms: Simplified medical terms that patients see in their personal health record (PHR) portals. <br>Standardized Mappings: Direct cross-maps linking these friendly terms to standardized national and international vocabularies, heavily featuring SNOMED CT, as well as mappings to ICD-9-CM and ICD-10-CM.<br>Tooling: Processes and tools used to create, manage, and control the quality of the medical terminology. <br>Why It Matters<br>The goal of this donation was to help other U.S.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7458582633413943298)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457245317277786113)",
+      "created_at": "2026-05-08T18:24:33Z",
+      "author": {
+        "name": "Charlie Harp",
+        "headline": "CEO @ Clinical Architecture | Informonster Podcast Host | Healthcare Data Quality Evangelist",
+        "profile_url": "https://www.linkedin.com/in/charles-e-harp",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Ruben J. Nazario, M.D., MBA - PIQI does does not have severity, in part because we chose a model that aligns with digital quality measures - a simple numerator denominator.  In PIQI we assess what we need to use the data.  I something is a \"nice to have\" or 'low/minor' severity why bother scoring it - just measure it as informational.  I would also point out that some of what you are doing is outside of the mission scope for PIQI.  PIQI Framework was created to establish a open methodology to articulate and measure  minimal usability of data in a payload for a given use case.  Aggregation, be it categorical, longitudinal or geographical is trivial.  Once we have an objective, standards-based score with traceable causality, the stats nerds (me included) 🤓 can have their field day.  It has been great seeing members of your team testing PIQI at the connect-a-thons - asking questions and kicking the tires.  I am sure you and your team have done significant work in this space and we would love it if you would consider joining the #PIQIAlliance and helping us make PIQI even better.  Regardless, I appreciate your perspective and feedback.",
+      "html": "<a href=\"https://www.linkedin.com/in/rjnazario/\">Ruben J. Nazario, M.D., MBA</a> - PIQI does does not have severity, in part because we chose a model that aligns with digital quality measures - a simple numerator denominator.  In PIQI we assess what we need to use the data.  I something is a &quot;nice to have&quot; or 'low/minor' severity why bother scoring it - just measure it as informational.  I would also point out that some of what you are doing is outside of the mission scope for PIQI.  PIQI Framework was created to establish a open methodology to articulate and measure  minimal usability of data in a payload for a given use case.  Aggregation, be it categorical, longitudinal or geographical is trivial.  Once we have an objective, standards-based score with traceable causality, the stats nerds (me included) 🤓 can have their field day.  It has been great seeing members of your team testing PIQI at the connect-a-thons - asking questions and kicking the tires.  I am sure you and your team have done significant work in this space and we would love it if you would consider joining the <a href=\"https://www.linkedin.com/search/results/all/?keywords=%23piqialliance&amp;origin=HASH_TAG_FROM_FEED\">#PIQIAlliance</a> and helping us make PIQI even better.  Regardless, I appreciate your perspective and feedback.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Ruben J. Nazario, M.D., MBA",
+          "url": "https://www.linkedin.com/in/rjnazario/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [
+        "PIQIAlliance"
+      ],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7458881623619600384)",
+      "parent_id": null,
+      "created_at": "2026-05-09T14:12:38Z",
+      "author": {
+        "name": "Dennis Giokas",
+        "headline": "Board Director ● CPO ● Business and Technology Strategist ● Driving digital health innovation and business growth",
+        "profile_url": "https://www.linkedin.com/in/dennis-giokas",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Yes, the problem exists as you point out. Words matter regarding the source of the problem and solution. For the problem you say:  “Every step that requires a provider to map internal codes to external standards is a step where data drops out.” For the solution you say “At each provider organization, someone maintains the mapping from internal codes”. I hold the vendors accountable for this problem, not the provider. I used to chair the general assembly at SNOMED International. I need more than 10 fingers to count how many times leaders from other countries asked my how does your country implement SNOMED. I said we don’t. We hold the vendors accountable for implementation.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Yes, the problem exists as you point out. Words matter regarding the source of the problem and solution. For the problem you say:  “Every step that requires a provider to map internal codes to external standards is a step where data drops out.” For the solution you say “At each provider organization, someone maintains the mapping from internal codes”. I hold the vendors accountable for this problem, not the provider. I used to chair the general assembly at SNOMED International. I need more than 10 fingers to count how many times leaders from other countries asked my how does your country implement SNOMED. I said we don’t. We hold the vendors accountable for implementation.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7461594876841730049)",
+      "parent_id": "urn:li:comment:(ugcPost:7457144969875607552,7457145928949506048)",
+      "created_at": "2026-05-17T01:54:08Z",
+      "author": {
+        "name": "Parnesh Raniga",
+        "headline": "Medical Imaging Scientist at CSIRO",
+        "profile_url": "https://www.linkedin.com/in/parnesh-raniga-633ab310",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Nikolai Ryzhikov not just FHIR-first EHR, but FHIR first “pretty much everything”.",
+      "html": "<a href=\"https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/\">Nikolai Ryzhikov</a> not just FHIR-first EHR, but FHIR first “pretty much everything”.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Nikolai Ryzhikov",
+          "url": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7457144969875607552,7467265572683079681)",
+      "parent_id": null,
+      "created_at": "2026-06-01T17:27:27Z",
+      "author": {
+        "name": "Lucia Savage",
+        "headline": "Smart ideas to fix healthcare. Board Member. Advisor. Expert advisor on public policy, AI, privacy, cybersecurity, and the future of healthcare. I answer questions for CNN and Senators. I write my own posts, not AI.",
+        "profile_url": "https://www.linkedin.com/in/lucia-savage-686470",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "There are also maybe institutions that don’t expose all data they could because they think they know better than a patient what should be disclosed.",
+      "html": "There are also maybe institutions that don’t expose all data they could because they think they know better than a patient what should be disclosed.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

@@ -1,0 +1,1785 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:activity:7490421284137394177",
+  "url": "https://www.linkedin.com/feed/update/urn:li:activity:7490421284137394177/",
+  "pages": [
+    "share:7490421283571109888"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7490421284137394177"
+    }
+  ],
+  "displayed": {
+    "comments": 73,
+    "reactions": 705,
+    "reposts": 0
+  },
+  "captured": {
+    "total": 73,
+    "top_level": 73,
+    "replies": 0
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490422923938267136)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:06:30Z",
+      "author": {
+        "name": "Lalitha Pranathi Pulavarthy",
+        "headline": "Clinician | Healthcare AI | EMR Integrations @Pivotal Health",
+        "profile_url": "https://www.linkedin.com/in/lalithapulavarthy",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations! 🙌🏻",
+      "html": "Congratulations! 🙌🏻",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490424129876234240)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:11:17Z",
+      "author": {
+        "name": "Andrew G. Ten Have",
+        "headline": "Physician Data Scientist in Clinical AI Product Development | Building safe, evidence-based generative AI for clinical and research workflows",
+        "profile_url": "https://www.linkedin.com/in/andrew-g-ten-have-91584087",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats Josh!",
+      "html": "Congrats Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490424941461315584)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:14:31Z",
+      "author": {
+        "name": "Matt Abrams",
+        "headline": "Advisor, Board Member, Co-Founder, Venture Partner, Dot Connector: cursed (and blessed) with curiosity and a drive to #leaveitbetter #startups #natsec #venture #informationquality #healthcare #informationintegrity",
+        "profile_url": "https://www.linkedin.com/in/mattabrams",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats Josh Mandel, MD!!! They're damn lucky to have you!",
+      "html": "Congrats <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>!!! They're damn lucky to have you!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490426015261978626)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:18:47Z",
+      "author": {
+        "name": "Brendan Keeler",
+        "headline": "Interoperability Practice Lead at HTD Health",
+        "profile_url": "https://www.linkedin.com/in/brendan-keeler",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Industry earthquake",
+      "html": "Industry earthquake",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 21,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490427397180383232)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:24:16Z",
+      "author": {
+        "name": "Pawan Jindal",
+        "headline": "Physician | Health Informatician | Powered by Coffee and Health AI Projects",
+        "profile_url": "https://www.linkedin.com/in/pawanjindal",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats, Josh Mandel, MD",
+      "html": "Congrats, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490427499521269760)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:24:41Z",
+      "author": {
+        "name": "Joris Van Dam",
+        "headline": "CEO and Co-Founder at Advokare",
+        "profile_url": "https://www.linkedin.com/in/joris-van-dam-114323",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Many Congrats, Josh! Excited to see all that you'll accomplish there!",
+      "html": "Many Congrats, Josh! Excited to see all that you'll accomplish there!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490428454740549633)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:28:29Z",
+      "author": {
+        "name": "Yannick Boerner",
+        "headline": "CEO @ Carelane | building the world’s fastest clinical trial platform",
+        "profile_url": "https://www.linkedin.com/in/yannick-boerner",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh, they are lucky to have you :-) Godspeed!",
+      "html": "Congratulations Josh, they are lucky to have you :-) Godspeed!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490428472964808705)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:28:33Z",
+      "author": {
+        "name": "Neil McFarlane",
+        "headline": "Director, Healthcare & Life Sciences | Frontier Company at Microsoft",
+        "profile_url": "https://www.linkedin.com/in/neilmcfarlane",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations!",
+      "html": "Congratulations!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490429180485079040)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:31:22Z",
+      "author": {
+        "name": "Ken Rubin",
+        "headline": "HIT Strategist, Interoperability Geek, Healthcare Architect and Informatician; Research Associate, University of Utah",
+        "profile_url": "https://www.linkedin.com/in/rubin-ken",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations!  Keep leading the way...",
+      "html": "Congratulations!  Keep leading the way...",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490429667112345600)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:33:18Z",
+      "author": {
+        "name": "Raj Revuru",
+        "headline": "Delivering transformational outcomes with Observability & Automation",
+        "profile_url": "https://www.linkedin.com/in/rajrevuru",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats Josh Mandel, MD",
+      "html": "Congrats <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490432016010665984)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:42:38Z",
+      "author": {
+        "name": "Julie Maas",
+        "headline": "APIs, Digital Identity, & Health Information Exchange",
+        "profile_url": "https://www.linkedin.com/in/juliewmaas",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats Josh!",
+      "html": "Congrats Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490433951430451200)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:50:19Z",
+      "author": {
+        "name": "Paul Swider",
+        "headline": "Mission Critical Healthcare Solutions | Strategic Microsoft Cloud and AI Partner",
+        "profile_url": "https://www.linkedin.com/in/pswider",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh!",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490435972459982848)",
+      "parent_id": null,
+      "created_at": "2026-08-04T15:58:21Z",
+      "author": {
+        "name": "Andrew Arruda",
+        "headline": "Refactoring healthcare @Flexpa, Democratizing law @ROSSIntel, Frontier investing @ManiacVC. Co-author of “AI in Application” in 2018.",
+        "profile_url": "https://www.linkedin.com/in/andrewarruda",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Wow! Congrats Josh and congrats Aledade!",
+      "html": "Wow! Congrats Josh and congrats Aledade!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490437144155426818)",
+      "parent_id": null,
+      "created_at": "2026-08-04T16:03:00Z",
+      "author": {
+        "name": "Vijayaditya Ayyagari",
+        "headline": "Software Innovator, Enterprise Architect, Co-founder, CTO | EHR, HL7, FHIR | Web3, Multi-party systems, Blockchain Developer | DevOps, Agile Project Manager | .NET NodeJS Nest React | Computer Science Professor",
+        "profile_url": "https://www.linkedin.com/in/vijayaditya",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh Mandel, MD -  Your leadership will help Accountable Care Organizations accelerate interoperability and value-based care.",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> -  Your leadership will help Accountable Care Organizations accelerate interoperability and value-based care.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490440545656471552)",
+      "parent_id": null,
+      "created_at": "2026-08-04T16:16:31Z",
+      "author": {
+        "name": "Rick Klau",
+        "headline": "CTO at Hajoca. Formerly: co-founder and CEO at Onsemble; California CTIO; long-time Google exec.",
+        "profile_url": "https://www.linkedin.com/in/rickklau",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats, Josh! Sounds like a great fit.",
+      "html": "Congrats, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>! Sounds like a great fit.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490443246150717440)",
+      "parent_id": null,
+      "created_at": "2026-08-04T16:27:15Z",
+      "author": {
+        "name": "Susan Hull MSN RN, NI-BC, NEA-BC, FAMIA",
+        "headline": "Principal, Consumer Health Informatics, MITRE Center for Transforming Health",
+        "profile_url": "https://www.linkedin.com/in/susan-hull-msn-rn-ni-bc-nea-bc-famia-8362a04",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh Mandel, MD and best wishes on this next chapter for you!",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> and best wishes on this next chapter for you!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490446400699387904)",
+      "parent_id": null,
+      "created_at": "2026-08-04T16:39:47Z",
+      "author": {
+        "name": "Jude Soundar",
+        "headline": "Government Affairs Leader in Health AI & Policy | Federal Health IT | Digital Transformation | Strategy | Executive Leadership | Legal & Compliance | Government Relations | National Security | JD/MBA",
+        "profile_url": "https://www.linkedin.com/in/judesoundar",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh Mandel, MD !!!",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> !!!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490446485868703744)",
+      "parent_id": null,
+      "created_at": "2026-08-04T16:40:07Z",
+      "author": {
+        "name": "Eugene Kuznetsov",
+        "headline": "4x founder (MSFT exit, IBM exit, Abine-DeleteMe, Commure) | ex-government: ex-CTO for Navy SEALs, ex-Deputy CDAO | full stack technology executive | electrical engineer | occasional investor",
+        "profile_url": "https://www.linkedin.com/in/eugenekuznetsov",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh Mandel, MD - much opportunity for impact from inside physician orgs!",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> - much opportunity for impact from inside physician orgs!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490448614729646080)",
+      "parent_id": null,
+      "created_at": "2026-08-04T16:48:35Z",
+      "author": {
+        "name": "Saman Zarandioon",
+        "headline": "VP of Engineering, AI/ML | Building Foundation Models for Health Data | Founding Team: AWS Comprehend & Amazon Machine Learning",
+        "profile_url": "https://www.linkedin.com/in/zarandioon",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations, Josh! Well deserved!",
+      "html": "Congratulations, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>! Well deserved!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490449959666728961)",
+      "parent_id": null,
+      "created_at": "2026-08-04T16:53:56Z",
+      "author": {
+        "name": "Nathan von Colditz",
+        "headline": "Chief Strategy Officer | Healthcare Technology Executive",
+        "profile_url": "https://www.linkedin.com/in/nathanvoncolditz",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats!  Lucky to have you.",
+      "html": "Congrats!  Lucky to have you.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490450771491143680)",
+      "parent_id": null,
+      "created_at": "2026-08-04T16:57:09Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "WOW!! Can't wait to see what you do at the land of Farzad!!",
+      "html": "WOW!! Can't wait to see what you do at the land of Farzad!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490454469088866304)",
+      "parent_id": null,
+      "created_at": "2026-08-04T17:11:51Z",
+      "author": {
+        "name": "Paul Church",
+        "headline": "Inovia executive-in-residence, ex-Google, HL7 FHIR, part-time farmer",
+        "profile_url": "https://www.linkedin.com/in/paul-steven-church",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations, and I'll be interested to see what you do with this new perspective!",
+      "html": "Congratulations, and I'll be interested to see what you do with this new perspective!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490455361125179392)",
+      "parent_id": null,
+      "created_at": "2026-08-04T17:15:24Z",
+      "author": {
+        "name": "Wayne Singer",
+        "headline": "Senior Vice President - Regulatory Affairs at Darena Solutions",
+        "profile_url": "https://www.linkedin.com/in/wayne-singer-170bb4",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh!! To interoperability and beyond!!!",
+      "html": "Congratulations Josh!! To interoperability and beyond!!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490456423017889792)",
+      "parent_id": null,
+      "created_at": "2026-08-04T17:19:37Z",
+      "author": {
+        "name": "Amanda (Mandi) Hall, PhD",
+        "headline": "Research & Design at Microsoft AI Health",
+        "profile_url": "https://www.linkedin.com/in/amanda-mandi-h-60b971b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats 🎉",
+      "html": "Congrats 🎉",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490458463156809728)",
+      "parent_id": null,
+      "created_at": "2026-08-04T17:27:43Z",
+      "author": {
+        "name": "Edward Bukstel",
+        "headline": "Chief Executive Officer at ClientsFirst AI. Creating the Next Generation Generative AI Experience for Potential Legal Clients.",
+        "profile_url": "https://www.linkedin.com/in/edward-bukstel-33987a2",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Awesome work",
+      "html": "Awesome work",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490458896495456256)",
+      "parent_id": null,
+      "created_at": "2026-08-04T17:29:26Z",
+      "author": {
+        "name": "Kalyani Yerra MBA, MHA, FHIMSS",
+        "headline": "Principal Healthcare Architect | FHIR + Epic Integration | HL7/Kafka Interoperability | Domain-Driven Design (DDD) + Adapter-Pattern Architecture | Patient Identity | | AI-Aligned Clinical Workflows",
+        "profile_url": "https://www.linkedin.com/in/kalyaniyerra",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh. Aledade is lucky to have you.",
+      "html": "Congratulations Josh. Aledade is lucky to have you.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490459222950932480)",
+      "parent_id": null,
+      "created_at": "2026-08-04T17:30:44Z",
+      "author": {
+        "name": "Tish C.",
+        "headline": "Fractional Chief Marketing Officer at ScalePoint Solution Partners, LLC",
+        "profile_url": "https://www.linkedin.com/in/tish-c-93004317",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations",
+      "html": "Congratulations",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490460116865994752)",
+      "parent_id": null,
+      "created_at": "2026-08-04T17:34:17Z",
+      "author": {
+        "name": "Rebecca Mitchell",
+        "headline": "Scrub Capital Managing Partner. Building clinically grounded health care companies and communities.",
+        "profile_url": "https://www.linkedin.com/in/rebeccalynnmitchell",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Love this!!",
+      "html": "Love this!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490462698401550337)",
+      "parent_id": null,
+      "created_at": "2026-08-04T17:44:33Z",
+      "author": {
+        "name": "Gyan B.",
+        "headline": "Senior Data Engineer at DHIS2 | Databrick | Microsoft Fabric | ETL/ELT Pipeline | Power BI | Data Agent",
+        "profile_url": "https://www.linkedin.com/in/g-tamang",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulation 👏",
+      "html": "Congratulation 👏",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490469193751035904)",
+      "parent_id": null,
+      "created_at": "2026-08-04T18:10:21Z",
+      "author": {
+        "name": "Christopher Stoops",
+        "headline": "BI Engineer at Health Catalyst | Fabric • Semantic Modeling • Analytics Engineering • Applied AI | MSBA Candidate @ Quantic",
+        "profile_url": "https://www.linkedin.com/in/christopherstoops",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations! 🎉 Josh Mandel, MD",
+      "html": "Congratulations! 🎉 <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490470542483857408)",
+      "parent_id": null,
+      "created_at": "2026-08-04T18:15:43Z",
+      "author": {
+        "name": "Naveen Murali",
+        "headline": "Business Development Manager | IT services | Enterprise Sales | Digital Transformation | Cloud, AI, Data & Managed Services | US, UK & UAE Markets",
+        "profile_url": "https://www.linkedin.com/in/naveen-murali-a47b3a87",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh",
+      "html": "Congratulations Josh",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490470975256588288)",
+      "parent_id": null,
+      "created_at": "2026-08-04T18:17:26Z",
+      "author": {
+        "name": "Adnan Lakdawala, MD, MPS",
+        "headline": "Clinical Research Informatician",
+        "profile_url": "https://www.linkedin.com/in/adnan333",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations",
+      "html": "Congratulations",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490472290061664256)",
+      "parent_id": null,
+      "created_at": "2026-08-04T18:22:40Z",
+      "author": {
+        "name": "Julie Green Bataille",
+        "headline": "SVP Communications",
+        "profile_url": "https://www.linkedin.com/in/julie-green-bataille-95351a2",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Welcome Josh - we're excited you are here",
+      "html": "Welcome Josh - we're excited you are here",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490485520746184704)",
+      "parent_id": null,
+      "created_at": "2026-08-04T19:15:14Z",
+      "author": {
+        "name": "Katie Burner",
+        "headline": "Senior Director Talent Acquisition",
+        "profile_url": "https://www.linkedin.com/in/katie-burner-391734b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Welcome Josh!",
+      "html": "Welcome Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490499087373447168)",
+      "parent_id": null,
+      "created_at": "2026-08-04T20:09:09Z",
+      "author": {
+        "name": "Claudia Williams",
+        "headline": "Building the nation's health infrastructure",
+        "profile_url": "https://www.linkedin.com/in/claudiawilliamshealthdata",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Brilliant move all around 💪🎉",
+      "html": "Brilliant move all around 💪🎉",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490504852536717312)",
+      "parent_id": null,
+      "created_at": "2026-08-04T20:32:03Z",
+      "author": {
+        "name": "Ryan Radecki",
+        "headline": "Emergency Medicine Specialist | Clinical Informatics Director | Health NZ HealthX",
+        "profile_url": "https://www.linkedin.com/in/ryan-radecki",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The better question is whether Aledade has an Adelaide office.\n\nAnd if not, why not?!",
+      "html": "The better question is whether Aledade has an Adelaide office.<br><br>And if not, why not?!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490505775396859904)",
+      "parent_id": null,
+      "created_at": "2026-08-04T20:35:43Z",
+      "author": {
+        "name": "Bill Lakenan",
+        "headline": "Director of Innovation @ Bellese",
+        "profile_url": "https://www.linkedin.com/in/lakenan",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Aledade is one lucky organization.  Excited to see your contributions in your new chapter.",
+      "html": "Aledade is one lucky organization.  Excited to see your contributions in your new chapter.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490506501686489089)",
+      "parent_id": null,
+      "created_at": "2026-08-04T20:38:36Z",
+      "author": {
+        "name": "Josh Fanning",
+        "headline": "Senior Solutions Architect @ Veradigm® | Driving Data Analytics Solutions",
+        "profile_url": "https://www.linkedin.com/in/joshfanning",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Whoa… Cool",
+      "html": "Whoa… Cool",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490507660803366912)",
+      "parent_id": null,
+      "created_at": "2026-08-04T20:43:13Z",
+      "author": {
+        "name": "Jeremy Kriegel",
+        "headline": "veemee Founder | UX Leader | Speaker | Coach",
+        "profile_url": "https://www.linkedin.com/in/jeremykriegel",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats!!",
+      "html": "Congrats!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490507895919329280)",
+      "parent_id": null,
+      "created_at": "2026-08-04T20:44:09Z",
+      "author": {
+        "name": "The Rev Ken McCaslin",
+        "headline": "Retired Clergy Chaplain for the Deanery of Naples",
+        "profile_url": "https://www.linkedin.com/in/kenmccaslin",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations",
+      "html": "Congratulations",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490509180441686017)",
+      "parent_id": null,
+      "created_at": "2026-08-04T20:49:15Z",
+      "author": {
+        "name": "Zeb Mahmood",
+        "headline": "Startups | Product Management | Data | AI",
+        "profile_url": "https://www.linkedin.com/in/zebonic",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "They are lucky to have you! Best wishes for your journey ahead!",
+      "html": "They are lucky to have you! Best wishes for your journey ahead!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490519935421632512)",
+      "parent_id": null,
+      "created_at": "2026-08-04T21:31:59Z",
+      "author": {
+        "name": "David Shaywitz, MD, PhD",
+        "headline": "Physician-Scientist | Executive Advisor | Biomedical Innovation + Health Technology | Chief Medical Scientist, Lore | Agency + Health",
+        "profile_url": "https://www.linkedin.com/in/david-shaywitz-md-phd-232a237",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Whoa! Can’t decide who is more fortunate, you or Farzad, but so excited for you both - and the physicians & especially the patients sure to benefit from this phenomenal collaboration!",
+      "html": "Whoa! Can’t decide who is more fortunate, you or Farzad, but so excited for you both - and the physicians &amp; especially the patients sure to benefit from this phenomenal collaboration!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490523432057479168)",
+      "parent_id": null,
+      "created_at": "2026-08-04T21:45:53Z",
+      "author": {
+        "name": "Didi Davis",
+        "headline": "VP, Informatics, Conformance and Interoperability and IHE International Board Co-chair December 2025 - Present",
+        "profile_url": "https://www.linkedin.com/in/dididavis",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations, looking forward to seeing what this next chapter brings Josh Mandel, MD.",
+      "html": "Congratulations, looking forward to seeing what this next chapter brings <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490537482720264192)",
+      "parent_id": null,
+      "created_at": "2026-08-04T22:41:43Z",
+      "author": {
+        "name": "Edward Yurcisin",
+        "headline": "Chief Technology Officer at NCQA",
+        "profile_url": "https://www.linkedin.com/in/eyurcisin",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "WOW!  Congratulations.  Your impact will continue to be felt industry wide.",
+      "html": "WOW!  Congratulations.  Your impact will continue to be felt industry wide.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490540319864901632)",
+      "parent_id": null,
+      "created_at": "2026-08-04T22:52:59Z",
+      "author": {
+        "name": "Janice Reese",
+        "headline": "Digital Transformation | Strategic Partnerships | Interoperability | CxO Trust Advisory Board Member | FAST FHIR at Scale | HSCC Cybersecurity Working Group |WiCyS TN & WiCyS BISO Leadership | Speaker | Board Member",
+        "profile_url": "https://www.linkedin.com/in/networkpdf",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations, Josh Mandel, MD! Hope to discuss further collaboration with HL7 FHIR at Scale Taskforce (FAST)!",
+      "html": "Congratulations, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>! Hope to discuss further collaboration with <a href=\"https://www.linkedin.com/company/hl7-fhir-at-scale-taskforce-fast/\">HL7 FHIR at Scale Taskforce (FAST)</a>!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        },
+        {
+          "name": "HL7 FHIR at Scale Taskforce (FAST)",
+          "url": "https://www.linkedin.com/company/hl7-fhir-at-scale-taskforce-fast/",
+          "kind": "organization"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490541371964100610)",
+      "parent_id": null,
+      "created_at": "2026-08-04T22:57:10Z",
+      "author": {
+        "name": "David Pyke",
+        "headline": "Standards Architect and Interoperability Consultant",
+        "profile_url": "https://www.linkedin.com/in/davidpykepmp",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "They're lucky to have you! Congratulations !",
+      "html": "They're lucky to have you! Congratulations !",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490547922556596225)",
+      "parent_id": null,
+      "created_at": "2026-08-04T23:23:12Z",
+      "author": {
+        "name": "Julie Durham",
+        "headline": "CIO, Optum Insight",
+        "profile_url": "https://www.linkedin.com/in/durhamjulie",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats Josh Mandel, MD 👍",
+      "html": "Congrats <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> 👍",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490567150064119809)",
+      "parent_id": null,
+      "created_at": "2026-08-05T00:39:36Z",
+      "author": {
+        "name": "Mamata Thakkar",
+        "headline": "FHIR | Interoperability | HealthIT",
+        "profile_url": "https://www.linkedin.com/in/mamata-thakkar-47235841",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh!",
+      "html": "Congratulations Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490587048295190528)",
+      "parent_id": null,
+      "created_at": "2026-08-05T01:58:40Z",
+      "author": {
+        "name": "Iryna Roy",
+        "headline": "Healthcare-IT, Industry & Functional AI Decision Science",
+        "profile_url": "https://www.linkedin.com/in/irynaroy",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Wow! Congratulations! That sounds like a great opportunity for you (and the world) 🎉🎉🎉",
+      "html": "Wow! Congratulations! That sounds like a great opportunity for you (and the world) 🎉🎉🎉",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490632678275424257)",
+      "parent_id": null,
+      "created_at": "2026-08-05T04:59:59Z",
+      "author": {
+        "name": "Emily Schlesinger",
+        "headline": "Assistant General Counsel, Healthcare at Microsoft",
+        "profile_url": "https://www.linkedin.com/in/emily-schlesinger-39233031",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats on your next adventure, Josh Mandel, MD !",
+      "html": "Congrats on your next adventure, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> !",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490654909709615106)",
+      "parent_id": null,
+      "created_at": "2026-08-05T06:28:20Z",
+      "author": {
+        "name": "Cristian L.",
+        "headline": "Health AI Strategy & Incubation | I build the teams and functions that bring frontier AI into regulated healthcare | Director @ Google | DrPH Candidate, Johns Hopkins",
+        "profile_url": "https://www.linkedin.com/in/cristianliu",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats on the move!",
+      "html": "Congrats on the move!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490667470081585152)",
+      "parent_id": null,
+      "created_at": "2026-08-05T07:18:14Z",
+      "author": {
+        "name": "Christiaan Knaap",
+        "headline": "Chief Architect @ Firely",
+        "profile_url": "https://www.linkedin.com/in/christiaanknaap",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh. I'm very happy that you're staying in the HL7 FHIR space.",
+      "html": "Congratulations Josh. I'm very happy that you're staying in the HL7 FHIR space.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490674336006156288)",
+      "parent_id": null,
+      "created_at": "2026-08-05T07:45:31Z",
+      "author": {
+        "name": "Ranjana Singhal, FHIMSS",
+        "headline": "Healthcare Executive | AVP, Enterprise Technology & AI Governance | FHIMSS | KLAS Board | GovAI Coalition",
+        "profile_url": "https://www.linkedin.com/in/ranjana-singhal",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations, Josh! Great working with you across several HL7 workgroups over the years. Excited to see what's next as you start at Aledade. Wishing you continued success!",
+      "html": "Congratulations, Josh! Great working with you across several HL7 workgroups over the years. Excited to see what's next as you start at Aledade. Wishing you continued success!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490723029417664513)",
+      "parent_id": null,
+      "created_at": "2026-08-05T10:59:01Z",
+      "author": {
+        "name": "Lygeia Ricciardi",
+        "headline": "Founder & CEO of workplace performance company AdaRose | Top 30 Voices Transforming Wellness | Patient & Consumer Engagement Pioneer | Most Influential Women in Health IT",
+        "profile_url": "https://www.linkedin.com/in/lygeiaricciardi",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "That’s terrific, Josh Mandel, MD—best of luck to you and Aledade!",
+      "html": "That’s terrific, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>—best of luck to you and Aledade!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490733529350184962)",
+      "parent_id": null,
+      "created_at": "2026-08-05T11:40:44Z",
+      "author": {
+        "name": "Ellen Makar, DNP, RN, CCM",
+        "headline": "Executive Nurse Leader | Population Health Management",
+        "profile_url": "https://www.linkedin.com/in/ellenmakar",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Yay! Congrats Josh !",
+      "html": "Yay! Congrats Josh !",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490738170427277313)",
+      "parent_id": null,
+      "created_at": "2026-08-05T11:59:11Z",
+      "author": {
+        "name": "Jill Ellison",
+        "headline": "Senior Management Analyst | Expertise in Strategy, AI, and Process Improvement | 23 years in data driven planning with a BS in Computer Information Systems",
+        "profile_url": "https://www.linkedin.com/in/jill-ellison-648501396",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Welcome to Aledade! So excited to have you!",
+      "html": "Welcome to <a href=\"https://www.linkedin.com/company/aledade/\">Aledade</a>! So excited to have you!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Aledade",
+          "url": "https://www.linkedin.com/company/aledade/",
+          "kind": "organization"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490758413442940929)",
+      "parent_id": null,
+      "created_at": "2026-08-05T13:19:37Z",
+      "author": {
+        "name": "Anastasiia Timon",
+        "headline": "GTM & Strategy Leader | Exited Founder | AI & Digital Health",
+        "profile_url": "https://www.linkedin.com/in/timon-anastasiia",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations!",
+      "html": "Congratulations!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490801328688926720)",
+      "parent_id": null,
+      "created_at": "2026-08-05T16:10:09Z",
+      "author": {
+        "name": "Bill Lober MD, MS",
+        "headline": "Professor at University of Washington",
+        "profile_url": "https://www.linkedin.com/in/wlober",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Excellent!  I echo Dave deBronkart’s interest in your contributions to “the land of Farzad Mostashari”!",
+      "html": "Excellent!  I echo <a href=\"https://www.linkedin.com/in/epatientdave/\">Dave deBronkart</a>’s interest in your contributions to “the land of <a href=\"https://www.linkedin.com/in/farzad-mostashari-933210/\">Farzad Mostashari</a>”!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Dave deBronkart",
+          "url": "https://www.linkedin.com/in/epatientdave/",
+          "kind": "person"
+        },
+        {
+          "name": "Farzad Mostashari",
+          "url": "https://www.linkedin.com/in/farzad-mostashari-933210/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490839611347288064)",
+      "parent_id": null,
+      "created_at": "2026-08-05T18:42:16Z",
+      "author": {
+        "name": "Stephanie Simmons, JD, AIGP",
+        "headline": "Health AI Governance and Strategy at Microsoft Health Futures",
+        "profile_url": "https://www.linkedin.com/in/stephanie-simmons-jd-aigp",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh Mandel, MD! This sounds perfect for you. I’m excited to hear future updates. Best wishes!",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>! This sounds perfect for you. I’m excited to hear future updates. Best wishes!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490861321895264257)",
+      "parent_id": null,
+      "created_at": "2026-08-05T20:08:32Z",
+      "author": {
+        "name": "Denny B.",
+        "headline": "Executive Director @ Massachusetts Health Data Consortium | MBA",
+        "profile_url": "https://www.linkedin.com/in/dennybrennan",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations, Josh!",
+      "html": "Congratulations, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490862195921121280)",
+      "parent_id": null,
+      "created_at": "2026-08-05T20:12:00Z",
+      "author": {
+        "name": "Hannah Richardson (née Murfet)",
+        "headline": "Health Governance Program Lead at Microsoft AI | MSc, AIGP, CIPM | Health Regulation, Responsible AI, Data Governance",
+        "profile_url": "https://www.linkedin.com/in/hmurfet",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh! 👏",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>! 👏",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490869217055961088)",
+      "parent_id": null,
+      "created_at": "2026-08-05T20:39:54Z",
+      "author": {
+        "name": "Muhammad Chebli",
+        "headline": "VP, Product at NextGen Healthcare. Board: Direct Trust.",
+        "profile_url": "https://www.linkedin.com/in/muhammadchebli",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh! They are lucky to have you!",
+      "html": "Congratulations Josh! They are lucky to have you!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490871236764516352)",
+      "parent_id": null,
+      "created_at": "2026-08-05T20:47:56Z",
+      "author": {
+        "name": "Ricky Bloomfield",
+        "headline": "Chief Medical Officer, ŌURA. Med-Peds Doc and Informaticist. Former Apple & Duke Health. Entrepreneur. Giving every body a voice.",
+        "profile_url": "https://www.linkedin.com/in/rickybloomfield",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Wow, congrats! Can’t wait to see what you do there!",
+      "html": "Wow, congrats! Can’t wait to see what you do there!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7490935570970406913)",
+      "parent_id": null,
+      "created_at": "2026-08-06T01:03:34Z",
+      "author": {
+        "name": "Shafiq Rab",
+        "headline": "Global Healthcare Innovator & Clinician-Executive | Strategic Advisor, Board Member, Investor & Entrepreneur | Driving Digital Transformation, Operational Efficiency, AI/ML, and Turnaround & Return to Profitability",
+        "profile_url": "https://www.linkedin.com/in/shafiqrab",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Yes you will because you can\nYou are a pioneer my friend",
+      "html": "Yes you will because you can <br>You are a pioneer my friend",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7491280944222515200)",
+      "parent_id": null,
+      "created_at": "2026-08-06T23:55:58Z",
+      "author": {
+        "name": "Rebecca Baker",
+        "headline": "Real-World Data & Evidence | Healthcare & Clinical Research Informatics Leader | Data Strategy, Standards & Interoperability",
+        "profile_url": "https://www.linkedin.com/in/rebeccabakermha",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations! Yes, I agree with e-Patient Dave, I cannot wait to see what you do in the land of Farzad!!",
+      "html": "Congratulations! Yes, I agree with e-Patient Dave, I cannot wait to see what you do in the land of Farzad!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7491519205792718848)",
+      "parent_id": null,
+      "created_at": "2026-08-07T15:42:44Z",
+      "author": {
+        "name": "Linda Michaelsen, CPC, HL7 CDA FHIR",
+        "headline": "We have to make healthcare interoperability work. Our lives depend on it",
+        "profile_url": "https://www.linkedin.com/in/lmichlsen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "They are quite fortunate to have you!!",
+      "html": "They are quite fortunate to have you!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7491610299985375232)",
+      "parent_id": null,
+      "created_at": "2026-08-07T21:44:42Z",
+      "author": {
+        "name": "Mark Scrimshire",
+        "headline": "Chief Interoperability and Innovation Officer at Onyx Health",
+        "profile_url": "https://www.linkedin.com/in/marks",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh! I’m glad you will be continuing the high impact work you do in the standards community!!",
+      "html": "Congratulations Josh! I’m glad you will be continuing the high impact work you do in the standards community!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7492743945886715904)",
+      "parent_id": null,
+      "created_at": "2026-08-11T00:49:25Z",
+      "author": {
+        "name": "Scott Vandeleest",
+        "headline": "Vice President and Chief Engineer UnitedHealth Group Consumer Experiences (UHC & Optum)",
+        "profile_url": "https://www.linkedin.com/in/scottvandeleest",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats Josh!",
+      "html": "Congrats Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7492871977138032640)",
+      "parent_id": null,
+      "created_at": "2026-08-11T09:18:10Z",
+      "author": {
+        "name": "Sheridan Jones",
+        "headline": "Global Strategy and Product Leader | Director Microsoft | MBA | Start-up Coach and Advisor | Fractional CxO",
+        "profile_url": "https://www.linkedin.com/in/sherjo",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh!! Working with you was a joy and a highlight of my time at Microsoft. Wonderful to see you continue to make healthcare better for everyone, excited to see what you do next!!",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>!! Working with you was a joy and a highlight of my time at Microsoft. Wonderful to see you continue to make healthcare better for everyone, excited to see what you do next!!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7493506724469862400)",
+      "parent_id": null,
+      "created_at": "2026-08-13T03:20:25Z",
+      "author": {
+        "name": "Nadine Robin",
+        "headline": "Regional Market President - at Aledade",
+        "profile_url": "https://www.linkedin.com/in/nadine-robin-0736542b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Welcome!",
+      "html": "Welcome!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7495450455523704833)",
+      "parent_id": null,
+      "created_at": "2026-08-18T12:04:07Z",
+      "author": {
+        "name": "Julia Skapik",
+        "headline": "Physician and Clinical Informatics Leader in Healthcare Technology, Policy, Standards and Implementation",
+        "profile_url": "https://www.linkedin.com/in/julia-skapik-310a6b2",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh!",
+      "html": "Congratulations Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7496055230082482176)",
+      "parent_id": null,
+      "created_at": "2026-08-20T04:07:16Z",
+      "author": {
+        "name": "Venkat “Venki” Kannappan",
+        "headline": "Vice President of Consumer Engineering | Conversational AI Strategist | Enterprise Search Enabler | Enterprise preferences and consent management Leader | Contact Center Ai & ML solutions partner",
+        "profile_url": "https://www.linkedin.com/in/venkatkannappan",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh!! 🎉🥳",
+      "html": "Congratulations Josh!! 🎉🥳",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7490421284137394177,7498817699209191426)",
+      "parent_id": null,
+      "created_at": "2026-08-27T19:04:20Z",
+      "author": {
+        "name": "Gail Hamilton",
+        "headline": "Overseeing FHIR and Data Operations at Velox",
+        "profile_url": "https://www.linkedin.com/in/gailhamilton70",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congratulations Josh Mandel, MD . They ate very lucky to have you!",
+      "html": "Congratulations <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> . They ate very lucky to have you!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

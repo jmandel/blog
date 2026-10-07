@@ -1,0 +1,130 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7456411765283704832",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7456411765283704832/",
+  "pages": [
+    "share:7456411765283704832"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7456411765929742336"
+    }
+  ],
+  "displayed": {
+    "comments": 4,
+    "reactions": 24,
+    "reposts": 1
+  },
+  "captured": {
+    "total": 4,
+    "top_level": 2,
+    "replies": 2
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7456411765283704832,7456429804305793024)",
+      "parent_id": null,
+      "created_at": "2026-05-02T19:49:59Z",
+      "author": {
+        "name": "Ben Toth",
+        "headline": "Researcher",
+        "profile_url": "https://www.linkedin.com/in/bentoth",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Good point ...the \"problem space\" is the patient , as owner of their own health and health record , at the centre of a new AI architecture that barely exists yet, for the reasons you describe.",
+      "html": "Good point ...the &quot;problem space&quot; is the patient , as owner of their own health and health record , at the centre of a new AI architecture that barely exists yet, for the reasons you describe.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456411765283704832,7456504469166452736)",
+      "parent_id": null,
+      "created_at": "2026-05-03T00:46:40Z",
+      "author": {
+        "name": "Christopher SKENE",
+        "headline": "Building the future at UNSW IS4SSR/Velvet Tiger/Aurabox",
+        "profile_url": "https://www.linkedin.com/in/xtfer",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is a consideration that is making its way into Australia’s HealthConnect, and we designed https://runbeam.io for health data around just this kind of authorization.\n\nBut I think the challenge is going to be determining who provides the source of trust, because if it’s not distributed you just end up having an extra hoop inside a closed network.",
+      "html": "This is a consideration that is making its way into Australia’s HealthConnect, and we designed <a href=\"https://runbeam.io/\">https://runbeam.io</a> for health data around just this kind of authorization. <br><br>But I think the challenge is going to be determining who provides the source of trust, because if it’s not distributed you just end up having an extra hoop inside a closed network.",
+      "links": [
+        {
+          "text": "https://runbeam.io",
+          "url": "https://runbeam.io/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456411765283704832,7456516351755632641)",
+      "parent_id": "urn:li:comment:(ugcPost:7456411765283704832,7456504469166452736)",
+      "created_at": "2026-05-03T01:33:53Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Yes, there are layers here -- capability, market, regulation",
+      "html": "Yes, there are layers here -- capability, market, regulation",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456411765283704832,7457088591295344640)",
+      "parent_id": "urn:li:comment:(ugcPost:7456411765283704832,7456429804305793024)",
+      "created_at": "2026-05-04T15:27:46Z",
+      "author": {
+        "name": "Sandra Raup",
+        "headline": "President at Datuit",
+        "profile_url": "https://www.linkedin.com/in/sandra-raup-68718117",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Ben Toth I wish that patients owned their health and health record.",
+      "html": "<a href=\"https://www.linkedin.com/in/bentoth/\">Ben Toth</a> I wish that patients owned their health and health record.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Ben Toth",
+          "url": "https://www.linkedin.com/in/bentoth/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

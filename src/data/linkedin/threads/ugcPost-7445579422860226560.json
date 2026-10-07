@@ -1,0 +1,667 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7445579422860226560",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7445579422860226560/",
+  "pages": [
+    "article:x9kwc",
+    "share:7445579422860226560"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7445579423405477888"
+    }
+  ],
+  "displayed": {
+    "comments": 25,
+    "reactions": 75,
+    "reposts": 7
+  },
+  "captured": {
+    "total": 25,
+    "top_level": 15,
+    "replies": 10
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445582065770745856)",
+      "parent_id": null,
+      "created_at": "2026-04-02T21:24:56Z",
+      "author": {
+        "name": "Anu Ramakrishnan",
+        "headline": "Director of Product Management",
+        "profile_url": "https://www.linkedin.com/in/anuramakrishnan",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The age old problem, applicable across all kinds of payer data/requirements - enrollment, auth, allowables and so on",
+      "html": "The age old problem, applicable across all kinds of payer data/requirements - enrollment, auth, allowables and so on",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "parent_id": null,
+      "created_at": "2026-04-02T22:02:54Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This sounds great, but I’ve got two big 'what-ifs' from a payor perspective:\nFirst, the gaming risk. If a COIN agent can see the exact rules, it’ll eventually just learn how to pass the minimum requirements for a 'Yes' without actually giving us the whole clinical picture.\n\nSecond is the versioning. Getting every system to talk to each other is one thing, but keeping them on the same version of the rules at the same time? That’s a massive lift. Without that, I think we might run into more integration headaches.\n\nIf you and the community can pull this off though, this would be amazing, and I believe it's needed.",
+      "html": "This sounds great, but I’ve got two big 'what-ifs' from a payor perspective:<br>First, the gaming risk. If a COIN agent can see the exact rules, it’ll eventually just learn how to pass the minimum requirements for a 'Yes' without actually giving us the whole clinical picture.<br><br>Second is the versioning. Getting every system to talk to each other is one thing, but keeping them on the same version of the rules at the same time? That’s a massive lift. Without that, I think we might run into more integration headaches.<br><br>If you and the community can pull this off though, this would be amazing, and I believe it's needed.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445600645870440450)",
+      "parent_id": null,
+      "created_at": "2026-04-02T22:38:46Z",
+      "author": {
+        "name": "Padma Ayodhimani , MBA, MS",
+        "headline": "Healthcare Strategy & Product Management| AI Platforms | Health Tech",
+        "profile_url": "https://www.linkedin.com/in/padmaayodhimani",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "For Medicare and Medicaid plans the state specific plans will have the rules already defined. It’s a good place to start.",
+      "html": "For Medicare and Medicaid plans the state specific plans will have the rules already defined. It’s a good place to start.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445606555959382017)",
+      "parent_id": null,
+      "created_at": "2026-04-02T23:02:15Z",
+      "author": {
+        "name": "Brendan Keeler",
+        "headline": "Interoperability Practice Lead at HTD Health",
+        "profile_url": "https://www.linkedin.com/in/brendan-keeler",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Scarcity by design, unfortunately.\n\nhttps://healthapiguy.substack.com/p/artificial-scarcity-meet-artificial",
+      "html": "Scarcity by design, unfortunately.<br><br><a href=\"https://healthapiguy.substack.com/p/artificial-scarcity-meet-artificial\">https://healthapiguy.substack.com/p/artificial-scarcity-meet-artificial</a>",
+      "links": [
+        {
+          "text": "https://healthapiguy.substack.com/p/artificial-scarcity-meet-artificial",
+          "url": "https://healthapiguy.substack.com/p/artificial-scarcity-meet-artificial"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQHE1vltDQC6mQ/articleshare-shrink_160/B4EZ1QbpLJG0As-/0/1775170917812?e=1791925200&v=beta&t=vZYyImrsqnQx5P_OqvXZumKTSaxigsbC0VNllG4PeRM",
+          "file": "linkedin-media/8ac8e9f7d4d06e8e.jpg"
+        }
+      ],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445609473576034304)",
+      "parent_id": null,
+      "created_at": "2026-04-02T23:13:51Z",
+      "author": {
+        "name": "Lucia Savage",
+        "headline": "Smart ideas to fix healthcare. Board Member. Advisor. Expert advisor on public policy, AI, privacy, cybersecurity, and the future of healthcare. I answer questions for CNN and Senators. I write my own posts, not AI.",
+        "profile_url": "https://www.linkedin.com/in/lucia-savage-686470",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "So true. It’s not like a coverage rule is top secret IP. It’s not really good science unless it’s based on what the relevant medical specialists say in other published (peer reviewed) materials. (Oops did I say that out loud?)",
+      "html": "So true. It’s not like a coverage rule is top secret IP. It’s not really good science unless it’s based on what the relevant medical specialists say in other published (peer reviewed) materials. (Oops did I say that out loud?)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445610508155568128)",
+      "parent_id": null,
+      "created_at": "2026-04-02T23:17:57Z",
+      "author": {
+        "name": "Lucia Savage",
+        "headline": "Smart ideas to fix healthcare. Board Member. Advisor. Expert advisor on public policy, AI, privacy, cybersecurity, and the future of healthcare. I answer questions for CNN and Senators. I write my own posts, not AI.",
+        "profile_url": "https://www.linkedin.com/in/lucia-savage-686470",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Can I add that although it is an under-enforced right, and likely under-litigated, too, people in ERISA employee welfare benefit plans have a legal right to get copies coverage rules when they are disputing a denied claim for benefits. Theoretically it’s possible to crowd-source this info. But as I said under enforced and under-litigated. Plus version control as the rules do evolve.",
+      "html": "Can I add that although it is an under-enforced right, and likely under-litigated, too, people in ERISA employee welfare benefit plans have a legal right to get copies coverage rules when they are disputing a denied claim for benefits. Theoretically it’s possible to crowd-source this info. But as I said under enforced and under-litigated. Plus version control as the rules do evolve.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445618215809896448)",
+      "parent_id": null,
+      "created_at": "2026-04-02T23:48:35Z",
+      "author": {
+        "name": "Eric Rothschild, MD",
+        "headline": "Full Stack OB/GYN. Healthcare Disruptor. AI x Health Ambassador. Human in the Loop. Wartime Consigliere.",
+        "profile_url": "https://www.linkedin.com/in/eric-rothschild-md-18723a10",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Triple whammy of unpublished and deliberately opaque coverage rules, mid-season changes (there’s a TON that went into effect 4/01) , and perpetual moving goalposts 🎯\n… and when all-else-fails just claw it all back",
+      "html": "Triple whammy of unpublished and deliberately opaque coverage rules, mid-season changes (there’s a TON that went into effect 4/01) , and perpetual moving goalposts 🎯 <br>… and when all-else-fails just claw it all back",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445619686454534144)",
+      "parent_id": null,
+      "created_at": "2026-04-02T23:54:26Z",
+      "author": {
+        "name": "Taryn Shipley, MBA, CSSBB",
+        "headline": "Epic, AI & cognitive sustainability",
+        "profile_url": "https://www.linkedin.com/in/taryn-shipley",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "If health plans publish their approval logic, then healthcare systems could tailor documentation accordingly to get approved.\n\nThat would make the approval rate too high. Health plans would have to change the logic again. It would be a constantly moving target.",
+      "html": "If health plans publish their approval logic, then healthcare systems could tailor documentation accordingly to get approved. <br><br>That would make the approval rate too high. Health plans would have to change the logic again. It would be a constantly moving target.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445620599458275329)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "created_at": "2026-04-02T23:58:03Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "William Laolagi Re: versioning this feels pretty purely technical; we have so many good tools in software dependency management that I'm quite sanguine on this front (though maybe we have something analogous to supply chain attacks to worry about ;-), in some prompt-injection space?)\n\nRe: gaming, that is totally right. It's the central question of incentive design. And a hard one. If you have the right game, then everyone scrambling to win should lead to better health...",
+      "html": "<a href=\"https://www.linkedin.com/in/william-laolagi-905b1a4b/\">William Laolagi</a> Re: versioning this feels pretty purely technical; we have so many good tools in software dependency management that I'm quite sanguine on this front (though maybe we have something analogous to supply chain attacks to worry about ;-), in some prompt-injection space?)<br><br>Re: gaming, that is totally right. It's the central question of incentive design. And a hard one. If you have the right game, then everyone scrambling to win should lead to better health...",
+      "links": [],
+      "mentions": [
+        {
+          "name": "William Laolagi",
+          "url": "https://www.linkedin.com/in/william-laolagi-905b1a4b/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445621042091433984)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445619686454534144)",
+      "created_at": "2026-04-02T23:59:49Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "> could tailor documentation\n\nThat would be playing correctly, if it's truthful and accurate. We might still need to have hard conversations about what's worth paying for (and how much)... but it's better than allocating based on who *talks about their care* the best.",
+      "html": "&gt; could tailor documentation<br><br>That would be playing correctly, if it's truthful and accurate. We might still need to have hard conversations about what's worth paying for (and how much)... but it's better than allocating based on who *talks about their care* the best.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445624885009076224)",
+      "parent_id": null,
+      "created_at": "2026-04-03T00:15:05Z",
+      "author": {
+        "name": "Imran Qureshi",
+        "headline": "CTO & Chief AI Officer @ b.well Connected Health",
+        "profile_url": "https://www.linkedin.com/in/imranq2",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Agree.  We need transparency not format standardization.",
+      "html": "Agree.  We need transparency not format standardization.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445627753577517056)",
+      "parent_id": null,
+      "created_at": "2026-04-03T00:26:29Z",
+      "author": {
+        "name": "Gunjan V.",
+        "headline": "Developer @ GMG ArcData | Digital Platforms, NLP",
+        "profile_url": "https://www.linkedin.com/in/gunjan-v-67062446",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD - aren't these just clinical guidelines that've been adopted by the plans?  Evernorth and others publish these",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> - aren't these just clinical guidelines that've been adopted by the plans?  Evernorth and others publish these",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445629495669219328)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "created_at": "2026-04-03T00:33:24Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Fair point on the tools.\n\nOn the gaming side, my concern is FWA (Fraud, Waste, and Abuse). Working in the public sector, we're under a massive microscope, and that accountability falls on us if the system is drained by bad actors. We want the patient at the center, which means protecting the resources they rely on. If the rules are a 100% transparent 'cheat sheet' for fraud, it’s the patients who lose out in the long run.\nThe question now is: how do we solve for this? How do we balance open clinical logic with the necessary 'guardrails' to protect the program? 🤔",
+      "html": "Fair point on the tools.<br><br>On the gaming side, my concern is FWA (Fraud, Waste, and Abuse). Working in the public sector, we're under a massive microscope, and that accountability falls on us if the system is drained by bad actors. We want the patient at the center, which means protecting the resources they rely on. If the rules are a 100% transparent 'cheat sheet' for fraud, it’s the patients who lose out in the long run.<br>The question now is: how do we solve for this? How do we balance open clinical logic with the necessary 'guardrails' to protect the program? 🤔",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445636822430461952)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445627753577517056)",
+      "created_at": "2026-04-03T01:02:31Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Gunjan V. Related but different by level of detail; in https://www.linkedin.com/pulse/prior-auth-api-trap-josh-mandel-md-hkixc/ I describe this as \"Layer 1\"  (the clinical guidelines) and \"Layer 2\" (the detailed criteria)",
+      "html": "<a href=\"https://www.linkedin.com/in/gunjan-v-67062446/\">Gunjan V.</a> Related but different by level of detail; in <a href=\"https://www.linkedin.com/pulse/prior-auth-api-trap-josh-mandel-md-hkixc/\">https://www.linkedin.com/pulse/prior-auth-api-trap-josh-mandel-md-hkixc/</a> I describe this as &quot;Layer 1&quot;  (the clinical guidelines) and &quot;Layer 2&quot; (the detailed criteria)",
+      "links": [
+        {
+          "text": "https://www.linkedin.com/pulse/prior-auth-api-trap-josh-mandel-md-hkixc/",
+          "url": "https://www.linkedin.com/pulse/prior-auth-api-trap-josh-mandel-md-hkixc/"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Gunjan V.",
+          "url": "https://www.linkedin.com/in/gunjan-v-67062446/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/v2/D5612AQG8aNsCdawurg/article-cover_image-shrink_180_320/B56ZgWiMs_HUAY-/0/1752724725143?e=1792627200&v=beta&t=Iz_Swb-XIeKmP2dbmArrVjSLf1EBIc1gusqm47IgGcE",
+          "file": "linkedin-media/635839208a923c6f.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445637404310421504)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "created_at": "2026-04-03T01:04:50Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "William Laolagi I would start from the other direction: in what world does hiding the rules of \"how to provide the best-value care\" improve the ability of legitimate providers to do just that? Yes fraud, waste, and abuse are problems, but the fraudsters may well be superior at \"inferring the hidden rules and gaming them\" when compared with legitimate clinicians (who, after all, have to spend their time and energy actually caring for patients).",
+      "html": "<a href=\"https://www.linkedin.com/in/william-laolagi-905b1a4b/\">William Laolagi</a> I would start from the other direction: in what world does hiding the rules of &quot;how to provide the best-value care&quot; improve the ability of legitimate providers to do just that? Yes fraud, waste, and abuse are problems, but the fraudsters may well be superior at &quot;inferring the hidden rules and gaming them&quot; when compared with legitimate clinicians (who, after all, have to spend their time and energy actually caring for patients).",
+      "links": [],
+      "mentions": [
+        {
+          "name": "William Laolagi",
+          "url": "https://www.linkedin.com/in/william-laolagi-905b1a4b/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445639212265115650)",
+      "parent_id": null,
+      "created_at": "2026-04-03T01:12:01Z",
+      "author": {
+        "name": "Nidhi Pengoria",
+        "headline": "Product Leader | HealthTech | Interoperability",
+        "profile_url": "https://www.linkedin.com/in/nidhi-pengoria-034b4292",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "For Medicare and Medicaid plans, payers are already publishing PA criteria in their provider portals, adding transparency but shifting the burden to providers navigating complex, payer-specific rules. While some discretion exists in documenting clinical necessity, payers are increasingly applying structured, evidence-based criteria that limit subjectivity. With advances in AI, it will be interesting to see how health plans are motivated to expose AI agent-ready APIs or MCP servers to streamline PA — reducing administrative burden on both sides. That said, HIPAA compliance, algorithmic bias, and fragmented AI governance across federal and state regulators remain real barriers to meaningful adoption.",
+      "html": "For Medicare and Medicaid plans, payers are already publishing PA criteria in their provider portals, adding transparency but shifting the burden to providers navigating complex, payer-specific rules. While some discretion exists in documenting clinical necessity, payers are increasingly applying structured, evidence-based criteria that limit subjectivity. With advances in AI, it will be interesting to see how health plans are motivated to expose AI agent-ready APIs or MCP servers to streamline PA — reducing administrative burden on both sides. That said, HIPAA compliance, algorithmic bias, and fragmented AI governance across federal and state regulators remain real barriers to meaningful adoption.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445641208779038720)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "created_at": "2026-04-03T01:19:57Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "fair point. I’m not suggesting we hide the 'how-to' for best-value care, that should definitely be out in the open for legitimate clinicians.\nThinking through it, the shift really needs to be from hiding the rules to verifying the facts. If we open up the logic like you’re suggesting, then 'Proof of Care' has to be the focus. Maybe the move is to lean into the provenance resource or even digital sigs at the resource level.\nIf we can create a solid verification layer where we can cryptographically trust that the data is tied to a real encounter, then the 'open rules' become much less of an FWA risk. It gives us(payors) the security we need for program integrity without making the honest providers jump through more manual hoops.\nDoes the SMART or HL7 roadmap have a clear path for standardizing that 'Proof of Care' layer yet?",
+      "html": "fair point. I’m not suggesting we hide the 'how-to' for best-value care, that should definitely be out in the open for legitimate clinicians.<br>Thinking through it, the shift really needs to be from hiding the rules to verifying the facts. If we open up the logic like you’re suggesting, then 'Proof of Care' has to be the focus. Maybe the move is to lean into the provenance resource or even digital sigs at the resource level.<br>If we can create a solid verification layer where we can cryptographically trust that the data is tied to a real encounter, then the 'open rules' become much less of an FWA risk. It gives us(payors) the security we need for program integrity without making the honest providers jump through more manual hoops.<br>Does the SMART or HL7 roadmap have a clear path for standardizing that 'Proof of Care' layer yet?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445644435821842432)",
+      "parent_id": null,
+      "created_at": "2026-04-03T01:32:46Z",
+      "author": {
+        "name": "stephen ward",
+        "headline": "Innovative Healthcare IT Executive | CTO & Cloud Architect (AWS) | AI & RAG Specialist | Telehealth & FHIR Interoperability Leader",
+        "profile_url": "https://www.linkedin.com/in/stephen-ward-1028452b7",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "prior authorization is the \"problem\" unless your dealing with a fake patient and fraudulent doctor.  Insurance shouldn't be deciding care plans. Formularies and other blocking techniques.",
+      "html": "prior authorization is the &quot;problem&quot; unless your dealing with a fake patient and fraudulent doctor.  Insurance shouldn't be deciding care plans. Formularies and other blocking techniques.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445705892685201408)",
+      "parent_id": null,
+      "created_at": "2026-04-03T05:36:59Z",
+      "author": {
+        "name": "George T Mathew, MD, MBA, FACP",
+        "headline": "Chief Medical Officer at Foci Labs",
+        "profile_url": "https://www.linkedin.com/in/george-t-m-580a621",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "can't some of this be solved with better contracting?  Health plans act the way they do in part because they write contracts very much in their favor to act with virtual impunity for extractive fees - if these were challenged or rewritten to force transparency on items such as prior authorizations, would this be addressed?  Granted, a consequence might be the plan \"pulling out\" of a market because it is no longer as profitable, but given the current state, perhaps to be expected",
+      "html": "can't some of this be solved with better contracting?  Health plans act the way they do in part because they write contracts very much in their favor to act with virtual impunity for extractive fees - if these were challenged or rewritten to force transparency on items such as prior authorizations, would this be addressed?  Granted, a consequence might be the plan &quot;pulling out&quot; of a market because it is no longer as profitable, but given the current state, perhaps to be expected",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445780377329192961)",
+      "parent_id": null,
+      "created_at": "2026-04-03T10:32:57Z",
+      "author": {
+        "name": "Carla Johnson CMRS AOC",
+        "headline": "Healthcare AI Subject Matter Expert & Benchmark Evaluation Specialist at Mercor",
+        "profile_url": "https://www.linkedin.com/in/sdohriskadjustmentaudtior",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "In my state, NJ we are on a WISER AI model and if you don't know what's acceptable to the AI Wiser model, appeals are even futile. I created a model with codes to ensure even before submitting, it's a higher acceptance outcome especially now that CMS0057 is a factor on the front end. The codes that are acceptable and their combinations are built into WISER, which means there can be an algorithm (codes), that will be accepted knowing how the AI is set up. Great read.",
+      "html": "In my state, NJ we are on a WISER AI model and if you don't know what's acceptable to the AI Wiser model, appeals are even futile. I created a model with codes to ensure even before submitting, it's a higher acceptance outcome especially now that CMS0057 is a factor on the front end. The codes that are acceptable and their combinations are built into WISER, which means there can be an algorithm (codes), that will be accepted knowing how the AI is set up. Great read.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445886344393920512)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "created_at": "2026-04-03T17:34:02Z",
+      "author": {
+        "name": "Anna McCollister",
+        "headline": "Catalyst, Entrepreneur, 2X Founder, Board of Directors Member, Consultant, Advocate, Health Data Governance, Health IT Policy, Patient Mobilization, Genomics, Trust Frameworks and AI",
+        "profile_url": "https://www.linkedin.com/in/annamccollister",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "William Laolagi Josh Mandel, MD exactly! Solve for the problem in front of you and develop separate processes to identify fraud, rather than live with painful and consequential failures in an effort to prevent theoretical fraud. Fraud will always emerge. That’s a separate problem that requires a separate solution. But if you’re arguing that very consequential, costly and life impacting inefficiency are necessary to prevent potential fraud, you need to find a better way. Not knowing any of the details, I would bet the opacity makes fraud more difficult to detect than it would be if the rules were transparent to the point that it could be automated.",
+      "html": "<a href=\"https://www.linkedin.com/in/william-laolagi-905b1a4b/\">William Laolagi</a> <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> exactly! Solve for the problem in front of you and develop separate processes to identify fraud, rather than live with painful and consequential failures in an effort to prevent theoretical fraud. Fraud will always emerge. That’s a separate problem that requires a separate solution. But if you’re arguing that very consequential, costly and life impacting inefficiency are necessary to prevent potential fraud, you need to find a better way. Not knowing any of the details, I would bet the opacity makes fraud more difficult to detect than it would be if the rules were transparent to the point that it could be automated.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "William Laolagi",
+          "url": "https://www.linkedin.com/in/william-laolagi-905b1a4b/",
+          "kind": "person"
+        },
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445886683679625216)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "created_at": "2026-04-03T17:35:23Z",
+      "author": {
+        "name": "Anna McCollister",
+        "headline": "Catalyst, Entrepreneur, 2X Founder, Board of Directors Member, Consultant, Advocate, Health Data Governance, Health IT Policy, Patient Mobilization, Genomics, Trust Frameworks and AI",
+        "profile_url": "https://www.linkedin.com/in/annamccollister",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Anna McCollister I do, however, appreciate the sincerity and honesty of your questions William Laolagi ! :-)",
+      "html": "<a href=\"https://www.linkedin.com/in/annamccollister/\">Anna McCollister</a> I do, however, appreciate the sincerity and honesty of your questions <a href=\"https://www.linkedin.com/in/william-laolagi-905b1a4b/\">William Laolagi</a> ! :-)",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Anna McCollister",
+          "url": "https://www.linkedin.com/in/annamccollister/",
+          "kind": "person"
+        },
+        {
+          "name": "William Laolagi",
+          "url": "https://www.linkedin.com/in/william-laolagi-905b1a4b/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445891193684684800)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "created_at": "2026-04-03T17:53:18Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Anna McCollister This was a great thought exercise and actually led me to build a Proof of Concept using Agentic AI to solve exactly this.\nIn the public sector, fraud and abuse aren't theoretical problems, they are a massive accountability we have to manage. My approach moves the security from hiding the rules to verifying the facts. By applying a cryptographic fingerprint to the clinical data straight from the EHR, we can keep the rules 100% open and transparent. If a bad actor tries to game those open rules with fake data, the seal breaks and the rules never even run.\nIt gives the honest clinician a fast approval while putting up a mathematical wall against fraud. We stop protecting the secret and start verifying the truth. That is the better way forward.",
+      "html": "<a href=\"https://www.linkedin.com/in/annamccollister/\">Anna McCollister</a> This was a great thought exercise and actually led me to build a Proof of Concept using Agentic AI to solve exactly this.<br>In the public sector, fraud and abuse aren't theoretical problems, they are a massive accountability we have to manage. My approach moves the security from hiding the rules to verifying the facts. By applying a cryptographic fingerprint to the clinical data straight from the EHR, we can keep the rules 100% open and transparent. If a bad actor tries to game those open rules with fake data, the seal breaks and the rules never even run.<br>It gives the honest clinician a fast approval while putting up a mathematical wall against fraud. We stop protecting the secret and start verifying the truth. That is the better way forward.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Anna McCollister",
+          "url": "https://www.linkedin.com/in/annamccollister/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445892149226934272)",
+      "parent_id": "urn:li:comment:(ugcPost:7445579422860226560,7445591617471766528)",
+      "created_at": "2026-04-03T17:57:06Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Anna McCollister I appreciate the dialogue with Josh Mandel, MD! This has been a great thought exercise, and I just want to bring up some points that may be helpful to think about as we try to push healthcare forward.",
+      "html": "<a href=\"https://www.linkedin.com/in/annamccollister/\">Anna McCollister</a> I appreciate the dialogue with <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>! This has been a great thought exercise, and I just want to bring up some points that may be helpful to think about as we try to push healthcare forward.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Anna McCollister",
+          "url": "https://www.linkedin.com/in/annamccollister/",
+          "kind": "person"
+        },
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445579422860226560,7445912677597466624)",
+      "parent_id": null,
+      "created_at": "2026-04-03T19:18:40Z",
+      "author": {
+        "name": "Reuven Schnaider",
+        "headline": "Senior Project Manager | Healthcare Interoperability | FHIR | AI | Digital Health Innovation",
+        "profile_url": "https://www.linkedin.com/in/reuven-schnaider-project-manager",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "It sounds very similar to the challenges we face in Israel. While we have a centralized national health basket, each HMO  operates with its own internal 'black box' of clinical validation logic, especially for complex oncology protocols.\n​The real breakthrough won't just be a digital pipe for requests, but making the HMOs' coverage rules computable. By leveraging FHIR’s Clinical Reasoning resources (like PlanDefinition and Library) combined with CQL, we could shift from a reactive 'wait and see' process to real-time transparency.\n​Imagine an oncologist receiving a CDS Hook notification during the ordering process, confirming that the chemotherapy protocol meets the HMO’s specific criteria based on the patient’s latest lab results. That’s the level of transparency we need to reduce the administrative burden and, more importantly, the time-to-treatment for our patients.",
+      "html": "It sounds very similar to the challenges we face in Israel. While we have a centralized national health basket, each HMO  operates with its own internal 'black box' of clinical validation logic, especially for complex oncology protocols.<br>​The real breakthrough won't just be a digital pipe for requests, but making the HMOs' coverage rules computable. By leveraging FHIR’s Clinical Reasoning resources (like PlanDefinition and Library) combined with CQL, we could shift from a reactive 'wait and see' process to real-time transparency.<br>​Imagine an oncologist receiving a CDS Hook notification during the ordering process, confirming that the chemotherapy protocol meets the HMO’s specific criteria based on the patient’s latest lab results. That’s the level of transparency we need to reduce the administrative burden and, more importantly, the time-to-treatment for our patients.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

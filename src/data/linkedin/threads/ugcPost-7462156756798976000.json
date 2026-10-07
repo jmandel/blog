@@ -1,0 +1,550 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7462156756798976000",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7462156756798976000/",
+  "pages": [
+    "article:wg4xc",
+    "share:7462156756798976000"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "wg4xc",
+      "url": "https://www.linkedin.com/pulse/kill-clipboard-july-2026-sharing-fhir-data-patient-josh-mandel-md-wg4xc",
+      "activity_urn": "urn:li:activity:7462156757507883008"
+    }
+  ],
+  "displayed": {
+    "comments": 21,
+    "reactions": 73,
+    "reposts": 7
+  },
+  "captured": {
+    "total": 21,
+    "top_level": 12,
+    "replies": 9
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462169367699456001)",
+      "parent_id": null,
+      "created_at": "2026-05-18T15:56:57Z",
+      "author": {
+        "name": "Mark Savage",
+        "headline": "Managing Director, Digital Health Strategy & Policy ▪ Savage & Savage LLC ▪ San Francisco, California ▪ Washington, D.C.",
+        "profile_url": "https://www.linkedin.com/in/mark-savage-34aa03126",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thank you, Josh!",
+      "html": "Thank you, Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462199864592920576)",
+      "parent_id": null,
+      "created_at": "2026-05-18T17:58:08Z",
+      "author": {
+        "name": "Ralph Martello, MD",
+        "headline": "Healthcare Innovator",
+        "profile_url": "https://www.linkedin.com/in/ralph-martello-md-2489a617b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "everyone should learn how to use claude code",
+      "html": "everyone should learn how to use claude code",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462413469653471234)",
+      "parent_id": null,
+      "created_at": "2026-05-19T08:06:56Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh, I'm so grateful for how clearly you've spelled all this out - and it was posted not long after our chat!  You're really amazing.\n\nIs it too early to propose creating a simple short video showing someone doing it?  This could get immense public support if people could just SEE it, I think.",
+      "html": "Josh, I'm so grateful for how clearly you've spelled all this out - and it was posted not long after our chat!  You're really amazing. <br><br>Is it too early to propose creating a simple short video showing someone doing it?  This could get immense public support if people could just SEE it, I think.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462414294014570497)",
+      "parent_id": null,
+      "created_at": "2026-05-19T08:10:12Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Personally, I don't mind if my QR code feeds all my basics into the system (including PAMI and even my full history) while I still have a few items to answer about THis visit!  What people hate, in my experience, is being forced to constantly re-enter stuff that is in 8 billion computers about me, in fact it's everywhere EXCEPT healthcare.\n\nSo I envision walking up with my QR and saying \"Here's me\" [\"bleep! got it\"], and now here's why I'm here (the non-standardized-yet questionnaire questions.",
+      "html": "Personally, I don't mind if my QR code feeds all my basics into the system (including PAMI and even my full history) while I still have a few items to answer about THis visit!  What people hate, in my experience, is being forced to constantly re-enter stuff that is in 8 billion computers about me, in fact it's everywhere EXCEPT healthcare.<br><br>So I envision walking up with my QR and saying &quot;Here's me&quot; [&quot;bleep! got it&quot;], and now here's why I'm here (the non-standardized-yet questionnaire questions.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 10,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462420890413109248)",
+      "parent_id": null,
+      "created_at": "2026-05-19T08:36:25Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Who created that superb \"2026 milestone\" graphic? I don't recall it being discussed in the Slack or anywhere, and its provenance isn't noted.\n\nIn your cover image, it seems like the point would be infinitely clearer if it said \"Patient checkin\" instead of \"Patient sharing.\"",
+      "html": "Who created that superb &quot;2026 milestone&quot; graphic? I don't recall it being discussed in the Slack or anywhere, and its provenance isn't noted. <br><br>In your cover image, it seems like the point would be infinitely clearer if it said &quot;Patient checkin&quot; instead of &quot;Patient sharing.&quot;",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462425009706151936)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7462420890413109248)",
+      "created_at": "2026-05-19T08:52:47Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "This image was generated by ChatGPT, based on the spec + my guidance + several rounds of feedback from me + Claude. For anyone interested in how the sausage was made: https://chatgpt.com/share/6a0c24a9-8770-83ea-b002-26a23ad443de captures the main prompt flows (though I had a parallel conversation with Claude to turn the docs into a better blog post.. and then rounds of hand-editing).",
+      "html": "This image was generated by ChatGPT, based on the spec + my guidance + several rounds of feedback from me + Claude. For anyone interested in how the sausage was made: <a href=\"https://chatgpt.com/share/6a0c24a9-8770-83ea-b002-26a23ad443de\">https://chatgpt.com/share/6a0c24a9-8770-83ea-b002-26a23ad443de</a> captures the main prompt flows (though I had a parallel conversation with Claude to turn the docs into a better blog post.. and then rounds of hand-editing).",
+      "links": [
+        {
+          "text": "https://chatgpt.com/share/6a0c24a9-8770-83ea-b002-26a23ad443de",
+          "url": "https://chatgpt.com/share/6a0c24a9-8770-83ea-b002-26a23ad443de"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462426519626493952)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7462413469653471234)",
+      "created_at": "2026-05-19T08:58:47Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Dave deBronkart I think the April demo day at CMS included many illustrations of just this. I can't see anywhere that CMS has posted all the demos that were shown in-person in April... but this would be really helpful (hint hint, Zac Jiwa)!\n\nIn the meantime, maybe not quite the real-world patient examples you're asking for but searching youtube finds https://www.youtube.com/watch?v=y9DOZrYOe-U https://www.youtube.com/watch?v=UW07ZU6mzds https://www.youtube.com/watch?v=4kO2JfLQ_zU",
+      "html": "<a href=\"https://www.linkedin.com/in/epatientdave/\">Dave deBronkart</a> I think the April demo day at CMS included many illustrations of just this. I can't see anywhere that CMS has posted all the demos that were shown in-person in April... but this would be really helpful (hint hint, Zac Jiwa)!<br><br>In the meantime, maybe not quite the real-world patient examples you're asking for but searching youtube finds <a href=\"https://www.youtube.com/watch?v=y9DOZrYOe-U\">https://www.youtube.com/watch?v=y9DOZrYOe-U</a> <a href=\"https://www.youtube.com/watch?v=UW07ZU6mzds\">https://www.youtube.com/watch?v=UW07ZU6mzds</a> <a href=\"https://www.youtube.com/watch?v=4kO2JfLQ_zU\">https://www.youtube.com/watch?v=4kO2JfLQ_zU</a>",
+      "links": [
+        {
+          "text": "https://www.youtube.com/watch?v=y9DOZrYOe-U",
+          "url": "https://www.youtube.com/watch?v=y9DOZrYOe-U"
+        },
+        {
+          "text": "https://www.youtube.com/watch?v=UW07ZU6mzds",
+          "url": "https://www.youtube.com/watch?v=UW07ZU6mzds"
+        },
+        {
+          "text": "https://www.youtube.com/watch?v=4kO2JfLQ_zU",
+          "url": "https://www.youtube.com/watch?v=4kO2JfLQ_zU"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Dave deBronkart",
+          "url": "https://www.linkedin.com/in/epatientdave/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQF7T24vdYGkgg/articleshare-shrink_160/B56Z4_dJVnIoAQ-/0/1779181067262?e=1791925200&v=beta&t=JKVKSYZW39isjsid1tW24MYWmaVsja9enwP-uGHFhMY",
+          "file": "linkedin-media/5379cfc286b2d12c.jpg"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462426825768476672)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7462414294014570497)",
+      "created_at": "2026-05-19T09:00:00Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Dave deBronkart Agreed there's real incremental value in sharing clinical history! That said, beyond July I think we need to zoom out and think about the overall UX for ahead-of-time check-in, because even for just the basics, switching back and forth manually between apps is going to be a showstopper for a lot of users.",
+      "html": "<a href=\"https://www.linkedin.com/in/epatientdave/\">Dave deBronkart</a> Agreed there's real incremental value in sharing clinical history! That said, beyond July I think we need to zoom out and think about the overall UX for ahead-of-time check-in, because even for just the basics, switching back and forth manually between apps is going to be a showstopper for a lot of users.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Dave deBronkart",
+          "url": "https://www.linkedin.com/in/epatientdave/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462432153151246336)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7462414294014570497)",
+      "created_at": "2026-05-19T09:21:10Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Fair enough.  I have been strongly focused on CMS's strong push to declare it DONE at end of June (which long ago became \"maybe July 4 ha ha for America 250\" which has now become \"July\").You may recall that on the May 8 call Amy said this version (June) IS it for KTC, not a stopover.  But of course I don't mind if it gets extended!",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Fair enough.  I have been strongly focused on CMS's strong push to declare it DONE at end of June (which long ago became &quot;maybe July 4 ha ha for America 250&quot; which has now become &quot;July&quot;).You may recall that on the May 8 call Amy said this version (June) IS it for KTC, not a stopover.  But of course I don't mind if it gets extended!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462436324629860352)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7462413469653471234)",
+      "created_at": "2026-05-19T09:37:45Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Yes, those videos exist but as far as I know there's no umbrella \"What this is\" info like you've created here. Thanks for the specific example link, as a convenience for others.\n\nIt's always worried me that KTC has had SUCH a flurry of activity in the back room, yet nearly zero effort to engage the public whom it's intended to serve.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Yes, those videos exist but as far as I know there's no umbrella &quot;What this is&quot; info like you've created here. Thanks for the specific example link, as a convenience for others. <br><br>It's always worried me that KTC has had SUCH a flurry of activity in the back room, yet nearly zero effort to engage the public whom it's intended to serve.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462437546271219712)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7462414294014570497)",
+      "created_at": "2026-05-19T09:42:36Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Dave deBronkart Right -- realistically the timeframes for 2026 are \"take what already exists and make it work,\" but the full ambition of KTC requires new capabilities, too.",
+      "html": "<a href=\"https://www.linkedin.com/in/epatientdave/\">Dave deBronkart</a> Right -- realistically the timeframes for 2026 are &quot;take what already exists and make it work,&quot; but the full ambition of KTC requires new capabilities, too.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Dave deBronkart",
+          "url": "https://www.linkedin.com/in/epatientdave/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462439411654316032)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7462414294014570497)",
+      "created_at": "2026-05-19T09:50:01Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I'm just not sure who curates \"the full ambition\"!  You and I have LONG wanted healthcare to get modern on such things - I just haven't been at all clear that the current \"CMS tech ecosystem\" work *has* a specific ambition :-), much less a well defined one.",
+      "html": "I'm just not sure who curates &quot;the full ambition&quot;!  You and I have LONG wanted healthcare to get modern on such things - I just haven't been at all clear that the current &quot;CMS tech ecosystem&quot; work *has* a specific ambition :-), much less a well defined one.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462444056174997504)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7462413469653471234)",
+      "created_at": "2026-05-19T10:08:28Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Note, btw, that the weekly calls have shown *significant* gaps in what THOSE ON THE CALL believe the project to be about. So I'm certain what you've done here will be appreciated by them, too.p.s. When you have the time, please do change that cover image to say \"checkin\" instead of sharing! :)",
+      "html": "Note, btw, that the weekly calls have shown *significant* gaps in what THOSE ON THE CALL believe the project to be about. So I'm certain what you've done here will be appreciated by them, too.p.s. When you have the time, please do change that cover image to say &quot;checkin&quot; instead of sharing! :)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462614745414586369)",
+      "parent_id": null,
+      "created_at": "2026-05-19T21:26:43Z",
+      "author": {
+        "name": "John Scully",
+        "headline": "Decentralized Medical Records System. Blockchain-based system, US patent 12266430",
+        "profile_url": "https://www.linkedin.com/in/john-scully-61ba80279",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Nothing has harmed our medical care system more than the EHR mandate.\n\nThe emotional burden placed on physicians is so significant that, since 2008, the average retirement age for doctors has dropped by 9 years.\n\nWe urgently need to transition from EHRs to a decentralized system, a move championed by @realDonaldTrump in 2019.",
+      "html": "Nothing has harmed our medical care system more than the EHR mandate.<br><br>The emotional burden placed on physicians is so significant that, since 2008, the average retirement age for doctors has dropped by 9 years.<br><br>We urgently need to transition from EHRs to a decentralized system, a move championed by @realDonaldTrump in 2019.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7462765393707794432)",
+      "parent_id": null,
+      "created_at": "2026-05-20T07:25:21Z",
+      "author": {
+        "name": "Rohan Pinto",
+        "headline": "Ξ CTO / Founder / 1Kosmos / Security Architect / Blockchain / Identity Management Maven / Cryptography Geek / Investor / Author",
+        "profile_url": "https://www.linkedin.com/in/rohanpinto",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "Making the spec more accessible to patients and clinicians should help everyone understand how their data gets shared. It is a practical step toward broader adoption.",
+      "html": "Making the spec more accessible to patients and clinicians should help everyone understand how their data gets shared. It is a practical step toward broader adoption.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7463034182739415040)",
+      "parent_id": null,
+      "created_at": "2026-05-21T01:13:25Z",
+      "author": {
+        "name": "Tommy Di Zazzo",
+        "headline": "Co-Founder @ BulkSched · Automating medical appointment scheduling inside Epic · Building for CIUSSS du Québec and provincial health systems across Canada",
+        "profile_url": "https://www.linkedin.com/in/tommy-di-zazzo",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "July 2026 as a hard deadline — interesting. On the scheduling side of care, we're seeing the same friction: CIUSSS admin teams still juggling between Epic and Excel because native tools don't speak batch. That's exactly what we're building BulkSched around — SMART on FHIR, launched from Hyperspace. The clipboard is usually just a symptom of a workflow that has no native surface in Epic.",
+      "html": "July 2026 as a hard deadline — interesting. On the scheduling side of care, we're seeing the same friction: CIUSSS admin teams still juggling between Epic and Excel because native tools don't speak batch. That's exactly what we're building BulkSched around — SMART on FHIR, launched from Hyperspace. The clipboard is usually just a symptom of a workflow that has no native surface in Epic.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7463267999987191809)",
+      "parent_id": null,
+      "created_at": "2026-05-21T16:42:32Z",
+      "author": {
+        "name": "Jim Hansen",
+        "headline": "Information Practitioner and Population Health Solutionist",
+        "profile_url": "https://www.linkedin.com/in/jimnhansen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "First the clipboard, then onward to KTF 'kill the fax' (machine)!  😀",
+      "html": "First the clipboard, then onward to KTF 'kill the fax' (machine)!  😀",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7463285817533227008)",
+      "parent_id": "urn:li:comment:(ugcPost:7462156756798976000,7463267999987191809)",
+      "created_at": "2026-05-21T17:53:20Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I believe \"ax the fax\" is the term of art!",
+      "html": "I believe &quot;ax the fax&quot; is the term of art!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7464349523860086785)",
+      "parent_id": null,
+      "created_at": "2026-05-24T16:20:07Z",
+      "author": {
+        "name": "Edward Patrick Hobson",
+        "headline": "Healthcare Marketing Leader",
+        "profile_url": "https://www.linkedin.com/in/edward-patrick-hobson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thank you, this is very informative.",
+      "html": "Thank you, this is very informative.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7465439167892729856)",
+      "parent_id": null,
+      "created_at": "2026-05-27T16:29:58Z",
+      "author": {
+        "name": "Gary Meyer",
+        "headline": "Health Tech Strategy & Decision Architecture | AI & Interoperability at Scale | Bridging Healthcare & Technology",
+        "profile_url": "https://www.linkedin.com/in/garymeyer",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is a great step forward—especially moving from PDFs to structured data that can actually show up in workflow.\n\nYou can already see the next layer in how you describe it:\nshare → persist → review → then decide what becomes “active.”\n\nThe data is finally getting to the right place,\nbut the criteria that determine what happens next still live somewhere else.\n\nCurious how you see that evolving—so the same information that reduces intake friction can also reduce the downstream back-and-forth that happens after submission.",
+      "html": "This is a great step forward—especially moving from PDFs to structured data that can actually show up in workflow.<br><br>You can already see the next layer in how you describe it:<br>share → persist → review → then decide what becomes “active.”<br><br>The data is finally getting to the right place,<br>but the criteria that determine what happens next still live somewhere else.<br><br>Curious how you see that evolving—so the same information that reduces intake friction can also reduce the downstream back-and-forth that happens after submission.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462156756798976000,7466820539282571265)",
+      "parent_id": null,
+      "created_at": "2026-05-31T11:59:03Z",
+      "author": {
+        "name": "Mary Jane Bogacki",
+        "headline": "Certified Coding Specialist (CCS)",
+        "profile_url": "https://www.linkedin.com/in/mary-jane-bogacki-a42649217",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I suspect that outdated patient bios in neglected health apps would cause a lot of workflow disruption and eventually cause providers to sideline patient provided documents. However, provider-generated requests for specific data, prior to a visit, would allow a patient to consider and consent ahead of time.\nThe health history data is the most likely to be objective and up to date, and (as soon as/as long as other providers scrutinize their documentation for scribe hallucinations) then interoperability continues to be the bottleneck.",
+      "html": "I suspect that outdated patient bios in neglected health apps would cause a lot of workflow disruption and eventually cause providers to sideline patient provided documents. However, provider-generated requests for specific data, prior to a visit, would allow a patient to consider and consent ahead of time. <br>The health history data is the most likely to be objective and up to date, and (as soon as/as long as other providers scrutinize their documentation for scribe hallucinations) then interoperability continues to be the bottleneck.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

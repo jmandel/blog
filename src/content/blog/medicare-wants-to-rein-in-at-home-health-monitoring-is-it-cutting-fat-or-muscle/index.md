@@ -7,6 +7,14 @@ banner: ./banner.png
 supersedes_linkedin: "https://www.linkedin.com/pulse/medicare-wants-rein-at-home-health-monitoring-cutting-josh-mandel-md-pjhwc"
 original_url: "https://www.linkedin.com/pulse/medicare-wants-rein-at-home-health-monitoring-cutting-josh-mandel-md-pjhwc"
 linkedin_id: pjhwc
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7512955978758176768"
+  share_id: "7512955978758176768"
+  share_type: "ugcPost"
+  posted_at: "2026-10-05T19:24:49"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    Medicare wants to rein in remote patient monitoring. Is it cutting fat or muscle? Use grew from about 44,000 people in 2019 to nearly 700,000 in 2025, with spending up from under $7M to about $293M. CMS proposes cutting the monthly device payment by ~80% and requiring monitoring staff to be the practice's own employees. I dug into 4,000+ public comments on what the program actually costs, who backs which change, and what the alternatives are. See article for details.
 ---
 
 <style>

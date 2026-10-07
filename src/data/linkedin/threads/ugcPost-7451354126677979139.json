@@ -1,0 +1,816 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7451354126677979139",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7451354126677979139/",
+  "pages": [
+    "article:ft1ue",
+    "share:7451354126677979139"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "ft1ue",
+      "url": "https://www.linkedin.com/pulse/meeting-zaks-challenge-building-greenbergolem-josh-mandel-md-ft1ue",
+      "activity_urn": "urn:li:activity:7451354127340736512"
+    }
+  ],
+  "displayed": {
+    "comments": 28,
+    "reactions": 119,
+    "reposts": 7
+  },
+  "captured": {
+    "total": 28,
+    "top_level": 17,
+    "replies": 11
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451359064124510208)",
+      "parent_id": null,
+      "created_at": "2026-04-18T20:00:40Z",
+      "author": {
+        "name": "Nikolai Ryzhikov",
+        "headline": "CTO @ Health Samurai; HealthDev | FHIR | PostgreSQL | Clojure | Agent Engineering. We are limited by time and imagination",
+        "profile_url": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Awesome!",
+      "html": "Awesome!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451385166972760067)",
+      "parent_id": null,
+      "created_at": "2026-04-18T21:44:23Z",
+      "author": {
+        "name": "Andrea D.",
+        "headline": "Co-Founder and Board President lightcollective.org",
+        "profile_url": "https://www.linkedin.com/in/andreadowning",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "So cool 👀",
+      "html": "So cool 👀",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451391292540051456)",
+      "parent_id": null,
+      "created_at": "2026-04-18T22:08:44Z",
+      "author": {
+        "name": "Mark Kramer",
+        "headline": "Senior Principal Artificial Intelligence Engineer at MITRE Corporation",
+        "profile_url": "https://www.linkedin.com/in/mark-kramer-7b0215",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "You are the GOAT of problem analysis and rapid prototypes!",
+      "html": "You are the GOAT of problem analysis and rapid prototypes!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 9,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451413108222394368)",
+      "parent_id": null,
+      "created_at": "2026-04-18T23:35:25Z",
+      "author": {
+        "name": "Nikhil Bhojwani",
+        "headline": "Managing Partner at Recon Strategy",
+        "profile_url": "https://www.linkedin.com/in/bhojwani",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Impressive!",
+      "html": "Impressive!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451452364235984896)",
+      "parent_id": null,
+      "created_at": "2026-04-19T02:11:24Z",
+      "author": {
+        "name": "Richard Braman",
+        "headline": "Award Winning Innovation | Healthcare Standards & Interoperability (HL7 FHIR CDS Hooks) Business Process Automation (BPM +), AI & Agentic Systems",
+        "profile_url": "https://www.linkedin.com/in/rbraman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Nice!",
+      "html": "Nice!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451455201531576320)",
+      "parent_id": null,
+      "created_at": "2026-04-19T02:22:41Z",
+      "author": {
+        "name": "Ingrid Witherell",
+        "headline": "Safety Researcher, Medical Writer, LLM mechanizer of the known, distiller of the unknown in tox, PK, PV, & RWE in IND, CSR, DSUR, SOP",
+        "profile_url": "https://www.linkedin.com/in/ingrid-witherell-edithealth",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Is the word Golem in there for a reason?",
+      "html": "Is the word Golem in there for a reason?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451460923778584577)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7451455201531576320)",
+      "created_at": "2026-04-19T02:45:25Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I wanted an automaton that started with G so I could make a portmanteau with Greenberg...",
+      "html": "I wanted an automaton that started with G so I could make a portmanteau with Greenberg...",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451617235980333056)",
+      "parent_id": null,
+      "created_at": "2026-04-19T13:06:33Z",
+      "author": {
+        "name": "David Bernick",
+        "headline": "Finding and Securing all the data - and making it useful.",
+        "profile_url": "https://www.linkedin.com/in/davidbernick",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I was talking to Kim Branson this week about the continual cross pollination in our field from like the same 20 people. And of course Zak and Josh were in that list. None of this is surprising. And the actual research is exactly what we were talking about this week.",
+      "html": "I was talking to <a href=\"https://www.linkedin.com/in/kim-branson-b864963/\">Kim Branson</a> this week about the continual cross pollination in our field from like the same 20 people. And of course Zak and Josh were in that list. None of this is surprising. And the actual research is exactly what we were talking about this week.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Kim Branson",
+          "url": "https://www.linkedin.com/in/kim-branson-b864963/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 5,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451617466805489664)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7451617235980333056)",
+      "created_at": "2026-04-19T13:07:28Z",
+      "author": {
+        "name": "David Bernick",
+        "headline": "Finding and Securing all the data - and making it useful.",
+        "profile_url": "https://www.linkedin.com/in/davidbernick",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "David Bernick (and of course Wilbanks liked this post). We are the stack of infinite turtles.",
+      "html": "<a href=\"https://www.linkedin.com/in/davidbernick/\">David Bernick</a> (and of course Wilbanks liked this post). We are the stack of infinite turtles.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "David Bernick",
+          "url": "https://www.linkedin.com/in/davidbernick/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451711272015892480)",
+      "parent_id": null,
+      "created_at": "2026-04-19T19:20:13Z",
+      "author": {
+        "name": "Alex Matsyuk",
+        "headline": "CEO & Co-Founder at Kozak Agency | Building reliable software systems",
+        "profile_url": "https://www.linkedin.com/in/alexandr-matsyuk",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Love this use case, literature analysis is massively underleveraged.",
+      "html": "Love this use case, literature analysis is massively underleveraged.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451809665568395264)",
+      "parent_id": null,
+      "created_at": "2026-04-20T01:51:12Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "CHEERLEADING!!!\n\nMaking Science Feasible!!!\n\nNow all we need is the missing ingredient is national leaders who agree with the value of strong reasoning versus wishful thinking!",
+      "html": "CHEERLEADING!!!<br><br>Making Science Feasible!!!<br><br>Now all we need is the missing ingredient is national leaders who agree with the value of strong reasoning versus wishful thinking!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451817200337838080)",
+      "parent_id": null,
+      "created_at": "2026-04-20T02:21:08Z",
+      "author": {
+        "name": "Hugo Campos",
+        "headline": "Patient-directed AI & Critical AI Health Literacy | Research Partner | Patient Agency & Health Data Rights",
+        "profile_url": "https://www.linkedin.com/in/hugocampos",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is basically a Critical AI Health Literacy tool for the research literature itself. Brilliant!",
+      "html": "This is basically a Critical AI Health Literacy tool for the research literature itself. Brilliant!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451852556718268416)",
+      "parent_id": null,
+      "created_at": "2026-04-20T04:41:38Z",
+      "author": {
+        "name": "Uri Goren",
+        "headline": "Head of Innovation @Meir | Leading patient-centric innovation with AI and design thinking expertise.",
+        "profile_url": "https://www.linkedin.com/in/urigoren",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The cool thing would now be to validate it manually and elevate it to a real peer review tool for the community! Very very cool!",
+      "html": "The cool thing would now be to validate it manually and elevate it to a real peer review tool for the community! Very very cool!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451975376693792768)",
+      "parent_id": null,
+      "created_at": "2026-04-20T12:49:40Z",
+      "author": {
+        "name": "Michael Millenson",
+        "headline": "President, Health Quality Advisors LLC",
+        "profile_url": "https://www.linkedin.com/in/michaelmillenson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "If you take the name of Isaac Kohane off the golem, does it stop working Josh Mandel, MD? Would this be considered a Prague-matic solution to a problem that’s plagued science? And for all our sakes, don’t feed in the Tetragrammaton just to see what happens. 🙏",
+      "html": "If you take the name of <a href=\"https://www.linkedin.com/in/isaac-kohane-729b03/\">Isaac Kohane</a> off the golem, does it stop working <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>? Would this be considered a Prague-matic solution to a problem that’s plagued science? And for all our sakes, don’t feed in the Tetragrammaton just to see what happens. 🙏",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Isaac Kohane",
+          "url": "https://www.linkedin.com/in/isaac-kohane-729b03/",
+          "kind": "person"
+        },
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451978812101279745)",
+      "parent_id": null,
+      "created_at": "2026-04-20T13:03:19Z",
+      "author": {
+        "name": "Gilles Frydman",
+        "headline": "Founder, Synambix | AI Evidence Intelligence for Life Sciences | Founder, ACOR (1995)• Co-founder, Smart Patients (2011)| Patient Sovereignty",
+        "profile_url": "https://www.linkedin.com/in/gillesfrydman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD, from what I gather the adjudication step is the real, big contribution.\n\nThe forced evidence quote on both sides of each citation is the move that separates this from the last decade of role-classification work. It makes every edge in the graph auditable.\n\nWorth flagging that this lands as a researcher tool, which is correct for the use case you built for. The interface you describe, bundle plus chat window, serves someone who can read the underlying papers and evaluate the adjudication.\n\nAn adjacent question is what a version looks like for the person downstream of all those citations, who receives the claim in a clinical encounter without the option to audit it themselves. Different output layer, same substrate.\n\nThe HCQ run and the 781 flagged invention patterns are the kind of artifact that changes what is possible for that downstream work. And a huge Thank You for shipping it open!\n\nWhat does calibration against a held-out human coder look like when you get to it?",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>, from what I gather the adjudication step is the real, big contribution.<br><br>The forced evidence quote on both sides of each citation is the move that separates this from the last decade of role-classification work. It makes every edge in the graph auditable.<br><br>Worth flagging that this lands as a researcher tool, which is correct for the use case you built for. The interface you describe, bundle plus chat window, serves someone who can read the underlying papers and evaluate the adjudication. <br><br>An adjacent question is what a version looks like for the person downstream of all those citations, who receives the claim in a clinical encounter without the option to audit it themselves. Different output layer, same substrate.<br><br>The HCQ run and the 781 flagged invention patterns are the kind of artifact that changes what is possible for that downstream work. And a huge Thank You for shipping it open!<br><br>What does calibration against a held-out human coder look like when you get to it?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7451988963244044288)",
+      "parent_id": null,
+      "created_at": "2026-04-20T13:43:40Z",
+      "author": {
+        "name": "Rich Christie MD, PhD",
+        "headline": "CEO & Chief Medical Officer | Ex-McKinsey, J&J, Roche | Harvard Med & MIT | Board Member & Strategic Advisor | Clinical AI & Life Sciences",
+        "profile_url": "https://www.linkedin.com/in/richchristie",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD I wonder what it would take to tweak this approach in line with the broader context of Isaac Kohane's challenge around sussing out an actual contribution of amyloid to Alzheimer's Disease.  For example, could you re-work the judgment step to unearth subtle signals of amyloid toxicity that were supported by subsequently published corroborating literature, but never followed up on? This might evolve the exercise beyond 'judgment' to a latent hypothesis-unearthing engine.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> I wonder what it would take to tweak this approach in line with the broader context of <a href=\"https://www.linkedin.com/in/isaac-kohane-729b03/\">Isaac Kohane</a>'s challenge around sussing out an actual contribution of amyloid to Alzheimer's Disease.  For example, could you re-work the judgment step to unearth subtle signals of amyloid toxicity that were supported by subsequently published corroborating literature, but never followed up on? This might evolve the exercise beyond 'judgment' to a latent hypothesis-unearthing engine.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        },
+        {
+          "name": "Isaac Kohane",
+          "url": "https://www.linkedin.com/in/isaac-kohane-729b03/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452001760816168960)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7451978812101279745)",
+      "created_at": "2026-04-20T14:34:31Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Calibration: any interest in helping crowd source? Even a small sample of 10-20 edges (say, oversampled to 50% for inventions) would be useful signal for estimating calibration.",
+      "html": "Calibration: any interest in helping crowd source? Even a small sample of 10-20 edges (say, oversampled to 50% for inventions) would be useful signal for estimating calibration.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452002050143543297)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7451852556718268416)",
+      "created_at": "2026-04-20T14:35:40Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Totally agree and would love to support crowdsourcing some manual validation (see my comment to Gilles here).",
+      "html": "Totally agree and would love to support crowdsourcing some manual validation (see my comment to Gilles here).",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452002201255759872)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7451978812101279745)",
+      "created_at": "2026-04-20T14:36:16Z",
+      "author": {
+        "name": "Gilles Frydman",
+        "headline": "Founder, Synambix | AI Evidence Intelligence for Life Sciences | Founder, ACOR (1995)• Co-founder, Smart Patients (2011)| Patient Sovereignty",
+        "profile_url": "https://www.linkedin.com/in/gillesfrydman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD more than interested! Let’s do it! It is the fundamental next step for all the work we do.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> more than interested! Let’s do it! It is the fundamental next step for all the work we do.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452028790475472897)",
+      "parent_id": null,
+      "created_at": "2026-04-20T16:21:55Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD to help people comprehend what the adjudication does, and appreciate how important it is, would it be feasible to pull out a couple of examples that Claude said were distortions?\n\nI have long thought that people don't realize how much slippery slope is hidden in so many articles, where a snazzy looking superscript actually links to something that has nothing but a wee bit of BS behind it. A concrete example might be really useful",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> to help people comprehend what the adjudication does, and appreciate how important it is, would it be feasible to pull out a couple of examples that Claude said were distortions?<br><br>I have long thought that people don't realize how much slippery slope is hidden in so many articles, where a snazzy looking superscript actually links to something that has nothing but a wee bit of BS behind it. A concrete example might be really useful",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452040184029786112)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7452028790475472897)",
+      "created_at": "2026-04-20T17:07:12Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I prompted Claude to pull out examples given the bundle; https://gist.github.com/jmandel/a3a5378afd8b5922a3af466fe9c4ab65 has a few that you may wish to spot check / validate",
+      "html": "I prompted Claude to pull out examples given the bundle; <a href=\"https://gist.github.com/jmandel/a3a5378afd8b5922a3af466fe9c4ab65\">https://gist.github.com/jmandel/a3a5378afd8b5922a3af466fe9c4ab65</a> has a few that you may wish to spot check / validate",
+      "links": [
+        {
+          "text": "https://gist.github.com/jmandel/a3a5378afd8b5922a3af466fe9c4ab65",
+          "url": "https://gist.github.com/jmandel/a3a5378afd8b5922a3af466fe9c4ab65"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452415276400279552)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7452028790475472897)",
+      "created_at": "2026-04-21T17:57:41Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "THIS IS SUPERB, Josh.  Is there any way to make it clean up the character codes, e.g. â€” and â†’?\n\nPHENOMENAL!  As you know, I'm no researcher nor a statistician, but I do have a high-school-level awareness that a study you cite should absolutely support what you say it supports, and each of these 4 examples is easy to understand!\n\n1. A citation that says the *opposite* of the claim it supports\n(How crooked is that, for the scientist to do that in the paper??)\n\n2. A credential upgrade -- an open-label trial cited as RCT\n(Do they not KNOW the difference?? Or did they just LIE?)\n\n3. A dead-end citation -- the cited paper says nothing of the sort\n(I mean, holy CRAP. It's like handing a bouncer a random chunk of plastic and hoping he won't notice it's not a driver's license.)\n\n4. Citing a paper 8 months after it was retracted for being BS\n(I'm out of jaw-dropped things to say)\n\nPeter Frishauf you'll love this well documented grotesque failure of the peer review system.\n\nTo summarize: in pro-hydroxychloroquine articles TWENTY PERCENT (19.7%) of ALL citations had these \"distortions.\" What a valuable thing for the community to know.\n\nTHANK YOU\nHugo Gilles Laura Grace Burt Rasu Susan Susannah Bertalan Andrea Helene Peter",
+      "html": "THIS IS SUPERB, Josh.  Is there any way to make it clean up the character codes, e.g. â€” and â†’? <br><br>PHENOMENAL!  As you know, I'm no researcher nor a statistician, but I do have a high-school-level awareness that a study you cite should absolutely support what you say it supports, and each of these 4 examples is easy to understand!<br><br>1. A citation that says the *opposite* of the claim it supports<br>(How crooked is that, for the scientist to do that in the paper??)<br><br>2. A credential upgrade -- an open-label trial cited as RCT<br>(Do they not KNOW the difference?? Or did they just LIE?)<br><br>3. A dead-end citation -- the cited paper says nothing of the sort<br>(I mean, holy CRAP. It's like handing a bouncer a random chunk of plastic and hoping he won't notice it's not a driver's license.)<br><br>4. Citing a paper 8 months after it was retracted for being BS<br>(I'm out of jaw-dropped things to say)<br><br><a href=\"https://www.linkedin.com/in/peterfrishauf/\">Peter Frishauf</a> you'll love this well documented grotesque failure of the peer review system.<br><br>To summarize: in pro-hydroxychloroquine articles TWENTY PERCENT (19.7%) of ALL citations had these &quot;distortions.&quot; What a valuable thing for the community to know.<br><br>THANK YOU<br><a href=\"https://www.linkedin.com/in/hugocampos/\">Hugo</a> <a href=\"https://www.linkedin.com/in/gillesfrydman/\">Gilles</a> <a href=\"https://www.linkedin.com/in/lauraadamsnam/\">Laura</a> <a href=\"https://www.linkedin.com/in/gcordovano/\">Grace</a> <a href=\"https://www.linkedin.com/in/burtrosen/\">Burt</a> <a href=\"https://www.linkedin.com/in/rasushrestha/\">Rasu</a> <a href=\"https://www.linkedin.com/in/susan-brown-sheridan-b8680515/\">Susan</a> <a href=\"https://www.linkedin.com/in/susannah-fox-202/\">Susannah</a> <a href=\"https://www.linkedin.com/in/bertalanmesko/\">Bertalan</a> <a href=\"https://www.linkedin.com/in/andreadowning/\">Andrea</a> <a href=\"https://www.linkedin.com/in/hmepstein/\">Helene</a> <a href=\"https://www.linkedin.com/in/peterlee4/\">Peter</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Peter Frishauf",
+          "url": "https://www.linkedin.com/in/peterfrishauf/",
+          "kind": "person"
+        },
+        {
+          "name": "Hugo",
+          "url": "https://www.linkedin.com/in/hugocampos/",
+          "kind": "person"
+        },
+        {
+          "name": "Gilles",
+          "url": "https://www.linkedin.com/in/gillesfrydman/",
+          "kind": "person"
+        },
+        {
+          "name": "Laura",
+          "url": "https://www.linkedin.com/in/lauraadamsnam/",
+          "kind": "person"
+        },
+        {
+          "name": "Grace",
+          "url": "https://www.linkedin.com/in/gcordovano/",
+          "kind": "person"
+        },
+        {
+          "name": "Burt",
+          "url": "https://www.linkedin.com/in/burtrosen/",
+          "kind": "person"
+        },
+        {
+          "name": "Rasu",
+          "url": "https://www.linkedin.com/in/rasushrestha/",
+          "kind": "person"
+        },
+        {
+          "name": "Susan",
+          "url": "https://www.linkedin.com/in/susan-brown-sheridan-b8680515/",
+          "kind": "person"
+        },
+        {
+          "name": "Susannah",
+          "url": "https://www.linkedin.com/in/susannah-fox-202/",
+          "kind": "person"
+        },
+        {
+          "name": "Bertalan",
+          "url": "https://www.linkedin.com/in/bertalanmesko/",
+          "kind": "person"
+        },
+        {
+          "name": "Andrea",
+          "url": "https://www.linkedin.com/in/andreadowning/",
+          "kind": "person"
+        },
+        {
+          "name": "Helene",
+          "url": "https://www.linkedin.com/in/hmepstein/",
+          "kind": "person"
+        },
+        {
+          "name": "Peter",
+          "url": "https://www.linkedin.com/in/peterlee4/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452426899953405952)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7452028790475472897)",
+      "created_at": "2026-04-21T18:43:52Z",
+      "author": {
+        "name": "Helene M. Epstein",
+        "headline": "Award-winning writer and advocate for patients. Author: Patient No More, the healthcare survival resource for patients. Speaker. Board Member Pen Parentis.",
+        "profile_url": "https://www.linkedin.com/in/hmepstein",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "Dave deBronkart as a journalist, it's one of the reasons why I read the full clinical trial although I must admit I don't read every citation. I spot check them to make certain that they're supporting the arguments in the paper. I do all of this before I refer to it. I wish more healthcare journalists did the same. Most only read the press release",
+      "html": "<a href=\"https://www.linkedin.com/in/epatientdave/\">Dave deBronkart</a> as a journalist, it's one of the reasons why I read the full clinical trial although I must admit I don't read every citation. I spot check them to make certain that they're supporting the arguments in the paper. I do all of this before I refer to it. I wish more healthcare journalists did the same. Most only read the press release",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Dave deBronkart",
+          "url": "https://www.linkedin.com/in/epatientdave/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452434228170125312)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7452028790475472897)",
+      "created_at": "2026-04-21T19:12:59Z",
+      "author": {
+        "name": "Peter Frishauf",
+        "headline": "Digital Health Entrepreneur (Founder, Medscape). Livable Cities/Active Health Advocate",
+        "profile_url": "https://www.linkedin.com/in/peterfrishauf",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Wowza, TY Josh Mandel, MD well done, and TY Dave deBronkart for bringing this important work  to the top of my inbox.  Richard S Smith and I sounded off mightily about such flaws in the inaugural issue of the Journal off Participatory Medicine. I too turned to Claude to refresh my memory about that😊 https://claude.ai/share/5eb4ad55-c246-4b96-9dbc-79c6f7a21943",
+      "html": "Wowza, TY <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> well done, and TY <a href=\"https://www.linkedin.com/in/epatientdave/\">Dave deBronkart</a> for bringing this important work  to the top of my inbox.  Richard S Smith and I sounded off mightily about such flaws in the inaugural issue of the Journal off Participatory Medicine. I too turned to Claude to refresh my memory about that😊 <a href=\"https://claude.ai/share/5eb4ad55-c246-4b96-9dbc-79c6f7a21943\">https://claude.ai/share/5eb4ad55-c246-4b96-9dbc-79c6f7a21943</a>",
+      "links": [
+        {
+          "text": "https://claude.ai/share/5eb4ad55-c246-4b96-9dbc-79c6f7a21943",
+          "url": "https://claude.ai/share/5eb4ad55-c246-4b96-9dbc-79c6f7a21943"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        },
+        {
+          "name": "Dave deBronkart",
+          "url": "https://www.linkedin.com/in/epatientdave/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452458564402438144)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7452028790475472897)",
+      "created_at": "2026-04-21T20:49:41Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "^^ Mark, William, Janet, Jane I imagine this will interest you too",
+      "html": "^^ <a href=\"https://www.linkedin.com/in/mbraunstein/\">Mark</a>, <a href=\"https://www.linkedin.com/in/william-reenstra-b9616114/\">William</a>, <a href=\"https://www.linkedin.com/in/janetfreemandaily/\">Janet</a>, <a href=\"https://www.linkedin.com/in/janesarasohnkahn/\">Jane</a> I imagine this will interest you too",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Mark",
+          "url": "https://www.linkedin.com/in/mbraunstein/",
+          "kind": "person"
+        },
+        {
+          "name": "William",
+          "url": "https://www.linkedin.com/in/william-reenstra-b9616114/",
+          "kind": "person"
+        },
+        {
+          "name": "Janet",
+          "url": "https://www.linkedin.com/in/janetfreemandaily/",
+          "kind": "person"
+        },
+        {
+          "name": "Jane",
+          "url": "https://www.linkedin.com/in/janesarasohnkahn/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7452460773077012480)",
+      "parent_id": "urn:li:comment:(ugcPost:7451354126677979139,7452028790475472897)",
+      "created_at": "2026-04-21T20:58:28Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I can't stop myself from hammering on these numbers. Two other views:\n_______\n\n• Pro-HCQ: 80.3% of citations were valid. Great peer review, editors!\n• Anti-HCQ: 96.7% were valid.\n_______\n• Pro-HCQ: 213 distorted cites out of 1081\n• Anti: 69 distorted cites (1/3 as many) out of 2080",
+      "html": "I can't stop myself from hammering on these numbers. Two other views:<br>_______<br><br>• Pro-HCQ: 80.3% of citations were valid. Great peer review, editors!<br>• Anti-HCQ: 96.7% were valid.<br>_______<br>• Pro-HCQ: 213 distorted cites out of 1081<br>• Anti: 69 distorted cites (1/3 as many) out of 2080",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7453102036209799168)",
+      "parent_id": null,
+      "created_at": "2026-04-23T15:26:37Z",
+      "author": {
+        "name": "Saleh Hindi",
+        "headline": "AI x Healthcare | ex Lyft, Bloomberg",
+        "profile_url": "https://www.linkedin.com/in/saleh-hindi",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is a work of art! We've been using Claude to create detailed animations of the patient journey and it's so slept on. Not sure if you've played around with Claude Design, but it's excellent at making rich interactive animations that are really easy to share.",
+      "html": "This is a work of art! We've been using Claude to create detailed animations of the patient journey and it's so slept on. Not sure if you've played around with Claude Design, but it's excellent at making rich interactive animations that are really easy to share.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7451354126677979139,7453140085279182848)",
+      "parent_id": null,
+      "created_at": "2026-04-23T17:57:48Z",
+      "author": {
+        "name": "Gully Burns",
+        "headline": "Researcher in systems for AIxScience",
+        "profile_url": "https://www.linkedin.com/in/gullyaburns",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Congrats! Very interesting!I am a massive fan of Greenberg's original paper. I think this work addresses a much deeper and interesting question about scientific knowledge more broadly.",
+      "html": "Congrats! Very interesting!I am a massive fan of Greenberg's original paper. I think this work addresses a much deeper and interesting question about scientific knowledge more broadly.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

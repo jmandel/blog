@@ -1,0 +1,156 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7498041133113962496",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7498041133113962496/",
+  "pages": [
+    "article:g71vc",
+    "share:7498041133113962496"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "g71vc",
+      "url": "https://www.linkedin.com/pulse/hti-6-should-unbundle-api-certification-josh-mandel-md-g71vc",
+      "activity_urn": "urn:li:activity:7498041133772472320"
+    }
+  ],
+  "displayed": {
+    "comments": 5,
+    "reactions": 60,
+    "reposts": 3
+  },
+  "captured": {
+    "total": 5,
+    "top_level": 3,
+    "replies": 2
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7498041133113962496,7498045091601838082)",
+      "parent_id": null,
+      "created_at": "2026-08-25T15:54:16Z",
+      "author": {
+        "name": "Benji Graham",
+        "headline": "FHIR Architect and Evangelist. Health Data Interoperability Leader. HL7 Certified Educator.",
+        "profile_url": "https://www.linkedin.com/in/benji-graham-28a400146",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "A typically excellent article, Josh Mandel, MD! I'm wondering if it's possible to go even further and certify capabilities at each module to allow for future updates to say Authorization to include things like UDAP, or endpoint certification to include specific use cases like Quality reporting or electronic Prior Authorization without needing to include them holistically in the endpoint certification piece? Example being if you are a healthcare provider that doesn't need to support ePA, but you do report data for quality measurement, could your model be flexible enough to support certifying only the quality reporting piece but not ePA?",
+      "html": "A typically excellent article, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>! I'm wondering if it's possible to go even further and certify capabilities at each module to allow for future updates to say Authorization to include things like UDAP, or endpoint certification to include specific use cases like Quality reporting or electronic Prior Authorization without needing to include them holistically in the endpoint certification piece? Example being if you are a healthcare provider that doesn't need to support ePA, but you do report data for quality measurement, could your model be flexible enough to support certifying only the quality reporting piece but not ePA?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 5,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7498041133113962496,7498064856168857601)",
+      "parent_id": null,
+      "created_at": "2026-08-25T17:12:49Z",
+      "author": {
+        "name": "Alexander Goel",
+        "headline": "COO@PhenoML|Talk to Me About Connecting Healthcare Data",
+        "profile_url": "https://www.linkedin.com/in/alexanderkgoel",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Great article Josh Mandel, MD! I like your proposal to split the (g)(10) cert into auth and data module roles.\n\nAs part of the distinct data module certs you mention \"additional domains\" does that include the USCDI+ modules like Cancer? How would you see that working with EHRs which have different modules? Would an EHR attach or remove certs for Data Module by EHR module?\n\nFor example would an Imaging module of an EHR just get the auth and imaging cert, while the main hospital EMR module for inpatient/outpatient has Auth and USCDI Core data module?",
+      "html": "Great article <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>! I like your proposal to split the (g)(10) cert into auth and data module roles. <br><br>As part of the distinct data module certs you mention &quot;additional domains&quot; does that include the USCDI+ modules like Cancer? How would you see that working with EHRs which have different modules? Would an EHR attach or remove certs for Data Module by EHR module?<br><br>For example would an Imaging module of an EHR just get the auth and imaging cert, while the main hospital EMR module for inpatient/outpatient has Auth and USCDI Core data module?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7498041133113962496,7498084726885400576)",
+      "parent_id": "urn:li:comment:(ugcPost:7498041133113962496,7498064856168857601)",
+      "created_at": "2026-08-25T18:31:46Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Yes that's very much in line with this view -- USCSI+ content could have much more of a first class home as optional certifiable modules",
+      "html": "Yes that's very much in line with this view -- USCSI+ content could have much more of a first class home as optional certifiable modules",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7498041133113962496,7499614090839896064)",
+      "parent_id": null,
+      "created_at": "2026-08-29T23:48:55Z",
+      "author": {
+        "name": "Paul Lopez",
+        "headline": "Forward Deployed AI Engineer & Architect at Accenture • Agentic AI Systems • Cross-Industry • MCP & A2A • Claude, OpenAI, Gemini • AWS, Azure, GCP",
+        "profile_url": "https://www.linkedin.com/in/paullopez1",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Your cross-module contract is well-defined. Authorization_details, associated_endpoints, and token introspection already exist in published SMART standards, and your proposal to let deploying organizations attach or remove Data Modules through a testable boundary is the right separation of concerns.\n\nThe deployment risk sits in the integration surface. An external Imaging Module that fails introspection or serves a scope mismatch creates a failure mode that spans two vendor support contracts. If troubleshooting a token rejection requires coordinating between the EHR vendor running the Authorization Module and the PACS vendor running the Data Module, you have distributed the friction without eliminating it. Security review duration is also a design signal: if your modular architecture requires nine months of cross-vendor security review, you built coordination overhead instead of an isolated capability.",
+      "html": "Your cross-module contract is well-defined. Authorization_details, associated_endpoints, and token introspection already exist in published SMART standards, and your proposal to let deploying organizations attach or remove Data Modules through a testable boundary is the right separation of concerns.<br><br>The deployment risk sits in the integration surface. An external Imaging Module that fails introspection or serves a scope mismatch creates a failure mode that spans two vendor support contracts. If troubleshooting a token rejection requires coordinating between the EHR vendor running the Authorization Module and the PACS vendor running the Data Module, you have distributed the friction without eliminating it. Security review duration is also a design signal: if your modular architecture requires nine months of cross-vendor security review, you built coordination overhead instead of an isolated capability.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7498041133113962496,7499651145041125376)",
+      "parent_id": "urn:li:comment:(ugcPost:7498041133113962496,7499614090839896064)",
+      "created_at": "2026-08-30T02:16:09Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "In this proposal each module is certification-tested to demonstrate capability. If you're concerned about an interoperability problem between the authorization module and the data module,  you might just as well be concerned about an interop problem between the combined system and an external client. If testing does its job, the risk of either should be low.",
+      "html": "In this proposal each module is certification-tested to demonstrate capability. If you're concerned about an interoperability problem between the authorization module and the data module,  you might just as well be concerned about an interop problem between the combined system and an external client. If testing does its job, the risk of either should be low.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

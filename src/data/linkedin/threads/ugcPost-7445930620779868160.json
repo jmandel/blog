@@ -1,0 +1,122 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7445930620779868160",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7445930620779868160/",
+  "pages": [
+    "article:m9qoc",
+    "share:7445930620779868160"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "m9qoc",
+      "url": "https://www.linkedin.com/pulse/what-170-organizations-told-cms-publishing-rules-play-josh-mandel-md-m9qoc",
+      "activity_urn": "urn:li:activity:7445930621270609920"
+    }
+  ],
+  "displayed": {
+    "comments": 4,
+    "reactions": 28,
+    "reposts": 2
+  },
+  "captured": {
+    "total": 4,
+    "top_level": 4,
+    "replies": 0
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7445930620779868160,7445934347985260544)",
+      "parent_id": null,
+      "created_at": "2026-04-03T20:44:47Z",
+      "author": {
+        "name": "Philip L.",
+        "headline": "Created Privileged Identity Management (PIM), Security Mass Management Tools, Academy Award Winning DTS Theater Sound, Video Games, Books, Courses, Articles, and Many Products. Businessman, Philanthropist, Physicist.",
+        "profile_url": "https://www.linkedin.com/in/phlieberman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "\"Is there gambling in Casablanca?\" and \"And then (well, nothing).\"  I liked the quote about competition being \"taking,\"  Same game, different names, same outcome.",
+      "html": "&quot;Is there gambling in Casablanca?&quot; and &quot;And then (well, nothing).&quot;  I liked the quote about competition being &quot;taking,&quot;  Same game, different names, same outcome.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445930620779868160,7445961630124756992)",
+      "parent_id": null,
+      "created_at": "2026-04-03T22:33:11Z",
+      "author": {
+        "name": "Pablo Pazos",
+        "headline": "Enabling health information to survive beyond systems, vendors, and generations of technology | HL7 v2.x, CDA, FHIR, openEHR, DICOM, Mirth Connect | Since 2006 | Founder @ CaboLabs",
+        "profile_url": "https://www.linkedin.com/in/pablopazosgutierrez",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "So people are paying for a service and they don't know, or is difficult to find, what that service includes or not, so regulation asks to tell people clearly what's included. It seems like a basic requirement for a \"gambling\" game like the insurance industry.",
+      "html": "So people are paying for a service and they don't know, or is difficult to find, what that service includes or not, so regulation asks to tell people clearly what's included. It seems like a basic requirement for a &quot;gambling&quot; game like the insurance industry.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445930620779868160,7445963272052277248)",
+      "parent_id": null,
+      "created_at": "2026-04-03T22:39:43Z",
+      "author": {
+        "name": "Brendan Keeler",
+        "headline": "Interoperability Practice Lead at HTD Health",
+        "profile_url": "https://www.linkedin.com/in/brendan-keeler",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Here for the Takings Clause reference 👀",
+      "html": "Here for the Takings Clause reference 👀",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7445930620779868160,7446288892531617792)",
+      "parent_id": null,
+      "created_at": "2026-04-04T20:13:37Z",
+      "author": {
+        "name": "Marie Maloney",
+        "headline": "Senior Lecturer & Program Director Health Informatics Graduate Program, Northeastern University",
+        "profile_url": "https://www.linkedin.com/in/marie-maloney-5a014b3",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thanks for this analysis. As you say in the end, nothing is being done to let patients and providers know how much and what is covered.",
+      "html": "Thanks for this analysis. As you say in the end, nothing is being done to let patients and providers know how much and what is covered.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

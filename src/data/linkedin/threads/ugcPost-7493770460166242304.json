@@ -1,0 +1,1637 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7493770460166242304",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7493770460166242304/",
+  "pages": [
+    "article:gqn1c",
+    "share:7493770460166242304"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "gqn1c",
+      "url": "https://www.linkedin.com/pulse/mychart-takeout-josh-mandel-md-gqn1c",
+      "activity_urn": "urn:li:activity:7493770460917288960"
+    }
+  ],
+  "displayed": {
+    "comments": 63,
+    "reactions": 307,
+    "reposts": 13
+  },
+  "captured": {
+    "total": 63,
+    "top_level": 36,
+    "replies": 27
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493774176684593152)",
+      "parent_id": null,
+      "created_at": "2026-08-13T21:03:11Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "WHAT???   You did WHAT???\n\nI am going to try this.",
+      "html": "WHAT???   You did WHAT???<br><br>I am going to try this.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493774890882224128)",
+      "parent_id": null,
+      "created_at": "2026-08-13T21:06:01Z",
+      "author": {
+        "name": "Hugo Campos",
+        "headline": "Patient-directed AI & Critical AI Health Literacy | Research Partner | Patient Agency & Health Data Rights",
+        "profile_url": "https://www.linkedin.com/in/hugocampos",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Can't wait to try this takeout! 😋",
+      "html": "Can't wait to try this takeout! 😋",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493781297212084224)",
+      "parent_id": null,
+      "created_at": "2026-08-13T21:31:28Z",
+      "author": {
+        "name": "Brett Johnson",
+        "headline": "Key Evidence leader with Opinions in Best Practices and Data Integration for drug development and data sharing needs: Patient-Centric Health Data Platform Strategy & Implementation",
+        "profile_url": "https://www.linkedin.com/in/brettrjohnson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Excellent!!!",
+      "html": "Excellent!!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493786861627232256)",
+      "parent_id": null,
+      "created_at": "2026-08-13T21:53:35Z",
+      "author": {
+        "name": "Michael D'Incecco",
+        "headline": "Healthcare IT Leader | Digital and Patient Access Rev Cycle Advisor | Passionate Futurist | Sustainable Farming and Food Ecosphere Advocate | Outdoor and Youth Programming Volunteer",
+        "profile_url": "https://www.linkedin.com/in/michael-d-incecco-3b751527",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Portability and sovereignty of health data is critical for future care delivery models.  Excellent example of using tools to drive change!",
+      "html": "Portability and sovereignty of health data is critical for future care delivery models.  Excellent example of using tools to drive change!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493792145154379776)",
+      "parent_id": null,
+      "created_at": "2026-08-13T22:14:35Z",
+      "author": {
+        "name": "Andrea D.",
+        "headline": "Co-Founder and Board President lightcollective.org",
+        "profile_url": "https://www.linkedin.com/in/andreadowning",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Cool ( :",
+      "html": "Cool ( :",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493811886212435968)",
+      "parent_id": null,
+      "created_at": "2026-08-13T23:33:01Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "So far for me it's worked on Mass General Brigham and SolutionHealth. It's throwing an error for Beth Israel Lahey and Dartmouth Health. He's working on it ... because he's a MONSTER",
+      "html": "So far for me it's worked on Mass General Brigham and SolutionHealth. It's throwing an error for Beth Israel Lahey and Dartmouth Health. He's working on it ... because he's a MONSTER",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493817143487016960)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493811886212435968)",
+      "created_at": "2026-08-13T23:53:55Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "And it IS working now.  All my MyChart providers.  Now I have the fascinating task of somehow discovering what-all is in it and finding out if something's not!\n\nTHIS IS AMAZING.",
+      "html": "And it IS working now.  All my MyChart providers.  Now I have the fascinating task of somehow discovering what-all is in it and finding out if something's not!<br><br>THIS IS AMAZING.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493818998258667523)",
+      "parent_id": null,
+      "created_at": "2026-08-14T00:01:17Z",
+      "author": {
+        "name": "Michael Dalton",
+        "headline": "Founder and CEO, Ovatient",
+        "profile_url": "https://www.linkedin.com/in/michaelrdalton",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Oh. WOW. This is pretty much fantastic. All these years talking about patients owning their data and being able to port it. And you did it in 3 hours. Well done.",
+      "html": "Oh. WOW. This is pretty much fantastic. All these years talking about patients owning their data and being able to port it. And you did it in 3 hours. Well done.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493819264655630336)",
+      "parent_id": null,
+      "created_at": "2026-08-14T00:02:21Z",
+      "author": {
+        "name": "Andrea Pitkus, PhD, MLS(ASCP)CM, FAMIA",
+        "headline": "Laboratory Informatics Expert",
+        "profile_url": "https://www.linkedin.com/in/andrea-pitkus-phd-mls-ascp-cm-famia-2a0b748",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Health Data to go.  Does the takeout come with napkins if consuming the data is messy?",
+      "html": "Health Data to go.  Does the takeout come with napkins if consuming the data is messy?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 8,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493821769368104960)",
+      "parent_id": null,
+      "created_at": "2026-08-14T00:12:18Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Hugo Campos posted a little screen recording of watching it run.  If you have ever tried to download your records piece by piece this will FRY your brain.  I haven't tried yet to confirm whether it contains absolutely everything I've found by any other method.  But this is AMAZING.\n\nhttps://www.linkedin.com/posts/hugocampos_patientsuseai-ugcPost-7493818331552960512-WHMR/?",
+      "html": "<a href=\"https://www.linkedin.com/in/hugocampos/\">Hugo Campos</a> posted a little screen recording of watching it run.  If you have ever tried to download your records piece by piece this will FRY your brain.  I haven't tried yet to confirm whether it contains absolutely everything I've found by any other method.  But this is AMAZING.<br><br><a href=\"https://www.linkedin.com/posts/hugocampos_patientsuseai-ugcPost-7493818331552960512-WHMR/\">https://www.linkedin.com/posts/hugocampos_patientsuseai-ugcPost-7493818331552960512-WHMR/</a>?",
+      "links": [
+        {
+          "text": "https://www.linkedin.com/posts/hugocampos_patientsuseai-ugcPost-7493818331552960512-WHMR/",
+          "url": "https://www.linkedin.com/posts/hugocampos_patientsuseai-ugcPost-7493818331552960512-WHMR/"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Hugo Campos",
+          "url": "https://www.linkedin.com/in/hugocampos/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEGp4EdW1AzUg/articleshare-shrink_160/B56Z_9kMVNHcAQ-/0/1786665551678?e=1791921600&v=beta&t=QKCxomUYo5BuJ2gnWbyFBViapUeBbcCdFOP0J-Uaa04",
+          "file": "linkedin-media/037f193d0514976d.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493822489857351680)",
+      "parent_id": null,
+      "created_at": "2026-08-14T00:15:10Z",
+      "author": {
+        "name": "Arthur Hermann",
+        "headline": "Retired from Kaiser Permanente",
+        "profile_url": "https://www.linkedin.com/in/arthurhermann",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is great! Thank you!",
+      "html": "This is great! Thank you!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493826560534237185)",
+      "parent_id": null,
+      "created_at": "2026-08-14T00:31:20Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "DUDE:  I fed one of the ZIPs to ChatGPT for analysis and it said this was \"Vastly richer\" than anything before, and then it said:\n\n\"**Keep these ZIPs exactly as they are.** Do not preprocess or consolidate them. The creator has done a remarkably good job designing the export for exactly the sort of machine-assisted exploration you're contemplating.\"\n\nDUDE.",
+      "html": "DUDE:  I fed one of the ZIPs to ChatGPT for analysis and it said this was &quot;Vastly richer&quot; than anything before, and then it said:<br><br>&quot;**Keep these ZIPs exactly as they are.** Do not preprocess or consolidate them. The creator has done a remarkably good job designing the export for exactly the sort of machine-assisted exploration you're contemplating.&quot;<br><br>DUDE.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 8,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493836124935864320)",
+      "parent_id": null,
+      "created_at": "2026-08-14T01:09:20Z",
+      "author": {
+        "name": "Richard Braman",
+        "headline": "Award Winning Innovation | Healthcare Standards & Interoperability (HL7 FHIR CDS Hooks) Business Process Automation (BPM +), AI & Agentic Systems",
+        "profile_url": "https://www.linkedin.com/in/rbraman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is supposed to be a part of the certified technology in the patient portal.  It’s too bad Epic doesn’t export FHIR only CCD and on top of it their CCD XSLT has been broken for years because browsers no longer support side loading XSLT.  Thanks for doing their job for them.",
+      "html": "This is supposed to be a part of the certified technology in the patient portal.  It’s too bad Epic doesn’t export FHIR only CCD and on top of it their CCD XSLT has been broken for years because browsers no longer support side loading XSLT.  Thanks for doing their job for them.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 5,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493840646588223488)",
+      "parent_id": null,
+      "created_at": "2026-08-14T01:27:18Z",
+      "author": {
+        "name": "Gilbert Ramirez",
+        "headline": "Faculty Director of Health Information Technology at University of California, San Francisco - School of Medicine",
+        "profile_url": "https://www.linkedin.com/in/gilbert-ramirez-6a30021a5",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Strong work. The more projects like this, the less antiquated vendor based EHRs will be needed. Still need some better data standards than what FHIR provides to really make a dent. The counterpoint however, is that with too many side loaded vibe based work arounds, the jungle only grows. Im for just starting over from scratch at this point, most of the data is meaningless anyway.",
+      "html": "Strong work. The more projects like this, the less antiquated vendor based EHRs will be needed. Still need some better data standards than what FHIR provides to really make a dent. The counterpoint however, is that with too many side loaded vibe based work arounds, the jungle only grows. Im for just starting over from scratch at this point, most of the data is meaningless anyway.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493860290749583360)",
+      "parent_id": null,
+      "created_at": "2026-08-14T02:45:22Z",
+      "author": {
+        "name": "Vinay Pai",
+        "headline": "Digital Health",
+        "profile_url": "https://www.linkedin.com/in/vinay-pai-5489668",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "It was very smooth and easy to use with chrome. Could not get it to bookmark on Firefox at all (disabled all my add-ons, but still could not bookmark). Wonderful tool on chrome.",
+      "html": "It was very smooth and easy to use with chrome. Could not get it to bookmark on Firefox at all (disabled all my add-ons, but still could not bookmark). Wonderful tool on chrome.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493862839774826496)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493860290749583360)",
+      "created_at": "2026-08-14T02:55:30Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Ah, I haven't tested with anything besides Chrome. In theory this technique should be usually Firefox; I can debug tomorrow",
+      "html": "Ah, I haven't tested with anything besides Chrome. In theory this technique should be usually Firefox; I can debug tomorrow",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493864909521391616)",
+      "parent_id": null,
+      "created_at": "2026-08-14T03:03:43Z",
+      "author": {
+        "name": "Anna McCollister",
+        "headline": "Catalyst, Entrepreneur, 2X Founder, Board of Directors Member, Consultant, Advocate, Health Data Governance, Health IT Policy, Patient Mobilization, Genomics, Trust Frameworks and AI",
+        "profile_url": "https://www.linkedin.com/in/annamccollister",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Super cool! Go Josh!",
+      "html": "Super cool! Go Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493865990582116352)",
+      "parent_id": null,
+      "created_at": "2026-08-14T03:08:01Z",
+      "author": {
+        "name": "Anurag Chatterjee",
+        "headline": "Principal Software Engineer | AI Solutions Architect | Enterprise Data Platforms (Healthcare)",
+        "profile_url": "https://www.linkedin.com/in/anurag-chatterjee-80845b63",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thanks for sharing, Josh Mandel, MD! Hoping to get around to peeking under the hood this weekend and learn some more.",
+      "html": "Thanks for sharing, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>! Hoping to get around to peeking under the hood this weekend and learn some more.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493871768747687936)",
+      "parent_id": null,
+      "created_at": "2026-08-14T03:30:59Z",
+      "author": {
+        "name": "Vega Paithankar",
+        "headline": "Founder, Faav Labs, building Jukebox Jr, Faav App and more!",
+        "profile_url": "https://www.linkedin.com/in/vegapaithankar",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Erika Shepard, FNP-C check this out!",
+      "html": "<a href=\"https://www.linkedin.com/in/erikashepard/\">Erika Shepard, FNP-C</a> check this out!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Erika Shepard, FNP-C",
+          "url": "https://www.linkedin.com/in/erikashepard/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493906215656230912)",
+      "parent_id": null,
+      "created_at": "2026-08-14T05:47:51Z",
+      "author": {
+        "name": "Robert Miller",
+        "headline": "Former Chief Medical Science Officer, CancerLinQ (now retired)",
+        "profile_url": "https://www.linkedin.com/in/robert-miller-22b4469",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This looks amazing! Thank you. Will give it a shot",
+      "html": "This looks amazing! Thank you. Will give it a shot",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493956198971441152)",
+      "parent_id": null,
+      "created_at": "2026-08-14T09:06:28Z",
+      "author": {
+        "name": "Mikael Rinnetmäki",
+        "headline": "Health data expert, Sitra. Founder, Sensotrend Oy. Volunteer, HL7 standards bodies. Patient advocate.",
+        "profile_url": "https://www.linkedin.com/in/mikaelrinnetmaki",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Awesome, as usual for you Josh!\n\nRegarding the file structure of the output .zip file, did you happen to consider the draft specification for FHIR PHR (https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/)?",
+      "html": "Awesome, as usual for you <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>!<br><br>Regarding the file structure of the output .zip file, did you happen to consider the draft specification for FHIR PHR (<a href=\"https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/\">https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/</a>)?",
+      "links": [
+        {
+          "text": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/",
+          "url": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQH8I89-HgS7dw/articleshare-shrink_160/B4DZ__hHAFHQAQ-/0/1786698298671?e=1791921600&v=beta&t=yTU0IcE18oThutXS18FHhSl_8FY0uAyP2r6aPXspqR0",
+          "file": "linkedin-media/c0111e59bb3a58d1.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493965959309705216)",
+      "parent_id": null,
+      "created_at": "2026-08-14T09:45:15Z",
+      "author": {
+        "name": "Chris Cera",
+        "headline": "CTO - Helping builders with AI, design, and data",
+        "profile_url": "https://www.linkedin.com/in/chriscera",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Solid - And good luck with that trademark ;-)",
+      "html": "Solid - And good luck with that trademark ;-)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493992485090803712)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493956198971441152)",
+      "created_at": "2026-08-14T11:30:40Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Love this -- but the output format here tries not to infer / translate, But rather to faithfully present the content. (For example almost nothing has any kind of terminology or code)",
+      "html": "Love this -- but the output format here tries not to infer / translate, But rather to faithfully present the content. (For example almost nothing has any kind of terminology or code)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493994364189310976)",
+      "parent_id": null,
+      "created_at": "2026-08-14T11:38:08Z",
+      "author": {
+        "name": "Eric Rothschild, MD",
+        "headline": "Full Stack OB/GYN. Healthcare Disruptor. AI x Health Ambassador. Human in the Loop. Wartime Consigliere.",
+        "profile_url": "https://www.linkedin.com/in/eric-rothschild-md-18723a10",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD\nWhat is your overall view on a\ntakeout .zip… vs. an EHI export .zip?\nIs the latter a more ideal data source that has been inaccessible or underutilized and takeout being the workaround… or is takeout the next step forward for patient facing data retrieval and normalization?\n\nI guess the real question is how proprietary is the takeout script (or SMART on FHIR app) for Epic.\nHow much work would be needed to make this script crossover to other EHR platforms - ones with structured FHIR data/ open API / EHI export / portal?\n\nPersonally, i have a slight mental block when viewing any tool that starts and ends with Epic/MyChart as either a proof of concept or an\nMVP.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> <br>What is your overall view on a <br>takeout .zip… vs. an EHI export .zip? <br>Is the latter a more ideal data source that has been inaccessible or underutilized and takeout being the workaround… or is takeout the next step forward for patient facing data retrieval and normalization?<br><br>I guess the real question is how proprietary is the takeout script (or SMART on FHIR app) for Epic. <br>How much work would be needed to make this script crossover to other EHR platforms - ones with structured FHIR data/ open API / EHI export / portal? <br><br>Personally, i have a slight mental block when viewing any tool that starts and ends with Epic/MyChart as either a proof of concept or an <br>MVP.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7493994476177100801)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493956198971441152)",
+      "created_at": "2026-08-14T11:38:34Z",
+      "author": {
+        "name": "Mikael Rinnetmäki",
+        "headline": "Health data expert, Sitra. Founder, Sensotrend Oy. Volunteer, HL7 standards bodies. Patient advocate.",
+        "profile_url": "https://www.linkedin.com/in/mikaelrinnetmaki",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I believe the same applies to the .phr and .sphr formats. https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#fhir-storage\n\nI haven't used the spec myself yet, but have followed it's evolution in HL7 International's Patient Empowerment work group.\n\nMy impression is that one of the use cases for the spec is exactly what you have implemented.\n\nAbigail (Abbie) Watson can perhaps verify?",
+      "html": "I believe the same applies to the .phr and .sphr formats. <a href=\"https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#fhir-storage\">https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#fhir-storage</a><br><br>I haven't used the spec myself yet, but have followed it's evolution in HL7 International's Patient Empowerment work group.<br><br>My impression is that one of the use cases for the spec is exactly what you have implemented.<br><br><a href=\"https://www.linkedin.com/in/abigailwatson/\">Abigail (Abbie) Watson</a> can perhaps verify?",
+      "links": [
+        {
+          "text": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#fhir-storage",
+          "url": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#fhir-storage"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Abigail (Abbie) Watson",
+          "url": "https://www.linkedin.com/in/abigailwatson/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494025222254211073)",
+      "parent_id": null,
+      "created_at": "2026-08-14T13:40:45Z",
+      "author": {
+        "name": "Mary Murphy",
+        "headline": "Engineer | Data Analyst | Comp Sci PhD Researcher 📈 🤖| Diabetes Advocate | Sewing Engineer 🪡 | Sourdough Baker 🥖",
+        "profile_url": "https://www.linkedin.com/in/mary-murphy123a",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Can't help myself, but THIS is EPIC. Took seconds, and so brilliant to be able to have. 🤣",
+      "html": "Can't help myself, but THIS is EPIC. Took seconds, and so brilliant to be able to have. 🤣",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494037284074225664)",
+      "parent_id": null,
+      "created_at": "2026-08-14T14:28:41Z",
+      "author": {
+        "name": "Corey Amann, MD, MBA",
+        "headline": "CEO @ Project L.E.M.U.R. / AI Healthcare",
+        "profile_url": "https://www.linkedin.com/in/corey-amann-md-mba",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "love it\n\nof course we must make this automated if we want patients to really use it ... and it needs to be a part of something bigger\n\nsomething that saves them time and money every where they go\n\nits the only way to get use at scale\n\nmost patients don't give a rats pootitie about their health data ... because they assume it will be in there when they need it and it will be 100% accurate\n\nby the time they realize it isn't ... its not useful anymore\n\ni.e. its a feature ... not the benefit patients actually seek\n\nbut love it love it love it\n\nkeep building",
+      "html": "love it<br><br>of course we must make this automated if we want patients to really use it ... and it needs to be a part of something bigger<br><br>something that saves them time and money every where they go<br><br>its the only way to get use at scale<br><br>most patients don't give a rats pootitie about their health data ... because they assume it will be in there when they need it and it will be 100% accurate<br><br>by the time they realize it isn't ... its not useful anymore<br><br>i.e. its a feature ... not the benefit patients actually seek <br><br>but love it love it love it<br><br>keep building",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494037370019909632)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493836124935864320)",
+      "created_at": "2026-08-14T14:29:01Z",
+      "author": {
+        "name": "Corey Amann, MD, MBA",
+        "headline": "CEO @ Project L.E.M.U.R. / AI Healthcare",
+        "profile_url": "https://www.linkedin.com/in/corey-amann-md-mba",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Richard Braman\n\nhow's it going my man?!?!?!?",
+      "html": "<a href=\"https://www.linkedin.com/in/rbraman/\">Richard Braman</a> <br><br>how's it going my man?!?!?!?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Richard Braman",
+          "url": "https://www.linkedin.com/in/rbraman/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494038634128633856)",
+      "parent_id": null,
+      "created_at": "2026-08-14T14:34:02Z",
+      "author": {
+        "name": "Sarah Greene",
+        "headline": "Advisor | Consultant | Patient Advocate | Researcher | Writer | Board Chair",
+        "profile_url": "https://www.linkedin.com/in/smgreene27",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Jaw, meet floor. I cannot wait to try this!",
+      "html": "Jaw, meet floor. I cannot wait to try this!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494039927244881920)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493994364189310976)",
+      "created_at": "2026-08-14T14:39:11Z",
+      "author": {
+        "name": "Monte Jennings",
+        "headline": "President, CEO and Enterprise Architect at Sentia Systems",
+        "profile_url": "https://www.linkedin.com/in/monte-jennings-b497b4306",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Eric Rothschild, MD because Epic is stupid, built wrong and just evil.",
+      "html": "<a href=\"https://www.linkedin.com/in/eric-rothschild-md-18723a10/\">Eric Rothschild, MD</a> because Epic is stupid, built wrong and just evil.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Eric Rothschild, MD",
+          "url": "https://www.linkedin.com/in/eric-rothschild-md-18723a10/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494045030354108416)",
+      "parent_id": null,
+      "created_at": "2026-08-14T14:59:27Z",
+      "author": {
+        "name": "Robert Claus",
+        "headline": "Software Leader in Data and AI",
+        "profile_url": "https://www.linkedin.com/in/robert-claus-46491364",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD this might be safer as a Chrome extension where you can properly scope it.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> this might be safer as a Chrome extension where you can properly scope it.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494051787318923264)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493994364189310976)",
+      "created_at": "2026-08-14T15:26:18Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Eric Rothschild, MD I think EHI Export is almost uniformly better, but wayyy too hard to obtain",
+      "html": "<a href=\"https://www.linkedin.com/in/eric-rothschild-md-18723a10/\">Eric Rothschild, MD</a> I think EHI Export is almost uniformly better, but wayyy too hard to obtain",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Eric Rothschild, MD",
+          "url": "https://www.linkedin.com/in/eric-rothschild-md-18723a10/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494052093947826176)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493836124935864320)",
+      "created_at": "2026-08-14T15:27:31Z",
+      "author": {
+        "name": "Richard Braman",
+        "headline": "Award Winning Innovation | Healthcare Standards & Interoperability (HL7 FHIR CDS Hooks) Business Process Automation (BPM +), AI & Agentic Systems",
+        "profile_url": "https://www.linkedin.com/in/rbraman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Corey Amann, MD, MBA it’s going great thanks.  How are you?  I’m going to start stirring the pot a little.  I love what Josh Mandel, MD is doing here but it begs the question why can’t i download a FHIR bundle of my own record  from  Epic without using some other software.",
+      "html": "<a href=\"https://www.linkedin.com/in/corey-amann-md-mba/\">Corey Amann, MD, MBA</a> it’s going great thanks.  How are you?  I’m going to start stirring the pot a little.  I love what <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> is doing here but it begs the question why can’t i download a FHIR bundle of my own record  from  Epic without using some other software.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Corey Amann, MD, MBA",
+          "url": "https://www.linkedin.com/in/corey-amann-md-mba/",
+          "kind": "person"
+        },
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494065131719417856)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7494045030354108416)",
+      "created_at": "2026-08-14T16:19:20Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Robert Claus For sure -- the underlying code is structured to support an extension build.",
+      "html": "<a href=\"https://www.linkedin.com/in/robert-claus-46491364/\">Robert Claus</a> For sure -- the underlying code is structured to support an extension build.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Robert Claus",
+          "url": "https://www.linkedin.com/in/robert-claus-46491364/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494070948036472832)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493826560534237185)",
+      "created_at": "2026-08-14T16:42:27Z",
+      "author": {
+        "name": "Tingting Z.",
+        "headline": "Expert/leader in multi-cultural / patient-empowered / digital-enabled healthcare delivery (20+ yrs in academia, pharma and healthcare IT). Cancer survivor/advocate for immigrants",
+        "profile_url": "https://www.linkedin.com/in/tingtingzhang",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Dave deBronkart There might be privacy or security concerns for feeding these to AI",
+      "html": "<a href=\"https://www.linkedin.com/in/epatientdave/\">Dave deBronkart</a> There might be privacy or security concerns for feeding these to AI",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Dave deBronkart",
+          "url": "https://www.linkedin.com/in/epatientdave/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494087303833792515)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493826560534237185)",
+      "created_at": "2026-08-14T17:47:26Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Tingting Z. Of course!  Such things are 100% the individual's responsibility and choice, the same as if I tell a provider \"I want you to *email* me my test results. Yes I know the risks.\"\n\nThe thing people often forget to do, though, is compare the risk of a data leak against the risk of NOT BEING ABLE TO GET CARE from the US health system.",
+      "html": "<a href=\"https://www.linkedin.com/in/tingtingzhang/\">Tingting Z.</a> Of course!  Such things are 100% the individual's responsibility and choice, the same as if I tell a provider &quot;I want you to *email* me my test results. Yes I know the risks.&quot; <br><br>The thing people often forget to do, though, is compare the risk of a data leak against the risk of NOT BEING ABLE TO GET CARE from the US health system.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Tingting Z.",
+          "url": "https://www.linkedin.com/in/tingtingzhang/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494106187106283520)",
+      "parent_id": null,
+      "created_at": "2026-08-14T19:02:28Z",
+      "author": {
+        "name": "Marvelous Anthony O.",
+        "headline": "Using tech, AI, and storytelling to advance health and well-being (SDG 3) through websites, apps, and devices that support healing. I am also building ChroniCles, a hub of uplifting stories for patients.",
+        "profile_url": "https://www.linkedin.com/in/olatundemarvelousanthony",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Uhhhh, is that HIPAA-compliant? 🫣",
+      "html": "Uhhhh, is that HIPAA-compliant? 🫣",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494108644528037889)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7494106187106283520)",
+      "created_at": "2026-08-14T19:12:14Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "https://www.linkedin.com/posts/lucia-savage-686470_privacy-security-privacy-ugcPost-7493840278483677184-GQe3",
+      "html": "<a href=\"https://www.linkedin.com/posts/lucia-savage-686470_privacy-security-privacy-ugcPost-7493840278483677184-GQe3\">https://www.linkedin.com/posts/lucia-savage-686470_privacy-security-privacy-ugcPost-7493840278483677184-GQe3</a>",
+      "links": [
+        {
+          "text": "https://www.linkedin.com/posts/lucia-savage-686470_privacy-security-privacy-ugcPost-7493840278483677184-GQe3",
+          "url": "https://www.linkedin.com/posts/lucia-savage-686470_privacy-security-privacy-ugcPost-7493840278483677184-GQe3"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494108896119111682)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7494038634128633856)",
+      "created_at": "2026-08-14T19:13:14Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "If you give it a shot, let me know how it goes! It is still early days and if you hit any issues I am happy to help debug",
+      "html": "If you give it a shot, let me know how it goes! It is still early days and if you hit any issues I am happy to help debug",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494114509117169664)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7494106187106283520)",
+      "created_at": "2026-08-14T19:35:32Z",
+      "author": {
+        "name": "Marvelous Anthony O.",
+        "headline": "Using tech, AI, and storytelling to advance health and well-being (SDG 3) through websites, apps, and devices that support healing. I am also building ChroniCles, a hub of uplifting stories for patients.",
+        "profile_url": "https://www.linkedin.com/in/olatundemarvelousanthony",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD wow. Too bad Nigeria's EHR systems doesn't have any MyChart alternative, I would have volunteered to port yours for it.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> wow. Too bad Nigeria's EHR systems doesn't have any MyChart alternative, I would have volunteered to port yours for it.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494115584369094656)",
+      "parent_id": null,
+      "created_at": "2026-08-14T19:39:49Z",
+      "author": {
+        "name": "John Duffield",
+        "headline": "Health innovation leader | Enterprise AI adoption | Founder, Signal Two | Ex-Omnicom Health | 2x heart surgery survivor who made AI his lifeline | Author, TheFuturePatient",
+        "profile_url": "https://www.linkedin.com/in/johnjduffield",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "This is a really big deal for your medical records. The big zip file to do whatever analysis in whatever platform you choose. Amazing tool Josh Mandel, MD 👏🫡",
+      "html": "This is a really big deal for your medical records. The big zip file to do whatever analysis in whatever platform you choose. Amazing tool <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> 👏🫡",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494138194851086338)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493826560534237185)",
+      "created_at": "2026-08-14T21:09:40Z",
+      "author": {
+        "name": "Tingting Z.",
+        "headline": "Expert/leader in multi-cultural / patient-empowered / digital-enabled healthcare delivery (20+ yrs in academia, pharma and healthcare IT). Cancer survivor/advocate for immigrants",
+        "profile_url": "https://www.linkedin.com/in/tingtingzhang",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Dave deBronkart I am not saying this is an issue of data leak - it’s the patient’s own action.  The question, however, is whether the patient understands the impacts, present and future, of sharing MyChart data with those big AI models - what are the fine prints? How long will the data be stored? How will they be used? Will the data be used together with other social data?  Too many black boxes…",
+      "html": "<a href=\"https://www.linkedin.com/in/epatientdave/\">Dave deBronkart</a> I am not saying this is an issue of data leak - it’s the patient’s own action.  The question, however, is whether the patient understands the impacts, present and future, of sharing MyChart data with those big AI models - what are the fine prints? How long will the data be stored? How will they be used? Will the data be used together with other social data?  Too many black boxes…",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Dave deBronkart",
+          "url": "https://www.linkedin.com/in/epatientdave/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494147101694595073)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493994364189310976)",
+      "created_at": "2026-08-14T21:45:03Z",
+      "author": {
+        "name": "Eric Rothschild, MD",
+        "headline": "Full Stack OB/GYN. Healthcare Disruptor. AI x Health Ambassador. Human in the Loop. Wartime Consigliere.",
+        "profile_url": "https://www.linkedin.com/in/eric-rothschild-md-18723a10",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Single patient EHI export should be available on demand AFAIK\n(via EHR not Portal)",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Single patient EHI export should be available on demand AFAIK<br>(via EHR not Portal)",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494157247376146432)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493836124935864320)",
+      "created_at": "2026-08-14T22:25:22Z",
+      "author": {
+        "name": "Corey Amann, MD, MBA",
+        "headline": "CEO @ Project L.E.M.U.R. / AI Healthcare",
+        "profile_url": "https://www.linkedin.com/in/corey-amann-md-mba",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Richard Braman doing great as well ...\n\nand yes ... any patient should be able to very easily get all their medical data and be able to easily share it with any other provider\n\nthis is the end goal",
+      "html": "<a href=\"https://www.linkedin.com/in/rbraman/\">Richard Braman</a> doing great as well ... <br><br>and yes ... any patient should be able to very easily get all their medical data and be able to easily share it with any other provider<br><br>this is the end goal",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Richard Braman",
+          "url": "https://www.linkedin.com/in/rbraman/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494162781932294144)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493994364189310976)",
+      "created_at": "2026-08-14T22:47:22Z",
+      "author": {
+        "name": "Eric Rothschild, MD",
+        "headline": "Full Stack OB/GYN. Healthcare Disruptor. AI x Health Ambassador. Human in the Loop. Wartime Consigliere.",
+        "profile_url": "https://www.linkedin.com/in/eric-rothschild-md-18723a10",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Nah. It’s a feature not a bug for Epic",
+      "html": "Nah. It’s a feature not a bug for Epic",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494170012161806336)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493826560534237185)",
+      "created_at": "2026-08-14T23:16:05Z",
+      "author": {
+        "name": "Shimon Rura",
+        "headline": "Product Leader with deep Biomedical/Health experience, on a sabbatical",
+        "profile_url": "https://www.linkedin.com/in/shimonrura",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Tingting Z. Everyone has the right to share or not share their data according to their goals and values. Personally I'm way more concerned about the risk associated with nobody ever looking at my health data than the risk that someone might look and... I guess try to embarrass or blackmail me?",
+      "html": "<a href=\"https://www.linkedin.com/in/tingtingzhang/\">Tingting Z.</a> Everyone has the right to share or not share their data according to their goals and values. Personally I'm way more concerned about the risk associated with nobody ever looking at my health data than the risk that someone might look and... I guess try to embarrass or blackmail me?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Tingting Z.",
+          "url": "https://www.linkedin.com/in/tingtingzhang/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494194974830325761)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493956198971441152)",
+      "created_at": "2026-08-15T00:55:17Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Mikael Rinnetmäki just caught up on this -- it looks like I could... wrap every single file (or the whole .zip ;-)) in a DocRef and achieve compatibility but I'm not really sure this would provide value for anyone.",
+      "html": "<a href=\"https://www.linkedin.com/in/mikaelrinnetmaki/\">Mikael Rinnetmäki</a> just caught up on this -- it looks like I could... wrap every single file (or the whole .zip ;-)) in a DocRef and achieve compatibility but I'm not really sure this would provide value for anyone.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Mikael Rinnetmäki",
+          "url": "https://www.linkedin.com/in/mikaelrinnetmaki/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494288689758470144)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493956198971441152)",
+      "created_at": "2026-08-15T07:07:40Z",
+      "author": {
+        "name": "Mikael Rinnetmäki",
+        "headline": "Health data expert, Sitra. Founder, Sensotrend Oy. Volunteer, HL7 standards bodies. Patient advocate.",
+        "profile_url": "https://www.linkedin.com/in/mikaelrinnetmaki",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD not my understanding.\n\nI don't see any requirement or suggestion for you to wrap the files in a DocRef. The way I've read the spec is that you have all the files separately, concatenated together in a zip deflated .ndjson file.\n\n\"The .phr file is a single hetergenous .ndjson file that contains all of the data for a patient. It is a .ndjson file with mixed resource types. This is done to simplify the process of importing and exporting data. It is also done to simplify the process of querying data. It is easier to query a single file than it is to query multiple files. However, it does introduce import/export parsing requirements, that are not present in the Bulk Data Access format.\n\nThe generated metadata with the Composition resource and the document manifest might be different.\n\nSee also the instructions at https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#creating-a-personal-health-record.\n\nAnd https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/SphrFileType.jpg.\n\nThe benefit would be that a deterministic PHR app could then read the zip files your MyChart Takeout produces, and already know how to process the contents of the file. Thanks to the standard.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> not my understanding.<br><br>I don't see any requirement or suggestion for you to wrap the files in a DocRef. The way I've read the spec is that you have all the files separately, concatenated together in a zip deflated .ndjson file.<br><br>&quot;The .phr file is a single hetergenous .ndjson file that contains all of the data for a patient. It is a .ndjson file with mixed resource types. This is done to simplify the process of importing and exporting data. It is also done to simplify the process of querying data. It is easier to query a single file than it is to query multiple files. However, it does introduce import/export parsing requirements, that are not present in the Bulk Data Access format.<br><br>The generated metadata with the Composition resource and the document manifest might be different.<br><br>See also the instructions at <a href=\"https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#creating-a-personal-health-record\">https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#creating-a-personal-health-record</a>.<br><br>And <a href=\"https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/SphrFileType.jpg\">https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/SphrFileType.jpg</a>.<br><br>The benefit would be that a deterministic PHR app could then read the zip files your MyChart Takeout produces, and already know how to process the contents of the file. Thanks to the standard.",
+      "links": [
+        {
+          "text": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#creating-a-personal-health-record",
+          "url": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#creating-a-personal-health-record"
+        },
+        {
+          "text": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/SphrFileType.jpg",
+          "url": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/SphrFileType.jpg"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494289597942693888)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493956198971441152)",
+      "created_at": "2026-08-15T07:11:17Z",
+      "author": {
+        "name": "Mikael Rinnetmäki",
+        "headline": "Health data expert, Sitra. Founder, Sensotrend Oy. Volunteer, HL7 standards bodies. Patient advocate.",
+        "profile_url": "https://www.linkedin.com/in/mikaelrinnetmaki",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The files in the .phr or .sphr explicitly do not need to be FHIR resources.\n\nhttps://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#media-files--raw-documents\n\nhttps://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#legacy-clinical-documents-c-cda",
+      "html": "The files in the .phr or .sphr explicitly do not need to be FHIR resources.<br><br><a href=\"https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#media-files--raw-documents\">https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#media-files--raw-documents</a><br><br><a href=\"https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#legacy-clinical-documents-c-cda\">https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#legacy-clinical-documents-c-cda</a>",
+      "links": [
+        {
+          "text": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#media-files--raw-documents",
+          "url": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#media-files--raw-documents"
+        },
+        {
+          "text": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#legacy-clinical-documents-c-cda",
+          "url": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig/en/recordkeeping.html#legacy-clinical-documents-c-cda"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494293671870091264)",
+      "parent_id": null,
+      "created_at": "2026-08-15T07:27:28Z",
+      "author": {
+        "name": "Gaurav Mathur",
+        "headline": "Palliative Care Physician | Focused on clarity in complex illness | Founder building Health-GPT",
+        "profile_url": "https://www.linkedin.com/in/gaurav-mathur-a303782",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Wow. Just wow. And to answer the HIPAA question- HIPAA does not even apply here. If a patient accesses their own records, they can do whatever they want with them. They can post their records on Facebook or print them and make a paper airplane.",
+      "html": "Wow. Just wow. And to answer the HIPAA question- HIPAA does not even apply here. If a patient accesses their own records, they can do whatever they want with them. They can post their records on Facebook or print them and make a paper airplane.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494362238519279616)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493956198971441152)",
+      "created_at": "2026-08-15T11:59:56Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "You're right that it's \"SHOULD\"  wrap in doc ref. But then if I don't, the deterministic PHR has nothing but a patient resources and a pile of unknowns. Why not just treat the whole zip as an unknown.",
+      "html": "You're right that it's &quot;SHOULD&quot;  wrap in doc ref. But then if I don't, the deterministic PHR has nothing but a patient resources and a pile of unknowns. Why not just treat the whole zip as an unknown.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494400356076974082)",
+      "parent_id": null,
+      "created_at": "2026-08-15T14:31:24Z",
+      "author": {
+        "name": "Helene M. Epstein",
+        "headline": "Award-winning writer and advocate for patients. Author: Patient No More, the healthcare survival resource for patients. Speaker. Board Member Pen Parentis.",
+        "profile_url": "https://www.linkedin.com/in/hmepstein",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "Josh, you said it was still early days. I am very excited about this and looking forward to trying it when you have finished debugging it. More importantly, when it's ready for the public, I would like to interview you and share this with my readers. Even though my articles are about patient safety and diagnostic quality written for the average reader, my overall theme is surviving healthcare in the US and this is an amazing tool I would like to share with them.",
+      "html": "Josh, you said it was still early days. I am very excited about this and looking forward to trying it when you have finished debugging it. More importantly, when it's ready for the public, I would like to interview you and share this with my readers. Even though my articles are about patient safety and diagnostic quality written for the average reader, my overall theme is surviving healthcare in the US and this is an amazing tool I would like to share with them.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494425697323630592)",
+      "parent_id": null,
+      "created_at": "2026-08-15T16:12:05Z",
+      "author": {
+        "name": "Howard Look",
+        "headline": "Founder, Board Chair, Strategic Advisor. Tidepool | Former CEO",
+        "profile_url": "https://www.linkedin.com/in/howardlook",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Well done. Thanks, Josh!",
+      "html": "Well done. Thanks, Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494467204495740928)",
+      "parent_id": null,
+      "created_at": "2026-08-15T18:57:02Z",
+      "author": {
+        "name": "Jonathan Heflin, MD, MPH",
+        "headline": "Physician at Mass General Brigham",
+        "profile_url": "https://www.linkedin.com/in/jonathanheflin",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Great work Josh! Keep building!",
+      "html": "Great work Josh! Keep building!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494496413871943680)",
+      "parent_id": null,
+      "created_at": "2026-08-15T20:53:06Z",
+      "author": {
+        "name": "John Silva",
+        "headline": "FHIR Developer at Vermonster Boston, MA",
+        "profile_url": "https://www.linkedin.com/in/johnasilva",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thanks Josh, this is great!    How does this compare to your previous Health Skillz “Epic export” project?\n\nThe ZIP file is great for sharing, is there a visualization component “in the works” or not really necessary since you can see all this data in Epic MyChart?   (I would think that a separate UI from Epic’s MyChart could be much more user friendly…)\n\nOne question/caveat … it seems like you’re depending on a Epic API; is that documented and supported or more of a ‘backdoor’?   I wonder if Epic changes it tomorrow would this stop working (though with AI you could probably fix it easily — unless Epic decides to ‘shut down’ this mechanism)",
+      "html": "Thanks Josh, this is great!    How does this compare to your previous Health Skillz “Epic export” project?<br><br>The ZIP file is great for sharing, is there a visualization component “in the works” or not really necessary since you can see all this data in Epic MyChart?   (I would think that a separate UI from Epic’s MyChart could be much more user friendly…)<br><br>One question/caveat … it seems like you’re depending on a Epic API; is that documented and supported or more of a ‘backdoor’?   I wonder if Epic changes it tomorrow would this stop working (though with AI you could probably fix it easily — unless Epic decides to ‘shut down’ this mechanism)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494564757862043648)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7494496413871943680)",
+      "created_at": "2026-08-16T01:24:40Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "These are sort of complementary approaches with different sets of trade-offs. FHIR API is highly structured including strong terminology support, and reasonably easy to obtain but incomplete in its coverage of the clinical record. EHI export is very well structured, But with poor terminology coverage as currently implemented, and way too difficult/ slow to obtain. The takeout approach has reasonable coverage, poor terminology support (with the possible exception of the CDAs that are included), and easy to obtain. You are absolutely right that the format or underlying apis that I use for takeout are subject to change at any time (but yes, noticing and and correcting these kinds of issues does get easier with AI)",
+      "html": "These are sort of complementary approaches with different sets of trade-offs. FHIR API is highly structured including strong terminology support, and reasonably easy to obtain but incomplete in its coverage of the clinical record. EHI export is very well structured, But with poor terminology coverage as currently implemented, and way too difficult/ slow to obtain. The takeout approach has reasonable coverage, poor terminology support (with the possible exception of the CDAs that are included), and easy to obtain. You are absolutely right that the format or underlying apis that I use for takeout are subject to change at any time (but yes, noticing and and correcting these kinds of issues does get easier with AI)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7494970405024124928)",
+      "parent_id": null,
+      "created_at": "2026-08-17T04:16:34Z",
+      "author": {
+        "name": "Sarah Bascand",
+        "headline": "Pediatric NP | MBA | Customer Success Manager at LeanTaas | Strategic Advisor at ConvergeEQ",
+        "profile_url": "https://www.linkedin.com/in/sarah-bascand",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Awesome work 😎",
+      "html": "Awesome work 😎",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7495052359950110720)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493826560534237185)",
+      "created_at": "2026-08-17T09:42:13Z",
+      "author": {
+        "name": "Tingting Z.",
+        "headline": "Expert/leader in multi-cultural / patient-empowered / digital-enabled healthcare delivery (20+ yrs in academia, pharma and healthcare IT). Cancer survivor/advocate for immigrants",
+        "profile_url": "https://www.linkedin.com/in/tingtingzhang",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Shimon Rura Again, as long as the individual is fully aware of the risks feeding his/her health records to AI models (such as public disclosure in data transit, in data storage and analytics, and in family health risks, just to name a few), it’s entirely the individual’s own responsibility to do so.",
+      "html": "<a href=\"https://www.linkedin.com/in/shimonrura/\">Shimon Rura</a> Again, as long as the individual is fully aware of the risks feeding his/her health records to AI models (such as public disclosure in data transit, in data storage and analytics, and in family health risks, just to name a few), it’s entirely the individual’s own responsibility to do so.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Shimon Rura",
+          "url": "https://www.linkedin.com/in/shimonrura/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7495125809536466944)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493994364189310976)",
+      "created_at": "2026-08-17T14:34:05Z",
+      "author": {
+        "name": "Barry Schechter",
+        "headline": "HIPAA Security Risk Assessor for Medical Practices | Keeping Ophthalmology & SMB Practices Compliant, Fine-Free, and Running",
+        "profile_url": "https://www.linkedin.com/in/barry-schechter-866905322",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Eric Rothschild, MD It seems that software companies have incorporated this phrase into their being and pull it out with regularity.  As a software troubleshooter, it means that our guys didn't document or test it and you're stuck with it.",
+      "html": "<a href=\"https://www.linkedin.com/in/eric-rothschild-md-18723a10/\">Eric Rothschild, MD</a> It seems that software companies have incorporated this phrase into their being and pull it out with regularity.  As a software troubleshooter, it means that our guys didn't document or test it and you're stuck with it.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Eric Rothschild, MD",
+          "url": "https://www.linkedin.com/in/eric-rothschild-md-18723a10/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7495148738202615808)",
+      "parent_id": "urn:li:comment:(ugcPost:7493770460166242304,7493826560534237185)",
+      "created_at": "2026-08-17T16:05:12Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "John D'Amore",
+      "html": "<a href=\"https://www.linkedin.com/in/jdamore/\">John D'Amore</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "John D'Amore",
+          "url": "https://www.linkedin.com/in/jdamore/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7495235618906562560)",
+      "parent_id": null,
+      "created_at": "2026-08-17T21:50:26Z",
+      "author": {
+        "name": "Charlie Alfarah, MEd, CDP",
+        "headline": "Founder @ ProjectLeo | AI | Health Scientist | Health Equity | Education",
+        "profile_url": "https://www.linkedin.com/in/calfarah",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Seems like there’s a consensus on hesitation with introducing that level of personal info to any of the existing AI solutions.\n\nExactly why we’ve built a patient-first, fully independent healthcare AI solution, ProjectLeo.",
+      "html": "Seems like there’s a consensus on hesitation with introducing that level of personal info to any of the existing AI solutions. <br><br>Exactly why we’ve built a patient-first, fully independent healthcare AI solution, <a href=\"https://www.linkedin.com/company/projectleo/\">ProjectLeo</a>.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "ProjectLeo",
+          "url": "https://www.linkedin.com/company/projectleo/",
+          "kind": "organization"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7495246656653778944)",
+      "parent_id": null,
+      "created_at": "2026-08-17T22:34:17Z",
+      "author": {
+        "name": "Andrew Gibbons MBA, MS",
+        "headline": "Healthcare Analytics Leader | AI, Value-Based Care & Medical Economics | Claims, Attribution & Provider Performance | MSSP, MA, ACO REACH",
+        "profile_url": "https://www.linkedin.com/in/andrewgibbonsanalytics",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Really interesting example of the gap between data being technically accessible and actually usable by patients. Also love the development model here…AI dramatically accelerated the build, while the resulting workflow stays deterministic and keeps the health data local.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Really interesting example of the gap between data being technically accessible and actually usable by patients. Also love the development model here…AI dramatically accelerated the build, while the resulting workflow stays deterministic and keeps the health data local.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493770460166242304,7498407669360160769)",
+      "parent_id": null,
+      "created_at": "2026-08-26T15:55:02Z",
+      "author": {
+        "name": "Sagy Pundak Mintz",
+        "headline": "Traveling the world one country at a time",
+        "profile_url": "https://www.linkedin.com/in/sagymintz",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh, this is outstanding. This is something that was needed for a long time. Thanks for getting it done.",
+      "html": "Josh, this is outstanding. This is something that was needed for a long time. Thanks for getting it done.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

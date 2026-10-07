@@ -1,0 +1,257 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:activity:7453262341795864576",
+  "url": "https://www.linkedin.com/feed/update/urn:li:activity:7453262341795864576/",
+  "pages": [
+    "share:7453262340877291520"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7453262341795864576"
+    }
+  ],
+  "displayed": {
+    "comments": 10,
+    "reactions": 50,
+    "reposts": 2
+  },
+  "captured": {
+    "total": 10,
+    "top_level": 7,
+    "replies": 3
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453276111356006400)",
+      "parent_id": null,
+      "created_at": "2026-04-24T02:58:20Z",
+      "author": {
+        "name": "John Grimes",
+        "headline": "Health Data Interop + Analytics",
+        "profile_url": "https://www.linkedin.com/in/johngrimes",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Try Amazon",
+      "html": "Try Amazon",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453284722601959424)",
+      "parent_id": null,
+      "created_at": "2026-04-24T03:32:33Z",
+      "author": {
+        "name": "Aaron Madsen",
+        "headline": "Building POEM - privacy preserving open entity matching for healthcare (and everywhere else)",
+        "profile_url": "https://www.linkedin.com/in/aaron-madsen-0302031",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Context is everything. I hope your agent finds something that you like!",
+      "html": "Context is everything. I hope your agent finds something that you like!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453301626070806528)",
+      "parent_id": null,
+      "created_at": "2026-04-24T04:39:43Z",
+      "author": {
+        "name": "Mark Begale",
+        "headline": "Vice President at Vibrent Health",
+        "profile_url": "https://www.linkedin.com/in/mark-begale-7ab25814",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I mean... Guava jam is a jam after all.",
+      "html": "I mean... Guava jam is a jam after all.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453566930545897472)",
+      "parent_id": null,
+      "created_at": "2026-04-24T22:13:56Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "For us in the cheap seats can you explain what you were TRYING to do??",
+      "html": "For us in the cheap seats can you explain what you were TRYING to do??",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453578700387880960)",
+      "parent_id": "urn:li:comment:(activity:7453262341795864576,7453566930545897472)",
+      "created_at": "2026-04-24T23:00:42Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Trying to take my VTech baby monitor and view the video feed on my computer instead of their battery-hogging mobile app.",
+      "html": "Trying to take my VTech baby monitor and view the video feed on my computer instead of their battery-hogging mobile app.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453768793543135232)",
+      "parent_id": null,
+      "created_at": "2026-04-25T11:36:04Z",
+      "author": {
+        "name": "Alex Shteynshlyuger",
+        "headline": "Director of Urology, Board Certified Urologist at New York Urology Specialists",
+        "profile_url": "https://www.linkedin.com/in/alex-shteynshlyuger-57b3b33",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "It is recreating thoughts of average coder with great fidelity.",
+      "html": "It is recreating thoughts of average coder with great fidelity.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453810107471065088)",
+      "parent_id": null,
+      "created_at": "2026-04-25T14:20:14Z",
+      "author": {
+        "name": "Shimon Rura",
+        "headline": "Product Leader with deep Biomedical/Health experience, on a sabbatical",
+        "profile_url": "https://www.linkedin.com/in/shimonrura",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Pretty funny to see a machine making a linguistic association that makes no sense. I think this might just be the price we pay for the joy of puns.",
+      "html": "Pretty funny to see a machine making a linguistic association that makes no sense. I think this might just be the price we pay for the joy of puns.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453812181567201281)",
+      "parent_id": "urn:li:comment:(activity:7453262341795864576,7453810107471065088)",
+      "created_at": "2026-04-25T14:28:29Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Yes, though I think the component generating the thought summaries is pretty disconnected from the llm doing the thinking.",
+      "html": "Yes, though I think the component generating the thought summaries is pretty disconnected from the llm doing the thinking.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7453812931634491392)",
+      "parent_id": "urn:li:comment:(activity:7453262341795864576,7453810107471065088)",
+      "created_at": "2026-04-25T14:31:28Z",
+      "author": {
+        "name": "Shimon Rura",
+        "headline": "Product Leader with deep Biomedical/Health experience, on a sabbatical",
+        "profile_url": "https://www.linkedin.com/in/shimonrura",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD yeah - might mirror the parallelism found in actual brains.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> yeah - might mirror the parallelism found in actual brains.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7453262341795864576,7455338285549301760)",
+      "parent_id": null,
+      "created_at": "2026-04-29T19:32:40Z",
+      "author": {
+        "name": "Victoria Strateman",
+        "headline": "Software Developer at Vermonster",
+        "profile_url": "https://www.linkedin.com/in/vstrateman123",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "> Ran`sushi build`> I need to find the freshest sushi-grade fish, along with nori and tobiko. Give me a second to search around for some nearby markets!",
+      "html": "&gt; Ran`sushi build`&gt; I need to find the freshest sushi-grade fish, along with nori and tobiko. Give me a second to search around for some nearby markets!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

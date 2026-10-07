@@ -1,0 +1,30 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:share:7447284731152453633",
+  "url": "https://www.linkedin.com/feed/update/urn:li:share:7447284731152453633/",
+  "pages": [
+    "share:7447284731152453633"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7447284732285050880"
+    }
+  ],
+  "displayed": {
+    "comments": 0,
+    "reactions": 40,
+    "reposts": 0
+  },
+  "captured": {
+    "total": 0,
+    "top_level": 0,
+    "replies": 0
+  },
+  "complete": true,
+  "sort": "n/a (no comments)",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "youtube-registry/1",
+  "channel": "https://www.youtube.com/channel/UCqV1UeP3YSFQeK3Nu_FGl2w",
+  "videos": {
+    "article:3tssc#1": {
+      "share_urn": null,
+      "linkedin_url": "https://www.linkedin.com/pulse/killing-clipboard-update-cross-platform-smart-health-w3c-mandel-md-3tssc",
+      "duration_s": 756,
+      "posted_at": "2026-05-07T17:02:47Z",
+      "checked_at": "2026-10-06",
+      "youtube_id": "2SSidwkiTVM",
+      "match": "duration+title",
+      "title": "SMART Health Check-with mdoc on Android + iOS",
+      "youtube_duration_s": 756.0,
+      "youtube_upload_date": "2026-05-07"
+    },
+    "article:9jpqc#1": {
+      "share_urn": null,
+      "linkedin_url": "https://www.linkedin.com/pulse/share-your-health-record-like-boarding-pass-ai-agents-josh-mandel-md-9jpqc",
+      "duration_s": 683,
+      "posted_at": "2026-06-12T18:57:07Z",
+      "checked_at": "2026-10-06",
+      "youtube_id": "jIsHPZDfE64",
+      "match": "duration+title",
+      "title": "Kill The Clipboard: Agent SKILL.md",
+      "youtube_duration_s": 684.0,
+      "youtube_upload_date": "2026-06-12"
+    },
+    "urn:li:activity:7492546574942629888": {
+      "share_urn": "urn:li:ugcPost:7492397711032422400",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7492397711032422400/",
+      "duration_s": 899,
+      "posted_at": "2026-08-10T11:45:08Z",
+      "checked_at": "2026-10-06",
+      "youtube_id": "pyIkbTBgksg",
+      "match": "manual",
+      "note": "User chose this longer YouTube version (20:59) over the 15:00 LinkedIn cut; not the same video."
+    },
+    "urn:li:activity:7506820918892056576": {
+      "share_urn": "urn:li:ugcPost:7506820719977205760",
+      "linkedin_url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7506820719977205760/",
+      "duration_s": 444,
+      "posted_at": "2026-09-18T21:05:29Z",
+      "checked_at": "2026-10-06",
+      "youtube_id": "eAif80MGqgU",
+      "match": "uploaded"
+    }
+  }
+}

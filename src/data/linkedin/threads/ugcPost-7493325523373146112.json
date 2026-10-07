@@ -1,0 +1,346 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7493325523373146112",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7493325523373146112/",
+  "pages": [
+    "article:2koye",
+    "share:7493325523373146112"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7493325524073672705"
+    }
+  ],
+  "displayed": {
+    "comments": 12,
+    "reactions": 81,
+    "reposts": 3
+  },
+  "captured": {
+    "total": 12,
+    "top_level": 9,
+    "replies": 3
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7493333316608348160)",
+      "parent_id": null,
+      "created_at": "2026-08-12T15:51:22Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I am seeing this about to happen in real life. Do you think COIN could help with this?",
+      "html": "I am seeing this about to happen in real life. Do you think COIN could help with this?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7493334152168001537)",
+      "parent_id": null,
+      "created_at": "2026-08-12T15:54:41Z",
+      "author": {
+        "name": "Matt Abrams",
+        "headline": "Advisor, Board Member, Co-Founder, Venture Partner, Dot Connector: cursed (and blessed) with curiosity and a drive to #leaveitbetter #startups #natsec #venture #informationquality #healthcare #informationintegrity",
+        "profile_url": "https://www.linkedin.com/in/mattabrams",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "David Bray, PhD Kyleanne Hunter Gabe Colburn Celine Gounder, MD, ScM, FIDSA",
+      "html": "<a href=\"https://www.linkedin.com/in/dbray/\">David Bray, PhD</a> <a href=\"https://www.linkedin.com/in/kyleanne-hunter-07858715/\">Kyleanne Hunter</a> <a href=\"https://www.linkedin.com/in/gabe-colburn/\">Gabe Colburn</a> <a href=\"https://www.linkedin.com/in/celinegounder/\">Celine Gounder, MD, ScM, FIDSA</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "David Bray, PhD",
+          "url": "https://www.linkedin.com/in/dbray/",
+          "kind": "person"
+        },
+        {
+          "name": "Kyleanne Hunter",
+          "url": "https://www.linkedin.com/in/kyleanne-hunter-07858715/",
+          "kind": "person"
+        },
+        {
+          "name": "Gabe Colburn",
+          "url": "https://www.linkedin.com/in/gabe-colburn/",
+          "kind": "person"
+        },
+        {
+          "name": "Celine Gounder, MD, ScM, FIDSA",
+          "url": "https://www.linkedin.com/in/celinegounder/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7493366928917585920)",
+      "parent_id": null,
+      "created_at": "2026-08-12T18:04:55Z",
+      "author": {
+        "name": "dr. William Goossen FHL7",
+        "headline": "Health informatician",
+        "profile_url": "https://www.linkedin.com/in/williamgoossen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "End of last century I compiled a set of criteria for nursing care documentation in the EHR. Criterion 1 . EHR shall support both structured data AND free text.\nA proper clinical useful EHR shall never force any clinician to choose only either one approach.",
+      "html": "End of last century I compiled a set of criteria for nursing care documentation in the EHR. Criterion 1 . EHR shall support both structured data AND free text. <br>A proper clinical useful EHR shall never force any clinician to choose only either one approach.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7493392938836643840)",
+      "parent_id": null,
+      "created_at": "2026-08-12T19:48:17Z",
+      "author": {
+        "name": "Janice Tufte",
+        "headline": "Hassanah - owner small business -Patient Partner Co-I, Co- Lead, Advisor in Health Systems Research and Improvement - strategist, connector, catalyst #socialrisks #lhs",
+        "profile_url": "https://www.linkedin.com/in/janicetufte",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "wow that is a large discrepancy",
+      "html": "wow that is a large discrepancy",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7493396270007619586)",
+      "parent_id": null,
+      "created_at": "2026-08-12T20:01:31Z",
+      "author": {
+        "name": "Jeff L.",
+        "headline": "Streamlining Healthcare Quality Reporting with AI",
+        "profile_url": "https://www.linkedin.com/in/jeffreylebrun",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Agree. The future of quality will include making it more efficient to include the right information from the free text notes prior to submission. This already happens with abstracted measures. LLMs are able to make the abstraction process for these measures much more efficient and accurate when they are packaged with the right data pipeline and expert feedback loop.",
+      "html": "Agree. The future of quality will include making it more efficient to include the right information from the free text notes prior to submission. This already happens with abstracted measures. LLMs are able to make the abstraction process for these measures much more efficient and accurate when they are packaged with the right data pipeline and expert feedback loop.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7493421318076276736)",
+      "parent_id": null,
+      "created_at": "2026-08-12T21:41:03Z",
+      "author": {
+        "name": "Richard Braman",
+        "headline": "Award Winning Innovation | Healthcare Standards & Interoperability (HL7 FHIR CDS Hooks) Business Process Automation (BPM +), AI & Agentic Systems",
+        "profile_url": "https://www.linkedin.com/in/rbraman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "That’s not good.  It looks like structured codes have a way to go in practice.",
+      "html": "That’s not good.  It looks like structured codes have a way to go in practice.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7493454888790560768)",
+      "parent_id": null,
+      "created_at": "2026-08-12T23:54:27Z",
+      "author": {
+        "name": "James Weinstein",
+        "headline": "VP Microsoft MAI",
+        "profile_url": "https://www.linkedin.com/in/james-weinstein-410a76177",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Love it Josh\nAlso note difference between CPT codes and ICD codes !",
+      "html": "Love it Josh <br>Also note difference between CPT codes and ICD codes !",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7493753006606290944)",
+      "parent_id": null,
+      "created_at": "2026-08-13T19:39:03Z",
+      "author": {
+        "name": "Anna McCollister",
+        "headline": "Catalyst, Entrepreneur, 2X Founder, Board of Directors Member, Consultant, Advocate, Health Data Governance, Health IT Policy, Patient Mobilization, Genomics, Trust Frameworks and AI",
+        "profile_url": "https://www.linkedin.com/in/annamccollister",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The more data I see from the exchanges, the more frightened I dm of AI in the clinical setting that uses that data. The gaps and inaccuracy are significant.",
+      "html": "The more data I see from the exchanges, the more frightened I dm of AI in the clinical setting that uses that data. The gaps and inaccuracy are significant.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7494377211458826240)",
+      "parent_id": "urn:li:comment:(ugcPost:7493325523373146112,7493753006606290944)",
+      "created_at": "2026-08-15T12:59:26Z",
+      "author": {
+        "name": "Brett Johnson",
+        "headline": "Key Evidence leader with Opinions in Best Practices and Data Integration for drug development and data sharing needs: Patient-Centric Health Data Platform Strategy & Implementation",
+        "profile_url": "https://www.linkedin.com/in/brettrjohnson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Anna McCollister yup, this disparity is real. Codes and claims work to record episodic transactions to maximize profit. We need a paradigm for data to represent real longitudinal health for real AI trading in CDS (I know I'm preaching to the choir!)",
+      "html": "<a href=\"https://www.linkedin.com/in/annamccollister/\">Anna McCollister</a> yup, this disparity is real. Codes and claims work to record episodic transactions to maximize profit. We need a paradigm for data to represent real longitudinal health for real AI trading in CDS (I know I'm preaching to the choir!)",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Anna McCollister",
+          "url": "https://www.linkedin.com/in/annamccollister/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7494500066205020160)",
+      "parent_id": "urn:li:comment:(ugcPost:7493325523373146112,7493753006606290944)",
+      "created_at": "2026-08-15T21:07:36Z",
+      "author": {
+        "name": "John Scully",
+        "headline": "Decentralized Medical Records System. Blockchain-based system, US patent 12266430",
+        "profile_url": "https://www.linkedin.com/in/john-scully-61ba80279",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Anna McCollister Obama's administration initiated significant changes to socialize and destroy America's healthcare system that have had far-reaching consequences.\nRight after his inauguration in January 2009, he enacted the HITECH Act, mandating the use of electronic health records (EHRs). This move preceded the rollout of the Affordable Care Act, known as Obamacare.  This shift led to the formation of large healthcare corporations, resulting in 80% of physicians becoming employees and experiencing high levels of burnout.  President Trump must take action to rectify the harm caused by the previous administrations.  The American people deserve better, and patients are anxiously waiting for the improvements they need.",
+      "html": "<a href=\"https://www.linkedin.com/in/annamccollister/\">Anna McCollister</a> Obama's administration initiated significant changes to socialize and destroy America's healthcare system that have had far-reaching consequences. <br>Right after his inauguration in January 2009, he enacted the HITECH Act, mandating the use of electronic health records (EHRs). This move preceded the rollout of the Affordable Care Act, known as Obamacare.  This shift led to the formation of large healthcare corporations, resulting in 80% of physicians becoming employees and experiencing high levels of burnout.  President Trump must take action to rectify the harm caused by the previous administrations.  The American people deserve better, and patients are anxiously waiting for the improvements they need.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Anna McCollister",
+          "url": "https://www.linkedin.com/in/annamccollister/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7497475595501596672)",
+      "parent_id": "urn:li:comment:(ugcPost:7493325523373146112,7493753006606290944)",
+      "created_at": "2026-08-24T02:11:18Z",
+      "author": {
+        "name": "Kaushal Kulkarni, M.D.",
+        "headline": "Physician and Chief Medical Officer at Predoc | Connecting and organizing healthcare data",
+        "profile_url": "https://www.linkedin.com/in/thevisiondoctor",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Anna McCollister absolutely agree! In addition to the gaps and inaccuracy, there is just the sheer volume of duplication and discrepancy that has to be dealt with. Linking a study you may find interesting that highlights the problem: https://www.predoc.ai/blog/beyond-access-performance-as-the-new-standard-for-hie-data",
+      "html": "<a href=\"https://www.linkedin.com/in/annamccollister/\">Anna McCollister</a> absolutely agree! In addition to the gaps and inaccuracy, there is just the sheer volume of duplication and discrepancy that has to be dealt with. Linking a study you may find interesting that highlights the problem: <a href=\"https://www.predoc.ai/blog/beyond-access-performance-as-the-new-standard-for-hie-data\">https://www.predoc.ai/blog/beyond-access-performance-as-the-new-standard-for-hie-data</a>",
+      "links": [
+        {
+          "text": "https://www.predoc.ai/blog/beyond-access-performance-as-the-new-standard-for-hie-data",
+          "url": "https://www.predoc.ai/blog/beyond-access-performance-as-the-new-standard-for-hie-data"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Anna McCollister",
+          "url": "https://www.linkedin.com/in/annamccollister/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQGpyhGYszOQug/articleshare-shrink_160/B56aAxcU9nHMAQ-/0/1787535905224?e=1791925200&v=beta&t=s9sZWMQdrm15jzzCrC7B1ujcWc5JffVRwClBA8d8Eb8",
+          "file": "linkedin-media/2207ab6c8d29c466.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7493325523373146112,7497729808584331264)",
+      "parent_id": null,
+      "created_at": "2026-08-24T19:01:27Z",
+      "author": {
+        "name": "Marc Eustaquio DPM, FACFAS",
+        "headline": "Board Certified Podiatric Surgeon | Post-graduate Certificate in Healthcare Informatics | Attending",
+        "profile_url": "https://www.linkedin.com/in/marc-eustaquio-dpm",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "It’s not just this even codes that aren’t billable but play a significant role in outcomes like SDOH data",
+      "html": "It’s not just this even codes that aren’t billable but play a significant role in outcomes like SDOH data",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

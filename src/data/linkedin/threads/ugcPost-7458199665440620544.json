@@ -1,0 +1,535 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7458199665440620544",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7458199665440620544/",
+  "pages": [
+    "article:3tssc",
+    "share:7458199665440620544"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "3tssc",
+      "url": "https://www.linkedin.com/pulse/killing-clipboard-update-cross-platform-smart-health-w3c-mandel-md-3tssc",
+      "activity_urn": "urn:li:activity:7458199666308980736"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7458199666308980736"
+    }
+  ],
+  "displayed": {
+    "comments": 20,
+    "reactions": 116,
+    "reposts": 10
+  },
+  "captured": {
+    "total": 20,
+    "top_level": 17,
+    "replies": 3
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458208100446175232)",
+      "parent_id": null,
+      "created_at": "2026-05-07T17:36:17Z",
+      "author": {
+        "name": "Alex B.",
+        "headline": "Technology Executive & CTO | Driving Scalable Solutions | Global Tech Operations | Expert in Software Development and AI | Mobile Apps | Building High-Performance Teams | Mentor | Ex IBM, Ex Verizon, Ex Tyco/ADT",
+        "profile_url": "https://www.linkedin.com/in/alexbarenboim",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Idiomatic FHIR-based resource sharing with cross-platform wallet support is exactly the kind of interoperability we have been missing. The SMART Health Check-in Protocol looks like a solid foundation for patient-centered data exchange.",
+      "html": "Idiomatic FHIR-based resource sharing with cross-platform wallet support is exactly the kind of interoperability we have been missing. The SMART Health Check-in Protocol looks like a solid foundation for patient-centered data exchange.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458218852338880513)",
+      "parent_id": null,
+      "created_at": "2026-05-07T18:19:01Z",
+      "author": {
+        "name": "Mathias Rechtzigel",
+        "headline": "Innovation Fellow, Medicaid Systems and Technology. Helping modernize some of the most important systems in the country through modern engineering, product, and design best practices.",
+        "profile_url": "https://www.linkedin.com/in/mathiasrechtzigel",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I've been talking about the new W3C data standards to solve some government benefits challenges as well! Very exciting space.",
+      "html": "I've been talking about the new W3C data standards to solve some government benefits challenges as well! Very exciting space.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458234805286072320)",
+      "parent_id": null,
+      "created_at": "2026-05-07T19:22:24Z",
+      "author": {
+        "name": "Jed Reinitz",
+        "headline": "Founder, Cascade Agentic Labs | Technical Product Leader | Incubating Agentic AI Products | AI/ML Product Strategy & Commercialization",
+        "profile_url": "https://www.linkedin.com/in/jedreinitz",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This looks like a promising approach for reducing the pain of filling out medical forms. I assume provider adoption is going to be the bottleneck. How long do you realistically think it will take for SMART Health Links to percolate through the industry?",
+      "html": "This looks like a promising approach for reducing the pain of filling out medical forms. I assume provider adoption is going to be the bottleneck. How long do you realistically think it will take for SMART Health Links to percolate through the industry?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458247662220492800)",
+      "parent_id": "urn:li:comment:(ugcPost:7458199665440620544,7458234805286072320)",
+      "created_at": "2026-05-07T20:13:30Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Very hard to predict the speed of spread, but I think we could see early implementations of this general pattern this calendar year.",
+      "html": "Very hard to predict the speed of spread, but I think we could see early implementations of this general pattern this calendar year.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458269329932038144)",
+      "parent_id": null,
+      "created_at": "2026-05-07T21:39:36Z",
+      "author": {
+        "name": "John Scully",
+        "headline": "Decentralized Medical Records System. Blockchain-based system, US patent 12266430",
+        "profile_url": "https://www.linkedin.com/in/john-scully-61ba80279",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thank you, Josh, for sharing your perspective. I believe the fundamental issue with the electronic health record (EHR) framework lies in its original design, which prioritized billing. The HITECH Act, implemented by President Obama with Judy Faulkner from Epic, marked a significant turning point for the concept of every patient having a single medical record. President Trump perceptively identified the core problem and stated, “We will put you in control of your own medical records. We require doctors to make your records available electronically, and you own them. You control them; they will be portable, allowing you to work seamlessly with all of your medical providers, which will make your life much easier.”\n\nAchieving this goal is feasible by utilizing blockchain technology and adhering to the President's policy.",
+      "html": "Thank you, Josh, for sharing your perspective. I believe the fundamental issue with the electronic health record (EHR) framework lies in its original design, which prioritized billing. The HITECH Act, implemented by President Obama with Judy Faulkner from Epic, marked a significant turning point for the concept of every patient having a single medical record. President Trump perceptively identified the core problem and stated, “We will put you in control of your own medical records. We require doctors to make your records available electronically, and you own them. You control them; they will be portable, allowing you to work seamlessly with all of your medical providers, which will make your life much easier.” <br><br>Achieving this goal is feasible by utilizing blockchain technology and adhering to the President's policy.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458306983100850196)",
+      "parent_id": null,
+      "created_at": "2026-05-08T00:09:13Z",
+      "author": {
+        "name": "Mohammed Galeeb",
+        "headline": "Founder & Principal Consultant | AI & Blockchain Platforms for Decentralized Identity, Healthcare & B2B Systems | Raising Funds",
+        "profile_url": "https://www.linkedin.com/in/mohammed-galeeb-017a91aa",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is the direction healthcare interoperability is moving toward.\nWe’ve already been exploring similar concepts in IDMEDICO, built on top of our proprietary decentralized identity infrastructure, Superid.in focusing on patient-controlled health data sharing, longitudinal records, and interoperable healthcare workflows.\nIt’s exciting to see W3C Digital Credentials and SMART health check-ins gaining momentum because the future of healthcare will depend heavily on portable, trusted, and patient-owned digital identity.",
+      "html": "This is the direction healthcare interoperability is moving toward.<br>We’ve already been exploring similar concepts in <a href=\"https://www.linkedin.com/company/idmedico/\">IDMEDICO</a>, built on top of our proprietary decentralized identity infrastructure, <a href=\"https://www.linkedin.com/company/superid-in/\">Superid.in</a> focusing on patient-controlled health data sharing, longitudinal records, and interoperable healthcare workflows.<br>It’s exciting to see W3C Digital Credentials and SMART health check-ins gaining momentum because the future of healthcare will depend heavily on portable, trusted, and patient-owned digital identity.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "IDMEDICO",
+          "url": "https://www.linkedin.com/company/idmedico/",
+          "kind": "organization"
+        },
+        {
+          "name": "Superid.in",
+          "url": "https://www.linkedin.com/company/superid-in/",
+          "kind": "organization"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458327762139889664)",
+      "parent_id": null,
+      "created_at": "2026-05-08T01:31:47Z",
+      "author": {
+        "name": "Saman Zarandioon",
+        "headline": "VP of Engineering, AI/ML | Building Foundation Models for Health Data | Founding Team: AWS Comprehend & Amazon Machine Learning",
+        "profile_url": "https://www.linkedin.com/in/zarandioon",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Really exciting work, Josh. Thank you for sharing and all your contributions in this domain!\n\nCurious: do you see any future regulatory push here? Similar to how the 21st Century Cures Act accelerated SMART on FHIR adoption, is there any discussion around requiring or incentivizing standardized digital check-in / wallet-based exchange workflows?",
+      "html": "Really exciting work, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>. Thank you for sharing and all your contributions in this domain!<br><br>Curious: do you see any future regulatory push here? Similar to how the 21st Century Cures Act accelerated SMART on FHIR adoption, is there any discussion around requiring or incentivizing standardized digital check-in / wallet-based exchange workflows?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458337689638129664)",
+      "parent_id": "urn:li:comment:(ugcPost:7458199665440620544,7458327762139889664)",
+      "created_at": "2026-05-08T02:11:14Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "There has certainly been strong interest from CMS and ONC in improving check-in + consumer sharing experience. But I think we'd do well to work on early deployment experience before getting too far ahead with regulatory ambition.",
+      "html": "There has certainly been strong interest from CMS and ONC in improving check-in + consumer sharing experience. But I think we'd do well to work on early deployment experience before getting too far ahead with regulatory ambition.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458341362212429824)",
+      "parent_id": null,
+      "created_at": "2026-05-08T02:25:50Z",
+      "author": {
+        "name": "Kate D.",
+        "headline": "Creator of Clearer Healthcare Messaging | Helping healthcare & medtech teams turn complexity into clear, usable content",
+        "profile_url": "https://www.linkedin.com/in/kdovgala",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thanks for this.  Digital check-in is the type of health tech that will make life easier.  As a patient, I get so frustrated repeatedly filling in duplicate information.\n\nFunny story: years ago, when EHRs were first being implemented, there was an older doctor who led the practice who struggled with the tech, feeling lost without his paper docs. His staff finally gave him a clipboard with a blank piece of paper and it worked!  Although it had no real value, he felt much better!  Thankfully, that’s no longer the case. 😉",
+      "html": "Thanks for this.  Digital check-in is the type of health tech that will make life easier.  As a patient, I get so frustrated repeatedly filling in duplicate information.<br><br>Funny story: years ago, when EHRs were first being implemented, there was an older doctor who led the practice who struggled with the tech, feeling lost without his paper docs. His staff finally gave him a clipboard with a blank piece of paper and it worked!  Although it had no real value, he felt much better!  Thankfully, that’s no longer the case. 😉",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458343282058747905)",
+      "parent_id": null,
+      "created_at": "2026-05-08T02:33:27Z",
+      "author": {
+        "name": "Zach Strayton",
+        "headline": "Associate UX/CX Designer @ Optum",
+        "profile_url": "https://www.linkedin.com/in/zach-strayton",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Isaac Marcum",
+      "html": "<a href=\"https://www.linkedin.com/in/isaacmarcum/\">Isaac Marcum</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Isaac Marcum",
+          "url": "https://www.linkedin.com/in/isaacmarcum/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458491002501296129)",
+      "parent_id": null,
+      "created_at": "2026-05-08T12:20:27Z",
+      "author": {
+        "name": "Uri Goren",
+        "headline": "Head of Innovation @Meir | Leading patient-centric innovation with AI and design thinking expertise.",
+        "profile_url": "https://www.linkedin.com/in/urigoren",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "‏‏Eyal Dviri‏‏",
+      "html": "‏‏Eyal Dviri‏‏",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458513616884072449)",
+      "parent_id": null,
+      "created_at": "2026-05-08T13:50:18Z",
+      "author": {
+        "name": "Simon Sikorski MD",
+        "headline": "Find Melanoma Answers @ BestIsMe.Org | Author - Missing Context Newsletter | Applied Research. Better Outcomes.",
+        "profile_url": "https://www.linkedin.com/in/simonsikorskimd",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "Interesting from an adoption angle because the technical standard is only half the battle.\n\nIf this can make health data sharing feel normal across web, mobile, Android, iOS wallets, FHIR resources, and patient check-in workflows, the next question is not just “does it work?” It is: will practices know how to use it, will patients understand why it matters, and will the workflow be simple enough that staff actually adopt it?\n\nThat is where a lot of digital health breaks down. The protocol can be solid, but if education, trust, front desk workflow, patient language, and implementation strategy are not solved, adoption stalls.\n\nThis is exactly the kind of topic we’re discussing in Digital Health Adoption Network: how to move good healthcare technology from standards and pilots into real practices, real patients, and real public use. Feel free to join and post the article there.",
+      "html": "Interesting from an adoption angle because the technical standard is only half the battle.<br> <br>If this can make health data sharing feel normal across web, mobile, Android, iOS wallets, FHIR resources, and patient check-in workflows, the next question is not just “does it work?” It is: will practices know how to use it, will patients understand why it matters, and will the workflow be simple enough that staff actually adopt it?<br> <br>That is where a lot of digital health breaks down. The protocol can be solid, but if education, trust, front desk workflow, patient language, and implementation strategy are not solved, adoption stalls.<br> <br>This is exactly the kind of topic we’re discussing in Digital Health Adoption Network: how to move good healthcare technology from standards and pilots into real practices, real patients, and real public use. Feel free to join and post the article there.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458526211846115330)",
+      "parent_id": null,
+      "created_at": "2026-05-08T14:40:21Z",
+      "author": {
+        "name": "Reuven Schnaider",
+        "headline": "Senior Project Manager | Healthcare Interoperability | FHIR | AI | Digital Health Innovation",
+        "profile_url": "https://www.linkedin.com/in/reuven-schnaider-project-manager",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is a massive step toward true Patient Empowerment💪\n​From my perspective, the real revolution happens when we combine this kind of seamless technology with AI Literacy for patients.\n​Moving Verifiable Credentials directly into the browser (W3C API) removes the 'app fatigue' and puts the patient back in the driver's seat. But more importantly, it creates a foundation where patients can securely feed their own data into AI-driven decision support tools.\n​When the UX is as simple as a digital wallet, we bridge the gap between complex health standards and real-world health literacy. It’s not just about 'data in the patient's hand' , it’s about giving them the tools and the knowledge to actually use it.\n​Thanks for the update, Josh!🙏",
+      "html": "This is a massive step toward true Patient Empowerment💪 <br>​From my perspective, the real revolution happens when we combine this kind of seamless technology with AI Literacy for patients.<br>​Moving Verifiable Credentials directly into the browser (W3C API) removes the 'app fatigue' and puts the patient back in the driver's seat. But more importantly, it creates a foundation where patients can securely feed their own data into AI-driven decision support tools.<br>​When the UX is as simple as a digital wallet, we bridge the gap between complex health standards and real-world health literacy. It’s not just about 'data in the patient's hand' , it’s about giving them the tools and the knowledge to actually use it.<br>​Thanks for the update, Josh!🙏",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458611561474109441)",
+      "parent_id": null,
+      "created_at": "2026-05-08T20:19:30Z",
+      "author": {
+        "name": "WellConnector",
+        "headline": "203 followers",
+        "profile_url": "https://www.linkedin.com/company/wellconnector/posts",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thanks for all you are doing in support of the Kill the Clipboard initiative, Josh Mandel, MD. We're proud to be a part of it.",
+      "html": "Thanks for all you are doing in support of the Kill the Clipboard initiative, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>. We're proud to be a part of it.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458623541928812544)",
+      "parent_id": null,
+      "created_at": "2026-05-08T21:07:06Z",
+      "author": {
+        "name": "Brittany N. Crosby",
+        "headline": "Director of Product Management, Innovation @ Pfizer",
+        "profile_url": "https://www.linkedin.com/in/brittanyncrosby",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is a slick design to streamline the patient check in flow and meet them where they are (web based tools on android or iOS) rather than asking for someone to download another app. I also appreciate the flow to improve how health systems incorporate wearable data, recognizing that this can be valuable for understanding baseline and trends.",
+      "html": "This is a slick design to streamline the patient check in flow and meet them where they are (web based tools on android or iOS) rather than asking for someone to download another app. I also appreciate the flow to improve how health systems incorporate wearable data, recognizing that this can be valuable for understanding baseline and trends.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458655443238682624)",
+      "parent_id": null,
+      "created_at": "2026-05-08T23:13:52Z",
+      "author": {
+        "name": "Dr Soumya Sarkar",
+        "headline": "Co-founder & CMO @ Onset Health | Clinical Workflow Specialist | Healthtech Innovator",
+        "profile_url": "https://www.linkedin.com/in/dr-soumya-sarkar-70482580",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD really interesting piece. Agree that a cleaner check-in and pre appointment piece would significantly help flow.\n\nThe issue will always be trust of the modality. Very much aligns with what we are working on.\n\nIs the focus predominately larger health services? Or would this be for all use case types?",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> really interesting piece. Agree that a cleaner check-in and pre appointment piece would significantly help flow.<br><br>The issue will always be trust of the modality. Very much aligns with what we are working on. <br><br>Is the focus predominately larger health services? Or would this be for all use case types?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7458669325378461697)",
+      "parent_id": "urn:li:comment:(ugcPost:7458199665440620544,7458655443238682624)",
+      "created_at": "2026-05-09T00:09:02Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "The idea is this technology can be implemented by large and small players alike!",
+      "html": "The idea is this technology can be implemented by large and small players alike!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7459153627769917440)",
+      "parent_id": null,
+      "created_at": "2026-05-10T08:13:29Z",
+      "author": {
+        "name": "Prateek Sodhani",
+        "headline": "Technology Leader, Digital Strategy, Transformation Planning and Delivery, Driving Measurable Business Outcomes",
+        "profile_url": "https://www.linkedin.com/in/prateek-sodhani-71b02511",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Very interesting, a step towards true patient centered care, would be great to see adoption across the provider space and jurisdictions",
+      "html": "Very interesting, a step towards true patient centered care, would be great to see adoption across the provider space and jurisdictions",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7460086201144909825)",
+      "parent_id": null,
+      "created_at": "2026-05-12T21:59:12Z",
+      "author": {
+        "name": "Matt Abrams",
+        "headline": "Advisor, Board Member, Co-Founder, Venture Partner, Dot Connector: cursed (and blessed) with curiosity and a drive to #leaveitbetter #startups #natsec #venture #informationquality #healthcare #informationintegrity",
+        "profile_url": "https://www.linkedin.com/in/mattabrams",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Riley Hughes",
+      "html": "<a href=\"https://www.linkedin.com/in/rileyparkerhughes/\">Riley Hughes</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Riley Hughes",
+          "url": "https://www.linkedin.com/in/rileyparkerhughes/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7458199665440620544,7463588405545754624)",
+      "parent_id": null,
+      "created_at": "2026-05-22T13:55:42Z",
+      "author": {
+        "name": "Parthasarathi V",
+        "headline": "TCS Research and Innovation",
+        "profile_url": "https://www.linkedin.com/in/vparthasarathi",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Basudev Acharya Vigneswaran R Srujana",
+      "html": "<a href=\"https://www.linkedin.com/in/basudev-acharya-38579714/\">Basudev Acharya</a> <a href=\"https://www.linkedin.com/in/vigneswaran-r-3633787/\">Vigneswaran R</a> <a href=\"https://www.linkedin.com/in/srwjanak/\">Srujana</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Basudev Acharya",
+          "url": "https://www.linkedin.com/in/basudev-acharya-38579714/",
+          "kind": "person"
+        },
+        {
+          "name": "Vigneswaran R",
+          "url": "https://www.linkedin.com/in/vigneswaran-r-3633787/",
+          "kind": "person"
+        },
+        {
+          "name": "Srujana",
+          "url": "https://www.linkedin.com/in/srwjanak/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

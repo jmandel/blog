@@ -1,0 +1,194 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7464055912857767936",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7464055912857767936/",
+  "pages": [
+    "article:uqoec",
+    "share:7464055912857767936"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "uqoec",
+      "url": "https://www.linkedin.com/pulse/questionnaire-everything-josh-mandel-md-uqoec",
+      "activity_urn": "urn:li:activity:7464055913323315200"
+    }
+  ],
+  "displayed": {
+    "comments": 7,
+    "reactions": 106,
+    "reposts": 4
+  },
+  "captured": {
+    "total": 7,
+    "top_level": 7,
+    "replies": 0
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7464055912857767936,7464055994969559040)",
+      "parent_id": null,
+      "created_at": "2026-05-23T20:53:44Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Thanks Zac Jiwa for the inspiration to put this together :)",
+      "html": "Thanks Zac Jiwa for the inspiration to put this together :)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7464055912857767936,7464225834141159424)",
+      "parent_id": null,
+      "created_at": "2026-05-24T08:08:37Z",
+      "author": {
+        "name": "Shahid Shah",
+        "headline": "Gov’t, Health, LifeSci and MedTech Researcher & Author | HealthcareNOW Radio and HealthIMPACT Host",
+        "profile_url": "https://www.linkedin.com/in/shahidshah",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "This is great, your ideas coupled with NIH's LHC-Forms open source package, AI + agents + humans can throw together complex questionnaires pretty quickly!",
+      "html": "This is great, your ideas coupled with NIH's LHC-Forms open source package, AI + agents + humans can throw together complex questionnaires pretty quickly!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7464055912857767936,7464329182102044672)",
+      "parent_id": null,
+      "created_at": "2026-05-24T14:59:17Z",
+      "author": {
+        "name": "Uri Goren",
+        "headline": "Head of Innovation @Meir | Leading patient-centric innovation with AI and design thinking expertise.",
+        "profile_url": "https://www.linkedin.com/in/urigoren",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "‏‏Eyal Dviri‏‏",
+      "html": "‏‏Eyal Dviri‏‏",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7464055912857767936,7464342942032302080)",
+      "parent_id": null,
+      "created_at": "2026-05-24T15:53:58Z",
+      "author": {
+        "name": "Mark Begale",
+        "headline": "Vice President at Vibrent Health",
+        "profile_url": "https://www.linkedin.com/in/mark-begale-7ab25814",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This seems familiar ;).",
+      "html": "This seems familiar ;).",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7464055912857767936,7464840909919195136)",
+      "parent_id": null,
+      "created_at": "2026-05-26T00:52:42Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This just sparked a crazy idea, thanks Josh Mandel, MD",
+      "html": "This just sparked a crazy idea, thanks <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7464055912857767936,7464896048180842496)",
+      "parent_id": null,
+      "created_at": "2026-05-26T04:31:48Z",
+      "author": {
+        "name": "Reuven Schnaider",
+        "headline": "Senior Project Manager | Healthcare Interoperability | FHIR | AI | Digital Health Innovation",
+        "profile_url": "https://www.linkedin.com/in/reuven-schnaider-project-manager",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is a very interesting direction, especially for reducing the “clipboard problem” in healthcare.\nMy main concern is less about the technical conversion itself, and more about the governance around it.\nWhen AI converts PDFs, screenshots, or HTML forms into FHIR Questionnaires, two risks become critical:\n\n1. Security & privacy - making sure no PHI is exposed to unauthorized AI services, prompts, logs, or intermediate storage.\n\n2. AI hallucinations - a Questionnaire can be FHIR-valid but still clinically wrong: incorrect skip logic, invented fields, wrong terminology mapping, or assumptions that were not in the source form.\n\nIn healthcare, especially in complex domains like oncology, the output should be treated as a draft that requires strong validation, auditability, and clinical review.\nFHIR-valid is not the same as clinically safe.",
+      "html": "This is a very interesting direction, especially for reducing the “clipboard problem” in healthcare.<br>My main concern is less about the technical conversion itself, and more about the governance around it.<br>When AI converts PDFs, screenshots, or HTML forms into FHIR Questionnaires, two risks become critical:<br><br>1. Security &amp; privacy - making sure no PHI is exposed to unauthorized AI services, prompts, logs, or intermediate storage.<br><br>2. AI hallucinations - a Questionnaire can be FHIR-valid but still clinically wrong: incorrect skip logic, invented fields, wrong terminology mapping, or assumptions that were not in the source form.<br><br><br><br>In healthcare, especially in complex domains like oncology, the output should be treated as a draft that requires strong validation, auditability, and clinical review.<br>FHIR-valid is not the same as clinically safe.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7464055912857767936,7465976763417010176)",
+      "parent_id": null,
+      "created_at": "2026-05-29T04:06:11Z",
+      "author": {
+        "name": "Bret Heale, PhD",
+        "headline": "Solutions Architect, Precision Medicine, Biomedical Informatics",
+        "profile_url": "https://www.linkedin.com/in/bret-heale-phd-7ab53b26",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "and then use a StructureMap to create Observations and Conditions for review/certification by a clinician? Or?  BTW Love your posts Josh. Fun graphics, useful as well as provocative info!",
+      "html": "and then use a StructureMap to create Observations and Conditions for review/certification by a clinician? Or?  BTW Love your posts Josh. Fun graphics, useful as well as provocative info!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

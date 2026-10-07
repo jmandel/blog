@@ -1,0 +1,218 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:activity:7446011217221001216",
+  "url": "https://www.linkedin.com/feed/update/urn:li:activity:7446011217221001216/",
+  "pages": [
+    "share:7446011216361275392"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7446011217221001216"
+    }
+  ],
+  "displayed": {
+    "comments": 8,
+    "reactions": 64,
+    "reposts": 1
+  },
+  "captured": {
+    "total": 8,
+    "top_level": 4,
+    "replies": 4
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(activity:7446011217221001216,7446018079270207488)",
+      "parent_id": null,
+      "created_at": "2026-04-04T02:17:30Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I should be clear that this kind of thing only works when you already have a well-organized project  and  spend an hour making a solid plan 😉 Next month the story may be different.",
+      "html": "I should be clear that this kind of thing only works when you already have a well-organized project  and  spend an hour making a solid plan 😉 Next month the story may be different.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7446011217221001216,7446023812997033984)",
+      "parent_id": null,
+      "created_at": "2026-04-04T02:40:17Z",
+      "author": {
+        "name": "Grant Isom",
+        "headline": "Founding AI Engineer @ Limelight",
+        "profile_url": "https://www.linkedin.com/in/grantisom",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "What are you using for visualizing project progress? Very cool setup!",
+      "html": "What are you using for visualizing project progress? Very cool setup!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7446011217221001216,7446025410489839616)",
+      "parent_id": "urn:li:comment:(activity:7446011217221001216,7446023812997033984)",
+      "created_at": "2026-04-04T02:46:38Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I just asked Claude to make an SVG via JS in  static HTML powered by a JSON file, and it then updates the json file.  A browser window renders the HTML which self refreshes.",
+      "html": "I just asked Claude to make an SVG via JS in  static HTML powered by a JSON file, and it then updates the json file.  A browser window renders the HTML which self refreshes.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7446011217221001216,7446028600992083968)",
+      "parent_id": "urn:li:comment:(activity:7446011217221001216,7446023812997033984)",
+      "created_at": "2026-04-04T02:59:18Z",
+      "author": {
+        "name": "Grant Isom",
+        "headline": "Founding AI Engineer @ Limelight",
+        "profile_url": "https://www.linkedin.com/in/grantisom",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD nice! I’m gonna steal that for a skill for showing progress in our repo. Such a sucker for visualization haha",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> nice! I’m gonna steal that for a skill for showing progress in our repo. Such a sucker for visualization haha",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7446011217221001216,7446030576672796673)",
+      "parent_id": "urn:li:comment:(activity:7446011217221001216,7446023812997033984)",
+      "created_at": "2026-04-04T03:07:10Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Cool! I have a skill for this whole workflow BTW, can share tomorrow",
+      "html": "Cool! I have a skill for this whole workflow BTW, can share tomorrow",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7446011217221001216,7446291079764537344)",
+      "parent_id": null,
+      "created_at": "2026-04-04T20:22:18Z",
+      "author": {
+        "name": "Vijay Verma",
+        "headline": "CPTO | Agentic AI, Enterprise AI Platforms | Healthcare, Fintech & CX | 90M+ Users | $100M+ ARR",
+        "profile_url": "https://www.linkedin.com/in/vijayverma75",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I use my own feature design skill which creates a FRD and decompose skill which generates tickets (epic and stories) in Beads and then let Claude build this list. I still haven’t found a clean permissions mode which will build without interruptions.",
+      "html": "I use my own feature design skill which creates a FRD and decompose skill which generates tickets (epic and stories) in Beads and then let Claude build this list. I still haven’t found a clean permissions mode which will build without interruptions.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7446011217221001216,7446296854188969984)",
+      "parent_id": "urn:li:comment:(activity:7446011217221001216,7446291079764537344)",
+      "created_at": "2026-04-04T20:45:15Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Oh permissions is just yolo here, but the \"make it keep going\" (\"babysit it\") is a separate concern.",
+      "html": "Oh permissions is just yolo here, but the &quot;make it keep going&quot; (&quot;babysit it&quot;) is a separate concern.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(activity:7446011217221001216,7446358973596975104)",
+      "parent_id": null,
+      "created_at": "2026-04-05T00:52:05Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "https://github.com/jmandel/skills/blob/main/babysit-codex/SKILL.md",
+      "html": "<a href=\"https://github.com/jmandel/skills/blob/main/babysit-codex/SKILL.md\">https://github.com/jmandel/skills/blob/main/babysit-codex/SKILL.md</a>",
+      "links": [
+        {
+          "text": "https://github.com/jmandel/skills/blob/main/babysit-codex/SKILL.md",
+          "url": "https://github.com/jmandel/skills/blob/main/babysit-codex/SKILL.md"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

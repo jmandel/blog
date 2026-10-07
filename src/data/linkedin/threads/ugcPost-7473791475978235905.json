@@ -1,0 +1,678 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7473791475978235905",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7473791475978235905/",
+  "pages": [
+    "article:u1zsc",
+    "share:7473791475978235905"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "u1zsc",
+      "url": "https://www.linkedin.com/pulse/ehi-fhir-mappings-get-better-every-record-josh-mandel-md-u1zsc",
+      "activity_urn": "urn:li:activity:7473791476695523329"
+    }
+  ],
+  "displayed": {
+    "comments": 27,
+    "reactions": 191,
+    "reposts": 14
+  },
+  "captured": {
+    "total": 27,
+    "top_level": 17,
+    "replies": 10
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473796885778944000)",
+      "parent_id": null,
+      "created_at": "2026-06-19T18:00:34Z",
+      "author": {
+        "name": "Matt Abrams",
+        "headline": "Advisor, Board Member, Co-Founder, Venture Partner, Dot Connector: cursed (and blessed) with curiosity and a drive to #leaveitbetter #startups #natsec #venture #informationquality #healthcare #informationintegrity",
+        "profile_url": "https://www.linkedin.com/in/mattabrams",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Gabe Colburn",
+      "html": "<a href=\"https://www.linkedin.com/in/gabe-colburn/\">Gabe Colburn</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Gabe Colburn",
+          "url": "https://www.linkedin.com/in/gabe-colburn/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473796989705625600)",
+      "parent_id": null,
+      "created_at": "2026-06-19T18:00:58Z",
+      "author": {
+        "name": "Michael D'Incecco",
+        "headline": "Healthcare IT Leader | Digital and Patient Access Rev Cycle Advisor | Passionate Futurist | Sustainable Farming and Food Ecosphere Advocate | Outdoor and Youth Programming Volunteer",
+        "profile_url": "https://www.linkedin.com/in/michael-d-incecco-3b751527",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The tools are powerful and you’re shepherding the new era! Thanks for all your insights.  I’m encouraged with the progress to ensure data sovereignty for all.",
+      "html": "The tools are powerful and you’re shepherding the new era! Thanks for all your insights.  I’m encouraged with the progress to ensure data sovereignty for all.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473798896985534464)",
+      "parent_id": null,
+      "created_at": "2026-06-19T18:08:33Z",
+      "author": {
+        "name": "Alex Thomas",
+        "headline": "NFP Director | Snr Data/Intelligence Engineer | CyberBioSecurity, Data, BI, GIS, DevOps | Environment, Health and Human Services | Scout Ldr",
+        "profile_url": "https://www.linkedin.com/in/alexthomas",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Superb…",
+      "html": "Superb…",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473805109320290304)",
+      "parent_id": null,
+      "created_at": "2026-06-19T18:33:14Z",
+      "author": {
+        "name": "Aaron Seib, PMP, CPMAI, CDMP-Practitioner",
+        "headline": "Healthcare AI & Data Solutions Leader | CDMP, CPMAI, PMP",
+        "profile_url": "https://www.linkedin.com/in/aaron-seib-pmp-cpmai-cdmp-practitioner-65811627",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "That is truly amazing.",
+      "html": "That is truly amazing.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473807588908761088)",
+      "parent_id": null,
+      "created_at": "2026-06-19T18:43:05Z",
+      "author": {
+        "name": "Jason Marmon",
+        "headline": "Co-founder & CTO of Novelcare (fka SelectIQ) | Ex-Palantir life sciences",
+        "profile_url": "https://www.linkedin.com/in/jtmarmon",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Same concept applies to unstructured docs. The regulations really should be rethought in a world where data formatting and consistency is no longer important. If EHRs were required to provide APIs to dump all the data in any format the entire industry could move 10x faster.",
+      "html": "Same concept applies to unstructured docs. The regulations really should be rethought in a world where data formatting and consistency is no longer important. If EHRs were required to provide APIs to dump all the data in any format the entire industry could move 10x faster.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473808607319347200)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7473807588908761088)",
+      "created_at": "2026-06-19T18:47:08Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Agree -- the lack of an EHI API requirement today is the biggest thing holding patients back from complete access to their records.",
+      "html": "Agree -- the lack of an EHI API requirement today is the biggest thing holding patients back from complete access to their records.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 6,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473826403897999360)",
+      "parent_id": null,
+      "created_at": "2026-06-19T19:57:51Z",
+      "author": {
+        "name": "Thomas K.",
+        "headline": "Healthcare Technical Strategist | Ex-Epic | Venture Capital",
+        "profile_url": "https://www.linkedin.com/in/thomas-kasl",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I did something similar but the reverse for a client. Mapping many FHIR resources back to SQL queries to pull data out of Clarity.",
+      "html": "I did something similar but the reverse for a client. Mapping many FHIR resources back to SQL queries to pull data out of Clarity.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473863335697014784)",
+      "parent_id": null,
+      "created_at": "2026-06-19T22:24:36Z",
+      "author": {
+        "name": "Christopher Gyldenkærne",
+        "headline": "Postdoc hos CAISA - Det Nationale Center for AI i Samfundet",
+        "profile_url": "https://www.linkedin.com/in/christopher-gyldenk%C3%A6rne-a55a3259",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Jens Kristian Villadsen",
+      "html": "<a href=\"https://www.linkedin.com/in/jenskristianvilladsen/\">Jens Kristian Villadsen</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Jens Kristian Villadsen",
+          "url": "https://www.linkedin.com/in/jenskristianvilladsen/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473907932066365440)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7473807588908761088)",
+      "created_at": "2026-06-20T01:21:49Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "James Cummings / Grace Cordovano, PhD, BCPA / Amy Gleason",
+      "html": "<a href=\"https://www.linkedin.com/in/cummings216/\">James Cummings</a> / <a href=\"https://www.linkedin.com/in/gcordovano/\">Grace Cordovano, PhD, BCPA</a> / <a href=\"https://www.linkedin.com/in/gleasonamy/\">Amy Gleason</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "James Cummings",
+          "url": "https://www.linkedin.com/in/cummings216/",
+          "kind": "person"
+        },
+        {
+          "name": "Grace Cordovano, PhD, BCPA",
+          "url": "https://www.linkedin.com/in/gcordovano/",
+          "kind": "person"
+        },
+        {
+          "name": "Amy Gleason",
+          "url": "https://www.linkedin.com/in/gleasonamy/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473923415477948417)",
+      "parent_id": null,
+      "created_at": "2026-06-20T02:23:21Z",
+      "author": {
+        "name": "Koray Atalag, MD, PhD",
+        "headline": "Principal Consultant ➤ openEHR & FHIR Interoperability | VBHC & PROMs | Strategy → Architecture → Hands-on Implementation | GCC · Europe · ANZ",
+        "profile_url": "https://www.linkedin.com/in/koray-atalag",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "https://ehignitechallenge.org/ there was a small and humble challenge  by ONC to address exactly the single patient EHI export heterogenity. Josh Mandel, MD your previous post on grading hundreds of EHRs was an eye opener. I won't disclose just yet our proposal until winners are announced but what if we defined our dataset of interest and then work backwards to map or bind only those elements to source, instead of wholesale mappings - just targeted. Not suitable for all use cases but will solve a lot of others.",
+      "html": "<a href=\"https://ehignitechallenge.org/\">https://ehignitechallenge.org/</a> there was a small and humble challenge  by ONC to address exactly the single patient EHI export heterogenity. Josh Mandel, MD your previous post on grading hundreds of EHRs was an eye opener. I won't disclose just yet our proposal until winners are announced but what if we defined our dataset of interest and then work backwards to map or bind only those elements to source, instead of wholesale mappings - just targeted. Not suitable for all use cases but will solve a lot of others.",
+      "links": [
+        {
+          "text": "https://ehignitechallenge.org/",
+          "url": "https://ehignitechallenge.org/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473927110399729664)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7473923415477948417)",
+      "created_at": "2026-06-20T02:38:01Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Absolutely -- part of the demonstration here is saying \"if you can define a coherent target format and your source data are complete enough to map, then the job of mapping is getting very fast and cheap.\" Nothing magic about FHIR here (but if course, it's a well defined target which makes the process easy to test without having to feel too creative.) You can map to task specific adhoc formats now.",
+      "html": "Absolutely -- part of the demonstration here is saying &quot;if you can define a coherent target format and your source data are complete enough to map, then the job of mapping is getting very fast and cheap.&quot; Nothing magic about FHIR here (but if course, it's a well defined target which makes the process easy to test without having to feel too creative.) You can map to task specific adhoc formats now.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7473992844530102272)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7473863335697014784)",
+      "created_at": "2026-06-20T06:59:14Z",
+      "author": {
+        "name": "Jens Kristian Villadsen",
+        "headline": "@Trifork",
+        "profile_url": "https://www.linkedin.com/in/jenskristianvilladsen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD  to answer the question: yes 😀 . It is also the continuous subject for the Nordic hackathon series.",
+      "html": "Josh Mandel, MD  to answer the question: yes 😀 . It is also the continuous subject for the Nordic hackathon series.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7474009719771176960)",
+      "parent_id": null,
+      "created_at": "2026-06-20T08:06:17Z",
+      "author": {
+        "name": "Meg D.",
+        "headline": "Reveune Cycle Healthcare Technology | Product Management & Operations Leader | Deep Experience in Medicare, Medicaid, & Regulatory Affairs | Seasoned Medical Coder - All Specialties | Passionate Patient Advocate",
+        "profile_url": "https://www.linkedin.com/in/meg-d-b3302b10",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Awesome!",
+      "html": "Awesome!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7474039840938954752)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7473826403897999360)",
+      "created_at": "2026-06-20T10:05:59Z",
+      "author": {
+        "name": "Michael E Campbell",
+        "headline": "Health Informatics Consultant @ Indicina Certified Health & Wellness Coach @ Wellogin",
+        "profile_url": "https://www.linkedin.com/in/michael-e-campbell-1b19516",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thomas Kasl would the SQL on FHIR view definitions work in Clarity?",
+      "html": "Thomas Kasl would the SQL on FHIR view definitions work in Clarity?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7474153696516370432)",
+      "parent_id": null,
+      "created_at": "2026-06-20T17:38:24Z",
+      "author": {
+        "name": "Reuven Schnaider",
+        "headline": "Senior Project Manager | Healthcare Interoperability | FHIR | AI | Digital Health Innovation",
+        "profile_url": "https://www.linkedin.com/in/reuven-schnaider-project-manager",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Very interesting.\nI wonder how different the results would be with a legacy healthcare system that has no FHIR-native API.\nIn many organizations, especially outside the Epic ecosystem, the hardest problem is not generating FHIR resources. It's understanding what the source data actually means and rebuilding the clinical context that FHIR expects.\nEpic starts much closer to the finish line than most healthcare systems.\nIn oncology systems, for example, workflow states, protocol logic, dose adjustments, and approval processes are often spread across multiple tables and workflows. Mapping them correctly requires much more than identifying field-to-field relationships.",
+      "html": "Very interesting.<br>I wonder how different the results would be with a legacy healthcare system that has no FHIR-native API.<br>In many organizations, especially outside the Epic ecosystem, the hardest problem is not generating FHIR resources. It's understanding what the source data actually means and rebuilding the clinical context that FHIR expects.<br>Epic starts much closer to the finish line than most healthcare systems.<br>In oncology systems, for example, workflow states, protocol logic, dose adjustments, and approval processes are often spread across multiple tables and workflows. Mapping them correctly requires much more than identifying field-to-field relationships.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7474259324140253186)",
+      "parent_id": null,
+      "created_at": "2026-06-21T00:38:07Z",
+      "author": {
+        "name": "Jacob Reider",
+        "headline": "Health > Care",
+        "profile_url": "https://www.linkedin.com/in/jacobr",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": ":-)\n\nI exported from Epic a few weeks ago ... Had Claude combine it with other data from elsewhere, wrap it back into Epic envelope and sent to a new provider ..who imported it into their EHR without difficulty.\n\nEnd to end .. 6 minutes.  Yes.  I reviewed it before sending.\n\nMy observation:  no special tool necessary.  The frontier models can do this darn well.\n\nNote that with this model there is no way to differentiate PGHD from an EHR as a source.  Provenance is easy to fake.\n\nHmmm",
+      "html": ":-)<br><br>I exported from Epic a few weeks ago ... Had Claude combine it with other data from elsewhere, wrap it back into Epic envelope and sent to a new provider ..who imported it into their EHR without difficulty.<br><br>End to end .. 6 minutes.  Yes.  I reviewed it before sending.<br><br>My observation:  no special tool necessary.  The frontier models can do this darn well.<br><br>Note that with this model there is no way to differentiate PGHD from an EHR as a source.  Provenance is easy to fake. <br><br>Hmmm",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7474268455089745920)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7474259324140253186)",
+      "created_at": "2026-06-21T01:14:24Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": ">Epic envelope\n\nSay more?",
+      "html": "&gt;Epic envelope<br><br>Say more?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7474691244343033856)",
+      "parent_id": null,
+      "created_at": "2026-06-22T05:14:25Z",
+      "author": {
+        "name": "Elliot Kahen",
+        "headline": "Multidisciplinary Data Science | Mol bio + Biochemistry pedigree. | Clinical Documentation (hem/onc/etc) | LLM/AI stuff",
+        "profile_url": "https://www.linkedin.com/in/elliot-kahen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "While definitely cool, I frankly do not see how this or anything it would clearly lead to would improve the actual interoperability issues that preposterously continue to exist.\n\n* Labs: Epic has not implemented the simplest of concepts, a row which can be optionally included at the bottom of the table for each column: PERFLAB (performing lab, for example). Because of this, those in charge of mapping components/LOINC, often either just don't map external values at all, or do so selectively, because their best practices concerns about comparing data from different labs.  For easily 90% of components, this worry is irrational and it 100% leads to providers missing data. I've seen it happen no less than 1000 times. Providers expect when they are trending a patients labs with CE and HT setup, that lab data from separate facilities are clearly being mapped and consolidated right? Otherwise why have this?\ni have had to explain this to 100 providers, why they are wrong, and no, it's not a bug. It's a feature.\n\n*Partially struct and unstructured data.  \"Encounters are the floor at 67%\". This right here is funny from a clinically meaningful data persprective because Encounters are where those data live.\nIncongruence of priorities.",
+      "html": "While definitely cool, I frankly do not see how this or anything it would clearly lead to would improve the actual interoperability issues that preposterously continue to exist.<br><br>* Labs: Epic has not implemented the simplest of concepts, a row which can be optionally included at the bottom of the table for each column: PERFLAB (performing lab, for example). Because of this, those in charge of mapping components/LOINC, often either just don't map external values at all, or do so selectively, because their best practices concerns about comparing data from different labs.  For easily 90% of components, this worry is irrational and it 100% leads to providers missing data. I've seen it happen no less than 1000 times. Providers expect when they are trending a patients labs with CE and HT setup, that lab data from separate facilities are clearly being mapped and consolidated right? Otherwise why have this? <br>i have had to explain this to 100 providers, why they are wrong, and no, it's not a bug. It's a feature.<br><br>*Partially struct and unstructured data.  &quot;Encounters are the floor at 67%&quot;. This right here is funny from a clinically meaningful data persprective because Encounters are where those data live. <br>Incongruence of priorities.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7474691404062085120)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7474691244343033856)",
+      "created_at": "2026-06-22T05:15:03Z",
+      "author": {
+        "name": "Elliot Kahen",
+        "headline": "Multidisciplinary Data Science | Mol bio + Biochemistry pedigree. | Clinical Documentation (hem/onc/etc) | LLM/AI stuff",
+        "profile_url": "https://www.linkedin.com/in/elliot-kahen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I ran out of characters, started to feel kinda lazy. I can add on more if you care",
+      "html": "I ran out of characters, started to feel kinda lazy. I can add on more if you care",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7475400335302283264)",
+      "parent_id": null,
+      "created_at": "2026-06-24T04:12:06Z",
+      "author": {
+        "name": "Rachel Badovinac Ramoni",
+        "headline": "Director of Research Kaiser Permanente Northern California | DMD, ScD Strategic Leadership",
+        "profile_url": "https://www.linkedin.com/in/rramoni",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Cool!!!",
+      "html": "Cool!!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7477068957670109184)",
+      "parent_id": null,
+      "created_at": "2026-06-28T18:42:36Z",
+      "author": {
+        "name": "Nathan DiNiro",
+        "headline": "Fractional CEO/CMO/CTO | Strategic Technologist | Growth Architect | Digital Identity • Cybersecurity • AI • Immersive Media • Web3 | I Help Visionaries Brand, Build & Scale",
+        "profile_url": "https://www.linkedin.com/in/natediniro",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This isn't a surprise considering folks have been vibe coding with their data for some time now. I have actually done the reverse with some of your OS code to teach my development harness about health IT standards and practices. However, I would love to hear more signal in these posts about safety, security, and risk. As we advocate for people to have control over their data, the current risk environment that AI presents changes things in a way that's very difficult to translate. Even for lots of smart folks who have very little experience or understanding of the risks of what being presented as possible.",
+      "html": "This isn't a surprise considering folks have been vibe coding with their data for some time now. I have actually done the reverse with some of your OS code to teach my development harness about health IT standards and practices. However, I would love to hear more signal in these posts about safety, security, and risk. As we advocate for people to have control over their data, the current risk environment that AI presents changes things in a way that's very difficult to translate. Even for lots of smart folks who have very little experience or understanding of the risks of what being presented as possible.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7477122208889229312)",
+      "parent_id": null,
+      "created_at": "2026-06-28T22:14:12Z",
+      "author": {
+        "name": "Tom Willis",
+        "headline": "Product and Engineering Leader at Flexion Inc.",
+        "profile_url": "https://www.linkedin.com/in/tomaswillis",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Well played, Josh",
+      "html": "Well played, Josh",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7478154096865263617)",
+      "parent_id": null,
+      "created_at": "2026-07-01T18:34:34Z",
+      "author": {
+        "name": "Muhammad Zohaib",
+        "headline": "Meta Ads Specialist | LinkedIn Ads Expert | Lead Generation & Performance Marketing",
+        "profile_url": "https://www.linkedin.com/in/muhammad-zohaib-8a5385418",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Fascinating work! Using AI to accelerate FHIR mapping while keeping the output transparent and reviewable is a promising approach. Looking forward to seeing how community contributions evolve this further.",
+      "html": "Fascinating work! Using AI to accelerate FHIR mapping while keeping the output transparent and reviewable is a promising approach. Looking forward to seeing how community contributions evolve this further.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7478310264782639104)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7474259324140253186)",
+      "created_at": "2026-07-02T04:55:07Z",
+      "author": {
+        "name": "Gabriel Labbad, MD, FACOG, FAMIA",
+        "headline": "EIS Physician Leader",
+        "profile_url": "https://www.linkedin.com/in/gabriellabbad",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Jacob Reider please do say more. Epic envelope???",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> <a href=\"https://www.linkedin.com/in/jacobr/\">Jacob Reider</a> please do say more. Epic envelope???",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        },
+        {
+          "name": "Jacob Reider",
+          "url": "https://www.linkedin.com/in/jacobr/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7481721761953402880)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7474259324140253186)",
+      "created_at": "2026-07-11T14:51:11Z",
+      "author": {
+        "name": "Jacob Reider",
+        "headline": "Health > Care",
+        "profile_url": "https://www.linkedin.com/in/jacobr",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD I'll make a set of de-identified examples today and plop them on gh.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> I'll make a set of de-identified examples today and plop them on gh.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7483343212737130498)",
+      "parent_id": "urn:li:comment:(ugcPost:7473791475978235905,7474259324140253186)",
+      "created_at": "2026-07-16T02:14:15Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Super please tag me!!",
+      "html": "Super please tag me!!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7473791475978235905,7483888307366420481)",
+      "parent_id": null,
+      "created_at": "2026-07-17T14:20:16Z",
+      "author": {
+        "name": "Eric Rothschild, MD",
+        "headline": "Full Stack OB/GYN. Healthcare Disruptor. AI x Health Ambassador. Human in the Loop. Wartime Consigliere.",
+        "profile_url": "https://www.linkedin.com/in/eric-rothschild-md-18723a10",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Theoretically… couldn’t every empty\ncell/field… from named tables + row and column headers, be able to reverse map the API schema?",
+      "html": "Theoretically… couldn’t every empty <br>cell/field… from named tables + row and column headers, be able to reverse map the API schema?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

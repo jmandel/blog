@@ -1,0 +1,259 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7454367557916045312",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7454367557916045312/",
+  "pages": [
+    "article:qg0ee",
+    "share:7454367557916045312"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "qg0ee",
+      "url": "https://www.linkedin.com/pulse/i-asked-gpt-55-reverse-engineer-my-baby-monitor-josh-mandel-md-qg0ee",
+      "activity_urn": "urn:li:activity:7454367558528548864"
+    }
+  ],
+  "displayed": {
+    "comments": 9,
+    "reactions": 78,
+    "reposts": 2
+  },
+  "captured": {
+    "total": 9,
+    "top_level": 8,
+    "replies": 1
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7454525458630606849)",
+      "parent_id": null,
+      "created_at": "2026-04-27T13:42:47Z",
+      "author": {
+        "name": "Dave deBronkart",
+        "headline": "\"e-Patient Dave\" - Patient Empowerment evangelist. #PatientsUseAI. No pitches please.",
+        "profile_url": "https://www.linkedin.com/in/epatientdave",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is just astounding.\n\nWe've already seen that people like Hugo Campos can achieve an order-of-magnitude extension of their powers using Claude Code to access their health data, accomplishing things despite having NO IDEA how to go about it.  Now we have freaking JOSH MANDEL achieving something that would have required an order-of-magnitude extension of his skill set into an area he's not like to have EVER found worth the time and effort.\n\nWe are experiencing the ongoing dawn of a new age - no, *continuously unrolling* new ages.\n\nLOOK AT THE MANY WAYS HE WAS ABLE TO EXPLORE SOMETHING AUTONOMOUSLY, without being constrained by \"What's the TAM for this ability?\"\n\nTHIS is what #PatientUseAI users are finding in pursuing their individual medical needs, and here's Josh doing the exact same thing, philosophically.\n\nNew motto: \"N of 1 is all we need, if our tools are powerful enough.\"",
+      "html": "This is just astounding. <br><br>We've already seen that people like <a href=\"https://www.linkedin.com/in/hugocampos/\">Hugo Campos</a> can achieve an order-of-magnitude extension of their powers using Claude Code to access their health data, accomplishing things despite having NO IDEA how to go about it.  Now we have freaking JOSH MANDEL achieving something that would have required an order-of-magnitude extension of his skill set into an area he's not like to have EVER found worth the time and effort.<br><br>We are experiencing the ongoing dawn of a new age - no, *continuously unrolling* new ages. <br><br>LOOK AT THE MANY WAYS HE WAS ABLE TO EXPLORE SOMETHING AUTONOMOUSLY, without being constrained by &quot;What's the TAM for this ability?&quot; <br><br>THIS is what <a href=\"https://www.linkedin.com/search/results/all/?keywords=%23patientuseai&amp;origin=HASH_TAG_FROM_FEED\">#PatientUseAI</a> users are finding in pursuing their individual medical needs, and here's Josh doing the exact same thing, philosophically. <br><br>New motto: &quot;N of 1 is all we need, if our tools are powerful enough.&quot;",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Hugo Campos",
+          "url": "https://www.linkedin.com/in/hugocampos/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [
+        "PatientUseAI"
+      ],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7454598244044713984)",
+      "parent_id": null,
+      "created_at": "2026-04-27T18:32:01Z",
+      "author": {
+        "name": "David Roberts",
+        "headline": "Data Engineering @ Ilumed",
+        "profile_url": "https://www.linkedin.com/in/david-roberts-1a85a567",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is delightful, thank you!",
+      "html": "This is delightful, thank you!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7454652730608050176)",
+      "parent_id": null,
+      "created_at": "2026-04-27T22:08:31Z",
+      "author": {
+        "name": "Rick Klau",
+        "headline": "CTO at Hajoca. Formerly: co-founder and CEO at Onsemble; California CTIO; long-time Google exec.",
+        "profile_url": "https://www.linkedin.com/in/rickklau",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Love this. Well done! (And thanks for the write-up - gave me several thoughts of what I might want to play with in the weeks ahead...)",
+      "html": "Love this. Well done! (And thanks for the write-up - gave me several thoughts of what I might want to play with in the weeks ahead...)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7454659053626187776)",
+      "parent_id": null,
+      "created_at": "2026-04-27T22:33:39Z",
+      "author": {
+        "name": "Kelly Watson",
+        "headline": "Chief Product Officer at Tidepool | Building Impactful Digital Health Products",
+        "profile_url": "https://www.linkedin.com/in/kellyswatson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Reminds me of the #wearenotwaiting time",
+      "html": "Reminds me of the <a href=\"https://www.linkedin.com/search/results/all/?keywords=%23wearenotwaiting&amp;origin=HASH_TAG_FROM_FEED\">#wearenotwaiting</a> time",
+      "links": [],
+      "mentions": [],
+      "hashtags": [
+        "wearenotwaiting"
+      ],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7455242054521159680)",
+      "parent_id": null,
+      "created_at": "2026-04-29T13:10:17Z",
+      "author": {
+        "name": "Shimon Rura",
+        "headline": "Product Leader with deep Biomedical/Health experience, on a sabbatical",
+        "profile_url": "https://www.linkedin.com/in/shimonrura",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "How long did this project take you?",
+      "html": "How long did this project take you?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7455262804053409793)",
+      "parent_id": "urn:li:comment:(ugcPost:7454367557916045312,7455242054521159680)",
+      "created_at": "2026-04-29T14:32:44Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Shimon Rura Getting to the point documented here was ~8h of my time and fit into a weekend of codex working in 1-3 terminal sessions, many quite long-lived.",
+      "html": "<a href=\"https://www.linkedin.com/in/shimonrura/\">Shimon Rura</a> Getting to the point documented here was ~8h of my time and fit into a weekend of codex working in 1-3 terminal sessions, many quite long-lived.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Shimon Rura",
+          "url": "https://www.linkedin.com/in/shimonrura/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7455282175316275200)",
+      "parent_id": null,
+      "created_at": "2026-04-29T15:49:43Z",
+      "author": {
+        "name": "Peter Bachman",
+        "headline": "CEM PAHISP LLC Cequs Inc.",
+        "profile_url": "https://www.linkedin.com/in/peterbachman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I have Codex doing some simple things. What was your token spend?",
+      "html": "I have Codex doing some simple things. What was your token spend?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7455426201252229121)",
+      "parent_id": null,
+      "created_at": "2026-04-30T01:22:01Z",
+      "author": {
+        "name": "Virginia Lorenzi",
+        "headline": "Healthcare Interop Expert/HL7er/Informatics Instructor/Reg Reader/Patient & Caregiver Advocate: Passionate about empowering patients through interoperability, and equipping the HIT workforce through expert training.",
+        "profile_url": "https://www.linkedin.com/in/virginialorenzi",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "lol 🍼",
+      "html": "lol 🍼",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454367557916045312,7461970518179540992)",
+      "parent_id": null,
+      "created_at": "2026-05-18T02:46:48Z",
+      "author": {
+        "name": "Shimon Rura",
+        "headline": "Product Leader with deep Biomedical/Health experience, on a sabbatical",
+        "profile_url": "https://www.linkedin.com/in/shimonrura",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Somewhat inspired by this, I asked Hermes Agent to reverse engineer my kids' bus tracking app. It worked. https://www.linkedin.com/pulse/well-easy-shimon-rura-gkefe/",
+      "html": "Somewhat inspired by this, I asked Hermes Agent to reverse engineer my kids' bus tracking app. It worked. <a href=\"https://www.linkedin.com/pulse/well-easy-shimon-rura-gkefe/\">https://www.linkedin.com/pulse/well-easy-shimon-rura-gkefe/</a>",
+      "links": [
+        {
+          "text": "https://www.linkedin.com/pulse/well-easy-shimon-rura-gkefe/",
+          "url": "https://www.linkedin.com/pulse/well-easy-shimon-rura-gkefe/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/v2/D4E12AQGU8Wyz3u8L2g/article-cover_image-shrink_180_320/B4EZ4ryf98IwAY-/0/1778851122779?e=1792627200&v=beta&t=zgpIPKDisACOcdB30c7ZW06O6OBlTFHUFkQSNKpVcAQ",
+          "file": "linkedin-media/bbaef8e218d34c35.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

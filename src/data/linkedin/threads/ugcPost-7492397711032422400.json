@@ -1,0 +1,172 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7492397711032422400",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7492397711032422400/",
+  "pages": [
+    "article:d22wc",
+    "share:7492397711032422400"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "d22wc",
+      "url": "https://www.linkedin.com/pulse/understanding-aco-quality-reporting-through-josh-mandel-md-d22wc",
+      "activity_urn": "urn:li:activity:7492546574942629888"
+    }
+  ],
+  "displayed": {
+    "comments": 6,
+    "reactions": 96,
+    "reposts": 2
+  },
+  "captured": {
+    "total": 6,
+    "top_level": 5,
+    "replies": 1
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7492397711032422400,7492556401052004352)",
+      "parent_id": null,
+      "created_at": "2026-08-10T12:24:10Z",
+      "author": {
+        "name": "Paul Swider",
+        "headline": "Mission Critical Healthcare Solutions | Strategic Microsoft Cloud and AI Partner",
+        "profile_url": "https://www.linkedin.com/in/pswider",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Your posts are digital treats! Thank you.",
+      "html": "Your posts are digital treats! Thank you.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492397711032422400,7492567294242631681)",
+      "parent_id": null,
+      "created_at": "2026-08-10T13:07:28Z",
+      "author": {
+        "name": "Jessica Wilson",
+        "headline": "75% █████████░░░ Helping Enterprises Automate ERP, Finance & Supply Chain with AI Workflows, AI Agents & Agentic AI",
+        "profile_url": "https://www.linkedin.com/in/jessica-wilson-5199771b5",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Providing an open-source simulator lets providers test reporting choices before implementation, reducing costly trial‑and‑error in ACO finance.",
+      "html": "Providing an open-source simulator lets providers test reporting choices before implementation, reducing costly trial‑and‑error in ACO finance.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492397711032422400,7492587307217133569)",
+      "parent_id": "urn:li:comment:(ugcPost:7492397711032422400,7492567294242631681)",
+      "created_at": "2026-08-10T14:26:59Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Jessica Wilson I know this is just an AI-auto-comment but for the benefit of others: no, the simulator is not a real-world tool for providers to make actual decisions, it's a didactic tool to help people get a general understanding of how quality reporting options work mechanically.",
+      "html": "<a href=\"https://www.linkedin.com/in/jessica-wilson-5199771b5/\">Jessica Wilson</a> I know this is just an AI-auto-comment but for the benefit of others: no, the simulator is not a real-world tool for providers to make actual decisions, it's a didactic tool to help people get a general understanding of how quality reporting options work mechanically.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Jessica Wilson",
+          "url": "https://www.linkedin.com/in/jessica-wilson-5199771b5/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492397711032422400,7492608152950022144)",
+      "parent_id": null,
+      "created_at": "2026-08-10T15:49:49Z",
+      "author": {
+        "name": "Jacob Reider",
+        "headline": "Health > Care",
+        "profile_url": "https://www.linkedin.com/in/jacobr",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Hitting the ground running, I see ..  👏\n\nLove this!",
+      "html": "Hitting the ground running, I see ..  👏 <br><br>Love this!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492397711032422400,7492815165026115585)",
+      "parent_id": null,
+      "created_at": "2026-08-11T05:32:25Z",
+      "author": {
+        "name": "David K.",
+        "headline": "Toddler dad working on better work/life balance at early-stage healthcare companies. /s",
+        "profile_url": "https://www.linkedin.com/in/davidpharmd",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Very cool, building my way up to something similar. Starting with quality. Thanks for sharing!",
+      "html": "Very cool, building my way up to something similar. Starting with quality. Thanks for sharing!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492397711032422400,7492905153042501632)",
+      "parent_id": null,
+      "created_at": "2026-08-11T11:29:59Z",
+      "author": {
+        "name": "Koray Atalag, MD, PhD",
+        "headline": "Principal Consultant ➤ openEHR & FHIR Interoperability | VBHC & PROMs | Strategy → Architecture → Hands-on Implementation | GCC · Europe · ANZ",
+        "profile_url": "https://www.linkedin.com/in/koray-atalag",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I reckon HAPI FHIR comes with eCQM support out of the box. I'd be interested to know your assessment on the expressiveness of the Measure and MeasureReport resources to drive the analytics you showed",
+      "html": "I reckon HAPI FHIR comes with eCQM support out of the box. I'd be interested to know your assessment on the expressiveness of the Measure and MeasureReport resources to drive the analytics you showed",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

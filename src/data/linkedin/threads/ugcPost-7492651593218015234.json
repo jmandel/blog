@@ -1,0 +1,176 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7492651593218015234",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7492651593218015234/",
+  "pages": [
+    "share:7492651593218015234"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7492651594262683648"
+    }
+  ],
+  "displayed": {
+    "comments": 5,
+    "reactions": 31,
+    "reposts": 2
+  },
+  "captured": {
+    "total": 5,
+    "top_level": 4,
+    "replies": 1
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7492651593218015234,7492667264727695360)",
+      "parent_id": null,
+      "created_at": "2026-08-10T19:44:42Z",
+      "author": {
+        "name": "Robert Stegwee",
+        "headline": "Strategic Consultant for Health IT, focusing on meHealth for citizens and professionals in health and care",
+        "profile_url": "https://www.linkedin.com/in/stegwee",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I was privileged to lead the team in the Netherlands that developed the Dutch NEN 7541 Image availability standard. Currently a pilot is underway to provide access also through the Dutch MedMij PHR agreements. All patients portals that I have worked with in the Netherlands already provide consumer access to images through a webviewer. Works well. Imaging reports are available to consumers as documents of course.\n\nThe work is fully aligned with the work being done on Medical Imaging and Reports at the European Level, see e.g. https://x-bundles.ehr-exchange-format.eu/dom-9/content.html",
+      "html": "I was privileged to lead the team in the Netherlands that developed the Dutch NEN 7541 Image availability standard. Currently a pilot is underway to provide access also through the Dutch MedMij PHR agreements. All patients portals that I have worked with in the Netherlands already provide consumer access to images through a webviewer. Works well. Imaging reports are available to consumers as documents of course.<br><br>The work is fully aligned with the work being done on Medical Imaging and Reports at the European Level, see e.g. <a href=\"https://x-bundles.ehr-exchange-format.eu/dom-9/content.html\">https://x-bundles.ehr-exchange-format.eu/dom-9/content.html</a>",
+      "links": [
+        {
+          "text": "https://x-bundles.ehr-exchange-format.eu/dom-9/content.html",
+          "url": "https://x-bundles.ehr-exchange-format.eu/dom-9/content.html"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492651593218015234,7492685654594629632)",
+      "parent_id": null,
+      "created_at": "2026-08-10T20:57:47Z",
+      "author": {
+        "name": "dr. William Goossen FHL7",
+        "headline": "Health informatician",
+        "profile_url": "https://www.linkedin.com/in/williamgoossen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "See https://www.nen.nl/en/nen-7541-2026-nl-346201",
+      "html": "See <a href=\"https://www.nen.nl/en/nen-7541-2026-nl-346201\">https://www.nen.nl/en/nen-7541-2026-nl-346201</a>",
+      "links": [
+        {
+          "text": "https://www.nen.nl/en/nen-7541-2026-nl-346201",
+          "url": "https://www.nen.nl/en/nen-7541-2026-nl-346201"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGV_qXEJZGZQQ/articleshare-shrink_160/B4EZ_td5YgJEAQ-/0/1786395465784?e=1791925200&v=beta&t=DQZtPZPkx9ChfvF8I8nrbx7DXS_zfXQJB92H51U5VqY",
+          "file": "linkedin-media/31c4005f35245b2c.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492651593218015234,7492845295920201729)",
+      "parent_id": null,
+      "created_at": "2026-08-11T07:32:08Z",
+      "author": {
+        "name": "dr. William Goossen FHL7",
+        "headline": "Health informatician",
+        "profile_url": "https://www.linkedin.com/in/williamgoossen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "See the pilot experience of patients accessing their medical images: https://medmij.nl/media/pilot-legt-duidelijke-basis-voor-landelijke-opschaling-van-beeldbeschikbaarheid/",
+      "html": "See the pilot experience of patients accessing their medical images: <a href=\"https://medmij.nl/media/pilot-legt-duidelijke-basis-voor-landelijke-opschaling-van-beeldbeschikbaarheid/\">https://medmij.nl/media/pilot-legt-duidelijke-basis-voor-landelijke-opschaling-van-beeldbeschikbaarheid/</a>",
+      "links": [
+        {
+          "text": "https://medmij.nl/media/pilot-legt-duidelijke-basis-voor-landelijke-opschaling-van-beeldbeschikbaarheid/",
+          "url": "https://medmij.nl/media/pilot-legt-duidelijke-basis-voor-landelijke-opschaling-van-beeldbeschikbaarheid/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFfpKzbDbev8Q/articleshare-shrink_160/B4EZ_vvJ0UKkAQ-/0/1786433544476?e=1791925200&v=beta&t=txMZtxcOfuQVl2h84W0uOZBbChDw5O-z5dFjIhhaO1o",
+          "file": "linkedin-media/761bc363bf7f99d8.jpg"
+        }
+      ],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492651593218015234,7493704238271901696)",
+      "parent_id": null,
+      "created_at": "2026-08-13T16:25:16Z",
+      "author": {
+        "name": "Kyler Nunery",
+        "headline": "Butter is Better",
+        "profile_url": "https://www.linkedin.com/in/kylernunery",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Excellent! Will #ditchthefax be next?",
+      "html": "Excellent! Will <a href=\"https://www.linkedin.com/search/results/all/?keywords=%23ditchthefax&amp;origin=HASH_TAG_FROM_FEED\">#ditchthefax</a> be next?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [
+        "ditchthefax"
+      ],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7492651593218015234,7493716588995686400)",
+      "parent_id": "urn:li:comment:(ugcPost:7492651593218015234,7493704238271901696)",
+      "created_at": "2026-08-13T17:14:21Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Kyler Nunery I believe the catchphrase is \"axe the fax\".",
+      "html": "<a href=\"https://www.linkedin.com/in/kylernunery/\">Kyler Nunery</a> I believe the catchphrase is &quot;axe the fax&quot;.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Kyler Nunery",
+          "url": "https://www.linkedin.com/in/kylernunery/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

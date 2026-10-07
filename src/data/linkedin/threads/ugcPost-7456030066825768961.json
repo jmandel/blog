@@ -1,0 +1,294 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7456030066825768961",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7456030066825768961/",
+  "pages": [
+    "article:9kure",
+    "share:7456030066825768961"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "9kure",
+      "url": "https://www.linkedin.com/pulse/toward-modular-authz-hti-6-outsourcing-trusted-josh-mandel-md-9kure",
+      "activity_urn": "urn:li:activity:7456030067610173440"
+    }
+  ],
+  "displayed": {
+    "comments": 11,
+    "reactions": 43,
+    "reposts": 3
+  },
+  "captured": {
+    "total": 11,
+    "top_level": 7,
+    "replies": 4
+  },
+  "complete": true,
+  "sort": "most_relevant(switch failed)",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7456040105351254017)",
+      "parent_id": null,
+      "created_at": "2026-05-01T18:01:27Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "🤔 This could be very useful in payer/provider workflows, especially when trust and authorization need to travel across organizational boundaries.",
+      "html": "🤔 This could be very useful in payer/provider workflows, especially when trust and authorization need to travel across organizational boundaries.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7456348690014920704)",
+      "parent_id": null,
+      "created_at": "2026-05-02T14:27:39Z",
+      "author": {
+        "name": "Doug Horner",
+        "headline": "Changing the world... would be easier with the source code.",
+        "profile_url": "https://www.linkedin.com/in/doug-horner-88a85bb",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Love the model. It makes a lot of sense technically.\n\nThe big question for me is: what actually forces this to happen? Today, EHRs and provider orgs don’t seem strongly incentivized to externalize authorization or rely on third-party trust frameworks.\n\nDo you think this only becomes real with federal certification requirements, or is there a path where the market drives it?",
+      "html": "Love the model. It makes a lot of sense technically.<br><br>The big question for me is: what actually forces this to happen? Today, EHRs and provider orgs don’t seem strongly incentivized to externalize authorization or rely on third-party trust frameworks.<br><br>Do you think this only becomes real with federal certification requirements, or is there a path where the market drives it?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7456380824146317313)",
+      "parent_id": "urn:li:comment:(ugcPost:7456030066825768961,7456348690014920704)",
+      "created_at": "2026-05-02T16:35:21Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I think this is the case for top down together with bottom up. There will be pockets / domains where there is more bottom-up interest and there will be a power in creating consistency through top down requirements and incentives.",
+      "html": "I think this is the case for top down together with bottom up. There will be pockets / domains where there is more bottom-up interest and there will be a power in creating consistency through top down requirements and incentives.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7456412219476733952)",
+      "parent_id": null,
+      "created_at": "2026-05-02T18:40:06Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I ran this past an AI reviewer and it asked: \"which spec are you pointing to?\" Of course my implicit but intentional answer is \"none, yet.\" I guess I should explain.\n\nVendors, left to themselves, have little reason to build something that unbundles a function they currently control. That's not an indictment; it's just how market positions work. No one rushes to commoditize their own gate. And so the demand signal that would normally pull a standard into existence never forms.\n\nA functional certification requirement changes that equation. It creates the incentive that the market on its own won't. Customers get a clear thing to expect, vendors get a clear reason to build it (and build it together, by collaborating on an open spec).\n\nAm I thinking about SMART Permission Tickets? Sure, I hope that will be one possibility. But picking a technology today isn't the point. The goal here is to define the problem space and get the community exploring solutions together.",
+      "html": "I ran this past an AI reviewer and it asked: &quot;which spec are you pointing to?&quot; Of course my implicit but intentional answer is &quot;none, yet.&quot; I guess I should explain.<br><br>Vendors, left to themselves, have little reason to build something that unbundles a function they currently control. That's not an indictment; it's just how market positions work. No one rushes to commoditize their own gate. And so the demand signal that would normally pull a standard into existence never forms.<br><br>A functional certification requirement changes that equation. It creates the incentive that the market on its own won't. Customers get a clear thing to expect, vendors get a clear reason to build it (and build it together, by collaborating on an open spec).<br><br>Am I thinking about SMART Permission Tickets? Sure, I hope that will be one possibility. But picking a technology today isn't the point. The goal here is to define the problem space and get the community exploring solutions together.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 5,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7456920102542876672)",
+      "parent_id": null,
+      "created_at": "2026-05-04T04:18:15Z",
+      "author": {
+        "name": "Jim St. Clair",
+        "headline": "Public and Digital Health Leader - AI - Interoperability - Data Modernization Transformation- Strategy- Operations",
+        "profile_url": "https://www.linkedin.com/in/jimstclair",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Really like the spec and example use case.",
+      "html": "Really like the spec and example use case.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7457393158776303616)",
+      "parent_id": "urn:li:comment:(ugcPost:7456030066825768961,7456348690014920704)",
+      "created_at": "2026-05-05T11:38:00Z",
+      "author": {
+        "name": "Jonas C.",
+        "headline": "Helping clinicians get their evenings back and leaders their peace of mind | Automating SART & BORN reporting with Embryologix",
+        "profile_url": "https://www.linkedin.com/in/jonasc1921",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Doug Horner If we wait for EHR incentives, it won’t happen. Control of authorization is control of the ecosystem, and ecosystems don’t give that up voluntarily.",
+      "html": "<a href=\"https://www.linkedin.com/in/doug-horner-88a85bb/\">Doug Horner</a> If we wait for EHR incentives, it won’t happen. Control of authorization is control of the ecosystem, and ecosystems don’t give that up voluntarily.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Doug Horner",
+          "url": "https://www.linkedin.com/in/doug-horner-88a85bb/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7457656669414686720)",
+      "parent_id": null,
+      "created_at": "2026-05-06T05:05:06Z",
+      "author": {
+        "name": "Edward Bukstel",
+        "headline": "Chief Executive Officer at ClientsFirst AI. Creating the Next Generation Generative AI Experience for Potential Legal Clients.",
+        "profile_url": "https://www.linkedin.com/in/edward-bukstel-33987a2",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is excellent information.  There may be some additional baby steps that could supplement this work for purposes of verification of the existence of a patient in the real world.  We have seen so much fraud and AI could make the situation a lot worse.",
+      "html": "This is excellent information.  There may be some additional baby steps that could supplement this work for purposes of verification of the existence of a patient in the real world.  We have seen so much fraud and AI could make the situation a lot worse.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7457775220494585856)",
+      "parent_id": "urn:li:comment:(ugcPost:7456030066825768961,7456348690014920704)",
+      "created_at": "2026-05-06T12:56:11Z",
+      "author": {
+        "name": "David Carlson",
+        "headline": "Director of Standards and Interoperability/Software Developer",
+        "profile_url": "https://www.linkedin.com/in/david-carlson-0510747",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Jonas C. Sure, but are the largest EMRs going to do this \"willingly\" without the govt carrot & stick?   Are we still in extreme EMR data silos today without the existing govt certification requirements?\n\nIt would be ideal if billion dollar EMR corps would just have their data \"open\" and freely flowing on their own accord, but we know that isn't the way it usually works... data is literally monetized as much as possible, whenever possible.",
+      "html": "<a href=\"https://www.linkedin.com/in/jonasc1921/\">Jonas C.</a> Sure, but are the largest EMRs going to do this &quot;willingly&quot; without the govt carrot &amp; stick?   Are we still in extreme EMR data silos today without the existing govt certification requirements?<br><br>It would be ideal if billion dollar EMR corps would just have their data &quot;open&quot; and freely flowing on their own accord, but we know that isn't the way it usually works... data is literally monetized as much as possible, whenever possible.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Jonas C.",
+          "url": "https://www.linkedin.com/in/jonasc1921/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7457781531949027328)",
+      "parent_id": "urn:li:comment:(ugcPost:7456030066825768961,7456348690014920704)",
+      "created_at": "2026-05-06T13:21:16Z",
+      "author": {
+        "name": "Jonas C.",
+        "headline": "Helping clinicians get their evenings back and leaders their peace of mind | Automating SART & BORN reporting with Embryologix",
+        "profile_url": "https://www.linkedin.com/in/jonasc1921",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "David Carlson Certification cracked the door, but vendors still optimized for compliance over openness. AuthZ modularity likely needs sharper carrots, reimbursement, liability, or competitive disadvantage.",
+      "html": "<a href=\"https://www.linkedin.com/in/david-carlson-0510747/\">David Carlson</a> Certification cracked the door, but vendors still optimized for compliance over openness. AuthZ modularity likely needs sharper carrots, reimbursement, liability, or competitive disadvantage.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "David Carlson",
+          "url": "https://www.linkedin.com/in/david-carlson-0510747/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7458175632925937664)",
+      "parent_id": null,
+      "created_at": "2026-05-07T15:27:17Z",
+      "author": {
+        "name": "Catherine Procknow",
+        "headline": "Genomics @ Epic. Do what’s best for the patient.",
+        "profile_url": "https://www.linkedin.com/in/epicgenomics",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "😵‍💫",
+      "html": "😵‍💫",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7456030066825768961,7460104159606878209)",
+      "parent_id": null,
+      "created_at": "2026-05-12T23:10:33Z",
+      "author": {
+        "name": "ChartSynergy",
+        "headline": "33 followers",
+        "profile_url": "https://www.linkedin.com/company/chart-synergy/posts",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is a useful framing. The demand signal matters because authorization standards only help if they reduce ambiguity for real workflows, not just create another integration layer. The hard part is aligning vendors, implementers, and providers around the same operational test. Where should that signal be strongest first?",
+      "html": "This is a useful framing. The demand signal matters because authorization standards only help if they reduce ambiguity for real workflows, not just create another integration layer. The hard part is aligning vendors, implementers, and providers around the same operational test. Where should that signal be strongest first?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

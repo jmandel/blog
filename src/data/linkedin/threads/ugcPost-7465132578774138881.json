@@ -1,0 +1,553 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7465132578774138881",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7465132578774138881/",
+  "pages": [
+    "article:robze",
+    "share:7465132578774138881"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "robze",
+      "url": "https://www.linkedin.com/pulse/software-statements-medicare-app-library-josh-mandel-md-robze",
+      "activity_urn": "urn:li:activity:7465132579483131905"
+    }
+  ],
+  "displayed": {
+    "comments": 20,
+    "reactions": 39,
+    "reposts": 1
+  },
+  "captured": {
+    "total": 20,
+    "top_level": 13,
+    "replies": 7
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465133970926616577)",
+      "parent_id": null,
+      "created_at": "2026-05-26T20:17:14Z",
+      "author": {
+        "name": "Imran Qureshi",
+        "headline": "CTO & Chief AI Officer @ b.well Connected Health",
+        "profile_url": "https://www.linkedin.com/in/imranq2",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Interesting idea.  CIMD standard already handles most of this: https://client.dev/.  I think all we need is the list of apps registered in the CMS Provider Directory that are \"trusted\" by CMS.  The networks can retrieve the rest of the info from CIMD of the app developer.",
+      "html": "Interesting idea.  CIMD standard already handles most of this: <a href=\"https://client.dev/\">https://client.dev/</a>.  I think all we need is the list of apps registered in the CMS Provider Directory that are &quot;trusted&quot; by CMS.  The networks can retrieve the rest of the info from CIMD of the app developer.",
+      "links": [
+        {
+          "text": "https://client.dev/",
+          "url": "https://client.dev/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": true,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQFleeDT9_Egiw/articleshare-shrink_160/B56ZosB.3EKAAo-/0/1761675309513?e=1791921600&v=beta&t=E4W_Hf67g0Vo3nj--uiQZpbiF0LuaBerGR__7w_2yfs",
+          "file": "linkedin-media/3706471b79943b19.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465134385546129413)",
+      "parent_id": null,
+      "created_at": "2026-05-26T20:18:53Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "On how this relates to UDAP, TEFCA, and FAST...\n\n(For readers new to these: they're existing efforts for health apps and data holders to trust each other. UDAP gives each app an x509 certificate from a certificate authority; TEFCA is the national framework linking big networks; FAST is an infrastructure accelerator whose security work underpins much of TEFCA's FHIR roadmap.)\n\nThis solves narrower problem: an app CMS already vetted, connecting inside the CMS ecosystem. For that, one CMS-signed JWT is enough, and it ships fast because CMS already signs JWTs and already runs the review. The tradeoffs of going lighter are fine for this scope and wouldn't be for a general framework. A network can accept these statements and UDAP x509 apps.\n\nThe cms_app block is close to a UDAP certification and could later be expressed as one; v1 keeps it a plain claim set to stay minimal. The cost this avoids is obtaining and maintaining CA-issued certificates. And the proposal relies on jwks_uri because CMS Blue Button and SMART Backend Services already do; this builds on the deployed baseline and can be hardened iteratively.",
+      "html": "On how this relates to UDAP, TEFCA, and FAST...<br><br>(For readers new to these: they're existing efforts for health apps and data holders to trust each other. UDAP gives each app an x509 certificate from a certificate authority; TEFCA is the national framework linking big networks; FAST is an infrastructure accelerator whose security work underpins much of TEFCA's FHIR roadmap.)<br><br>This solves narrower problem: an app CMS already vetted, connecting inside the CMS ecosystem. For that, one CMS-signed JWT is enough, and it ships fast because CMS already signs JWTs and already runs the review. The tradeoffs of going lighter are fine for this scope and wouldn't be for a general framework. A network can accept these statements and UDAP x509 apps.<br><br>The cms_app block is close to a UDAP certification and could later be expressed as one; v1 keeps it a plain claim set to stay minimal. The cost this avoids is obtaining and maintaining CA-issued certificates. And the proposal relies on jwks_uri because CMS Blue Button and SMART Backend Services already do; this builds on the deployed baseline and can be hardened iteratively.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 6,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465137353687240704)",
+      "parent_id": null,
+      "created_at": "2026-05-26T20:30:40Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I need this to happen",
+      "html": "I need this to happen",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465140549784764417)",
+      "parent_id": "urn:li:comment:(ugcPost:7465132578774138881,7465133970926616577)",
+      "created_at": "2026-05-26T20:43:22Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Imran Qureshi Yes agree! This comes down to 1) predictable publication format, 2) how is it signed, 3) what metadata is included? On my view you can't  really have an app decide on its own name, logo, url, etc (those need to be locked down). The software statement uses this same data model as OIDC / CIMD, but puts a CMS signature around\n\nLike, this guidance from CIMD is... not a basket in which you want to place many eggs:\n\n> Authorization servers that wish to make use of the logo_uri property within client metadata document SHOULD prefetch the file at logo_uri and cache it for the cache duration of the client metadata document. This allows for moderation tools to verify the file contents (e.g., preventing usage of logos that look like other logos), as well as preventing the logo from being dynamically changed to confuse an end- user.",
+      "html": "<a href=\"https://www.linkedin.com/in/imranq2/\">Imran Qureshi</a> Yes agree! This comes down to 1) predictable publication format, 2) how is it signed, 3) what metadata is included? On my view you can't  really have an app decide on its own name, logo, url, etc (those need to be locked down). The software statement uses this same data model as OIDC / CIMD, but puts a CMS signature around<br><br><br>Like, this guidance from CIMD is... not a basket in which you want to place many eggs:<br><br>&gt; Authorization servers that wish to make use of the logo_uri property within client metadata document SHOULD prefetch the file at logo_uri and cache it for the cache duration of the client metadata document. This allows for moderation tools to verify the file contents (e.g., preventing usage of logos that look like other logos), as well as preventing the logo from being dynamically changed to confuse an end- user.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Imran Qureshi",
+          "url": "https://www.linkedin.com/in/imranq2/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465151733938425856)",
+      "parent_id": "urn:li:comment:(ugcPost:7465132578774138881,7465133970926616577)",
+      "created_at": "2026-05-26T21:27:49Z",
+      "author": {
+        "name": "Imran Qureshi",
+        "headline": "CTO & Chief AI Officer @ b.well Connected Health",
+        "profile_url": "https://www.linkedin.com/in/imranq2",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD So if the app wants to change anything they have to go through an approval process with CMS which adds cost to CMS and time delay.  That's why letting the app vendor control their own config via CIMD makes more sense.  Same as how well-known-configuration allows a service to control its keys rather than having to store its public key in some other store.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> So if the app wants to change anything they have to go through an approval process with CMS which adds cost to CMS and time delay.  That's why letting the app vendor control their own config via CIMD makes more sense.  Same as how well-known-configuration allows a service to control its keys rather than having to store its public key in some other store.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465152901674467328)",
+      "parent_id": null,
+      "created_at": "2026-05-26T21:32:27Z",
+      "author": {
+        "name": "Sangeet Agarwal",
+        "headline": "Principal Software Developer | Architecting Specification-Driven Systems | .NET, React, AI",
+        "profile_url": "https://www.linkedin.com/in/sangeetagarwal",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is interesting, one could generalize - when any trusted authority has vetted an entity then express that as a signed portable claim set / statement. Relying party in the chain then consume that decision without having to re-derive that trust, frees the network from emails & pdfs, scope though must be bounded, which you have already addressed.",
+      "html": "This is interesting, one could generalize - when any trusted authority has vetted an entity then express that as a signed portable claim set / statement. Relying party in the chain then consume that decision without having to re-derive that trust, frees the network from emails &amp; pdfs, scope though must be bounded, which you have already addressed.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465156427200974848)",
+      "parent_id": "urn:li:comment:(ugcPost:7465132578774138881,7465133970926616577)",
+      "created_at": "2026-05-26T21:46:28Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Sure thing: you let them self-assert everything that's not security sensitive. The rest goes through one gate (CMS) instead of 35 (each network).",
+      "html": "Sure thing: you let them self-assert everything that's not security sensitive. The rest goes through one gate (CMS) instead of 35 (each network).",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465157869441720320)",
+      "parent_id": "urn:li:comment:(ugcPost:7465132578774138881,7465133970926616577)",
+      "created_at": "2026-05-26T21:52:12Z",
+      "author": {
+        "name": "Imran Qureshi",
+        "headline": "CTO & Chief AI Officer @ b.well Connected Health",
+        "profile_url": "https://www.linkedin.com/in/imranq2",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Yep, the only thing that CMS would control is whether the app vendor is trusted (i.e., the app is in the CMS approved apps list).  Everything else the app vendor can self-assert via CIMD or similar mechanism that they can control and update themselves.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Yep, the only thing that CMS would control is whether the app vendor is trusted (i.e., the app is in the CMS approved apps list).  Everything else the app vendor can self-assert via CIMD or similar mechanism that they can control and update themselves.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465161447023587328)",
+      "parent_id": null,
+      "created_at": "2026-05-26T22:06:24Z",
+      "author": {
+        "name": "Jacob Reider",
+        "headline": "Health > Care",
+        "profile_url": "https://www.linkedin.com/in/jacobr",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Seems easy enough .. hey Zac Jiwa .. can you get this up and running by June 1?   Por favor?",
+      "html": "Seems easy enough .. hey Zac Jiwa .. can you get this up and running by June 1?   Por favor?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465161767611056128)",
+      "parent_id": "urn:li:comment:(ugcPost:7465132578774138881,7465133970926616577)",
+      "created_at": "2026-05-26T22:07:41Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "CMS Library will already list human readable app names URLs logos etc -- that stuff can all be signed over by CMS. The rest are operational details (like keys and API endpoints) that apps can/should self assert.",
+      "html": "CMS Library will already list human readable app names URLs logos etc -- that stuff can all be signed over by CMS. The rest are operational details (like keys and API endpoints) that apps can/should self assert.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465191700160815105)",
+      "parent_id": null,
+      "created_at": "2026-05-27T00:06:37Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Imran Qureshi (summing up here because LI makes comment threads so hard): Agreed on the main point. Apps should be able to self-assert most of their config themselves. CIMD is a good mechanism for that... and for networks that use dynamic registration, apps can just populate these self-asserted details in their dynreg request. The two are ~equivalent from a trust perspective. The approach I'm proposing for a CMS signature is deliberately narrow: just the handful of identity details CMS already publishes in the Library (app name, URLs, logo, etc.). Keys, API endpoints, and other operational details are exactly the things apps can and should self-assert.\n\nAnd to be clear, this doesn't prevent apps from publishing their own updates independently of CMS. The CMS-signed statement is just *one more piece of information* the ecosystem can choose to rely on, not a gate on anything.\n\nOn the update-cost concern: realistically, when your app changes its name, updating that with the CMS Library is the right thing to do anyway, and it's one update instead of 35 across every network.",
+      "html": "<a href=\"https://www.linkedin.com/in/imranq2/\">Imran Qureshi</a> (summing up here because LI makes comment threads so hard): Agreed on the main point. Apps should be able to self-assert most of their config themselves. CIMD is a good mechanism for that... and for networks that use dynamic registration, apps can just populate these self-asserted details in their dynreg request. The two are ~equivalent from a trust perspective. The approach I'm proposing for a CMS signature is deliberately narrow: just the handful of identity details CMS already publishes in the Library (app name, URLs, logo, etc.). Keys, API endpoints, and other operational details are exactly the things apps can and should self-assert.<br><br>And to be clear, this doesn't prevent apps from publishing their own updates independently of CMS. The CMS-signed statement is just *one more piece of information* the ecosystem can choose to rely on, not a gate on anything.<br><br>On the update-cost concern: realistically, when your app changes its name, updating that with the CMS Library is the right thing to do anyway, and it's one update instead of 35 across every network.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Imran Qureshi",
+          "url": "https://www.linkedin.com/in/imranq2/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465293779210653696)",
+      "parent_id": null,
+      "created_at": "2026-05-27T06:52:15Z",
+      "author": {
+        "name": "Fredrik Lindén",
+        "headline": "Cofounder of MyData.org Not for profit - Digital Government Transformation and Senior Consultant.",
+        "profile_url": "https://www.linkedin.com/in/fred-lind%C3%A9n",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Is this a good idea for global interoperability? George J Padayatti  Vadim Peretokin  Lal Chandran",
+      "html": "Is this a good idea for global interoperability? George J Padayatti  Vadim Peretokin  Lal Chandran",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465374284421480448)",
+      "parent_id": null,
+      "created_at": "2026-05-27T12:12:09Z",
+      "author": {
+        "name": "Yemi Mateola, MBA, CPHIMS, AIGP",
+        "headline": "Founder, Stratevora Technologies | Enterprise AI Strategy & Governance | Board Director & Advisor | Speaker | Co-Author, Saving Rural Hospitals.",
+        "profile_url": "https://www.linkedin.com/in/yemimateola",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "A simple administrative tweak at the top can spark more software innovation than millions of dollars in federal grants.",
+      "html": "A simple administrative tweak at the top can spark more software innovation than millions of dollars in federal grants.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465420287610601472)",
+      "parent_id": null,
+      "created_at": "2026-05-27T15:14:57Z",
+      "author": {
+        "name": "Alan Viars",
+        "headline": "Helping the government sort out identity and health data issues one line at a time.",
+        "profile_url": "https://www.linkedin.com/in/videntity",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD I wholeheartedly agree with this approach!",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> I wholeheartedly agree with this approach!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465425102143188992)",
+      "parent_id": null,
+      "created_at": "2026-05-27T15:34:05Z",
+      "author": {
+        "name": "Aaron Seib, PMP, CPMAI, CDMP-Practitioner",
+        "headline": "Healthcare AI & Data Solutions Leader | CDMP, CPMAI, PMP",
+        "profile_url": "https://www.linkedin.com/in/aaron-seib-pmp-cpmai-cdmp-practitioner-65811627",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thanks for posting this Josh.  Brings back memories of NATE and the work we attempted to do ten years ago to reduce friction in trusting independently vetted consumer controlled apps.",
+      "html": "Thanks for posting this Josh.  Brings back memories of NATE and the work we attempted to do ten years ago to reduce friction in trusting independently vetted consumer controlled apps.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465922880288141313)",
+      "parent_id": null,
+      "created_at": "2026-05-29T00:32:04Z",
+      "author": {
+        "name": "Gerard Reeder",
+        "headline": "Founder & CEO, XHealth Nexus | Patient-Authorized Longitudinal Health Data Platform | Former SSA-NHIN Public-Private Partnership Lead",
+        "profile_url": "https://www.linkedin.com/in/gerardreeder",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Excellent framing. The point that “the review happened once, but the result is not portable” feels especially important as interoperability workflows continue scaling across networks.\nReducing repeated onboarding, trust validation, and operational friction could significantly accelerate real-world adoption inside the CMS ecosystem.",
+      "html": "Excellent framing. The point that “the review happened once, but the result is not portable” feels especially important as interoperability workflows continue scaling across networks.<br>Reducing repeated onboarding, trust validation, and operational friction could significantly accelerate real-world adoption inside the CMS ecosystem.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7465975912111546368)",
+      "parent_id": "urn:li:comment:(ugcPost:7465132578774138881,7465191700160815105)",
+      "created_at": "2026-05-29T04:02:48Z",
+      "author": {
+        "name": "Bret Heale, PhD",
+        "headline": "Solutions Architect, Precision Medicine, Biomedical Informatics",
+        "profile_url": "https://www.linkedin.com/in/bret-heale-phd-7ab53b26",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD can't wait till the CapabilityStatement enables machine to machine dynamic adjustments to interactions for seamless reconfiguring....but first the CapabilityStatement needs to be accurate...",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> can't wait till the CapabilityStatement enables machine to machine dynamic adjustments to interactions for seamless reconfiguring....but first the CapabilityStatement needs to be accurate...",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7466617734173433856)",
+      "parent_id": null,
+      "created_at": "2026-05-30T22:33:10Z",
+      "author": {
+        "name": "Alan Viars",
+        "headline": "Helping the government sort out identity and health data issues one line at a time.",
+        "profile_url": "https://www.linkedin.com/in/videntity",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The notion of signing software statements as JWTs is a good idea! About 10 years ago, when Blue Button 2.0 was still in development, Mark Scrimshire and I encouraged CMS to do something similar.  something similar, but it didn't get any buy in.  I'm glad you are surfacing it again. https://github.com/TransparentHealth/poet. This creates a path for Dynamic client registration protocol to work at scale in healthcare.",
+      "html": "The notion of signing software statements as JWTs is a good idea! About 10 years ago, when Blue Button 2.0 was still in development, <a href=\"https://www.linkedin.com/in/marks/\">Mark Scrimshire</a> and I encouraged CMS to do something similar.  something similar, but it didn't get any buy in.  I'm glad you are surfacing it again. <a href=\"https://github.com/TransparentHealth/poet\">https://github.com/TransparentHealth/poet</a>. This creates a path for Dynamic client registration protocol to work at scale in healthcare.",
+      "links": [
+        {
+          "text": "https://github.com/TransparentHealth/poet",
+          "url": "https://github.com/TransparentHealth/poet"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Mark Scrimshire",
+          "url": "https://www.linkedin.com/in/marks/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQG4S3P92TU_9w/articleshare-shrink_160/B4EZ57AYpsHMAQ-/0/1780180160086?e=1791921600&v=beta&t=ZyCrx6Nf4uItGSdBMo5l-y-fXGyT1NhE24YgHR2OmXQ",
+          "file": "linkedin-media/2f629f7f12621de4.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7466617814221553664)",
+      "parent_id": "urn:li:comment:(ugcPost:7465132578774138881,7465425102143188992)",
+      "created_at": "2026-05-30T22:33:29Z",
+      "author": {
+        "name": "Alan Viars",
+        "headline": "Helping the government sort out identity and health data issues one line at a time.",
+        "profile_url": "https://www.linkedin.com/in/videntity",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Aaron Seib, PMP, FACHDM, CDMP-Practitioner yep!",
+      "html": "<a href=\"https://www.linkedin.com/in/aaron-seib-pmp-cpmai-cdmp-practitioner-65811627/\">Aaron Seib, PMP, FACHDM, CDMP-Practitioner</a> yep!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Aaron Seib, PMP, FACHDM, CDMP-Practitioner",
+          "url": "https://www.linkedin.com/in/aaron-seib-pmp-cpmai-cdmp-practitioner-65811627/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7465132578774138881,7466619553427410944)",
+      "parent_id": null,
+      "created_at": "2026-05-30T22:40:24Z",
+      "author": {
+        "name": "Alan Viars",
+        "headline": "Helping the government sort out identity and health data issues one line at a time.",
+        "profile_url": "https://www.linkedin.com/in/videntity",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "In general, I think there should be a lot more publishing of machine-readable documents for discovery in healthcare.  Things that go in \"http://example.com/.well-known\" are another example of a similar design pattern. See https://datatracker.ietf.org/doc/html/rfc8615 for reference.  Discovery documents can be JSON or signed artifacts as you describe for Medicare Apps.  Provider directories could/should work in a similar way IMHO.",
+      "html": "In general, I think there should be a lot more publishing of machine-readable documents for discovery in healthcare.  Things that go in &quot;<a href=\"http://example.com/.well-known\">http://example.com/.well-known</a>&quot; are another example of a similar design pattern. See <a href=\"https://datatracker.ietf.org/doc/html/rfc8615\">https://datatracker.ietf.org/doc/html/rfc8615</a> for reference.  Discovery documents can be JSON or signed artifacts as you describe for Medicare Apps.  Provider directories could/should work in a similar way IMHO.",
+      "links": [
+        {
+          "text": "http://example.com/.well-known",
+          "url": "http://example.com/.well-known"
+        },
+        {
+          "text": "https://datatracker.ietf.org/doc/html/rfc8615",
+          "url": "https://datatracker.ietf.org/doc/html/rfc8615"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

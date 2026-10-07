@@ -1,0 +1,367 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7506820719977205760",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7506820719977205760/",
+  "pages": [
+    "share:7506820719977205760"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7506820918892056576"
+    }
+  ],
+  "displayed": {
+    "comments": 15,
+    "reactions": 56,
+    "reposts": 0
+  },
+  "captured": {
+    "total": 15,
+    "top_level": 10,
+    "replies": 5
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7506833219284168704)",
+      "parent_id": null,
+      "created_at": "2026-09-18T21:55:09Z",
+      "author": {
+        "name": "William Laolagi",
+        "headline": "Interoperability specialist serving the state of California in Riverside and San Bernardino counties",
+        "profile_url": "https://www.linkedin.com/in/william-laolagi-905b1a4b",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "this is really cool Josh!",
+      "html": "this is really cool Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7506847947792216065)",
+      "parent_id": null,
+      "created_at": "2026-09-18T22:53:41Z",
+      "author": {
+        "name": "Paulius Mui, MD",
+        "headline": "Care quality and safety",
+        "profile_url": "https://www.linkedin.com/in/pauliusmui",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Love the visual of the handoffs between tools 💪",
+      "html": "Love the visual of the handoffs between tools 💪",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7506868991798181889)",
+      "parent_id": null,
+      "created_at": "2026-09-19T00:17:18Z",
+      "author": {
+        "name": "Scott Hozebin M.B.A",
+        "headline": "CEO, Managing Director, Board Member, Expert in bringing transformational products to market",
+        "profile_url": "https://www.linkedin.com/in/scotthozebin",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Sounds good, how well does it handle api calls for it ms like ins verification, npi look up or pharmacy? Would love to talk through it some time",
+      "html": "Sounds good, how well does it handle api calls for it ms like ins verification, npi look up or pharmacy? Would love to talk through it some time",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7506878607164624896)",
+      "parent_id": null,
+      "created_at": "2026-09-19T00:55:31Z",
+      "author": {
+        "name": "Shannon Manzi",
+        "headline": "PharmD, BCPPS, CPHRM, FPPA Assistant Professor, Pediatrics at Harvard; Director, Safety & Quality, Dept of Pharmacy Boston Children’s HospItal",
+        "profile_url": "https://www.linkedin.com/in/smanzi-pharmd",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Hello my friend!  A+ for pronunciation of amlodipine, C- for not warning to keep it out of reach if there are children in the home.  Interesting flow, unsure behavior would change but certainly worth study!",
+      "html": "Hello my friend!  A+ for pronunciation of amlodipine, C- for not warning to keep it out of reach if there are children in the home.  Interesting flow, unsure behavior would change but certainly worth study!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7506878842549157888)",
+      "parent_id": "urn:li:comment:(ugcPost:7506820719977205760,7506868991798181889)",
+      "created_at": "2026-09-19T00:56:27Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "This is all done through \"delegation\" -- so gpt-live-1 basically mutters \"help me out\", and you have some underlying model watching for these delegation requests, turning them into tool calls / info retrieval / processing, and whispering back in gpt-live-1's ear to guide the conversation with resulst.",
+      "html": "This is all done through &quot;delegation&quot; -- so gpt-live-1 basically mutters &quot;help me out&quot;, and you have some underlying model watching for these delegation requests, turning them into tool calls / info retrieval / processing, and whispering back in gpt-live-1's ear to guide the conversation with resulst.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7506879480431276033)",
+      "parent_id": "urn:li:comment:(ugcPost:7506820719977205760,7506878607164624896)",
+      "created_at": "2026-09-19T00:58:59Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Hi Shannon!\n\nSuper good points.\n\nRe: behavior, I don't expect the sort of *in-band counseling* I show here is super effective, but the *information gathering* could be a useful input to new processes (i.e. knowing the situation could help providers decide when to step in an assist).\n\nOn pronunciation + safety precautions : well, my prompt included a pronunciation guide and lacked safety precautions, so I can credit or blame the models on those :)",
+      "html": "Hi Shannon! <br><br>Super good points.<br><br>Re: behavior, I don't expect the sort of *in-band counseling* I show here is super effective, but the *information gathering* could be a useful input to new processes (i.e. knowing the situation could help providers decide when to step in an assist).<br><br>On pronunciation + safety precautions : well, my prompt included a pronunciation guide and lacked safety precautions, so I can credit or blame the models on those :)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7506888141799071744)",
+      "parent_id": null,
+      "created_at": "2026-09-19T01:33:24Z",
+      "author": {
+        "name": "David K.",
+        "headline": "Toddler dad working on better work/life balance at early-stage healthcare companies. /s",
+        "profile_url": "https://www.linkedin.com/in/davidpharmd",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Definitely a lot to be excited about here. Thanks for sharing!",
+      "html": "Definitely a lot to be excited about here. Thanks for sharing!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7507013441824530432)",
+      "parent_id": null,
+      "created_at": "2026-09-19T09:51:18Z",
+      "author": {
+        "name": "Muhammad Abubakar Siddique",
+        "headline": "Co-Founder at HeraIQ",
+        "profile_url": "https://www.linkedin.com/in/abubakar-khan-lakhwera",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Dr Mandel, decoupling low-latency conversational audio from an underlying reasoning model via trusted sideband delegation is a brilliant pattern, because it allows clinical logic and stop gates to intervene dynamically without breaking the live patient flow.",
+      "html": "Dr Mandel, decoupling low-latency conversational audio from an underlying reasoning model via trusted sideband delegation is a brilliant pattern, because it allows clinical logic and stop gates to intervene dynamically without breaking the live patient flow.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7507027079935242240)",
+      "parent_id": null,
+      "created_at": "2026-09-19T10:45:29Z",
+      "author": {
+        "name": "Dr. Nadeem Ahmed",
+        "headline": "Forbes 30u30 | Ex-McKinsey | Physician building the AI evidence layer for Longevity",
+        "profile_url": "https://www.linkedin.com/in/drnadeemahmed",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Building the thing rather than describing it is why this is worth reading. Also a fair point that the bar set by actual adherence outreach calls is not a high one.",
+      "html": "Building the thing rather than describing it is why this is worth reading. Also a fair point that the bar set by actual adherence outreach calls is not a high one.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7507076405319319554)",
+      "parent_id": null,
+      "created_at": "2026-09-19T14:01:29Z",
+      "author": {
+        "name": "Doug Rogers",
+        "headline": "TOM Evangelist | Digital Health, Strategy & GTM Leadership | Founder & Host of “The Counterweight” Podcast | Board Member",
+        "profile_url": "https://www.linkedin.com/in/doug-rogers-9586297",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is pretty cool. The tone and cadence seemed pretty natural throughout. Curious what would be the trigger for this Agent to do the call? Someone in the practice asking if or keying off something in the chart?",
+      "html": "This is pretty cool. The tone and cadence seemed pretty natural throughout. Curious what would be the trigger for this Agent to do the call? Someone in the practice asking if or keying off something in the chart?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7507093465613254656)",
+      "parent_id": "urn:li:comment:(ugcPost:7506820719977205760,7507076405319319554)",
+      "created_at": "2026-09-19T15:09:17Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Many possible triggers (e.g., routine outreach, or follow-up triggered by a concerning pattern of adherence from pharmacy, pickup data, clinical measurements,  etc)",
+      "html": "Many possible triggers (e.g., routine outreach, or follow-up triggered by a concerning pattern of adherence from pharmacy, pickup data, clinical measurements,  etc)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7507429239919550464)",
+      "parent_id": null,
+      "created_at": "2026-09-20T13:23:32Z",
+      "author": {
+        "name": "Jason Davis, MD, FACR",
+        "headline": "Founder & CEO @ iTech Clinical Intelligence | Radiology | Medicine | Computer Science | Data Science | AI",
+        "profile_url": "https://www.linkedin.com/in/jason-davis-radiology",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh, interesting, and thank you. I wasn’t initially a fan of GPT-Live 1 relative to GPT-Realtime, but based on your demonstration, I’ll definitely reconsider it.\n\nWe experiment with these models while developing conversational workflows for patient appointments, follow-ups, and related use cases. We’ve found that comfort with talking to computers varies by generation, particularly when the voice is perceived as artificial. Prosody and conversational timing matter.\n\nI like the direction OpenAI is taking, and I still consider its integration of NLP and signal processing the strongest on the market. Of course, that can always change, so it’s important to remain flexible.",
+      "html": "Josh, interesting, and thank you. I wasn’t initially a fan of GPT-Live 1 relative to GPT-Realtime, but based on your demonstration, I’ll definitely reconsider it.<br><br>We experiment with these models while developing conversational workflows for patient appointments, follow-ups, and related use cases. We’ve found that comfort with talking to computers varies by generation, particularly when the voice is perceived as artificial. Prosody and conversational timing matter.<br><br>I like the direction OpenAI is taking, and I still consider its integration of NLP and signal processing the strongest on the market. Of course, that can always change, so it’s important to remain flexible.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7507487076003598336)",
+      "parent_id": null,
+      "created_at": "2026-09-20T17:13:21Z",
+      "author": {
+        "name": "Benjamin Krasin",
+        "headline": "Founder, Krasyn. Building AI for clinicians and learners, and testing it in public.",
+        "profile_url": "https://www.linkedin.com/in/benjamin-krasin-933147426",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "In a medication check-in the quiet failure sits upstream of the reasoning. Benchmarking 3 speech services on our own clinical audio last week, the one we had in production dropped the \"no more than\" out of an acetaminophen dose limit, and another truncated a 30-second chunk of continuous speech down to 89 characters. A live model can then coordinate flawlessly over a sentence the patient never said.",
+      "html": "In a medication check-in the quiet failure sits upstream of the reasoning. Benchmarking 3 speech services on our own clinical audio last week, the one we had in production dropped the &quot;no more than&quot; out of an acetaminophen dose limit, and another truncated a 30-second chunk of continuous speech down to 89 characters. A live model can then coordinate flawlessly over a sentence the patient never said.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7507607838307880961)",
+      "parent_id": "urn:li:comment:(ugcPost:7506820719977205760,7507487076003598336)",
+      "created_at": "2026-09-21T01:13:13Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "What models?",
+      "html": "What models?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7506820719977205760,7508350936977899520)",
+      "parent_id": "urn:li:comment:(ugcPost:7506820719977205760,7507487076003598336)",
+      "created_at": "2026-09-23T02:26:01Z",
+      "author": {
+        "name": "Benjamin Krasin",
+        "headline": "Founder, Krasyn. Building AI for clinicians and learners, and testing it in public.",
+        "profile_url": "https://www.linkedin.com/in/benjamin-krasin-933147426",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Whisper on Azure OpenAI was the one in production and dropped the \"no more than\". gpt-4o-transcribe did the truncating, and giving it the previous chunk as a prompt made recall worse, not better. Azure AI Speech fast transcription kept all 72 negated statements across 13 synthetic visits, all fed as 30-second chunks, which is not how a live voice agent hears audio.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Whisper on Azure OpenAI was the one in production and dropped the &quot;no more than&quot;. gpt-4o-transcribe did the truncating, and giving it the previous chunk as a prompt made recall worse, not better. Azure AI Speech fast transcription kept all 72 negated statements across 13 synthetic visits, all fed as 30-second chunks, which is not how a live voice agent hears audio.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

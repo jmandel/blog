@@ -1,0 +1,377 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7462872150975320064",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7462872150975320064/",
+  "pages": [
+    "article:gylif",
+    "share:7462872150975320064"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "gylif",
+      "url": "https://www.linkedin.com/pulse/how-fhir-resourceid-became-special-systemstring-josh-mandel-md-gylif",
+      "activity_urn": "urn:li:activity:7462872151638069251"
+    }
+  ],
+  "displayed": {
+    "comments": 14,
+    "reactions": 33,
+    "reposts": 4
+  },
+  "captured": {
+    "total": 14,
+    "top_level": 10,
+    "replies": 4
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7462880273785864192)",
+      "parent_id": null,
+      "created_at": "2026-05-20T15:01:50Z",
+      "author": {
+        "name": "Paul Church",
+        "headline": "Inovia executive-in-residence, ex-Google, HL7 FHIR, part-time farmer",
+        "profile_url": "https://www.linkedin.com/in/paul-steven-church",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I remember tracking down that exact delta when I was trying to understand the history!",
+      "html": "I remember tracking down that exact delta when I was trying to understand the history!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7462965322673954816)",
+      "parent_id": null,
+      "created_at": "2026-05-20T20:39:48Z",
+      "author": {
+        "name": "Gully Burns",
+        "headline": "Researcher in systems for AIxScience",
+        "profile_url": "https://www.linkedin.com/in/gullyaburns",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Interesting article (basically a trace of an agent's diagnostic thread over data). This is strangely familiar. :-)",
+      "html": "Interesting article (basically a trace of an agent's diagnostic thread over data). This is strangely familiar. :-)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7462983643964022785)",
+      "parent_id": null,
+      "created_at": "2026-05-20T21:52:36Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "In follow-up discussion with Grahame: he indicated the change here was not actually mistake, but rather that the underlying issue resolution and minutes may have been missing the full intent behind the discussion / decision details.",
+      "html": "In follow-up discussion with Grahame: he indicated the change here was not actually mistake, but rather that the underlying issue resolution and minutes may have been missing the full intent behind the discussion / decision details.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463001581509152769)",
+      "parent_id": null,
+      "created_at": "2026-05-20T23:03:52Z",
+      "author": {
+        "name": "John Scully",
+        "headline": "Decentralized Medical Records System. Blockchain-based system, US patent 12266430",
+        "profile_url": "https://www.linkedin.com/in/john-scully-61ba80279",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Epic's basic concept of centralizing medical records failed.   President Trump's policy is to decentralize the system so that every patient owns and controls their records.   That is also shown in a recent poll that found that overwhelmingly, Americans (72.6%) want decentralization.   The EHR industry is actively opposing the President.",
+      "html": "Epic's basic concept of centralizing medical records failed.   President Trump's policy is to decentralize the system so that every patient owns and controls their records.   That is also shown in a recent poll that found that overwhelmingly, Americans (72.6%) want decentralization.   The EHR industry is actively opposing the President.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463119673933500417)",
+      "parent_id": null,
+      "created_at": "2026-05-21T06:53:08Z",
+      "author": {
+        "name": "M Balawal Khan",
+        "headline": "Full Stack | Provide HealthTech Services | Entrepreneur | Building Vitruvia | Healings by Tech",
+        "profile_url": "https://www.linkedin.com/in/bilawalkhan",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "FHIR is a good reminder that complexity in healthcare software is usually historical, not accidental, and understanding it requires tracing decisions across versions rather than reading a single spec.",
+      "html": "FHIR is a good reminder that complexity in healthcare software is usually historical, not accidental, and understanding it requires tracing decisions across versions rather than reading a single spec.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463211168594268160)",
+      "parent_id": null,
+      "created_at": "2026-05-21T12:56:42Z",
+      "author": {
+        "name": "Dusan Jovanovic",
+        "headline": "AI Emergency Architect | Interim Chief Technology Officer at Resilient ROI | C23",
+        "profile_url": "https://www.linkedin.com/in/dusanjovanovic",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "One image springs to mind",
+      "html": "One image springs to mind",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": true,
+      "media": [
+        {
+          "type": "image",
+          "alt": "Comment image, no alternative text available",
+          "url": "https://media.licdn.com/dms/image/v2/D4D2CAQEj7e-OXGzCKg/comment-image-shrink_8192_480/B4DZ5Km_a4JoAI-/0/1779368201529?e=1791921600&v=beta&t=-cPviCKcfuU6d6k3oS7xzYw77P3CQLGpgABGAtb8gao",
+          "file": "linkedin-media/0bf8a6d34833a7cc.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463306699718856705)",
+      "parent_id": null,
+      "created_at": "2026-05-21T19:16:18Z",
+      "author": {
+        "name": "Abigail (Abbie) Watson",
+        "headline": "Venture Altruist, Interoperability Maven, AI Generalist, Aerospace Medicine, Patient/Passenger Safety Advocate, Biohacker, Futurist",
+        "profile_url": "https://www.linkedin.com/in/abigailwatson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Resource.id has strange implementations in the wild.  Sometimes people stuff entire JWT objects into it.  Others have tried cryptographic hashes for merkle trees.  I'm sure there have been other schemas.  It's a wild west out there.",
+      "html": "<a href=\"http://resource.id/\">Resource.id</a> has strange implementations in the wild.  Sometimes people stuff entire JWT objects into it.  Others have tried cryptographic hashes for merkle trees.  I'm sure there have been other schemas.  It's a wild west out there.",
+      "links": [
+        {
+          "text": "Resource.id",
+          "url": "http://resource.id/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463312227404627968)",
+      "parent_id": "urn:li:comment:(ugcPost:7462872150975320064,7463306699718856705)",
+      "created_at": "2026-05-21T19:38:16Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I hope nobody is trying to put JWTs into Resource.id --- \"id\" datatype doesn't admit underscores and is limited to 64 chars. Unless you're saying they attach extensions to the id ?? (yikes.)",
+      "html": "I hope nobody is trying to put JWTs into <a href=\"http://resource.id/\">Resource.id</a> --- &quot;id&quot; datatype doesn't admit underscores and is limited to 64 chars. Unless you're saying they attach extensions to the id ?? (yikes.)",
+      "links": [
+        {
+          "text": "Resource.id",
+          "url": "http://resource.id/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463319825688211458)",
+      "parent_id": "urn:li:comment:(ugcPost:7462872150975320064,7463306699718856705)",
+      "created_at": "2026-05-21T20:08:28Z",
+      "author": {
+        "name": "Abigail (Abbie) Watson",
+        "headline": "Venture Altruist, Interoperability Maven, AI Generalist, Aerospace Medicine, Patient/Passenger Safety Advocate, Biohacker, Futurist",
+        "profile_url": "https://www.linkedin.com/in/abigailwatson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD hrmmm… I wonder if I’m thinking Resource._id\n\nThe vendor was an Epic instance. 🫣\n\nNo underscores, but definately periods.  It was a real surprise to see a 2000+ char string in the id!",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> hrmmm… I wonder if I’m thinking Resource._id <br><br>The vendor was an Epic instance. 🫣<br><br>No underscores, but definately periods.  It was a real surprise to see a 2000+ char string in the id!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463320371211960320)",
+      "parent_id": "urn:li:comment:(ugcPost:7462872150975320064,7463306699718856705)",
+      "created_at": "2026-05-21T20:10:38Z",
+      "author": {
+        "name": "Abigail (Abbie) Watson",
+        "headline": "Venture Altruist, Interoperability Maven, AI Generalist, Aerospace Medicine, Patient/Passenger Safety Advocate, Biohacker, Futurist",
+        "profile_url": "https://www.linkedin.com/in/abigailwatson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Abigail (Abbie) Watson the idea was that they could digitally sign the entire resource with the org’s SSL cert.  If I recall correctly, it was a mostly empty payload.  Sort of an ad-hoc alternative to Provenance or X-Provenance headers.",
+      "html": "<a href=\"https://www.linkedin.com/in/abigailwatson/\">Abigail (Abbie) Watson</a> the idea was that they could digitally sign the entire resource with the org’s SSL cert.  If I recall correctly, it was a mostly empty payload.  Sort of an ad-hoc alternative to Provenance or X-Provenance headers.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Abigail (Abbie) Watson",
+          "url": "https://www.linkedin.com/in/abigailwatson/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463394033680424960)",
+      "parent_id": null,
+      "created_at": "2026-05-22T01:03:20Z",
+      "author": {
+        "name": "Matt Bishop",
+        "headline": "National Directory, SDOH and Healthcare Interoperability. AI Beyond Chatbots.",
+        "profile_url": "https://www.linkedin.com/in/matthewtbishop",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "If the HL7 weads had weads, which had weads, this would be it. Glad we (the industry) has Josh Mandel, MD, and GPT 5.5 to garden this and pull up what isn't supposed to he there and plant what is needed. 🤣",
+      "html": "If the HL7 weads had weads, which had weads, this would be it. Glad we (the industry) has <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>, and GPT 5.5 to garden this and pull up what isn't supposed to he there and plant what is needed. 🤣",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7463501645201584129)",
+      "parent_id": null,
+      "created_at": "2026-05-22T08:10:57Z",
+      "author": {
+        "name": "Paolo Perrone",
+        "headline": "Shipping Production AI: Agents, Inference, GPU. Read by 1M+ AI engineers.",
+        "profile_url": "https://www.linkedin.com/in/paoloperrone",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "How accurate is the triage output compared to someone who's been working with HL7 for years?",
+      "html": "How accurate is the triage output compared to someone who's been working with HL7 for years?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7464520883320225793)",
+      "parent_id": null,
+      "created_at": "2026-05-25T03:41:02Z",
+      "author": {
+        "name": "Daniel Cham MD",
+        "headline": "Physician and Healthcare Strategist | Founder | Fixing the Data Behind Revenue Cycle Leakage | Human-Supervised, AI-Powered Healthcare Workflow | Building ONNX 2.0",
+        "profile_url": "https://www.linkedin.com/in/daniel-cham-md-669036285",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "are we using AI to generate new systems faster, or to finally understand the ones we already cannot fully hold in our heads?",
+      "html": "are we using AI to generate new systems faster, or to finally understand the ones we already cannot fully hold in our heads?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7462872150975320064,7464666787004051456)",
+      "parent_id": "urn:li:comment:(ugcPost:7462872150975320064,7463501645201584129)",
+      "created_at": "2026-05-25T13:20:48Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I find it extremely competitive with what I could produce -- especially when you take timing into consideration. In 5 minutes it can read enough specification history, Zulip issues, confluence chat, and jira resolutions that I would take me at least an hour to catch up",
+      "html": "I find it extremely competitive with what I could produce -- especially when you take timing into consideration. In 5 minutes it can read enough specification history, Zulip issues, confluence chat, and jira resolutions that I would take me at least an hour to catch up",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

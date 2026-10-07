@@ -1,0 +1,343 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7491569676955709440",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7491569676955709440/",
+  "pages": [
+    "article:0aimf",
+    "share:7491569676955709440"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "0aimf",
+      "url": "https://www.linkedin.com/pulse/aco-quality-reporting-options-2x2-josh-mandel-md-0aimf",
+      "activity_urn": "urn:li:activity:7491569677521805312"
+    }
+  ],
+  "displayed": {
+    "comments": 12,
+    "reactions": 51,
+    "reposts": 2
+  },
+  "captured": {
+    "total": 12,
+    "top_level": 6,
+    "replies": 6
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7491640508914634752)",
+      "parent_id": null,
+      "created_at": "2026-08-07T23:44:45Z",
+      "author": {
+        "name": "Wayne Singer",
+        "headline": "Senior Vice President - Regulatory Affairs at Darena Solutions",
+        "profile_url": "https://www.linkedin.com/in/wayne-singer-170bb4",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh,\nWelcome to the wonderful world of MIPS and value-based care, where nothing is ever quite as simple as it first appears! Really nice framework for making a complicated set of ACO reporting choices easier to understand. One thing I would add is the operational reality that for many ACOs, the real challenge is consistently aggregating complete, measure-ready data across multiple EHRs and participant TINs. In practice, data completeness and interoperability can influence the reporting choice just as much as the scoring methodology. Great perspective and a great way to frame the discussion.",
+      "html": "Josh, <br>Welcome to the wonderful world of MIPS and value-based care, where nothing is ever quite as simple as it first appears! Really nice framework for making a complicated set of ACO reporting choices easier to understand. One thing I would add is the operational reality that for many ACOs, the real challenge is consistently aggregating complete, measure-ready data across multiple EHRs and participant TINs. In practice, data completeness and interoperability can influence the reporting choice just as much as the scoring methodology. Great perspective and a great way to frame the discussion.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7491695497934708736)",
+      "parent_id": null,
+      "created_at": "2026-08-08T03:23:15Z",
+      "author": {
+        "name": "Jeremy Huynh",
+        "headline": "Clinical Pharmacist at Prime Therapeutics",
+        "profile_url": "https://www.linkedin.com/in/jeremy-huynh-1b5712398",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "So you’re saying missing data is the thing holding scores down; data access is the thing that raises them?",
+      "html": "So you’re saying missing data is the thing holding scores down; data access is the thing that raises them?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7491714590502903808)",
+      "parent_id": "urn:li:comment:(ugcPost:7491569676955709440,7491695497934708736)",
+      "created_at": "2026-08-08T04:39:07Z",
+      "author": {
+        "name": "Wayne Singer",
+        "headline": "Senior Vice President - Regulatory Affairs at Darena Solutions",
+        "profile_url": "https://www.linkedin.com/in/wayne-singer-170bb4",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Jeremy Huynh Exactly, with one important distinction. Missing data can hurt the score, but access alone doesn’t improve it. The key is getting complete, timely data into a form that can identify gaps and drive action before reporting.",
+      "html": "<a href=\"https://www.linkedin.com/in/jeremy-huynh-1b5712398/\">Jeremy Huynh</a> Exactly, with one important distinction. Missing data can hurt the score, but access alone doesn’t improve it. The key is getting complete, timely data into a form that can identify gaps and drive action before reporting.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Jeremy Huynh",
+          "url": "https://www.linkedin.com/in/jeremy-huynh-1b5712398/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7491720833921384448)",
+      "parent_id": "urn:li:comment:(ugcPost:7491569676955709440,7491695497934708736)",
+      "created_at": "2026-08-08T05:03:56Z",
+      "author": {
+        "name": "Jeremy Huynh",
+        "headline": "Clinical Pharmacist at Prime Therapeutics",
+        "profile_url": "https://www.linkedin.com/in/jeremy-huynh-1b5712398",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Wayne Singer so if the value is to “identify the gap and drive the action in time,” and whoever owns that loop owns the thing everyone’s actually being paid for, then for the ACOs for SNFs, the SNFs are the owner of the systems of record the only way to get timely info is if they give the ACOs permission/access to their data?",
+      "html": "<a href=\"https://www.linkedin.com/in/wayne-singer-170bb4/\">Wayne Singer</a> so if the value is to “identify the gap and drive the action in time,” and whoever owns that loop owns the thing everyone’s actually being paid for, then for the ACOs for SNFs, the SNFs are the owner of the systems of record the only way to get timely info is if they give the ACOs permission/access to their data?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Wayne Singer",
+          "url": "https://www.linkedin.com/in/wayne-singer-170bb4/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7491878485347643392)",
+      "parent_id": null,
+      "created_at": "2026-08-08T15:30:23Z",
+      "author": {
+        "name": "Andrew Gibbons MBA, MS",
+        "headline": "Healthcare Analytics Leader | AI, Value-Based Care & Medical Economics | Claims, Attribution & Provider Performance | MSSP, MA, ACO REACH",
+        "profile_url": "https://www.linkedin.com/in/andrewgibbonsanalytics",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Really helpful framing, Josh Mandel, MD Separating the reporting population, scoring methodology, and submission mechanics makes a complicated topic much easier to reason through. Looking forward to seeing how the simulator develops.",
+      "html": "Really helpful framing, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Separating the reporting population, scoring methodology, and submission mechanics makes a complicated topic much easier to reason through. Looking forward to seeing how the simulator develops.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7491880894861856769)",
+      "parent_id": "urn:li:comment:(ugcPost:7491569676955709440,7491640508914634752)",
+      "created_at": "2026-08-08T15:39:57Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Thanks -- and yes, thus dynamic plays out in my simulator where \"extraction completeness\" is a specific setting with very clear (and important) consequences.",
+      "html": "Thanks -- and yes, thus dynamic plays out in my simulator where &quot;extraction completeness&quot; is a specific setting with very clear (and important) consequences.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7491934433743319040)",
+      "parent_id": null,
+      "created_at": "2026-08-08T19:12:42Z",
+      "author": {
+        "name": "Mark Oswald",
+        "headline": "Experienced Data and AI Architect. I’m passionate about using Data and AI to solve problems, create opportunities, and innovate within the Healthcare and Life Sciences industries.",
+        "profile_url": "https://www.linkedin.com/in/mark-oswald-286a557",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Welcome to the World of VBC and it's interesting collection of problems/solutions.\n\nGiven your interest in simulation, you might be interested in looking at Vantage - https://github.com/mark64oswald/vantage-docs.\n\nVantage is a simulation tool that can generate populations that mirror your own, and then model four interconnected outcome domains:\n◾ Risk Adjustment (V24/V28 scoring, RAF impact)\n◾ Stars & Quality (competitive scoring with dynamic cut-points)\n◾ Medical Cost / MLR (integrated P&L projections)\n◾ RADV Audit Exposure (the liability side most platforms ignore)\n\nFrom there, you can manipulate a set of six connected intervention levers — care management, coding initiatives, formulary design, PA policy, provider contracts, benefit design — and show how each change ripples across every domain simultaneously.\n\nIf you read through the public documentation and would like to explore deeper or collaborate, I'd be happy to make the rest of it public.",
+      "html": "Welcome to the World of VBC and it's interesting collection of problems/solutions. <br><br>Given your interest in simulation, you might be interested in looking at Vantage - <a href=\"https://github.com/mark64oswald/vantage-docs\">https://github.com/mark64oswald/vantage-docs</a>.<br><br>Vantage is a simulation tool that can generate populations that mirror your own, and then model four interconnected outcome domains: <br>◾ Risk Adjustment (V24/V28 scoring, RAF impact) <br>◾ Stars &amp; Quality (competitive scoring with dynamic cut-points) <br>◾ Medical Cost / MLR (integrated P&amp;L projections) <br>◾ RADV Audit Exposure (the liability side most platforms ignore)<br><br>From there, you can manipulate a set of six connected intervention levers — care management, coding initiatives, formulary design, PA policy, provider contracts, benefit design — and show how each change ripples across every domain simultaneously.<br><br>If you read through the public documentation and would like to explore deeper or collaborate, I'd be happy to make the rest of it public.",
+      "links": [
+        {
+          "text": "https://github.com/mark64oswald/vantage-docs",
+          "url": "https://github.com/mark64oswald/vantage-docs"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQG43-wrS_cAlQ/articleshare-shrink_160/B56Z_iw_PHH4AI-/0/1786215922213?e=1791921600&v=beta&t=idxVlnqE6WrOiEmCSUSVCFaHLWS_YFqwuEuP5ue1t5I",
+          "file": "linkedin-media/86e227c9b469223f.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7492942560190132225)",
+      "parent_id": null,
+      "created_at": "2026-08-11T13:58:38Z",
+      "author": {
+        "name": "Elena Rodin",
+        "headline": "AI systems that survive payer audits and clinical review | Prior auth, UM, claims, clinical AI | Built for production, not demos.",
+        "profile_url": "https://www.linkedin.com/in/elenarodin",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "A simulator earns its keep only if it's pinned to the spec version the payer will audit against, not the one currently published. Reporting year logic versus audit year logic is where the reconciliation surprises live. Can it replay a measurement year under the spec as it stood mid year, before a revision changed denominator eligibility?",
+      "html": "A simulator earns its keep only if it's pinned to the spec version the payer will audit against, not the one currently published. Reporting year logic versus audit year logic is where the reconciliation surprises live. Can it replay a measurement year under the spec as it stood mid year, before a revision changed denominator eligibility?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7493063445005664257)",
+      "parent_id": "urn:li:comment:(ugcPost:7491569676955709440,7492942560190132225)",
+      "created_at": "2026-08-11T21:58:59Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I know this is just an ai-generated comment but for the benefit of other readers: this is not the level at which my simulator operates :-) It's a didactic tool where the inputs are just raw \"numerator / denominator\" rates -- it doesn't *calculate* numerators or denominators.",
+      "html": "I know this is just an ai-generated comment but for the benefit of other readers: this is not the level at which my simulator operates :-) It's a didactic tool where the inputs are just raw &quot;numerator / denominator&quot; rates -- it doesn't *calculate* numerators or denominators.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7493063969574649856)",
+      "parent_id": null,
+      "created_at": "2026-08-11T22:01:04Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Update: simulator post live at https://www.linkedin.com/feed/update/urn:li:activity:7492546574942629888/",
+      "html": "Update: simulator post live at <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7492546574942629888/\">https://www.linkedin.com/feed/update/urn:li:activity:7492546574942629888/</a>",
+      "links": [
+        {
+          "text": "https://www.linkedin.com/feed/update/urn:li:activity:7492546574942629888/",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7492546574942629888/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7493080871441260545)",
+      "parent_id": "urn:li:comment:(ugcPost:7491569676955709440,7492942560190132225)",
+      "created_at": "2026-08-11T23:08:14Z",
+      "author": {
+        "name": "Elena Rodin",
+        "headline": "AI systems that survive payer audits and clinical review | Prior auth, UM, claims, clinical AI | Built for production, not demos.",
+        "profile_url": "https://www.linkedin.com/in/elenarodin",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "You got me, Josh. I commented off the summary without looking at the tool itself, and it shows. Didactic with raw rates makes way more sense for what you're doing. Carry on :)",
+      "html": "You got me, Josh. I commented off the summary without looking at the tool itself, and it shows. Didactic with raw rates makes way more sense for what you're doing. Carry on :)",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7491569676955709440,7495166330816512000)",
+      "parent_id": "urn:li:comment:(ugcPost:7491569676955709440,7491640508914634752)",
+      "created_at": "2026-08-17T17:15:06Z",
+      "author": {
+        "name": "Judson P. Bruno",
+        "headline": "Healthcare Product & Growth Leader | Patient-Controlled Health Data | FHIR, SMART Health Links & AI | Kill the Clipboard | HealthScores.ai",
+        "profile_url": "https://www.linkedin.com/in/judsonbruno",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Wayne Singer, Josh Mandel, MD, is a valuable part of the CMS \"Kill the Clipboard.\" He has a knack for seeing ideas before requirements and then putting them in place.",
+      "html": "<a href=\"https://www.linkedin.com/in/wayne-singer-170bb4/\">Wayne Singer</a>, <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>, is a valuable part of the CMS &quot;Kill the Clipboard.&quot; He has a knack for seeing ideas before requirements and then putting them in place.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Wayne Singer",
+          "url": "https://www.linkedin.com/in/wayne-singer-170bb4/",
+          "kind": "person"
+        },
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

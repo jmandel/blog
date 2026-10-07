@@ -1,0 +1,76 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7455003625812230144",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7455003625812230144/",
+  "pages": [
+    "article:ml0we",
+    "share:7455003625812230144"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7455003626504290305"
+    }
+  ],
+  "displayed": {
+    "comments": 2,
+    "reactions": 14,
+    "reposts": 1
+  },
+  "captured": {
+    "total": 2,
+    "top_level": 1,
+    "replies": 1
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7455003625812230144,7455079554605383680)",
+      "parent_id": null,
+      "created_at": "2026-04-29T02:24:34Z",
+      "author": {
+        "name": "Koray Atalag, MD, PhD",
+        "headline": "Principal Consultant ➤ openEHR & FHIR Interoperability | VBHC & PROMs | Strategy → Architecture → Hands-on Implementation | GCC · Europe · ANZ",
+        "profile_url": "https://www.linkedin.com/in/koray-atalag",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Hi Josh, if and how does the International Patient Access (IPA) fit into this framework?",
+      "html": "Hi Josh, if and how does the International Patient Access (IPA) fit into this framework?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7455003625812230144,7455095413470277632)",
+      "parent_id": "urn:li:comment:(ugcPost:7455003625812230144,7455079554605383680)",
+      "created_at": "2026-04-29T03:27:35Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "IPA defines a way for apps to connect to one site at a time, and it involves an OAuth flow where the patient signs into that site to approve access. This article is about a pattern for apps that need to connect to many sites on the basis of a single ID verification + authorization ceremony.",
+      "html": "IPA defines a way for apps to connect to one site at a time, and it involves an OAuth flow where the patient signs into that site to approve access. This article is about a pattern for apps that need to connect to many sites on the basis of a single ID verification + authorization ceremony.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

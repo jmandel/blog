@@ -1,0 +1,903 @@
+[
+  {
+    "from": null,
+    "rel": "links_to",
+    "to": "article:g9eic",
+    "method": "article card in post",
+    "own": true
+  },
+  {
+    "from": "article:0aimf",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7491569676955709440",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:3tssc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7458199665440620544",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:9jpqc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7471274402245066752",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:9kure",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7456030066825768961",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:d22wc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7492397711032422400",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:ft1ue",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7451354126677979139",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:g71vc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7498041133113962496",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:gqn1c",
+    "rel": "superseded_by",
+    "to": "native:mychart-takeout",
+    "method": "native_posts claim",
+    "path": "src/content/blog/mychart-takeout/index.md"
+  },
+  {
+    "from": "article:gqn1c",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7493770460166242304",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:gylif",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7462872150975320064",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:lgasc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7457144969875607552",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:m9qoc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7445930620779868160",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:ml0we",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7454978812603375616",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:qg0ee",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7454367557916045312",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:robze",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7465132578774138881",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:u1zsc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7473791475978235905",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:uqoec",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7464055912857767936",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:wg4xc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7462156756798976000",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7449867593403846657",
+    "rel": "reposts",
+    "to": "urn:li:activity:7449867593403846657",
+    "original_author": "https://www.linkedin.com/in/rubin-ken/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7450100952281419776",
+    "rel": "reposts",
+    "to": "urn:li:activity:7450100952281419776",
+    "original_author": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7450945742942154753",
+    "rel": "reposts",
+    "to": "urn:li:activity:7450945742942154753",
+    "original_author": "https://www.linkedin.com/in/familyhealthguy/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7459687978789986305",
+    "rel": "reposts",
+    "to": "urn:li:activity:7459687978789986305",
+    "original_author": "https://www.linkedin.com/in/jdhron/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7460672713125265408",
+    "rel": "reposts",
+    "to": "urn:li:activity:7460672713125265408",
+    "original_author": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7460686729189163008",
+    "rel": "reposts",
+    "to": "urn:li:activity:7460686729189163008",
+    "original_author": "https://www.linkedin.com/in/kenmandl/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7464355500948770816",
+    "rel": "reposts",
+    "to": "urn:li:activity:7464355500948770816",
+    "original_author": "https://www.linkedin.com/in/danielvreeman/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7472597344924975104",
+    "rel": "reposts",
+    "to": "urn:li:activity:7472597344924975104",
+    "original_author": "https://www.linkedin.com/in/nikolai-ryzhikov-586a6913/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7476015447784660992",
+    "rel": "reposts",
+    "to": "urn:li:activity:7476015447784660992",
+    "original_author": "https://www.linkedin.com/in/lucia-savage-686470/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7495140266417319936",
+    "rel": "reposts",
+    "to": "urn:li:activity:7495140266417319936",
+    "original_author": "https://www.linkedin.com/in/deven-mcgraw-6650285/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7498106456630525953",
+    "rel": "reposts",
+    "to": "urn:li:activity:7498106456630525953",
+    "original_author": "https://www.linkedin.com/in/scottrossignolpmp/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7504267561367248896",
+    "rel": "reposts",
+    "to": "urn:li:activity:7504267561367248896",
+    "original_author": "https://www.linkedin.com/in/johngrimes/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:activity:7508597712678723585",
+    "rel": "reposts",
+    "to": "urn:li:activity:7508597712678723585",
+    "original_author": "https://www.linkedin.com/in/familyhealthguy/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:ugcPost:7450253471099899904",
+    "rel": "reposts",
+    "to": "urn:li:ugcPost:7450253471099899904",
+    "original_author": "https://www.linkedin.com/in/kenmandl/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:ugcPost:7454238484518834177",
+    "rel": "reposts",
+    "to": "urn:li:ugcPost:7454238484518834177",
+    "original_author": "https://www.linkedin.com/in/mbraunstein/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:ugcPost:7473052258939834369",
+    "rel": "reposts",
+    "to": "urn:li:ugcPost:7473052258939834369",
+    "original_author": "https://www.linkedin.com/company/firely/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:ugcPost:7473238519856009216",
+    "rel": "reposts",
+    "to": "urn:li:ugcPost:7473238519856009216",
+    "original_author": "https://www.linkedin.com/company/firely/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:ugcPost:7473578755505102848",
+    "rel": "reposts",
+    "to": "urn:li:ugcPost:7473578755505102848",
+    "original_author": "https://www.linkedin.com/in/cummings216/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "repost-of:urn:li:ugcPost:7493840278483677184",
+    "rel": "reposts",
+    "to": "urn:li:ugcPost:7493840278483677184",
+    "original_author": "https://www.linkedin.com/in/lucia-savage-686470/",
+    "own": false,
+    "method": "list card componentkey"
+  },
+  {
+    "from": "urn:li:activity:7442209954536718336",
+    "rel": "quotes",
+    "to": "urn:li:activity:7442197444215382016",
+    "own": false,
+    "method": "quoted post link"
+  },
+  {
+    "from": "urn:li:activity:7442209954536718336",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7442209953907376128",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7442209954536718336",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7442209953907376128",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7442245738560040960",
+    "rel": "links_to",
+    "to": "article:uvruc",
+    "method": "article card in post",
+    "own": true
+  },
+  {
+    "from": "urn:li:activity:7442245738560040960",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7442245738031374336",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7442245738560040960",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7442245738031374336",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7445579423405477888",
+    "rel": "links_to",
+    "to": "article:x9kwc",
+    "method": "article card in post",
+    "own": true
+  },
+  {
+    "from": "urn:li:activity:7445579423405477888",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7445579422860226560",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7445579423405477888",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7445579422860226560",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7445930621270609920",
+    "rel": "announces",
+    "to": "article:m9qoc",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7445930621270609920",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7445930620779868160",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7445930621270609920",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7445930620779868160",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7446011217221001216",
+    "rel": "first_comment_link",
+    "to": "https://github.com/jmandel/skills/blob/main/babysit-codex/SKILL.md",
+    "url": "https://github.com/jmandel/skills/blob/main/babysit-codex/SKILL.md",
+    "comment_id": "urn:li:comment:(activity:7446011217221001216,7446358973596975104)",
+    "method": "Josh's first comment"
+  },
+  {
+    "from": "urn:li:activity:7446011217221001216",
+    "rel": "same_as",
+    "to": "urn:li:share:7446011216361275392",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7446011217221001216",
+    "rel": "thread",
+    "to": "urn:li:activity:7446011217221001216",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7447284732285050880",
+    "rel": "same_as",
+    "to": "urn:li:share:7447284731152453633",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7447284732285050880",
+    "rel": "thread",
+    "to": "urn:li:share:7447284731152453633",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7449840418197778432",
+    "rel": "same_as",
+    "to": "urn:li:share:7449840417526964224",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7449840418197778432",
+    "rel": "thread",
+    "to": "urn:li:activity:7449840418197778432",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7451354127340736512",
+    "rel": "announces",
+    "to": "article:ft1ue",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7451354127340736512",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7451354126677979139",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7451354127340736512",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7451354126677979139",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7453262341795864576",
+    "rel": "same_as",
+    "to": "urn:li:share:7453262340877291520",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7453262341795864576",
+    "rel": "thread",
+    "to": "urn:li:activity:7453262341795864576",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7453517039689760768",
+    "rel": "quotes",
+    "to": "urn:li:activity:7453262341795864576",
+    "own": true,
+    "method": "quoted post link"
+  },
+  {
+    "from": "urn:li:activity:7453517039689760768",
+    "rel": "same_as",
+    "to": "urn:li:share:7453517038997884929",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7453517039689760768",
+    "rel": "thread",
+    "to": "urn:li:share:7453517038997884929",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7454367558528548864",
+    "rel": "announces",
+    "to": "article:qg0ee",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7454367558528548864",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7454367557916045312",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7454367558528548864",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7454367557916045312",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7454978813152628736",
+    "rel": "announces",
+    "to": "article:ml0we",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7454978813152628736",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7454978812603375616",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7454978813152628736",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7454978812603375616",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7455003626504290305",
+    "rel": "links_to",
+    "to": "article:ml0we",
+    "method": "article card in post",
+    "own": true
+  },
+  {
+    "from": "urn:li:activity:7455003626504290305",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7455003625812230144",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7455003626504290305",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7455003625812230144",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7456030067610173440",
+    "rel": "announces",
+    "to": "article:9kure",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7456030067610173440",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7456030066825768961",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7456030067610173440",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7456030066825768961",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7456411765929742336",
+    "rel": "quotes",
+    "to": "urn:li:activity:7456030067610173440",
+    "own": true,
+    "method": "quoted post link"
+  },
+  {
+    "from": "urn:li:activity:7456411765929742336",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7456411765283704832",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7456411765929742336",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7456411765283704832",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7457144970337173504",
+    "rel": "announces",
+    "to": "article:lgasc",
+    "method": "post page shows the article's comment thread"
+  },
+  {
+    "from": "urn:li:activity:7457144970337173504",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7457144969875607552",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7457144970337173504",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7457144969875607552",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7458199666308980736",
+    "rel": "announces",
+    "to": "article:3tssc",
+    "method": "post page shows the article's comment thread"
+  },
+  {
+    "from": "urn:li:activity:7458199666308980736",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7458199665440620544",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7458199666308980736",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7458199665440620544",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7459585815858327552",
+    "rel": "quotes",
+    "to": "urn:li:activity:7459500149674004480",
+    "own": false,
+    "method": "quoted post link"
+  },
+  {
+    "from": "urn:li:activity:7459585815858327552",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7459585815149432832",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7459585815858327552",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7459585815149432832",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7459967891778469888",
+    "rel": "quotes",
+    "to": "urn:li:activity:7459687978789986305",
+    "own": false,
+    "method": "quoted post link"
+  },
+  {
+    "from": "urn:li:activity:7459967891778469888",
+    "rel": "same_as",
+    "to": "urn:li:share:7459967891266752512",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7459967891778469888",
+    "rel": "thread",
+    "to": "urn:li:activity:7459967891778469888",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7462156757507883008",
+    "rel": "announces",
+    "to": "article:wg4xc",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7462156757507883008",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7462156756798976000",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7462156757507883008",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7462156756798976000",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7462872151638069251",
+    "rel": "announces",
+    "to": "article:gylif",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7462872151638069251",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7462872150975320064",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7462872151638069251",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7462872150975320064",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7464055913323315200",
+    "rel": "announces",
+    "to": "article:uqoec",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7464055913323315200",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7464055912857767936",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7464055913323315200",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7464055912857767936",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7465132579483131905",
+    "rel": "announces",
+    "to": "article:robze",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7465132579483131905",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7465132578774138881",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7465132579483131905",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7465132578774138881",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7471274402752512000",
+    "rel": "announces",
+    "to": "article:9jpqc",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7471274402752512000",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7471274402245066752",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7471274402752512000",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7471274402245066752",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7472994584889860096",
+    "rel": "quotes",
+    "to": "urn:li:activity:7472841400615714816",
+    "own": false,
+    "method": "quoted post link"
+  },
+  {
+    "from": "urn:li:activity:7472994584889860096",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7472994584348737537",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7472994584889860096",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7472994584348737537",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7473791476695523329",
+    "rel": "announces",
+    "to": "article:u1zsc",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7473791476695523329",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7473791475978235905",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7473791476695523329",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7473791475978235905",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7490421284137394177",
+    "rel": "same_as",
+    "to": "urn:li:share:7490421283571109888",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7490421284137394177",
+    "rel": "thread",
+    "to": "urn:li:activity:7490421284137394177",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7491569677521805312",
+    "rel": "announces",
+    "to": "article:0aimf",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7491569677521805312",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7491569676955709440",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7491569677521805312",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7491569676955709440",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7492546574942629888",
+    "rel": "announces",
+    "to": "article:d22wc",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7492546574942629888",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7492397711032422400",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7492546574942629888",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7492397711032422400",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7492651594262683648",
+    "rel": "quotes",
+    "to": "urn:li:activity:7492546580294610944",
+    "own": false,
+    "method": "quoted post link"
+  },
+  {
+    "from": "urn:li:activity:7492651594262683648",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7492651593218015234",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7492651594262683648",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7492651593218015234",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7493325524073672705",
+    "rel": "links_to",
+    "to": "article:2koye",
+    "method": "article card in post",
+    "own": false
+  },
+  {
+    "from": "urn:li:activity:7493325524073672705",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7493325523373146112",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7493325524073672705",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7493325523373146112",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7493770460917288960",
+    "rel": "announces",
+    "to": "article:gqn1c",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7493770460917288960",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7493770460166242304",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7493770460917288960",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7493770460166242304",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7498041133772472320",
+    "rel": "announces",
+    "to": "article:g71vc",
+    "method": "article page names the post"
+  },
+  {
+    "from": "urn:li:activity:7498041133772472320",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7498041133113962496",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7498041133772472320",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7498041133113962496",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7506820918892056576",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7506820719977205760",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7506820918892056576",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7506820719977205760",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7512888792354275328",
+    "rel": "links_to",
+    "to": "article:5e8ec",
+    "method": "article card in post",
+    "own": true
+  },
+  {
+    "from": "urn:li:activity:7512888792354275328",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7512888791393574912",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7512888792354275328",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7512888791393574912",
+    "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7512955979475566592",
+    "rel": "links_to",
+    "to": "article:pjhwc",
+    "method": "article card in post",
+    "own": true
+  },
+  {
+    "from": "urn:li:activity:7512955979475566592",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7512955978758176768",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7512955979475566592",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7512955978758176768",
+    "method": "comment ids on post page"
+  }
+]

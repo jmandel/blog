@@ -1,0 +1,567 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7512888791393574912",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7512888791393574912/",
+  "pages": [
+    "article:5e8ec",
+    "share:7512888791393574912"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7512888792354275328"
+    }
+  ],
+  "displayed": {
+    "comments": 21,
+    "reactions": 84,
+    "reposts": 5
+  },
+  "captured": {
+    "total": 21,
+    "top_level": 13,
+    "replies": 8
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512911621715845120)",
+      "parent_id": null,
+      "created_at": "2026-10-05T16:28:33Z",
+      "author": {
+        "name": "Bill Dailey, MD, MS, MSMI",
+        "headline": "CMIO at Golden Valley Memorial Healthcare",
+        "profile_url": "https://www.linkedin.com/in/docdailey",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Remote patient monitoring is a great lever.  The problem is patients don’t see it that way and don’t or won’t want a copay.",
+      "html": "Remote patient monitoring is a great lever.  The problem is patients don’t see it that way and don’t or won’t want a copay.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512960424351375360)",
+      "parent_id": null,
+      "created_at": "2026-10-05T19:42:29Z",
+      "author": {
+        "name": "Feynman Xu, Ph.D.",
+        "headline": "Founder of MedArise | Building AI-native healthcare operations platform",
+        "profile_url": "https://www.linkedin.com/in/feynmanxu",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The 50 percent same day visit and procedure proposal is the sleeper issue for independent practices. For a small group, that modifier scenario is not an edge case; it is weekly volume in dermatology, orthopedics, primary care procedures. Layer that cut on top of prior auth delays and quality reporting overhead and the margin math breaks quickly, even before staffing costs. I appreciate the SQLite approach; it lowers the barrier for practices without a policy team to actually see who is commenting and why. What did the longer letters say about RPM documentation burden versus payment?",
+      "html": "The 50 percent same day visit and procedure proposal is the sleeper issue for independent practices. For a small group, that modifier scenario is not an edge case; it is weekly volume in dermatology, orthopedics, primary care procedures. Layer that cut on top of prior auth delays and quality reporting overhead and the margin math breaks quickly, even before staffing costs. I appreciate the SQLite approach; it lowers the barrier for practices without a policy team to actually see who is commenting and why. What did the longer letters say about RPM documentation burden versus payment?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512962352896536576)",
+      "parent_id": null,
+      "created_at": "2026-10-05T19:50:09Z",
+      "author": {
+        "name": "Lucia Savage",
+        "headline": "Smart ideas to fix healthcare. Board Member. Advisor. Expert advisor on public policy, AI, privacy, cybersecurity, and the future of healthcare. I answer questions for CNN and Senators. I write my own posts, not AI.",
+        "profile_url": "https://www.linkedin.com/in/lucia-savage-686470",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Did you find mine, suggesting that CPT be regulated like a utility, because that’s how you manage necessary monopolies?",
+      "html": "Did you find mine, suggesting that CPT be regulated like a utility, because that’s how you manage necessary monopolies?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512965906160050176)",
+      "parent_id": "urn:li:comment:(ugcPost:7512888791393574912,7512962352896536576)",
+      "created_at": "2026-10-05T20:04:16Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Lucia Savage Of course! https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-33643\n\n> Savage Healthcare Strategies, a healthcare innovation consultancy, recommends that CMS regulate the AMA and the CPT coding system as a public utility rather than replacing CPT.",
+      "html": "<a href=\"https://www.linkedin.com/in/lucia-savage-686470/\">Lucia Savage</a> Of course! <a href=\"https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-33643\">https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-33643</a><br><br>&gt; Savage Healthcare Strategies, a healthcare innovation consultancy, recommends that CMS regulate the AMA and the CPT coding system as a public utility rather than replacing CPT.",
+      "links": [
+        {
+          "text": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-33643",
+          "url": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-33643"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Lucia Savage",
+          "url": "https://www.linkedin.com/in/lucia-savage-686470/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512966275996991488)",
+      "parent_id": null,
+      "created_at": "2026-10-05T20:05:44Z",
+      "author": {
+        "name": "Benjamin Krasin",
+        "headline": "Founder, Krasyn. Building AI for clinicians and learners, and testing it in public.",
+        "profile_url": "https://www.linkedin.com/in/benjamin-krasin-933147426",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The step I'd most want audited is the chart and table transcription. Quoted text gets checked by whoever quotes it, but a number lifted from a scanned bar chart rarely gets checked by anyone. When we had a model read photographed handwritten lists, we settled on making it flag every value it was unsure of instead of returning a clean guess. A per-cell confidence column in those SQLite tables would tell readers which numbers to recheck.",
+      "html": "The step I'd most want audited is the chart and table transcription. Quoted text gets checked by whoever quotes it, but a number lifted from a scanned bar chart rarely gets checked by anyone. When we had a model read photographed handwritten lists, we settled on making it flag every value it was unsure of instead of returning a clean guess. A per-cell confidence column in those SQLite tables would tell readers which numbers to recheck.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512966314215301120)",
+      "parent_id": "urn:li:comment:(ugcPost:7512888791393574912,7512962352896536576)",
+      "created_at": "2026-10-05T20:05:53Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "And your comment bubbled up to analysis in the \"Proprietary Procedural Coding Governance\" theme:\nhttps://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/themes/15.13",
+      "html": "And your comment bubbled up to analysis in the &quot;Proprietary Procedural Coding Governance&quot; theme:<br><a href=\"https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/themes/15.13\">https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/themes/15.13</a>",
+      "links": [
+        {
+          "text": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/themes/15.13",
+          "url": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/themes/15.13"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512970387622662144)",
+      "parent_id": "urn:li:comment:(ugcPost:7512888791393574912,7512911621715845120)",
+      "created_at": "2026-10-05T20:22:04Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Indeed, see https://www.linkedin.com/posts/josh-mandel_medicare-wants-to-rein-in-remote-patient-activity-7512955979475566592-K3qt",
+      "html": "Indeed, see <a href=\"https://www.linkedin.com/posts/josh-mandel_medicare-wants-to-rein-in-remote-patient-activity-7512955979475566592-K3qt\">https://www.linkedin.com/posts/josh-mandel_medicare-wants-to-rein-in-remote-patient-activity-7512955979475566592-K3qt</a>",
+      "links": [
+        {
+          "text": "https://www.linkedin.com/posts/josh-mandel_medicare-wants-to-rein-in-remote-patient-activity-7512955979475566592-K3qt",
+          "url": "https://www.linkedin.com/posts/josh-mandel_medicare-wants-to-rein-in-remote-patient-activity-7512955979475566592-K3qt"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512972059317125120)",
+      "parent_id": null,
+      "created_at": "2026-10-05T20:28:43Z",
+      "author": {
+        "name": "Karthik Chandramouli",
+        "headline": "Helping GI doctors achieve Peak Practice Efficiency 🔶 0️⃣➡️1️⃣ GTM Leader & Product Builder at Bookend AI 🔶 CEO 🔶 Board Member 🔶 Angel Investor",
+        "profile_url": "https://www.linkedin.com/in/karthik001",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is so damn cool Dr. Mandel, I was futzing around with a couple of open source libraries to extract the file attachment letters and parse them.\n\nJust amazing, and I found my long letter on behalf of Bookend AI commenting on Gastroenterology quality measures!\n\nhttps://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments\n\nIt would be helpful if commenters could see which other organizations or individuals agreed / disagreed with my comments.\n\nWho is aligned / not aligned with my perspective?\n\nWho has an interesting, but different perspective on the same issue / topic?\n\nFor topics that might be less popular, what were the comments grouped by medical specialty or medical society?",
+      "html": "This is so damn cool Dr. Mandel, I was futzing around with a couple of open source libraries to extract the file attachment letters and parse them.<br><br>Just amazing, and I found my long letter on behalf of <a href=\"https://www.linkedin.com/company/bookendai/\">Bookend AI</a> commenting on Gastroenterology quality measures!<br><br><a href=\"https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments\">https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments</a><br><br>It would be helpful if commenters could see which other organizations or individuals agreed / disagreed with my comments.<br><br>Who is aligned / not aligned with my perspective?<br><br>Who has an interesting, but different perspective on the same issue / topic?<br><br>For topics that might be less popular, what were the comments grouped by medical specialty or medical society?",
+      "links": [
+        {
+          "text": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments",
+          "url": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Bookend AI",
+          "url": "https://www.linkedin.com/company/bookendai/",
+          "kind": "organization"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512979110067920896)",
+      "parent_id": "urn:li:comment:(ugcPost:7512888791393574912,7512911621715845120)",
+      "created_at": "2026-10-05T20:56:44Z",
+      "author": {
+        "name": "Bill Dailey, MD, MS, MSMI",
+        "headline": "CMIO at Golden Valley Memorial Healthcare",
+        "profile_url": "https://www.linkedin.com/in/docdailey",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "I didn’t read the whole thing yet. Why don’t they see if it’s saving  money and helping patients not how much it costs.  That is a fundamental issue.  Savings and outcomes. We live by them.",
+      "html": "I didn’t read the whole thing yet. Why don’t they see if it’s saving  money and helping patients not how much it costs.  That is a fundamental issue.  Savings and outcomes. We live by them.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512988506001027072)",
+      "parent_id": null,
+      "created_at": "2026-10-05T21:34:04Z",
+      "author": {
+        "name": "Joseph S.",
+        "headline": "Lightening the load for seniors and their families | Board Certified Patient Advocate | Medicare-covered care navigation | Founder, SageAlly",
+        "profile_url": "https://www.linkedin.com/in/joseph-s-bb3a6b313",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD. Wow, this is a remarkable and amazing resource!",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a>. Wow, this is a remarkable and amazing resource!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512989370946162688)",
+      "parent_id": "urn:li:comment:(ugcPost:7512888791393574912,7512972059317125120)",
+      "created_at": "2026-10-05T21:37:30Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Nice! https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-40803 is the deep link to your comment, and if you click on the \"themes\" you can see places where you stacked up.",
+      "html": "Nice! <a href=\"https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-40803\">https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-40803</a> is the deep link to your comment, and if you click on the &quot;themes&quot; you can see places where you stacked up.",
+      "links": [
+        {
+          "text": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-40803",
+          "url": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-40803"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "alt": "Comment image, no alternative text available",
+          "url": "https://media.licdn.com/dms/image/v2/D562CAQGfVH_wH6VkIQ/comment-image-shrink_8192_480/B56aEOABXYHYAY-/0/1791236249417?e=1791925200&v=beta&t=JgGpB7BuWDvBSFUL6WbEQnQYGDeb4V9iq3uGhCmHqhI",
+          "file": "linkedin-media/39f56569682d643f.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7512994832861052928)",
+      "parent_id": null,
+      "created_at": "2026-10-05T21:59:12Z",
+      "author": {
+        "name": "Augusta Uwah MD MPH",
+        "headline": "Physician Executive & Healthcare AI Builder | Clinical-Financial Operations, Revenue Cycle & Health Policy | AI Evaluation, Governance & Implementation | Rural Health | Founder, ClinEfficiency Pro",
+        "profile_url": "https://www.linkedin.com/in/augusta-uwah-md-mph-41a99396",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "very well written",
+      "html": "very well written",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513074418617778176)",
+      "parent_id": "urn:li:comment:(ugcPost:7512888791393574912,7512972059317125120)",
+      "created_at": "2026-10-06T03:15:27Z",
+      "author": {
+        "name": "Barbara Gillinder, EMBA, BSN, RN, LHRM, CPHQ",
+        "headline": "Healthcare Operations & Value-Based Care Executive | Quality, Performance Improvement & Client Growth Leader | 20+ Years Driving Scalable Healthcare Transformation",
+        "profile_url": "https://www.linkedin.com/in/barbara-gillinder-emba-bsn-rn-lhrm-cphq-3734912a5",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Karthik Chandramouli My comments on the GI measures were mostly about their specialty MVP, which offers one of the lowest scoring opportunities of any MVP when compared for equity.\n\nMy MVP analysis was eye opening, Ortho and Rehab also ranked near the bottom in scoring potential.\n\nJosh, this dashboard is fantastic! Thanks for putting it together.",
+      "html": "<a href=\"https://www.linkedin.com/in/karthik001/\">Karthik Chandramouli</a> My comments on the GI measures were mostly about their specialty MVP, which offers one of the lowest scoring opportunities of any MVP when compared for equity. <br><br>My MVP analysis was eye opening, Ortho and Rehab also ranked near the bottom in scoring potential.<br><br>Josh, this dashboard is fantastic! Thanks for putting it together.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Karthik Chandramouli",
+          "url": "https://www.linkedin.com/in/karthik001/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513153733569159168)",
+      "parent_id": null,
+      "created_at": "2026-10-06T08:30:37Z",
+      "author": {
+        "name": "Kajetan Mazur",
+        "headline": "AI Developer · Agent Builder · Developing end-to-end solutions on Azure",
+        "profile_url": "https://www.linkedin.com/in/kajetan-mazur",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Two hours of steering Claude Code to rebuild the pipeline, then ~50k pages read for about $100, is a striking ratio. Shipping each docket as a self-documenting SQLite database so people can query it directly is the part I'd copy.",
+      "html": "Two hours of steering Claude Code to rebuild the pipeline, then ~50k pages read for about $100, is a striking ratio. Shipping each docket as a self-documenting SQLite database so people can query it directly is the part I'd copy.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513183387529015296)",
+      "parent_id": null,
+      "created_at": "2026-10-06T10:28:27Z",
+      "author": {
+        "name": "Matthew Holt",
+        "headline": "Health care curmudgeon",
+        "profile_url": "https://www.linkedin.com/in/matthew-holt-6b52",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "How many of the comments said that fee-for-service is a completely stupid way to pay for healthcare and therefore should be abolished and changed to some kind of subscription model? Oh I forgot to submit mine.",
+      "html": "How many of the comments said that fee-for-service is a completely stupid way to pay for healthcare and therefore should be abolished and changed to some kind of subscription model? Oh I forgot to submit mine.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513203370220810242)",
+      "parent_id": null,
+      "created_at": "2026-10-06T11:47:52Z",
+      "author": {
+        "name": "Faiza Aatif",
+        "headline": "Director of Healthcare Technology at PureLogics | Turning Healthcare Challenges into Scalable Digital Solutions",
+        "profile_url": "https://www.linkedin.com/in/faiza-aatif",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The proposed 50% slash to Modifier-25 reimbursement exposes the core tension in health policy: CMS views same-day E/M visits and procedures as overlapping administrative overhead, while clinicians view them as essential friction reduction for high-risk patients. When payment policy incentivizes unbundling care into separate visits to avoid haircuts, administrative efficiency directly undermines clinical access and exacerbates health inequities.",
+      "html": "The proposed 50% slash to Modifier-25 reimbursement exposes the core tension in health policy: CMS views same-day E/M visits and procedures as overlapping administrative overhead, while clinicians view them as essential friction reduction for high-risk patients. When payment policy incentivizes unbundling care into separate visits to avoid haircuts, administrative efficiency directly undermines clinical access and exacerbates health inequities.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513220259521159171)",
+      "parent_id": "urn:li:comment:(ugcPost:7512888791393574912,7513183387529015296)",
+      "created_at": "2026-10-06T12:54:58Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Matthew Holt Yours would have brought the tally above 1/10k ;) Only four comments say fee for service should be scrapped in favour of a subscription-style payment: a flat, recurring sum per patient.\n\n- A health-plan analyst says per-visit pay forces doctors to carry huge patient lists to stay profitable. He argues \"Primary Care needs to no longer be fee based\" and points to capitated and direct-primary-care models instead. (https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-14244)\n\n- Luis Dominguez argues Medicare's payment units reward quantity, not quality. He wants Medicare to start with hybrid payments and \"adjust until 100% of payments are prospective\" and risk-adjusted. (CMS-2026-2377-11146)\n\n- An anonymous paediatrician wants primary care \"paid more like a gym membership\": about $200–250 per child per month for access to a paediatrician, with specialists funded by a separate payment of the same kind. (CMS-2026-2377-26009)\n\n- Andrew Schutzbank, an internist and early Iora Health leader, says fee-for-service pays for visits when patients need continuity. The plan he proposes ends: \"Gradually fade out fee-for-service revenue.\" (CMS-2026-2377-30763)",
+      "html": "<a href=\"https://www.linkedin.com/in/matthew-holt-6b52/\">Matthew Holt</a> Yours would have brought the tally above 1/10k ;) Only four comments say fee for service should be scrapped in favour of a subscription-style payment: a flat, recurring sum per patient.<br><br>- A health-plan analyst says per-visit pay forces doctors to carry huge patient lists to stay profitable. He argues &quot;Primary Care needs to no longer be fee based&quot; and points to capitated and direct-primary-care models instead. (<a href=\"https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-14244\">https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-14244</a>)<br><br>- Luis Dominguez argues Medicare's payment units reward quantity, not quality. He wants Medicare to start with hybrid payments and &quot;adjust until 100% of payments are prospective&quot; and risk-adjusted. (CMS-2026-2377-11146)<br><br>- An anonymous paediatrician wants primary care &quot;paid more like a gym membership&quot;: about $200–250 per child per month for access to a paediatrician, with specialists funded by a separate payment of the same kind. (CMS-2026-2377-26009)<br><br>- Andrew Schutzbank, an internist and early Iora Health leader, says fee-for-service pays for visits when patients need continuity. The plan he proposes ends: &quot;Gradually fade out fee-for-service revenue.&quot; (CMS-2026-2377-30763)",
+      "links": [
+        {
+          "text": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-14244",
+          "url": "https://joshuamandel.com/regulations.gov-comment-browser/CMS-2026-2377/#/comments/CMS-2026-2377-14244"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Matthew Holt",
+          "url": "https://www.linkedin.com/in/matthew-holt-6b52/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513224987647057920)",
+      "parent_id": "urn:li:comment:(ugcPost:7512888791393574912,7513183387529015296)",
+      "created_at": "2026-10-06T13:13:46Z",
+      "author": {
+        "name": "Bill Dailey, MD, MS, MSMI",
+        "headline": "CMIO at Golden Valley Memorial Healthcare",
+        "profile_url": "https://www.linkedin.com/in/docdailey",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Matthew Holt my problem with those models is they appear to be a money grab with no real accountability for quality.  I understand doctors say they provide “higher quality” but I have also seen many doctors believe they are providing “higher quality” while never measuring or benchmarking anything.  It is easy to get a bullseye if you never define the target.",
+      "html": "<a href=\"https://www.linkedin.com/in/matthew-holt-6b52/\">Matthew Holt</a> my problem with those models is they appear to be a money grab with no real accountability for quality.  I understand doctors say they provide “higher quality” but I have also seen many doctors believe they are providing “higher quality” while never measuring or benchmarking anything.  It is easy to get a bullseye if you never define the target.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Matthew Holt",
+          "url": "https://www.linkedin.com/in/matthew-holt-6b52/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513226868398059521)",
+      "parent_id": null,
+      "created_at": "2026-10-06T13:21:14Z",
+      "author": {
+        "name": "Chris Cashwell",
+        "headline": "Chief Revenue Officer | Chief Commercial Officer | CEO | Enterprise SaaS & B2B | AI Commercialization & Operational AI | Healthcare Technology",
+        "profile_url": "https://www.linkedin.com/in/chriscashwell",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Love the self-documenting SQLite drops, really useful.",
+      "html": "Love the self-documenting SQLite drops, really useful.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513279618276306944)",
+      "parent_id": null,
+      "created_at": "2026-10-06T16:50:50Z",
+      "author": {
+        "name": "Anu Jacob",
+        "headline": "Healthcare Commercial Executive | $250M+ P&L | Enterprise Growth Across Academic & Pediatric Health Systems | Medtech, Diagnostics & Digital Health | Kellogg MBA",
+        "profile_url": "https://www.linkedin.com/in/anurajendran7",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "There’s an interesting implication here for the organizations submitting these comments too.\n\nWhen tens of thousands of submissions can be analyzed this quickly, volume becomes much easier to separate from substance. That could change the value of the comment itself. A hundred variations of the same argument may still demonstrate constituency, but a well-supported submission with distinctive evidence or operational insight becomes much easier to find in a dataset this large.\n\nThe technology isn’t just making the public record easier to analyze. It may eventually change how organizations think about contributing to it in the first place.",
+      "html": "There’s an interesting implication here for the organizations submitting these comments too.<br><br>When tens of thousands of submissions can be analyzed this quickly, volume becomes much easier to separate from substance. That could change the value of the comment itself. A hundred variations of the same argument may still demonstrate constituency, but a well-supported submission with distinctive evidence or operational insight becomes much easier to find in a dataset this large.<br><br>The technology isn’t just making the public record easier to analyze. It may eventually change how organizations think about contributing to it in the first place.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513298860082044928)",
+      "parent_id": null,
+      "created_at": "2026-10-06T18:07:18Z",
+      "author": {
+        "name": "Frontier Talent Collective",
+        "headline": "1 followers",
+        "profile_url": "https://www.linkedin.com/company/frontier-talent-collective/posts",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Interesting that the modifier-25 cut drew the most comment volume — it seems to be the rare proposal that unites independent physicians and specialty societies. One question the data could answer: which specialties show the heaviest exposure? Dermatology is the canonical example of same-day E/M + procedure billing, so it would be telling to see whether derm comment volume and tone cluster differently from primary care on this one.",
+      "html": "Interesting that the modifier-25 cut drew the most comment volume — it seems to be the rare proposal that unites independent physicians and specialty societies. One question the data could answer: which specialties show the heaviest exposure? Dermatology is the canonical example of same-day E/M + procedure billing, so it would be telling to see whether derm comment volume and tone cluster differently from primary care on this one.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

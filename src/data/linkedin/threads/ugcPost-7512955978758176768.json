@@ -1,0 +1,226 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7512955978758176768",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7512955978758176768/",
+  "pages": [
+    "article:pjhwc",
+    "share:7512955978758176768"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7512955979475566592"
+    }
+  ],
+  "displayed": {
+    "comments": 8,
+    "reactions": 35,
+    "reposts": 3
+  },
+  "captured": {
+    "total": 8,
+    "top_level": 6,
+    "replies": 2
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7512955978758176768,7512960893362618368)",
+      "parent_id": null,
+      "created_at": "2026-10-05T19:44:21Z",
+      "author": {
+        "name": "Vish Patel",
+        "headline": "Co-Founder, Chief Strategy & Growth Officer @ Axil Health",
+        "profile_url": "https://www.linkedin.com/in/vishrutpatel",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Love the insight Josh!",
+      "html": "Love the insight Josh!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512955978758176768,7512981931794513921)",
+      "parent_id": null,
+      "created_at": "2026-10-05T21:07:56Z",
+      "author": {
+        "name": "Bill Dailey, MD, MS, MSMI",
+        "headline": "CMIO at Golden Valley Memorial Healthcare",
+        "profile_url": "https://www.linkedin.com/in/docdailey",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Go to straight shared savings. Wholesale rpm is probably not cost effective.  Targeted probably is.  The market can figure it out.",
+      "html": "Go to straight shared savings. Wholesale rpm is probably not cost effective.  Targeted probably is.  The market can figure it out.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512955978758176768,7512996459118546944)",
+      "parent_id": null,
+      "created_at": "2026-10-05T22:05:40Z",
+      "author": {
+        "name": "Andrea Pitkus, PhD, MLS(ASCP)CM, FAMIA",
+        "headline": "Laboratory Informatics Expert",
+        "profile_url": "https://www.linkedin.com/in/andrea-pitkus-phd-mls-ascp-cm-famia-2a0b748",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "and I thought you were going to mention CGM and fingerstick glucoses for diabetic patients :)\n\nActually that may warrant another post, especially in light of the 15% PAMA reimbursement cuts each year expected for laboratory testing, starting Jan 1, 2027.  If both PAMA and the remote monitoring cuts go through it will be like a double whammy to patients.\n\nHas CMS published what the remote monitoring cuts are expected to save them?  They indicate PAMA cuts will save $1 billion.",
+      "html": "and I thought you were going to mention CGM and fingerstick glucoses for diabetic patients :)<br><br>Actually that may warrant another post, especially in light of the 15% PAMA reimbursement cuts each year expected for laboratory testing, starting Jan 1, 2027.  If both PAMA and the remote monitoring cuts go through it will be like a double whammy to patients. <br><br>Has CMS published what the remote monitoring cuts are expected to save them?  They indicate PAMA cuts will save $1 billion.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512955978758176768,7513172632205230081)",
+      "parent_id": null,
+      "created_at": "2026-10-06T09:45:43Z",
+      "author": {
+        "name": "Karel van der Walt",
+        "headline": "Director at MentalArrow (Pty) Ltd",
+        "profile_url": "https://www.linkedin.com/in/karel-van-der-walt-68589b93",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Karlien Coetzee",
+      "html": "<a href=\"https://www.linkedin.com/in/karlien-coetzee-67310583/\">Karlien Coetzee</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Karlien Coetzee",
+          "url": "https://www.linkedin.com/in/karlien-coetzee-67310583/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512955978758176768,7513221421225938944)",
+      "parent_id": "urn:li:comment:(ugcPost:7512955978758176768,7512996459118546944)",
+      "created_at": "2026-10-06T12:59:35Z",
+      "author": {
+        "name": "Brett Johnson",
+        "headline": "Key Evidence leader with Opinions in Best Practices and Data Integration for drug development and data sharing needs: Patient-Centric Health Data Platform Strategy & Implementation",
+        "profile_url": "https://www.linkedin.com/in/brettrjohnson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Andrea Pitkus, PhD, MLS(ASCP)CM, FAMIA I was imaging the \"savings\" may not be distributed evenly. Practices in rural areas might be less likely to use if they have to staff? Maybe that's covered in other funding now?0",
+      "html": "<a href=\"https://www.linkedin.com/in/andrea-pitkus-phd-mls-ascp-cm-famia-2a0b748/\">Andrea Pitkus, PhD, MLS(ASCP)CM, FAMIA</a> I was imaging the &quot;savings&quot; may not be distributed evenly. Practices in rural areas might be less likely to use if they have to staff? Maybe that's covered in other funding now?0",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Andrea Pitkus, PhD, MLS(ASCP)CM, FAMIA",
+          "url": "https://www.linkedin.com/in/andrea-pitkus-phd-mls-ascp-cm-famia-2a0b748/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512955978758176768,7513251399309107200)",
+      "parent_id": null,
+      "created_at": "2026-10-06T14:58:43Z",
+      "author": {
+        "name": "Lucienne Ide",
+        "headline": "Executive, physician scientist, health IT enthusiast, entrepreneur, problem solver. Passionate about making healthcare better for all of us.",
+        "profile_url": "https://www.linkedin.com/in/lucienneide",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Thanks for summarizing the feedback and drawing attention to these proposed changes. I agree that the proposal is applying an overly blunt instrument to nuanced issues.",
+      "html": "Thanks for summarizing the feedback and drawing attention to these proposed changes. I agree that the proposal is applying an overly blunt instrument to nuanced issues.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512955978758176768,7513269460246568960)",
+      "parent_id": "urn:li:comment:(ugcPost:7512955978758176768,7512996459118546944)",
+      "created_at": "2026-10-06T16:10:29Z",
+      "author": {
+        "name": "Andrea Pitkus, PhD, MLS(ASCP)CM, FAMIA",
+        "headline": "Laboratory Informatics Expert",
+        "profile_url": "https://www.linkedin.com/in/andrea-pitkus-phd-mls-ascp-cm-famia-2a0b748",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Brett Johnson accessability can occur rural or urban areas and lead to health disparities, so Yes, uneven distribution can occur.  IT support may be the computer store on Main street in facilities without informatics resources.",
+      "html": "<a href=\"https://www.linkedin.com/in/brettrjohnson/\">Brett Johnson</a> accessability can occur rural or urban areas and lead to health disparities, so Yes, uneven distribution can occur.  IT support may be the computer store on Main street in facilities without informatics resources.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Brett Johnson",
+          "url": "https://www.linkedin.com/in/brettrjohnson/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512955978758176768,7513272347018305536)",
+      "parent_id": null,
+      "created_at": "2026-10-06T16:21:57Z",
+      "author": {
+        "name": "Reagan Smith",
+        "headline": "Empowering Health Organizations with Digital Care Technology",
+        "profile_url": "https://www.linkedin.com/in/reagansmith",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "This is exactly why compliance matters as CMS takes a closer look at remote monitoring. Actuvi is one of the few RTM/RPM platforms built with the proposed changes in mind, while allowing practices to keep the majority of the reimbursement rather than giving it away to a third-party platform. Our focus is on helping clinics build a sustainable revenue stream while improving patient engagement and delivering better ongoing care.",
+      "html": "This is exactly why compliance matters as CMS takes a closer look at remote monitoring. Actuvi is one of the few RTM/RPM platforms built with the proposed changes in mind, while allowing practices to keep the majority of the reimbursement rather than giving it away to a third-party platform. Our focus is on helping clinics build a sustainable revenue stream while improving patient engagement and delivering better ongoing care.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7459585815149432832",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7459585815149432832/",
+  "pages": [
+    "share:7459585815149432832"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7459585815858327552"
+    }
+  ],
+  "displayed": {
+    "comments": 6,
+    "reactions": 104,
+    "reposts": 2
+  },
+  "captured": {
+    "total": 6,
+    "top_level": 6,
+    "replies": 0
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7459585815149432832,7459592275996827648)",
+      "parent_id": null,
+      "created_at": "2026-05-11T13:16:31Z",
+      "author": {
+        "name": "James Hoover",
+        "headline": "Healthcare Data Analytics, AI, Agentic Systems, Large Language Models (LLMs), Embeddings, Vector Search, Master Data Management, MPI SME, Algorithm Developer, Professor, Technical Communications, & Lifelong Entrepreneur",
+        "profile_url": "https://www.linkedin.com/in/jimhoover",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Outstanding! I teach a healthcare informatics course teaching students how to vibe code for data visualization, and I’d like to use your example of what people can do without any software background.",
+      "html": "Outstanding! I teach a healthcare informatics course teaching students how to vibe code for data visualization, and I’d like to use your example of what people can do without any software background.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7459585815149432832,7459639547312664577)",
+      "parent_id": null,
+      "created_at": "2026-05-11T16:24:21Z",
+      "author": {
+        "name": "Jung Hoon Son, M.D.",
+        "headline": "█░░░░░░░░░ 10% (⏳)",
+        "profile_url": "https://www.linkedin.com/in/jung-hoon-son",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Totally - I am on the side that modern health systems \"walling off\" the patient data for the sake of data security and privacy theater: has effectively created a scenario that trapped the hospital systems within their own confines of their own restrictions.It's as if they've effectively created a \"we will exclude ourselves from the future of patient care\" while patients are just moving on without HIPAA's restrictions.Post: https://www.linkedin.com/posts/jung-hoon-son_almost-every-news-site-is-covering-patients-share-7407643419864629249-ff33",
+      "html": "Totally - I am on the side that modern health systems &quot;walling off&quot; the patient data for the sake of data security and privacy theater: has effectively created a scenario that trapped the hospital systems within their own confines of their own <a href=\"http://restrictions.it/\">restrictions.It</a>'s as if they've effectively created a &quot;we will exclude ourselves from the future of patient care&quot; while patients are just moving on without HIPAA's <a href=\"http://restrictions.post/\">restrictions.Post</a>: <a href=\"https://www.linkedin.com/posts/jung-hoon-son_almost-every-news-site-is-covering-patients-share-7407643419864629249-ff33\">https://www.linkedin.com/posts/jung-hoon-son_almost-every-news-site-is-covering-patients-share-7407643419864629249-ff33</a>",
+      "links": [
+        {
+          "text": "restrictions.It",
+          "url": "http://restrictions.it/"
+        },
+        {
+          "text": "restrictions.Post",
+          "url": "http://restrictions.post/"
+        },
+        {
+          "text": "https://www.linkedin.com/posts/jung-hoon-son_almost-every-news-site-is-covering-patients-share-7407643419864629249-ff33",
+          "url": "https://www.linkedin.com/posts/jung-hoon-son_almost-every-news-site-is-covering-patients-share-7407643419864629249-ff33"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 4,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "alt": "Comment image, no alternative text available",
+          "url": "https://media.licdn.com/dms/image/v2/D4E2CAQEjVaeNter-WQ/comment-image-shrink_8192_480/B4EZ4X2o92HsAI-/0/1778516660446?e=1791925200&v=beta&t=jR9NtUWALOB8JNATBc2EhRxmmXZ38b6NUhaw-DiHkzs",
+          "file": "linkedin-media/1716173913b50a47.jpg"
+        }
+      ],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7459585815149432832,7459656322448457729)",
+      "parent_id": null,
+      "created_at": "2026-05-11T17:31:00Z",
+      "author": {
+        "name": "Nikhil Bhojwani",
+        "headline": "Managing Partner at Recon Strategy",
+        "profile_url": "https://www.linkedin.com/in/bhojwani",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Wow. Super!",
+      "html": "Wow. Super!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7459585815149432832,7460039923157598208)",
+      "parent_id": null,
+      "created_at": "2026-05-12T18:55:18Z",
+      "author": {
+        "name": "Robert Wildin, M.D.",
+        "headline": "I can’t quit you, Science!",
+        "profile_url": "https://www.linkedin.com/in/bwildin",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Guessing that some institutions may look at the 'bug' as a 'feature.'  P.s. Did you ask Claude to review the setup for vulnerabilities?",
+      "html": "Guessing that some institutions may look at the 'bug' as a 'feature.'  P.s. Did you ask Claude to review the setup for vulnerabilities?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7459585815149432832,7463264495331758080)",
+      "parent_id": null,
+      "created_at": "2026-05-21T16:28:36Z",
+      "author": {
+        "name": "Jenn (Behrens) Johnson, MSW, PhD, FIP",
+        "headline": "Helping healthcare leaders turn privacy investment into ROI.",
+        "profile_url": "https://www.linkedin.com/in/drjennjohnson",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The quickest way to see shadow health IT boom is to block the best APIs Josh. The workaround energy in healthcare just gets funneled into user emulation and browser plugins.\n\nWhat is your threshold for deciding it's time to just open the connector?",
+      "html": "The quickest way to see shadow health IT boom is to block the best APIs <a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh</a>. The workaround energy in healthcare just gets funneled into user emulation and browser plugins.<br><br>What is your threshold for deciding it's time to just open the connector?",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7459585815149432832,7463863245888593922)",
+      "parent_id": null,
+      "created_at": "2026-05-23T08:07:49Z",
+      "author": {
+        "name": "M Balawal Khan",
+        "headline": "Full Stack | Provide HealthTech Services | Entrepreneur | Building Vitruvia | Healings by Tech",
+        "profile_url": "https://www.linkedin.com/in/bilawalkhan",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "When official interoperability fails, patients will build their own paths and AI is making that easier than ever.",
+      "html": "When official interoperability fails, patients will build their own paths and AI is making that easier than ever.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

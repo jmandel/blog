@@ -1,0 +1,433 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7471274402245066752",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7471274402245066752/",
+  "pages": [
+    "article:9jpqc",
+    "share:7471274402245066752"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "9jpqc",
+      "url": "https://www.linkedin.com/pulse/share-your-health-record-like-boarding-pass-ai-agents-josh-mandel-md-9jpqc",
+      "activity_urn": "urn:li:activity:7471274402752512000"
+    }
+  ],
+  "displayed": {
+    "comments": 15,
+    "reactions": 80,
+    "reposts": 8
+  },
+  "captured": {
+    "total": 15,
+    "top_level": 10,
+    "replies": 5
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7471294276941942784)",
+      "parent_id": null,
+      "created_at": "2026-06-12T20:16:05Z",
+      "author": {
+        "name": "Kalyani Yerra MBA, MHA, FHIMSS",
+        "headline": "Principal Healthcare Architect | FHIR + Epic Integration | HL7/Kafka Interoperability | Domain-Driven Design (DDD) + Adapter-Pattern Architecture | Patient Identity | | AI-Aligned Clinical Workflows",
+        "profile_url": "https://www.linkedin.com/in/kalyaniyerra",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "As always inspiring and insightful @Josh Mandel",
+      "html": "As always inspiring and insightful @Josh Mandel",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7471319446884814848)",
+      "parent_id": null,
+      "created_at": "2026-06-12T21:56:06Z",
+      "author": {
+        "name": "Paul Swider",
+        "headline": "Mission Critical Healthcare Solutions | Strategic Microsoft Cloud and AI Partner",
+        "profile_url": "https://www.linkedin.com/in/pswider",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Like always, great work. I'm excited to dive into this later. Thank you for all you do!",
+      "html": "Like always, great work. I'm excited to dive into this later. Thank you for all you do!",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 2,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7471341675097784320)",
+      "parent_id": null,
+      "created_at": "2026-06-12T23:24:26Z",
+      "author": {
+        "name": "Eugene Vestel, MBA",
+        "headline": "Building enterprise AI platforms & agentic systems | Founder, HealthClaw | Host, Out of the FHIR podcast | FHIR + agentic memory + governance | Healthcare data builder, 15+ yrs",
+        "profile_url": "https://www.linkedin.com/in/evestel",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD this is great I just deployed using healthclaw.io and used it with Sally my telegram PCP bot to create a QR code for my checkin.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> this is great I just deployed using <a href=\"http://healthclaw.io/\">healthclaw.io</a> and used it with Sally my telegram PCP bot to create a QR code for my checkin.",
+      "links": [
+        {
+          "text": "healthclaw.io",
+          "url": "http://healthclaw.io/"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "alt": "Comment image, no alternative text available",
+          "url": "https://media.licdn.com/dms/image/v2/D562CAQHy1Zx820ShnQ/comment-image-shrink_8192_480/B56Z6.JqOfGcAc-/0/1781306665039?e=1791921600&v=beta&t=7kX0H_aeaSfAANFhSoxxq4hBJRyBYKjoojMD5yufqEw",
+          "file": "linkedin-media/3986758704118380.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7471458678773014529)",
+      "parent_id": null,
+      "created_at": "2026-06-13T07:09:22Z",
+      "author": {
+        "name": "Eyal D.",
+        "headline": "Data Innovation Leader | FHIR and Interoperability evangelist | Data research platforms expert | A champion for Data",
+        "profile_url": "https://www.linkedin.com/in/eyaldviri",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Loved the demo. Takes things from technical to practical level.",
+      "html": "Loved the demo. Takes things from technical to practical level.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7471490783242764289)",
+      "parent_id": null,
+      "created_at": "2026-06-13T09:16:56Z",
+      "author": {
+        "name": "Jens Kristian Villadsen",
+        "headline": "@Trifork",
+        "profile_url": "https://www.linkedin.com/in/jenskristianvilladsen",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "You can also maybe not \"kill the portals\" but then ... enhance them ... with this ... https://github.com/c3po-initiative/add-ons 😄",
+      "html": "You can also maybe not &quot;kill the portals&quot; but then ... enhance them ... with this ... <a href=\"https://github.com/c3po-initiative/add-ons\">https://github.com/c3po-initiative/add-ons</a> 😄",
+      "links": [
+        {
+          "text": "https://github.com/c3po-initiative/add-ons",
+          "url": "https://github.com/c3po-initiative/add-ons"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7471541779662618624)",
+      "parent_id": null,
+      "created_at": "2026-06-13T12:39:34Z",
+      "author": {
+        "name": "Brian Ahier",
+        "headline": "Data & Quality Manager at West Virginia Department of Health",
+        "profile_url": "https://www.linkedin.com/in/ahier",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD is one of the most prolific developers of patient-centered applications and has an amazing way of producing technology that not only meets policy objectives, but actually helps people in their everyday lives. Thanks Josh!",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> is one of the most prolific developers of patient-centered applications and has an amazing way of producing technology that not only meets policy objectives, but actually helps people in their everyday lives. Thanks Josh!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 6,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7471556237319516160)",
+      "parent_id": null,
+      "created_at": "2026-06-13T13:37:01Z",
+      "author": {
+        "name": "Uri Goren",
+        "headline": "Head of Innovation @Meir | Leading patient-centric innovation with AI and design thinking expertise.",
+        "profile_url": "https://www.linkedin.com/in/urigoren",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "You are really doing amazing work! Inspiring",
+      "html": "You are really doing amazing work! Inspiring",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7471595691954290688)",
+      "parent_id": "urn:li:comment:(ugcPost:7471274402245066752,7471341675097784320)",
+      "created_at": "2026-06-13T16:13:48Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Eugene Vestel, MBA amazing, thank you, and I added the tweaks you requested on GitHub 🙂",
+      "html": "<a href=\"https://www.linkedin.com/in/evestel/\">Eugene Vestel, MBA</a> amazing, thank you, and I added the tweaks you requested on GitHub 🙂",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Eugene Vestel, MBA",
+          "url": "https://www.linkedin.com/in/evestel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7472270645003894786)",
+      "parent_id": null,
+      "created_at": "2026-06-15T12:55:49Z",
+      "author": {
+        "name": "Mary Jane Bogacki",
+        "headline": "Certified Coding Specialist (CCS)",
+        "profile_url": "https://www.linkedin.com/in/mary-jane-bogacki-a42649217",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "The thoroughness of instructions for much of the time consuming “stuff” is commendable! I dislike the hours spent configuring new downloads/installations.\nWhat audience are you targeting? i.e. Will this be a one-step, fully automated download? Or will it require subscription to and familiarity-with-using agents and models?",
+      "html": "The thoroughness of instructions for much of the time consuming “stuff” is commendable! I dislike the hours spent configuring new downloads/installations. <br>What audience are you targeting? i.e. Will this be a one-step, fully automated download? Or will it require subscription to and familiarity-with-using agents and models?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7472279431340806145)",
+      "parent_id": "urn:li:comment:(ugcPost:7471274402245066752,7472270645003894786)",
+      "created_at": "2026-06-15T13:30:44Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Anyone can try it -- but I generally look at this as a tool for people who already know something about AI agents and how to point them at skills. I would love feedback on how things go if you give it a shot.",
+      "html": "Anyone can try it -- but I generally look at this as a tool for people who already know something about AI agents and how to point them at skills. I would love feedback on how things go if you give it a shot.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7475387223983435776)",
+      "parent_id": null,
+      "created_at": "2026-06-24T03:20:00Z",
+      "author": {
+        "name": "A J",
+        "headline": "--",
+        "profile_url": "https://www.linkedin.com/in/a-j-bb965b406",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD In a short clinic visit, how do you process all the information from the QR code and determine what's relevant in the moment? Some of us prefer to review the chart and prepare beforehand—is there a way to access this information before the visit? Thanks.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> In a short clinic visit, how do you process all the information from the QR code and determine what's relevant in the moment? Some of us prefer to review the chart and prepare beforehand—is there a way to access this information before the visit? Thanks.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7475392674980581376)",
+      "parent_id": "urn:li:comment:(ugcPost:7471274402245066752,7475387223983435776)",
+      "created_at": "2026-06-24T03:41:39Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "For sure, I think the most important and relevant paradigm is sharing data well ahead of time. This can be accomplished with SHLinks by pasting a link (in text form, not QR form) into a check-in flow -- or for a cleaner UX I'd like to make progress on https://www.linkedin.com/pulse/killing-clipboard-update-cross-platform-smart-health-w3c-mandel-md-3tssc/",
+      "html": "For sure, I think the most important and relevant paradigm is sharing data well ahead of time. This can be accomplished with SHLinks by pasting a link (in text form, not QR form) into a check-in flow -- or for a cleaner UX I'd like to make progress on <a href=\"https://www.linkedin.com/pulse/killing-clipboard-update-cross-platform-smart-health-w3c-mandel-md-3tssc/\">https://www.linkedin.com/pulse/killing-clipboard-update-cross-platform-smart-health-w3c-mandel-md-3tssc/</a>",
+      "links": [
+        {
+          "text": "https://www.linkedin.com/pulse/killing-clipboard-update-cross-platform-smart-health-w3c-mandel-md-3tssc/",
+          "url": "https://www.linkedin.com/pulse/killing-clipboard-update-cross-platform-smart-health-w3c-mandel-md-3tssc/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7475396346724880384)",
+      "parent_id": "urn:li:comment:(ugcPost:7471274402245066752,7475387223983435776)",
+      "created_at": "2026-06-24T03:56:15Z",
+      "author": {
+        "name": "A J",
+        "headline": "--",
+        "profile_url": "https://www.linkedin.com/in/a-j-bb965b406",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD One of the biggest pain points in everyday physician workflow is the inbasket. Any insight into ongoing projects addressing this",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> One of the biggest pain points in everyday physician workflow is the inbasket. Any insight into ongoing projects addressing this",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7476346902456958976)",
+      "parent_id": null,
+      "created_at": "2026-06-26T18:53:25Z",
+      "author": {
+        "name": "Ryan Radecki",
+        "headline": "Emergency Medicine Specialist | Clinical Informatics Director | Health NZ HealthX",
+        "profile_url": "https://www.linkedin.com/in/ryan-radecki",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "... it sounds as though you're describing what ought to be implemented by the International Patient Summary standard? https://build.fhir.org/ig/HL7/fhir-ips/en/",
+      "html": "... it sounds as though you're describing what ought to be implemented by the International Patient Summary standard? <a href=\"https://build.fhir.org/ig/HL7/fhir-ips/en/\">https://build.fhir.org/ig/HL7/fhir-ips/en/</a>",
+      "links": [
+        {
+          "text": "https://build.fhir.org/ig/HL7/fhir-ips/en/",
+          "url": "https://build.fhir.org/ig/HL7/fhir-ips/en/"
+        }
+      ],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [
+        {
+          "type": "image",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQEQ4wK3EoSUYg/articleshare-shrink_160/B4EZo_J5b0KMAo-/0/1761996151132?e=1791921600&v=beta&t=gjTyfX2S_XA6bmFvWO-34i4BZ7EuJf1Ay37U3lzBCHY",
+          "file": "linkedin-media/7165cc1e82990c79.png"
+        }
+      ],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7471274402245066752,7477962252638294018)",
+      "parent_id": "urn:li:comment:(ugcPost:7471274402245066752,7476346902456958976)",
+      "created_at": "2026-07-01T05:52:14Z",
+      "author": {
+        "name": "Dr Chris Edwards",
+        "headline": "CMIO | Emergency Physician | Board Director | Digital Health Clinician Advocate",
+        "profile_url": "https://www.linkedin.com/in/emtraveller",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Ryan Radecki yay for IPS call out :)",
+      "html": "<a href=\"https://www.linkedin.com/in/ryan-radecki/\">Ryan Radecki</a> yay for IPS call out :)",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Ryan Radecki",
+          "url": "https://www.linkedin.com/in/ryan-radecki/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

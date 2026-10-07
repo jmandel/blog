@@ -1,0 +1,331 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7454978812603375616",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7454978812603375616/",
+  "pages": [
+    "article:ml0we",
+    "share:7454978812603375616"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "ml0we",
+      "url": "https://www.linkedin.com/pulse/patient-access-across-sites-what-makes-request-josh-mandel-md-ml0we",
+      "activity_urn": "urn:li:activity:7454978813152628736"
+    }
+  ],
+  "displayed": {
+    "comments": 11,
+    "reactions": 30,
+    "reposts": 3
+  },
+  "captured": {
+    "total": 11,
+    "top_level": 7,
+    "replies": 4
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:29:21Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7454987914158972928)",
+      "parent_id": null,
+      "created_at": "2026-04-28T20:20:25Z",
+      "author": {
+        "name": "Lucia Savage",
+        "headline": "Smart ideas to fix healthcare. Board Member. Advisor. Expert advisor on public policy, AI, privacy, cybersecurity, and the future of healthcare. I answer questions for CNN and Senators. I write my own posts, not AI.",
+        "profile_url": "https://www.linkedin.com/in/lucia-savage-686470",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Seems to me log files would document  what radio buttons a patient chose, even if they don't remember? (I've read a lot of log files in my day and this certainly was true of those I read.) I think a bigger issue is what is \"knowing\" by the consumer?  I read a D2C apps consumer pages recently and it claimed it was \"HIPAA compliant\" with a graphiclly designed \"seal\" of HIPAA compliance, but the company's terms also said they fed session IDs (which are identifiable) back to social media companies through tracking pixels, which would not be HIPAA compliant at all. So, is the company that is seeking the consumer's trust being consistent, honest, and making its assertions in 3rd or 5th grade language?",
+      "html": "Seems to me log files would document  what radio buttons a patient chose, even if they don't remember? (I've read a lot of log files in my day and this certainly was true of those I read.) I think a bigger issue is what is &quot;knowing&quot; by the consumer?  I read a D2C apps consumer pages recently and it claimed it was &quot;HIPAA compliant&quot; with a graphiclly designed &quot;seal&quot; of HIPAA compliance, but the company's terms also said they fed session IDs (which are identifiable) back to social media companies through tracking pixels, which would not be HIPAA compliant at all. So, is the company that is seeking the consumer's trust being consistent, honest, and making its assertions in 3rd or 5th grade language?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 3,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7454993461818232833)",
+      "parent_id": "urn:li:comment:(ugcPost:7454978812603375616,7454987914158972928)",
+      "created_at": "2026-04-28T20:42:28Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "Properly maintained immutable log files are an important piece of the story! You need to be able to show that you are doing these correctly of course, which is where auditing comes in. As you point out, there are many other things that we need to care about here.",
+      "html": "Properly maintained immutable log files are an important piece of the story! You need to be able to show that you are doing these correctly of course, which is where auditing comes in. As you point out, there are many other things that we need to care about here.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7455038318762795008)",
+      "parent_id": null,
+      "created_at": "2026-04-28T23:40:43Z",
+      "author": {
+        "name": "Sherri Douville",
+        "headline": "CEO, Medigram | Co-Chair, Trust Sub Group (IEEE/UL 2933) | AIMed AI Champion Award (Individual) | IEEE SA Emerging Technology Award (Core Working Group) | Series Editor, Taylor & Francis | Co-Chair, TTIC",
+        "profile_url": "https://www.linkedin.com/in/sdouville",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD I thought you might be interested in this response on managing the current threat environment: https://x.com/i/grok/share/42ce6bcb6f684acaa5fb088a20b59516",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> I thought you might be interested in this response on managing the current threat environment: <a href=\"https://x.com/i/grok/share/42ce6bcb6f684acaa5fb088a20b59516\">https://x.com/i/grok/share/42ce6bcb6f684acaa5fb088a20b59516</a>",
+      "links": [
+        {
+          "text": "https://x.com/i/grok/share/42ce6bcb6f684acaa5fb088a20b59516",
+          "url": "https://x.com/i/grok/share/42ce6bcb6f684acaa5fb088a20b59516"
+        }
+      ],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7455243674369814528)",
+      "parent_id": null,
+      "created_at": "2026-04-29T13:16:43Z",
+      "author": {
+        "name": "Richard Braman",
+        "headline": "Award Winning Innovation | Healthcare Standards & Interoperability (HL7 FHIR CDS Hooks) Business Process Automation (BPM +), AI & Agentic Systems",
+        "profile_url": "https://www.linkedin.com/in/rbraman",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "If the apps are designed correctly to protect patient privacy then the app is not a middle man and not subject to all the nonsense.  The third party data grabbers are the very real boogey man that won’t go away.",
+      "html": "If the apps are designed correctly to protect patient privacy then the app is not a middle man and not subject to all the nonsense.  The third party data grabbers are the very real boogey man that won’t go away.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7455270061931433984)",
+      "parent_id": null,
+      "created_at": "2026-04-29T15:01:34Z",
+      "author": {
+        "name": "stephen ward",
+        "headline": "Innovative Healthcare IT Executive | CTO & Cloud Architect (AWS) | AI & RAG Specialist | Telehealth & FHIR Interoperability Leader",
+        "profile_url": "https://www.linkedin.com/in/stephen-ward-1028452b7",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "SmartOnFhir  Oauth2 protocol. It's maybe a little inconvenient for the patient to find all of their EHR endpoints . But at least they sign in with their credentials provided by each EHR. Also that interface requires SCOPES . Being which FHIR resource type the EHR provider is willing to share and they patient wants access too.   If the industry stopped trying to obfuscate this process, then we wouldn't keep having this conversation.",
+      "html": "SmartOnFhir  Oauth2 protocol. It's maybe a little inconvenient for the patient to find all of their EHR endpoints . But at least they sign in with their credentials provided by each EHR. Also that interface requires SCOPES . Being which FHIR resource type the EHR provider is willing to share and they patient wants access too.   If the industry stopped trying to obfuscate this process, then we wouldn't keep having this conversation.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7455286380286480386)",
+      "parent_id": null,
+      "created_at": "2026-04-29T16:06:25Z",
+      "author": {
+        "name": "Harry Freedman",
+        "headline": "Policy & Strategy at Epic Systems",
+        "profile_url": "https://www.linkedin.com/in/harry-freedman-0a2744a8",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Ryan Howells interested in your take on this!",
+      "html": "<a href=\"https://www.linkedin.com/in/ryanhowells/\">Ryan Howells</a> interested in your take on this!",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Ryan Howells",
+          "url": "https://www.linkedin.com/in/ryanhowells/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7455601798238711809)",
+      "parent_id": "urn:li:comment:(ugcPost:7454978812603375616,7455286380286480386)",
+      "created_at": "2026-04-30T12:59:47Z",
+      "author": {
+        "name": "Ryan Howells",
+        "headline": "Health Care Policy | Strategy | Technology Leader | Kill the Clipboard!",
+        "profile_url": "https://www.linkedin.com/in/ryanhowells",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "While I sincerely appreciate you wanting to know my thoughts on this Harry, it's much more important to hear the EHR community's thoughts. Josh is outlining (among other things) the reasons why SMART permission tickets are needed to eliminate the data holder/EHR OAuth consent screens that exist today when a point-to-point or network IAS request is made. If those OAuth consent screens aren't eliminated at the data holder level, then the SMART permission tickets approach is an exercise in futility. We would simply use the approach that is in place today which is a lousy consumer experience.\n\nWould Epic eliminate the OAuth consent screens that exist today and instead use the SMART permission tickets approach for both point-to-point and network IAS queries so the consumer can manage their preferences in the app of their choice, tie those preferences to their identity-proofed credential so data holders know the request is coming from them, and then accept those preferences as a data holder in the network?\n\nTagging other EHRs for their take as well. Jason Vogt Sam Lambson Tushar Malhotra Buitendijk Hans",
+      "html": "While I sincerely appreciate you wanting to know my thoughts on this <a href=\"https://www.linkedin.com/in/harry-freedman-0a2744a8/\">Harry</a>, it's much more important to hear the EHR community's thoughts. Josh is outlining (among other things) the reasons why SMART permission tickets are needed to eliminate the data holder/EHR OAuth consent screens that exist today when a point-to-point or network IAS request is made. If those OAuth consent screens aren't eliminated at the data holder level, then the SMART permission tickets approach is an exercise in futility. We would simply use the approach that is in place today which is a lousy consumer experience. <br><br>Would Epic eliminate the OAuth consent screens that exist today and instead use the SMART permission tickets approach for both point-to-point and network IAS queries so the consumer can manage their preferences in the app of their choice, tie those preferences to their identity-proofed credential so data holders know the request is coming from them, and then accept those preferences as a data holder in the network? <br><br>Tagging other EHRs for their take as well. <a href=\"https://www.linkedin.com/in/jason-vogt-85b2a7106/\">Jason Vogt</a> <a href=\"https://www.linkedin.com/in/samlambson/\">Sam Lambson</a> <a href=\"https://www.linkedin.com/in/malhotratushar/\">Tushar Malhotra</a> <a href=\"https://www.linkedin.com/in/buitendijk-hans-203599/\">Buitendijk Hans</a>",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Harry",
+          "url": "https://www.linkedin.com/in/harry-freedman-0a2744a8/",
+          "kind": "person"
+        },
+        {
+          "name": "Jason Vogt",
+          "url": "https://www.linkedin.com/in/jason-vogt-85b2a7106/",
+          "kind": "person"
+        },
+        {
+          "name": "Sam Lambson",
+          "url": "https://www.linkedin.com/in/samlambson/",
+          "kind": "person"
+        },
+        {
+          "name": "Tushar Malhotra",
+          "url": "https://www.linkedin.com/in/malhotratushar/",
+          "kind": "person"
+        },
+        {
+          "name": "Buitendijk Hans",
+          "url": "https://www.linkedin.com/in/buitendijk-hans-203599/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7456764913701797888)",
+      "parent_id": null,
+      "created_at": "2026-05-03T18:01:35Z",
+      "author": {
+        "name": "Corey Amann, MD, MBA",
+        "headline": "CEO @ Project L.E.M.U.R. / AI Healthcare",
+        "profile_url": "https://www.linkedin.com/in/corey-amann-md-mba",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "no\n\npatients should own and control their own data in real time and do whatever they want with it\n\nthe idea they have to request it is barbaric",
+      "html": "no<br><br>patients should own and control their own data in real time and do whatever they want with it<br><br>the idea they have to request it is barbaric",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7456779558688833536)",
+      "parent_id": "urn:li:comment:(ugcPost:7454978812603375616,7456764913701797888)",
+      "created_at": "2026-05-03T18:59:47Z",
+      "author": {
+        "name": "Josh Mandel, MD",
+        "headline": "Chief Scientist @ Aledade",
+        "profile_url": "https://www.linkedin.com/in/josh-mandel",
+        "is_self": true,
+        "is_post_author": true
+      },
+      "text": "I don't think the vision is so different -- what are you prescribing to ONC?",
+      "html": "I don't think the vision is so different -- what are you prescribing to ONC?",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7456813707315007488)",
+      "parent_id": "urn:li:comment:(ugcPost:7454978812603375616,7456764913701797888)",
+      "created_at": "2026-05-03T21:15:28Z",
+      "author": {
+        "name": "Joseph Rotella MD, DC",
+        "headline": "Founder, PENCIL Health™ | Physician in Direct Healthcare | Author of The Illusion of Care",
+        "profile_url": "https://www.linkedin.com/in/joseph-rotella-md-dc-08b38814",
+        "is_self": false,
+        "is_post_author": true
+      },
+      "text": "Corey Amann, MD, MBA distributing medical records to patients and patient education should be the new standard practice. No patch work or a suggestion. A true standard.",
+      "html": "<a href=\"https://www.linkedin.com/in/corey-amann-md-mba/\">Corey Amann, MD, MBA</a> distributing medical records to patients and patient education should be the new standard practice. No patch work or a suggestion. A true standard.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Corey Amann, MD, MBA",
+          "url": "https://www.linkedin.com/in/corey-amann-md-mba/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7454978812603375616,7458114574639136768)",
+      "parent_id": null,
+      "created_at": "2026-05-07T11:24:39Z",
+      "author": {
+        "name": "Bala Murugan G",
+        "headline": "Trusted Physician Capital Partner | Helping Physicians Build Passive Wealth & Tax-Efficient Income Outside the OR Through Private Markets | Co-Producer, Beyond The White Coat Podcast",
+        "profile_url": "https://www.linkedin.com/in/bala-murugan-g-31997a265",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD The part most people miss is that “patient access” only works if trust and accountability scale with it. Pushing all the liability back onto hospitals while apps stay lightweight was never going to hold long term.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> The part most people miss is that “patient access” only works if trust and accountability scale with it. Pushing all the liability back onto hospitals while apps stay lightweight was never going to hold long term.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:29:21Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

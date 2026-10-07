@@ -1,0 +1,53 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:activity:7459967891778469888",
+  "url": "https://www.linkedin.com/feed/update/urn:li:activity:7459967891778469888/",
+  "pages": [
+    "share:7459967891266752512"
+  ],
+  "label": "post",
+  "subjects": [
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7459967891778469888"
+    }
+  ],
+  "displayed": {
+    "comments": 1,
+    "reactions": 15,
+    "reposts": 1
+  },
+  "captured": {
+    "total": 1,
+    "top_level": 1,
+    "replies": 0
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-06T20:51:32Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(activity:7459967891778469888,7459984319797952512)",
+      "parent_id": null,
+      "created_at": "2026-05-12T15:14:21Z",
+      "author": {
+        "name": "Paul Swider",
+        "headline": "Mission Critical Healthcare Solutions | Strategic Microsoft Cloud and AI Partner",
+        "profile_url": "https://www.linkedin.com/in/pswider",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Looks fantastic!\n\nOf course, the one day I’m in NYC, you happen to be in Boston. I hope our paths cross soon. Thank you for all that you do.",
+      "html": "Looks fantastic!<br><br>Of course, the one day I’m in NYC, you happen to be in Boston. I hope our paths cross soon. Thank you for all that you do.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-06T20:51:32Z",
+      "last_seen": "2026-10-06T20:51:32Z"
+    }
+  ]
+}

@@ -7,6 +7,20 @@ supersedes_linkedin: "https://www.linkedin.com/pulse/reading-50000-pages-public-
 original_url: "https://www.linkedin.com/pulse/reading-50000-pages-public-comments-physician-fee-josh-mandel-md-5e8ec"
 linkedin_id: 5e8ec
 banner: ./banner.png
+intro_share:
+  share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7512888791393574912"
+  share_id: "7512888791393574912"
+  share_type: "ugcPost"
+  posted_at: "2026-10-05T14:57:50"
+  visibility: "MEMBER_NETWORK"
+  commentary: |
+    I spent the weekend reading 43k public comments on CMS's proposed Physician Fee Schedule for 2027. Or rather... I spent two hours steering Claude Code, which rebuilt my comment-analysis pipeline, and the pipeline read the comments (~50k pages for ~$100). See article for full details + links (or a bit more below in this post).
+    
+    The new pipeline groups form letters, works out who each comment speaks for, and transcribes charts and tables in attachments. It also runs on Gemini's Batch API. Every docket now ships with downloadable SQLite databases that document themselves, so you or your AI assistant can query them directly.
+    
+    The headline finding: most comments were about one proposal (a 50% pay cut for office visits billed on the same day as a procedure). But the long, detailed letters focused on drug pricing and safety-net programs, Medicare's quality reporting program and health IT, and remote patient monitoring.
+    
+    Details, charts and some session stats in the article. Hat tip to Travis Broome and Sean Cavanaugh at Aledade for the nudge!
 ---
 
 The proposed CY2027 Physician Fee Schedule drew 43,082 public comments (about 50,000 pages). That's ~5x bigger than any docket I've analyzed before, and my old pipeline would have cost around $2k to run on it. So I spent some time improving the pipeline. It now groups form letters and campaign letters, works out who each comment speaks for, reads charts and tables in attachments, and publishes the whole analysis as downloadable databases. The full PFS run cost about $100.
@@ -29,7 +43,7 @@ If you rank issues by "thoughtful submissions" (here: distinct letters longer th
 
 ## Loading the docket
 
-My earlier dockets came from regulations.gov 's bulk download. For this one I added support for [Mirrulations](https://github.com/MoravianUniversity/mirrulations), a public mirror of regulations.gov run by Ben Coleman's group at Moravian University. Mirrulations keeps an hourly copy of the site (about 27 million comments, attachments and text files) in a [public S3 bucket](https://registry.opendata.aws/mirrulations/). Because it's built with many donated API keys, it isn't held to the regulations.gov API's limit of 1,000 items an hour. I pulled all 43,000 PFS comments and 4 GB of attachments from it in under an hour. It's a great public service, and I'm glad the pipeline can use it now.
+My earlier dockets came from regulations.gov's bulk download. For this one I added support for [Mirrulations](https://github.com/MoravianUniversity/mirrulations), a public mirror of regulations.gov run by Ben Coleman's group at Moravian University. Mirrulations keeps an hourly copy of the site (about 27 million comments, attachments and text files) in a [public S3 bucket](https://registry.opendata.aws/mirrulations/). Because it's built with many donated API keys, it isn't held to the regulations.gov API's limit of 1,000 items an hour. I pulled all 43,000 PFS comments and 4 GB of attachments from it in under an hour. It's a great public service, and I'm glad the pipeline can use it now.
 
 ## Form letters and campaigns
 
