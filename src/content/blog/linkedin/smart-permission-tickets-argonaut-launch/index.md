@@ -52,6 +52,27 @@ For a business use case like public health follow-up:
 
 A little bit more formally, an incoming Permission Ticket payload might look something like this:
 
+```
+{
+   "iss": "https://trusted-issuer.example.com",
+   "aud": "https://fhir.hospital.com",
+   "ticket_type": "https://smarthealthit.org/permission-ticket-type/public-health-investigation-v1",
+   "authorization": {
+      "subject": { 
+         "type": "reference", 
+         "reference": "Patient/123" 
+      },
+      "access": { 
+         "scopes": ["patient/*.rs"] 
+      }
+   },
+   "details": {
+      "condition": "111852003",
+      "case": "local-case-id-8899"
+   }
+}
+```
+
 ### How to participate
 
 Our immediate goals for the project are building the community, scoping out the work, exploring technical tradeoffs, and hearing from a diverse group of stakeholders. We will be working on the specification as a community as we go.

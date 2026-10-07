@@ -14,19 +14,19 @@
     }
   ],
   "displayed": {
-    "comments": 21,
-    "reactions": 84,
+    "comments": 22,
+    "reactions": 87,
     "reposts": 5
   },
   "captured": {
-    "total": 21,
-    "top_level": 13,
+    "total": 22,
+    "top_level": 14,
     "replies": 8
   },
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:51:32Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512911621715845120)",
@@ -48,7 +48,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512960424351375360)",
@@ -70,7 +70,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512962352896536576)",
@@ -88,11 +88,11 @@
       "links": [],
       "mentions": [],
       "hashtags": [],
-      "reactions": 3,
+      "reactions": 4,
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512965906160050176)",
@@ -125,7 +125,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512966275996991488)",
@@ -147,7 +147,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512966314215301120)",
@@ -174,7 +174,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512970387622662144)",
@@ -201,7 +201,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512972059317125120)",
@@ -234,7 +234,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512979110067920896)",
@@ -256,7 +256,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512988506001027072)",
@@ -284,7 +284,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512989370946162688)",
@@ -313,12 +313,12 @@
         {
           "type": "image",
           "alt": "Comment image, no alternative text available",
-          "url": "https://media.licdn.com/dms/image/v2/D562CAQGfVH_wH6VkIQ/comment-image-shrink_8192_480/B56aEOABXYHYAY-/0/1791236249417?e=1791925200&v=beta&t=JgGpB7BuWDvBSFUL6WbEQnQYGDeb4V9iq3uGhCmHqhI",
+          "url": "https://media.licdn.com/dms/image/v2/D562CAQGfVH_wH6VkIQ/comment-image-shrink_8192_480/B56aEOABXYHYAY-/0/1791236249417?e=1791950400&v=beta&t=dnuI993ap4hLNkE7MQxBYQwk4DO13-84pMtrS1BLRls",
           "file": "linkedin-media/39f56569682d643f.png"
         }
       ],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7512994832861052928)",
@@ -340,7 +340,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513074418617778176)",
@@ -368,7 +368,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513153733569159168)",
@@ -390,7 +390,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513183387529015296)",
@@ -412,7 +412,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513203370220810242)",
@@ -434,7 +434,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513220259521159171)",
@@ -467,7 +467,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513224987647057920)",
@@ -495,7 +495,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513226868398059521)",
@@ -517,7 +517,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513279618276306944)",
@@ -539,7 +539,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7512888791393574912,7513298860082044928)",
@@ -561,7 +561,35 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7512888791393574912,7513344791691337729)",
+      "parent_id": null,
+      "created_at": "2026-10-06T21:09:49Z",
+      "author": {
+        "name": "Bill Lakenan",
+        "headline": "Director of Innovation @ Bellese",
+        "profile_url": "https://www.linkedin.com/in/lakenan",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "Josh Mandel, MD Thank you for this public service.  Your efforts find clear signal in the noise.  Truly appreciated.",
+      "html": "<a href=\"https://www.linkedin.com/in/josh-mandel/\">Josh Mandel, MD</a> Thank you for this public service.  Your efforts find clear signal in the noise.  Truly appreciated.",
+      "links": [],
+      "mentions": [
+        {
+          "name": "Josh Mandel, MD",
+          "url": "https://www.linkedin.com/in/josh-mandel/",
+          "kind": "person"
+        }
+      ],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-07T03:45:54Z",
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

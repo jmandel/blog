@@ -13,6 +13,10 @@
       "linkedin_id": "gqn1c",
       "url": "https://www.linkedin.com/pulse/mychart-takeout-josh-mandel-md-gqn1c",
       "activity_urn": "urn:li:activity:7493770460917288960"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7493770460917288960"
     }
   ],
   "displayed": {
@@ -28,7 +32,7 @@
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:29:21Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493774176684593152)",
@@ -50,7 +54,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493774890882224128)",
@@ -72,7 +76,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493781297212084224)",
@@ -94,7 +98,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493786861627232256)",
@@ -116,7 +120,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493792145154379776)",
@@ -138,7 +142,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493811886212435968)",
@@ -160,7 +164,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493817143487016960)",
@@ -182,7 +186,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493818998258667523)",
@@ -204,7 +208,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493819264655630336)",
@@ -226,7 +230,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493821769368104960)",
@@ -260,12 +264,12 @@
       "media": [
         {
           "type": "image",
-          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEGp4EdW1AzUg/articleshare-shrink_160/B56Z_9kMVNHcAQ-/0/1786665551678?e=1791921600&v=beta&t=QKCxomUYo5BuJ2gnWbyFBViapUeBbcCdFOP0J-Uaa04",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQEGp4EdW1AzUg/articleshare-shrink_160/B56Z_9kMVNHcAQ-/0/1786665551678?e=1791950400&v=beta&t=dhoPO8IhNzhQR-7PGfLgbcF7rSq-5hEDyVH-toBGO5I",
           "file": "linkedin-media/037f193d0514976d.png"
         }
       ],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493822489857351680)",
@@ -287,7 +291,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493826560534237185)",
@@ -309,7 +313,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493836124935864320)",
@@ -331,7 +335,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493840646588223488)",
@@ -353,7 +357,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493860290749583360)",
@@ -375,7 +379,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493862839774826496)",
@@ -397,7 +401,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493864909521391616)",
@@ -419,7 +423,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493865990582116352)",
@@ -447,7 +451,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493871768747687936)",
@@ -475,7 +479,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493906215656230912)",
@@ -497,7 +501,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493956198971441152)",
@@ -531,12 +535,12 @@
       "media": [
         {
           "type": "image",
-          "url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQH8I89-HgS7dw/articleshare-shrink_160/B4DZ__hHAFHQAQ-/0/1786698298671?e=1791921600&v=beta&t=yTU0IcE18oThutXS18FHhSl_8FY0uAyP2r6aPXspqR0",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQH8I89-HgS7dw/articleshare-shrink_160/B4DZ__hHAFHQAQ-/0/1786698298671?e=1791950400&v=beta&t=1Ipsgg-RFH5QakSLYMrnkB_x7IKog7jVwaNjtSG8160",
           "file": "linkedin-media/c0111e59bb3a58d1.png"
         }
       ],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493965959309705216)",
@@ -558,7 +562,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493992485090803712)",
@@ -580,7 +584,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493994364189310976)",
@@ -608,7 +612,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7493994476177100801)",
@@ -641,7 +645,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494025222254211073)",
@@ -663,7 +667,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494037284074225664)",
@@ -685,7 +689,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494037370019909632)",
@@ -713,7 +717,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494038634128633856)",
@@ -735,7 +739,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494039927244881920)",
@@ -763,7 +767,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494045030354108416)",
@@ -791,7 +795,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494051787318923264)",
@@ -819,7 +823,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494052093947826176)",
@@ -852,7 +856,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494065131719417856)",
@@ -880,7 +884,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494070948036472832)",
@@ -908,7 +912,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494087303833792515)",
@@ -936,7 +940,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494106187106283520)",
@@ -958,7 +962,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494108644528037889)",
@@ -985,7 +989,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494108896119111682)",
@@ -1007,7 +1011,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494114509117169664)",
@@ -1035,7 +1039,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494115584369094656)",
@@ -1063,7 +1067,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494138194851086338)",
@@ -1091,7 +1095,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494147101694595073)",
@@ -1119,7 +1123,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494157247376146432)",
@@ -1147,7 +1151,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494162781932294144)",
@@ -1169,7 +1173,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494170012161806336)",
@@ -1197,7 +1201,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494194974830325761)",
@@ -1225,7 +1229,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494288689758470144)",
@@ -1262,7 +1266,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494289597942693888)",
@@ -1293,7 +1297,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494293671870091264)",
@@ -1315,7 +1319,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494362238519279616)",
@@ -1337,7 +1341,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494400356076974082)",
@@ -1359,7 +1363,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494425697323630592)",
@@ -1381,7 +1385,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494467204495740928)",
@@ -1403,7 +1407,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494496413871943680)",
@@ -1425,7 +1429,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494564757862043648)",
@@ -1447,7 +1451,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7494970405024124928)",
@@ -1469,7 +1473,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7495052359950110720)",
@@ -1497,7 +1501,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7495125809536466944)",
@@ -1525,7 +1529,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7495148738202615808)",
@@ -1553,7 +1557,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7495235618906562560)",
@@ -1581,7 +1585,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7495246656653778944)",
@@ -1589,7 +1593,7 @@
       "created_at": "2026-08-17T22:34:17Z",
       "author": {
         "name": "Andrew Gibbons MBA, MS",
-        "headline": "Healthcare Analytics Leader | AI, Value-Based Care & Medical Economics | Claims, Attribution & Provider Performance | MSSP, MA, ACO REACH",
+        "headline": "Healthcare Analytics Leader | Value-Based Care & Medical Economics | Medicare, Claims, Attribution & Provider Performance",
         "profile_url": "https://www.linkedin.com/in/andrewgibbonsanalytics",
         "is_self": false,
         "is_post_author": false
@@ -1609,7 +1613,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7493770460166242304,7498407669360160769)",
@@ -1631,7 +1635,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

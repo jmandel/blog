@@ -10,7 +10,7 @@ intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7458199665440620544"
   share_id: "7458199665440620544"
   share_type: "ugcPost"
-  posted_at: "2026-05-07T17:02:46"
+  posted_at: "2026-05-07T17:02:47"
   visibility: "MEMBER_NETWORK"
   commentary: |
     With W3C Digital Credentials API, it's *finally possible* to design a health-data-sharing protocol that's idiomatic (standard FHIR-based resource sharing, questionnaire filling, etc) and works cross-platform (from web and mobile app requests to Android + iOS wallets)! See article for background + details on my updated "SMART Health Check-in Protocol".

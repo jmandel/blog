@@ -25,7 +25,7 @@
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:51:32Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7459585815149432832,7459592275996827648)",
@@ -47,7 +47,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7459585815149432832,7459639547312664577)",
@@ -84,12 +84,12 @@
         {
           "type": "image",
           "alt": "Comment image, no alternative text available",
-          "url": "https://media.licdn.com/dms/image/v2/D4E2CAQEjVaeNter-WQ/comment-image-shrink_8192_480/B4EZ4X2o92HsAI-/0/1778516660446?e=1791925200&v=beta&t=jR9NtUWALOB8JNATBc2EhRxmmXZ38b6NUhaw-DiHkzs",
+          "url": "https://media.licdn.com/dms/image/v2/D4E2CAQEjVaeNter-WQ/comment-image-shrink_8192_480/B4EZ4X2o92HsAI-/0/1778516660446?e=1791950400&v=beta&t=Fa86OJONUmYWS3K8tiB1Crjs8pjnyXvVz8SNUX0uMsY",
           "file": "linkedin-media/1716173913b50a47.jpg"
         }
       ],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7459585815149432832,7459656322448457729)",
@@ -111,7 +111,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7459585815149432832,7460039923157598208)",
@@ -133,7 +133,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7459585815149432832,7463264495331758080)",
@@ -161,7 +161,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7459585815149432832,7463863245888593922)",
@@ -183,7 +183,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

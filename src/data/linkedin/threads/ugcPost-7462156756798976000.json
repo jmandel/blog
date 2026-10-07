@@ -13,6 +13,10 @@
       "linkedin_id": "wg4xc",
       "url": "https://www.linkedin.com/pulse/kill-clipboard-july-2026-sharing-fhir-data-patient-josh-mandel-md-wg4xc",
       "activity_urn": "urn:li:activity:7462156757507883008"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7462156757507883008"
     }
   ],
   "displayed": {
@@ -28,7 +32,7 @@
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:29:21Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462169367699456001)",
@@ -50,7 +54,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462199864592920576)",
@@ -72,7 +76,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462413469653471234)",
@@ -94,7 +98,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462414294014570497)",
@@ -116,7 +120,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462420890413109248)",
@@ -138,7 +142,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462425009706151936)",
@@ -165,7 +169,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462426519626493952)",
@@ -207,12 +211,12 @@
       "media": [
         {
           "type": "image",
-          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQF7T24vdYGkgg/articleshare-shrink_160/B56Z4_dJVnIoAQ-/0/1779181067262?e=1791925200&v=beta&t=JKVKSYZW39isjsid1tW24MYWmaVsja9enwP-uGHFhMY",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQF7T24vdYGkgg/articleshare-shrink_160/B56Z4_dJVnIoAQ-/0/1779181067262?e=1791950400&v=beta&t=dF1zFwIMY8UDaWi0ozc4quPxEbVhY6Sto8bG9Gafm1M",
           "file": "linkedin-media/5379cfc286b2d12c.jpg"
         }
       ],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462426825768476672)",
@@ -240,7 +244,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462432153151246336)",
@@ -268,7 +272,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462436324629860352)",
@@ -296,7 +300,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462437546271219712)",
@@ -324,7 +328,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462439411654316032)",
@@ -346,7 +350,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462444056174997504)",
@@ -368,7 +372,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462614745414586369)",
@@ -390,7 +394,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7462765393707794432)",
@@ -412,7 +416,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7463034182739415040)",
@@ -434,7 +438,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7463267999987191809)",
@@ -456,7 +460,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7463285817533227008)",
@@ -478,7 +482,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7464349523860086785)",
@@ -500,7 +504,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7465439167892729856)",
@@ -522,7 +526,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462156756798976000,7466820539282571265)",
@@ -544,7 +548,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

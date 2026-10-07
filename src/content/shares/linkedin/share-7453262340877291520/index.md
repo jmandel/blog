@@ -1,12 +1,12 @@
 ---
 title: "There is *a lot* I want to know about where GPT-5.5 thought summaries come…"
-date: 2026-04-24T02:03:36
+date: 2026-04-24T02:03:37
 slug: share-7453262340877291520
 share_url: "https://www.linkedin.com/feed/update/urn:li:share:7453262340877291520"
 share_type: "share"
 share_id: "7453262340877291520"
 visibility: "MEMBER_NETWORK"
-media_url: "https://media.licdn.com/dms/image/v2/D4E22AQG43nOM76wcTg/feedshare-image-high-res/B4EZ29OmuYJ0AU-/0/1776996215993?e=1792627200&v=beta&t=YiCDvwVFZXGlUmkRDNJnXNa4ti71E0TECjJljRYMRhE"
+media_url: "https://media.licdn.com/dms/image/v2/D4E22AQG43nOM76wcTg/feedshare-image-high-res/B4EZ29OmuYJ0AU-/0/1776996215993?e=1793232000&v=beta&t=jY2pMFVlHz3iRJx5GRYRR01xmvbe_mtLI1Fmpm0qSAg"
 thumbnail: ./image-1.jpg
 ---
 

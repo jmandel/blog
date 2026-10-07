@@ -5,7 +5,7 @@ added_at: 2026-04-03
 slug: i-registered-health-skillz-at-500-epic-sites-then-couldn-t-connect
 original_url: "https://www.linkedin.com/pulse/i-registered-health-skillz-500-epic-sites-couldnt-josh-mandel-md-ivtoc"
 linkedin_id: ivtoc
-banner: ./banner.png
+banner: ./banner.jpg
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7427850874347200512"
   share_id: "7427850874347200512"
@@ -66,7 +66,7 @@ I pasted my keys. Oops: an error that one of the keys in my JWKS used an EC algo
 
 Within minutes, the token exchange worked. I was fetching my data!
 
-![](./banner.png)
+![](./image-1.png)
 
 OK. The recommended option doesn't work. The documented algorithms don't work. And the UI warns you against the only thing that atually does work.
 

@@ -25,7 +25,7 @@
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:51:32Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7492651593218015234,7492667264727695360)",
@@ -52,7 +52,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7492651593218015234,7492685654594629632)",
@@ -80,12 +80,12 @@
       "media": [
         {
           "type": "image",
-          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGV_qXEJZGZQQ/articleshare-shrink_160/B4EZ_td5YgJEAQ-/0/1786395465784?e=1791925200&v=beta&t=DQZtPZPkx9ChfvF8I8nrbx7DXS_zfXQJB92H51U5VqY",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGV_qXEJZGZQQ/articleshare-shrink_160/B4EZ_td5YgJEAQ-/0/1786395465784?e=1791950400&v=beta&t=M6CQIfcj-gPNAk1ligyqAMfStDQlneS9FzJiDncBoeE",
           "file": "linkedin-media/31c4005f35245b2c.png"
         }
       ],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7492651593218015234,7492845295920201729)",
@@ -113,12 +113,12 @@
       "media": [
         {
           "type": "image",
-          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFfpKzbDbev8Q/articleshare-shrink_160/B4EZ_vvJ0UKkAQ-/0/1786433544476?e=1791925200&v=beta&t=txMZtxcOfuQVl2h84W0uOZBbChDw5O-z5dFjIhhaO1o",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQFfpKzbDbev8Q/articleshare-shrink_160/B4EZ_vvJ0UKkAQ-/0/1786433544476?e=1791950400&v=beta&t=MA8wHXP31o0QIkmrvNieDvjb0UCjsqUQgjCrd3UpkM8",
           "file": "linkedin-media/761bc363bf7f99d8.jpg"
         }
       ],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7492651593218015234,7493704238271901696)",
@@ -142,7 +142,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7492651593218015234,7493716588995686400)",
@@ -170,7 +170,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:51:32Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

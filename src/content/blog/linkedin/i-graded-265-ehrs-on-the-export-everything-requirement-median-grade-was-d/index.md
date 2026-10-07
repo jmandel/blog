@@ -5,7 +5,7 @@ added_at: 2026-04-03
 slug: i-graded-265-ehrs-on-the-export-everything-requirement-median-grade-was-d
 original_url: "https://www.linkedin.com/pulse/i-graded-265-ehrs-export-everything-requirement-d-josh-mandel-md-n0qyc"
 linkedin_id: n0qyc
-banner: ./banner.png
+banner: ./banner.jpg
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7429624990238507008"
   share_id: "7429624990238507008"
@@ -40,7 +40,7 @@ That leaves 265 CHPL-certified products, which I grouped into 217 product famili
 
 *The full pipeline: CHPL registry → filter and deduplicate → phased collection → deep analysis → structured summary → public dashboard.*
 
-![](./banner.png)
+![](./image-1.png)
 
 For each family, an AI agent researched the vendor and product, then navigated to the registered documentation URL and downloaded everything it found: PDFs, HTML pages, data dictionaries, schema files. A separate agent then performed a deep analysis: what does the export actually contain? How does it compare to what the product stores? Is this a genuine EHI export or a relabeled clinical summary?
 

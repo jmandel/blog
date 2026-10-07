@@ -13,6 +13,10 @@
       "linkedin_id": "g71vc",
       "url": "https://www.linkedin.com/pulse/hti-6-should-unbundle-api-certification-josh-mandel-md-g71vc",
       "activity_urn": "urn:li:activity:7498041133772472320"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7498041133772472320"
     }
   ],
   "displayed": {
@@ -28,7 +32,7 @@
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:29:21Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7498041133113962496,7498045091601838082)",
@@ -56,7 +60,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7498041133113962496,7498064856168857601)",
@@ -84,7 +88,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7498041133113962496,7498084726885400576)",
@@ -106,7 +110,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7498041133113962496,7499614090839896064)",
@@ -128,7 +132,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7498041133113962496,7499651145041125376)",
@@ -150,7 +154,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

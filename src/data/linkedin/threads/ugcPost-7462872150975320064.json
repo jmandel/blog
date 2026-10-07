@@ -13,6 +13,10 @@
       "linkedin_id": "gylif",
       "url": "https://www.linkedin.com/pulse/how-fhir-resourceid-became-special-systemstring-josh-mandel-md-gylif",
       "activity_urn": "urn:li:activity:7462872151638069251"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7462872151638069251"
     }
   ],
   "displayed": {
@@ -28,7 +32,7 @@
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:29:21Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7462880273785864192)",
@@ -50,7 +54,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7462965322673954816)",
@@ -72,7 +76,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7462983643964022785)",
@@ -94,7 +98,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463001581509152769)",
@@ -116,7 +120,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463119673933500417)",
@@ -138,7 +142,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463211168594268160)",
@@ -162,12 +166,12 @@
         {
           "type": "image",
           "alt": "Comment image, no alternative text available",
-          "url": "https://media.licdn.com/dms/image/v2/D4D2CAQEj7e-OXGzCKg/comment-image-shrink_8192_480/B4DZ5Km_a4JoAI-/0/1779368201529?e=1791921600&v=beta&t=-cPviCKcfuU6d6k3oS7xzYw77P3CQLGpgABGAtb8gao",
+          "url": "https://media.licdn.com/dms/image/v2/D4D2CAQEj7e-OXGzCKg/comment-image-shrink_8192_480/B4DZ5Km_a4JoAI-/0/1779368201529?e=1791954000&v=beta&t=eRpwoRXg6IFoQnurkSM-PYum09iHpUKf4IUkmBMHJmQ",
           "file": "linkedin-media/0bf8a6d34833a7cc.png"
         }
       ],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463306699718856705)",
@@ -194,7 +198,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463312227404627968)",
@@ -221,7 +225,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463319825688211458)",
@@ -249,7 +253,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463320371211960320)",
@@ -277,7 +281,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463394033680424960)",
@@ -305,7 +309,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7463501645201584129)",
@@ -327,7 +331,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7464520883320225793)",
@@ -349,7 +353,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7462872150975320064,7464666787004051456)",
@@ -371,7 +375,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

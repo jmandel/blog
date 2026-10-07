@@ -1,6 +1,6 @@
 ---
 title: "Follow up in my occasional series on voice-based agentic coding when the nanny…"
-date: 2026-04-07T14:10:43
+date: 2026-04-07T14:10:44
 slug: share-7447284731152453633
 share_url: "https://www.linkedin.com/feed/update/urn:li:share:7447284731152453633"
 share_type: "share"

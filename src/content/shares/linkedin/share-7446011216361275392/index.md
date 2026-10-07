@@ -6,7 +6,7 @@ share_url: "https://www.linkedin.com/feed/update/urn:li:share:744601121636127539
 share_type: "share"
 share_id: "7446011216361275392"
 visibility: "MEMBER_NETWORK"
-media_url: "https://media.licdn.com/dms/image/v2/D5622AQEnqmYu8ds_PQ/feedshare-image-high-res/B56Z1WLv2LJsAY-/0/1775267413706?e=1792627200&v=beta&t=DJwwhpxbb62OagG2hl-oAtaPtyYL_BWEgjlkLGWKmoE"
+media_url: "https://media.licdn.com/dms/image/v2/D5622AQEnqmYu8ds_PQ/feedshare-image-high-res/B56Z1WLv2LJsAY-/0/1775267413706?e=1793232000&v=beta&t=taDnGqGFUBPwPK4pKjni1IVTjeCnZQYLoNrfQr0e7gc"
 first_comment_link: "https://github.com/jmandel/skills/blob/main/babysit-codex/SKILL.md"
 linkedin_edited: true
 thumbnail: ./image-1.jpg

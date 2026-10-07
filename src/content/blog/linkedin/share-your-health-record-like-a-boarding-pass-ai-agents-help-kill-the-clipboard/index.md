@@ -18,7 +18,7 @@ intro_share:
 
 In my [previous update](/blog/posts/kill-the-clipboard-for-july-2026-sharing-fhir-data-patient-stories) on the [Kill The Clipboard (KTC) initiative](https://ktc-spec.github.io/), I outlined our primary goal: replacing the repetitive, frustrating process of clinic intake with a seamless digital handoff. Patients should be able to share their health data—structured FHIR resources, clinical notes, and their own personal narrative—from an app they already use. The experience should be as simple as presenting a boarding pass at the airport.
 
-![Video](https://dms.licdn.com/playlist/vid/v2/D5612AQHd99qYbUJ9Gg/thumbnail-high/B56Z69Mq2sGkAY-/0/1781290759756?e=1792627200&v=beta&t=y0VYxRwsed-yMrXTM4OhH5W4rQEwef3oXyNeOKLKFuY)
+![Video](./image-1.jpg)
 
 [Watch the video on LinkedIn (11:23)](/blog/posts/share-your-health-record-like-a-boarding-pass-ai-agents-help-kill-the-clipboard)
 

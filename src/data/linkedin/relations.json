@@ -68,6 +68,12 @@
     "method": "comment ids on article page"
   },
   {
+    "from": "article:i1sxc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7422442824941494273",
+    "method": "comment ids on article page"
+  },
+  {
     "from": "article:lgasc",
     "rel": "thread",
     "to": "urn:li:ugcPost:7457144969875607552",
@@ -107,6 +113,12 @@
     "from": "article:uqoec",
     "rel": "thread",
     "to": "urn:li:ugcPost:7464055912857767936",
+    "method": "comment ids on article page"
+  },
+  {
+    "from": "article:uvruc",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7442245738031374336",
     "method": "comment ids on article page"
   },
   {
@@ -268,6 +280,24 @@
     "method": "list card componentkey"
   },
   {
+    "from": "urn:li:activity:7422442825402830848",
+    "rel": "announces",
+    "to": "article:i1sxc",
+    "method": "post page shows the article's comment thread"
+  },
+  {
+    "from": "urn:li:activity:7422442825402830848",
+    "rel": "same_as",
+    "to": "urn:li:ugcPost:7422442824941494273",
+    "method": "post page"
+  },
+  {
+    "from": "urn:li:activity:7422442825402830848",
+    "rel": "thread",
+    "to": "urn:li:ugcPost:7422442824941494273",
+    "method": "comment ids on post page"
+  },
+  {
     "from": "urn:li:activity:7442209954536718336",
     "rel": "quotes",
     "to": "urn:li:activity:7442197444215382016",
@@ -285,6 +315,12 @@
     "rel": "thread",
     "to": "urn:li:ugcPost:7442209953907376128",
     "method": "comment ids on post page"
+  },
+  {
+    "from": "urn:li:activity:7442245738560040960",
+    "rel": "announces",
+    "to": "article:uvruc",
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7442245738560040960",
@@ -328,7 +364,7 @@
     "from": "urn:li:activity:7445930621270609920",
     "rel": "announces",
     "to": "article:m9qoc",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7445930621270609920",
@@ -390,7 +426,7 @@
     "from": "urn:li:activity:7451354127340736512",
     "rel": "announces",
     "to": "article:ft1ue",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7451354127340736512",
@@ -439,7 +475,7 @@
     "from": "urn:li:activity:7454367558528548864",
     "rel": "announces",
     "to": "article:qg0ee",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7454367558528548864",
@@ -457,7 +493,7 @@
     "from": "urn:li:activity:7454978813152628736",
     "rel": "announces",
     "to": "article:ml0we",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7454978813152628736",
@@ -494,7 +530,7 @@
     "from": "urn:li:activity:7456030067610173440",
     "rel": "announces",
     "to": "article:9kure",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7456030067610173440",
@@ -605,7 +641,7 @@
     "from": "urn:li:activity:7462156757507883008",
     "rel": "announces",
     "to": "article:wg4xc",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7462156757507883008",
@@ -623,7 +659,7 @@
     "from": "urn:li:activity:7462872151638069251",
     "rel": "announces",
     "to": "article:gylif",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7462872151638069251",
@@ -641,7 +677,7 @@
     "from": "urn:li:activity:7464055913323315200",
     "rel": "announces",
     "to": "article:uqoec",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7464055913323315200",
@@ -659,7 +695,7 @@
     "from": "urn:li:activity:7465132579483131905",
     "rel": "announces",
     "to": "article:robze",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7465132579483131905",
@@ -677,7 +713,7 @@
     "from": "urn:li:activity:7471274402752512000",
     "rel": "announces",
     "to": "article:9jpqc",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7471274402752512000",
@@ -714,7 +750,7 @@
     "from": "urn:li:activity:7473791476695523329",
     "rel": "announces",
     "to": "article:u1zsc",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7473791476695523329",
@@ -744,7 +780,15 @@
     "from": "urn:li:activity:7491569677521805312",
     "rel": "announces",
     "to": "article:0aimf",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
+  },
+  {
+    "from": "urn:li:activity:7491569677521805312",
+    "rel": "first_comment_link",
+    "to": "https://www.linkedin.com/feed/update/urn:li:activity:7492546574942629888/",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7492546574942629888/",
+    "comment_id": "urn:li:comment:(ugcPost:7491569676955709440,7493063969574649856)",
+    "method": "Josh's first comment"
   },
   {
     "from": "urn:li:activity:7491569677521805312",
@@ -762,7 +806,7 @@
     "from": "urn:li:activity:7492546574942629888",
     "rel": "announces",
     "to": "article:d22wc",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7492546574942629888",
@@ -818,7 +862,7 @@
     "from": "urn:li:activity:7493770460917288960",
     "rel": "announces",
     "to": "article:gqn1c",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7493770460917288960",
@@ -836,7 +880,7 @@
     "from": "urn:li:activity:7498041133772472320",
     "rel": "announces",
     "to": "article:g71vc",
-    "method": "article page names the post"
+    "method": "post page shows the article's comment thread"
   },
   {
     "from": "urn:li:activity:7498041133772472320",

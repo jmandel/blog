@@ -1,6 +1,6 @@
 ---
 title: "Fun demo for Friday afternoon: voice agents! Check out gpt-live-1 in a…"
-date: 2026-09-18T21:05:29
+date: 2026-09-18T21:06:17
 slug: share-7506820719977205760
 share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7506820719977205760"
 share_type: "ugcPost"

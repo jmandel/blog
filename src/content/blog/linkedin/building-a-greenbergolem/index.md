@@ -18,7 +18,7 @@ intro_share:
 
 ---
 
-Isaac Kohane [posted a challenge](https://x.com/zakkohane/status/2044794966405194117) on April 16: build a citation-distortion network like [Steven Greenberg's 2009 BMJ figure](https://pubmed.ncbi.nlm.nih.gov/19622839/), but AI-driven and reproducible for any claim. "There is a lot of AI work in this area but none to my knowledge could reproduce the figure below. Please prove me wrong. #citationNetworks"
+[Isaac Kohane](/in/isaac-kohane-729b03/) [posted a challenge](https://x.com/zakkohane/status/2044794966405194117) on April 16: build a citation-distortion network like [Steven Greenberg's 2009 BMJ figure](https://pubmed.ncbi.nlm.nih.gov/19622839/), but AI-driven and reproducible for any claim. "There is a lot of AI work in this area but none to my knowledge could reproduce the figure below. Please prove me wrong. #citationNetworks"
 
 [Greenbergolem](https://github.com/jmandel/greenbergolem) is my attempt with Claude Opus 4.7. I built this in 3-4 hours of my time, creating a pipeline that audits any scientific claim whose literature is reachable in open-access full text. Starting example: "Hydroxychloroquine improves clinical outcomes in patients with COVID-19" -- this runs in about 12 hours of wall-clock subagent compute (Claude Code managing ~10 parallel copilot subagents). Interactive output at [joshuamandel.com/greenbergolem](http://joshuamandel.com/greenbergolem) (or read on for derails and structured output).
 
@@ -31,6 +31,18 @@ The annotation was the work. Zak's challenge is whether a language model can do 
 ### The pipeline
 
 Nine tasks in sequence:
+
+```
+research → 
+corpus-build → 
+paper-profile → 
+occurrence-extract →
+paper-judge → 
+subclaim-label → 
+edge-aggregate → 
+graph-analyze → 
+render
+```
 
 Four steps call LLM subagents (research, paper-profile, paper-judge, subclaim-label). The rest are mechanical — PubMed pagination, JATS parsing, citation-marker extraction, edge aggregation, HITS authority scoring, metric computation, SVG layout.
 
@@ -70,11 +82,11 @@ Wall-clock was dominated by paper-judge. Everything else is bounded by rate limi
 
 Everything lands in bundle.json — papers, edges, occurrences, judgments, per-metric results, per-subclaim breakdowns. The bundled HTML viewer is one consumer of that file, mimicking Greenberg's original visualization:
 
-![](./image-1.png)
+![Article content](./image-1.png)
 
 But with the structured data it's easy to create more in depth analyses and views. For example I handed bundle.json to a fresh Claude session and asked for a visualization. A few prompts of [back-and-forth](https://claude.ai/share/8ac52a72-3de0-41c0-8af2-34291328efe9) produced [this standalone audit report](https://claude.ai/public/artifacts/3cf59902-09c7-43fa-8cbc-906a03cac03e) — a different take on the same data, with editorial framing the canned viewer doesn't try to provide.
 
-![](./image-2.png)
+![Article content](./image-2.png)
 
 The analyst interface I care about isn't a UI. It's the bundle plus a chat window. Canned viewers lock you into whichever questions the UI was built to ask; ad-hoc analysis regenerates exactly the view the question needs.
 

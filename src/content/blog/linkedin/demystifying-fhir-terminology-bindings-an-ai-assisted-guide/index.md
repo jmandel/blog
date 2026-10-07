@@ -5,7 +5,6 @@ added_at: 2026-04-03
 slug: demystifying-fhir-terminology-bindings-an-ai-assisted-guide
 original_url: "https://www.linkedin.com/pulse/demystifying-fhir-terminology-bindings-ai-assisted-guide-mandel-md-i1sxc"
 linkedin_id: i1sxc
-banner: ./banner.png
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7422442824941494273"
   share_id: "7422442824941494273"
@@ -35,11 +34,28 @@ A binding connects a coded element to a value set and specifies how strictly tha
 
 **PropertyDescriptionvalueSet**The canonical URL identifying which codes are allowed**strength**How strictly the value set must be followed**description**Human-readable guidance on using the binding
 
+```
+{
+  "path": "Condition.code",
+  "binding": {
+    "strength": "extensible",
+    "valueSet": "http://hl7.org/fhir/ValueSet/condition-code",
+    "description": "Identification of the condition or diagnosis"
+  }
+}
+```
+
 ### The Four Binding Strengths
 
 ### Required: No Exceptions
 
 **The rule:** The code MUST come from the specified value set. Period.
+
+```
+✅ Valid:   {"code": "active", "system": "http://hl7.org/fhir/observation-status"}
+❌ Invalid: {"code": "in-progress", "system": "http://example.org/custom-status"}
+❌ Invalid: Just text with no code
+```
 
 **When to use it:**
 
@@ -55,11 +71,39 @@ A binding connects a coded element to a value set and specifies how strictly tha
 
 This means a required binding on CodeableConcept creates an *implicit* requirement that coding be present—you cannot satisfy it with just text.
 
+```
+{
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "problem-list-item",
+        "display": "Problem List Item"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "439401001",
+        "display": "Diagnosis"
+      }
+    ],
+    "text": "Problem from patient's problem list"
+  }
+}
+```
+
 If problem-list-item satisfies the required binding, the additional SNOMED code is perfectly fine—it doesn't violate anything, as long as both codes represent the same concept (more on this critical rule later).
 
 ### Extensible: Use It If It Fits
 
 **The rule:** You MUST use a code from the value set *if one applies*. Only if no code in the value set adequately represents your concept may you use something else.
+
+```
+✅ Valid: SNOMED "39065001" (Burn of ear) - it's in the value set
+✅ Valid: SNOMED "312824007" (Family history of cancer of colon) - not a clinical 
+         finding, so arguably not covered by the value set
+❌ Invalid: Local code "XYZ123" for "Severe pneumococcal pneumonia" when SNOMED has 
+           "233607000" (Pneumococcal pneumonia) which covers the concept
+```
 
 **The key insight:** Extensible requires *human judgment*. A validator cannot fully enforce it because determining "does a code in the value set apply?" requires clinical or domain expertise. The spec is explicit: this determination is "based on human review."
 
@@ -155,7 +199,7 @@ So "non-overlapping" means different code systems or subsets, not different conc
 
 ### Additional Binding Purposes
 
-![](./banner.png)
+![Article content](./image-1.png)
 
 ### The "any" Flag
 
@@ -192,6 +236,26 @@ This is where most confusion arises. Let's be precise.
 3. These CAN be the SAME coding if a code exists that satisfies both
 4. Or they can be DIFFERENT codings—**but both must represent the same concept**
 
+```
+{
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "233604007",
+        "display": "Pneumonia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "code": "J18.9",
+        "display": "Pneumonia, unspecified organism"
+      }
+    ],
+    "text": "Pneumonia"
+  }
+}
+```
+
 Both bindings are satisfied. The SNOMED code handles the extensible main binding; the ICD-10 code handles the required additional binding. And crucially, both codes represent the same concept: pneumonia.
 
 ---
@@ -204,11 +268,23 @@ This is one of the most practical questions implementers face.
 
 If you want to say "use a code from SNOMED, ICD-10, OR a local system," create a value set that includes codes from all three:
 
+```
+Condition.code
+  Main binding: extensible to "Combined Diagnosis Codes" 
+  (includes SNOMED findings + ICD-10 + local codes)
+```
+
 This is OR logic: one coding from the combined set satisfies the requirement.
 
 ### Additional Bindings: "All of These" (AND)
 
 If you want to say "must send BOTH a SNOMED code AND an ICD-10 code," use additional bindings:
+
+```
+Condition.code
+  Main binding: extensible to SNOMED Clinical Findings
+  Additional binding: required to ICD-10 Diagnosis Codes
+```
 
 This is AND logic: you need codings that satisfy each binding.
 
@@ -224,6 +300,14 @@ And Lloyd McKenzie:
 
 **The old way** for expressing "at least one coding from value set X":
 
+```
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains us-core 1..1
+* category[us-core] from USCoreCategories (required)
+```
+
 **Why this was necessary:** A binding on the root element applies to ALL codings. To say "at least one must be from X" required slicing.
 
 **Why slicing for this is now discouraged:**
@@ -233,6 +317,12 @@ Lloyd McKenzie:
 > "Using slicing to do 'and' bindings is now considered an anti-pattern and discouraged."
 
 Additional bindings with any = true are simpler:
+
+```
+Observation.category
+  Main binding: preferred to General Category Codes
+  Additional binding: required to US Core Categories, any = true
+```
 
 **When you still need slicing:**
 
@@ -255,13 +345,36 @@ If you have a 0..\* CodeableConcept element (like category), you can slice it an
 
 **Requirement:** For billing, need both SNOMED for clinical use and ICD-10 for claims.
 
+```
+Condition.code
+  Main binding: extensible to SNOMED Clinical Findings
+  Additional binding: required to ICD-10 CM Diagnosis Codes
+```
+
 **Valid instance:**
+
+```
+{
+  "code": {
+    "coding": [
+      {"system": "http://snomed.info/sct", "code": "13645005", "display": "COPD"},
+      {"system": "http://hl7.org/fhir/sid/icd-10-cm", "code": "J44.9", "display": "COPD, unspecified"}
+    ]
+  }
+}
+```
 
 Both codes represent the same condition (COPD), just in different terminologies.
 
 ### Pattern 2: Category with Minimum Requirement
 
 **Requirement:** At least one category from US Core; others allowed.
+
+```
+Condition.category (0..*)
+  Main binding: preferred to Condition Category Codes  
+  Additional binding: required to US Core Problem or Health Concern, any = true
+```
 
 The any = true means at least one of the category CodeableConcepts must satisfy the US Core binding; others can be whatever.
 
@@ -272,11 +385,24 @@ The any = true means at least one of the category CodeableConcepts must satisfy 
 * Globally: Use ServiceDeliveryLocationRoleType
 * In US: Also support CMS Place of Service codes
 
+```
+Location.type
+  Main binding: extensible to ServiceDeliveryLocationRoleType
+  Additional binding: extensible to CMS POS Codes 
+    (usage: jurisdiction = US)
+```
+
 The usage restricts when the additional binding applies. In non-US contexts, only the main binding matters.
 
 ### Pattern 4: Legacy Data Accommodation
 
 **Requirement:** New data should use standard codes; legacy data is grandfathered.
+
+```
+Observation.code
+  Main binding: preferred to LOINC Observation Codes
+  Additional binding: current to Standard LOINC Lab Codes
+```
 
 The current purpose means systems are required to use Standard LOINC for new data, but legacy data without it is acceptable.
 

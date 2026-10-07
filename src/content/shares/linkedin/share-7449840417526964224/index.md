@@ -1,6 +1,6 @@
 ---
 title: "How might SMART Permission Tickets help with patient self-access, proxy access,…"
-date: 2026-04-14T15:26:06
+date: 2026-04-14T15:26:07
 slug: share-7449840417526964224
 share_url: "https://www.linkedin.com/feed/update/urn:li:share:7449840417526964224"
 share_type: "share"

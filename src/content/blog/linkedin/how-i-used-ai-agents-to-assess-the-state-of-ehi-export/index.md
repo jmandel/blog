@@ -5,7 +5,7 @@ added_at: 2026-04-03
 slug: how-i-used-ai-agents-to-assess-the-state-of-ehi-export
 original_url: "https://www.linkedin.com/pulse/how-i-used-ai-agents-assess-state-ehi-export-josh-mandel-md-bjbtc"
 linkedin_id: bjbtc
-banner: ./banner.png
+banner: ./banner.jpg
 intro_share:
   share_url: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7429697506092994560"
   share_id: "7429697506092994560"
@@ -30,7 +30,7 @@ That meant the CMS approach (a prompt that processes a document) wasn't going to
 
 The system has four stages. Each stage runs one AI agent per vendor family, independently and in parallel.
 
-![](./banner.png)
+![](./image-1.png)
 
 ### Stage 1: Research
 

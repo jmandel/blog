@@ -34,7 +34,7 @@ I started by describing the problem and asking for six completely different appr
 
 Shelley spawned six sub-agents and each built a standalone HTML prototype in isolation. A few minutes later, I had six files to open, each showing the widget at three stages: early, midway, and complete.
 
-![](./banner.png)
+![](./image-1.png)
 
 
 

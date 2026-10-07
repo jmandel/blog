@@ -31,7 +31,7 @@ I happen to have both halves of the picture for one patient: me. I have my EHI e
 
 ### Mapping by example
 
-![](./image-1.png)
+![Article content](./image-1.png)
 
 Building a source-to-FHIR mapping usually means writing a specification, implementing it, and maintaining it as the source evolves: months of work and a standing team, repeated at every site. Here I skipped the spec and gave the agent **examples**. Here is the EHI, here is the FHIR Epic produced from it, make the first reproduce the second.
 
@@ -45,7 +45,7 @@ Output is checked by the **HL7 FHIR R4 validator** and by a **reference-integrit
 
 So how faithful is it? From one patient's EHI, the translators reconstruct **90.4%** of Epic's FHIR faithfully: 13,895 elements exact and 1,849 equivalent, out of 17,421 in the target.
 
-![](./image-2.png)
+![Article content](./image-2.png)
 
 The report draws this as a scorecard, one bubble per resource type, placed by how *rich* each instance is (average fields per instance) against how much we reproduced, and sized by how many of that type Epic returned. Some types come back essentially whole: **Location 100%, DiagnosticReport 99%, Condition 97%**, and Patient (a single 192-field resource) at **93%**. Others are harder. **Encounter is the floor at 67%**, and the high-volume Observations carry the largest absolute share of what remains. The hard cases sit exactly where you'd expect, on resources that lean on context the raw tables don't fully spell out.
 
@@ -57,11 +57,39 @@ The GAPs sort into a few recognizable kinds. A handful of small ones build the i
 
 **A label locked in a dictionary the export never shipped.** Epic's FHIR shows the visit type ("Office Visit", "Telephone") on every encounter reference, but the export ships neither the encounter-type code nor the dictionary that spells out those labels.
 
+```
+Condition.encounter.display
+
+target: "Office Visit"
+ours: (absent)
+```
+
 **A flag the server stamps on the way out.** Some values are decorations the API adds at response time, with nothing in the raw data to derive them.
+
+```
+DocumentReference.type.coding.userSelected
+
+target: true
+ours: (absent)
+```
 
 **A field the export has no column for.** Epic's FHIR marks whether a provider is currently active; the provider directory in the export has no status column to read.
 
+```
+Practitioner.active
+
+target: true
+ours: (absent)
+```
+
 **A disagreement where we trust the export.** The API and the export sometimes report different instants for the same event. We emit the export's value; the API's lands a few seconds earlier, matching no source byte anywhere in the dump.
+
+```
+DiagnosticReport.issued
+
+target: "2022-08-29T20:41:51Z"
+ours:   "2022-08-29T20:42:02Z"
+```
 
 A smaller set are whole resources we can't rebuild: a few DocumentReferences exist only as API metadata, with no note body anywhere in the export to reconstruct from.
 

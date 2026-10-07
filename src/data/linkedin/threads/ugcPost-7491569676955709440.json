@@ -13,6 +13,10 @@
       "linkedin_id": "0aimf",
       "url": "https://www.linkedin.com/pulse/aco-quality-reporting-options-2x2-josh-mandel-md-0aimf",
       "activity_urn": "urn:li:activity:7491569677521805312"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7491569677521805312"
     }
   ],
   "displayed": {
@@ -28,7 +32,7 @@
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:29:21Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7491640508914634752)",
@@ -50,7 +54,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7491695497934708736)",
@@ -72,7 +76,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7491714590502903808)",
@@ -100,7 +104,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7491720833921384448)",
@@ -128,7 +132,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7491878485347643392)",
@@ -136,7 +140,7 @@
       "created_at": "2026-08-08T15:30:23Z",
       "author": {
         "name": "Andrew Gibbons MBA, MS",
-        "headline": "Healthcare Analytics Leader | AI, Value-Based Care & Medical Economics | Claims, Attribution & Provider Performance | MSSP, MA, ACO REACH",
+        "headline": "Healthcare Analytics Leader | Value-Based Care & Medical Economics | Medicare, Claims, Attribution & Provider Performance",
         "profile_url": "https://www.linkedin.com/in/andrewgibbonsanalytics",
         "is_self": false,
         "is_post_author": false
@@ -156,7 +160,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7491880894861856769)",
@@ -178,7 +182,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7491934433743319040)",
@@ -206,12 +210,12 @@
       "media": [
         {
           "type": "image",
-          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQG43-wrS_cAlQ/articleshare-shrink_160/B56Z_iw_PHH4AI-/0/1786215922213?e=1791921600&v=beta&t=idxVlnqE6WrOiEmCSUSVCFaHLWS_YFqwuEuP5ue1t5I",
+          "url": "https://media.licdn.com/dms/image/sync/v2/D5627AQG43-wrS_cAlQ/articleshare-shrink_160/B56Z_iw_PHH4AI-/0/1786215922213?e=1791950400&v=beta&t=2fj3qeIX3FczOJAFciCs-mMQgUmCU4Sa01rtkRrBkEI",
           "file": "linkedin-media/86e227c9b469223f.png"
         }
       ],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7492942560190132225)",
@@ -233,7 +237,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7493063445005664257)",
@@ -255,7 +259,7 @@
       "edited": true,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7493063969574649856)",
@@ -282,7 +286,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7493080871441260545)",
@@ -304,7 +308,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7491569676955709440,7495166330816512000)",
@@ -337,7 +341,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

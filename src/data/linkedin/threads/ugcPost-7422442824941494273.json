@@ -1,0 +1,82 @@
+{
+  "schema": "linkedin-thread/1",
+  "thread_urn": "urn:li:ugcPost:7422442824941494273",
+  "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7422442824941494273/",
+  "pages": [
+    "article:i1sxc",
+    "share:7422442824941494273"
+  ],
+  "label": "article",
+  "subjects": [
+    {
+      "kind": "article",
+      "linkedin_id": "i1sxc",
+      "url": "https://www.linkedin.com/pulse/demystifying-fhir-terminology-bindings-ai-assisted-guide-mandel-md-i1sxc",
+      "activity_urn": "urn:li:activity:7422442825402830848"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7422442825402830848"
+    }
+  ],
+  "displayed": {
+    "comments": 2,
+    "reactions": 45,
+    "reposts": 4
+  },
+  "captured": {
+    "total": 2,
+    "top_level": 2,
+    "replies": 0
+  },
+  "complete": true,
+  "sort": "most_recent",
+  "first_fetched": "2026-10-07T04:07:36Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
+  "comments": [
+    {
+      "id": "urn:li:comment:(ugcPost:7422442824941494273,7422552514132316160)",
+      "parent_id": null,
+      "created_at": "2026-01-29T08:13:43Z",
+      "author": {
+        "name": "Petter Wolff",
+        "headline": "Vill få organisationer att använda genAI produktivt och kreativt",
+        "profile_url": "https://www.linkedin.com/in/petterwolff",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "A bit too long to commit to memory at this moment, but I suppose I can ask my AI to check my terminology bindings against this text to catch suspects and errors 😄",
+      "html": "A bit too long to commit to memory at this moment, but I suppose I can ask my AI to check my terminology bindings against this text to catch suspects and errors 😄",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 0,
+      "edited": false,
+      "media": [],
+      "first_seen": "2026-10-07T04:07:36Z",
+      "last_seen": "2026-10-07T04:07:59Z"
+    },
+    {
+      "id": "urn:li:comment:(ugcPost:7422442824941494273,7424515647591653377)",
+      "parent_id": null,
+      "created_at": "2026-02-03T18:14:31Z",
+      "author": {
+        "name": "Tim Prudhomme",
+        "headline": "Senior FHIR Technical Consultant at Firely",
+        "profile_url": "https://www.linkedin.com/in/tim-prudhomme",
+        "is_self": false,
+        "is_post_author": false
+      },
+      "text": "All of this is designed based on flexibility and practical usage, but I wonder if some of these mechanisms could be simpler, in hindsight. It’s good that max bindings are deprecated. At worst, they seemed to break extensibility (How does a profile further constrain a binding when the max binding seems to allow more codes?). But there are still too many ways to do the same thing, like using additional bindings instead of slicing.\nThe distinction between multiple Codings versus multiple bindings is subtle and deserves more attention. Here’s another attempt: A single concept (CodeableConcept) can be encoded in multiple ways (Codings), as long as at least one satisfies the binding. But an element that allows multiple, repeated concepts can have different bindings for each. You can do that with additional bindings, or you can do that (and more) with slicing.\nExample: A FHIR Condition could have multiple categories, where all or some (\"any=true\") must satisfy multiple (additional or sliced) bindings. But each Condition.category can also be coded in multiple ways, as long as at least 1 coding satisfies its binding.",
+      "html": "All of this is designed based on flexibility and practical usage, but I wonder if some of these mechanisms could be simpler, in hindsight. It’s good that max bindings are deprecated. At worst, they seemed to break extensibility (How does a profile further constrain a binding when the max binding seems to allow more codes?). But there are still too many ways to do the same thing, like using additional bindings instead of slicing. <br>The distinction between multiple Codings versus multiple bindings is subtle and deserves more attention. Here’s another attempt: A single concept (CodeableConcept) can be encoded in multiple ways (Codings), as long as at least one satisfies the binding. But an element that allows multiple, repeated concepts can have different bindings for each. You can do that with additional bindings, or you can do that (and more) with slicing. <br>Example: A FHIR Condition could have multiple categories, where all or some (&quot;any=true&quot;) must satisfy multiple (additional or sliced) bindings. But each Condition.category can also be coded in multiple ways, as long as at least 1 coding satisfies its binding.",
+      "links": [],
+      "mentions": [],
+      "hashtags": [],
+      "reactions": 1,
+      "edited": true,
+      "media": [],
+      "first_seen": "2026-10-07T04:07:36Z",
+      "last_seen": "2026-10-07T04:07:59Z"
+    }
+  ]
+}

@@ -13,6 +13,10 @@
       "linkedin_id": "qg0ee",
       "url": "https://www.linkedin.com/pulse/i-asked-gpt-55-reverse-engineer-my-baby-monitor-josh-mandel-md-qg0ee",
       "activity_urn": "urn:li:activity:7454367558528548864"
+    },
+    {
+      "kind": "post",
+      "activity_urn": "urn:li:activity:7454367558528548864"
     }
   ],
   "displayed": {
@@ -28,7 +32,7 @@
   "complete": true,
   "sort": "most_recent",
   "first_fetched": "2026-10-06T20:29:21Z",
-  "last_fetched": "2026-10-06T20:51:32Z",
+  "last_fetched": "2026-10-07T04:07:59Z",
   "comments": [
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7454525458630606849)",
@@ -58,7 +62,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7454598244044713984)",
@@ -80,7 +84,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7454652730608050176)",
@@ -102,7 +106,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7454659053626187776)",
@@ -126,7 +130,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7455242054521159680)",
@@ -148,7 +152,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7455262804053409793)",
@@ -176,7 +180,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7455282175316275200)",
@@ -198,7 +202,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7455426201252229121)",
@@ -220,7 +224,7 @@
       "edited": false,
       "media": [],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     },
     {
       "id": "urn:li:comment:(ugcPost:7454367557916045312,7461970518179540992)",
@@ -248,12 +252,12 @@
       "media": [
         {
           "type": "image",
-          "url": "https://media.licdn.com/dms/image/v2/D4E12AQGU8Wyz3u8L2g/article-cover_image-shrink_180_320/B4EZ4ryf98IwAY-/0/1778851122779?e=1792627200&v=beta&t=zgpIPKDisACOcdB30c7ZW06O6OBlTFHUFkQSNKpVcAQ",
+          "url": "https://media.licdn.com/dms/image/v2/D4E12AQGU8Wyz3u8L2g/article-cover_image-shrink_180_320/B4EZ4ryf98IwAY-/0/1778851122779?e=1793232000&v=beta&t=UNZri0bID1IU-X7FkQYA9SZVpOrR5i2sIwGBBtUxesA",
           "file": "linkedin-media/bbaef8e218d34c35.png"
         }
       ],
       "first_seen": "2026-10-06T20:29:21Z",
-      "last_seen": "2026-10-06T20:51:32Z"
+      "last_seen": "2026-10-07T04:07:59Z"
     }
   ]
 }

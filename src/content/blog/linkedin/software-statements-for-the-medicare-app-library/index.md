@@ -42,9 +42,38 @@ What is missing is a way to carry that trust. Today the result of CMS's review l
 
 CMS signs the decision and publishes it. For each active app, CMS exposes a path like:
 
+```
+/app-library/apps/{cms_app_id}/software-statement.jwt
+```
+
 A CMS Aligned Network fetches it, verifies the CMS signature against CMS's published key, and reads everything it needs to register the app. No email, no ticket, no independent re-vetting. The statement is short-lived (e.g. 24 hours); CMS stops re-issuing it the moment an app is suspended or delisted, so a stale statement cannot keep a removed app alive.
 
 A statement looks something like this:
+
+```
+{
+  "iss": "https://library.medicare.gov",
+  "sub": "https://library.medicare.gov/app-library/apps/{cms_app_id}",
+  "aud": "https://framework.cms.gov/aligned-networks",
+  "iat": 1748300000,
+  "exp": 1748386400,
+  "software_id": "https://library.medicare.gov/app-library/apps/{cms_app_id}",
+  "client_name": "Example Patient App",
+  "client_uri": "https://app.example",
+  "policy_uri": "https://app.example/privacy",
+  "contacts": ["support@app.example"],
+  "grant_types": ["client_credentials"],
+  "token_endpoint_auth_method": "private_key_jwt",
+  "jwks_uri": "https://app.example/.well-known/jwks.json",
+  "extensions": {
+    "cms_app": {
+      "version": "1",
+      "library_status": "active",
+      "app_class": "patient-access-app"
+    }
+  }
+}
+```
 
 Three things carry the weight:
 
