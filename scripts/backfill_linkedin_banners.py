@@ -135,6 +135,16 @@ def backfill_one(article_dir: pathlib.Path) -> bool:
     if not img_url:
         print(f"[FAIL] {article_dir.name}: no og:image found")
         return False
+    # Only an article cover is a cover. For an article without one,
+    # og:image is a profile picture, a placeholder, or (for a video
+    # article) the video's thumbnail; none of these is a banner.
+    if "article-cover_image" not in img_url:
+        print(f"[SKIP] {article_dir.name}: og:image is not an article cover ({img_url[:80]}…)")
+        return False
+    # The final URL must still be this article (a stale slug can redirect).
+    if resp.url.rstrip("/").rsplit("-", 1)[-1] != url.rstrip("/").rsplit("-", 1)[-1]:
+        print(f"[FAIL] {article_dir.name}: redirected to {resp.url}")
+        return False
 
     try:
         img_resp = requests.get(img_url, headers=HEADERS, timeout=30)

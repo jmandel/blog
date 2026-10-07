@@ -88,9 +88,22 @@ export const SEL = {
   // --- article page (/pulse/...) ------------------------------------------
   articleTitle: ['h1.reader-article-header__title', 'article h1', 'h1'],
   articleSubtitle: ['.reader-article-header__subtitle', 'h2.reader-article-header__subtitle'],
-  articleCover: ['article header figure img', 'img[src*="article-cover_image"]'],
+  // The cover is ONLY the image in this article's own header (scoped to the
+  // <article> holding the h1). Never a page-wide "article-cover_image"
+  // match: recommended/more-articles cards carry other articles' covers,
+  // and that fallback once gave an article without a cover another
+  // article's cover (October 2026, d22wc).
+  articleCover: ['header figure img', '.reader-cover-image__wrapper-right-rail-layout img'],
   articleDate: ['.reader-author-info__container time', 'article time'],
   articleBody: ['.reader-article-content', 'article .reader-content-blocks-container'],
+
+  // --- public (logged-out) article page, the independent cross-check -------
+  // Fetched with plain HTTP, no cookies. Its own cover is figure.cover-img
+  // inside article.article-main; JSON-LD has name, datePublished, image,
+  // commentCount. The body ([data-test-id="article-content-blocks"]) also
+  // holds cards of OTHER articles (.inline-articles): never take images
+  // from those.
+  publicCover: /<figure[^>]*class="[^"]*\bcover-img\b[^"]*"[\s\S]*?<img[^>]*?(?:data-delayed-url|src)="([^"]+)"/,
 
   // --- comments -------------------------------------------------------------
   comment: ['article.comments-comment-entity'],

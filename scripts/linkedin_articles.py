@@ -240,6 +240,13 @@ class LinkedInArticleProcessor:
                 cover_photos,
                 live_article,
             )
+            if preserved_banner and not image_info.get("banner_filename") and live_article is not None:
+                # Live data says this article has no cover. An old banner here
+                # came from an earlier guess; keeping it is how a wrong cover
+                # survived re-imports. (A deliberate banner for a cover-less
+                # article belongs in a native post.)
+                print(f"[LIVE] Dropped {preserved_banner[0]} from {article.slug}: LinkedIn shows no cover")
+                preserved_banner = None
             if preserved_banner and not image_info.get("banner_filename"):
                 article_dir.mkdir(parents=True, exist_ok=True)
                 (article_dir / preserved_banner[0]).write_bytes(preserved_banner[1])
@@ -502,6 +509,13 @@ class LinkedInArticleProcessor:
             result["banner_filename"] = filename
             banner_found = True
             print(f"[LIVE] Cover image from live fetch: {filename}")
+        if live_article is not None and not cover_bytes:
+            # The live fetch checked this article's own header and public
+            # page: no cover means none. Don't guess one from Rich_Media.csv
+            # timestamps or promote the first inline image (either can put
+            # another article's or a non-cover image in the banner).
+            banner_found = True
+            print(f"[LIVE] No cover on LinkedIn for {article_slug} ({live_article.get('cover_media', 'none')})")
         article_time_key = article_datetime.strftime("%Y-%m-%d %H:%M")
         if banner_found:
             pass
@@ -529,14 +543,20 @@ class LinkedInArticleProcessor:
             src = img.get("src") or img.get("data-delayed-url")
             if not src or not src.startswith("http"):
                 continue
-            if "media.licdn.com" not in src:
+            # Files from a live fetch (data-live-media) are local whatever
+            # host they came from (video posters come from dms.licdn.com).
+            if "media.licdn.com" not in src and not img.get("data-live-media"):
                 continue
             if "/media" in src and "/dms/image/" not in src:
                 img.decompose()
                 continue
 
             img_counter += 1
-            is_banner = img_counter == 1 and not banner_found
+            # An inline image is never the banner. (This used to promote the
+            # first inline image when no cover was found, which gave five
+            # articles a diagram or screenshot as their banner and two of
+            # them the same one; the audit caught it in October 2026.)
+            is_banner = False
             live_file = img.attrs.pop("data-live-media", None)
             live_bytes = self.live.media(live_file) if (self.live and live_file) else None
             if live_bytes:

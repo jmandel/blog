@@ -299,10 +299,10 @@ function installHelpers(S: any, R: Record<string, string>) {
     const metaText = txt(metaContainer.querySelector(".comments-comment-meta__container") || metaContainer);
     const media: any[] = [];
     if (content) {
-      for (const img of mediaImgs(content)) media.push({ type: /\.gif|giphy|gif-/i.test(img.src) ? "gif" : "image", url: img.src, alt: img.alt });
+      for (const img of mediaImgs(content)) media.push({ type: /\.gif|giphy|gif-/i.test(img.src) ? "gif" : "image", from: `content of comment ${id}`, url: img.src, alt: img.alt });
       for (const card of content.querySelectorAll("article, .comments-comment-item__card, [class*='article-card']")) {
         const link = card.querySelector("a[href]");
-        if (link) media.push({ type: "link_preview", url: unwrap(link.getAttribute("href")!), title: txt(card).slice(0, 300) });
+        if (link) media.push({ type: "link_preview", from: `card in comment ${id}`, url: unwrap(link.getAttribute("href")!), title: txt(card).slice(0, 300) });
       }
     }
     const reactionsEl = own("commentReactions");
@@ -342,34 +342,34 @@ function installHelpers(S: any, R: Record<string, string>) {
     const media: any[] = [];
     const found = new Set<string>();
     const imgs = qa(card, "images").filter((e) => !inQuoted(e));
-    imgs.forEach((i, idx) => media.push({ type: "image", index: idx, url: (i as HTMLImageElement).currentSrc || (i as HTMLImageElement).src, alt: i.getAttribute("alt") || "" }));
+    imgs.forEach((i, idx) => media.push({ type: "image", index: idx, from: `post card image #${idx + 1}`, url: (i as HTMLImageElement).currentSrc || (i as HTMLImageElement).src, alt: i.getAttribute("alt") || "" }));
     if (imgs.length) found.add("image");
     for (const v of qa(card, "video").filter((e) => !inQuoted(e))) {
       const vid = v as HTMLVideoElement;
       const tracks = [...vid.querySelectorAll("track")].map((t) => (t as HTMLTrackElement).src).filter(Boolean);
-      media.push({ type: "video", poster: vid.poster || "", duration_s: isFinite(vid.duration) ? Math.round(vid.duration) : null, src: /^blob:/.test(vid.src) ? null : vid.src || null, captions: tracks });
+      media.push({ type: "video", from: "post card <video>", poster: vid.poster || "", duration_s: isFinite(vid.duration) ? Math.round(vid.duration) : null, src: /^blob:/.test(vid.src) ? null : vid.src || null, captions: tracks });
       found.add("video");
     }
     for (const art of qa(card, "externalArticle").filter((e) => !inQuoted(e))) {
       const link = q(art, "externalArticleLink") as HTMLAnchorElement | null;
       const img = mediaImgs(art)[0];
-      media.push({ type: "link_preview", url: link ? unwrap(link.getAttribute("href") || "") : "", title: txt(q(art, "externalArticleTitle")), subtitle: txt(q(art, "externalArticleSubtitle")), image: img ? img.src : null });
+      media.push({ type: "link_preview", from: "post card link preview", url: link ? unwrap(link.getAttribute("href") || "") : "", title: txt(q(art, "externalArticleTitle")), subtitle: txt(q(art, "externalArticleSubtitle")), image: img ? img.src : null });
       found.add("link_preview");
     }
     for (const art of qa(card, "firstPartyArticle").filter((e) => !inQuoted(e))) {
       const link = art.querySelector("a[href*='/pulse/']") as HTMLAnchorElement | null;
       const img = mediaImgs(art)[0];
-      media.push({ type: "article", url: link ? unwrap(link.getAttribute("href") || "").split("?")[0] : "", title: txt(art.querySelector("h2, .update-components-article-first-party__title, [class*='title']")) || "", image: img ? img.src : null });
+      media.push({ type: "article", from: "post card article card", url: link ? unwrap(link.getAttribute("href") || "").split("?")[0] : "", title: txt(art.querySelector("h2, .update-components-article-first-party__title, [class*='title']")) || "", image: img ? img.src : null });
       found.add("article");
     }
     for (const d of qa(card, "document").filter((e) => !inQuoted(e))) {
       const ifr = q(d, "documentIframe") as HTMLIFrameElement | null;
-      media.push({ type: "document", title: txt(d).slice(0, 200), iframe: ifr ? ifr.src : null, pages: mediaImgs(d).map((i) => i.src), download: (d.querySelector("a[download], a[href*='.pdf']") as HTMLAnchorElement | null)?.href || null });
+      media.push({ type: "document", from: "post card document", title: txt(d).slice(0, 200), iframe: ifr ? ifr.src : null, pages: mediaImgs(d).map((i) => i.src), download: (d.querySelector("a[download], a[href*='.pdf']") as HTMLAnchorElement | null)?.href || null });
       found.add("document");
     }
     for (const p of qa(card, "poll").filter((e) => !inQuoted(e))) {
       const opts = qa(p, "pollOption").map((o) => txt(o));
-      media.push({ type: "poll", question: txt(p.querySelector("h2, h3, [class*='question']")), options: opts, raw: txt(p).slice(0, 500) });
+      media.push({ type: "poll", from: "post card poll", question: txt(p.querySelector("h2, h3, [class*='question']")), options: opts, raw: txt(p).slice(0, 500) });
       found.add("poll");
     }
     // Components nobody has written an extractor for yet: report them.
@@ -446,14 +446,14 @@ function installHelpers(S: any, R: Record<string, string>) {
       const url = unwrap(a.getAttribute("href")!).split("?")[0].replace(/\/$/, "");
       const prev = media.find((m) => m.type === "article" && m.url === url);
       if (prev) { prev.image = prev.image || (img ? bestSrc(img) : null); prev.title = prev.title || img?.getAttribute("alt") || txt(a); continue; }
-      media.push({ type: "article", url, title: img?.getAttribute("alt") || "", image: img ? bestSrc(img) : null });
+      media.push({ type: "article", from: "list card article card", url, title: img?.getAttribute("alt") || "", image: img ? bestSrc(img) : null });
       found.add("article");
     }
     for (const a of sqa(card, "linkCard").filter((e) => !inQ(e) && e.querySelector("figure"))) {
       const img = a.querySelector("img") as HTMLImageElement | null;
       if (img) seenImg.add(img);
       const spans = [...a.querySelectorAll("p")].map((p) => txt(p.querySelector("span span") || p));
-      media.push({ type: "link_preview", url: unwrap(a.getAttribute("href")!), title: spans[0] || "", subtitle: spans[1] || "", image: img ? bestSrc(img) : null });
+      media.push({ type: "link_preview", from: "list card link card", url: unwrap(a.getAttribute("href")!), title: spans[0] || "", subtitle: spans[1] || "", image: img ? bestSrc(img) : null });
       found.add("link_preview");
     }
     for (const v of sqa(card, "video").filter((e) => !inQ(e))) {
@@ -462,14 +462,14 @@ function installHelpers(S: any, R: Record<string, string>) {
       const poster = (wrap.querySelector("img[src*='videocover']") as HTMLImageElement | null)?.src || vid.poster || "";
       const prog = (sq(wrap, "videoProgress")?.getAttribute("aria-valuetext") || "").match(/of (\d+):(\d+)/);
       wrap.querySelectorAll("img").forEach((i) => seenImg.add(i));
-      media.push({ type: "video", poster, duration_s: prog ? +prog[1] * 60 + +prog[2] : isFinite(vid.duration) ? Math.round(vid.duration) : null, src: null, captions: [] });
+      media.push({ type: "video", from: "list card video", poster, duration_s: prog ? +prog[1] * 60 + +prog[2] : isFinite(vid.duration) ? Math.round(vid.duration) : null, src: null, captions: [] });
       found.add("video");
     }
     let idx = 0;
     for (const img of sqa(card, "image") as HTMLImageElement[]) {
       if (inQ(img) || seenImg.has(img) || /profile-(display|framed)photo|company-logo/.test(img.src) || img.closest('a > div[aria-label], a:has(> figure) + div a')) continue;
       if (!/feedshare|image-shrink/.test(img.src)) { found.add("unclassified-image"); continue; }
-      media.push({ type: "image", index: idx++, url: bestSrc(img), alt: img.getAttribute("alt") || "" });
+      media.push({ type: "image", index: idx, from: `list card image #${++idx}`, url: bestSrc(img), alt: img.getAttribute("alt") || "" });
       found.add("image");
     }
     let quote: any = null;
@@ -512,12 +512,15 @@ function installHelpers(S: any, R: Record<string, string>) {
     threadCounts: () => counts(document),
     article: () => {
       const body = q(document, "articleBody");
-      const cover = q(document, "articleCover") as HTMLImageElement | null;
+      const h1 = q(document, "articleTitle");
+      // Cover: only inside the <article> that holds this title.
+      const root = h1?.closest("article") || null;
+      const cover = root ? (q(root, "articleCover") as HTMLImageElement | null) : null;
       const figures = body ? [...body.querySelectorAll("figure")].map((f) => {
         const v = f.querySelector("video") as HTMLVideoElement | null;
         const isVideo = !!v || /video/i.test(f.getAttribute("data-type") || "") || !!f.querySelector("[class*='video']");
         const img = isVideo ? null : (f.querySelector("img") as HTMLImageElement | null);
-        return { kind: isVideo ? "video" : "image", src: img?.src || null, poster: v?.poster || (f.querySelector("img") as HTMLImageElement | null)?.src || null,
+        return { kind: isVideo ? "video" : "image", from: "figure in article body (.reader-article-content)", src: img?.src || null, poster: v?.poster || (f.querySelector("img") as HTMLImageElement | null)?.src || null,
           duration_s: v && isFinite(v.duration) ? Math.round(v.duration) : null, caption: txt(f.querySelector("figcaption")), alt: img?.getAttribute("alt") || "" };
       }) : [];
       const iframes = body ? [...body.querySelectorAll("iframe")].map((f) => (f as HTMLIFrameElement).src) : [];
@@ -526,6 +529,8 @@ function installHelpers(S: any, R: Record<string, string>) {
         title: txt(q(document, "articleTitle")),
         subtitle: txt(q(document, "articleSubtitle")) || null,
         cover: cover ? cover.src : null,
+        cover_from: cover ? "img in the article's own <header> (logged-in page)" : null,
+        final_url: location.href,
         date_text: txt(q(document, "articleDate")),
         edited_text: (txt(q(document, "articleDate")).match(/(edited|updated)[^•]*/i) || [null])[0],
         body_html: body ? body.innerHTML : "",

@@ -95,7 +95,7 @@ const idOf = (basename: string) => basename.match(/-([a-z0-9]{5})$/)?.[1] || "";
 const extFor = (type: string, url: string) =>
   /png/.test(type) ? ".png" : /gif/.test(type) ? ".gif" : /webp/.test(type) ? ".webp" : /vtt/.test(type) ? ".vtt" : /pdf/.test(type) ? ".pdf" : /mp4/.test(type) ? ".mp4" : /svg/.test(type) ? ".svg" : /jpe?g/.test(type) ? ".jpg" : (url.match(/\.(png|gif|jpe?g|webp|pdf|vtt)(\?|$)/)?.[0].replace(/\?$/, "") || ".jpg");
 const fmtExport = (d: Date) => d.toISOString().slice(0, 16).replace("T", " "); // "2026-02-11 19:59"
-const fmtShareDate = (d: Date) => new Date(Math.round(d.getTime() / 1000) * 1000).toISOString().slice(0, 19).replace("T", " ");
+const fmtShareDate = (d: Date) => new Date(Math.floor(d.getTime() / 1000) * 1000).toISOString().slice(0, 19).replace("T", " ");
 
 // Largest copy of each LinkedIn image asset named anywhere in the page
 // (DOM, embedded JSON): asset id → URL. Sizes are in the path (shrink_W_H).
@@ -127,15 +127,19 @@ const shareDates = blog.filter((e) => e.kind === "share" && e.date).map((e) => e
 // ---------------------------------------------------------------------------
 interface Ctx { s: Session; me: string; report: any[] }
 
-async function saveMedia(ctx: Ctx, url: string | null | undefined, role: string, failures: string[]) {
+// Download a media file chosen from a specific element. `from` names that
+// element (provenance); a file without it is refused, and the report FAILs
+// any media record that lacks it.
+async function saveMedia(ctx: Ctx, url: string | null | undefined, role: string, failures: string[], from?: string) {
   if (!url) return null;
+  if (!from) { failures.push(`${role}: no element provenance; refused`); return null; }
   const got = await ctx.s.downloadMedia(url);
   if ("error" in got) { failures.push(`${role}: ${url.slice(0, 100)} (${got.error})`); return null; }
   const h = sha(got.body);
   const ext = extFor(got.type, url);
   const file = `${h.slice(0, 16)}${ext}`;
   if (!existsSync(join(MEDIA, file))) writeFileSync(join(MEDIA, file), got.body);
-  return { file: `Live/media/${file}`, sha256: h, bytes: got.body.length, content_type: got.type.split(";")[0], source_url: url, via: got.via };
+  return { file: `Live/media/${file}`, sha256: h, bytes: got.body.length, content_type: got.type.split(";")[0], source_url: url, via: got.via, from };
 }
 
 async function captureThread(ctx: Ctx, subject: any, html: string) {
@@ -178,7 +182,7 @@ async function captureThread(ctx: Ctx, subject: any, html: string) {
     const cid = id.match(/,(\d+)\)$/)?.[1];
     const media = [];
     for (const m of c.media) {
-      if (m.type === "image" || m.type === "gif") media.push({ ...m, ...(await saveMedia(ctx, m.url, "comment media", mediaFail)) });
+      if (m.type === "image" || m.type === "gif") media.push({ ...m, ...(await saveMedia(ctx, m.url, "comment media", mediaFail, m.from)) });
       else media.push(m);
     }
     comments.push({ ...c, id, created_at: iso(cid ? idTime(cid) : null), media });
@@ -228,49 +232,169 @@ function writeThread(snap: any) {
   writeJson(p, snap);
 }
 
+// An item that can't be trusted (wrong page, identity mismatch). The run
+// records it as FAIL and moves on; nothing from it is written.
+class ItemError extends Error {}
+const itemFailures: { item: string; title: string; status: string; fails: string[]; warns: string[] }[] = [];
+async function guarded<T>(item: string, fn: () => Promise<T>): Promise<T | null> {
+  try { return await fn(); } catch (e) {
+    if (!(e instanceof ItemError)) throw e;
+    itemFailures.push({ item, title: "", status: "FAIL", fails: [e.message], warns: [] });
+    log({ ev: "item-failed", item, error: e.message });
+    return null;
+  }
+}
+
+const normTitle = (t: string) => normText(t || "").toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
+const decodeEntities = (s: string) => s.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;|&#x27;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+
+// The logged-out public page of an article: an independent view of its
+// title, cover and dates. Plain HTTP, no cookies, paced like a page load.
+async function publicArticle(ctx: Ctx, basename: string) {
+  const s = ctx.s;
+  const url = `https://www.linkedin.com/pulse/${basename}`;
+  if (s.pageLoads >= s.opts.maxPages) throw new BudgetExceeded(`page budget reached before public check of ${basename}`);
+  await s.pace();
+  s.pageLoads++;
+  s.lastLoad = Date.now();
+  log({ ev: "load", n: s.pageLoads, kind: "public-article", url });
+  const r = await fetch(url, { headers: { "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36", "accept-language": "en-US,en" }, redirect: "follow" });
+  const html = await r.text();
+  const meta = (p: string) => decodeEntities(html.match(new RegExp(`<meta[^>]*(?:property|name)="${p}"[^>]*content="([^"]*)"`))?.[1] || html.match(new RegExp(`<meta[^>]*content="([^"]*)"[^>]*(?:property|name)="${p}"`))?.[1] || "") || null;
+  let ld: any = null;
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try { const d = JSON.parse(m[1]); if (d["@type"] === "Article") ld = d; } catch { /* skip */ } }
+  const coverUrl = decodeEntities(html.match(SEL.publicCover)?.[1] || "") || null;
+  const ogImage = meta("og:image");
+  // Native videos in the body: <video data-poster-url data-digitalmedia-asset-urn>.
+  const videoPosters: Record<string, string> = {};
+  for (const m of html.matchAll(/<video\b[^>]*>/g)) {
+    const poster = m[0].match(/data-poster-url="([^"]+)"/)?.[1];
+    const asset = m[0].match(/urn:li:digitalmediaAsset:([A-Za-z0-9_-]+)/)?.[1];
+    if (poster && asset) videoPosters[asset] = decodeEntities(poster);
+  }
+  return {
+    video_posters: videoPosters,
+    status: r.status, final_url: r.url, og_title: meta("og:title"), og_image: ogImage,
+    name: ld?.name || null, date_published: ld?.datePublished || null, date_modified: ld?.dateModified || null,
+    comment_count: ld?.commentCount != null ? Number(ld.commentCount) : null,
+    // The article's own cover, from its figure.cover-img, else JSON-LD
+    // image, else og:image when it is an article-cover_image.
+    cover_url: coverUrl || ld?.image?.url || (ogImage && /article-cover_image/.test(ogImage) ? ogImage : null),
+    cover_from: coverUrl ? "public page figure.cover-img" : ld?.image?.url ? "public page JSON-LD image" : ogImage && /article-cover_image/.test(ogImage) ? "public page og:image" : null,
+    og_image_kind: !ogImage ? "none" : /article-cover_image/.test(ogImage) ? "cover" : /playlist\/vid|videocover/.test(ogImage) ? "video thumbnail" : /profile-displayphoto|\.svg|static\.licdn/.test(ogImage) ? "placeholder" : "other",
+    fetched_at: iso(new Date()),
+  };
+}
+
 async function fetchArticle(ctx: Ctx, url: string) {
   const s = ctx.s;
   const basename = basenameOf(url);
+  const lid = idOf(basename);
   await s.goto(`https://www.linkedin.com/pulse/${basename}/`, "article");
   await s.scrollGradually(14);
   const a = await s.page.evaluate(() => (window as any).__lf.article());
+  // 1. Is this page the article we asked for? A wrong or old slug can land
+  //    on /feed/, where other articles' covers load.
+  const finalPath = new URL(a.final_url).pathname.replace(/\/$/, "");
+  if (!/^\/pulse\//.test(finalPath) || idOf(basenameOf(a.final_url)) !== lid || /article_not_found|\/feed\b/.test(a.final_url)) {
+    throw new ItemError(`article ${lid}: landed on ${finalPath}, not /pulse/${basename}`);
+  }
+  if (!a.title) throw new ItemError(`article ${lid}: no title on the page (selectors.ts: articleTitle)`);
+  const known = blog.find((e) => e.kind !== "share" && (e.linkedin_id === lid || idOf(basenameOf(e.original_url || "")) === lid));
   const html = await s.page.content();
-  // Embedded voyager JSON (present on most article pages): the stored
-  // article HTML (same as the export's), publish time, article URN.
+  // 2. The stored article HTML: the embedded object whose title is this
+  //    page's title (the page also embeds other articles).
   const codeJson: string = await s.page.evaluate(() => [...document.querySelectorAll("code")].map((c) => c.textContent || "").filter((t) => t.includes("contentHtml")).join("\n"));
   let contentHtml: string | null = null;
   let publishedAt: number | null = null;
+  let articleUrn: string | null = null;
+  const bodyStart = normTitle(a.body_text).slice(0, 120);
   for (const block of codeJson.split("\n").filter(Boolean)) {
     try {
       const walk = (o: any) => {
         if (!o || typeof o !== "object") return;
-        if (typeof o.contentHtml === "string" && !contentHtml) { contentHtml = o.contentHtml; if (typeof o.publishedAt === "number") publishedAt = o.publishedAt; }
+        // Ours if its title is this page's title, or (no title on the object)
+        // its text starts like this page's article body.
+        const same = typeof o.contentHtml === "string" && (normTitle(o.title || "") === normTitle(a.title)
+          || (!o.title && bodyStart.length > 40 && normTitle(o.contentHtml.replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/g, " ")).includes(bodyStart)));
+        if (same && !contentHtml) {
+          contentHtml = o.contentHtml;
+          if (typeof o.publishedAt === "number") publishedAt = o.publishedAt;
+          const u = JSON.stringify(o).match(/urn:li:linkedInArticle:\d+/);
+          if (u) articleUrn = u[0];
+        }
         for (const v of Object.values(o)) walk(v);
       };
       walk(JSON.parse(block));
     } catch { /* not JSON */ }
   }
-  const articleUrn = html.match(/urn:li:linkedInArticle:(\d+)/)?.[0] || null;
+  const checks: string[] = [];
+  // LinkedIn's stored HTML (also what the export contains) can silently
+  // lose code blocks and inline code; the rendered body has them. If the
+  // stored copy is missing words the page shows, use the rendered body.
+  let bodyLoss = 0;
+  if (contentHtml) {
+    const UI = new Set(["captions", "are", "auto", "generated", "play", "see", "content", "credentials", "video", "player", "loaded", "seconds"]);
+    const toks = (t: string) => decodeEntities(t).toLowerCase().replace(/[‘’]/g, "'").match(/[a-z0-9]+/g) || [];
+    const stored = new Map<string, number>();
+    for (const w of toks((contentHtml as string).replace(/<[^>]+>/g, " "))) stored.set(w, (stored.get(w) || 0) + 1);
+    for (const w of toks(a.body_text)) { const n = stored.get(w) || 0; if (n > 0) stored.set(w, n - 1); else if (!UI.has(w)) bodyLoss++; }
+    if (bodyLoss > 10) { checks.push(`stored article HTML is missing ${bodyLoss} words the page shows (code?); used the rendered body`); contentHtml = null; }
+  }
   const activities = (() => { const f = new Map<string, number>(); for (const m of html.matchAll(/urn:li:activity:\d{15,}/g)) f.set(m[0], (f.get(m[0]) || 0) + 1); return [...f].sort((x, y) => y[1] - x[1]).map(([u]) => u); })();
   let activity = activities[0] || null;
+  // 3. Independent cross-check against the logged-out public page.
+  const pub: any = await publicArticle(ctx, basename);
+  // Some articles aren't visible logged out ("article_not_found", sign-up
+  // wall). Then there's nothing to cross-check: keep the logged-in identity
+  // checks, take the cover only from the article's own header, and WARN.
+  pub.unavailable = /article_not_found|\/(signup|login|authwall)/.test(pub.final_url);
+  if (pub.unavailable) {
+    checks.push(`not publicly visible (${new URL(pub.final_url).pathname}); no public cross-check`);
+    pub.cover_url = null; pub.cover_from = null; pub.og_image_kind = "unavailable";
+  } else {
+    if (pub.status !== 200 || idOf(basenameOf(pub.final_url)) !== lid) throw new ItemError(`article ${lid}: public page ${pub.status} at ${pub.final_url}`);
+    const pubTitle = pub.name || pub.og_title || "";
+    if (normTitle(pubTitle) !== normTitle(a.title)) throw new ItemError(`article ${lid}: title "${a.title}" but the public page says "${pubTitle}"`);
+  }
+  if (known && normTitle(known.title) !== normTitle(a.title)) checks.push(`title changed on LinkedIn: blog has "${known.title}"`);
+  // 4. Cover: this article's header image, which must be the public page's
+  //    own cover. Network traffic is never a source, only a download path.
   const best = bestImageUrls(html + (contentHtml || ""));
   const failures: string[] = [];
-  const coverUrl = a.cover ? best.get(assetOf(a.cover)) || a.cover : null;
-  const cover = await saveMedia(ctx, coverUrl, "cover", failures);
+  const hdrAsset = a.cover ? assetOf(a.cover) : null;
+  const pubAsset = pub.cover_url ? assetOf(pub.cover_url) : null;
+  let coverPick: { url: string; from: string } | null = null;
+  if (hdrAsset && pubAsset && hdrAsset !== pubAsset) throw new ItemError(`article ${lid}: header cover ${hdrAsset} differs from the public page's cover ${pubAsset}`);
+  if (hdrAsset && !pubAsset && !pub.unavailable && pub.og_image_kind !== "cover") throw new ItemError(`article ${lid}: header has cover ${hdrAsset} but the public page shows none (og:image is ${pub.og_image_kind})`);
+  if (hdrAsset) coverPick = { url: best.get(hdrAsset) || a.cover, from: pub.unavailable ? `${a.cover_from}; no public page to confirm` : `${a.cover_from}; confirmed by ${pub.cover_from}` };
+  else if (pubAsset) coverPick = { url: pub.cover_url!, from: pub.cover_from! };
+  const cover = coverPick ? await saveMedia(ctx, coverPick.url, "cover", failures, coverPick.from) : null;
+  // 5. Inline images: figures inside the article body whose asset is in the
+  //    article's stored HTML.
   const images = [];
   const videos = [];
   for (const f of a.figures) {
     if (f.kind === "video") {
       // Native video in an article: poster, duration, captions; no file.
-      const asset = f.poster ? assetOf(f.poster) : "";
-      const vtt = [...s.mediaCache.keys()].find((u) => /webvtt/.test(u) && (!asset || u.includes(asset)));
-      videos.push({ index: videos.length + 1, caption: f.caption || null, duration_s: f.duration_s, poster_file: await saveMedia(ctx, f.poster, "article video poster", failures), captions_file: vtt ? await saveMedia(ctx, vtt, "captions", failures) : null, download: "not available: streamed as segments" });
+      // The poster is the video's chosen cover (videocover-high) for the
+      // same video asset when the page names it, else the figure's frame.
+      const asset = f.poster ? (assetOf(f.poster) || (f.poster.match(/\/playlist\/vid\/v2\/([A-Za-z0-9_-]+)\//) || [])[1] || "") : "";
+      const cover = asset ? (html + (contentHtml || "")).replace(/&amp;/g, "&").match(new RegExp(`https://media\\.licdn\\.com/dms/image/v2/${asset}/videocover-high/[^"'\\s\\\\<>()]+`))?.[0] : null;
+      const pubPoster = asset ? pub.video_posters?.[asset] : null;
+      if (pubPoster) f.poster = pubPoster;
+      else if (cover) f.poster = cover;
+      const posterFrom = pubPoster ? `public page <video data-poster-url> for video asset ${asset}` : cover ? `videocover of video asset ${asset} (from its figure)` : `poster of video figure in article body`;
+      const vtt = asset ? [...s.mediaCache.keys()].find((u) => /webvtt/.test(u) && u.includes(asset)) : undefined;
+      videos.push({ index: videos.length + 1, caption: f.caption || null, duration_s: f.duration_s, poster_file: await saveMedia(ctx, f.poster, "article video poster", failures, posterFrom), captions_file: vtt ? await saveMedia(ctx, vtt, "captions", failures, `captions of video asset ${asset} (from its figure)`) : null, download: "not available: streamed as segments" });
       continue;
     }
-    const src = f.src ? best.get(assetOf(f.src)) || f.src : null;
-    images.push({ index: images.length + 1, asset: f.src ? assetOf(f.src) : null, caption: f.caption || null, alt: f.alt || null, ...(await saveMedia(ctx, src, `image ${images.length + 1}`, failures)) });
+    const asset = f.src ? assetOf(f.src) : null;
+    if (asset && contentHtml && !(contentHtml as string).includes(asset)) { failures.push(`image ${asset}: in the page's article body but not in the article's stored HTML; skipped`); continue; }
+    const src = f.src ? best.get(asset!) || f.src : null;
+    images.push({ index: images.length + 1, asset, caption: f.caption || null, alt: f.alt || null, ...(await saveMedia(ctx, src, `image ${images.length + 1}`, failures, `${f.from} #${images.length + 1}`)) });
   }
-  const thread = await captureThread(ctx, { kind: "article", linkedin_id: idOf(basename), url: `https://www.linkedin.com/pulse/${basename}`, activity_urn: activity }, html);
+  const thread = await captureThread(ctx, { kind: "article", linkedin_id: lid, url: `https://www.linkedin.com/pulse/${basename}`, activity_urn: activity }, html);
   writeThread(thread);
   // The announcing post: the activity created with the thread's post if
   // one is named, else the activity the page names most often. (A scheduled
@@ -279,27 +403,34 @@ async function fetchArticle(ctx: Ctx, url: string) {
   if (thread?.thread_urn) activity = activities.find((u) => sameTime(u, thread.thread_urn)) || activity;
   const threadPost = thread?.thread_urn ? idTime(urnId(thread.thread_urn)) : null;
   const createdAt = articleUrn ? idTime(urnId(articleUrn)) : null;
+  const publishedIso = iso(publishedAt ? new Date(publishedAt) : threadPost);
+  if (pub.date_published && publishedIso && Math.abs(Date.parse(pub.date_published) - Date.parse(publishedIso)) > 5 * 60_000) checks.push(`published ${publishedIso} but the public page says ${pub.date_published}`);
+  if (pub.comment_count != null && thread && thread.displayed.comments != null && pub.comment_count !== thread.displayed.comments) checks.push(`public page counts ${pub.comment_count} comments, the logged-in page ${thread.displayed.comments}`);
   const item = {
     kind: "article",
     fetched_at: iso(new Date()),
     url: `https://www.linkedin.com/pulse/${basename}`,
-    basename, linkedin_id: idOf(basename), article_urn: articleUrn,
+    final_url: a.final_url,
+    basename, linkedin_id: lid, article_urn: articleUrn,
     title: a.title, subtitle: a.subtitle,
     created_at: iso(createdAt),
-    published_at: iso(publishedAt ? new Date(publishedAt) : threadPost),
+    published_at: publishedIso,
     date_text: a.date_text, edited_text: a.edited_text,
-    body_source: contentHtml ? "embedded contentHtml" : "DOM .reader-article-content",
+    body_source: contentHtml ? "embedded contentHtml (matched by title)" : bodyLoss > 10 ? `DOM .reader-article-content (stored HTML missing ${bodyLoss} words)` : "DOM .reader-article-content",
     body_html: contentHtml || a.body_html,
     text: a.body_text,
     text_hash: sha(normText(a.body_text)),
-    cover: cover ? { ...cover, asset: assetOf(coverUrl!) } : null,
+    cover: cover ? { ...cover, asset: assetOf(coverPick!.url) } : null,
+    cover_media: cover ? "image" : pub.og_image_kind === "video thumbnail" ? "video (no cover image)" : "none",
+    public_check: pub,
+    checks,
     images, videos, iframes: a.iframes, links: a.links,
     intro_activity_urn: activity, thread_urn: thread?.thread_urn || null,
     counts: a.counts,
     media_failures: failures,
   };
-  writeJson(join(ITEMS, `article-${item.linkedin_id || sha(basename).slice(0, 8)}.json`), item);
-  log({ ev: "article", id: item.linkedin_id, title: item.title.slice(0, 60), body_chars: item.text.length, images: images.length, cover: !!cover, media_failed: failures.length, thread: item.thread_urn, source: item.body_source });
+  writeJson(join(ITEMS, `article-${lid || sha(basename).slice(0, 8)}.json`), item);
+  log({ ev: "article", id: lid, title: item.title.slice(0, 60), body_chars: item.text.length, images: images.length, cover: cover ? coverPick!.from : item.cover_media, media_failed: failures.length, thread: item.thread_urn, source: item.body_source, checks });
   return item;
 }
 
@@ -320,13 +451,23 @@ async function resolveShortLinks(ctx: Ctx, links: any[]) {
   }
 }
 
+const fetchedThisRun = new Set<string>();
 async function fetchPost(ctx: Ctx, activityUrn: string, card: any | null) {
   const s = ctx.s;
+  // Each post at most once per run (an article's intro post may also be
+  // listed with --only or in the activity list).
+  if (fetchedThisRun.has(activityUrn)) return readJson(join(ITEMS, `post-${urnId(activityUrn)}.json`));
+  fetchedThisRun.add(activityUrn);
   await s.goto(`https://www.linkedin.com/feed/update/${activityUrn}/`, "post");
   await s.scrollGradually(6);
   const html = await s.page.content();
-  const p = (await s.page.evaluate(() => (window as any).__lf.mainPost())) || card;
-  if (!p) throw new Error(`no post found on ${activityUrn}`);
+  const p = await s.page.evaluate(() => (window as any).__lf.mainPost());
+  // Is this page the post we asked for? (A missing post redirects to /feed/.)
+  const landed = s.page.url();
+  if (!p) throw new ItemError(`post ${activityUrn}: no post on ${new URL(landed).pathname}`);
+  if (!landed.includes(urnId(activityUrn)) || (/:activity:/.test(activityUrn) && p.activity_urn !== activityUrn)) {
+    throw new ItemError(`post ${activityUrn}: page shows ${p.activity_urn} at ${new URL(landed).pathname}`);
+  }
   // Larger image copies from LinkedIn's image viewer.
   const big = p.media.some((m: any) => m.type === "image") ? await upgradeImages(s, 9) : [];
   const failures: string[] = [];
@@ -335,25 +476,27 @@ async function fetchPost(ctx: Ctx, activityUrn: string, card: any | null) {
   const media = [];
   for (const m of p.media) {
     if (m.type === "image") {
-      const url = big[imgIdx] || best.get(assetOf(m.url)) || m.url;
+      // The viewer's larger copy only if it is the same image asset.
+      const viewer = big[imgIdx] && assetOf(big[imgIdx]) === assetOf(m.url) ? big[imgIdx] : "";
+      const url = viewer || best.get(assetOf(m.url)) || m.url;
       imgIdx++;
-      media.push({ ...m, full_url: url, ...(await saveMedia(ctx, url, "post image", failures)) });
+      media.push({ ...m, full_url: url, ...(await saveMedia(ctx, url, "post image", failures, m.from + (viewer ? " (larger copy from the image viewer)" : ""))) });
     } else if (m.type === "video") {
       const asset = assetOf(m.poster || "");
-      const vtt = [...s.mediaCache.keys()].find((u) => /webvtt/.test(u) && (!asset || u.includes(asset)));
-      media.push({ ...m, poster_file: await saveMedia(ctx, m.poster, "video poster", failures), captions_file: vtt ? await saveMedia(ctx, vtt, "captions", failures) : null, download: "not available: LinkedIn streams video as DASH/HLS segments (blob: URL), no single file" });
+      const vtt = asset ? [...s.mediaCache.keys()].find((u) => /webvtt/.test(u) && u.includes(asset)) : undefined;
+      media.push({ ...m, poster_file: await saveMedia(ctx, m.poster, "video poster", failures, `${m.from} poster`), captions_file: vtt ? await saveMedia(ctx, vtt, "captions", failures, `captions of video asset ${asset} (from ${m.from})`) : null, download: "not available: LinkedIn streams video as DASH/HLS segments (blob: URL), no single file" });
     } else if (m.type === "link_preview" || m.type === "article") {
-      media.push({ ...m, image_file: m.image ? await saveMedia(ctx, best.get(assetOf(m.image)) || m.image, `${m.type} image`, failures) : null });
+      media.push({ ...m, image_file: m.image ? await saveMedia(ctx, best.get(assetOf(m.image)) || m.image, `${m.type} image`, failures, `${m.from} image`) : null });
     } else if (m.type === "document") {
       const pages = [];
-      for (const u of m.pages || []) pages.push(await saveMedia(ctx, u, "document page", failures));
-      media.push({ ...m, download_file: m.download ? await saveMedia(ctx, m.download, "document", failures) : null, page_files: pages });
+      for (const [i, u] of (m.pages || []).entries()) pages.push(await saveMedia(ctx, u, "document page", failures, `${m.from} page ${i + 1}`));
+      media.push({ ...m, download_file: m.download ? await saveMedia(ctx, m.download, "document", failures, `${m.from} download link`) : null, page_files: pages });
     } else media.push(m);
   }
   // The quoted post's images (someone else's post, usually), feed size.
   if (p.quote?.images?.length) {
     const files = [];
-    for (const u of p.quote.images) files.push(await saveMedia(ctx, u, "quoted post image", failures));
+    for (const [i, u] of p.quote.images.entries()) files.push(await saveMedia(ctx, u, "quoted post image", failures, `quoted post card image #${i + 1}`));
     p.quote.image_files = files;
   }
   const thread = await captureThread(ctx, { kind: "post", activity_urn: activityUrn }, html);
@@ -370,7 +513,9 @@ async function fetchPost(ctx: Ctx, activityUrn: string, card: any | null) {
   // "Link in comments": Josh's own earliest top-level comment with a link.
   const firstOwn = thread?.comments.find((c: any) => !c.parent_id && c.author.is_self && c.links.length);
   await resolveShortLinks(ctx, p.links);
-  const t = idTime(urnId(shareUrn || activityUrn));
+  // Publish time: the activity's id. (A scheduled post's ugcPost is
+  // created when it's scheduled, hours before it goes out.)
+  const t = idTime(urnId(/:activity:/.test(activityUrn) ? activityUrn : shareUrn || activityUrn));
   const item = {
     kind: "post",
     fetched_at: iso(new Date()),
@@ -549,6 +694,9 @@ function exportArticleHtml(a: any): string {
   // Native videos: a poster linking to the article (the importer turns the
   // poster into an inline image), then a link.
   let vi = 0;
+  // Rendered-body videos (a <figure> holding a <video>) become the stored
+  // HTML's placeholder, so both sources go through the same path.
+  body = body.replace(/<figure\b[^>]*>(?:(?!<\/figure>)[\s\S])*?<video[\s\S]*?<\/figure>/g, '<div data-type="nativeVideo"></div>');
   body = body.replace(/<div data-type="nativeVideo"><\/div>/g, (m: string) => {
     const v = (a.videos || [])[vi++];
     if (!v?.poster_file) return m;
@@ -600,7 +748,7 @@ function build() {
     const shared = p.media.find((m: any) => m.type === "link_preview")?.url || "";
     const img = p.media.find((m: any) => m.type === "image");
     const vis = "MEMBER_NETWORK";
-    shareRows.push([fmtShareDate(new Date(p.posted_at)), `https://www.linkedin.com/feed/update/${p.share_urn}`, p.text, shared.split("?")[0], img?.source_url || "", vis]);
+    shareRows.push([fmtShareDate(p.activity_urn ? idTime(urnId(p.activity_urn))! : new Date(p.posted_at)), `https://www.linkedin.com/feed/update/${p.share_urn}`, p.text, shared.split("?")[0], img?.source_url || "", vis]);
   }
   writeFileSync(join(OUT, "Shares.csv"), shareRows.map((r) => r.map(csvCell).join(",")).join("\n") + "\n");
   const rm = [["Date/Time", "Media Description", "Media Link"]];
@@ -709,13 +857,23 @@ function check(built: ReturnType<typeof build>) {
     if (t.replies_short_on?.length) warns.push(`${t.replies_short_on.length} comment(s) show more replies than captured`);
     const bad = t.comments.filter((x: any) => x.missing?.length);
     if (bad.length) (bad.length > 2 ? fails : warns).push(`${bad.length} comment(s) missing fields: ${[...new Set(bad.flatMap((x: any) => x.missing))].join(", ")}`);
+    // Every comment hangs off this thread's post (its id names the post).
+    const tid = urnId(t.thread_urn);
+    const foreign = t.comments.filter((x: any) => /^urn:li:comment:/.test(x.id) && !x.id.includes(tid));
+    if (foreign.length) fails.push(`${foreign.length} comment(s) belong to another post (ids don't name ${t.thread_urn})`);
+    for (const x of t.comments) for (const m of x.media || []) if (m.file && !m.from) fails.push(`comment ${x.id}: media without element provenance`);
     if (t.media_failures?.length) warns.push(`${t.media_failures.length} comment media download(s) failed`);
   };
   for (const a of built.articles) {
     const fails: string[] = [], warns: string[] = [];
     if (!a.title) fails.push("no title (selectors.ts: articleTitle)");
     if ((a.text || "").length < 300) fails.push(`article body only ${(a.text || "").length} chars (selectors.ts: articleBody)`);
-    if (!a.cover) warns.push("no cover image");
+    if (!a.cover && a.cover_media !== "none" && a.cover_media !== "video (no cover image)") warns.push("no cover image");
+    // Provenance: every media file names the element it came from, and the
+    // public page agreed on title and cover when the item was fetched.
+    for (const m of [a.cover, ...a.images, ...(a.videos || []).flatMap((v: any) => [v.poster_file, v.captions_file])].filter((x: any) => x?.file)) if (!m.from) fails.push(`media ${m.file} has no element provenance`);
+    if (!a.public_check) fails.push("no public-page cross-check (fetched before October 2026's fix; re-fetch with --refetch --only)");
+    for (const c of a.checks || []) warns.push(c);
     if (!a.created_at) warns.push("no linkedInArticle URN; created date falls back to the publish date");
     if (a.media_failures.length) fails.push(`media downloads failed: ${a.media_failures.join("; ")}`);
     if (a.images.some((i: any) => !i.file)) fails.push("an inline image has no file");
@@ -729,6 +887,8 @@ function check(built: ReturnType<typeof build>) {
     if (p.from !== "activity card" && p.post_kind !== "repost" && !p.share_urn) fails.push("no ugcPost/share URN (thread not identified)");
     if (p.unknown_components?.length) warns.push(`unknown post components: ${p.unknown_components.join(", ")} (add an extractor in page.ts and selectors.ts)`);
     if (p.media_failures.length) fails.push(`media downloads failed: ${p.media_failures.join("; ")}`);
+    const files = (p.media || []).flatMap((m: any) => [m.file ? m : null, m.poster_file, m.captions_file, m.image_file, m.download_file, ...(m.page_files || [])]).concat(p.quote?.image_files || []).filter((x: any) => x?.file);
+    for (const m of files) if (!m.from) fails.push(`media ${m.file} has no element provenance`);
     if (p.post_kind === "quote" && !p.quote?.activity_urn) warns.push("quoted post's URN not found");
     if (p.post_kind !== "repost") for (const l of p.links.filter((l: any) => /lnkd\.in/.test(l.url) && !l.resolved)) warns.push(`unresolved short link ${l.url}`);
     threadIssues(threadOf(p.thread_urn), fails, warns);
@@ -890,19 +1050,19 @@ async function main() {
       for (const u of only) {
         if (/\/pulse\//.test(u)) {
           const f = `article-${idOf(basenameOf(u))}.json`;
-          fetchedArticles.push(!done(f) || args.probe || args.refetch ? await fetchArticle(ctx, u) : readJson(join(ITEMS, f)));
+          fetchedArticles.push(!done(f) || args.probe || args.refetch ? await guarded(`article:${idOf(basenameOf(u))}`, () => fetchArticle(ctx, u)) : readJson(join(ITEMS, f)));
         }
         else {
           const urn = u.match(/urn:li:(activity|ugcPost|share):\d+/)?.[0];
           if (!urn) throw new Error(`not a post or article URL: ${u}`);
-          if (!done(`post-${urnId(urn)}.json`) || args.probe || args.refetch) await fetchPost(ctx, urn, null);
+          if (!done(`post-${urnId(urn)}.json`) || args.probe || args.refetch) await guarded(urn, () => fetchPost(ctx, urn, null));
         }
       }
       // The post announcing each fetched article: its text is the article's
       // intro on the blog. (The activity list covers this in --posts runs.)
       if (!doPosts) {
         for (const a of fetchedArticles) {
-          if (a.intro_activity_urn && !done(`post-${urnId(a.intro_activity_urn)}.json`)) await fetchPost(ctx, a.intro_activity_urn, null);
+          if (a && a.intro_activity_urn && (!done(`post-${urnId(a.intro_activity_urn)}.json`) || args.probe || args.refetch)) await guarded(a.intro_activity_urn, () => fetchPost(ctx, a.intro_activity_urn, null));
         }
       }
       if (doArticles) {
@@ -910,7 +1070,7 @@ async function main() {
         const want = links.filter((l) => !knownArticleIds.has(idOf(basenameOf(l))) || args.refetch);
         log({ ev: "plan", articles: want.length, skipped_known: links.length - want.length });
         if (args["dry-run"]) console.log("Would fetch articles:\n  " + want.join("\n  "));
-        else for (const l of want) if (!done(`article-${idOf(basenameOf(l))}.json`)) fetchedArticles.push(await fetchArticle(ctx, l));
+        else for (const l of want) if (!done(`article-${idOf(basenameOf(l))}.json`)) fetchedArticles.push(await guarded(`article:${idOf(basenameOf(l))}`, () => fetchArticle(ctx, l)));
       }
       if (doPosts) {
         const newest = shareDates.length ? new Date(shareDates[shareDates.length - 1] + (shareDates[shareDates.length - 1].endsWith("Z") ? "" : "Z")) : new Date(Date.now() - 30 * 86400_000);
@@ -923,7 +1083,7 @@ async function main() {
         if (args["dry-run"]) console.log("Would fetch posts:\n  " + plan.map((p) => `${p.c.activity_urn} ${p.c.kind} via ${p.how}: ${p.c.text.slice(0, 60)}`).join("\n  "));
         else for (const { c, how } of plan) {
           if (done(`${itemName(c)}.json`)) continue;
-          if (how === "post page") await fetchPost(ctx, c.activity_urn, c);
+          if (how === "post page") await guarded(c.activity_urn, () => fetchPost(ctx, c.activity_urn, c));
           else {
             const a = articleThreads.get(c.activity_urn);
             recordCard(c, a ? { share_urn: a.thread_urn, thread_urn: a.thread_urn, url: `https://www.linkedin.com/feed/update/${a.thread_urn}/` } : {});
@@ -943,7 +1103,7 @@ async function main() {
   if (!readdirSync(ITEMS).length) { console.error("Nothing fetched; no output built."); return exitCode || 1; }
 
   const built = build();
-  const items = [...probeItems, ...listIssues.map((w) => ({ item: "post-list", title: "activity list", status: "WARN", fails: [], warns: [w] })), ...check(built)];
+  const items = [...probeItems, ...itemFailures, ...listIssues.map((w) => ({ item: "post-list", title: "activity list", status: "WARN", fails: [], warns: [w] })), ...check(built)];
   const changed = changes(built);
   writeJson(STATE_FILE, state);
   const summary = { OK: 0, WARN: 0, FAIL: 0 } as Record<string, number>;

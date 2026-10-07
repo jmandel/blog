@@ -189,6 +189,47 @@ Every run ends with `Live/report.json` and a summary: one line per item, `OK` / 
 - **FAIL** means the data is thin and must not be imported as is: article body under 300 characters or no title, a media download failed (the failure lists each source tried: page response, page fetch, direct, with the HTTP status), comments short by more than 20% or with an expander still visible, more than two comments missing author/time/text, a post with no share URN.
 - **WARN**: no cover image, no `linkedInArticle` URN (created date falls back), unknown post components (a media type nobody wrote an extractor for), a comment showing more replies than captured, comments short with no expander left (LinkedIn's count includes deleted or hidden comments), an unresolved `lnkd.in` link.
 
+### Integrity: every image must come from its own element (read this first)
+
+**What happened (October 2026).** Article d22wc ("Understanding ACO Quality Reporting Through Simulation") has no cover of its own; its "cover" is a video, so its public `og:image` is a video thumbnail. The fetcher's cover selector fell back to any `img[src*="article-cover_image"]` on the page, which matched a recommended-article card, and the blog published another article's cover ("FHIR in the Streets, Fax in the Sheets") as its banner. An audit of everything imported then found 8 more wrong banners from older imports:
+- five articles had their first inline image (a diagram or screenshot) as banner, two of them the same one: the importer promoted the first inline image when no cover matched;
+- three had an older version of the cover art (LinkedIn's cover was changed later);
+- one had a banner although LinkedIn shows no cover.
+
+All were fixed from the articles' public pages.
+
+The audit also found that **LinkedIn's stored article HTML silently drops code blocks and inline code**. This is the `contentHtml` the fetcher used and the HTML the official export contains. "How FHIR Resource.id Became a Special System.String" was missing about 600 words: every code block, and "Resource.id" from its own summary sentence. Four other articles lost 27–102 words each. The rendered page has the text. The fetcher now counts the words the rendered body shows that the stored copy lacks; above 10 (ignoring player and credits UI text), it uses the rendered body and says so in `body_source` and a WARN. The audit's completeness check FAILs a blog copy missing more than max(25, 2%) of the words LinkedIn shows. Re-importing an official export would bring the loss back for those articles; re-fetch them live afterwards (`--refetch --only <url>`).
+
+**The rules, enforced in code:**
+- **Identity first.** Before extracting anything, the fetcher checks that the page is the item it asked for. For an article: the final URL is `/pulse/…` with the same 5-character id (a stale slug can land on `/feed/`, where many unrelated covers load), it has a title, and the title equals the logged-out public page's. For a post: the page shows that activity. On a mismatch the item FAILs (`item-failed` in the log) and nothing from it is written.
+- **Images come from their own element.** Covers come from the `<header>` inside the `<article>` holding the title, or from the public page's own `figure.cover-img` / JSON-LD image / an `article-cover_image` og:image, and the two must agree. Inline images come from figures in the article body whose asset is in the article's stored HTML. Post images, posters, card thumbnails and comment images come from inside that card or comment. Network responses are only a download path for a URL already chosen this way, never a way to choose one.
+- **Provenance.** Every downloaded file records `from` (the element or meta tag). `saveMedia` refuses a file without it, and the report FAILs any media record without it.
+- **Independent cross-check.** Each article's logged-out public page (plain HTTP, paced, counted against `--max-pages`) is compared with the capture: title, cover, publish date and comment count. It is stored as `public_check` in the item, with `cover_media: none | video (no cover image)` when there is no cover.
+- **Importer:**
+  - an inline image is never promoted to banner;
+  - with a live zip, an article's cover decision is final: no `Rich_Media.csv` timestamp guess, and an older `banner.*` is dropped rather than restored when LinkedIn shows no cover;
+  - `backfill_linkedin_banners.py` accepts only `article-cover_image` og:images.
+
+**The audit (`scripts/linkedin_audit.py`) is required before every commit of imported content.** It compares the repo with independent sources:
+- **Articles:** public pages give title, date, first paragraphs, cover (visual hash) and inline images (each blog image must visually match one of the article's own inline images, excluding embedded cards of other articles).
+- **Posts:** posts with media and every `intro_share` / `also_posted` post, checked on their public pages (images; does the post link the article it's placed on; are its public comments in our thread).
+- **Threads:** comment ids name the thread's post, no comment in two threads, counts, `is_self`, one name per profile, every thread shown somewhere.
+- **Built site:** `dist/` internal links and images exist (the image-existence check).
+- **Other:** `linkmap.mjs` rewrites point at the page with the same id; YouTube registry ids exist and fit; live items carry provenance.
+
+```bash
+npm run build
+.venv-import/bin/python scripts/linkedin_audit.py              # ~160 public pages the first time, cached 7 days
+.venv-import/bin/python scripts/linkedin_audit.py --offline    # repo/dist/thread checks only, plus cached pages
+.venv-import/bin/python scripts/linkedin_audit.py --only <id> --refresh
+```
+
+It writes `linkedin_work/audit/report.json` and exits 1 on any FAIL. WARNs to expect:
+- pages not publicly visible: some posts redirect to sign-up, and two articles (qm4mc, gqn1c) show "not found" logged out;
+- articles edited on LinkedIn since import ("paragraphs differ"). In October 2026 the only one left was qjhqc, where the old import turned a YouTube link into an embed and dropped its text ("on my YouTube channel").
+
+Fix every FAIL at its source (the fetcher, the importer, or the content), never by deleting the check.
+
 ### Runbook for the supervising agent
 
 **Missing images after a build.** Astro collapses byte-identical image files, and an article's original-size banner once went missing from `dist/` because a post's link card held an identical copy. Card thumbnails are now resized and re-encoded (`save_thumb` in `linkedin_shares.py`, needs Pillow). After any import, check that every `<img src>` in `dist/**/*.html` exists on disk; it's a few lines of Python, and the build itself doesn't catch it.
@@ -198,7 +239,8 @@ Every run ends with `Live/report.json` and a summary: one line per item, `OK` / 
 1. **Probe** (`--probe`): loads the activity list (`probe:post-list`: at least 3 cards, URNs, authors, times; names the layout it saw), the remote-monitoring article and the PFS post, and recaptures both threads. All items must be OK and both threads complete. Run it before any larger run and after any fix (~4 loads).
 2. **Small run**: `--only` two or three URLs, or `--posts --since <last week>`. Check the report and the zip (`unzip -l`), import into a scratch copy, `npm run build`, look at a page.
 3. **Full run**: `--articles --posts`. Re-run until it ends without exit 4. Then import, build, and check `git diff`: new articles and shares, changed threads, no unexpected rewrites of existing posts.
-4. **Never commit** until the report has no FAIL, the import ran, `npm run build` passes, and you have looked at the diff. Then commit only on the user's go-ahead.
+4. **Audit**: `npm run build`, then `.venv-import/bin/python scripts/linkedin_audit.py`. It must end with 0 FAIL.
+5. **Never commit** until the fetch report and the audit have no FAIL, the import ran, `npm run build` passes, and you have looked at the diff (every changed or new `banner.*` and image, not just the text). Then commit only on the user's go-ahead.
 
 Common failures and fixes. Every LinkedIn selector and text heuristic is in `scripts/linkedin_live/selectors.ts`, each a list tried in order; fix it there, then re-run `--probe` and compare counts with the previous `report.json`.
 - **Selector drift** (FAIL with "selectors.ts: …", empty titles or bodies, all comments missing a field): open the page in the browser, find the new class or attribute, add it at the front of that list. The feed's nav uses generated class names, which is why the Me menu is found by its text. Save the page (`Live/error-page.html` is written on any error) and iterate with `--extract-file` instead of reloading LinkedIn.
@@ -325,12 +367,14 @@ These look like successful downloads but produce ugly, wrong banners. Always val
 
 **If a backfilled banner makes it through these checks but still looks wrong:** delete the `banner.*` file AND remove the `banner: ./banner.X` line from that article's frontmatter, then re-run the backfill. The script's idempotent — it only touches articles with no `banner.*` file.
 
-**The 4 articles that genuinely have no cover image** (as of April 2026):
+**Articles that genuinely have no cover image** (as of October 2026; the audit checks this):
 - `an-order-to-harm`
 - `cms-rfi-mcp-now-it-s-your-turn-to-analyze-10k-pages`
 - `healthcare-s-high-tech-future-forgets-one-thing-the-humans`
 - `speeding-spec-development-by-making-ais-argue`
+- `demystifying-fhir-terminology-bindings-an-ai-assisted-guide` (its banner used to be its first inline image, a table)
+- `understanding-aco-quality-reporting-through-simulation` (its cover is a video; og:image is the video's thumbnail, which is not a banner)
 
 If a future LinkedIn export DOES include cover photos for these (e.g., LinkedIn fixes their pipeline, or the author retroactively uploads covers), the standard `local-import.sh` flow will pick them up automatically.
 
-**Why the `linkedin_articles.py` per-article rmtree won't clobber backfilled banners:** the article processor saves any existing `banner.*` file in memory before the rmtree and restores it after image processing if the import didn't produce its own banner. So backfilled and manually-placed banners both survive future imports cleanly.
+**Why the `linkedin_articles.py` per-article rmtree won't clobber backfilled banners:** the article processor saves any existing `banner.*` file in memory before the rmtree and restores it after image processing if the import didn't produce its own banner. So backfilled and manually-placed banners both survive future imports cleanly. Exception: with a live zip, when LinkedIn shows no cover, the old banner is dropped (it was a guess). The audit checks every banner against the article's public cover either way.
