@@ -5,6 +5,9 @@ date: 2026-10-16T12:00:00
 added_at: 2026-10-16
 slug: smart-health-links-for-imaging
 banner: ./banner.png
+supersedes_linkedin: "https://www.linkedin.com/pulse/smart-health-links-imaging-too-how-kill-clipboard-while-mandel-md-udo5c/"
+original_url: "https://www.linkedin.com/pulse/smart-health-links-imaging-too-how-kill-clipboard-while-mandel-md-udo5c/"
+linkedin_id: udo5c
 ---
 
 I'm an unusual patient: I publish my own health records in a public GitHub repository, imaging [EHI export](https://github.com/jmandel/my-ehi) included. Real clinical data is scarce, and developers building health software often never see a realistic example of the formats they're meant to handle. Putting mine in the open has let developers test their code against real FHIR, EHI, and DICOM content instead of toy examples. My brain MRI, my abdominal CT and three sets of hand and wrist X-rays are in my [health-data repository](https://github.com/jmandel/my-health-data/tree/master/imaging), de-identified as "Josh Example."
