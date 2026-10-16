@@ -1,11 +1,10 @@
 ---
 title: "SMART Health Links for Imaging, Too (Or: How to Kill the Clipboard while Ditching the Disk)"
 subtitle: "Sharing full-fidelity DICOM studies through a SMART Health Link, and how I built it in under 24 hours with a team of AI agents."
-date: 2026-10-15T12:00:00
-added_at: 2026-10-15
+date: 2026-10-16T12:00:00
+added_at: 2026-10-16
 slug: smart-health-links-for-imaging
 banner: ./banner.png
-draft: true
 ---
 
 I'm an unusual patient: I publish my own health records in a public GitHub repository, imaging [EHI export](https://github.com/jmandel/my-ehi) included. Real clinical data is scarce, and developers building health software often never see a realistic example of the formats they're meant to handle. Putting mine in the open has let developers test their code against real FHIR, EHI, and DICOM content instead of toy examples. My brain MRI, my abdominal CT and three sets of hand and wrist X-rays are in my [health-data repository](https://github.com/jmandel/my-health-data/tree/master/imaging), de-identified as "Josh Example."
