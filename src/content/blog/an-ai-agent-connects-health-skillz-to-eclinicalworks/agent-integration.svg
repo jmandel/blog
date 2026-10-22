@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960" role="img" aria-labelledby="title desc">
+  <title id="title">How an agent shipped the integration</title>
+  <desc id="desc">GPT-6 Astra iterates through app registration, code changes, deployment and testing, with a human supplying the goal and verification codes. Registration delays lead to client-secret registration, missing CORS leads to a stateless relay, and rejected count parameters lead to a vendor-specific search change. After deployment, patient records flow between the Health Skillz browser app and eClinicalWorks through the relay. Sandbox retrieval, reloads, token refresh and the colleague's live connection are verified.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L8 4L0 8Z" fill="#667085"/>
+    </marker>
+    <marker id="blue-end" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L10 5L0 10Z" fill="#175CD3"/>
+    </marker>
+    <marker id="blue-start" markerWidth="10" markerHeight="10" refX="1" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M10 0L0 5L10 10Z" fill="#175CD3"/>
+    </marker>
+    <style>
+      text { font-family: 'Adwaita Sans', 'DejaVu Sans', sans-serif; fill: #182230; }
+      .section { font-size: 20px; font-weight: 650; letter-spacing: 1.5px; fill: #175CD3; }
+      .muted { fill: #667085; }
+      .stage { fill: #fff; stroke: #BFC7D2; stroke-width: 1.5; }
+      .stage-title { font-size: 28px; font-weight: 550; }
+      .problem { font-size: 23px; fill: #667085; }
+      .change { font-size: 24px; font-weight: 500; }
+      .mono { font-family: 'Adwaita Mono', 'DejaVu Sans Mono', monospace; }
+    </style>
+  </defs>
+  <rect width="1600" height="960" fill="#fff"/>
+
+  <text x="96" y="91" font-size="46" font-weight="650">How an agent shipped the integration</text>
+
+  <text x="96" y="172" class="section">BUILDING THE INTEGRATION</text>
+  <text x="710" y="172" font-size="23" font-weight="600">GPT-6 Astra</text>
+  <text x="1504" y="172" font-size="21" text-anchor="end" class="muted">Human input: goal + email/SMS codes</text>
+
+  <g>
+    <rect class="stage" x="96" y="220" width="280" height="92" rx="5"/>
+    <rect class="stage" x="472" y="220" width="280" height="92" rx="5"/>
+    <rect class="stage" x="848" y="220" width="280" height="92" rx="5"/>
+    <rect class="stage" x="1224" y="220" width="280" height="92" rx="5"/>
+    <text x="236" y="276" text-anchor="middle" class="stage-title">Register app</text>
+    <text x="612" y="276" text-anchor="middle" class="stage-title">Write code</text>
+    <text x="988" y="276" text-anchor="middle" class="stage-title">Deploy changes</text>
+    <text x="1364" y="276" text-anchor="middle" class="stage-title">Test integration</text>
+    <g fill="none" stroke="#667085" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M396 266H452"/>
+      <path d="M772 266H828"/>
+      <path d="M1148 266H1204"/>
+      <path d="M1364 312V342Q1364 358 1348 358H252Q236 358 236 342V312"/>
+    </g>
+    <rect x="623" y="341" width="354" height="35" fill="#fff"/>
+    <text x="800" y="365" text-anchor="middle" font-size="22" class="muted">Inspect results and iterate</text>
+  </g>
+
+  <g>
+    <path d="M96 413V478M584 413V478M1072 413V478" stroke="#175CD3" stroke-width="3"/>
+    <text x="116" y="432" class="problem">Registration stalled</text>
+    <text x="116" y="471" class="change">Use a client secret</text>
+    <text x="604" y="432" class="problem">No CORS headers</text>
+    <text x="604" y="471" class="change">Add a stateless relay</text>
+    <text x="1092" y="432" class="problem"><tspan class="mono">_count</tspan> rejected</text>
+    <text x="1092" y="471" class="change">Omit it; follow page links</text>
+  </g>
+
+  <path d="M96 525H1504" stroke="#D9DEE7" stroke-width="1.5"/>
+  <text x="96" y="580" class="section">PATIENT RECORD ACCESS</text>
+  <text x="1504" y="580" font-size="22" text-anchor="end" class="muted">After deployment</text>
+
+  <g>
+    <rect class="stage" x="96" y="624" width="340" height="104" rx="5"/>
+    <rect x="630" y="624" width="340" height="104" rx="5" fill="#F7FAFF" stroke="#175CD3" stroke-width="1.8"/>
+    <rect class="stage" x="1164" y="624" width="340" height="104" rx="5"/>
+    <text x="266" y="667" text-anchor="middle" font-size="27" font-weight="550">Patient’s browser</text>
+    <text x="266" y="704" text-anchor="middle" font-size="23" class="muted">Health Skillz</text>
+    <text x="800" y="687" text-anchor="middle" font-size="29" font-weight="550">Stateless relay</text>
+    <text x="1334" y="667" text-anchor="middle" font-size="27" font-weight="550">eClinicalWorks</text>
+    <text x="1334" y="704" text-anchor="middle" font-size="23" class="muted">FHIR API</text>
+    <g fill="none" stroke="#175CD3" stroke-width="2.5" marker-start="url(#blue-start)" marker-end="url(#blue-end)">
+      <path d="M462 676H604"/>
+      <path d="M996 676H1138"/>
+    </g>
+    <text x="800" y="765" text-anchor="middle" font-size="21" class="muted">Additional trust boundary</text>
+  </g>
+
+  <path d="M96 810H1504" stroke="#D9DEE7" stroke-width="1.5"/>
+  <text x="96" y="865" font-size="24" font-weight="600">Verified</text>
+  <text x="340" y="855" font-size="22" class="muted">Sandbox</text>
+  <text x="340" y="890" font-size="25" font-weight="500">112 resources + 4 attachments</text>
+  <text x="340" y="923" font-size="22" class="muted">Reload + token refresh</text>
+  <text x="1080" y="855" font-size="22" class="muted">Colleague’s live portal</text>
+  <text x="1080" y="890" font-size="25" font-weight="500">Worked on the first try</text>
+</svg>
