@@ -49,11 +49,11 @@ function formatDate(date: Date): string {
      conversation scrolls on its own while staying in view. */
   @media (min-width: 1300px) {
     .main:has(.post-grid > .li-conv) {
-      max-width: 1260px;
+      max-width: 78.75rem;
     }
     .post-grid:has(> .li-conv) {
       display: grid;
-      grid-template-columns: minmax(0, 720px) minmax(360px, 1fr);
+      grid-template-columns: minmax(0, 45rem) minmax(22.5rem, 1fr);
       gap: 3rem;
       align-items: start;
     }
