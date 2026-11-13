@@ -3,6 +3,7 @@ title: "Certified EHRs Should Let Customers Bring Their Own Agents"
 date: 2026-11-13T12:00:00
 added_at: 2026-11-13
 slug: ai-agents-as-ehr-users-without-vendor-permission
+banner: ./banner.png
 ---
 
 <style>
