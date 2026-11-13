@@ -4,6 +4,7 @@ date: 2026-11-13T12:00:00
 added_at: 2026-11-13
 slug: ai-agents-as-ehr-users-without-vendor-permission
 banner: ./banner.png
+supersedes_linkedin: "https://www.linkedin.com/pulse/certified-ehrs-should-let-customers-bring-own-agents-josh-mandel-md-boosc/"
 ---
 
 <style>
