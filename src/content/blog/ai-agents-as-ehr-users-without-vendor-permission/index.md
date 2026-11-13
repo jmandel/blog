@@ -1,5 +1,5 @@
 ---
-title: "A Clinician's AI Agent Should Not Need the EHR Vendor's Permission"
+title: "Certified EHRs Should Let Customers Bring Their Own Agents"
 date: 2026-11-13T12:00:00
 added_at: 2026-11-13
 slug: ai-agents-as-ehr-users-without-vendor-permission
@@ -194,6 +194,13 @@ Four choices in this text are worth explaining.
 **"Our interface is our intellectual property."** It is, and the proposal leaves copying and competing-product restrictions alone. It removes one use of those terms: declaring that a customer's own tool looking at the customer's own screens is a breach.
 
 **"ONC lacks authority to regulate license terms."** Certification is voluntary, and ONC already regulates developers' contracts under the Communications condition and their fees under the API condition. The statutory phrase "any other action that may inhibit" appropriate access and use is broad, and this is a direct application of it.
+
+**"Retailers and airlines are fighting agents too. Why should EHR vendors be treated differently?"** Amazon [sued to keep Perplexity's shopping agent](https://www.bloomberg.com/news/articles/2026-03-10/amazon-wins-court-order-blocking-perplexity-s-ai-shopping-bots) off its site, an appeals court [has since sided with Perplexity](https://www.emarketer.com/content/perplexity-comet-amazon-ai-shopping-agents-ruling), and airlines and banks are reported to be blocking agents as well. This post takes no position on those fights, because health care differs in four ways.
+
+- **Congress has already decided the question for health data.** The Cures Act prohibits interfering with access to and use of electronic health information, and makes that a condition of EHR certification. Retail and travel have no such statute.
+- **The customer is a licensee, not a visitor.** A shopper's agent arrives at a free storefront whose business depends on the visit. A clinic pays for its EHR and runs its own operations on it, and the records inside are the clinic's and its patients'. The vendor holds them as the clinic's business associate. The closer analogy is a company automating its own accounting system.
+- **The customer can't walk away.** A shopper can buy elsewhere in a minute. A practice that dislikes its vendor's agent policy faces a migration measured in months and a real risk to its records.
+- **The agent is identified.** A common complaint on the consumer web is agents that pose as people. Here the agent runs under an account the customer provisions, with its own role and its own audit trail.
 
 ## What this does for APIs
 
