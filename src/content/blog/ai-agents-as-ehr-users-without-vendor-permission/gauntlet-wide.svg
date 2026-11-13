@@ -33,9 +33,9 @@ text{font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Helv
 <text x="530" y="98" class="who" fill="#1c2321">Developer</text>
 <text x="734" y="98" class="day" text-anchor="end" fill="#1c2321">Day 9</text>
 <text x="530" y="122" class="body" fill="#1c2321">Requests the manner it wants:</text>
-<text x="530" y="140" class="body" fill="#1c2321">operate the screens, patient</text>
-<text x="530" y="158" class="body" fill="#1c2321">message inbox included, under</text>
-<text x="530" y="176" class="body" fill="#1c2321">an account the clinic</text>
+<text x="530" y="140" class="body" fill="#1c2321">operate the screens, message</text>
+<text x="530" y="158" class="body" fill="#1c2321">history included, under an</text>
+<text x="530" y="176" class="body" fill="#1c2321">account the clinic</text>
 <text x="530" y="194" class="body" fill="#1c2321">authorizes.</text>
 <text x="530" y="216" class="cfr" fill="#5a6662">§171.301(a)(1)</text>
 <rect x="518" y="290" width="228" height="158" rx="2" fill="#eceeeb" stroke="#8b9490" stroke-width="1.2"/>
@@ -63,11 +63,10 @@ text{font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Helv
 <rect x="14" y="510" width="228" height="158" rx="14" fill="#ffffff" stroke="#1c2321" stroke-width="2"/>
 <text x="26" y="538" class="who" fill="#1c2321">Developer</text>
 <text x="230" y="538" class="day" text-anchor="end" fill="#1c2321">Day 60</text>
-<text x="26" y="562" class="body" fill="#1c2321">Patient messages and the</text>
-<text x="26" y="580" class="body" fill="#1c2321">refill queue are not in</text>
+<text x="26" y="562" class="body" fill="#1c2321">Message history and the</text>
+<text x="26" y="580" class="body" fill="#1c2321">screening schedule are not in</text>
 <text x="26" y="598" class="body" fill="#1c2321">USCDI, so not in the API.</text>
-<text x="26" y="616" class="body" fill="#1c2321">Asks for them, plus draft</text>
-<text x="26" y="634" class="body" fill="#1c2321">replies.</text>
+<text x="26" y="616" class="body" fill="#1c2321">Asks for them, plus drafting.</text>
 <text x="26" y="656" class="cfr" fill="#5a6662">§171.102 &quot;use&quot;</text>
 <rect x="266" y="510" width="228" height="158" rx="2" fill="#eceeeb" stroke="#8b9490" stroke-width="1.2"/>
 <text x="278" y="538" class="who" fill="#1c2321">Vendor</text>

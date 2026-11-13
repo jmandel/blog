@@ -36,7 +36,7 @@ banner: ./banner.png
 
 > **TL;DR:** A clinic that wants its clinicians to use an AI agent inside the EHR must today get the EHR vendor to agree, and the information blocking exceptions give the vendor a long series of permitted ways to price, redirect, and decline. ONC should stop treating this as a request to the vendor. A condition of certification should say that a customer may have software of its choosing operate the EHR's ordinary screens, under a clinician's login or an account the customer sets up for it, with no separate license, fee, or vendor approval. Draft regulatory text is below.
 
-Agents that operate software the way a person does (reading the screen, clicking, typing) now work well enough to prepare a chart before a visit, draft replies to patient messages, and queue refills for a clinician to sign. For a practice this is a tool, like dictation software, or a new assistant who needs a login. For the regulations it is something else: a third party asking an EHR vendor for access, which starts a process built for a different problem.
+Agents that operate software the way a person does (reading the screen, clicking, typing) now work well enough to read through a chart before a visit, draft the note, and queue orders for a clinician to sign. For a practice this is a tool, like dictation software, or a new assistant who needs a login. For the regulations it is something else: a third party asking an EHR vendor for access, which starts a process built for a different problem.
 
 The story below is fiction. The clinic, the startup, and the vendor are invented, and the calendar is stylized. Every step the vendor takes is one the current rules allow.
 
@@ -44,13 +44,15 @@ The story below is fiction. The clinic, the startup, and the vendor are invented
 
 Three parties are involved.
 
-- **The clinic.** Cedar Street Family Medicine has six clinicians. Its owner, Dr. Okafor, wants help with the patient message inbox.
+- **The clinic.** Cedar Street Family Medicine has six clinicians and a large Medicare panel. Its owner, Dr. Okafor, wants help preparing for annual wellness visits.
 - **The developer.** Maya founded Pencilwork, a four-person startup. Its agent works the EHR's screens the way a staff member would, under whatever account the clinic gives it.
 - **The vendor.** Cedar Street's EHR is cloud-hosted by a company I'll call Quillon.
 
-For each patient portal message, the agent reads the thread and the relevant chart history, drafts a reply for the clinician to review, and pends any refill for signature. It never sends or signs anything.
+Before each annual wellness visit, the agent reviews how the patient has been doing since the last one: the visit notes, labs, and outside records, plus every portal message the patient has sent. It checks the practice's health maintenance list for screenings and vaccines that are due. It then drafts a pre-visit summary and a draft prevention plan in the clinician's queue and pends the due orders for signature. It never sends or signs anything.
 
-Message threads and the refill request queue are one click away on the EHR's screens. Neither is in USCDI, the standard data set that certified FHIR APIs must serve, in any version through v7.
+EHR vendors already sell AI tools that draft replies to patient messages. This is different work: it cuts across the whole chart, and a small practice might reasonably want it from a specialist rather than wait for its vendor to build it.
+
+Two things the agent needs are one click away on the EHR's screens but outside USCDI, the standard data set that certified FHIR APIs must serve: the patient's message history and the health maintenance list. No version of USCDI through v7 includes either.
 
 Cedar Street has signed a pilot agreement and a HIPAA business associate agreement with Pencilwork. It wants the agent, will pay for it, and takes responsibility for it. Only the vendor is left.
 
@@ -86,7 +88,7 @@ Each step of the diagram as a short exchange. Open any one to read it.
 <summary>Days 34 to 39: the alternative manner</summary>
 <p class="tag"><a href="https://www.ecfr.gov/current/title-45/section-171.301">§171.301(b)</a> · "without unnecessary delay"</p>
 <p class="l"><b>Dana:</b> Since we couldn't agree, we'll fulfill your request in an alternative manner. First in the order of priority is certified technology. That's our FHIR API.</p>
-<p class="l"><b>Maya:</b> The agent works the patient message inbox and the refill queue. Neither is in USCDI, so neither is in your FHIR API.</p>
+<p class="l"><b>Maya:</b> The agent needs each patient's message history and the health maintenance list. Neither is in USCDI, so neither is in your FHIR API.</p>
 <p class="l"><b>Dana:</b> It's what the order of priority gives us. If it doesn't meet your needs, we can discuss a flat-file extract next.</p>
 </details>
 
@@ -101,9 +103,9 @@ Each step of the diagram as a short exchange. Open any one to read it.
 <details class="scene">
 <summary>Days 54 to 70: the missing data, and write access</summary>
 <p class="tag"><a href="https://www.ecfr.gov/current/title-45/section-171.204">§171.204(a)(3) and (b)</a> Infeasibility exception · written response within 10 business days</p>
-<p class="l"><b>Maya:</b> The API returns medications, problems, labs, and notes. It has no patient messages and no refill requests, and it can't save a draft reply or pend a refill. Those are the product.</p>
-<p class="l"><b>Dana, ten business days later, in writing:</b> For the messages, we can offer a nightly flat-file extract as a further alternative manner; licensing it would take up to 30 business days. Saving drafts and pending refills is a request to use EHI in order to modify EHI, and you are a third party. That is infeasible under the "third party seeking modification use" condition.</p>
-<p class="l"><b>Maya:</b> A nightly file can't answer a message that arrived this morning. So there is no path?</p>
+<p class="l"><b>Maya:</b> The API returns medications, problems, labs, and notes. It has no message history and no health maintenance list, and it can't save a draft pre-visit note or pend the screenings that are due. Those are the product.</p>
+<p class="l"><b>Dana, ten business days later, in writing:</b> For the messages, we can offer a nightly flat-file extract as a further alternative manner; licensing it would take up to 30 business days. Saving draft notes and pending orders is a request to use EHI in order to modify EHI, and you are a third party. That is infeasible under the "third party seeking modification use" condition.</p>
+<p class="l"><b>Maya:</b> A nightly file misses the message the patient sent this morning about the visit. So there is no path?</p>
 <p class="l"><b>Dana:</b> The modification condition doesn't apply when a health care provider asks its own business associate. Cedar Street could make the request.</p>
 <p class="n">The 30-business-day window for the extract comes from the Licensing exception, <a href="https://www.ecfr.gov/current/title-45/section-171.303">§171.303(a)</a>: 10 business days to open negotiations and 30 to conclude.</p>
 </details>
@@ -138,7 +140,7 @@ Each step of the diagram as a short exchange. Open any one to read it.
 
 ## What the story shows
 
-**The process took more than four months and produced a chart-retrieval integration that can't see the inbox the clinic wanted help with.** Of the 96 business days, 35 were periods the regulations themselves provide: 15 days for app registration and two 10-day response periods. The other 61 were waits with no limit at all.
+**The process took more than four months and produced a chart-retrieval integration that can't see the message history or the screening schedule the visit prep depends on.** Of the 96 business days, 35 were periods the regulations themselves provide: 15 days for app registration and two 10-day response periods. The other 61 were waits with no limit at all.
 
 **No single step is the problem.** Each exception was written for a reasonable case: a vendor shouldn't have to build every custom interface on demand, should be able to recover costs, license its technology, and protect security. Stacked together, and applied to a request that asks the vendor to build nothing, they become a procedure whose default outcome is delay.
 

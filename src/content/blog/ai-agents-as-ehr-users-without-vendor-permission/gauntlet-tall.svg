@@ -39,8 +39,8 @@ text{font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Helv
 <text x="26" y="419" class="who" fill="#1c2321">Developer</text>
 <text x="358" y="419" class="day" text-anchor="end" fill="#1c2321">Day 9</text>
 <text x="26" y="441" class="body" fill="#1c2321">Requests the manner it wants: operate the</text>
-<text x="26" y="460" class="body" fill="#1c2321">screens, patient message inbox included,</text>
-<text x="26" y="479" class="body" fill="#1c2321">under an account the clinic authorizes.</text>
+<text x="26" y="460" class="body" fill="#1c2321">screens, message history included, under an</text>
+<text x="26" y="479" class="body" fill="#1c2321">account the clinic authorizes.</text>
 <text x="26" y="504" class="cfr" fill="#5a6662">§171.301(a)(1)</text>
 <line x1="70" y1="512" x2="70" y2="563" stroke="#1c2321" stroke-width="1.6"/>
 <path d="M65,562 L70,570 L75,562 Z" fill="#1c2321"/>
@@ -80,9 +80,9 @@ text{font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Helv
 <rect x="14" y="1057" width="356" height="117" rx="14" fill="#ffffff" stroke="#1c2321" stroke-width="2"/>
 <text x="26" y="1081" class="who" fill="#1c2321">Developer</text>
 <text x="358" y="1081" class="day" text-anchor="end" fill="#1c2321">Day 60</text>
-<text x="26" y="1103" class="body" fill="#1c2321">Patient messages and the refill queue are not</text>
-<text x="26" y="1122" class="body" fill="#1c2321">in USCDI, so not in the API. Asks for them,</text>
-<text x="26" y="1141" class="body" fill="#1c2321">plus draft replies.</text>
+<text x="26" y="1103" class="body" fill="#1c2321">Message history and the screening schedule</text>
+<text x="26" y="1122" class="body" fill="#1c2321">are not in USCDI, so not in the API. Asks for</text>
+<text x="26" y="1141" class="body" fill="#1c2321">them, plus drafting.</text>
 <text x="26" y="1166" class="cfr" fill="#5a6662">§171.102 &quot;use&quot;</text>
 <line x1="70" y1="1174" x2="70" y2="1225" stroke="#1c2321" stroke-width="1.6"/>
 <path d="M65,1224 L70,1232 L75,1224 Z" fill="#1c2321"/>
