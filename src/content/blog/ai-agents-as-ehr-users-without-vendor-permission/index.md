@@ -60,7 +60,7 @@ Cedar Street has signed a pilot agreement and a HIPAA business associate agreeme
 
 <p class="cap">Day counts are business days. Dark pills are periods the regulations set; dashed pills are periods with no limit, where the story assumes a plausible wait.</p>
 
-## The conversation, step by step
+## What each step sounds like
 
 Each step of the diagram as a short exchange. Open any one to read it.
 
@@ -127,9 +127,9 @@ Each step of the diagram as a short exchange. Open any one to read it.
 <script>
 (() => {
   const open = () => {
-    if (location.hash !== '#the-conversation-step-by-step') return;
+    if (!['#what-each-step-sounds-like', '#the-conversation-step-by-step'].includes(location.hash)) return;
     document.querySelectorAll('.gnt details.scene').forEach((d) => { d.open = true; });
-    document.getElementById('the-conversation-step-by-step')?.scrollIntoView();
+    document.getElementById('what-each-step-sounds-like')?.scrollIntoView();
   };
   open();
   addEventListener('hashchange', open);
