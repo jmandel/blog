@@ -7,8 +7,11 @@ banner: ./banner.png
 ---
 
 <style>
-.gnt .scene { border-left: 3px solid #1c2321; padding: 0.1rem 0 0.1rem 1rem; margin: 1.6rem 0; }
-.gnt .scene h4 { margin: 0 0 0.15rem; font-size: 1rem; }
+.gnt .scene { border-left: 3px solid #1c2321; padding: 0.1rem 0 0.1rem 1rem; margin: 0.9rem 0; }
+.gnt .scene summary { cursor: pointer; font-weight: 700; font-size: 1rem; color: #363636; }
+.gnt .scene summary:hover { color: #0066cc; }
+.gnt .scene[open] summary { margin-bottom: 0.15rem; }
+.gnt .scene .tag { margin-top: 0.3rem; }
 .gnt .scene .tag { font-size: 0.82rem; color: #5a6662; margin: 0 0 0.6rem; }
 .gnt .scene .tag a { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 0.95em; }
 .gnt .scene p.l { margin: 0.45rem 0; }
@@ -59,15 +62,17 @@ Cedar Street has signed a pilot agreement and a HIPAA business associate agreeme
 
 ## The conversation, step by step
 
-<div class="scene">
-<h4>Days 0 to 8: the license</h4>
+Each step of the diagram as a short exchange. Open any one to read it.
+
+<details class="scene">
+<summary>Days 0 to 8: the license</summary>
 <p class="tag">Customer license agreement · a contract term, with no clock for answering</p>
 <p class="l"><b>Dr. Okafor:</b> We'd like our clinicians to use an AI agent in the EHR. It would work under their logins, or under its own account with a limited role if you prefer. Can you confirm that's fine?</p>
 <p class="l"><b>Quillon account manager:</b> Section 4.2 of your agreement prohibits access "by automated means, including scripts, bots, or robotic process automation" and any access by third parties without our written consent. Third parties go through Partner Programs. I've sent them your developer's name.</p>
-</div>
+</details>
 
-<div class="scene">
-<h4>Days 9 to 34: the manner requested</h4>
+<details class="scene">
+<summary>Days 9 to 34: the manner requested</summary>
 <p class="tag"><a href="https://www.ecfr.gov/current/title-45/section-171.301">§171.301(a)</a> Manner exception · no time limit</p>
 <p class="l"><b>Maya:</b> We're requesting that Cedar Street's clinicians be allowed to operate Quillon's screens through our agent, under accounts the clinic authorizes.</p>
 <p class="l"><b>Dana, Partner Programs:</b> Happy to help. The program is $25,000 a year, plus four cents per automated interaction, plus 12% of revenue from joint customers. You'll grant us a license to feedback and improvements. Security review has a ten-week queue.</p>
@@ -75,49 +80,49 @@ Cedar Street has signed a pilot agreement and a HIPAA business associate agreeme
 <p class="l"><b>Dana:</b> Those conditions apply when we fulfill a request in an <em>alternative</em> manner. For the manner you requested, §171.301(a)(2) says our fees and licenses don't have to meet them. These are our market terms.</p>
 <p class="l"><b>Dana, a week later:</b> Also, please stop the demo sessions. Our written security policy flags scripted input, and the test account has been locked.</p>
 <p class="n">Three rounds of redlines follow. Dana is right about the rule text: the cost-based, nondiscriminatory conditions sit in the Fees and Licensing exceptions, and the Manner exception applies them only to an alternative manner. ONC has said it expects "market" terms for the manner requested and that unconscionable terms could still be information blocking, but its proposal to write that into the rule was deferred. As codified, the parties need only fail to "reach agreeable terms," with no deadline for finding that out. The lockout is defended under the Security exception, <a href="https://www.ecfr.gov/current/title-45/section-171.203">§171.203</a>.</p>
-</div>
+</details>
 
-<div class="scene">
-<h4>Days 34 to 39: the alternative manner</h4>
+<details class="scene">
+<summary>Days 34 to 39: the alternative manner</summary>
 <p class="tag"><a href="https://www.ecfr.gov/current/title-45/section-171.301">§171.301(b)</a> · "without unnecessary delay"</p>
 <p class="l"><b>Dana:</b> Since we couldn't agree, we'll fulfill your request in an alternative manner. First in the order of priority is certified technology. That's our FHIR API.</p>
 <p class="l"><b>Maya:</b> The agent works the patient message inbox and the refill queue. Neither is in USCDI, so neither is in your FHIR API.</p>
 <p class="l"><b>Dana:</b> It's what the order of priority gives us. If it doesn't meet your needs, we can discuss a flat-file extract next.</p>
-</div>
+</details>
 
-<div class="scene">
-<h4>Days 39 to 54: app registration</h4>
+<details class="scene">
+<summary>Days 39 to 54: app registration</summary>
 <p class="tag"><a href="https://www.ecfr.gov/current/title-45/section-170.404">§170.404(b)(1)</a> API condition · 10 business days to verify the developer, 5 more to enable the app</p>
 <p class="l"><b>Maya:</b> Fine. We'll take the API so we can at least start testing chart retrieval.</p>
 <p class="l"><b>Dana:</b> There's no charge to you for the certified API. We'll verify your company within ten business days and enable the app within five after that.</p>
 <p class="n">The app is enabled on day 54. This is the one step where the rules give the developer a firm, short deadline and a price of zero, because the certified API has its own condition of certification.</p>
-</div>
+</details>
 
-<div class="scene">
-<h4>Days 54 to 70: the missing data, and write access</h4>
+<details class="scene">
+<summary>Days 54 to 70: the missing data, and write access</summary>
 <p class="tag"><a href="https://www.ecfr.gov/current/title-45/section-171.204">§171.204(a)(3) and (b)</a> Infeasibility exception · written response within 10 business days</p>
 <p class="l"><b>Maya:</b> The API returns medications, problems, labs, and notes. It has no patient messages and no refill requests, and it can't save a draft reply or pend a refill. Those are the product.</p>
 <p class="l"><b>Dana, ten business days later, in writing:</b> For the messages, we can offer a nightly flat-file extract as a further alternative manner; licensing it would take up to 30 business days. Saving drafts and pending refills is a request to use EHI in order to modify EHI, and you are a third party. That is infeasible under the "third party seeking modification use" condition.</p>
 <p class="l"><b>Maya:</b> A nightly file can't answer a message that arrived this morning. So there is no path?</p>
 <p class="l"><b>Dana:</b> The modification condition doesn't apply when a health care provider asks its own business associate. Cedar Street could make the request.</p>
 <p class="n">The 30-business-day window for the extract comes from the Licensing exception, <a href="https://www.ecfr.gov/current/title-45/section-171.303">§171.303(a)</a>: 10 business days to open negotiations and 30 to conclude.</p>
-</div>
+</details>
 
-<div class="scene">
-<h4>Days 71 to 95: the same ladder, a new requester</h4>
+<details class="scene">
+<summary>Days 71 to 95: the same ladder, a new requester</summary>
 <p class="tag"><a href="https://www.ecfr.gov/current/title-45/section-171.301">§171.301</a> again, then <a href="https://www.ecfr.gov/current/title-45/section-171.204">§171.204(a)(4)</a> Manner exception exhausted</p>
 <p class="l"><b>Dr. Okafor:</b> Then I'm asking. Let my clinicians use this agent. I'll provision it like any other staff account.</p>
 <p class="l"><b>Quillon account manager:</b> We can amend section 4.2 with our Automation Enablement add-on: $90 per clinician per month, usage caps, and you indemnify us for anything the agent does.</p>
 <p class="l"><b>Dr. Okafor:</b> That's more than we pay for the EHR seat. No.</p>
 <p class="l"><b>Quillon, ten business days later, in writing:</b> We could not reach agreement on the manner requested. We have offered two alternative manners, the certified API and a flat-file extract. We do not provide the requested access to a substantial number of similarly situated customers. The request is infeasible.</p>
-</div>
+</details>
 
-<div class="scene">
-<h4>Day 96: the complaint</h4>
+<details class="scene">
+<summary>Day 96: the complaint</summary>
 <p class="tag"><a href="https://www.law.cornell.edu/uscode/text/42/300jj-52">42 U.S.C. 300jj-52</a> · no deadline for a decision</p>
 <p class="l"><b>Maya and Dr. Okafor</b> file an information blocking complaint through ONC's portal. The confirmation email has a case number and no timeline.</p>
 <p class="n">The same month, Quillon announces Quillon Assist, its own agent, at $149 per clinician per month.</p>
-</div>
+</details>
 
 ## What the story shows
 
@@ -127,7 +132,7 @@ Cedar Street has signed a pilot agreement and a HIPAA business associate agreeme
 
 **The requester needs a lawyer at every step.** Whether terms were at "market," whether an extract's royalty is "reasonable," whether a lockout was "tailored" are all judgments made first by the vendor and reviewed, if ever, after a complaint.
 
-**The pending HTI-5 proposals would help only at the edges.** ONC [proposed](https://www.federalregister.gov/documents/2025/12/29/2025-23896/health-data-technology-and-interoperability-astponc-deregulatory-actions-to-unleash-prosperity) to say outright that "access" and "use" include robotic process automation and agentic AI, to remove the third-party modification condition, and to add contract-fairness tests to the Manner exception. The [October final rule](/blog/posts/hti-5-final-rule) deferred all of it. Even if finalized, the proposals leave the structure in place: the agent's developer is still a requester, the vendor still controls an "interoperability element," and the Licensing and Fees exceptions still frame the negotiation.
+**The pending HTI-5 proposals would help only at the edges.** ONC [proposed](https://www.federalregister.gov/documents/2025/12/29/2025-23896/health-data-technology-and-interoperability-astponc-deregulatory-actions-to-unleash-prosperity) to say outright that "access" and "use" include robotic process automation and agentic AI, to remove the third-party modification condition, and to add contract-fairness tests to the Manner exception. The [October final rule](https://www.federalregister.gov/documents/2026/10/28/2026-21943/health-data-technology-and-interoperability-onc-deregulatory-actions-to-unleash-prosperity) deferred all of it. Even if finalized, the proposals leave the structure in place: the agent's developer is still a requester, the vendor still controls an "interoperability element," and the Licensing and Fees exceptions still frame the negotiation.
 
 ## A different premise: the agent works for the customer
 
