@@ -124,6 +124,18 @@ Each step of the diagram as a short exchange. Open any one to read it.
 <p class="n">The same month, Quillon announces Quillon Assist, its own agent, at $149 per clinician per month.</p>
 </details>
 
+<script>
+(() => {
+  const open = () => {
+    if (location.hash !== '#the-conversation-step-by-step') return;
+    document.querySelectorAll('.gnt details.scene').forEach((d) => { d.open = true; });
+    document.getElementById('the-conversation-step-by-step')?.scrollIntoView();
+  };
+  open();
+  addEventListener('hashchange', open);
+})();
+</script>
+
 ## What the story shows
 
 **The process took more than four months and produced a chart-retrieval integration that can't see the inbox the clinic wanted help with.** Of the 96 business days, 35 were periods the regulations themselves provide: 15 days for app registration and two 10-day response periods. The other 61 were waits with no limit at all.
