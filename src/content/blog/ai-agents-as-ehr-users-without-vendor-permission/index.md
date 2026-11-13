@@ -169,7 +169,18 @@ This keeps authority where it belongs.
 
 The rule would sit in the conditions every certified EHR developer already agrees to. One of them, the [Assurances condition](https://www.ecfr.gov/current/title-45/section-170.402), has developers promise not to engage in information blocking "or any other action that may inhibit" access to and use of health data. That broader promise doesn't run through the information blocking exceptions, so a vendor can't answer it with the licensing and fee process from the story. ONC has built on it before, to require full-record export. The mechanics borrow from [another condition](https://www.ecfr.gov/current/title-45/section-170.403) that already bars developers from gagging customers who talk about their software: an annual notice that contrary contract terms won't be enforced, and no new contracts containing them.
 
-Draft text, for discussion:
+In plain terms, a certified developer would have to:
+
+- Let a customer have software of its choosing operate the product's ordinary interfaces, under a clinician's account or an account the customer sets up for the software, within that account's permissions.
+- Let customers create, restrict, and deactivate accounts for software with the same tools and terms they use for staff.
+- Require no separate license, agreement, registration, fee, or approval from the customer or the software's supplier.
+- Price and limit use only by published measures that apply the same way to people and software.
+- Not treat the software's view of the screens as a breach of confidentiality or intellectual property terms.
+- Tell customers each year that contrary contract terms won't be enforced, publish its policy, and attest to all of this twice a year.
+
+Actions taken through the software count as the customer's, and the developer owes the software no support. A sentence added to the information blocking definitions says that operating an interface the customer already has is not a separately licensable "interoperability element."
+
+The draft text, for discussion:
 
 <div class="reg">
 <p class="h">§170.402(a)(6) Customer-authorized software.</p>
@@ -217,7 +228,7 @@ Four choices in this text are worth explaining.
 
 - **Congress has already decided the question for health data.** The Cures Act prohibits interfering with access to and use of electronic health information, and makes that a condition of EHR certification. Retail and travel have no such statute.
 - **The customer is a licensee, not a visitor.** A shopper's agent arrives at a free storefront whose business depends on the visit. A clinic pays for its EHR and runs its own operations on it, and the records inside are the clinic's and its patients'. The vendor holds them as the clinic's business associate. The closer analogy is a company automating its own accounting system.
-- **The customer can't walk away.** A shopper can buy elsewhere in a minute. A practice that dislikes its vendor's agent policy faces a migration measured in months and a real risk to its records.
+- **The customer can't walk away.** A shopper can buy elsewhere in a minute. A practice that dislikes its vendor's agent policy faces a migration measured in months or years and a real risk to its records.
 - **The agent is identified.** Amazon's complaint about Muse was that it never said it was an AI. Here the agent runs under an account the customer provisions, with its own role and its own audit trail.
 
 ## What this does for APIs
