@@ -312,6 +312,16 @@ chromium --user-data-dir="$SCRATCH/li-profile" --remote-debugging-port=9333 \
 
 Connect with `puppeteer-core` (`puppeteer.connect({ browserURL: "http://127.0.0.1:9333", defaultViewport: null })`). Never print cookies or tokens.
 
+If that profile is already open (another session holds its lock, or you've been told to keep off port 9333), don't touch that browser. Copy the profile, which carries the login, and start the copy on a free port:
+
+```bash
+rsync -a --exclude 'Singleton*' --exclude Cache --exclude 'Code Cache' --exclude GPUCache \
+  "$SCRATCH/li-profile/" "$SCRATCH/li-profile-copy/"
+chromium --user-data-dir="$SCRATCH/li-profile-copy" --remote-debugging-port=0 --no-first-run \
+  https://www.linkedin.com/article/new/ &
+# the chosen port is the first line of $SCRATCH/li-profile-copy/DevToolsActivePort
+```
+
 **Backporting LinkedIn edits into a native post:**
 1. **Get the live text.** (`scripts/linkedin_live_fetch.ts` lists candidates: its `BACKPORT?` lines name native posts with LinkedIn paragraphs they lack, and `Live/items/article-<id>.json` holds the live HTML and text.) Open the published article (`original_url`) and take `document.querySelector('.reader-article-content').innerHTML`. Figures are `<figure>` elements with an optional `<figcaption>`. LinkedIn wraps each list in an extra `<p>` holding the same text; skip that duplicate.
 2. **Diff block by block** against the native post (paragraphs, headings, list items, captions; normalize whitespace and curly quotes) and look at what actually changed. Usually it's wording, an added or removed paragraph or figure, or a TL;DR box (a `<blockquote>` becomes `> ` in markdown).
@@ -324,13 +334,18 @@ Connect with `puppeteer-core` (`puppeteer.connect({ browserURL: "http://127.0.0.
 6. **Build and check** before pushing: `npm run build`, then load the post. For interactive posts, hover the charts with puppeteer, check that tooltips appear, and check the console for errors.
 
 **Putting a native post onto LinkedIn** (the user publishes, or explicitly asks you to):
-- **Text.** In the article editor (`.ProseMirror`), paste HTML with a synthetic `ClipboardEvent("paste")` carrying `text/html`. Headings become h3, and lists and links survive.
+- **Title.** Type into `#article-editor-headline__textarea`. The first keystroke creates the draft; the URL changes to `/article/edit/<id>/`, so report that URL to the user.
+- **Text.** In the article editor (`.ProseMirror`), paste HTML with a synthetic `ClipboardEvent("paste")` carrying `text/html`. Headings become h3, and lists and links survive. Click into the editor first (a real `element.click()`). A paste sent after only `ed.focus()` is silently ignored. Then compare the block count and links with the source HTML (an empty trailing paragraph can make the counts differ by one).
+  - **Before converting from markdown:** replace tables with images (render the table as HTML and screenshot it at device scale 2), and put a unique placeholder paragraph (e.g. `PLACEHOLDER-TABLE`) wherever an image goes.
+  - **Inline code can't be linked.** A link whose text is `` `code` `` (marked emits `<a><code>…</code></a>`) is dropped on paste. Later, Ctrl+K on code text does nothing, and the toolbar can't turn code off. So unwrap code inside links before pasting; if it's already in, link adjacent plain words instead.
+  - **Numbered lists restart at 1.** An `<ol start="7">` loses its start number. Say so to the user, or avoid splitting one numbered list across headings.
+  - **Very wide images display small** in LinkedIn's column; a 4:1 strip shows as a thin band. Prefer about 16:9 or stack panels.
 - **Images.** LinkedIn takes only raster images. Render charts with puppeteer at a high device scale factor. LinkedIn stores at most **1,500 px tall** (up to about 2,232 px wide), and taller images are scaled down and look blurry. Lay tall figures out wider, or split them into parts.
-  - **Inserting.** Paste a `File` through the same paste event into an *empty* paragraph. Leave a placeholder paragraph, select its text and press Backspace, then paste.
+  - **Inserting.** Paste a `File` through the same paste event into an *empty* paragraph. Leave a placeholder paragraph, select its text and press Backspace, then paste. Call `ed.focus()` *before* setting the selection range. After an image is inserted, focus sits on the figure's buttons, and focusing afterwards discards the range, so the Backspace does nothing. Check that the caret's block is empty before pasting the file, and that the figure count went up by one.
   - **Replacing.** To replace an existing image and keep its caption, use the figure's "Edit image" button, then the dialog's Delete, then upload through the dialog's file input, then Next. Click the button with `element.click()`; a mouse click on the hover overlay doesn't always register.
 - **Captions** are `<textarea>`s inside each figure. Set them with the native value setter plus an `input` event; don't type into them.
-- **Links in the editor.** Select the text, press Ctrl+K, set "Paste link here", then Apply. Pasting HTML over a selection doesn't replace links.
-- **Cover.** "Upload from computer" opens a file chooser (`page.waitForFileChooser()`), then Next.
+- **Links in the editor.** Select the text, press Ctrl+K, type the URL into the focused `input[placeholder="Paste link here"]`, then call `.click()` on `button[aria-label="Apply"]`, which is disabled until the input has text. Pasting HTML over a selection doesn't replace links or formatting.
+- **Cover.** `button[aria-label="Upload from computer"]` opens a file chooser. Start `page.waitForFileChooser()` and the button's `.click()` together, then accept the file, then click the dialog's Next.
 - **Hazards, all seen in practice:**
   - **Ctrl+A inside a caption selects the whole article,** and typing then replaces it. Undo (Ctrl+Z in the editor) recovers it.
   - **Undo can restore a select-all.** Afterwards, collapse the selection to a caret before any keyboard input.
